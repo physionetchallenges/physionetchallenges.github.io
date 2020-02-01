@@ -2,122 +2,34 @@
 layout: default
 ---
 
-Text can be **bold**, _italic_, or ~~strikethrough~~.
+# The PhysioNet/Computing in Cardiology Challenges
 
-[Link to another page](./another-page.html).
+For the past 21 years, [PhysioNet](https://physionet.org) and [Computing in Cardiology](http://www.cinc.org/) have co-hosted a series of annual challenges to tackle clinically interesting questions that are either unsolved or not well-solved. 
 
-There should be whitespace between paragraphs.
+The PhysioNet/Computing in Cardiology Challenge 2020 invites participants to...
 
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
+# Current Challenge
 
-# Header 1
+- __2020__: [To Be Announced](/2020/)
 
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
-
-## Header 2
-
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
-
-### Header 3
-
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
-
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-```
-
-#### Header 4
-
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-
-##### Header 5
-
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
-
-###### Header 6
-
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
-
-### There's a horizontal rule below this.
-
-* * *
-
-### Here is an unordered list:
-
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
-
-### And an ordered list:
-
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
-
-### And a nested list:
-
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-
-### Small image
-
-![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
-
-### Large image
-
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
-
-
-### Definition lists can be used with HTML syntax.
-
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
-
-```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-```
-
-```
-The final element.
-```
+# Past Challenges
+- __2019__: [Early Prediction of Sepsis from Clinical Data](https://physionet.org/content/challenge-2019/)
+- __2018__: [You Snooze, You Win](https://physionet.org/content/challenge-2018/)
+- __2017__: [AF Classification from a Short Single Lead ECG Recording](https://physionet.org/content/challenge-2017/)
+- __2016__: [Classification of Normal/Abnormal Heart Sound Recordings](https://physionet.org/content/challenge-2016/)
+- __2015__: [Reducing False Arrhythmia Alarms in the ICU](https://physionet.org/content/challenge-2015/)
+- __2014__: [Robust Detection of Heart Beats in Multimodal Data](https://physionet.org/content/challenge-2014/)
+- __2013__: [Noninvasive Fetal ECG](https://physionet.org/content/challenge-2013/)
+- __2012__: [Predicting Mortality of ICU Patients](https://physionet.org/content/challenge-2012/)
+- __2011__: [Improving the Quality of ECGs Collected using Mobile Phones](https://physionet.org/content/challenge-2011/)
+- __2010__: [Mind the Gap](https://physionet.org/content/challenge-2010/)
+- __2009__: [Predicting Acute Hypotensive Episodes](https://physionet.org/content/challenge-2009/)
+- __2008__: [Detecting and Quantifying T-Wave Alternans](https://physionet.org/content/challenge-2008/)
+- __2007__: [Electrocardiographic Imaging of Myocardial Infarction](https://physionet.org/content/challenge-2007/)
+- __2006__: [QT Interval Measurement](https://physionet.org/content/challenge-2006/)
+- __2005__: [The First Five Challenges Revisited](https://physionet.org/content/challenge-2005/)
+- __2004__: [Spontaneous Termination of Atrial Fibrillation](https://physionet.org/content/challenge-2004/)
+- __2003__: [Distinguishing Ischemic from Non-Ischemic ST Changes](https://physionet.org/content/challenge-2003/)
+- __2002__: [RR Interval Time Series Modeling](https://physionet.org/content/challenge-2002/)
+- __2001__: [Predicting Paroxysmal Atrial Fibrillation](https://physionet.org/content/challenge-2001/)
+- __2000__: [Detecting Sleep Apnea from the ECG](https://physionet.org/content/challenge-2000/)

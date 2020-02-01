@@ -1,6 +1,6 @@
-title: Minimal theme
-logo: /assets/img/logo.png
-description: Minimal is a theme for GitHub Pages.
-show_downloads: true
+title: PhysioNet/CinC Challenges
+logo: /assets/img/ecg-ml.gif
+description: <b>Links for this year's Challenge:</b><ul><li><a href="https://physionetchallenges.github.io">Registration</a></li><li><a href="https://github.com/physionetchallenges">Example and scoring code</a></li><li>Submission <a href="https://physionetchallenges.github.io">instructions</a> and <a href="https://physionetchallenges.github.io">form</a></li><li><a href="https://groups.google.com/forum/#!forum/physionet-challenges">Community discussion forum</a></li></ul>Please use the community discussion forum for questions about this year's Challenge.
+show_downloads: false
 google_analytics:
 theme: jekyll-theme-minimal
