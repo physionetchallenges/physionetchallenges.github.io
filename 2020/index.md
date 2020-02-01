@@ -2,6 +2,6 @@
 layout: default
 ---
 
-# To be Announced: The PhysioNet/Computing in Cardiology Challenge 2020
+# Classification of 12-lead ECGs: the PhysioNet/Computing in Cardiology Challenge 2020
 
 [Back](../index.html)
