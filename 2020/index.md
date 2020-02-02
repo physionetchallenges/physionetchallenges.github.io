@@ -39,7 +39,6 @@ Each ECG recording has one or more labels from one normal sinus rhythm type and 
 9. ST-segment elevation (STE)
 
 For example, the following header indicates that the label is RBBB:
-
 #Age: 46
 #Sex: Male
 #Dx: RBBB
