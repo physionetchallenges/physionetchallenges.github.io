@@ -8,11 +8,10 @@ For the past 21 years, [PhysioNet](https://physionet.org) and [Computing in Card
 
 The PhysioNet/Computing in Cardiology Challenge 2020 invites participants to...
 
-# Current Challenge
-
+## Current Challenge
 - __2020__: [To Be Announced](/2020/)
 
-# Past Challenges
+## Past Challenges
 - __2019__: [Early Prediction of Sepsis from Clinical Data](https://physionet.org/content/challenge-2019/)
 - __2018__: [You Snooze, You Win](https://physionet.org/content/challenge-2018/)
 - __2017__: [AF Classification from a Short Single Lead ECG Recording](https://physionet.org/content/challenge-2017/)
