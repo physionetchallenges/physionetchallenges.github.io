@@ -41,10 +41,15 @@ Each ECG recording has one or more labels from one normal sinus rhythm type and 
 For example, the following header indicates that the label is RBBB:
 
 #Age: 46
+
 #Sex: Male
+
 #Dx: RBBB
+
 #Rx: Unknown
+
 #Hx: Unknown
+
 #Sx: Unknown
 
 The training data can be downloaded from a link provided after you register for the Challenge. For verifying you have downloaded correctly the file, the MD5 hash is 8c8c9c3dd5f3bb973c366f50b86f9d43.
