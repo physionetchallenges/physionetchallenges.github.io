@@ -47,7 +47,7 @@ For example, the following header indicates that the label is RBBB:
 #Hx: Unknown
 #Sx: Unknown
 ```
-The training data can be downloaded from a link provided after you register for the Challenge. For verifying you have downloaded correctly the file, the [MD5 hash](https://en.wikipedia.org/wiki/Md5sum) is `8c8c9c3dd5f3bb973c366f50b86f9d43`.
+The training data can be downloaded from a link provided after you register for the Challenge. You can verify the integrity of the file with its [MD5 hash](https://en.wikipedia.org/wiki/Md5sum): `8c8c9c3dd5f3bb973c366f50b86f9d43`.
 
 We are not planning to release the test data, including after the end of the Challenge. Requests for the test data will not receive a response. We do not release test data to prevent overfitting on the test data. We will entertain requests to run code on the test data after the Challenge on a limited basis based on publication necessity and capacity. (The Challenge is staged by volunteers.)
 
