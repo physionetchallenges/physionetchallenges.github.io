@@ -25,7 +25,7 @@ The data for this Challenge are from multiple sources:
 The initial training set is the public data used in the [China Physiological Signal Challenge in 2018 (CPSC2018)](http://2018.icbeb.org/), held during the 7th 
 International Conference on Biomedical Engineering and Biotechnology in Nanjing, China.
 
-This training set consists of 6,877 12-lead ECG recording (male: 3,699; female: 3,178) lasting from 6 seconds to 60 seconds. Each recording was sampled at 500 Hz. All data is provided in [WFDB format](https://www.physionet.org/physiotools/wpg/wpg_35.htm) with a MATLAB v4 file and a header containing patient sex, age, and diagnosis (Dx) information at the end of the header file.
+This training set consists of 6,877 12-lead ECG recordings (male: 3,699; female: 3,178) lasting from 6 seconds to 60 seconds. Each recording was sampled at 500 Hz. All data is provided in [WFDB format](https://www.physionet.org/physiotools/wpg/wpg_35.htm) with a MATLAB v4 file and a header containing patient sex, age, and diagnosis (Dx) information at the end of the header file.
 
 Each ECG recording has one or more labels from one normal sinus rhythm type and eight abnormal types:
 1. Normal sinus rhythm (Sinus) 
