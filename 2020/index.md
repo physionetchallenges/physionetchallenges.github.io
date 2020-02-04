@@ -79,19 +79,19 @@ For this Challenge, we will initially consider multiple evaluation metrics that 
 
 The first scoring function is a general class-weighted F-score, the Fβ measure, where we have assigned more weight to recall than precision:
 
-![Thumbnail of minimal](Fbeta_eq1.png)
+![Fbeta_eq1](Fbeta_eq1.png)
  
 We have initially set β = 2, penalizing a missed diagnosis twice as much as a false positive. 
 
 The second scoring function is a generalization of the Jaccard measure, where we have given missed diagnoses twice as much weight as correct diagnoses and false alarms: 
 
-#eq2
+![Gbeta_eq2](Gbeta_eq2.png)
 
 Since some recordings may have multiple labels, we normalize their contributions to these scoring functions so that each recording, not each label, makes an equal contribution. For example, if a recording has five labels, and your classifier identifies three labels correctly, identifies one label incorrectly, and misses two labels, then we increment TP by ⅗, FP by ⅕, and FN by ⅖.
 
 The score is calculated over all recordings (with just one number per recording, not per lead), weighted by the relative importance of the diagnosis as:  
 
- #eq3
+![Sum_Fbeta.png](Sum_Fbeta.png)
  
  where l is the index of a given class, Cl is its corresponding importance and Nl is the number of classes. Initially all Cl ’s were set to unity. 
 
