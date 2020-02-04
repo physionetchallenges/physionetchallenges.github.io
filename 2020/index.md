@@ -79,7 +79,7 @@ For this Challenge, we will initially consider multiple evaluation metrics that 
 
 The first scoring function is a general class-weighted F-score, the Fβ measure, where we have assigned more weight to recall than precision:
 
- #eq1
+![Thumbnail of minimal](Fbeta_eq1.png)
  
 We have initially set β = 2, penalizing a missed diagnosis twice as much as a false positive. 
 
