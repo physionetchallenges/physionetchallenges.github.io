@@ -49,7 +49,7 @@ For example, the following header indicates that the label is  Right bundle bran
 #Hx: Unknown
 #Sx: Unknown
 ```
-The training data can be downloaded from this [link](https://storage.cloud.google.com/physionet-challenge-2020-12-lead-ecg-public/PhysionetChallenge2020_Training_CPSC.tar.gz?folder). You can verify the integrity of the file with its [MD5 hash](https://en.wikipedia.org/wiki/Md5sum): `8c8c9c3dd5f3bb973c366f50b86f9d43`.
+The training data can be downloaded from this [link](https://storage.cloud.google.com/physionet-challenge-2020-12-lead-ecg-public/PhysioNetChallenge2020_Training_CPSC.tar.gz). You can verify the integrity of the file with its [MD5 hash](https://en.wikipedia.org/wiki/Md5sum): `8c8c9c3dd5f3bb973c366f50b86f9d43`.
 
 Although we will provide more training data at a later date, we are not planning to release the test data at any point, including after the end of the Challenge. Requests for the test data will not receive a response. We do not release test data to prevent overfitting on the test data and claims or publications of inflated performances. We will entertain requests to run code on the test data after the Challenge on a limited basis based on publication necessity and capacity. (The Challenge is largely staged by volunteers.)
 
