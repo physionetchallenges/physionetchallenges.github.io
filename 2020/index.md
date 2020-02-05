@@ -87,7 +87,7 @@ The second scoring function is a generalization of the Jaccard measure, where we
 
 <img src="Gbeta_eq2.png" width="50%">
 
-Since some recordings may have multiple labels, we normalize their contributions to these scoring functions so that each recording, not each label, makes an equal contribution. For example, if a recording has five labels, and your classifier identifies three labels correctly, identifies one label incorrectly, and misses two labels, then we increment TP by ⅗, FP by ⅕, and FN by ⅖.
+Since some recordings may have multiple labels, we normalize their contributions to these scoring functions so that each recording, not each class, makes an equal contribution. For example, if a recording has six classes, and your classifier identifies three labels correctly, identifies one label incorrectly, and misses two labels, then we increment TP by 3/6, FP by 1/6, and FN by 2/6.
 
 The score is calculated over all recordings (with just one number per recording, not per lead), weighted by the relative importance of the diagnosis as:  
 
