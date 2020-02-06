@@ -49,7 +49,7 @@ For example, the following header indicates that the label is  Right bundle bran
 #Hx: Unknown
 #Sx: Unknown
 ```
-The training data can be downloaded from this [link](https://storage.cloud.google.com/physionet-challenge-2020-12-lead-ecg-public/PhysioNetChallenge2020_Training_CPSC.tar.gz). You can verify the integrity of the file with its [MD5 hash](https://en.wikipedia.org/wiki/Md5sum): `8c8c9c3dd5f3bb973c366f50b86f9d43`.
+The training data can be downloaded from this [link](https://storage.cloud.google.com/physionet-challenge-2020-12-lead-ecg-public/PhysioNetChallenge2020_Training_CPSC.tar.gz). You can verify the integrity of the '.tar.gz' file with its [MD5 hash](https://en.wikipedia.org/wiki/Md5sum): `8180611b87209d3897b0735a56780204`.
 
 Although we will provide more training data at a later date, we are not planning to release the test data at any point, including after the end of the Challenge. Requests for the test data will not receive a response. We do not release test data to prevent overfitting on the test data and claims or publications of inflated performances. We will entertain requests to run code on the test data after the Challenge on a limited basis based on publication necessity and capacity. (The Challenge is largely staged by volunteers.)
 
@@ -63,7 +63,7 @@ For each 12-lead ECG recording, your algorithm must identify a set of one or mor
 
 ```
 Record ID
- Sinus|AF |I-AVB|LBBB|RBBB|PAC |PVC |STD|STE
+Normal|AF |I-AVB|LBBB|RBBB|PAC |PVC |STD|STE
   0.05|0.9|  0.6| 0.2| 0.2|0.35|0.35|0.1|0.1
      0|  1|    1|   0|   0|   0|   0|  0|  0
 ```
@@ -99,7 +99,7 @@ Note that there may be more than one label per recording, and the score stratifi
 
 ## Sample Entries
 
-We implemented a simple regression model in Julia, MATLAB, Python, and R. Please use these implementations as templates for your entries. [Add links.]
+We implemented a simple regression model in MATLAB and Pytho. Please use these implementations as templates for your entries. [Add links.]
 
 ## Rules and Deadlines
 
@@ -107,7 +107,18 @@ There are two phases for the Challenge: an unofficial phase and an official phas
 
 Entrants may have an overall total of up to 15 scored entries over both the unofficial and official phases of the competition (see Table 2). All deadlines occur at 11:59pm GMT (UTC) on the dates mentioned below. If you do not know the difference between GMT and your local time, then find out what it is before the deadline! Please do not wait until the deadline to submit your entries because you will be unable to resubmit them if there are unexpected errors or issues with your submissions.
 
-#table 2
+
+
+```
+                 |   Start         | End             | Entry limit
+Unofficial phase | 7 February 2020 | 12 April 2020   | 5
+Hiatus           | 13 April 2020   | 26 April 2020   | 0
+Abstract Deadline| 15 April 2020   | 15 April 2020   | 1 (abstract)
+Official phase   | 27 April 2020   | 13 August 2020  | 10
+Hiatus           | 13 August 2020  |12 September 2020| 0
+Hackathon        |13 September 2020|13 September 2020| 2
+Conference       |13 September 2020|16 September 2020| 0
+```
 
 To be eligible for the open-source award, you must do all the following:
 1. Register for the Challenge [here]https://docs.google.com/forms/d/e/1FAIpQLSdZUTrpoVuotZxUTUbo23k2u-wdiOvkiZWgzorblUsQOCSnew/viewform?vc=0&c=0&w=1&usp=mail_form_link.
