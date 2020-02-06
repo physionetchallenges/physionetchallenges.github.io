@@ -32,8 +32,8 @@ Each ECG recording has one or more labels from one normal sinus rhythm type and 
 3. First-degree atrioventricular block (I-AVB)
 4. Left bundle branch block (LBBB)
 5. Right bundle branch block (RBBB)
-6. Premature atrial contraction (PAC)
-7. Premature ventricular contraction (PVC)
+6. Premature atrial complex (PAC)
+7. Premature ventricular complex (PVC)
 8. ST-segment depression (STD)
 9. ST-segment elevation (STE)
 
