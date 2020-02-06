@@ -62,14 +62,14 @@ To participate in the Challenge, you must register here, providing the full name
 For each 12-lead ECG recording, your algorithm must identify a set of one or more classes as well as a probability or confidence score for each class. For example, suppose that your classifier identifies atrial fibrillation and a first-degree atrioventricular block with probabilities of 90% and 60%, respectively, for a particular 12-lead ECG sample, but it does not identify any other rhythm types. Your code might produce the following output for a single recording (not for each lead):
 
 ```
-Record ID
-Normal|AF |I-AVB|LBBB|RBBB|PAC |PVC |STD|STE
-  0.05|0.9|  0.6| 0.2| 0.2|0.35|0.35|0.1|0.1
-     0|  1|    1|   0|   0|   0|   0|  0|  0
+#Record ID
+Normal,AF ,I-AVB,LBBB,RBBB,PAC ,PVC ,STD,STE
+  0.05,0.9,  0.6, 0.2, 0.2,0.35,0.35,0.1,0.1
+     0,  1,    1,   0,   0,   0,   0,  0,  0
 ```
 ## Submitting your Algorithm
 
-We have shared code for a simple baseline model that [...]. Please use this code as a template for your submission, and please see the following instructions for additional details for your submissions. 
+We have shared code for a simple baseline model that provides a label per class per recording. Please use this code as a template for your submission, and please see the following instructions for additional details for your submissions. 
 
 For the first time in any public competition, we will require code both for your trained model and for training your model. If we cannot reproduce your model from the training code, then you will not be eligible for ranking or a prize. 
 
@@ -121,7 +121,7 @@ Conference       |13 September 2020|16 September 2020| 0
 ```
 
 To be eligible for the open-source award, you must do all the following:
-1. Register for the Challenge [here]https://docs.google.com/forms/d/e/1FAIpQLSdZUTrpoVuotZxUTUbo23k2u-wdiOvkiZWgzorblUsQOCSnew/viewform?vc=0&c=0&w=1&usp=mail_form_link.
+1. Register for the Challenge [here](https://docs.google.com/forms/d/e/1FAIpQLSdZUTrpoVuotZxUTUbo23k2u-wdiOvkiZWgzorblUsQOCSnew/viewform?vc=0&c=0&w=1&usp=mail_form_link).
 2. Enter at least one open-source entry that can be scored during the unofficial phase (before 11:59pm GMT 12 April).
 3. Enter an Abstract to CinC: Submit an acceptable abstract (about 300 words) on your work on the Challenge to Computing in  Cardiology no later than 15 April. Include the overall score for your Phase I entry in your abstract. Please select “PhysioNet/CinC Challenge” as the topic of your abstract, so it can be identified easily by the abstract review committee. See "Advice on Writing an Abstract" below for more important information on your abstract.
 4. Submit at least one open-source entry that can be scored during the second phase (between 12:01am GMT on 27 April and 11:59pm GMT on 23 August).
