@@ -177,8 +177,8 @@ The Challenge organizers, their employers, PhysioNet and Computing in Cardiology
 
 
 ## References
-1. Kligfield, Paul, et al. 2007.Journal of the American College of Cardiology 49.10: 1109-1127.
-2. Adams Jr,et al. 2007. Stroke 38.5: 1655-1711.
-3. Bickerton, Martin, and Alison Pooler. 2019 .British Journal of Cardiac Nursing 14.3: 123-132.
+1. [Kligfield, Paul, et al. 2007.Journal of the American College of Cardiology 49.10: 1109-1127](http://www.onlinejacc.org/content/49/10/1109.abstract).
+2. [Adams Jr,et al. 2007. Stroke 38.5: 1655-1711](https://www.ahajournals.org/doi/full/10.1161/strokeaha.107.181486)
+3. [Bickerton, Martin, and Alison Pooler. 2019 .British Journal of Cardiac Nursing 14.3: 123-132](https://www.magonlinelibrary.com/doi/abs/10.12968/bjca.2019.14.3.123).
 
 [Back](../index.html)
