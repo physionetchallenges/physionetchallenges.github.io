@@ -6,10 +6,10 @@ layout: default
 
 For the past 21 years, [PhysioNet](https://physionet.org) and [Computing in Cardiology](http://www.cinc.org/) have co-hosted a series of annual challenges to tackle clinically interesting questions that are either unsolved or not well-solved. 
 
-The PhysioNet/Computing in Cardiology Challenge 2020 invites participants to...
+The [PhysioNet/Computing in Cardiology Challenge 2020](/2020/) invites participants to identify clinical diagnoses from 12-lead ECG recordings. We ask participants to design and implement a working, open-source algorithm that can, based only on the clinical data provided, automatically identify the cardiac abnormality or abnormalities present in each 12-lead ECG recording. The winners of the Challenge will be the team whose algorithm achieves the highest score for recordings in the hidden test set.
 
 ## Current Challenge
-- __2020__: [To Be Announced](/2020/)
+- __2020__: [Classification of 12-lead ECGs](/2020/)
 
 ## Past Challenges
 - __2019__: [Early Prediction of Sepsis from Clinical Data](https://physionet.org/content/challenge-2019/)
