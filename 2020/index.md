@@ -66,7 +66,8 @@ Normal,AF ,I-AVB,LBBB,RBBB,PAC ,PVC ,STD,STE
 ```
 
 ## <a name="submissions"></a> Submitting your Algorithm
-We have created a simple baseline model that provides a label per class per recording. We have shared [implementations](https://github.com/physionetchallenges) of this model in MATLAB and Python, and we will share implementations in Julia and R soon. Please use this code as a template for your submissions, and please see [these instructions](submissions.html) for additional details about submissions. When you are ready (and have tested your code), please submit using [this form](submissions.html).
+We have created a simple baseline model that provides a label per class per recording. We will share implementations of this model in Python, MATLAB, R, and Julia soon. Please use this code as a template for your submissions. We will share additional details about submission process soon.
+<!When you are ready (and have tested your code), please submit using [this form](submissions.html).->
 
 For the first time in any public competition, we will require code both for your trained model and for training your model. If we cannot reproduce your model from the training code, then you will not be eligible for ranking or a prize. 
 
@@ -96,7 +97,7 @@ where _C_<sup>_ℓ_</sup> is the importance of class _ℓ_ and _N_ is the number
 
 Since some recordings may have multiple labels, we normalize their contributions to these scoring functions so that each recording, not each class, makes an equal contribution. For example, if a recording has six classes, and your classifier identifies three labels correctly, identifies one label incorrectly, and misses two labels, then we increment the true positives by 3/6, false positives by 1/6, and false negatives by 2/6 for both scoring functions.
 
-We have shared [implementations](https://github.com/physionetchallenges) of these scoring functions in both MATLAB and Python, and we will use the Python implementation for evaluating your submissions.
+We will share implementations of these scoring functions in both MATLAB and Python, and we will use the Python implementation for evaluating your submissions.
 
 ## <a name="rules-and-deadlines"></a> Rules and Deadlines
 
