@@ -1,21 +1,21 @@
 ---
-layout: default
+layout: 2020
 ---
 
 # Classification of 12-lead ECGs: the PhysioNet/Computing in Cardiology Challenge 2020
 
-## Introduction
+## <a name="introduction"></a> Introduction
 
 The electrocardiogram (ECG) is a non-invasive representation of the electrical activity of the heart from electrodes placed on the surface of the torso. The standard 12-lead ECG has been widely used to diagnose a variety of cardiac abnormalities such as cardiac arrhythmias, and predicts cardiovascular morbidity and mortality [[1]](http://www.onlinejacc.org/content/49/10/1109.abstract). The early and correct diagnosis of cardiac abnormalities can increase the chances of successful treatments [[2]](https://www.ahajournals.org/doi/full/10.1161/strokeaha.107.181486). However, manual interpretation of the electrocardiogram is time-consuming, and requires skilled personnel with a high degree of training [[3]](https://www.magonlinelibrary.com/doi/abs/10.12968/bjca.2019.14.3.123).
 
 Automatic detection and classification of cardiac abnormalities can assist physicians in the diagnosis of the growing number of ECGs recorded. Over the last decade, there have been increasing numbers of attempts to stimulate 12-lead ECG classification. Many of these algorithms seem to have the potential for accurate identification of cardiac abnormalities. However, most of these methods have only been tested or developed in single, small, or relatively homogenous datasets. The PhysioNet/Computing in Cardiology Challenge 2020 provides an opportunity to address this problem by providing data from a wide set of sources.
 
-## Objective
+## <a name="objective"></a> Objective
 The goal of the 2020 Challenge is to identify clinical diagnoses from 12-lead ECG recordings.
 
 We ask participants to design and implement a working, open-source algorithm that can, based only on the clinical data provided, automatically identify the cardiac abnormality or abnormalities present in each 12-lead ECG recording. The winners of the Challenge will be the team whose algorithm achieves the highest score for recordings in the hidden test set.
 
-## Data
+## <a name="data"></a> Data
 
 The data for this Challenge are from multiple sources:
 1. Southeast University, China, including the data from the China Physiological Signal Challenge 2018
@@ -50,11 +50,11 @@ The training data can be downloaded from this [link](https://storage.cloud.googl
 
 Although we will provide more training data at a later date, we are not planning to release the test data at any point, including after the end of the Challenge. Requests for the test data will not receive a response. We do not release test data to prevent overfitting on the test data and claims or publications of inflated performances. We will entertain requests to run code on the test data after the Challenge on a limited basis based on publication necessity and capacity. (The Challenge is largely staged by volunteers.)
 
-## Registering for the Challenge and Conditions of Participation 
+## <a name="registration"></a> Registering for the Challenge and Conditions of Participation 
 
 To participate in the Challenge, you must register [here](https://docs.google.com/forms/d/e/1FAIpQLSdZUTrpoVuotZxUTUbo23k2u-wdiOvkiZWgzorblUsQOCSnew/viewform?usp=sf_link), providing the full names, affiliations and official email addresses of your entire team. The details of all authors must be exactly the same as the details you use to submit your abstract to Computing in Cardiology in April. You may add (but not subtract) authors later by emailing challenge [at] physionet.org.
 
-## Algorithms
+## <a name="algorithms"></a> Algorithms
 
 For each 12-lead ECG recording, your algorithm must identify a set of one or more classes as well as a probability or confidence score for each class. For example, suppose that your classifier identifies atrial fibrillation and a first-degree atrioventricular block with probabilities of 90% and 60%, respectively, for a particular 12-lead ECG sample, but it does not identify any other rhythm types. Your code might produce the following output for a single recording (not for each lead):
 
@@ -65,11 +65,12 @@ Normal,AF ,I-AVB,LBBB,RBBB,PAC ,PVC ,STD,STE
      0,  1,    1,   0,   0,   0,   0,  0,  0
 ```
 
-We have created a simple baseline model that provides a label per class per recording. We have shared [implementations](https://github.com/physionetchallenges) of this model in MATLAB and Python, and we will share implementations in Julia and R soon. Please use this code as a template for your submissions, and please see the following instructions for additional details for your submissions. 
+## <a name="submissions"></a> Submitting your Algorithm
+We have created a simple baseline model that provides a label per class per recording. We have shared [implementations](https://github.com/physionetchallenges) of this model in MATLAB and Python, and we will share implementations in Julia and R soon. Please use this code as a template for your submissions, and please see [these instructions](submissions.html) for additional details about submissions. When you are ready (and have tested your code), please submit using [this form](submissions.html).
 
 For the first time in any public competition, we will require code both for your trained model and for training your model. If we cannot reproduce your model from the training code, then you will not be eligible for ranking or a prize. 
 
-## Scoring
+## <a name="scoring"></a> Scoring
 
 For this Challenge, we will initially consider multiple evaluation metrics that assign different weights to different classes and classification errors. We welcome discussion about the evaluation metric for this year's Challenge.
 
@@ -97,7 +98,7 @@ Since some recordings may have multiple labels, we normalize their contributions
 
 We have shared [implementations](https://github.com/physionetchallenges) of these scoring functions in both MATLAB and Python, and we will use the Python implementation for evaluating your submissions.
 
-## Rules and Deadlines
+## <a name="rules-and-deadlines"></a> Rules and Deadlines
 
 There are two phases for the Challenge: an unofficial phase and an official phase. The unofficial phase of the Challenge allows us to introduce and "beta test" the data, scores, and submission system before the official phase of the Challenge. Participation in the unofficial phase is mandatory for participating in the official phase of the Challenge because it helps us to improve the official phase.
 
@@ -115,26 +116,26 @@ Entrants may have an overall total of up to 15 scored entries over both the unof
 
 To be eligible for the open-source award, you must do all the following:
 1. Register for the Challenge [here](https://docs.google.com/forms/d/e/1FAIpQLSdZUTrpoVuotZxUTUbo23k2u-wdiOvkiZWgzorblUsQOCSnew/viewform?usp=sf_link).
-2. Enter at least one open-source entry that can be scored during the unofficial phase (before 11:59pm GMT on 12 April).
-3. Enter an Abstract to CinC: Submit an acceptable abstract (about 300 words) on your work on the Challenge to Computing in  Cardiology no later than 15 April. Include the overall score for your Phase I entry in your abstract. Please select "PhysioNet/CinC Challenge" as the topic of your abstract, so it can be identified easily by the abstract review committee. See "Advice on Writing an Abstract" below for more important information on your abstract.
+2. [Submit](submissions.html) at least one open-source entry that can be scored during the unofficial phase (before 11:59pm GMT on 12 April).
+3. Enter an Abstract to CinC: Submit an acceptable abstract (about 300 words) on your work on the Challenge to Computing in Cardiology no later than 15 April. Include the overall score for your Phase I entry in your abstract. Please select "PhysioNet/CinC Challenge" as the topic of your abstract, so it can be identified easily by the abstract review committee. See "Advice on Writing an Abstract" below for more important information on your abstract.
 4. Submit at least one open-source entry that can be scored during the second phase (between 12:01am GMT on 27 April and 11:59pm GMT on 23 August).
 5. Submit a full (4-page) paper on your work on the Challenge to CinC no later than the deadline of conference paper submission and select the pre-print option.
 6. Attend CinC 2020 (13-16 September 2020) in Italy and present your work there either orally (if we select you) or as a poster. You must stand by your poster to defend it. No shows (oral or poster) will be disqualified.
 
 You must not submit analysis of this year's Challenge data to other conferences or journals until after CinC 2020 has taken place so that the competitors can discuss the results in a single forum. If we discover evidence you have done so, then you will be disqualified and de-ranked on the website, banned from future Challenges, and the journal/conference will be contacted to request your article is withdrawn for contravention of the terms of use. We expect a special issue from a journal to follow the conference and encourage all entrants (including those who missed the opportunity to compete or attend CinC 2020) to submit extended analysis and articles to that issue, taking into account the publications and discussions at CinC 2020.
 
-## Advice on Writing an Abstract 
+## <a name="abstract-advice"></a> Advice on Writing an Abstract 
 
 To improve your chances of having your abstract accepted, we offer the following advice. Make sure all the authors match your registration information and you use the same email addresses. Stick to the word limit (check [the conference website](http://www.cinc.org/cinc-conference-program-abstracts/) for updates, but it is usually between 250 and 300 words). Make sure all your co-authors agree on the abstract. Importantly, be sure to submit your abstract by the deadline, so include time for errors, internet outages, etc. When submitting, you will be asked for the topic – please select "PhysioNet/CinC Challenge" so it can be identified easily by the abstract review committee. However, do not include the words "PhysioNet" or "PhysioNet/CinC" or "Challenge" in the title – this creates confusion with the hundreds of other articles and the main descriptor of the Challenge. Although your work is bound to change, the quality of your abstract is a good indicator of the final quality of your work. We suggest you spell check, write in full sentences, and be specific about your approaches. Include cross validated training performance (using the Challenge metrics) and your score provided by the Challenge submission system. If you omit or inflate this latter score, then your abstract will be rejected. If you are unable to get the scoring system working, then you can still submit, but the work should be very high quality. Your title, abstract and author list (collaborators) can be modified in September when you submit the final paper, so do not be embarrassed by any low scores. We do not expect high scores at this stage. We are focused on the thoughtfulness of the approach and quality of the abstract. 
 
 You will be notified if your abstract has been accepted by email from CinC during the first week in June or earlier. You may not enter more than one abstract describing your work in the Challenge. We know you may have multiple ideas, and the actual abstract will evolve over the course of the Challenge – this is OK. More information, particularly on discounts and scholarships, can be found [here](http://www.cinc.org/information-for-computing-in-cardiology-authors/). We are sorry, but the Challenge Organizers do not have extra funds to enable discounts or funding to attend the conference. 
 
-## Open-Source Licenses
+## <a name="open-source-licenses"></a> Open-Source Licenses
 We encourage the use of open-source licenses for your entries.
 
 Entries with non open-source licenses will be scored but not ranked in the official competition. All scores will be made public. At the end of the competition, all entries will be posted publicly, and therefore automatically mirrored on several sites around the world. We have no control over these sites, so we cannot remove your code even on request. Before the end of the competition, your code is not publicly available, and you can choose to withdraw it until the end of the Challenge in August. However, the Organizers reserve the right to retain and use a copy of the code for non-commercial use. This allows us to re-score if definitions change and validate any claims made by competitors.
 
-## Rules on Competing in Teams / Collaboration
+## <a name="collaboration"></a> Rules on Competing in Teams / Collaboration
 
 To maintain the scientific impact of the Challenges, it is important that all Challengers contribute truly independent ideas. For this reason, we impose the following rules on team composition/collaboration:
 
@@ -147,22 +148,23 @@ To maintain the scientific impact of the Challenges, it is important that all Ch
 
 If we discover evidence of the contravention of these rules, then you will be ineligible for a prize and your entry publicly marked as possibly associated with another entry. Although we will contact the team(s) in question, time and resources are limited and the Organizers must use their best judgement on the matter in a short period of time. The Organizers' decision on rule violations will be final.
 
-## Conference Attendance
+## <a name="conference-attendance"></a> Conference Attendance
 
 [CinC 2020](https://www.cinc2020.org/) will take place from 13-16 September 2020 in [Rimini, Italy](https://www.google.com/maps/place/Rimini,+Province+of+Rimini,+Italy/@44.053442,12.2945337,10z/). You must attend the whole conference to be eligible for prizes. If you send someone in your place who is not a team member or co-author you will be disqualified and your abstract will be removed from the proceedings. It is vital the presenter (oral or poster) can defend your work in person, and has an in-depth knowledge of all decisions made during the development of your algorithm. No exceptions will be made. No remote attendance will be allowed because the organizational burden for this is too high. If you require a visa to attend the conference, we strongly suggest that you apply as soon as possible.  Please contact the local [conference](https://www.cinc2020.org/visa-information/) organizing committee (not the Challenge Organizers) for any visa sponsorship letters and answer any questions concerning the conference. 
-Hackathon
+
+## <a name="hackathon"></a> Hackathon
 Thanks to our sponsors, a pre-conference hackathon (with prizes) will take place on 13 September 2020 in Rimini, Italy, before the conference begins.
 
 Any team with at least one conference attendee is eligible to enter. You do not need to have entered the Challenge or have an abstract in the conference before this date. Moreover, you may combine forces with other teams to produce hybrid algorithms. We suggest that you peruse the conference preprints in the first week of September to find potential partners. This part of the Challenge is organized and sponsored by MathWorks and Google Cloud, so there will be hands-on help, but you are not required to use Google Cloud or MATLAB for developing an entry. The rules and restrictions are otherwise the same as the Challenge.
 
 
-## Sponsors
+## <a name="sponsors"></a> Sponsors
 This year's Challenge is generously co-sponsored by MathWorks and Google.
 
-### Obtaining Complimentary MATLAB Licenses
+### <a name="complimentary-matlab-licenses"></a> Obtaining Complimentary MATLAB Licenses
 [MathWorks](http://www.mathworks.com/) has generously decided to sponsor this Challenge by providing complimentary licenses to all teams that wish to use MATLAB. Users can apply for a license and learn more about MATLAB support by visiting the [PhysioNet Challenge page](https://www.mathworks.com/academia/student-competitions/physionet.html) from MathWorks. If you have questions or need technical support, then please contact MathWorks at <studentcompetitions@mathworks.com>.
 
-### Obtaining Complimentary Google Cloud Credits
+### <a name="complimentary-gcp-credits"></a> Obtaining Complimentary Google Cloud Platform Credits
 [Google](http://cloud.google.com/) has generously agreed to provide Google Cloud Platform (GCP) credits for up to 40 teams for this Challenge. We will award these to the top performing teams each month. These credits should provide an added incentive to submit more entries earlier on, and give teams the maximum opportunity to learn before spending money in the cloud.
 
 At the time of launching this Challenge, Google Cloud offers multiple services for [free](https://cloud.google.com/free/) on a one-year trial basis and $300 in cloud credits. Additionally, if teams are based at an educational institution in selected countries, then they can access free GCP training [online](https://edu.google.com/programs/credits).
@@ -171,9 +173,11 @@ Google Cloud credits of $500 per team will be made available to teams (that requ
 
 The Challenge Organizers, their employers, PhysioNet and Computing in Cardiology accept no responsibility for the loss of credits, or failure to issue credits for any reason. Please note, by requesting credits, you are granting us permission to forward your details to Google for the distribution of credits. You can register for these credits during the Challenge registration process.
 
-## References
+## <a name="references"></a> References
 1. [Kligfield, _et al._, 2007. _Journal of the American College of Cardiology_ 49.10: 1109-1127](http://www.onlinejacc.org/content/49/10/1109.abstract).
 2. [Adams, _et al._, 2007. _Stroke_ 38.5: 1655-1711](https://www.ahajournals.org/doi/full/10.1161/strokeaha.107.181486)
 3. [Bickerton and Pooler, 2019. _British Journal of Cardiac Nursing_ 14.3: 123-132](https://www.magonlinelibrary.com/doi/abs/10.12968/bjca.2019.14.3.123).
+
+---
 
 [Back](../index.html)
