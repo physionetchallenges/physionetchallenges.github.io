@@ -67,7 +67,6 @@ Normal,AF ,I-AVB,LBBB,RBBB,PAC ,PVC ,STD,STE
 
 ## <a name="submissions"></a> Submitting your Algorithm
 We have created a simple baseline model that provides a label per class per recording. We will share implementations of this model in Python, MATLAB, R, and Julia soon. Please use this code as a template for your submissions. We will share additional details about submission process soon.
-<!When you are ready (and have tested your code), please submit using [this form](submissions.html).->
 
 For the first time in any public competition, we will require code both for your trained model and for training your model. If we cannot reproduce your model from the training code, then you will not be eligible for ranking or a prize. 
 
