@@ -102,28 +102,33 @@ We will share implementations of these scoring functions in both MATLAB and Pyth
 
 There are two phases for the Challenge: an unofficial phase and an official phase. The unofficial phase of the Challenge allows us to introduce and "beta test" the data, scores, and submission system before the official phase of the Challenge. Participation in the unofficial phase is mandatory for participating in the official phase of the Challenge because it helps us to improve the official phase.
 
-Entrants may have an overall total of up to 15 scored entries over both the unofficial and official phases of the competition (see Table). All deadlines occur at 11:59pm GMT (UTC) on the dates mentioned below. If you do not know the difference between GMT and your local time, then find out what it is before the deadline! Please do not wait until the deadline to submit your entries because you will be unable to resubmit them if there are unexpected errors or issues with your submissions.
+Entrants may have an overall total of up to 15 scored entries over both the unofficial and official phases of the competition (see Table). All deadlines occur at 11:59pm GMT (UTC) on the dates mentioned below, and all dates are during 2020 unless indicated otherwise. If you do not know the difference between GMT and your local time, then find out what it is before the deadline! Please do not wait until the deadline to submit your entries because you will be unable to resubmit them if there are unexpected errors or issues with your submissions.
 
-|                 |    Start         | End              | Requirements    |
+<a name="dates-and-deadlines"></a>__Key dates/deadlines__
+
+|                 |    Start         | End              | Submissions     |
 |-----------------|------------------|------------------|-----------------|
-|Unofficial phase | 7 February 2020  | 12 April 2020    | &le; 5 entries* |
-|Hiatus           | 13 April 2020    | 26 April 2020    | No entries      |
+|Unofficial phase | 7 February 2020  | 12 April 2020    | 1-5 entries (*) |
+|Hiatus           | 13 April 2020    | 26 April 2020    | N/A             |
 |Abstract deadline| 15 April 2020    | 15 April 2020    | 1 abstract      |
-|Official phase   | 27 April 2020    | 13 August 2020   | &le; 10 entries*|
-|Hiatus           | 13 August 2020   | 12 September 2020| No entries      |
+|Official phase   | 27 April 2020    | 13 August 2020   | 1-10 entries (*)|
+|Hiatus           | 13 August 2020   | 12 September 2020| N/A             |
 |Preprint deadline| 6 September 2020 | 6 September 2020 | 1 preprint      |
-|Hackathon        | 13 September 2020| 13 September 2020| &le; 2 entries  |
-|Conference       | 13 September 2020| 16 September 2020| No entries      |
+|Hackathon        | 13 September 2020| 13 September 2020| 0-2 entries     |
+|Conference       | 13 September 2020| 16 September 2020| 1 oral presentation or poster|
+|Final scores released|17 September 2020|24 September 2020|N/A            |
+|Final paper submitted|25 September 2020|30 September 2002|1 paper        |
 
-*At least one scored entry required
+(* Entries that fail to score do not count against limits.) 
 
 To be eligible for the open-source award, you must do all the following:
 1. Register for the Challenge [here](https://docs.google.com/forms/d/e/1FAIpQLSdZUTrpoVuotZxUTUbo23k2u-wdiOvkiZWgzorblUsQOCSnew/viewform?usp=sf_link).
 2. Submit at least one open-source entry that can be scored during the unofficial phase (before 11:59pm GMT on 12 April).
 3. [Enter an Abstract to CinC](http://www.cinc.org/information-for-computing-in-cardiology-authors/): Submit an acceptable abstract (no more than 300 words) on your work on the Challenge to Computing in Cardiology no later than 15 April. Include the overall score for your Phase I entry in your abstract. Please select "PhysioNet/CinC Challenge" as the topic of your abstract, so it can be identified easily by the abstract review committee. See "Advice on Writing an Abstract" below for more important information on your abstract.
 4. Submit at least one open-source entry that can be scored during the second phase (between 12:01am GMT on 27 April and 11:59pm GMT on 23 August).
-5. Submit a full (4-page) paper on your work on the Challenge to CinC no later than one week before the start of the conference (6th September this year) and select the pre-print option.
-6. Attend CinC 2020 (13-16 September 2020) in Italy and present your work there either orally (if we select you) or as a poster. You must stand by your poster to defend it. No shows (oral or poster) will be disqualified.
+5. Submit a full (4-page) paper on your work on the Challenge to CinC no later than one week before the start of the conference (6 September) and select the pre-print option.
+6. One of your team must attend CinC 2020 (13-16 September) in Italy to present your work there either orally (if we select you) or as a poster. If you have a poster, then you must stand by it to defend your work. No shows (oral or poster) will be disqualified. One of your team members must also attend the closing ceremony to collect your prize. No substitutes will be allowed.
+7. Submit an updated 4-page paper with your final official score by 30 September. 
 
 You must not submit analysis of this year's Challenge data to other conferences or journals until after CinC 2020 has taken place so that the competitors can discuss the results in a single forum. If we discover evidence you have done so, then you will be disqualified and de-ranked on the website, banned from future Challenges, and the journal/conference will be contacted to request your article is withdrawn for contravention of the terms of use. We expect a special issue from a journal to follow the conference and encourage all entrants (including those who missed the opportunity to compete or attend CinC 2020) to submit extended analysis and articles to that issue, taking into account the publications and discussions at CinC 2020.
 
