@@ -104,16 +104,18 @@ There are two phases for the Challenge: an unofficial phase and an official phas
 
 Entrants may have an overall total of up to 15 scored entries over both the unofficial and official phases of the competition (see Table). All deadlines occur at 11:59pm GMT (UTC) on the dates mentioned below. If you do not know the difference between GMT and your local time, then find out what it is before the deadline! Please do not wait until the deadline to submit your entries because you will be unable to resubmit them if there are unexpected errors or issues with your submissions.
 
-|                 |    Start         | End              | Entry limit |
-|-----------------|------------------|------------------|-------------|
-|Unofficial phase | 7 February 2020  | 12 April 2020    | 5           |
-|Hiatus           | 13 April 2020    | 26 April 2020    | 0           |
-|Abstract deadline| 15 April 2020    | 15 April 2020    | 1 (abstract)|
-|Official phase   | 27 April 2020    | 13 August 2020   | 10          |
-|Hiatus           | 13 August 2020   | 12 September 2020| 0           |
-|Preprint deadline| 6 September 2020 | 6 September 2020 | 1 (preprint)|
-|Hackathon        | 13 September 2020| 13 September 2020| 2           |
-|Conference       | 13 September 2020| 16 September 2020| 0           |
+|                 |    Start         | End              | Requirements    |
+|-----------------|------------------|------------------|-----------------|
+|Unofficial phase | 7 February 2020  | 12 April 2020    | &le; 5 entries* |
+|Hiatus           | 13 April 2020    | 26 April 2020    | No entries      |
+|Abstract deadline| 15 April 2020    | 15 April 2020    | 1 abstract      |
+|Official phase   | 27 April 2020    | 13 August 2020   | &le; 10 entries*|
+|Hiatus           | 13 August 2020   | 12 September 2020| No entries      |
+|Preprint deadline| 6 September 2020 | 6 September 2020 | 1 preprint      |
+|Hackathon        | 13 September 2020| 13 September 2020| &le; 2 entries  |
+|Conference       | 13 September 2020| 16 September 2020| No entries      |
+
+*At least one scored entry required
 
 To be eligible for the open-source award, you must do all the following:
 1. Register for the Challenge [here](https://docs.google.com/forms/d/e/1FAIpQLSdZUTrpoVuotZxUTUbo23k2u-wdiOvkiZWgzorblUsQOCSnew/viewform?usp=sf_link).
