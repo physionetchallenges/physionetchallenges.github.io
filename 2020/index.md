@@ -108,9 +108,10 @@ Entrants may have an overall total of up to 15 scored entries over both the unof
 |-----------------|------------------|------------------|-------------|
 |Unofficial phase | 7 February 2020  | 12 April 2020    | 5           |
 |Hiatus           | 13 April 2020    | 26 April 2020    | 0           |
-|Abstract Deadline| 15 April 2020    | 15 April 2020    | 1 (abstract)|
+|Abstract deadline| 15 April 2020    | 15 April 2020    | 1 (abstract)|
 |Official phase   | 27 April 2020    | 13 August 2020   | 10          |
 |Hiatus           | 13 August 2020   | 12 September 2020| 0           |
+|Preprint deadline| 6 September 2020 | 6 September 2020 | 1 (preprint)|
 |Hackathon        | 13 September 2020| 13 September 2020| 2           |
 |Conference       | 13 September 2020| 16 September 2020| 0           |
 
