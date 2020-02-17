@@ -117,7 +117,7 @@ Entrants may have an overall total of up to 15 scored entries over both the unof
 |Hackathon        | 13 September 2020| 13 September 2020| 0-2 entries     |
 |Conference       | 13 September 2020| 16 September 2020| 1 oral presentation or poster|
 |Final scores released|17 September 2020|24 September 2020|N/A            |
-|Final paper submitted|25 September 2020|30 September 2002|1 paper        |
+|Final paper submitted|25 September 2020|30 September 2020|1 paper        |
 
 (* Entries that fail to score do not count against limits.) 
 
