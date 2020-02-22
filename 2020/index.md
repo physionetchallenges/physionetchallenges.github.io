@@ -24,7 +24,32 @@ The data for this Challenge are from multiple sources:
 
 The initial training set is the public data used in the [China Physiological Signal Challenge in 2018 (CPSC2018)](http://2018.icbeb.org/), held during the 7th 
 International Conference on Biomedical Engineering and Biotechnology in Nanjing, China.
-This training set consists of 6,877 (male: 3,699; female: 3,178) 12-ECG recordings lasting from 6 seconds to 60 seconds. Each recording was sampled at 500 Hz. All data is provided in [WFDB format](https://www.physionet.org/physiotools/wpg/wpg_35.htm) with a [MATLAB v4 file](https://www.mathworks.com/help/matlab/import_export/mat-file-versions.html) and a header containing patient sex, age, and diagnosis (Dx) information at the end of the header file.
+This training set consists of 6,877 (male: 3,699; female: 3,178) 12-ECG recordings lasting from 6 seconds to 60 seconds. Each recording was sampled at 500 Hz. 
+
+All data is provided in [WFDB format](https://www.physionet.org/physiotools/wpg/wpg_35.htm). Each ECG recording has a binary [MATLAB v4 file](https://www.mathworks.com/help/matlab/import_export/mat-file-versions.html) file for the ECG signal data and a text file in [WFDB header](https://www.physionet.org/physiotools/wag/header-5.htm) format describing the recording and patient attributes, including the diagnosis (the labels for the recording). The binary files can be read using the [load function](https://www.mathworks.com/help/matlab/ref/load.html) in MATLAB and the [scipy.io.loadmat](https://docs.scipy.org/doc/scipy/reference/generated/scipy.io.loadmat.html) function in Python, and the example classifier code for [MATLAB](https://github.com/physionetchallenges/matlab-classifier-2020) and [Python](https://github.com/physionetchallenges/python-classifier-2020) and demonstrates how to load the data. The first line of the header provides information about the total number of leads and the total number of samples or points per lead. The following lines describe how each lead was saved, and the last lines provide information on demographics and diagnosis. Below is an example header file `A0001.hea`:
+```
+A0001 12 500 7500 05-Feb-2020 11:39:16
+A0001.mat 16+24 1000/mV 16 0 28 -1716 0 I
+A0001.mat 16+24 1000/mV 16 0 7 2029 0 II
+A0001.mat 16+24 1000/mV 16 0 -21 3745 0 III
+A0001.mat 16+24 1000/mV 16 0 -17 3680 0 aVR
+A0001.mat 16+24 1000/mV 16 0 24 -2664 0 aVL
+A0001.mat 16+24 1000/mV 16 0 -7 -1499 0 aVF
+A0001.mat 16+24 1000/mV 16 0 -290 390 0 V1
+A0001.mat 16+24 1000/mV 16 0 -204 157 0 V2
+A0001.mat 16+24 1000/mV 16 0 -96 -2555 0 V3
+A0001.mat 16+24 1000/mV 16 0 -112 49 0 V4
+A0001.mat 16+24 1000/mV 16 0 -596 -321 0 V5
+A0001.mat 16+24 1000/mV 16 0 -16 -3112 0 V6
+#Age: 74
+#Sex: Male
+#Dx: RBBB
+#Rx: Unknown
+#Hx: Unknown
+#Sx: Unknown
+```
+
+From the first line, we see that the recording number is A0001, and the recording file is in ‘A0001.mat’. The recording has 12 leads, each recorded at 500 Hz sample frequency, and contains 7500 samples. From the next 12 lines, we see that each signal was written at 16 bits with an offset of 24 bits, the amplitude resolution is 1000 and units in mV, the resolution of the analog-to-digital converter (ADC) used to digitize the signal is 16 bits, and baseline value corresponding to 0 physical units, ADC_zero = 0. The first value of the signal, the checksum, and the lead name are included for each signal. From the final 6 lines, we see that the patient is a 74-year-old male with a diagnosis (Dx) of right bundle branch block (RBBB). The medical prescription (Rx), history (Hx), and symptom or surgery (Sx) are unknown.
 
 Each ECG recording has one or more labels from one normal sinus rhythm type and eight abnormal types:
 1. Normal sinus rhythm (Normal) 
@@ -37,15 +62,6 @@ Each ECG recording has one or more labels from one normal sinus rhythm type and 
 8. ST-segment depression (STD)
 9. ST-segment elevation (STE)
 
-For example, the following header indicates that the label is  Right bundle branch block (RBBB):
-```
-#Age: 46
-#Sex: Male
-#Dx: RBBB
-#Rx: Unknown
-#Hx: Unknown
-#Sx: Unknown
-```
 The training data can be downloaded from this [link](https://storage.cloud.google.com/physionet-challenge-2020-12-lead-ecg-public/PhysioNetChallenge2020_Training_CPSC.tar.gz). You can use the following [MD5 hash](https://en.wikipedia.org/wiki/Md5sum) to verify the integrity of the `.tar.gz` file: `8180611b87209d3897b0735a56780204`.
 
 Although we will provide more training data at a later date, we are not planning to release the test data at any point, including after the end of the Challenge. Requests for the test data will not receive a response. We do not release test data to prevent overfitting on the test data and claims or publications of inflated performances. We will entertain requests to run code on the test data after the Challenge on a limited basis based on publication necessity and capacity. (The Challenge is largely staged by volunteers.)
