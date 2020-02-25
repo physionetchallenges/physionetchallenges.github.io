@@ -113,7 +113,7 @@ where _C_<sup>_ℓ_</sup> is the importance of class _ℓ_ and _N_ is the number
 
 Since some recordings may have multiple labels, we normalize their contributions to these scoring functions so that each recording, not each class, makes an equal contribution. For example, if a recording has six classes, and your classifier identifies three labels correctly, identifies one label incorrectly, and misses two labels, then we increment the true positives by 3/6, false positives by 1/6, and false negatives by 2/6 for both scoring functions.
 
-We will share implementations of these [scoring functions](https://github.com/physionetchallenges/evaluation-2020) in both MATLAB and Python, and we will use the Python implementation for evaluating your submissions.
+We have implemented these [scoring functions](https://github.com/physionetchallenges/evaluation-2020) in both MATLAB and Python, and we will use the Python implementation for evaluating your submissions.
 
 ## <a name="rules-and-deadlines"></a> Rules and Deadlines
 
