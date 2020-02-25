@@ -83,6 +83,9 @@ Normal,AF ,I-AVB,LBBB,RBBB,PAC ,PVC ,STD,STE
 
 ## <a name="submissions"></a> Submitting your Algorithm
 We have implemented two baseline models that provide one label per recording in [MATLAB](https://github.com/physionetchallenges/matlab-classifier-2020) and [Python](https://github.com/physionetchallenges/python-classifier-2020). We will share implementations of baseline models in R and Julia soon.
+
+The baseline classifiers are simple logistic regression models. They use heart rate variability (HRV) that we computed from the WFDB signal file (the `.mat` file) with the [PhysioNet Cardiovascular Signal Toolbox](https://github.com/cliffordlab/PhysioNet-Cardiovascular-Signal-Toolbox) and demographic data taken directly from the WFDB header file (the `.hea` file) as predictors. The Matlab classifier also uses [global electrical heterogeneity (GEH)](https://github.com/Tereshchenkolab/Global-Electrical-Heterogeneity) from [XYZ](https://github.com/Tereshchenkolab/Origin) median beats.
+
 Please use the code for these baseline models as a template for your submissions. We will share additional details about submission process soon.
 
 For the first time in any public competition, we will require code both for your trained model and for training your model. If we cannot reproduce your model from the training code, then you will not be eligible for ranking or a prize. 
