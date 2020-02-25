@@ -26,7 +26,7 @@ The initial training set is the public data used in the [China Physiological Sig
 International Conference on Biomedical Engineering and Biotechnology in Nanjing, China.
 This training set consists of 6,877 (male: 3,699; female: 3,178) 12-ECG recordings lasting from 6 seconds to 60 seconds. Each recording was sampled at 500 Hz. 
 
-All data is provided in [WFDB format](https://www.physionet.org/physiotools/wpg/wpg_35.htm). Each ECG recording has a binary [MATLAB v4 file](https://www.mathworks.com/help/matlab/import_export/mat-file-versions.html) file ([see page 32](https://maxwell.ict.griffith.edu.au/spl/matlab-page/matfile_format.pdf)) for the ECG signal data and a text file in [WFDB header](https://www.physionet.org/physiotools/wag/header-5.htm) format describing the recording and patient attributes, including the diagnosis (the labels for the recording). The binary files can be read using the [load function](https://www.mathworks.com/help/matlab/ref/load.html) in MATLAB and the [scipy.io.loadmat](https://docs.scipy.org/doc/scipy/reference/generated/scipy.io.loadmat.html) function in Python. We have created a simple baseline model that provides a label per class per recording. We will share implementations of this model in [MATLAB](https://github.com/physionetchallenges/matlab-classifier-2020) and [Python](https://github.com/physionetchallenges/python-classifier-2020), R, and Julia soon. The first line of the header provides information about the total number of leads and the total number of samples or points per lead. The following lines describe how each lead was saved, and the last lines provide information on demographics and diagnosis. Below is an example header file `A0001.hea`:
+All data is provided in [WFDB format](https://www.physionet.org/physiotools/wpg/wpg_35.htm). Each ECG recording has a binary [MATLAB v4 file](https://www.mathworks.com/help/matlab/import_export/mat-file-versions.html) file ([see page 32](https://maxwell.ict.griffith.edu.au/spl/matlab-page/matfile_format.pdf)) for the ECG signal data and a text file in [WFDB header](https://www.physionet.org/physiotools/wag/header-5.htm) format describing the recording and patient attributes, including the diagnosis (the labels for the recording). The binary files can be read using the [load function](https://www.mathworks.com/help/matlab/ref/load.html) in MATLAB and the [scipy.io.loadmat](https://docs.scipy.org/doc/scipy/reference/generated/scipy.io.loadmat.html) function in Python; please see our [baseline models](https://physionetchallenges.github.io/2020/#rules-and-deadlines) for examples. The first line of the header provides information about the total number of leads and the total number of samples or points per lead. The following lines describe how each lead was saved, and the last lines provide information on demographics and diagnosis. Below is an example header file `A0001.hea`:
 ```
 A0001 12 500 7500 05-Feb-2020 11:39:16
 A0001.mat 16+24 1000/mV 16 0 28 -1716 0 I
@@ -62,7 +62,7 @@ Each ECG recording has one or more labels from one normal sinus rhythm type and 
 8. ST-segment depression (STD)
 9. ST-segment elevation (STE)
 
-The training data can be downloaded from this [link](https://storage.cloud.google.com/physionet-challenge-2020-12-lead-ecg-public/PhysioNetChallenge2020_Training_CPSC.tar.gz). You can use the following [MD5 hash](https://en.wikipedia.org/wiki/Md5sum) to verify the integrity of the `.tar.gz` file: `8180611b87209d3897b0735a56780204`.
+The training data can be downloaded from this [link](https://storage.cloud.google.com/physionet-challenge-2020-12-lead-ecg-public/PhysioNetChallenge2020_Training_CPSC.tar.gz). You can use the following [MD5 hash](https://en.wikipedia.org/wiki/Md5sum) to verify the integrity of the `tar.gz` file: `8180611b87209d3897b0735a56780204`.
 
 Although we will provide more training data at a later date, we are not planning to release the test data at any point, including after the end of the Challenge. Requests for the test data will not receive a response. We do not release test data to prevent overfitting on the test data and claims or publications of inflated performances. We will entertain requests to run code on the test data after the Challenge on a limited basis based on publication necessity and capacity. (The Challenge is largely staged by volunteers.)
 
@@ -82,7 +82,8 @@ Normal,AF ,I-AVB,LBBB,RBBB,PAC ,PVC ,STD,STE
 ```
 
 ## <a name="submissions"></a> Submitting your Algorithm
-We have created a simple baseline model that provides a label per class per recording. We will share implementations of this model in Python, MATLAB, R, and Julia soon. Please use this code as a template for your submissions. We will share additional details about submission process soon.
+We have implemented two baseline models that provide one label per recording in [MATLAB](https://github.com/physionetchallenges/matlab-classifier-2020) and [Python](https://github.com/physionetchallenges/python-classifier-2020). We will share implementations of baseline models in R and Julia soon.
+Please use the code for these baseline models as a template for your submissions. We will share additional details about submission process soon.
 
 For the first time in any public competition, we will require code both for your trained model and for training your model. If we cannot reproduce your model from the training code, then you will not be eligible for ranking or a prize. 
 
