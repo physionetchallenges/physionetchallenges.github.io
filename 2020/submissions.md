@@ -9,15 +9,15 @@ layout: 2020
 
 ### Table of contents
 
-- [Preparation and submission instructions](##Preparation-and-submission-instructions)
-- [MATLAB-specific instructions](##MATLAB-specific-instructions)
-- [Python-specific instructions](##Python-specific-instructions)
-- [R-specific instructions)](##R-specific-instructions)
-- [Julia-specific instructions](##Julia-specific-instructions)
-- [Docker-specific FAQs](##Docker-specific-FAQs)
-- [FAQ](##FAQ)
+- [Preparation and submission instructions](#Preparation-and-submission-instructions)
+- [MATLAB-specific instructions](#MATLAB-specific-instructions)
+- [Python-specific instructions](#Python-specific-instructions)
+- [R-specific instructions)](#R-specific-instructions)
+- [Julia-specific instructions](#Julia-specific-instructions)
+- [Docker-specific FAQs](#Docker-specific-FAQs)
+- [FAQ](###FAQ)
 
-### Preparation and submission instructions
+### <a name="reparation-and-submission-instructions"></a>Preparation and submission instructions
 1. Create a private GitHub repository for your code. We recommend cloning our example code and replacing it with your code. Add physionetchallengeshelper as a collaborator to your repository.
 2. Add your classification code to your repository. Like the example code, your code must be in the root directory of the master branch.
 3. Do not add training data or anything else that is not needed to run your classification code.
