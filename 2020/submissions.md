@@ -9,12 +9,12 @@ layout: 2020
 
 ### Table of contents
 
-- [Preparation and submission instructions](##Preparation and submission instructions)
-- [MATLAB-specific instructions](##MATLAB-specific instructions)
-- [Python-specific instructions](##Python-specific instructions)
-- [R-specific instructions)](##R-specific instructions)
-- [Julia-specific instructions](##Julia-specific instructions)
-- [Docker-specific FAQs](##Docker-specific FAQs)
+- [Preparation and submission instructions](##Preparation-and-submission-instructions)
+- [MATLAB-specific instructions](##MATLAB-specific-instructions)
+- [Python-specific instructions](##Python-specific-instructions)
+- [R-specific instructions)](##R-specific-instructions)
+- [Julia-specific instructions](##Julia-specific-instructions)
+- [Docker-specific FAQs](##Docker-specific-FAQs)
 - [FAQ](##FAQ)
 
 ### Preparation and submission instructions
