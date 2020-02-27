@@ -15,7 +15,7 @@ layout: 2020
 - [R-specific instructions)](#R-specific-instructions)
 - [Julia-specific instructions](#Julia-specific-instructions)
 - [Docker-specific FAQs](#Docker-specific-FAQs)
-- [FAQ](###FAQ)
+- [FAQ](#FAQ)
 
 ### <a name="reparation-and-submission-instructions"></a>Preparation and submission instructions
 1. Create a private GitHub repository for your code. We recommend cloning our example code and replacing it with your code. Add physionetchallengeshelper as a collaborator to your repository.
@@ -25,7 +25,7 @@ layout: 2020
 5. Use Google Forms to submit your entry. We will clone your GitHub repository using the HTTPS URL that ends in .git (see the figure on right). You can get this URL by clicking on “Clone or download” on GitHub and copying and pasting the URL. Please DO NOT enter the URL at the top of your web browser because it does not end in .git. Please see here for more details.
 6. We will put the scores for successful entries on the leaderboard.  The leaderboard will publicly show your team name, run time, and score.
 
-### MATLAB-specific instructions
+### <a name="MATLAB-specific-instructions"></a>MATLAB-specific instructions
 
 1. Confirm that your MATLAB code compiles and runs in MATLAB 2019b.
 2. Using our sample MATLAB classification code ([link](https://github.com/physionetchallenges/matlab-classifier-2020)) as a template, format your code in the following way. Consider downloading this repository, replacing our code with your code, and adding the updated files to your repository.
@@ -37,7 +37,7 @@ layout: 2020
 8. We will download your code, compile it using mcc -m driver.m -a . command, and run it on Google Cloud.
 9. Here is a sample repository that you can use as a template: [Matlab classifier](https://github.com/physionetchallenges/matlab-classifier-2020).
 
-### Python-specific instructions
+### <a name="Python-specific-instructions"></a>Python-specific instructions
 1. Using our sample Python classification code ([link](https://github.com/physionetchallenges/python-classifier-2020)) as a template, format your code in the following way. Consider downloading this repository, replacing our code with your code, and adding the updated files to your repository.
 2. Dockerfile: Update to specify the version of Python that you are using on your machine. Add any additional packages that you need. Do not change the name or location of this file. The structure of this file is important, especially the 3 lines that are marked as Do Not Delete.
 3. requirements.txt: Add Python packages to be installed with pip. Specify the versions of these packages that you are using on your machine. Remove unnecessary packages, such as Matplotlib, that your classification code does not need.
@@ -50,7 +50,7 @@ layout: 2020
 8. We will download your code, build a Docker container from your Dockerfile, and run it on Google Cloud.
 9. Here is a sample repository that you can use as a template: [Python classifier](https://github.com/physionetchallenges/python-classifier-2020).
 
-### R-specific instructions
+###  <a name="R-specific-instructions"></a>R-specific instructions
 
 1. Using our sample R classification code (link) as a template, format your code in the following way. Consider downloading this repository, replacing our code with your code, and adding the updated files to your repository.
 2. Dockerfile: Update to specify the version of R that you are using on your machine. Add any additional packages that you need. Do not change the name or the location of this file. The structure of this file is important, and especially the 3 lines that are marked as Do Not Delete.
@@ -63,7 +63,7 @@ layout: 2020
 7. We will download your code, build a Docker container from your Dockerfile, and run it on Google Cloud.
 8. Here is a sample repository (coming soon) that you can use as a template: [R classifier](https://github.com/physionetchallenges/r-classifier-2020)
 
-### Julia-specific instructions
+###  <a name="Julia-specific-instructions"></a>Julia-specific instructions
 
 1. Using our sample Julia classification code (link) as a template, format your code in the following way. Consider downloading this repository, replacing our code with your code, and adding the updated files to your repository.
 2. Dockerfile: Update to specify the version of Julia that you are using on your machine. Add any additional packages that you need. Do not change the name or the location of this file. The structure of this file is important, and especially the 3 lines that are marked as Do Not Delete.
@@ -76,7 +76,7 @@ layout: 2020
 7. We will download your code, build a Docker container from your Dockerfile, and run it on Google Cloud.
 8. Here is a sample repository (coming soon) that you can use as a template: [Julia classifier](https://github.com/physionetchallenges/julia-classifier-2020).
 
-### Docker-specific FAQs
+###  <a name="Docker-specific-FAQs"></a> Docker-specific FAQs
 
 1. Why containers?
 
@@ -176,7 +176,7 @@ docker run -it <<image name from above>> bash
 This will take you into your container and you should see your code.
 
 
-### FAQ
+### <a name="FAQs"></a> FAQ
 1. Should I submit your example code to test the submission system?
 
 No, please only submit your code to the submission system.
