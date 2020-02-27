@@ -32,7 +32,9 @@ layout: 2020
 3. requirements.txt: Add Python packages to be installed with pip. Specify the versions of these packages that you are using on your machine. Remove unnecessary packages, such as Matplotlib, that your classification code does not need.
 4. AUTHORS.txt, LICENSE.txt, README.md: Update as needed. Unfortunately, our submission system will be unable to read your README.
 5. run_12ECG_classifier.py: Update this script to load and run your model using the following functions.
+
   a. load_12ECG_model: Update this function to load your model weights and any parameters from files in your submission. It takes no input (place any filenames, etc. in the body of the function itself) and returns any output that you choose. You must implement this function in the run_12ECG_classifier.py script.
+  
   b. run_12ECG_classifier: Update this function to run your model. It takes the header with all the data and demographics information, a matrix of 12 leads ECG (columns are ECG leads and rows are time windows), and the output from load_12ECG_model as input and returns a risk score and a binary classification for each class as output. You must implement this function in the run_12ECG_classifier.py script
 6 . driver.py: Do not change this script. It calls your load_12ECG_model function only once and your run_12ECG_classifier function for each 12ECG recording. It also performs all file input and output. We will not use the driver.py script from your repository, so any change made to this code will not be included.
 7. Add your code to the root/base directory of the master branch of your GitHub repository.
@@ -167,12 +169,15 @@ This will take you into your container and you should see your code.
 
 ### FAQ
 1. Should I submit your example code to test the submission system?
+
 No, please only submit your code to the submission system.
 
 2. Should I submit an empty repository to test the submission system?
+
 No, please only submit an entry after you have finished and tested your code.
 
 3. What can I do to make sure that my submission is successful?
+
 You can avoid most submission errors with the following steps:
   a. Do not change the driver script.  We will only use the driver scripts (driver.m, driver.py, and driver.R, driver.jl) in the MATLAB, Python, R, and Julia example repositories ([https://github.com/physionetchallenges](https://github.com/physionetchallenges), so any changes that you make will not be used.
   b. Do build your Docker image.  The above FAQ provides advice for common Docker-related issues.
@@ -181,12 +186,15 @@ You can avoid most submission errors with the following steps:
 
 
 4. Do I need to upload the training data? What about the code for evaluating my algorithm?
+
 No, we have the training and test data and evaluation code.
 
 5. Do you run the code that was in my GitHub repository at the time of submission?
+
 No, not yet. If you change your code after submitting, then we may or may not run the updated version of your code. If you want to update your code but do not want us to run the updates (yet), then please make changes in a subdirectory or in another branch of your repository.
 
 6. Why is my entry unsuccessful on your submission system? It works on my computer. 
+
 There are several common reasons for unexpected errors:
   a. You may have changed the driver script. For consistency across submissions from different participants, we will use the driver scripts available on [https://github.com/physionetchallenges/](https://github.com/physionetchallenges).
   b.You may have unmet dependencies. Note that packages in the requirements.txt file for Python submissions may have dependencies, such as gcc, that pip is unable to install. You can often identify such issues by trying to build a Docker image from your Dockerfile.
@@ -194,6 +202,7 @@ There are several common reasons for unexpected errors:
 
 
 7. Why does my code take so long to run on your submission system? It runs quickly on my computer.
+
 We run each classifier on Google Cloud using an [n1-highmem-2 VM instance](https://cloud.google.com/compute/docs/machine-types#n1_high-memory_machine_types) with 2 vCPUs, 13 GB RAM, and an NVIDIA T4 Tensor Core GPU (optional). Each classifier has a 24 hour time limit on the test set. If your classification code takes significantly longer, then you may be able to significantly reduce your run time with one or more of the following changes:
   a. Train your model before submission.
   b. Omit unnecessary packages, files, etc. from your entry. For example, unless your classification code uses Matplotlib, remove it from your requirements.txt file.
@@ -203,6 +212,7 @@ We run each classifier on Google Cloud using an [n1-highmem-2 VM instance](https
 
 
 8. My entry had some kind of error.  Did I lose one of my total entries?
+
 No, only scored entries (submitted entries that receive a score) count against the total number of allowed entries.
 
 
