@@ -6,26 +6,25 @@ layout: 2020
 
 ## PhysioNet/CinC Challenge 2020: Cloud Submission Instructions
 
-
 ### Table of contents
 
-- [Preparation and submission instructions](#Preparation-and-submission-instructions)
-- [MATLAB-specific instructions](#MATLAB-specific-instructions)
-- [Python-specific instructions](#Python-specific-instructions)
-- [R-specific instructions](#R-specific-instructions)
-- [Julia-specific instructions](#Julia-specific-instructions)
-- [Docker-specific FAQs](#Docker-specific-FAQs)
-- [FAQ](#FAQ)
+- [Preparation and submission instructions](#preparation)
+- [MATLAB-specific instructions](#matlab)
+- [Python-specific instructions](#python)
+- [R-specific instructions](#r)
+- [Julia-specific instructions](#julia)
+- [Docker-specific FAQs](#docker)
+- [FAQ](#faq)
 
-### <a name="reparation-and-submission-instructions"></a>Preparation and submission instructions
+### <a name="preparation"></a>Preparation and submission instructions
 1. Create a private GitHub repository for your code. We recommend cloning our example code and replacing it with your code. Add physionetchallengeshelper as a collaborator to your repository.
 2. Add your classification code to your repository. Like the example code, your code must be in the root directory of the master branch.
 3. Do not add training data or anything else that is not needed to run your classification code.
 4. Follow the instructions for the programming language of your submission.
-5. Use Google Forms to submit your entry. We will clone your GitHub repository using the HTTPS URL that ends in .git (see the figure on right). You can get this URL by clicking on “Clone or download” on GitHub and copying and pasting the URL. Please DO NOT enter the URL at the top of your web browser because it does not end in .git. Please see here for more details.
+5. Use Google Forms to submit your entry. We will clone your GitHub repository using the HTTPS URL that ends in `.git`. You can get this URL by clicking on “Clone or download” on GitHub and copying and pasting the URL. Please DO NOT enter the URL at the top of your web browser because it does not end in `.git`. Please see [here](https://help.github.com/en/articles/which-remote-url-should-i-use) for an example.
 6. We will put the scores for successful entries on the leaderboard.  The leaderboard will publicly show your team name, run time, and score.
 
-### <a name="MATLAB-specific-instructions"></a>MATLAB-specific instructions
+### <a name="matlab"></a>MATLAB-specific instructions
 
 1. Confirm that your MATLAB code compiles and runs in MATLAB 2019b.
 2. Using our sample MATLAB classification code ([link](https://github.com/physionetchallenges/matlab-classifier-2020)) as a template, format your code in the following way. Consider downloading this repository, replacing our code with your code, and adding the updated files to your repository.
@@ -34,10 +33,10 @@ layout: 2020
 5. run_12ECG_classifier.m: Update this script to run your model. It takes the header with all the data and demographics information, a matrix of 12 leads ECG (columns are ECG leads and rows are time windows), and the output from load_12ECG_model as input and returns a probability or confidence score and a binary classification for each class as output. You must implement this function in the run_12ECG_classifier.m script. 
 6. driver.m: Do not change this script. It calls your load_12ECG_model function once, and it calls your run_12ECG_classifier function for each 12ECG recording. It also performs all file input and output. We will not use the driver.m script from your repository, so any change made to this code will not be included.
 7. Add your code to the root/base directory of the master branch of your GitHub repository.
-8. We will download your code, compile it using mcc -m driver.m -a . command, and run it on Google Cloud.
+8. We will download your code, compile it using `mcc -m driver.m -a .` command, and run it on Google Cloud.
 9. Here is a sample repository that you can use as a template: [Matlab classifier](https://github.com/physionetchallenges/matlab-classifier-2020).
 
-### <a name="Python-specific-instructions"></a>Python-specific instructions
+### <a name="python"></a>Python-specific instructions
 1. Using our sample Python classification code ([link](https://github.com/physionetchallenges/python-classifier-2020)) as a template, format your code in the following way. Consider downloading this repository, replacing our code with your code, and adding the updated files to your repository.
 2. Dockerfile: Update to specify the version of Python that you are using on your machine. Add any additional packages that you need. Do not change the name or location of this file. The structure of this file is important, especially the 3 lines that are marked as Do Not Delete.
 3. requirements.txt: Add Python packages to be installed with pip. Specify the versions of these packages that you are using on your machine. Remove unnecessary packages, such as Matplotlib, that your classification code does not need.
@@ -50,7 +49,7 @@ layout: 2020
 8. We will download your code, build a Docker container from your Dockerfile, and run it on Google Cloud.
 9. Here is a sample repository that you can use as a template: [Python classifier](https://github.com/physionetchallenges/python-classifier-2020).
 
-###  <a name="R-specific-instructions"></a>R-specific instructions
+###  <a name="r"></a>R-specific instructions
 
 1. Using our sample R classification code (link) as a template, format your code in the following way. Consider downloading this repository, replacing our code with your code, and adding the updated files to your repository.
 2. Dockerfile: Update to specify the version of R that you are using on your machine. Add any additional packages that you need. Do not change the name or the location of this file. The structure of this file is important, and especially the 3 lines that are marked as Do Not Delete.
@@ -63,7 +62,7 @@ layout: 2020
 7. We will download your code, build a Docker container from your Dockerfile, and run it on Google Cloud.
 8. Here is a sample repository (coming soon) that you can use as a template: [R classifier](https://github.com/physionetchallenges/r-classifier-2020)
 
-###  <a name="Julia-specific-instructions"></a>Julia-specific instructions
+###  <a name="julia"></a>Julia-specific instructions
 
 1. Using our sample Julia classification code (link) as a template, format your code in the following way. Consider downloading this repository, replacing our code with your code, and adding the updated files to your repository.
 2. Dockerfile: Update to specify the version of Julia that you are using on your machine. Add any additional packages that you need. Do not change the name or the location of this file. The structure of this file is important, and especially the 3 lines that are marked as Do Not Delete.
@@ -76,7 +75,7 @@ layout: 2020
 7. We will download your code, build a Docker container from your Dockerfile, and run it on Google Cloud.
 8. Here is a sample repository (coming soon) that you can use as a template: [Julia classifier](https://github.com/physionetchallenges/julia-classifier-2020).
 
-###  <a name="Docker-specific-FAQs"></a> Docker-specific FAQs
+###  <a name="docker"></a> Docker-specific FAQs
 
 1. Why containers?
 
@@ -87,7 +86,6 @@ Containers allow you to define the environment that you think is best suited for
 2. Quickly, how can I test my submission locally?
 
 Install Docker → clone your repo → build an image → run it on a single recording. 
-
 
 3. Less quickly, how can I test my submission locally?  Tell me more-or-less exactly what to do.
 
@@ -125,7 +123,6 @@ user@computer:~/docker_test$ ls output_directory/
 A0001.csv  A0002.csv  A0003.csv  A0004.csv  A0005.csv
 ```
 
-
 4. How do I install Docker?
 
 Go here: [https://docs.docker.com/install/](https://docs.docker.com/install/) and install the Docker Community Edition. Troubleshooting: [https://docs.docker.com/config/daemon/](https://docs.docker.com/config/daemon/)
@@ -142,18 +139,15 @@ Think of Docker as a series of images that are layered on top of each other (see
 
 The single most common error we noticed in the requirements.txt file for Python submissions was the sklearn package. If your entry uses scikit-learn, then you need to install via pip using the package name scikit-learn instead of sklearn in your requirements.txt file: [See here](https://scikit-learn.org/stable/install.html).
 
-
 8. xgboost?
 
 For Python, replace python:3.7.3-slim with python:3.7.3-stretch in the first line of your Dockerfile. This image includes additional packages, such as GCC, that xgboost needs. Additionally, include xgboost in your requirements.txt file.  Specify the version of xgboost that you are using in your requirements.txt file.
 
 For R, add RUN R -e ‘install.packages(“xgboost”)’ to your Dockerfile.
 
-
 9. Pandas?
 
 Replace python:3.7.3-slim with python:3.7.3-stretch in the first line of your Dockerfile.
-
 
 10. Why can’t I install a common Python or R package using Python or R’s package manager?
 
@@ -175,8 +169,7 @@ docker run -it <<image name from above>> bash
 ```
 This will take you into your container and you should see your code.
 
-
-### <a name="FAQs"></a> FAQ
+### <a name="faq"></a> FAQ
 1. Should I submit your example code to test the submission system?
 
 No, please only submit your code to the submission system.
@@ -193,7 +186,6 @@ You can avoid most submission errors with the following steps:
   c. Do test your Docker code on at least one file from the training dataset.
   d. Do try to reduce the run time of your code by moving code from the run_12ECG_classifier function to the load_12ECG_model function for repeated tasks.  Most submissions run in a couple of hours on the test data.
 
-
 4. Do I need to upload the training data? What about the code for evaluating my algorithm?
 
 No, we have the training and test data and evaluation code.
@@ -209,7 +201,6 @@ There are several common reasons for unexpected errors:
   b.You may have unmet dependencies. Note that packages in the requirements.txt file for Python submissions may have dependencies, such as gcc, that pip is unable to install. You can often identify such issues by trying to build a Docker image from your Dockerfile.
   c. You may have used a specific version of a Python, R, or Julia package on your computer, but you didn’t specify the version of the package in your Dockerfile or your requirements.txt file, so we installed the latest available version of the package. These versions may be incompatible. For example, if you train your data using one version of a machine learning package and we test it with another version of the package, then your entry may fail.
 
-
 7. Why does my code take so long to run on your submission system? It runs quickly on my computer.
 
 We run each classifier on Google Cloud using an [n1-highmem-2 VM instance](https://cloud.google.com/compute/docs/machine-types#n1_high-memory_machine_types) with 2 vCPUs, 13 GB RAM, and an NVIDIA T4 Tensor Core GPU (optional). Each classifier has a 24 hour time limit on the test set. If your classification code takes significantly longer, then you may be able to significantly reduce your run time with one or more of the following changes:
@@ -219,13 +210,9 @@ We run each classifier on Google Cloud using an [n1-highmem-2 VM instance](https
   d. Profile your code. For example, it should take roughly twice as much time to make classifications for 200 patients as it does for 100 patients. If it takes significantly longer, then there is likely room for improvement.
   e. Look into best practices for any machine learning packages that you are using in your entry. For example, loading model weights in TensorFlow for each patient in the run_12ECG_classifier function instead of once in the load_12ECG_model function will make your code run much more slowly.
 
-
 8. My entry had some kind of error.  Did I lose one of my total entries?
 
 No, only scored entries (submitted entries that receive a score) count against the total number of allowed entries.
-
-
-
 
 ---
 
