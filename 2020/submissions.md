@@ -116,29 +116,36 @@ A0001.csv  A0002.csv  A0003.csv  A0004.csv  A0005.csv
 
 
 4. How do I install Docker?
+
 Go here: [https://docs.docker.com/install/](https://docs.docker.com/install/) and install the Docker Community Edition. Troubleshooting: [https://docs.docker.com/config/daemon/](https://docs.docker.com/config/daemon/)
 
 5. Do I have to use your Dockerfile?
+
 NO. The only part of the Dockerfile we care about are the three lines marked as “DO NOT EDIT”. These three lines help ensure that, during the build process of the container, your code is copied into a folder called physionet so that our cloud based pipelines can find your code and run it. Please do not change those three lines. You are free to change your base image, and at times you should (see next question).
 
 6. What’s the base image in Docker?
+
 Think of Docker as a series of images that are layered on top of each other (see figure). This shows that our image is built on top of a very lightweight Ubuntu OS with Python 3.7.3. We get it from the official Docker Hub (think of it as a GitHub for Docker) for Python. Then install our requirements (NumPy and SciPy) on it. If you need the latest version of TensorFlow, then search for it on [hub.docker.com](https://hub.docker.com/) and edit your file so that the first line of your Dockerfile now reads as: FROM tensorflow If you need a specific version (say 1.11), then lookup the [tags](https://hub.docker.com/r/tensorflow/tensorflow/tags) and change it accordingly to FROM tensorflow:1.11.0
 
 7. sklearn or scikit-learn?
+
 The single most common error we noticed in the requirements.txt file for Python submissions was the sklearn package. If your entry uses scikit-learn, then you need to install via pip using the package name scikit-learn instead of sklearn in your requirements.txt file: [See here](https://scikit-learn.org/stable/install.html).
 
 
 8. xgboost?
+
 For Python, replace python:3.7.3-slim with python:3.7.3-stretch in the first line of your Dockerfile. This image includes additional packages, such as GCC, that xgboost needs. Additionally, include xgboost in your requirements.txt file.  Specify the version of xgboost that you are using in your requirements.txt file.
 
 For R, add RUN R -e ‘install.packages(“xgboost”)’ to your Dockerfile.
 
 
 9. Pandas?
+
 Replace python:3.7.3-slim with python:3.7.3-stretch in the first line of your Dockerfile.
 
 
 10. Why can’t I install a common Python or R package using Python or R’s package manager?
+
 Some packages have dependencies, such as GCC, that language package managers do not install.  Try replacing python:3.7.3-slim with python:3.7.3-stretch.
 
 If the first line of your Dockerfile is FROM python:3.7.3-slim, then you are building a Docker image with the Debian Linux distribution, so you can install GCC and other related libraries that many Python and R packages use by adding the line RUN apt install build-essential to your Dockerfile before installing your Python or R packages.
