@@ -6,6 +6,17 @@ layout: 2020
 
 ## PhysioNet/CinC Challenge 2020: Cloud Submission Instructions
 
+
+### Table of contents
+
+- [Preparation and submission instructions](#Preparation and submission instructions)
+- [MATLAB-specific instructions](#MATLAB-specific instructions)
+- [Python-specific instructions](#Python-specific instructions)
+- [R-specific instructions)](#R-specific instructions)
+- [Julia-specific instructions](#Julia-specific instructions)
+- [Docker-specific FAQs](#Docker-specific FAQs)
+- [FAQ](#FAQ)
+
 ### Preparation and submission instructions
 1. Create a private GitHub repository for your code. We recommend cloning our example code and replacing it with your code. Add physionetchallengeshelper as a collaborator to your repository.
 2. Add your classification code to your repository. Like the example code, your code must be in the root directory of the master branch.
@@ -32,10 +43,8 @@ layout: 2020
 3. requirements.txt: Add Python packages to be installed with pip. Specify the versions of these packages that you are using on your machine. Remove unnecessary packages, such as Matplotlib, that your classification code does not need.
 4. AUTHORS.txt, LICENSE.txt, README.md: Update as needed. Unfortunately, our submission system will be unable to read your README.
 5. run_12ECG_classifier.py: Update this script to load and run your model using the following functions.
-
-  a. load_12ECG_model: Update this function to load your model weights and any parameters from files in your submission. It takes no input (place any filenames, etc. in the body of the function itself) and returns any output that you choose. You must implement this function in the run_12ECG_classifier.py script.
-  
-  b. run_12ECG_classifier: Update this function to run your model. It takes the header with all the data and demographics information, a matrix of 12 leads ECG (columns are ECG leads and rows are time windows), and the output from load_12ECG_model as input and returns a risk score and a binary classification for each class as output. You must implement this function in the run_12ECG_classifier.py script
+  - load_12ECG_model: Update this function to load your model weights and any parameters from files in your submission. It takes no input (place any filenames, etc. in the body of the function itself) and returns any output that you choose. You must implement this function in the run_12ECG_classifier.py script.
+  - run_12ECG_classifier: Update this function to run your model. It takes the header with all the data and demographics information, a matrix of 12 leads ECG (columns are ECG leads and rows are time windows), and the output from load_12ECG_model as input and returns a risk score and a binary classification for each class as output. You must implement this function in the run_12ECG_classifier.py script
 6 . driver.py: Do not change this script. It calls your load_12ECG_model function only once and your run_12ECG_classifier function for each 12ECG recording. It also performs all file input and output. We will not use the driver.py script from your repository, so any change made to this code will not be included.
 7. Add your code to the root/base directory of the master branch of your GitHub repository.
 8. We will download your code, build a Docker container from your Dockerfile, and run it on Google Cloud.
@@ -47,8 +56,8 @@ layout: 2020
 2. Dockerfile: Update to specify the version of R that you are using on your machine. Add any additional packages that you need. Do not change the name or the location of this file. The structure of this file is important, and especially the 3 lines that are marked as Do Not Delete.
 3. AUTHORS.txt, LICENSE.txt, README.md: Update as needed. Unfortunately, our submission system will be unable to read your README.
 4. run_12ECG_classifier.R: Update this script to load and run your model using the following functions.
-  a. load_12ECG_model: Update this function to load your model weights and any parameters from files in your submission. It takes no input (place any filenames, etc. in the body of the function itself) and returns any output that you choose. You must implement this function in the run_12ECG_classifier.R script.
-  b. run_12ECG_classifier: Update this function to run your model. It takes the header with all the data and demographics information, a matrix of 12 leads ECG (columns are ECG leads and rows are time windows), and the output from load_12ECG_model as input and returns a risk score and a binary classification for each class as output. You must implement this function in the run_12ECG_classifier.R script.
+- load_12ECG_model: Update this function to load your model weights and any parameters from files in your submission. It takes no input (place any filenames, etc. in the body of the function itself) and returns any output that you choose. You must implement this function in the run_12ECG_classifier.R script.
+- run_12ECG_classifier: Update this function to run your model. It takes the header with all the data and demographics information, a matrix of 12 leads ECG (columns are ECG leads and rows are time windows), and the output from load_12ECG_model as input and returns a risk score and a binary classification for each class as output. You must implement this function in the run_12ECG_classifier.R script.
 5. driver.R: Do not change this script. It calls your load_12ECG_model function only once and your run_12ECG_classifier function for each 12ECG recording. It also performs all file input and output. We will not use the driver.R script from your repository, so any change made to this code will not be included.
 6. Add your code to the root/base directory of the master branch of your GitHub repository.
 7. We will download your code, build a Docker container from your Dockerfile, and run it on Google Cloud.
@@ -60,8 +69,8 @@ layout: 2020
 2. Dockerfile: Update to specify the version of Julia that you are using on your machine. Add any additional packages that you need. Do not change the name or the location of this file. The structure of this file is important, and especially the 3 lines that are marked as Do Not Delete.
 3. AUTHORS.txt, LICENSE.txt, README.md: Update as needed. Unfortunately, our submission system will be unable to read your README.
 4. run_12ECG_classifier.jl: Update this script to load and run your model using the following functions.
-  a.load_12ECG_model: Update this function to load your model weights and any parameters from files in your submission. It takes no input (place any filenames, etc. in the body of the function itself) and returns any output that you choose. You must implement this function in the run_12ECG_classifier.jl script.
-  b. run_12ECG_classifier: Update this function to run your model. It takes the header with all the data and demographics information, a matrix of 12 leads ECG (columns are ECG leads and rows are time windows), and the output from load_12ECG_model as input and returns a risk score and a binary classification for each class as output. You must implement this function in the run_12ECG_classifier.jl script.
+- load_12ECG_model: Update this function to load your model weights and any parameters from files in your submission. It takes no input (place any filenames, etc. in the body of the function itself) and returns any output that you choose. You must implement this function in the run_12ECG_classifier.jl script.
+- run_12ECG_classifier: Update this function to run your model. It takes the header with all the data and demographics information, a matrix of 12 leads ECG (columns are ECG leads and rows are time windows), and the output from load_12ECG_model as input and returns a risk score and a binary classification for each class as output. You must implement this function in the run_12ECG_classifier.jl script.
 5. driver.jl: Do not change this script. It calls your load_12ECG_model function only once and your run_12ECG_classifier function for each 12ECG recording. It also performs all file input and output. We will not use the driver.jl script from your repository, so any change made to this code will not be included.
 6. Add your code to the root/base directory of the master branch of your GitHub repository.
 7. We will download your code, build a Docker container from your Dockerfile, and run it on Google Cloud.
