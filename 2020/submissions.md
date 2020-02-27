@@ -33,8 +33,8 @@ layout: 2020
 5. run_12ECG_classifier.m: Update this script to run your model. It takes the header with all the data and demographics information, a matrix of 12 leads ECG (columns are ECG leads and rows are time windows), and the output from load_12ECG_model as input and returns a probability or confidence score and a binary classification for each class as output. You must implement this function in the run_12ECG_classifier.m script. 
 6. driver.m: Do not change this script. It calls your load_12ECG_model function once, and it calls your run_12ECG_classifier function for each 12ECG recording. It also performs all file input and output. We will not use the driver.m script from your repository, so any change made to this code will not be included.
 7. Add your code to the root/base directory of the master branch of your GitHub repository.
-8. We will download your code, compile it using `mcc -m driver.m -a .` command, and run it on Google Cloud.
-9. Here is a sample repository that you can use as a template: [Matlab classifier](https://github.com/physionetchallenges/matlab-classifier-2020).
+8. We will download your code, compile it using the MATLAB compiler (`mcc -m driver.m -a .`), and run it on Google Cloud.
+9. Here is a sample repository that you can use as a template: [MATLAB classifier](https://github.com/physionetchallenges/matlab-classifier-2020).
 
 ### <a name="python"></a>Python-specific instructions
 1. Using our sample Python classification code ([link](https://github.com/physionetchallenges/python-classifier-2020)) as a template, format your code in the following way. Consider downloading this repository, replacing our code with your code, and adding the updated files to your repository.
@@ -44,7 +44,7 @@ layout: 2020
 5. run_12ECG_classifier.py: Update this script to load and run your model using the following functions.
   -- load_12ECG_model: Update this function to load your model weights and any parameters from files in your submission. It takes no input (place any filenames, etc. in the body of the function itself) and returns any output that you choose. You must implement this function in the run_12ECG_classifier.py script.
   -- run_12ECG_classifier: Update this function to run your model. It takes the header with all the data and demographics information, a matrix of 12 leads ECG (columns are ECG leads and rows are time windows), and the output from load_12ECG_model as input and returns a risk score and a binary classification for each class as output. You must implement this function in the run_12ECG_classifier.py script
-6 . driver.py: Do not change this script. It calls your load_12ECG_model function only once and your run_12ECG_classifier function for each 12ECG recording. It also performs all file input and output. We will not use the driver.py script from your repository, so any change made to this code will not be included.
+6. driver.py: Do not change this script. It calls your load_12ECG_model function only once and your run_12ECG_classifier function for each 12ECG recording. It also performs all file input and output. We will not use the driver.py script from your repository, so any change made to this code will not be included.
 7. Add your code to the root/base directory of the master branch of your GitHub repository.
 8. We will download your code, build a Docker container from your Dockerfile, and run it on Google Cloud.
 9. Here is a sample repository that you can use as a template: [Python classifier](https://github.com/physionetchallenges/python-classifier-2020).
@@ -91,7 +91,7 @@ Install Docker → clone your repo → build an image → run it on a single rec
 
 Here are instructions for testing the [Python example code](https://github.com/physionetchallenges/python-classifier-2020) in Linux.  You can test the non-Python example code in a Mac, for example, in a similar way.  If you have trouble testing your code, then make sure that you can test the example code, which is known to work.
 
-First, create a folder, docker_test, in your home directory. Then, put the example code from GitHub in docker_test/python-classifier-2020-master, some of the training data in docker_test/input_directory, and an empty folder for the classifications in docker_test/output_directory.  Finally, build a Docker image and ran the example code using the following steps:
+First, create a folder, docker_test, in your home directory. Then, put the example code from GitHub in docker_test/python-classifier-2020-master, some of the training data in docker_test/input_directory, and an empty folder for the classifications in docker_test/output_directory.  Finally, build a Docker image and run the example code using the following steps:
 ```
 user@computer:~/docker_test$ ls
 input_directory  output_directory  python-classifier-2020-master
@@ -125,15 +125,15 @@ A0001.csv  A0002.csv  A0003.csv  A0004.csv  A0005.csv
 
 4. How do I install Docker?
 
-Go here: [https://docs.docker.com/install/](https://docs.docker.com/install/) and install the Docker Community Edition. Troubleshooting: [https://docs.docker.com/config/daemon/](https://docs.docker.com/config/daemon/)
+Go to [https://docs.docker.com/install/](https://docs.docker.com/install/) and install the Docker Community Edition. For troubleshooting, see [https://docs.docker.com/config/daemon/](https://docs.docker.com/config/daemon/)
 
 5. Do I have to use your Dockerfile?
 
-NO. The only part of the Dockerfile we care about are the three lines marked as “DO NOT EDIT”. These three lines help ensure that, during the build process of the container, your code is copied into a folder called physionet so that our cloud based pipelines can find your code and run it. Please do not change those three lines. You are free to change your base image, and at times you should (see next question).
+Ni. The only part of the Dockerfile we care about are the three lines marked as ”DO NOT EDIT”. These three lines help ensure that, during the build process of the container, your code is copied into a folder called physionet so that our cloud-based pipelines can find your code and run it. Please do not change those three lines. You are free to change your base image, and at times you should (see next question).
 
 6. What’s the base image in Docker?
 
-Think of Docker as a series of images that are layered on top of each other (see figure). This shows that our image is built on top of a very lightweight Ubuntu OS with Python 3.7.3. We get it from the official Docker Hub (think of it as a GitHub for Docker) for Python. Then install our requirements (NumPy and SciPy) on it. If you need the latest version of TensorFlow, then search for it on [hub.docker.com](https://hub.docker.com/) and edit your file so that the first line of your Dockerfile now reads as: FROM tensorflow If you need a specific version (say 1.11), then lookup the [tags](https://hub.docker.com/r/tensorflow/tensorflow/tags) and change it accordingly to FROM tensorflow:1.11.0
+Think of Docker as a series of images, or snapshots of a virtual machine, that are layered on top of each other. For example, our image may built on top of a very lightweight Ubuntu operating system with Python 3.7.3 that we get from the official Docker Hub (think of it as a GitHub for Docker). We can then install our requirements (NumPy and SciPy) on it. If you need the latest version of TensorFlow, then search for it on [hub.docker.com](https://hub.docker.com/) and edit your file so that the first line of your Dockerfile now reads as: `FROM tensorflow`. For a specific version, say 1.11, lookup the [tags](https://hub.docker.com/r/tensorflow/tensorflow/tags) and change it accordingly to `FROM tensorflow:1.11.0`. We recommend using specific versions for reproducibility.
 
 7. sklearn or scikit-learn?
 
@@ -141,19 +141,19 @@ The single most common error we noticed in the requirements.txt file for Python 
 
 8. xgboost?
 
-For Python, replace python:3.7.3-slim with python:3.7.3-stretch in the first line of your Dockerfile. This image includes additional packages, such as GCC, that xgboost needs. Additionally, include xgboost in your requirements.txt file.  Specify the version of xgboost that you are using in your requirements.txt file.
+For Python, replace `python:3.7.3-slim` with `python:3.7.3-stretch` in the first line of your Dockerfile. This image includes additional packages, such as GCC, that xgboost needs. Additionally, include xgboost in your requirements.txt file.  Specify the version of xgboost that you are using in your requirements.txt file.
 
-For R, add RUN R -e ‘install.packages(“xgboost”)’ to your Dockerfile.
+For R, add `RUN R -e 'install.packages(“xgboost”)'` to your Dockerfile.
 
 9. Pandas?
 
-Replace python:3.7.3-slim with python:3.7.3-stretch in the first line of your Dockerfile.
+Replace `python:3.7.3-slim` with `python:3.7.3-stretch` in the first line of your Dockerfile.
 
 10. Why can’t I install a common Python or R package using Python or R’s package manager?
 
-Some packages have dependencies, such as GCC, that language package managers do not install.  Try replacing python:3.7.3-slim with python:3.7.3-stretch.
+Some packages have dependencies, such as GCC, that need to be installed.  Try replacing `python:3.7.3-slim` with `python:3.7.3-stretch`, which includes more packages by default, or installing the dependencies
 
-If the first line of your Dockerfile is FROM python:3.7.3-slim, then you are building a Docker image with the Debian Linux distribution, so you can install GCC and other related libraries that many Python and R packages use by adding the line RUN apt install build-essential to your Dockerfile before installing your Python or R packages.
+If the first line of your Dockerfile is `FROM python:3.7.3-slim`, then you are building a Docker image with the Debian Linux distribution, so you can install GCC and other related libraries that many Python and R packages use by adding the line `RUN apt install build-essential` to your Dockerfile before installing these packages.
 
 11. How do I build my image?
 ```
@@ -203,7 +203,7 @@ There are several common reasons for unexpected errors:
 
 7. Why does my code take so long to run on your submission system? It runs quickly on my computer.
 
-We run each classifier on Google Cloud using an [n1-highmem-2 VM instance](https://cloud.google.com/compute/docs/machine-types#n1_high-memory_machine_types) with 2 vCPUs, 13 GB RAM, and an NVIDIA T4 Tensor Core GPU (optional). Each classifier has a 24 hour time limit on the test set. If your classification code takes significantly longer, then you may be able to significantly reduce your run time with one or more of the following changes:
+We run each classifier on Google Cloud using an `n1-highmem-2` [VM instance](https://cloud.google.com/compute/docs/machine-types#n1_high-memory_machine_types) with 2 vCPUs, 13 GB RAM, and an NVIDIA T4 Tensor Core GPU (optional). Each classifier has a 24 hour time limit on the test set. If your classification code takes significantly longer, then you may be able to significantly reduce your run time with one or more of the following changes:
   a. Train your model before submission.
   b. Omit unnecessary packages, files, etc. from your entry. For example, unless your classification code uses Matplotlib, remove it from your requirements.txt file.
   c. Use the load_12ECG_model function to load model weights and perform other tasks that you can reuse across patients. We call the load_12ECG_model function once and the run_12ECG_classifier function many times, so you can use the load_12ECG_model function to avoid repeated tasks.
