@@ -2,7 +2,7 @@
 layout: 2020
 ---
 
-# <a name="Submission-instructions-and-form"></a>Submission Instructions and Form
+# <a name="submission-instructions-and-form"></a>Submission Instructions and Form
 
 ## PhysioNet/CinC Challenge 2020: Cloud Submission Instructions
 
@@ -227,4 +227,4 @@ docker run -it <<image name from above>> bash
 
 ---
 
-[Back](index.html)
+[Back](submission.html)
