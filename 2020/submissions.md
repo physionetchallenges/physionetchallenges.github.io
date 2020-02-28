@@ -15,6 +15,7 @@ layout: 2020
 - [Julia-specific instructions](#julia)
 - [Docker-specific FAQs](#docker)
 - [FAQ](#faq)
+- [Submission form](#Submission-form)
 
 ### <a name="preparation"></a>Preparation and submission instructions
 1. Create a private GitHub repository for your code. We recommend cloning our example code and replacing it with your code. Add physionetchallengeshelper as a collaborator to your repository.
@@ -218,6 +219,11 @@ docker run -it <<image name from above>> bash
 8. My entry had some kind of error.  Did I lose one of my total entries?
 
  No, only scored entries (submitted entries that receive a score) count against the total number of allowed entries.
+ 
+ ## <a name="Submission-form"></a> Submission Form
+ 
+ The submission form can be found here
+ [https://docs.google.com/forms/d/e/1FAIpQLSfnoLeEaaGOce7NsKratR1qJDSX2W2Jl8Cc7HvlbOn4QWJ7Ow/viewform](https://docs.google.com/forms/d/e/1FAIpQLSfnoLeEaaGOce7NsKratR1qJDSX2W2Jl8Cc7HvlbOn4QWJ7Ow/viewform)
 
 ---
 
