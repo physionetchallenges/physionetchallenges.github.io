@@ -223,7 +223,7 @@ docker run -it <<image name from above>> bash
 ## <a name="Submission-form"></a>Submission Form
  
  The submission form can be found here
- [https://docs.google.com/forms/d/e/1FAIpQLSfnoLeEaaGOce7NsKratR1qJDSX2W2Jl8Cc7HvlbOn4QWJ7Ow/viewform](https://docs.google.com/forms/d/e/1FAIpQLSfnoLeEaaGOce7NsKratR1qJDSX2W2Jl8Cc7HvlbOn4QWJ7Ow/viewform)
+ [https://forms.gle/PWu87SqN8frh6aKS7](https://forms.gle/PWu87SqN8frh6aKS7)
 
 ---
 
