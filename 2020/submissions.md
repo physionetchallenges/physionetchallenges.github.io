@@ -186,11 +186,11 @@ docker run -it <<image name from above>> bash
 
 3. What can I do to make sure that my submission is successful?
 
- You can avoid most submission errors with the following steps:
-    - Do not change the driver script.  We will only use the driver scripts (driver.m, driver.py, and driver.R, driver.jl) in the MATLAB, Python, R, and Julia example repositories ([https://github.com/physionetchallenges](https://github.com/physionetchallenges), so any changes that you make will not be used.
-    - Do build your Docker image.  The above FAQ provides advice for common Docker-related issues.
-    - Do test your Docker code on at least one file from the training dataset.
-    - Do try to reduce the run time of your code by moving code from the run_12ECG_classifier function to the load_12ECG_model function for repeated tasks.  Most submissions run in a couple of hours on the test data.
+ You can avoid most submission errors with the following steps: 
+   - Do not change the driver script.  We will only use the driver scripts (driver.m, driver.py, and driver.R, driver.jl) in the MATLAB, Python, R, and Julia example repositories ([https://github.com/physionetchallenges](https://github.com/physionetchallenges), so any changes that you make will not be used.
+   - Do build your Docker image.  The above FAQ provides advice for common Docker-related issues.
+   - Do test your Docker code on at least one file from the training dataset.
+   - Do try to reduce the run time of your code by moving code from the run_12ECG_classifier function to the load_12ECG_model function for repeated tasks.  Most submissions run in a couple of hours on the test data.
 
 4. Do I need to upload the training data? What about the code for evaluating my algorithm?
 
@@ -203,18 +203,18 @@ docker run -it <<image name from above>> bash
 6. Why is my entry unsuccessful on your submission system? It works on my computer. 
 
  There are several common reasons for unexpected errors:
-     - You may have changed the driver script. For consistency across submissions from different participants, we will use the driver scripts available on [https://github.com/physionetchallenges/](https://github.com/physionetchallenges).
-     - You may have unmet dependencies. Note that packages in the requirements.txt file for Python submissions may have dependencies, such as gcc, that pip is unable to install. You can often identify such issues by trying to build a Docker image from your Dockerfile.
-     - You may have used a specific version of a Python, R, or Julia package on your computer, but you didn’t specify the version of the package in your Dockerfile or your requirements.txt file, so we installed the latest available version of the package. These versions may be incompatible. For example, if you train your data using one version of a machine learning package and we test it with another version of the package, then your entry may fail.
+   - You may have changed the driver script. For consistency across submissions from different participants, we will use the driver scripts available on [https://github.com/physionetchallenges/](https://github.com/physionetchallenges).
+   - You may have unmet dependencies. Note that packages in the requirements.txt file for Python submissions may have dependencies, such as gcc, that pip is unable to install. You can often identify such issues by trying to build a Docker image from your Dockerfile.
+   - You may have used a specific version of a Python, R, or Julia package on your computer, but you didn’t specify the version of the package in your Dockerfile or your requirements.txt file, so we installed the latest available version of the package. These versions may be incompatible. For example, if you train your data using one version of a machine learning package and we test it with another version of the package, then your entry may fail.
 
 7. Why does my code take so long to run on your submission system? It runs quickly on my computer.
 
  We run each classifier on Google Cloud using an `n1-highmem-2` [VM instance](https://cloud.google.com/compute/docs/machine-types#n1_high-memory_machine_types) with 2 vCPUs, 13 GB RAM, and an NVIDIA T4 Tensor Core GPU (optional). Each classifier has a 24 hour time limit on the test set. If your classification code takes significantly longer, then you may be able to significantly reduce your run time with one or more of the following changes: 
-    - Train your model before submission.
-    - Omit unnecessary packages, files, etc. from your entry. For example, unless your classification code uses Matplotlib, remove it from your requirements.txt file.
-    - Use the load_12ECG_model function to load model weights and perform other tasks that you can reuse across patients. We call the load_12ECG_model function once and the run_12ECG_classifier function many times, so you can use the load_12ECG_model function to avoid repeated tasks.
-    - Profile your code. For example, it should take roughly twice as much time to make classifications for 200 patients as it does for 100 patients. If it takes significantly longer, then there is likely room for improvement.
-    - Look into best practices for any machine learning packages that you are using in your entry. For example, loading model weights in TensorFlow for each patient in the run_12ECG_classifier function instead of once in the load_12ECG_model function will make your code run much more slowly.
+   - Train your model before submission.
+   - Omit unnecessary packages, files, etc. from your entry. For example, unless your classification code uses Matplotlib, remove it from your requirements.txt file.
+   - Use the load_12ECG_model function to load model weights and perform other tasks that you can reuse across patients. We call the load_12ECG_model function once and the run_12ECG_classifier function many times, so you can use the load_12ECG_model function to avoid repeated tasks.
+   - Profile your code. For example, it should take roughly twice as much time to make classifications for 200 patients as it does for 100 patients. If it takes significantly longer, then there is likely room for improvement.
+   - Look into best practices for any machine learning packages that you are using in your entry. For example, loading model weights in TensorFlow for each patient in the run_12ECG_classifier function instead of once in the load_12ECG_model function will make your code run much more slowly.
     
 8. My entry had some kind of error.  Did I lose one of my total entries?
 
