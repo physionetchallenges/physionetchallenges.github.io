@@ -215,12 +215,12 @@ docker run -it <<image name from above>> bash
     c. Use the load_12ECG_model function to load model weights and perform other tasks that you can reuse across patients. We call the load_12ECG_model function once and the run_12ECG_classifier function many times, so you can use the load_12ECG_model function to avoid repeated tasks.
     d. Profile your code. For example, it should take roughly twice as much time to make classifications for 200 patients as it does for 100 patients. If it takes significantly longer, then there is likely room for improvement.
     e. Look into best practices for any machine learning packages that you are using in your entry. For example, loading model weights in TensorFlow for each patient in the run_12ECG_classifier function instead of once in the load_12ECG_model function will make your code run much more slowly.
-
+    
 8. My entry had some kind of error.  Did I lose one of my total entries?
 
  No, only scored entries (submitted entries that receive a score) count against the total number of allowed entries.
  
- ## <a name="Submission-form"></a> Submission Form
+## <a name="Submission-form"></a>Submission Form
  
  The submission form can be found here
  [https://docs.google.com/forms/d/e/1FAIpQLSfnoLeEaaGOce7NsKratR1qJDSX2W2Jl8Cc7HvlbOn4QWJ7Ow/viewform](https://docs.google.com/forms/d/e/1FAIpQLSfnoLeEaaGOce7NsKratR1qJDSX2W2Jl8Cc7HvlbOn4QWJ7Ow/viewform)
