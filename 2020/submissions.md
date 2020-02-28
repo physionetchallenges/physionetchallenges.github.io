@@ -2,7 +2,7 @@
 layout: 2020
 ---
 
-# ## <a name="Submission-instructions-and-form"></a> Submission Instructions and Form
+# <a name="Submission-instructions-and-form"></a>Submission Instructions and Form
 
 ## PhysioNet/CinC Challenge 2020: Cloud Submission Instructions
 
