@@ -51,18 +51,19 @@ A0001.mat 16+24 1000/mV 16 0 -16 -3112 0 V6
 
 From the first line, we see that the recording number is A0001, and the recording file is `A0001.mat`. The recording has 12 leads, each recorded at 500 Hz sample frequency, and contains 7500 samples. From the next 12 lines, we see that each signal was written at 16 bits with an offset of 24 bits, the amplitude resolution is 1000 with units in mV, the resolution of the analog-to-digital converter (ADC) used to digitize the signal is 16 bits, and the baseline value corresponding to 0 physical units is 0. The first value of the signal, the checksum, and the lead name are included for each signal. From the final 6 lines, we see that the patient is a 74-year-old male with a diagnosis (Dx) of right bundle branch block (RBBB). The medical prescription (Rx), history (Hx), and symptom or surgery (Sx) are unknown.
 
-Each ECG recording has one or more labels from one normal sinus rhythm type and eight abnormal types:
-1. Normal sinus rhythm (Normal) 
-2. Atrial fibrillation (AF)
-3. First-degree atrioventricular block (I-AVB)
-4. Left bundle branch block (LBBB)
-5. Right bundle branch block (RBBB)
-6. Premature atrial complex (PAC)
-7. Premature ventricular complex (PVC)
-8. ST-segment depression (STD)
-9. ST-segment elevation (STE)
+Each ECG recording has one or more labels from one normal sinus rhythm type and eight abnormal types. The order of the classes is sorted alphabetically:
 
-The training data can be downloaded from this [link](https://storage.cloud.google.com/physionet-challenge-2020-12-lead-ecg-public/PhysioNetChallenge2020_Training_CPSC.tar.gz). You can use the following [MD5 hash](https://en.wikipedia.org/wiki/Md5sum) to verify the integrity of the `tar.gz` file: `8180611b87209d3897b0735a56780204`. The order of the classes is sorted alphabetically, i.e., AF,I-AVB,LBBB,Normal,PAC,PVC,RBBB,STD,STE for this particular case.
+1. AF - Atrial fibrillation
+2. I-AVB - First-degree atrioventricular block
+3. LBBB - Left bundle branch block 
+4. Normal - Normal sinus rhythm 
+5. PAC - Premature atrial complex
+6. PVC - Premature ventricular complex
+5. RBBB - Right bundle branch block 
+8. STD - ST-segment depression
+9. STE - ST-segment elevation
+
+The training data can be downloaded from this [link](https://storage.cloud.google.com/physionet-challenge-2020-12-lead-ecg-public/PhysioNetChallenge2020_Training_CPSC.tar.gz). You can use the following [MD5 hash](https://en.wikipedia.org/wiki/Md5sum) to verify the integrity of the `tar.gz` file: `8180611b87209d3897b0735a56780204`. 
 
 Although we will provide more training data at a later date, we are not planning to release the test data at any point, including after the end of the Challenge. Requests for the test data will not receive a response. We do not release test data to prevent overfitting on the test data and claims or publications of inflated performances. We will entertain requests to run code on the test data after the Challenge on a limited basis based on publication necessity and capacity. (The Challenge is largely staged by volunteers.)
 
@@ -86,7 +87,7 @@ We have implemented two baseline models that provide one label per recording in 
 
 The baseline classifiers are simple logistic regression models. The Python classifier uses statistical moments of RR intervals computed using [Python Online and Offline ECG QRS Detector](https://github.com/c-labpl/qrs_detector) based on the Pan-Tomkins algorithm and demographic data taken directly from the WFDB header file (the `.hea` file) as predictors The Matlab classifier uses the [PhysioNet Cardiovascular Signal Toolbox](https://github.com/cliffordlab/PhysioNet-Cardiovascular-Signal-Toolbox) and [ECGKit](https://github.com/marianux/ecg-kit) to compute [global electrical heterogeneity (GEH)](https://github.com/Tereshchenkolab/Global-Electrical-Heterogeneity) from [XYZ](https://github.com/Tereshchenkolab/Origin) median beats and demographic data taken directly from the WFDB header file (the `.hea` file) as predictors. 
 
-Please use the code for these baseline models as a template for your submissions. Please see the [submissions instructions](https://physionetchallenges.github.io/2020/submissions.html) for detailed information about how to submit a successful Challenge entry
+Please use the code for these baseline models as a template for your submissions. We are running all code on Google Cloud using an n1-highmem-2 [VM instance](https://cloud.google.com/compute/docs/machine-types#n1_high-memory_machine_types) with 2 vCPUs, 13 GB RAM, and an NVIDIA T4 Tensor Core GPU (optional). Each classifier currently has a 24 hour time limit on the test set. Please see the [submissions instructions](https://physionetchallenges.github.io/2020/submissions.html) for detailed information about how to submit a successful Challenge entry. 
 
 For the first time in any public competition, we will require code both for your trained model and for training your model. If we cannot reproduce your model from the training code, then you will not be eligible for ranking or a prize. 
 
