@@ -76,9 +76,9 @@ For each 12-lead ECG recording, your algorithm must identify a set of one or mor
 
 ```
 #Record ID
-   AF, I-AVB, LBBB, Normal, RBBB, PAC,  PVC,  STD, STE
-    1,     1,    0,      0,    0,   0,   0,     0,   0
-  0.9,   0.6,  0.2,   0.05,  0.2, 0.35, 0.35, 0.1, 0.1
+ AF, I-AVB, LBBB, Normal, RBBB, PAC,  PVC,  STD, STE
+  1,     1,    0,      0,    0,   0,   0,     0,   0
+0.9,   0.6,  0.2,   0.05,  0.2, 0.35, 0.35, 0.1, 0.1
 ```
 
 ## <a name="submissions"></a> Submitting your Algorithm
