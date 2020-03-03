@@ -52,7 +52,7 @@ layout: 2020
 
 ###  <a name="r"></a>R-specific instructions
 
-1. Using our sample R classification code (link) as a template, format your code in the following way. Consider downloading this repository, replacing our code with your code, and adding the updated files to your repository.
+1. Using our sample R classification code ([link](https://github.com/physionetchallenges/r-classifier-2020)) as a template, format your code in the following way. Consider downloading this repository, replacing our code with your code, and adding the updated files to your repository.
 2. Dockerfile: Update to specify the version of R that you are using on your machine. Add any additional packages that you need. Do not change the name or the location of this file. The structure of this file is important, and especially the 3 lines that are marked as Do Not Delete.
 3. AUTHORS.txt, LICENSE.txt, README.md: Update as needed. Unfortunately, our submission system will be unable to read your README.
 4. run_12ECG_classifier.R: Update this script to load and run your model using the following functions.
