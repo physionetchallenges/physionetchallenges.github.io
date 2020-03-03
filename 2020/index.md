@@ -83,7 +83,7 @@ For each 12-lead ECG recording, your algorithm must identify a set of one or mor
 ```
 
 ## <a name="submissions"></a> Submitting your Algorithm
-We have implemented two baseline models that provide one label per recording in [MATLAB](https://github.com/physionetchallenges/matlab-classifier-2020) and [Python](https://github.com/physionetchallenges/python-classifier-2020). We will share implementations of baseline models in R and Julia soon.
+We have implemented two baseline models that provide one label per recording in [MATLAB](https://github.com/physionetchallenges/matlab-classifier-2020), [Python](https://github.com/physionetchallenges/python-classifier-2020), and [R](https://github.com/physionetchallenges/r-classifier-2020). We will share implementations of baseline models in Julia soon.
 
 The baseline classifiers are simple logistic regression models. The Python classifier uses statistical moments of RR intervals computed using [Python Online and Offline ECG QRS Detector](https://github.com/c-labpl/qrs_detector) based on the Pan-Tomkins algorithm and demographic data taken directly from the WFDB header file (the `.hea` file) as predictors The Matlab classifier uses the [PhysioNet Cardiovascular Signal Toolbox](https://github.com/cliffordlab/PhysioNet-Cardiovascular-Signal-Toolbox) and [ECGKit](https://github.com/marianux/ecg-kit) to compute [global electrical heterogeneity (GEH)](https://github.com/Tereshchenkolab/Global-Electrical-Heterogeneity) from [XYZ](https://github.com/Tereshchenkolab/Origin) median beats and demographic data taken directly from the WFDB header file (the `.hea` file) as predictors. 
 
