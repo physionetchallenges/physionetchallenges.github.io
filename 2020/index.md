@@ -65,9 +65,9 @@ Each ECG recording has one or more labels from one normal sinus rhythm type and 
 
 The training data can be downloaded from this [link](https://storage.cloud.google.com/physionet-challenge-2020-12-lead-ecg-public/PhysioNetChallenge2020_Training_CPSC.tar.gz). You can use the following [MD5 hash](https://en.wikipedia.org/wiki/Md5sum) to verify the integrity of the `tar.gz` file: `8180611b87209d3897b0735a56780204`. 
 
-We created an error form [link](https://docs.google.com/forms/d/e/1FAIpQLSd6fN81LoDI5OB4fYLzaNNAYM9Zs7HlRVsZQ9wiDD4jecmskw/viewform) in case there is an error or missing label in any recording of the training set. Please submit any proposed change of the labels via this form.
+We created a [form](https://docs.google.com/forms/d/e/1FAIpQLSd6fN81LoDI5OB4fYLzaNNAYM9Zs7HlRVsZQ9wiDD4jecmskw/viewform) for reporting incorrect or missing labels in the training set. Please use this form to submit any proposed changes to the data or labels.
 
-Although we will provide more training data at a later date, we are not planning to release the test data at any point, including after the end of the Challenge. Requests for the test data will not receive a response. We do not release test data to prevent overfitting on the test data and claims or publications of inflated performances. We will entertain requests to run code on the test data after the Challenge on a limited basis based on publication necessity and capacity. (The Challenge is largely staged by volunteers.).
+Although we will provide more training data at a later date, we are not planning to release the test data at any point, including after the end of the Challenge. Requests for the test data will not receive a response. We do not release test data to prevent overfitting on the test data and claims or publications of inflated performances. We will entertain requests to run code on the test data after the Challenge on a limited basis based on publication necessity and capacity. (The Challenge is largely staged by volunteers.)
 
 
 ## <a name="registration"></a> Registering for the Challenge and Conditions of Participation 
