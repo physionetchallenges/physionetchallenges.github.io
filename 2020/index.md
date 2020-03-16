@@ -67,7 +67,7 @@ The training data can be downloaded from this [link](https://storage.cloud.googl
 
 Although we will provide more training data at a later date, we are not planning to release the test data at any point, including after the end of the Challenge. Requests for the test data will not receive a response. We do not release test data to prevent overfitting on the test data and claims or publications of inflated performances. We will entertain requests to run code on the test data after the Challenge on a limited basis based on publication necessity and capacity. (The Challenge is largely staged by volunteers.)
 
-For the training dataset, we created an [Error form](https://docs.google.com/forms/d/e/1FAIpQLSd6fN81LoDI5OB4fYLzaNNAYM9Zs7HlRVsZQ9wiDD4jecmskw/viewform) for participants to submit any error or missing labels on the training set. We will further review the error submissions and update any necessary recording. 
+For the training dataset, we created a [form](https://docs.google.com/forms/d/e/1FAIpQLSd6fN81LoDI5OB4fYLzaNNAYM9Zs7HlRVsZQ9wiDD4jecmskw/viewform) for participants to submit errors or missing labels on the training set. We will review the error submissions and update the training dataset appropriately.
 
 ## <a name="registration"></a> Registering for the Challenge and Conditions of Participation 
 
