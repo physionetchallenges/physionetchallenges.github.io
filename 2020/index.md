@@ -67,6 +67,8 @@ The training data can be downloaded from this [link](https://storage.cloud.googl
 
 Although we will provide more training data at a later date, we are not planning to release the test data at any point, including after the end of the Challenge. Requests for the test data will not receive a response. We do not release test data to prevent overfitting on the test data and claims or publications of inflated performances. We will entertain requests to run code on the test data after the Challenge on a limited basis based on publication necessity and capacity. (The Challenge is largely staged by volunteers.)
 
+For the training dataset, we created an [Error form](https://docs.google.com/forms/d/e/1FAIpQLSd6fN81LoDI5OB4fYLzaNNAYM9Zs7HlRVsZQ9wiDD4jecmskw/viewform) for participants to submit any error or missing labels on the training set. We will further review the error submissions and update any necessary recording. 
+
 ## <a name="registration"></a> Registering for the Challenge and Conditions of Participation 
 
 To participate in the Challenge, you must register [here](https://docs.google.com/forms/d/e/1FAIpQLSdZUTrpoVuotZxUTUbo23k2u-wdiOvkiZWgzorblUsQOCSnew/viewform?usp=sf_link), providing the full names, affiliations and official email addresses of your entire team. The details of all authors must be exactly the same as the details you use to submit your abstract to Computing in Cardiology in April. You may add (but not subtract) authors later by emailing challenge [at] physionet.org.
