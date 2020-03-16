@@ -119,6 +119,9 @@ Since some recordings may have multiple labels, we normalize their contributions
 
 We have implemented these [scoring functions](https://github.com/physionetchallenges/evaluation-2020) in both MATLAB and Python, and we will use the Python implementation for evaluating your submissions.
 
+See the [leaderboard](https://docs.google.com/spreadsheets/d/e/2PACX-1vQP88VkqNp8vZgGF5PuPFk5rb1dlDzbaHm8rrNUDz_Nbh5JOWCauGiX5m32AChYq2Q3F_TbOJmR7srE/pubhtml) for the current scores from the Challenge.
+
+
 ## <a name="rules-and-deadlines"></a> Rules and Deadlines
 
 There are two phases for the Challenge: an unofficial phase and an official phase. The unofficial phase of the Challenge allows us to introduce and "beta test" the data, scores, and submission system before the official phase of the Challenge. Participation in the unofficial phase is mandatory for participating in the official phase of the Challenge because it helps us to improve the official phase.
