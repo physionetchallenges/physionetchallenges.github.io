@@ -123,7 +123,6 @@ We have implemented these [scoring functions](https://github.com/physionetchalle
 
 See the [leaderboard](https://docs.google.com/spreadsheets/d/e/2PACX-1vQP88VkqNp8vZgGF5PuPFk5rb1dlDzbaHm8rrNUDz_Nbh5JOWCauGiX5m32AChYq2Q3F_TbOJmR7srE/pubhtml) for the current scores from the Challenge.
 
-
 ## <a name="rules-and-deadlines"></a> Rules and Deadlines
 
 There are two phases for the Challenge: an unofficial phase and an official phase. The unofficial phase of the Challenge allows us to introduce and "beta test" the data, scores, and submission system before the official phase of the Challenge. Participation in the unofficial phase is mandatory for participating in the official phase of the Challenge because it helps us to improve the official phase.
@@ -151,7 +150,6 @@ To be eligible for the open-source award, you must do all the following:
 1. Register for the Challenge [here](https://docs.google.com/forms/d/e/1FAIpQLSdZUTrpoVuotZxUTUbo23k2u-wdiOvkiZWgzorblUsQOCSnew/viewform?usp=sf_link).
 2. Submit at least one open-source entry that can be scored during the unofficial phase (before 11:59pm GMT on 12 April).
 3. [Enter an Abstract to CinC](http://www.cinc.org/information-for-computing-in-cardiology-authors/): Submit an acceptable abstract (no more than 300 words) on your work on the Challenge to Computing in Cardiology no later than 15 April. Include the overall score for your Phase I entry in your abstract. Please select "PhysioNet/CinC Challenge" as the topic of your abstract, so it can be identified easily by the abstract review committee. See [“Advice on Writing an Abstract”](#abstract-advice) below for more important information on your abstract. 
-
 4. Submit at least one open-source entry that can be scored during the second phase (between 12:01am GMT on 27 April and 11:59pm GMT on 23 August).
 5. Submit a full (4-page) paper on your work on the Challenge to CinC no later than one week before the start of the conference (6 September) and select the pre-print option.
 6. One of your team must attend CinC 2020 (13-16 September) in Italy to present your work there either orally (if we select you) or as a poster. If you have a poster, then you must stand by it to defend your work. No shows (oral or poster) will be disqualified. One of your team members must also attend the closing ceremony to collect your prize. No substitutes will be allowed.
