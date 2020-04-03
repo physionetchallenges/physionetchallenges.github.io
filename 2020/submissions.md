@@ -18,11 +18,11 @@ layout: 2020
 - [Submission form](#Submission-form)
 
 ### <a name="preparation"></a>Preparation and submission instructions
-1. Create a private GitHub repository for your code. We recommend cloning our example code and replacing it with your code. Add physionetchallengeshelper as a collaborator to your repository.
+1. Create a private GitHub or Gitlab repository for your code. We recommend cloning our example code and replacing it with your code. Add physionetchallengeshelper as a collaborator to your repository.
 2. Add your classification code to your repository. Like the example code, your code must be in the root directory of the master branch.
 3. Do not add training data or anything else that is not needed to run your classification code.
 4. Follow the instructions for the programming language of your submission.
-5. Use Google Forms to submit your entry. We will clone your GitHub repository using the HTTPS URL that ends in `.git`. You can get this URL by clicking on “Clone or download” on GitHub and copying and pasting the URL. Please DO NOT enter the URL at the top of your web browser because it does not end in `.git`. Please see [here](https://help.github.com/en/articles/which-remote-url-should-i-use) for an example.
+5. Use Google Forms to submit your entry. We will clone your repository using the HTTPS URL that ends in `.git`. On GitHub, you can get this URL by clicking on “Clone or download” and copying and pasting the URL. Please DO NOT enter the URL at the top of your web browser because it does not end in `.git`. Please see [here](https://help.github.com/en/articles/which-remote-url-should-i-use) for an example.
 6. We will put the scores for successful entries on the leaderboard.  The leaderboard will publicly show your team name, run time, and score.
 
 ### <a name="matlab"></a>MATLAB-specific instructions
@@ -33,7 +33,7 @@ layout: 2020
 4. load_12ECG.model.m: Update this script to load your model weights and any parameters from files in your submission. It takes no input (place any filenames, etc. in the body of the function itself) and returns any output that you choose. You must implement this function in the load_12ECG_model.m script.
 5. run_12ECG_classifier.m: Update this script to run your model. It takes the header with all the data and demographics information, a matrix of 12 leads ECG (columns are ECG leads and rows are time windows), and the output from load_12ECG_model as input and returns a probability or confidence score and a binary classification for each class as output. You must implement this function in the run_12ECG_classifier.m script. 
 6. driver.m: Do not change this script. It calls your load_12ECG_model function once, and it calls your run_12ECG_classifier function for each 12ECG recording. It also performs all file input and output. We will not use the driver.m script from your repository, so any change made to this code will not be included.
-7. Add your code to the root/base directory of the master branch of your GitHub repository.
+7. Add your code to the root/base directory of the master branch of your repository.
 8. We will download your code, compile it using the MATLAB compiler (`mcc -m driver.m -a .`), and run it on Google Cloud.
 9. Here is a sample repository that you can use as a template: [MATLAB classifier](https://github.com/physionetchallenges/matlab-classifier-2020).
 
@@ -46,7 +46,7 @@ layout: 2020
     - load_12ECG_model: Update this function to load your model weights and any parameters from files in your submission. It takes no input (place any filenames, etc. in the body of the function itself) and returns any output that you choose. You must implement this function in the run_12ECG_classifier.py script.
     - run_12ECG_classifier: Update this function to run your model. It takes the header with all the data and demographics information, a matrix of 12 leads ECG (columns are ECG leads and rows are time windows), and the output from load_12ECG_model as input and returns a risk score and a binary classification for each class as output. You must implement this function in the run_12ECG_classifier.py script
 6. driver.py: Do not change this script. It calls your load_12ECG_model function only once and your run_12ECG_classifier function for each 12ECG recording. It also performs all file input and output. We will not use the driver.py script from your repository, so any change made to this code will not be included.
-7. Add your code to the root/base directory of the master branch of your GitHub repository.
+7. Add your code to the root/base directory of the master branch of your repository.
 8. We will download your code, build a Docker container from your Dockerfile, and run it on Google Cloud.
 9. Here is a sample repository that you can use as a template: [Python classifier](https://github.com/physionetchallenges/python-classifier-2020).
 
@@ -59,7 +59,7 @@ layout: 2020
     - load_12ECG_model: Update this function to load your model weights and any parameters from files in your submission. It takes no input (place any filenames, etc. in the body of the function itself) and returns any output that you choose. You must implement this function in the run_12ECG_classifier.R script.
     - run_12ECG_classifier: Update this function to run your model. It takes the header with all the data and demographics information, a matrix of 12 leads ECG (columns are ECG leads and rows are time windows), and the output from load_12ECG_model as input and returns a risk score and a binary classification for each class as output. You must implement this function in the run_12ECG_classifier.R script.
 5. driver.R: Do not change this script. It calls your load_12ECG_model function only once and your run_12ECG_classifier function for each 12ECG recording. It also performs all file input and output. We will not use the driver.R script from your repository, so any change made to this code will not be included.
-6. Add your code to the root/base directory of the master branch of your GitHub repository.
+6. Add your code to the root/base directory of the master branch of your repository.
 7. We will download your code, build a Docker container from your Dockerfile, and run it on Google Cloud.
 8. Here is a sample repository (coming soon) that you can use as a template: [R classifier](https://github.com/physionetchallenges/r-classifier-2020)
 
@@ -72,7 +72,7 @@ layout: 2020
     - load_12ECG_model: Update this function to load your model weights and any parameters from files in your submission. It takes no input (place any filenames, etc. in the body of the function itself) and returns any output that you choose. You must implement this function in the run_12ECG_classifier.jl script.
     - run_12ECG_classifier: Update this function to run your model. It takes the header with all the data and demographics information, a matrix of 12 leads ECG (columns are ECG leads and rows are time windows), and the output from load_12ECG_model as input and returns a risk score and a binary classification for each class as output. You must implement this function in the run_12ECG_classifier.jl script.
 5. driver.jl: Do not change this script. It calls your load_12ECG_model function only once and your run_12ECG_classifier function for each 12ECG recording. It also performs all file input and output. We will not use the driver.jl script from your repository, so any change made to this code will not be included.
-6. Add your code to the root/base directory of the master branch of your GitHub repository.
+6. Add your code to the root/base directory of the master branch of your repository.
 7. We will download your code, build a Docker container from your Dockerfile, and run it on Google Cloud.
 8. Here is a sample repository (coming soon) that you can use as a template: [Julia classifier](https://github.com/physionetchallenges/julia-classifier-2020).
 
@@ -194,7 +194,7 @@ You can avoid most submission errors with the following steps:
 
 No, we have the training and test data and evaluation code.
 
-5. Do you run the code that was in my GitHub repository at the time of submission?
+5. Do you run the code that was in my repository at the time of submission?
 
 No, not yet. If you change your code after submitting, then we may or may not run the updated version of your code. If you want to update your code but do not want us to run the updates (yet), then please make changes in a subdirectory or in another branch of your repository.
 
