@@ -71,7 +71,7 @@ For the training dataset, we created a [form](https://docs.google.com/forms/d/e/
 
 ## <a name="registration"></a> Registering for the Challenge and Conditions of Participation 
 
-To participate in the Challenge, you must register [here](https://docs.google.com/forms/d/e/1FAIpQLSdZUTrpoVuotZxUTUbo23k2u-wdiOvkiZWgzorblUsQOCSnew/viewform?usp=sf_link), providing the full names, affiliations and official email addresses of your entire team. The details of all authors must be exactly the same as the details you use to submit your abstract to Computing in Cardiology in April. You may add (but not subtract) authors later by emailing challenge [at] physionet.org.
+To participate in the Challenge, you must register [here](https://docs.google.com/forms/d/e/1FAIpQLSdZUTrpoVuotZxUTUbo23k2u-wdiOvkiZWgzorblUsQOCSnew/viewform?usp=sf_link), providing the full names, affiliations and official email addresses of your entire team. The details of all authors must be exactly the same as the details you use to submit your abstract to Computing in Cardiology. You may add (but not subtract) authors later by emailing challenge [at] physionet.org.
 
 ## <a name="algorithms"></a> Algorithms
 
@@ -136,8 +136,8 @@ Entrants may have an overall total of up to 15 scored entries over both the unof
 |Unofficial phase | 7 February 2020  | 24 April 2020    | 1-5 scored entries (*)|
 |Hiatus           | 25 April 2020    | 7 May 2020       | N/A             |
 |Abstract deadline| 1 May 2020       | 1 May 2020       | 1 abstract      |
-|Official phase   | 8 May 2020       | 13 August 2020   | 1-10 scored entries (*)|
-|Hiatus           | 13 August 2020   | 12 September 2020| N/A             |
+|Official phase   | 8 May 2020       | 23 August 2020   | 1-10 scored entries (*)|
+|Hiatus           | 24 August 2020   | 12 September 2020| N/A             |
 |Preprint deadline| 6 September 2020 | 6 September 2020 | 1 preprint      |
 |Hackathon        | 13 September 2020| 13 September 2020| 0-2 entries     |
 |Conference       | 13 September 2020| 16 September 2020| 1 oral presentation or poster|
@@ -148,9 +148,9 @@ Entrants may have an overall total of up to 15 scored entries over both the unof
 
 To be eligible for the open-source award, you must do all the following:
 1. Register for the Challenge [here](https://docs.google.com/forms/d/e/1FAIpQLSdZUTrpoVuotZxUTUbo23k2u-wdiOvkiZWgzorblUsQOCSnew/viewform?usp=sf_link).
-2. Submit at least one open-source entry that can be scored during the unofficial phase (before 11:59pm GMT on 12 April).
-3. [Enter an Abstract to CinC](http://www.cinc.org/information-for-computing-in-cardiology-authors/): Submit an acceptable abstract (no more than 300 words) on your work on the Challenge to Computing in Cardiology no later than 15 April. Include the overall score for your Phase I entry in your abstract. Please select "PhysioNet/CinC Challenge" as the topic of your abstract, so it can be identified easily by the abstract review committee. See [“Advice on Writing an Abstract”](#abstract-advice) below for more important information on your abstract. 
-4. Submit at least one open-source entry that can be scored during the second phase (between 12:01am GMT on 27 April and 11:59pm GMT on 23 August).
+2. Submit at least one open-source entry that can be scored during the unofficial phase (before 11:59pm GMT on 24 April).
+3. [Enter an Abstract to CinC](http://www.cinc.org/information-for-computing-in-cardiology-authors/): Submit an acceptable abstract (no more than 300 words) on your work on the Challenge to Computing in Cardiology no later than 1 May. Include the overall score for your Phase I entry in your abstract. Please select "PhysioNet/CinC Challenge" as the topic of your abstract, so it can be identified easily by the abstract review committee. See [“Advice on Writing an Abstract”](#abstract-advice) below for more important information on your abstract. 
+4. Submit at least one open-source entry that can be scored during the second phase (between 12:01am GMT on 8 May and 11:59pm GMT on 23 August).
 5. Submit a full (4-page) paper on your work on the Challenge to CinC no later than one week before the start of the conference (6 September) and select the pre-print option.
 6. One of your team must attend CinC 2020 (13-16 September) in Italy to present your work there either orally (if we select you) or as a poster. If you have a poster, then you must stand by it to defend your work. No shows (oral or poster) will be disqualified. One of your team members must also attend the closing ceremony to collect your prize. No substitutes will be allowed.
 7. Submit an updated 4-page paper with your final official score by 30 September. Please note that we expect the abstract to change significantly,  both in terms of results and methods. You may also update your title with the caveat that it must not be substantially similar to the title of the competition or contain the words 'physionet' 'challenge' or 'competition'. 
