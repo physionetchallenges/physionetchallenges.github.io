@@ -65,7 +65,7 @@ Each ECG recording has one or more labels from one normal sinus rhythm type and 
 
 The training data can be downloaded from this [link](https://storage.cloud.google.com/physionet-challenge-2020-12-lead-ecg-public/PhysioNetChallenge2020_Training_CPSC.tar.gz). You can use the following [MD5 hash](https://en.wikipedia.org/wiki/Md5sum) `d5cc157cf5b85be404c7a2ea24f7da10` to verify the integrity of the `tar.gz` file. If you are unable to use this link to access the data, or if you want to use a command-line tool to access the data through Google Colab, then you can use run
 ```
-wget -O PhysioNetChallenge2020_Training_CPSC.tar.gz  \
+wget -O PhysioNetChallenge2020_Training_CPSC.tar.gz \
 https://cloudypipeline.com:9555/api/download/physionet2020training/PhysioNetChallenge2020_Training_CPSC.tar.gz/
 ```
 
