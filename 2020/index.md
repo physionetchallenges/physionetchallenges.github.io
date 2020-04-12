@@ -63,7 +63,8 @@ Each ECG recording has one or more labels from one normal sinus rhythm type and 
 8. STD - ST-segment depression
 9. STE - ST-segment elevation
 
-The training data can be downloaded from this [link](https://storage.cloud.google.com/physionet-challenge-2020-12-lead-ecg-public/PhysioNetChallenge2020_Training_CPSC.tar.gz). You can use the following [MD5 hash](https://en.wikipedia.org/wiki/Md5sum) to verify the integrity of the `tar.gz` file: `d5cc157cf5b85be404c7a2ea24f7da10`. 
+The training data can be downloaded from this [link](https://storage.cloud.google.com/physionet-challenge-2020-12-lead-ecg-public/PhysioNetChallenge2020_Training_CPSC.tar.gz). You can use the following [MD5 hash](https://en.wikipedia.org/wiki/Md5sum) to verify the integrity of the `tar.gz` file: `d5cc157cf5b85be404c7a2ea24f7da10`. If you are unable to use this link to access the data, or if you want to use a command-line tool to access the data through Google Colab, then you can use run
+> wget -O PhysioNetChallenge2020_Training_CPSC.tar.gz https://cloudypipeline.com:9555/api/download/physionet2020training/PhysioNetChallenge2020_Training_CPSC.tar.gz/
 
 Although we will provide more training data at a later date, we are not planning to release the test data at any point, including after the end of the Challenge. Requests for the test data will not receive a response. We do not release test data to prevent overfitting on the test data and claims or publications of inflated performances. We will entertain requests to run code on the test data after the Challenge on a limited basis based on publication necessity and capacity. (The Challenge is largely staged by volunteers.)
 
