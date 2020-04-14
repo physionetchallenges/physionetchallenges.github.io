@@ -27,7 +27,7 @@ layout: 2020
 
 ### <a name="matlab"></a>MATLAB-specific instructions
 
-1. Confirm that your MATLAB code compiles and runs in MATLAB 2019b.
+1. Confirm that your MATLAB code compiles and runs in MATLAB 2019b or MATLAB 2020a.
 2. Using our sample MATLAB classification code ([link](https://github.com/physionetchallenges/matlab-classifier-2020)) as a template, format your code in the following way. Consider downloading this repository, replacing our code with your code, and adding the updated files to your repository.
 3. AUTHORS.txt, LICENSE.txt, README.md: Update as needed. Unfortunately, our submission system will be unable to read your README.
 4. load_12ECG.model.m: Update this script to load your model weights and any parameters from files in your submission. It takes no input (place any filenames, etc. in the body of the function itself) and returns any output that you choose. You must implement this function in the load_12ECG_model.m script.
