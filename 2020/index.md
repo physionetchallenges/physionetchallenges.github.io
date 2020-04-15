@@ -197,7 +197,11 @@ Any team with at least one conference attendee is eligible to enter. You do not 
 
 
 ## <a name="sponsors"></a> Sponsors
-This year's Challenge is generously co-sponsored by MathWorks and Google.
+This year's Challenge is generously co-sponsored by Google, MathWorks, and The Gordon and Betty Moore Foundation.
+
+![Google Cloud](logo_google_cloud.png){:height="40px"}
+![MathWorks](logo_mathworks.png){:height="40px"}&nbsp;&nbsp;&nbsp;
+![Moore Foundation](logo_moore_foundation.png){:height="40px"}
 
 ### <a name="complimentary-matlab-licenses"></a> Obtaining Complimentary MATLAB Licenses
 [MathWorks](http://www.mathworks.com/) has generously decided to sponsor this Challenge by providing complimentary licenses to all teams that wish to use MATLAB. Users can apply for a license and learn more about MATLAB support by visiting the [PhysioNet Challenge page](https://www.mathworks.com/academia/student-competitions/physionet.html) from MathWorks. If you have questions or need technical support, then please contact MathWorks at <studentcompetitions@mathworks.com>.
