@@ -197,7 +197,7 @@ Any team with at least one conference attendee is eligible to enter. You do not 
 
 
 ## <a name="sponsors"></a> Sponsors
-This year's Challenge is generously co-sponsored by Google, MathWorks, and The Gordon and Betty Moore Foundation.
+This year's Challenge is generously co-sponsored by Google, MathWorks, and the Gordon and Betty Moore Foundation.
 
 ![Google Cloud](logo_google_cloud.png){:height="40px"}
 ![MathWorks](logo_mathworks.png){:height="40px"}&nbsp;&nbsp;&nbsp;
