@@ -222,4 +222,12 @@ The Challenge Organizers, their employers, PhysioNet and Computing in Cardiology
 
 ---
 
+This year's Challenge is generously co-sponsored by Google, MathWorks, and the Gordon and Betty Moore Foundation.
+
+![Google Cloud](logo_google_cloud.png){:height="40px"}
+![MathWorks](logo_mathworks.png){:height="40px"}&nbsp;&nbsp;&nbsp;
+![Moore Foundation](logo_moore_foundation.png){:height="40px"}
+
+---
+
 [Back](../index.html)
