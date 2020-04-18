@@ -95,7 +95,7 @@ The baseline classifiers are simple logistic regression models. The Python class
 
 Please use the code for these baseline models as a template for your submissions. We are running all code on Google Cloud using an n1-highmem-2 [VM instance](https://cloud.google.com/compute/docs/machine-types#n1_high-memory_machine_types) with 2 vCPUs, 13 GB RAM, and an NVIDIA T4 Tensor Core GPU (optional). Each classifier currently has a 24 hour time limit on the test set. Please see the [submissions instructions](https://physionetchallenges.github.io/2020/submissions.html) for detailed information about how to submit a successful Challenge entry and submit [here](https://forms.gle/PWu87SqN8frh6aKS7) when ready. We will provide feedback on your entry as soon as possible, so please wait at least __72 hours__ before contacting us about the status of your entry.
 
-For the first time in any public competition, we will require code both for your trained model and for training your model. If we cannot reproduce your model from the training code, then you will not be eligible for ranking or a prize. 
+For the first time in any public competition, we will require code both for your trained model and for training your model. If we cannot reproduce your model from the training code, then you will not be eligible for ranking or a prize. Submissions of training code will begin during the official phase of the Challenge.
 
 ## <a name="scoring"></a> Scoring
 
