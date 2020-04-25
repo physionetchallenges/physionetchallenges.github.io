@@ -167,18 +167,17 @@ To improve your chances of having your abstract accepted, we offer the following
 
 You will be notified if your abstract has been accepted by email from CinC in June. You may not enter more than one abstract describing your work in the Challenge. We know you may have multiple ideas, and the actual abstract will evolve over the course of the Challenge – this is OK. More information, particularly on discounts and scholarships, can be found [here](http://www.cinc.org/information-for-computing-in-cardiology-authors/). We are sorry, but the Challenge Organizers do not have extra funds to enable discounts or funding to attend the conference. 
 
-Important points:
-- We cannot guarantee that your code will be run in time for the [cinc.org](http://cinc.org/) abstract deadline, especially if you submit your code immediately before the deadline.
-- It is much more important to focus on writing a high-quality abstract describing your work and submit this to the conference by abstract deadline.
+Given the extended deadline for the unofficial phase of the Challenge, we would like to emphasize the following points.
 
-Please follow the instructions here carefully:
-https://physionetchallenges.github.io/2020/#abstract-advice
+We cannot guarantee that your code will be run in time for the [cinc.org](http://cinc.org/) abstract deadline, especially if you submit your code immediately before the deadline.
 
-Please make sure that all of your team members are authors on the abstract. If you need to add or subtract authors, do this at least a week before the abstract deadline (i.e., __now__). Asking us to alter team membership near or after the deadline will lead to failure.
+It is much more important to focus on writing a high-quality abstract describing your work and submit this to the conference by abstract deadline. Please follow [these instructions](https://physionetchallenges.github.io/2020/#abstract-advice) here carefully.
 
-Please make sure that you include your team name, your __official score__ as it appears on the leaderboard, and cross validation results in your abstract using the scoring metrics for this year's challenge (especially if you are unable to receive a score or are scoring poorly). Your score will not affect acceptance. It is the novelty of your approach and the rigor of your research that matters at this point. 
+Please make sure that all of your team members are authors on YOUR abstract. If you need to add or subtract authors, do this at least a week before the abstract deadline (i.e., __now__). Asking us to alter team membership near or after the deadline will lead to failure.
 
-- The organizers of the challenge have no ability to help with any problems with the abstract submission system. We do not operate it. Please do not email us with issues related to the abstract submission system.
+Please make sure that you include your team name, your __official score__ as it appears on the [leaderboard](https://docs.google.com/spreadsheets/u/4/d/e/2PACX-1vQP88VkqNp8vZgGF5PuPFk5rb1dlDzbaHm8rrNUDz_Nbh5JOWCauGiX5m32AChYq2Q3F_TbOJmR7srE/pubhtml), and cross validation results in your abstract using the scoring metrics for this year's challenge (especially if you are unable to receive a score or are scoring poorly). Your score will not affect acceptance. It is the novelty of your approach and the rigor of your research that matters at this point. 
+
+The organizers of the Challenge have no ability to help with any problems with the abstract submission system. We do not operate it. Please do not email us with issues related to the abstract submission system.
 
 ## <a name="open-source-licenses"></a> Open-Source Licenses
 We encourage the use of open-source licenses for your entries.
