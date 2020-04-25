@@ -137,10 +137,10 @@ Entrants may have an overall total of up to 15 scored entries over both the unof
 
 |                 |    Start         | End              | Submissions     |
 |-----------------|------------------|------------------|-----------------|
-|Unofficial phase | 7 February 2020  | 24 April 2020    | 1-5 scored entries (*)|
-|Hiatus           | 25 April 2020    | 7 May 2020       | N/A             |
+|Unofficial phase | 7 February 2020  | 30 April 2020    | 1-5 scored entries (*)|
+|Hiatus           | 1 May 2020       | 10 May 2020      | N/A             |
 |Abstract deadline| 1 May 2020       | 1 May 2020       | 1 abstract      |
-|Official phase   | 8 May 2020       | 23 August 2020   | 1-10 scored entries (*)|
+|Official phase   | 11 May 2020      | 23 August 2020   | 1-10 scored entries (*)|
 |Hiatus           | 24 August 2020   | 12 September 2020| N/A             |
 |Preprint deadline| 6 September 2020 | 6 September 2020 | 1 preprint      |
 |Hackathon        | 13 September 2020| 13 September 2020| 0-2 entries     |
@@ -165,7 +165,20 @@ You must not submit analysis of this year's Challenge data to other conferences 
 
 To improve your chances of having your abstract accepted, we offer the following advice. Make sure all the authors match your registration information and you use the same email addresses. Stick to the word limit (check [the conference website](http://www.cinc.org/cinc-conference-program-abstracts/) for updates, but it is usually between 250 and 300 words). Make sure all your co-authors agree on the abstract. Importantly, be sure to submit your abstract by the deadline, so include time for errors, internet outages, etc. When submitting, you will be asked for the topic – please select "PhysioNet/CinC Challenge" so it can be identified easily by the abstract review committee. However, do not include the words "PhysioNet" or "PhysioNet/CinC" or "Challenge" in the title – this creates confusion with the hundreds of other articles and the main descriptor of the Challenge. Although your work is bound to change, the quality of your abstract is a good indicator of the final quality of your work. We suggest you spell check, write in full sentences, and be specific about your approaches. Include cross validated training performance (using the Challenge metrics) and your score provided by the Challenge submission system. If you omit or inflate this latter score, then your abstract will be rejected. If you are unable to get the scoring system working, then you can still submit, but the work should be very high quality. Your title, abstract and author list (collaborators) can be modified in September when you submit the final paper, so do not be embarrassed by any low scores. We do not expect high scores at this stage. We are focused on the thoughtfulness of the approach and quality of the abstract. 
 
-You will be notified if your abstract has been accepted by email from CinC during the first week in June or earlier. You may not enter more than one abstract describing your work in the Challenge. We know you may have multiple ideas, and the actual abstract will evolve over the course of the Challenge – this is OK. More information, particularly on discounts and scholarships, can be found [here](http://www.cinc.org/information-for-computing-in-cardiology-authors/). We are sorry, but the Challenge Organizers do not have extra funds to enable discounts or funding to attend the conference. 
+You will be notified if your abstract has been accepted by email from CinC in June. You may not enter more than one abstract describing your work in the Challenge. We know you may have multiple ideas, and the actual abstract will evolve over the course of the Challenge – this is OK. More information, particularly on discounts and scholarships, can be found [here](http://www.cinc.org/information-for-computing-in-cardiology-authors/). We are sorry, but the Challenge Organizers do not have extra funds to enable discounts or funding to attend the conference. 
+
+Important points:
+- We cannot guarantee that your code will be run in time for the [cinc.org](http://cinc.org/) abstract deadline, especially if you submit your code immediately before the deadline.
+- It is much more important to focus on writing a high-quality abstract describing your work and submit this to the conference by abstract deadline.
+
+Please follow the instructions here carefully:
+https://physionetchallenges.github.io/2020/#abstract-advice
+
+Please make sure that all of your team members are authors on the abstract. If you need to add or subtract authors, do this at least a week before the abstract deadline (i.e., __now__). Asking us to alter team membership near or after the deadline will lead to failure.
+
+Please make sure that you include your team name, your __official score__ as it appears on the leaderboard, and cross validation results in your abstract using the scoring metrics for this year's challenge (especially if you are unable to receive a score or are scoring poorly). Your score will not affect acceptance. It is the novelty of your approach and the rigor of your research that matters at this point. 
+
+- The organizers of the challenge have no ability to help with any problems with the abstract submission system. We do not operate it. Please do not email us with issues related to the abstract submission system.
 
 ## <a name="open-source-licenses"></a> Open-Source Licenses
 We encourage the use of open-source licenses for your entries.
