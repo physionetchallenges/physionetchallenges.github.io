@@ -18,11 +18,11 @@ layout: 2020
 - [Submission form](#Submission-form)
 
 ### <a name="preparation"></a>Preparation and submission instructions
-1. Create a private GitHub or Gitlab repository for your code. We recommend cloning our example code and replacing it with your code. Add physionetchallengeshelper as a collaborator to your repository.
+1. Create a private GitHub or Gitlab repository for your code. We recommend cloning our example code and replacing it with your code. Add `physionetchallengeshelper` as a collaborator to your repository.
 2. Add your classification code to your repository. Like the example code, your code must be in the root directory of the master branch.
-3. Do not add training data or anything else that is not needed to run your classification code.
+3. Do not anything that is not needed to run your classification code.
 4. Follow the instructions for the programming language of your submission.
-5. Use Google Forms to submit your entry. We will clone your repository using the HTTPS URL that ends in `.git`. On GitHub, you can get this URL by clicking on “Clone or download” and copying and pasting the URL. Please DO NOT enter the URL at the top of your web browser because it does not end in `.git`. Please see [here](https://help.github.com/en/articles/which-remote-url-should-i-use) for an example.
+5. Use Google Forms to submit your entry. We will clone your repository using the HTTPS URL that ends in `.git`. On GitHub, you can get this URL by clicking on “Clone or download” and copying and pasting the URL, e.g., `https://github.com/physionetchallenges/python-classifier-2020.git`. Please see [here](https://help.github.com/en/articles/which-remote-url-should-i-use) for an example.
 6. We will put the scores for successful entries on the leaderboard.  The leaderboard will publicly show your team name, run time, and score.
 
 ### <a name="matlab"></a>MATLAB-specific instructions
@@ -78,20 +78,20 @@ layout: 2020
 
 ###  <a name="docker"></a> Docker-specific FAQs
 
-1. Why containers?
+__Why containers?__
 
 Containers allow you to define the environment that you think is best suited for your algorithm. For example, if you think your algorithm needs a specific version of CentOS, a certain version of a library, and specific frameworks, then you can use the containers to specify this. Here are two links with good, data science-centric introductions to Docker:
 [https://towardsdatascience.com/how-docker-can-help-you-become-a-more-effective-data-scientist-7fc048ef91d5](https://towardsdatascience.com/how-docker-can-help-you-become-a-more-effective-data-scientist-7fc048ef91d5)
 [https://link.medium.com/G87RxYuQIV](https://link.medium.com/G87RxYuQIV)
 
-2. Quickly, how can I test my submission locally?
+__Quickly, how can I test my submission locally?__
 
-Install Docker → clone your repo → build an image → run it on a single recording. 
+Install Docker. Clone your repository. Build an image. Run it on a single recording. 
 
-3. Less quickly, how can I test my submission locally?  Tell me more-or-less exactly what to do.
+<a name="commands"></a> __Less quickly, how can I test my submission locally?  Please give me commands that I can copy and paste.__
 
 Here are instructions for testing the [Python example code](https://github.com/physionetchallenges/python-classifier-2020) in Linux.  You can test the non-Python example code in a Mac, for example, in a similar way.  If you have trouble testing your code, then make sure that you can test the example code, which is known to work.
-First, create a folder, docker_test, in your home directory. Then, put the example code from GitHub in docker_test/python-classifier-2020-master, some of the training data in docker_test/input_directory, and an empty folder for the classifications in docker_test/output_directory.  Finally, build a Docker image and run the example code using the following steps:
+First, create a folder, `docker_test`, in your home directory. Then, put the example code from GitHub in `docker_test/python-classifier-2020-master`, some of the training data in `docker_test/input_directory`, and an empty folder for the classifications in `docker_test/output_directory.`  Finally, build a Docker image and run the example code using the following steps:
 
 ```
 user@computer:~/docker_test$ ls
@@ -124,49 +124,49 @@ user@computer:~/docker_test$ ls output_directory/
 A0001.csv  A0002.csv  A0003.csv  A0004.csv  A0005.csv
 ```
 
-4. How do I install Docker?
+__How do I install Docker?__
 
 Go to [https://docs.docker.com/install/](https://docs.docker.com/install/) and install the Docker Community Edition. For troubleshooting, see [https://docs.docker.com/config/daemon/](https://docs.docker.com/config/daemon/)
 
-5. Do I have to use your Dockerfile?
+__Do I have to use your Dockerfile?__
 
 No. The only part of the Dockerfile we care about are the three lines marked as ”DO NOT EDIT”. These three lines help ensure that, during the build process of the container, your code is copied into a folder called physionet so that our cloud-based pipelines can find your code and run it. Please do not change those three lines. You are free to change your base image, and at times you should (see next question).
 
-6. What’s the base image in Docker?
+__What’s the base image in Docker?__
 
 Think of Docker as a series of images, or snapshots of a virtual machine, that are layered on top of each other. For example, our image may built on top of a very lightweight Ubuntu operating system with Python 3.7.3 that we get from the official Docker Hub (think of it as a GitHub for Docker). We can then install our requirements (NumPy and SciPy) on it. If you need the latest version of TensorFlow, then search for it on [hub.docker.com](https://hub.docker.com/) and edit your file so that the first line of your Dockerfile now reads as: `FROM tensorflow`. For a specific version, say 1.11, lookup the [tags](https://hub.docker.com/r/tensorflow/tensorflow/tags) and change it accordingly to `FROM tensorflow:1.11.0`. We recommend using specific versions for reproducibility.
 
-7. sklearn or scikit-learn?
+__sklearn or scikit-learn?__
 
 The single most common error we noticed in the requirements.txt file for Python submissions was the sklearn package. If your entry uses scikit-learn, then you need to install via pip using the package name scikit-learn instead of sklearn in your requirements.txt file: [See here](https://scikit-learn.org/stable/install.html).
 
-8. xgboost?
+__xgboost?__
 
 For Python, replace `python:3.7.3-slim` with `python:3.7.3-stretch` in the first line of your Dockerfile. This image includes additional packages, such as GCC, that xgboost needs. Additionally, include xgboost in your requirements.txt file.  Specify the version of xgboost that you are using in your requirements.txt file.
 For R, add `RUN R -e 'install.packages(“xgboost”)'` to your Dockerfile.
 
-9. Pandas?
+__Pandas?__
 
 Replace `python:3.7.3-slim` with `python:3.7.3-stretch` in the first line of your Dockerfile.
 
-10. Why can’t I install a common Python or R package using Python or R’s package manager?
+__Why can’t I install a common Python or R package using Python or R’s package manager?__
 
  Some packages have dependencies, such as GCC, that need to be installed.  Try replacing `python:3.7.3-slim` with `python:3.7.3-stretch`, which includes more packages by default, or installing the dependencies
 
 If the first line of your Dockerfile is `FROM python:3.7.3-slim`, then you are building a Docker image with the Debian Linux distribution, so you can install GCC and other related libraries that many Python and R packages use by adding the line `RUN apt install build-essential` to your Dockerfile before installing these packages.
 
-11. How do I build my image?
+__How do I build my image?__
 
 ```
-git clone <<Your URL that ends in .git>>
-cd <<your repo name etc.>>
+git clone <<your repository URL that ends in .git>>
+cd <<your repository name>>
 ls
 ```
 
 You should see a Dockerfile and other relevant files here.
   
 ```
-docker build -t <<some image name — it has to be all lowercase>> .
+docker build -t <<some image name that must be in lowercase letters>> .
 docker images
 docker run -it <<image name from above>> bash
 ```
@@ -174,6 +174,7 @@ docker run -it <<image name from above>> bash
 This will take you into your container and you should see your code.
 
 ### <a name="faq"></a> FAQ
+
 1. Should I submit your example code to test the submission system?
 
 No, please only submit your code to the submission system.
