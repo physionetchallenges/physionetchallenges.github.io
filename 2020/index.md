@@ -4,6 +4,10 @@ layout: 2020
 
 # Classification of 12-lead ECGs: the PhysioNet/Computing in Cardiology Challenge 2020
 
+## <a name="announcements"></a> Announcements
+
+__Please note that we have extended the deadline for the unofficial phase of the Challenge to 30 April 2020 at 11:59pm GMT. Please see the [rules and deadlines](https://physionetchallenges.github.io/2020/#rules-and-deadlines) for details.__
+
 ## <a name="introduction"></a> Introduction
 
 The electrocardiogram (ECG) is a non-invasive representation of the electrical activity of the heart from electrodes placed on the surface of the torso. The standard 12-lead ECG has been widely used to diagnose a variety of cardiac abnormalities such as cardiac arrhythmias, and predicts cardiovascular morbidity and mortality [[1]](http://www.onlinejacc.org/content/49/10/1109.abstract). The early and correct diagnosis of cardiac abnormalities can increase the chances of successful treatments [[2]](https://www.ahajournals.org/doi/full/10.1161/strokeaha.107.181486). However, manual interpretation of the electrocardiogram is time-consuming, and requires skilled personnel with a high degree of training [[3]](https://www.magonlinelibrary.com/doi/abs/10.12968/bjca.2019.14.3.123).
