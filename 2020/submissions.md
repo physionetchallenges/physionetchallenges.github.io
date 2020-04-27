@@ -175,15 +175,19 @@ This will take you into your container and you should see your code.
 
 ### <a name="faq"></a> FAQ
 
-1. Should I submit your example code to test the submission system?
+__Should I submit your example code to test the submission system?__
 
 No, please only submit your code to the submission system.
 
-2. Should I submit an empty repository to test the submission system?
+__Should I submit an empty repository to test the submission system?__
 
 No, please only submit an entry after you have finished and tested your code.
 
-3. What can I do to make sure that my submission is successful?
+__I left out a file, or I missed the deadline, or something else. Can I email you my code?__
+
+No, please use the submission form to submit your entry through a repository.
+
+__What can I do to make sure that my submission is successful?__
 
 You can avoid most submission errors with the following steps: 
    - Do not change the driver script.  We will only use the driver scripts (driver.m, driver.py, and driver.R, driver.jl) in the MATLAB, Python, R, and Julia example repositories ([https://github.com/physionetchallenges](https://github.com/physionetchallenges), so any changes that you make will not be used.
@@ -191,22 +195,22 @@ You can avoid most submission errors with the following steps:
    - Do test your Docker code on at least one file from the training dataset.
    - Do try to reduce the run time of your code by moving code from the run_12ECG_classifier function to the load_12ECG_model function for repeated tasks.  Most submissions run in a couple of hours on the test data.
 
-4. Do I need to upload the training data? What about the code for evaluating my algorithm?
+__Do I need to upload the training data? What about the code for evaluating my algorithm?__
 
 No, we have the training and test data and evaluation code.
 
-5. Do you run the code that was in my repository at the time of submission?
+__Do you run the code that was in my repository at the time of submission?__
 
 No, not yet. If you change your code after submitting, then we may or may not run the updated version of your code. If you want to update your code but do not want us to run the updates (yet), then please make changes in a subdirectory or in another branch of your repository.
 
-6. Why is my entry unsuccessful on your submission system? It works on my computer. 
+__Why is my entry unsuccessful on your submission system? It works on my computer.__
 
 There are several common reasons for unexpected errors:
    - You may have changed the driver script. For consistency across submissions from different participants, we will use the driver scripts available on [https://github.com/physionetchallenges/](https://github.com/physionetchallenges).
    - You may have unmet dependencies. Note that packages in the requirements.txt file for Python submissions may have dependencies, such as gcc, that pip is unable to install. You can often identify such issues by trying to build a Docker image from your Dockerfile.
    - You may have used a specific version of a Python, R, or Julia package on your computer, but you didn’t specify the version of the package in your Dockerfile or your requirements.txt file, so we installed the latest available version of the package. These versions may be incompatible. For example, if you train your data using one version of a machine learning package and we test it with another version of the package, then your entry may fail.
 
-7. Why does my code take so long to run on your submission system? It runs quickly on my computer.
+__Why does my code take so long to run on your submission system? It runs quickly on my computer.__
 
 We run each classifier on Google Cloud using an `n1-highmem-2` [VM instance](https://cloud.google.com/compute/docs/machine-types#n1_high-memory_machine_types) with 2 vCPUs, 13 GB RAM, and an NVIDIA T4 Tensor Core GPU (optional). Each classifier has a 24 hour time limit on the test set. If your classification code takes significantly longer, then you may be able to significantly reduce your run time with one or more of the following changes: 
    - Train your model before submission.
@@ -215,14 +219,14 @@ We run each classifier on Google Cloud using an `n1-highmem-2` [VM instance](htt
    - Profile your code. For example, it should take roughly twice as much time to make classifications for 200 patients as it does for 100 patients. If it takes significantly longer, then there is likely room for improvement.
    - Look into best practices for any machine learning packages that you are using in your entry. For example, loading model weights in TensorFlow for each patient in the run_12ECG_classifier function instead of once in the load_12ECG_model function will make your code run much more slowly.
     
-8. My entry had some kind of error.  Did I lose one of my total entries?
+__My entry had some kind of error.  Did I lose one of my total entries?__
 
 No, only scored entries (submitted entries that receive a score) count against the total number of allowed entries.
  
 ## <a name="Submission-form"></a>Submission Form
  
- The submission form can be found here
- [https://forms.gle/PWu87SqN8frh6aKS7](https://forms.gle/PWu87SqN8frh6aKS7)
+The submission form can be found here:
+[https://forms.gle/PWu87SqN8frh6aKS7](https://forms.gle/PWu87SqN8frh6aKS7)
 
 ---
 
