@@ -15,7 +15,7 @@ The [PhysioNet/Computing in Cardiology Challenge 2020](/2020/) invites participa
 - __2019__: [Early Prediction of Sepsis from Clinical Data](https://physionet.org/content/challenge-2019/)  
  Papers and contributed software ongoing
 - __2018__: [You Snooze, You Win](https://physionet.org/content/challenge-2018/)  
- Papers and contributed ongoing
+ Papers and contributed software ongoing
 - __2017__: [AF Classification from a Short Single Lead ECG Recording](https://physionet.org/content/challenge-2017/)  
   [57 papers](https://archive.physionet.org/challenge/2017/papers/) and [64 contributed software](https://archive.physionet.org/challenge/2017/sources/)
 - __2016__: [Classification of Normal/Abnormal Heart Sound Recordings](https://physionet.org/content/challenge-2016/)  
