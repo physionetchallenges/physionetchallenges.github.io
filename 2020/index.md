@@ -6,7 +6,7 @@ layout: 2020
 
 ## <a name="announcements"></a> Announcements
 
-__Please note that we have extended the deadline for the unofficial phase of the Challenge to 30 April 2020 at 11:59pm GMT. Please see the [rules and deadlines](https://physionetchallenges.github.io/2020/#rules-and-deadlines) for details.__
+We are currently in the hiatus between the unofficial and official phases of the Challenge.
 
 ## <a name="introduction"></a> Introduction
 
