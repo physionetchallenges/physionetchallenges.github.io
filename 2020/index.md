@@ -23,8 +23,7 @@ We ask participants to design and implement a working, open-source algorithm tha
 
 The data for this Challenge are from multiple sources:
 1. Southeast University, China, including the data from the China Physiological Signal Challenge 2018
-2. Centre for Cardiometabolic Risk Reduction in South-Asia (CARRS), India
-3. A diverse population in the USA.
+2. A diverse population in the USA.
 
 The initial training set is the public data used in the [China Physiological Signal Challenge in 2018 (CPSC2018)](http://2018.icbeb.org/), held during the 7th 
 International Conference on Biomedical Engineering and Biotechnology in Nanjing, China.
