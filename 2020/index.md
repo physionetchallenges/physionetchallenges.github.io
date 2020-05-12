@@ -6,7 +6,11 @@ layout: 2020
 
 ## <a name="announcements"></a> Announcements
 
-We are currently in the hiatus between the unofficial and official phases of the Challenge.
+We have begun the official phase of the Challenge. Please find a new tranche of data posted [here](https://storage.cloud.google.com/physionet-challenge-2020-12-lead-ecg-public/PhysioNetChallenge2020_Training_2.tar.gz) with SNOMED-CT codes as diagnoses. Please note that there are some errors or debatable labels in all of the data. Part of the Challenge will be working out how to deal with these issues. 
+
+In the next few weeks, we will release more data and reopen the scoring system with a new scoring metric. 
+
+Your abstracts are under review, and we hope to release acceptances and rejections by early June. For those who missed the abstract deadline, we will provide an opportunity to qualify as a wild card participant over the summer, so please don't give up!
 
 ## <a name="introduction"></a> Introduction
 
