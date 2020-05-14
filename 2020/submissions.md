@@ -175,6 +175,15 @@ This will take you into your container and you should see your code.
 
 ### <a name="faq"></a> FAQ
 
+__Are we allowed to do transfer learning using pre-trained networks?__
+
+Most certainly - we encourage you to do this. You do not need to include your data in the code stack for training the algorithm, but you do need to include the pretrained mode in the code harness and provide code to retrain (continue training) on the training data we provide. 
+You must also thoroughly document the content of the database you used to pre-train. 
+
+__For the license, can we make it open source but restrict to non-commercial use?__
+
+Yes - the philosophy of the Challenge is to encourage researchers to make their code free to use for research, and we hope that companies will approach you to license the code too!
+
 __Should I submit your example code to test the submission system?__
 
 No, please only submit your code to the submission system.
