@@ -6,11 +6,17 @@ layout: 2020
 
 ## <a name="announcements"></a> Announcements
 
-We have begun the official phase of the Challenge. Please find a new tranche of data posted [here](https://storage.cloud.google.com/physionet-challenge-2020-12-lead-ecg-public/PhysioNetChallenge2020_Training_2.tar.gz) with SNOMED-CT codes as diagnoses. Please note that there are some errors or debatable labels in some of the data. Part of the Challenge will be working out how to deal with these issues. 
+__May 12, 2020:__ Your abstracts are under review, and we hope to release acceptances and rejections by early June. For those who missed the abstract deadline, we will provide an opportunity to qualify as a wild card participant over the summer, so please don’t give up!
 
-In the next few weeks, we will release more data and reopen the scoring system with a new scoring metric. 
+__May 11, 2020:__ We have begun the official phase of the Challenge. Please find a new tranche of data posted [here](https://storage.cloud.google.com/physionet-challenge-2020-12-lead-ecg-public/PhysioNetChallenge2020_Training_2.tar.gz) with SNOMED-CT codes as diagnoses. Please note that there are some errors or debatable labels in some of the data. Part of the Challenge will be working out how to deal with these issues. In the next few weeks, we will release more data and reopen the scoring system with a new scoring metric.
 
-Your abstracts are under review, and we hope to release acceptances and rejections by early June. For those who missed the abstract deadline, we will provide an opportunity to qualify as a wild card participant over the summer, so please don't give up!
+__April 25, 2020:__ We have reopened the submission system for 5 more days (until 30 April 2020 at 23:59 GMT) to help teams who are able to submit bug-free entries qualify for the Challenge.  
+
+__March 31, 2020:__ The CinC abstract deadline has been extended to May 1.
+
+__March 16, 2020:__ The leaderboard is now live.
+
+__February 7, 2020:__ The 2020 Challenge has now opened! See below for details.
 
 ## <a name="introduction"></a> Introduction
 
