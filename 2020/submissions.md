@@ -173,34 +173,6 @@ docker run -it <<image name from above>> bash
 
 This will take you into your container and you should see your code.
 
-### <a name="faq"></a> FAQ
-
-__Are we allowed to do transfer learning using pre-trained networks?__
-
-Most certainly - we encourage you to do this. You do not need to include your data in the code stack for training the algorithm, but you do need to include the pretrained mode in the code harness and provide code to retrain (continue training) on the training data we provide. 
-You must also thoroughly document the content of the database you used to pre-train. 
-
-__For the license, can we make it open source but restrict to non-commercial use?__
-
-Yes - the philosophy of the Challenge is to encourage researchers to make their code free to use for research, and we hope that companies will approach you to license the code too!
-
-__Are the provided records a more accurate representation of the hold-out evaluation data that what was previously provided?__
-
-We are creating a large database of heterogeneous data with varying labels, some of which are wrong or incomplete. Leads can be inverted, noisy, mislabeled.  We have deliberately made no attempt to clean this up. The test data contains better labels, but it is not perfect either, and although it roughly correspond to the training data, it includes some deliberate differences. 
-
-
-__Should I submit your example code to test the submission system?__
-
-No, please only submit your code to the submission system.
-
-__Should I submit an empty repository to test the submission system?__
-
-No, please only submit an entry after you have finished and tested your code.
-
-__I left out a file, or I missed the deadline, or something else. Can I email you my code?__
-
-No, please use the submission form to submit your entry through a repository.
-
 __What can I do to make sure that my submission is successful?__
 
 You can avoid most submission errors with the following steps: 
@@ -209,14 +181,6 @@ You can avoid most submission errors with the following steps:
    - Do test your Docker code on at least one file from the training dataset.
    - Do try to reduce the run time of your code by moving code from the run_12ECG_classifier function to the load_12ECG_model function for repeated tasks.  Most submissions run in a couple of hours on the test data.
 
-__Do I need to upload the training data? What about the code for evaluating my algorithm?__
-
-No, we have the training and test data and evaluation code.
-
-__Do you run the code that was in my repository at the time of submission?__
-
-No, not yet. If you change your code after submitting, then we may or may not run the updated version of your code. If you want to update your code but do not want us to run the updates (yet), then please make changes in a subdirectory or in another branch of your repository.
-
 __Why is my entry unsuccessful on your submission system? It works on my computer.__
 
 There are several common reasons for unexpected errors:
@@ -224,19 +188,6 @@ There are several common reasons for unexpected errors:
    - You may have unmet dependencies. Note that packages in the requirements.txt file for Python submissions may have dependencies, such as gcc, that pip is unable to install. You can often identify such issues by trying to build a Docker image from your Dockerfile.
    - You may have used a specific version of a Python, R, or Julia package on your computer, but you didn’t specify the version of the package in your Dockerfile or your requirements.txt file, so we installed the latest available version of the package. These versions may be incompatible. For example, if you train your data using one version of a machine learning package and we test it with another version of the package, then your entry may fail.
 
-__Why does my code take so long to run on your submission system? It runs quickly on my computer.__
-
-We run each classifier on Google Cloud using an `n1-highmem-2` [VM instance](https://cloud.google.com/compute/docs/machine-types#n1_high-memory_machine_types) with 2 vCPUs, 13 GB RAM, and an NVIDIA T4 Tensor Core GPU (optional). Each classifier has a 24 hour time limit on the test set. If your classification code takes significantly longer, then you may be able to significantly reduce your run time with one or more of the following changes: 
-   - Train your model before submission.
-   - Omit unnecessary packages, files, etc. from your entry. For example, unless your classification code uses Matplotlib, remove it from your requirements.txt file.
-   - Use the load_12ECG_model function to load model weights and perform other tasks that you can reuse across patients. We call the load_12ECG_model function once and the run_12ECG_classifier function many times, so you can use the load_12ECG_model function to avoid repeated tasks.
-   - Profile your code. For example, it should take roughly twice as much time to make classifications for 200 patients as it does for 100 patients. If it takes significantly longer, then there is likely room for improvement.
-   - Look into best practices for any machine learning packages that you are using in your entry. For example, loading model weights in TensorFlow for each patient in the run_12ECG_classifier function instead of once in the load_12ECG_model function will make your code run much more slowly.
-    
-__My entry had some kind of error.  Did I lose one of my total entries?__
-
-No, only scored entries (submitted entries that receive a score) count against the total number of allowed entries.
- 
 ## <a name="Submission-form"></a>Submission Form
  
 The submission form can be found here:
