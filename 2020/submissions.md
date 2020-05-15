@@ -184,6 +184,11 @@ __For the license, can we make it open source but restrict to non-commercial use
 
 Yes - the philosophy of the Challenge is to encourage researchers to make their code free to use for research, and we hope that companies will approach you to license the code too!
 
+__Are the provided records a more accurate representation of the hold-out evaluation data that what was previously provided?__
+
+We are creating a large database of heterogeneous data with varying labels, some of which are wrong or incomplete. Leads can be inverted, noisy, mislabeled.  We have deliberately made no attempt to clean this up. The test data contains better labels, but it is not perfect either, and although it roughly correspond to the training data, it includes some deliberate differences. 
+
+
 __Should I submit your example code to test the submission system?__
 
 No, please only submit your code to the submission system.
