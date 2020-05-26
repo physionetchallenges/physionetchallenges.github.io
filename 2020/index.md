@@ -156,14 +156,19 @@ Entrants may have an overall total of up to 15 scored entries over both the unof
 |Hiatus           | 1 May 2020       | 10 May 2020      | N/A             |
 |Abstract deadline| 1 May 2020       | 1 May 2020       | 1 abstract      |
 |Official phase   | 11 May 2020      | 23 August 2020   | 1-10 scored entries (*)|
+|Challengers notified of abstract decisions|	1 June 2020|	3 June 2020|	N/A|
+|Wild card eligibility notification|	15 July 2020|	15 July 2020|	1-10 scored entries (*)|
+|Wild card abstract submission deadline|	17 July 2020|	17 July 2020|	1 abstract|
 |Hiatus           | 24 August 2020   | 12 September 2020| N/A             |
-|Preprint deadline| 6 September 2020 | 6 September 2020 | 1 preprint      |
+|Preprint deadline| 6 September 2020 | 6 September 2020 | One 4-page paper (**)|
 |Hackathon        | 13 September 2020| 13 September 2020| 0-2 entries     |
 |Conference       | 13 September 2020| 16 September 2020| 1 oral presentation or poster|
-|Final scores released|17 September 2020|24 September 2020|N/A            |
-|Final paper submitted|25 September 2020|30 September 2020|1 paper        |
+|Final scores released| 17 September 2020| 24 September 2020| N/A            |
+|Final paper submitted| 25 September 2020| 30 September 2020| One 4-page paper (***)|
 
 (* Entries that fail to score do not count against limits.) 
+(** Must includes preliminary scores.)
+(*** Must include final score, your ranking in the Challenge, and any updates to your work as a result of feedback after presenting at CinC.)
 
 To be eligible for the open-source award, you must do all the following:
 1. Register for the Challenge [here](https://docs.google.com/forms/d/e/1FAIpQLSdZUTrpoVuotZxUTUbo23k2u-wdiOvkiZWgzorblUsQOCSnew/viewform?usp=sf_link).
@@ -175,6 +180,11 @@ To be eligible for the open-source award, you must do all the following:
 7. Submit an updated 4-page paper with your final official score by 30 September. Please note that we expect the abstract to change significantly,  both in terms of results and methods. You may also update your title with the caveat that it must not be substantially similar to the title of the competition or contain the words 'physionet' 'challenge' or 'competition'. 
 
 You must not submit analysis of this year’s Challenge data to other conferences or journals until after CinC 2020 has taken place so that the competitors can discuss the results in a single forum. If we discover evidence you have done so, then you will be disqualified and de-ranked on the website, banned from future Challenges, and the journal/conference will be contacted to request your article is withdrawn for contravention of the terms of use. The reasons for this policy are 1) Reporting results on the training data is meaningless - they will be overfit and incomparable to the real challenge results, and 2) Attempting to publish on the Challenge data before the Challengers present their results is unprofessional, and comes across as a territorial grab. This requirement stands, whether even if your abstract is rejected, although you may continue to enter the competition and receive scores. (However, unless you are accepted into the conference at a later date as a 'wild card' entry, you will not be eligible to win a prize.) After the Challenge is over, and final scores have been posted (in late September), everyone may then submit their work to a journal or other conference. In particular, we expect a special issue from a journal to follow the conference and encourage all entrants (including those who missed the opportunity to compete or attend CinC 2020) to submit extended analysis and articles to that issue, taking into account the publications and discussions at CinC 2020.
+
+
+## <a name="wild-card"></a> Wild Card Entries
+
+If your abstract is rejected, or you failed to qualify during the unnoficial period, then there is still a chance to win the Challenge. Two 'wild card' entries have been reserved for you in the conference program (poster presentaitons only) for this purpose. On the 15th July (23:59 UTC) we will select the top two scored entries, using the official scoring metric at the time, and offer the two teams the opportunity to submit an abstract directly to the Challenge organizers. The abstract will still be reviewed as thoroughly as any other abstract accepted for the conference and the team must submit an abstract of an acceptable standard. See [Advice on Writing an Abstract](#abstract-advice).  
 
 ## <a name="abstract-advice"></a> Advice on Writing an Abstract 
 
@@ -218,10 +228,7 @@ If we discover evidence of the contravention of these rules, then you will be in
 [CinC 2020](https://www.cinc2020.org/) will take place from 13-16 September 2020 in [Rimini, Italy](https://www.google.com/maps/place/Rimini,+Province+of+Rimini,+Italy/@44.053442,12.2945337,10z/). You must attend the whole conference to be eligible for prizes. If you send someone in your place who is not a team member or co-author you will be disqualified and your abstract will be removed from the proceedings. It is vital the presenter (oral or poster) can defend your work in person, and has an in-depth knowledge of all decisions made during the development of your algorithm. No exceptions will be made. No remote attendance will be allowed because the organizational burden for this is too high. If you require a visa to attend the conference, we strongly suggest that you apply as soon as possible.  Please contact the local [conference](https://www.cinc2020.org/visa-information/) organizing committee (not the Challenge Organizers) for any visa sponsorship letters and answer any questions concerning the conference. 
 
 ## <a name="hackathon"></a> Hackathon
-Thanks to our sponsors, a pre-conference hackathon (with prizes) will take place on 13 September 2020 in Rimini, Italy, before the conference begins.
-
-Any team with at least one conference attendee is eligible to enter. You do not need to have entered the Challenge or have an abstract in the conference before this date. Moreover, you may combine forces with other teams to produce hybrid algorithms. We suggest that you peruse the conference preprints in the first week of September to find potential partners. This part of the Challenge is organized and sponsored by MathWorks and Google Cloud, so there will be hands-on help, but you are not required to use Google Cloud or MATLAB for developing an entry. The rules and restrictions are otherwise the same as the Challenge.
-
+Due to the uncertainties around travel, we have unfortunately decided not to run the Hackathon this year.
 
 ## <a name="sponsors"></a> Sponsors
 This year's Challenge is generously co-sponsored by Google, MathWorks, and the Gordon and Betty Moore Foundation.
