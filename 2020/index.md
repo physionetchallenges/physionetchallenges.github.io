@@ -156,18 +156,19 @@ Entrants may have an overall total of up to 15 scored entries over both the unof
 |Hiatus           | 1 May 2020       | 10 May 2020      | N/A             |
 |Abstract deadline| 1 May 2020       | 1 May 2020       | 1 abstract      |
 |Official phase   | 11 May 2020      | 23 August 2020   | 1-10 scored entries (*)|
-|Challengers notified of abstract decisions|	1 June 2020|	3 June 2020|	N/A|
+|Challengers notified of abstract accept/reject decisions|	1 June 2020|	3 June 2020|	N/A|
 |Wild card eligibility notification|	15 July 2020|	15 July 2020|	1-10 scored entries (*)|
 |Wild card abstract submission deadline|	17 July 2020|	17 July 2020|	1 abstract|
 |Hiatus           | 24 August 2020   | 12 September 2020| N/A             |
 |Preprint deadline| 6 September 2020 | 6 September 2020 | One 4-page paper (**)|
-|Hackathon        | 13 September 2020| 13 September 2020| 0-2 entries     |
-|Conference       | 13 September 2020| 16 September 2020| 1 oral presentation or poster|
+|Conference       | 13 September 2020| 16 September 2020| One 4-page paper (***)|
 |Final scores released| 17 September 2020| 24 September 2020| N/A            |
 |Final paper submitted| 25 September 2020| 30 September 2020| One 4-page paper (***)|
 
 (* Entries that fail to score do not count against limits.) 
+
 (** Must includes preliminary scores.)
+
 (*** Must include final score, your ranking in the Challenge, and any updates to your work as a result of feedback after presenting at CinC.)
 
 To be eligible for the open-source award, you must do all the following:
