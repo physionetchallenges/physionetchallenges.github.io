@@ -6,7 +6,7 @@ layout: 2020
 
 ## <a name="announcements"></a> Announcements
 
-__May 27, 2020:__ The full list of diagnoses for the challenge have now been posted [here] (https://github.com/physionetchallenges/physionetchallenges.github.io/blob/master/2020/Dx_map.csv). See the full announcement on the Challenge Google Group [here](https://groups.google.com/forum/#!forum/physionet-challenges).
+__May 27, 2020:__ The full list of diagnoses for the challenge have now been posted [here](https://github.com/physionetchallenges/physionetchallenges.github.io/blob/master/2020/Dx_map.csv). See the full announcement on the Challenge Google Group [here](https://groups.google.com/forum/#!forum/physionet-challenges).
 
 __May 26, 2020:__ Abstract reviews are now complete and will be announced within the next week. Please see the updated [key dates/deadlines](#dates-and-deadlines) and details on the [wild card entries](#wild-card) below. See the full announcement on the Challenge Google Group [here](https://groups.google.com/forum/#!topic/physionet-challenges/KBzTLnxdwzY). 
 
