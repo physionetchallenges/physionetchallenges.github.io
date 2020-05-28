@@ -18,9 +18,9 @@ __April 25, 2020:__ We have reopened the submission system for 5 more days (unti
 
 __March 31, 2020:__ The CinC abstract deadline has been extended to May 1.
 
-__March 16, 2020:__ The leaderboard is now live.
+__March 16, 2020:__ The [leaderboard](https://docs.google.com/spreadsheets/u/4/d/e/2PACX-1vQP88VkqNp8vZgGF5PuPFk5rb1dlDzbaHm8rrNUDz_Nbh5JOWCauGiX5m32AChYq2Q3F_TbOJmR7srE/pubhtml) is now live.
 
-__February 7, 2020:__ The 2020 Challenge has now opened! See below for details.
+__February 7, 2020:__ The 2020 Challenge is now open! See below for details.
 
 ## <a name="introduction"></a> Introduction
 
