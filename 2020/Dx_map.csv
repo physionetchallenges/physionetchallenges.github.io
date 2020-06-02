@@ -1,6 +1,7 @@
 dx,SNOMED code,Abbreviation
 1st degree av block,270492004,IAVB
 2nd degree av block,195042002,IIAVB
+abnormal QRS,164951009,abQRS
 accelerated idioventricular rhythm,61277005,AIVR
 accelerated junctional rhythm,426664006,AJR
 acute myocardial ischemia,413444003,AMIs
@@ -68,6 +69,7 @@ premature atrial contraction,284470004,PAC
 premature ventricular complexes,164884008,PVC
 premature ventricular contractions,427172004,PVC
 prolonged qt interval,111975006,LQT
+prolonged pr interval,164947007,LPR
 qwave abnormal,164917005,QAb
 r wave abnormal,164921003,RAb
 right atrial abnormality,253339007,RAAb
