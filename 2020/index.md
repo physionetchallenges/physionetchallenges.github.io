@@ -5,6 +5,7 @@ layout: 2020
 # Classification of 12-lead ECGs: the PhysioNet/Computing in Cardiology Challenge 2020
 
 ## <a name="announcements"></a> Announcements
+__Jun 8, 2020:__ We are releasing 4 new tranches of 12-lead ECGs with SNOMED-CT labels to complement the 2 previously released tranches. Altogether, 6 databases with 43,101 labeled recordings are now available. We will reopen the scoring system and release an updated scoring metric in the coming days.  See the full announcement on the Challenge [Google Group announcement](https://groups.google.com/forum/#!topic/physionet-challenges/0ldKZgDGi0Y)  
 
 __June 3, 2020:__ All abstract acceptances and rejections have been announced. Please check the [Google Group announcement](https://groups.google.com/forum/#!topic/physionet-challenges/xC3y-rH-EWU) for more details.
 
@@ -38,12 +39,19 @@ We ask participants to design and implement a working, open-source algorithm tha
 ## <a name="data"></a> Data
 
 The data for this Challenge are from multiple sources:
-1. Southeast University, China, including the data from the China Physiological Signal Challenge 2018
-2. A diverse population in the USA.
 
-The initial training set is the public data used in the [China Physiological Signal Challenge in 2018 (CPSC2018)](http://2018.icbeb.org/), held during the 7th 
-International Conference on Biomedical Engineering and Biotechnology in Nanjing, China.
-This training set consists of 6,877 (male: 3,699; female: 3,178) 12-ECG recordings lasting from 6 seconds to 60 seconds. Each recording was sampled at 500 Hz. 
+1.- Southeast University, China, including the data from the China Physiological Signal Challenge 2018
+2.- St. Petersburg Institute of Cardiological Technics, St. Petersburg, Russia.
+3.- The Physikalisch Technische Bundesanstalt, Brunswick, Germany.
+4.- Georgia 12-Lead ECG Challenge Database, Emory University, Atlanta, Georgia, USA.
+
+The first source is the public and unused data from the [China Physiological Signal Challenge in 2018 (CPSC2018)](http://2018.icbeb.org/), held during the 7th International Conference on Biomedical Engineering and Biotechnology in Nanjing, China. The unused data from the CPSC2018 is NOT the test data from the CPSC2018. The test data of the CPSC2018 is included in the final private database that has been sequestered. This training set consists of two sets of 6,877 (male: 3,699; female: 3,178) and 3,453 (male: 3,453, female: 1,610) of 12-ECG recordings lasting from 6 seconds to 60 seconds. Each recording was sampled at 500 Hz.
+
+The second source set is the public dataset from [St Petersburg INCART 12-lead Arrhythmia Database](https://physionet.org/content/incartdb/1.0.0/). This database consists of 75 annotated recordings extracted from 32 Holter records. Each record is 30 minutes long and contains 12 standard leads, each sampled at 257 Hz.
+
+The third source from the Physikalisch Technische Bundesanstalt (PTB) comprises two public databases: the [PTB Diagnostic ECG Database](https://physionet.org/content/ptbdb/1.0.0/) and the [PTB-XL](https://physionet.org/content/ptb-xl/1.0.1/), a large publicly available electrocardiography dataset. The first PTB database contains 549 records (male: 377, female: 139). Each recording was sampled at 1000 Hz. The PTB-XL contains 21,837 clinical 12-lead ECGs (male: 11,379 and female: 10,458) of 10 second length with a sampling frequency of 500Hz.
+
+The fourth source is a Georgia database which represents a unique demographic of the South Eastern United States. This training set contains 10,344 12-lead ECGs (male: 5,551, female: 4,793) of 10 second length with a sampling frequency of 500Hz.
 
 All data is provided in [WFDB format](https://www.physionet.org/physiotools/wpg/wpg_35.htm). Each ECG recording has a binary [MATLAB v4 file](https://www.mathworks.com/help/matlab/import_export/mat-file-versions.html) ([see page 27](matfile_format.pdf)) for the ECG signal data and a text file in [WFDB header format](https://www.physionet.org/physiotools/wag/header-5.htm) describing the recording and patient attributes, including the diagnosis (the labels for the recording). The binary files can be read using the [load function](https://www.mathworks.com/help/matlab/ref/load.html) in MATLAB and the [scipy.io.loadmat](https://docs.scipy.org/doc/scipy/reference/generated/scipy.io.loadmat.html) function in Python; please see our [baseline models](https://physionetchallenges.github.io/2020/#submissions) for examples of loading the data. The first line of the header provides information about the total number of leads and the total number of samples or points per lead. The following lines describe how each lead was saved, and the last lines provide information on demographics and diagnosis. Below is an example header file `A0001.hea`:
 ```
@@ -62,37 +70,45 @@ A0001.mat 16+24 1000/mV 16 0 -596 -321 0 V5
 A0001.mat 16+24 1000/mV 16 0 -16 -3112 0 V6
 #Age: 74
 #Sex: Male
-#Dx: RBBB
+#Dx: 426783006
 #Rx: Unknown
 #Hx: Unknown
 #Sx: Unknown
 ```
 
-From the first line, we see that the recording number is A0001, and the recording file is `A0001.mat`. The recording has 12 leads, each recorded at 500 Hz sample frequency, and contains 7500 samples. From the next 12 lines, we see that each signal was written at 16 bits with an offset of 24 bits, the amplitude resolution is 1000 with units in mV, the resolution of the analog-to-digital converter (ADC) used to digitize the signal is 16 bits, and the baseline value corresponding to 0 physical units is 0. The first value of the signal, the checksum, and the lead name are included for each signal. From the final 6 lines, we see that the patient is a 74-year-old male with a diagnosis (Dx) of right bundle branch block (RBBB). The medical prescription (Rx), history (Hx), and symptom or surgery (Sx) are unknown.
+From the first line, we see that the recording number is A0001, and the recording file is `A0001.mat`. The recording has 12 leads, each recorded at 500 Hz sample frequency, and contains 7500 samples. From the next 12 lines, we see that each signal was written at 16 bits with an offset of 24 bits, the amplitude resolution is 1000 with units in mV, the resolution of the analog-to-digital converter (ADC) used to digitize the signal is 16 bits, and the baseline value corresponding to 0 physical units is 0. The first value of the signal, the checksum, and the lead name are included for each signal. From the final 6 lines, we see that the patient is a 74-year-old male with a diagnosis (Dx) of 426783006. The medical prescription (Rx), history (Hx), and symptom or surgery (Sx) are unknown.
 
-Each ECG recording has one or more labels from one normal sinus rhythm type and eight abnormal types. The order of the classes is sorted alphabetically:
+Each ECG recording has one or more labels from different type of abnormalities in [SNOMED-CT codes](http://bioportal.bioontology.org/ontologies/SNOMEDCT). The full list of diagnoses for the challenge has been posted [here](https://github.com/physionetchallenges/physionetchallenges.github.io/blob/master/2020/Dx_map.csv) as a 3 column CSV file: Long-form description,  corresponding SNOMED-CT code, abbreviation. Although these descriptions apply to all training data there may be fewer classes in the test data, and in different proportions.  However, every class in the test data will be represented in the training data. 
 
-1. AF - Atrial fibrillation
-2. I-AVB - First-degree atrioventricular block
-3. LBBB - Left bundle branch block 
-4. Normal - Normal sinus rhythm 
-5. PAC - Premature atrial complex
-6. PVC - Premature ventricular complex
-5. RBBB - Right bundle branch block 
-8. STD - ST-segment depression
-9. STE - ST-segment elevation
+The training data can be downloaded from this links (You can use the [MD5 hash](https://en.wikipedia.org/wiki/Md5sum) to verify the integrity of the `tar.gz` file.):
 
-The training data can be downloaded from this [link](https://storage.cloud.google.com/physionet-challenge-2020-12-lead-ecg-public/PhysioNetChallenge2020_Training_CPSC.tar.gz). You can use the following [MD5 hash](https://en.wikipedia.org/wiki/Md5sum) `d5cc157cf5b85be404c7a2ea24f7da10` to verify the integrity of the `tar.gz` file. If you are unable to use this link to access the data, or if you want to use a command-line tool to access the data through Google Colab, then you can download the training data with this command
+1. 6,877 recordings from China Physiological Signal Challenge in 2018 (CPSC2018): [link](https://storage.cloud.google.com/physionet-challenge-2020-12-lead-ecg-public/PhysioNetChallenge2020_Training_CPSC.tar.gz); MD5-hash: `7b6b1f1ab1b4c59169c639d379575a87`
+2. 3,453 recordings from China 12-Lead ECG Challenge Database: [link](https://storage.cloud.google.com/physionet-challenge-2020-12-lead-ecg-public/PhysioNetChallenge2020_Training_2.tar.gz); MD5-hash: `36b409ee2b46aa6f1d2bef99b8451925`
+3. 74 recordings from the St Petersburg INCART 12-lead Arrhythmia Database: [link](https://storage.cloud.google.com/physionet-challenge-2020-12-lead-ecg-public/PhysioNetChallenge2020_Training_StPetersburg.tar.gz); MD5-hash: `440ca079f137fb16259511bb6105f134`
+4. 516 recordings from the PTB Diagnostic ECG Database: [link](https://storage.cloud.google.com/physionet-challenge-2020-12-lead-ecg-public/PhysioNetChallenge2020_Training_PTB.tar.gz); MD5-hash: `4035a2b496067c4331eecab74695bc67`
+5. 21,837 recordings from the PTB-XL electrocardiography Database:[link](https://storage.cloud.google.com/physionet-challenge-2020-12-lead-ecg-public/PhysioNetChallenge2020_PTB-XL.tar.gz); MD5-hash: `a893319c53f77d8e6a76ed3af38be99e`
+6. 10,344 recordings from Georgia 12-Lead ECG Challenge Database: [link](https://storage.cloud.google.com/physionet-challenge-2020-12-lead-ecg-public/PhysioNetChallenge2020_Training_E.tar.gz); MD5-hash: `594c8cbc02a0aec4c179d2f019b09a7a`
+
+If you are unable to use these links to access the data, or if you want to use a command-line tool to access the data through Google Colab, then you can download the training data with this command
 ```
 wget -O PhysioNetChallenge2020_Training_CPSC.tar.gz \
 https://cloudypipeline.com:9555/api/download/physionet2020training/PhysioNetChallenge2020_Training_CPSC.tar.gz/
 wget -O PhysioNetChallenge2020_Training_2.tar.gz \
 https://cloudypipeline.com:9555/api/download/physionet2020training/PhysioNetChallenge2020_Training_2.tar.gz/
+wget -O PhysioNetChallenge2020_Training_2.tar.gz \
+https://cloudypipeline.com:9555/api/download/physionet2020training/PhysioNetChallenge2020_Training_StPetersburg.tar.gz/
+wget -O PhysioNetChallenge2020_Training_2.tar.gz \
+https://cloudypipeline.com:9555/api/download/physionet2020training/PhysioNetChallenge2020_Training_PTB.tar.gz/
+wget -O PhysioNetChallenge2020_Training_2.tar.gz \
+https://cloudypipeline.com:9555/api/download/physionet2020training/PhysioNetChallenge2020_PTB-XL.tar.gz/
+wget -O PhysioNetChallenge2020_Training_2.tar.gz \
+https://cloudypipeline.com:9555/api/download/physionet2020training/PhysioNetChallenge2020_Training_E.tar.gz/
 ```
+The test set comprises data from one of the training sets, and one entire new set recorded from a geographically distinct institution from the training. Therefore, while there may be a small number of ECGs from patients that are in both training and test data, there is at least one test database in which the likelihood of any patients in the training database being represented in the test data is vanishingly small (but not zero).
 
-Although we will provide more training data at a later date, we are not planning to release the test data at any point, including after the end of the Challenge. Requests for the test data will not receive a response. We do not release test data to prevent overfitting on the test data and claims or publications of inflated performances. We will entertain requests to run code on the test data after the Challenge on a limited basis based on publication necessity and capacity. (The Challenge is largely staged by volunteers.)
+We are not planning to release the test data at any point, including after the end of the Challenge. Requests for the test data will not receive a response. We do not release test data to prevent overfitting on the test data and claims or publications of inflated performances. We will entertain requests to run code on the test data after the Challenge on a limited basis based on publication necessity and capacity. (The Challenge is largely staged by volunteers.)
 
-For the training dataset, we created a [form](https://docs.google.com/forms/d/e/1FAIpQLSd6fN81LoDI5OB4fYLzaNNAYM9Zs7HlRVsZQ9wiDD4jecmskw/viewform) for participants to submit errors or missing labels on the training set. We will review the error submissions and update the training dataset appropriately.
+Please note that there are bound to be some errors or debatable labels in each database. Although we have updated some of the data and labels from the unofficial period of the Challenge, many errors will persist. Part of the Challenge is to work out how to deal with these issues. Some databases have human overread machine labels, and some have single or multiple human labels, so the quality will vary, as well as the demographics and diagnoses. For the training dataset, we created a [form](https://docs.google.com/forms/d/e/1FAIpQLSd6fN81LoDI5OB4fYLzaNNAYM9Zs7HlRVsZQ9wiDD4jecmskw/viewform) for participants to submit errors or missing labels on the training set. We will review the error submissions and update the training dataset appropriately.
 
 ## <a name="registration"></a> Registering for the Challenge and Conditions of Participation 
 
@@ -100,13 +116,13 @@ To participate in the Challenge, you must register [here](https://docs.google.co
 
 ## <a name="algorithms"></a> Algorithms
 
-For each 12-lead ECG recording, your algorithm must identify a set of one or more classes as well as a probability or confidence score for each class. For example, suppose that your classifier identifies atrial fibrillation and a first-degree atrioventricular block with probabilities of 90% and 60%, respectively, for a particular 12-lead ECG sample, but it does not identify any other rhythm types. Your code might produce the following output for a single recording (not for each lead):
+For each 12-lead ECG recording, your algorithm must identify a set of one or more classes as well as a probability or confidence score for each class. For example, suppose that your classifier identifies atrial fibrillation (164889003) and a first-degree atrioventricular block (270492004) with probabilities of 90% and 60%, respectively, for a particular 12-lead ECG sample, but it does not identify any other rhythm types. Your code might produce the following output for a single recording (not for each lead):
 
 ```
 #Record ID
- AF, I-AVB, LBBB, Normal, RBBB, PAC,  PVC,  STD, STE
-  1,     1,    0,      0,    0,   0,   0,     0,   0
-0.9,   0.6,  0.2,   0.05,  0.2, 0.35, 0.35, 0.1, 0.1
+164889003, 270492004, 164909002, 426783006, 59118001, 284470004,  164884008,  429622005, 164931005
+  1,       1,         0,         0,         0,        0,          0,          0,         0
+0.9,       0.6,       0.2,       0.05,      0.2,      0.35,       0.35,       0.1,       0.1
 ```
 
 ## <a name="submissions"></a> Submitting your Algorithm
