@@ -40,10 +40,10 @@ We ask participants to design and implement a working, open-source algorithm tha
 
 The data for this Challenge are from multiple sources:
 
-1.- Southeast University, China, including the data from the China Physiological Signal Challenge 2018
-2.- St. Petersburg Institute of Cardiological Technics, St. Petersburg, Russia.
-3.- The Physikalisch Technische Bundesanstalt, Brunswick, Germany.
-4.- Georgia 12-Lead ECG Challenge Database, Emory University, Atlanta, Georgia, USA.
+1. Southeast University, China, including the data from the China Physiological Signal Challenge 2018
+2. St. Petersburg Institute of Cardiological Technics, St. Petersburg, Russia.
+3. The Physikalisch Technische Bundesanstalt, Brunswick, Germany.
+4. Georgia 12-Lead ECG Challenge Database, Emory University, Atlanta, Georgia, USA.
 
 The first source is the public and unused data from the [China Physiological Signal Challenge in 2018 (CPSC2018)](http://2018.icbeb.org/), held during the 7th International Conference on Biomedical Engineering and Biotechnology in Nanjing, China. The unused data from the CPSC2018 is NOT the test data from the CPSC2018. The test data of the CPSC2018 is included in the final private database that has been sequestered. This training set consists of two sets of 6,877 (male: 3,699; female: 3,178) and 3,453 (male: 3,453, female: 1,610) of 12-ECG recordings lasting from 6 seconds to 60 seconds. Each recording was sampled at 500 Hz.
 
@@ -82,12 +82,12 @@ Each ECG recording has one or more labels from different type of abnormalities i
 
 The training data can be downloaded from this links (You can use the [MD5 hash](https://en.wikipedia.org/wiki/Md5sum) to verify the integrity of the `tar.gz` file.):
 
-1. 6,877 recordings from China Physiological Signal Challenge in 2018 (CPSC2018): [link](https://storage.cloud.google.com/physionet-challenge-2020-12-lead-ecg-public/PhysioNetChallenge2020_Training_CPSC.tar.gz); MD5-hash: `7b6b1f1ab1b4c59169c639d379575a87`
-2. 3,453 recordings from China 12-Lead ECG Challenge Database: [link](https://storage.cloud.google.com/physionet-challenge-2020-12-lead-ecg-public/PhysioNetChallenge2020_Training_2.tar.gz); MD5-hash: `36b409ee2b46aa6f1d2bef99b8451925`
-3. 74 recordings from the St Petersburg INCART 12-lead Arrhythmia Database: [link](https://storage.cloud.google.com/physionet-challenge-2020-12-lead-ecg-public/PhysioNetChallenge2020_Training_StPetersburg.tar.gz); MD5-hash: `440ca079f137fb16259511bb6105f134`
-4. 516 recordings from the PTB Diagnostic ECG Database: [link](https://storage.cloud.google.com/physionet-challenge-2020-12-lead-ecg-public/PhysioNetChallenge2020_Training_PTB.tar.gz); MD5-hash: `4035a2b496067c4331eecab74695bc67`
-5. 21,837 recordings from the PTB-XL electrocardiography Database:[link](https://storage.cloud.google.com/physionet-challenge-2020-12-lead-ecg-public/PhysioNetChallenge2020_PTB-XL.tar.gz); MD5-hash: `a893319c53f77d8e6a76ed3af38be99e`
-6. 10,344 recordings from Georgia 12-Lead ECG Challenge Database: [link](https://storage.cloud.google.com/physionet-challenge-2020-12-lead-ecg-public/PhysioNetChallenge2020_Training_E.tar.gz); MD5-hash: `594c8cbc02a0aec4c179d2f019b09a7a`
+1. CPSC2018 training set, 6,877 recordings: [link](https://storage.cloud.google.com/physionet-challenge-2020-12-lead-ecg-public/PhysioNetChallenge2020_Training_CPSC.tar.gz); MD5-hash: `7b6b1f1ab1b4c59169c639d379575a87`
+2. China 12-Lead ECG Challenge Database (unused CPSC2018 data), 3,453 recordings: [link](https://storage.cloud.google.com/physionet-challenge-2020-12-lead-ecg-public/PhysioNetChallenge2020_Training_2.tar.gz); MD5-hash: `36b409ee2b46aa6f1d2bef99b8451925`
+3. St Petersburg INCART 12-lead Arrhythmia Database, 74 recordings: [link](https://storage.cloud.google.com/physionet-challenge-2020-12-lead-ecg-public/PhysioNetChallenge2020_Training_StPetersburg.tar.gz); MD5-hash: `440ca079f137fb16259511bb6105f134`
+4. PTB Diagnostic ECG Database, 516 recordings: [link](https://storage.cloud.google.com/physionet-challenge-2020-12-lead-ecg-public/PhysioNetChallenge2020_Training_PTB.tar.gz); MD5-hash: `4035a2b496067c4331eecab74695bc67`
+5. PTB-XL electrocardiography Database, 21,837 recordings:[link](https://storage.cloud.google.com/physionet-challenge-2020-12-lead-ecg-public/PhysioNetChallenge2020_PTB-XL.tar.gz); MD5-hash: `a893319c53f77d8e6a76ed3af38be99e`
+6. Georgia 12-Lead ECG Challenge Database, 10,344 recordings: [link](https://storage.cloud.google.com/physionet-challenge-2020-12-lead-ecg-public/PhysioNetChallenge2020_Training_E.tar.gz); MD5-hash: `594c8cbc02a0aec4c179d2f019b09a7a`
 
 If you are unable to use these links to access the data, or if you want to use a command-line tool to access the data through Google Colab, then you can download the training data with this command
 ```
