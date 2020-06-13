@@ -5,7 +5,7 @@ layout: 2020
 # Classification of 12-lead ECGs: the PhysioNet/Computing in Cardiology Challenge 2020
 
 ## <a name="announcements"></a> Announcements
-__Jun 8, 2020:__ We are releasing 4 new tranches of 12-lead ECGs with SNOMED-CT labels to complement the 2 previously released tranches. Altogether, 6 databases with 43,101 labeled recordings are now available. We will reopen the scoring system and release an updated scoring metric in the coming days.  See the full announcement on the Challenge [Google Group announcement](https://groups.google.com/forum/#!topic/physionet-challenges/0ldKZgDGi0Y)  
+__June 8, 2020:__ We are releasing 4 new tranches of 12-lead ECGs with SNOMED-CT labels to complement the 2 previously released tranches. Altogether, 6 databases with 43,101 labeled recordings are now available. We will reopen the scoring system and release an updated scoring metric in the coming days. See the full announcement on the [Challenge forum](https://groups.google.com/forum/#!topic/physionet-challenges/0ldKZgDGi0Y).
 
 __June 3, 2020:__ All abstract acceptances and rejections have been announced. Please check the [Google Group announcement](https://groups.google.com/forum/#!topic/physionet-challenges/xC3y-rH-EWU) for more details.
 
