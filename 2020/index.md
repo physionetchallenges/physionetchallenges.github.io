@@ -95,13 +95,13 @@ wget -O PhysioNetChallenge2020_Training_CPSC.tar.gz \
 https://cloudypipeline.com:9555/api/download/physionet2020training/PhysioNetChallenge2020_Training_CPSC.tar.gz/
 wget -O PhysioNetChallenge2020_Training_2.tar.gz \
 https://cloudypipeline.com:9555/api/download/physionet2020training/PhysioNetChallenge2020_Training_2.tar.gz/
-wget -O PhysioNetChallenge2020_Training_2.tar.gz \
+wget -O PhysioNetChallenge2020_Training_StPetersburg.tar.gz \
 https://cloudypipeline.com:9555/api/download/physionet2020training/PhysioNetChallenge2020_Training_StPetersburg.tar.gz/
-wget -O PhysioNetChallenge2020_Training_2.tar.gz \
+wget -O PhysioNetChallenge2020_Training_PTB.tar.gz \
 https://cloudypipeline.com:9555/api/download/physionet2020training/PhysioNetChallenge2020_Training_PTB.tar.gz/
-wget -O PhysioNetChallenge2020_Training_2.tar.gz \
+wget -O PhysioNetChallenge2020_Training_PTB-XL.tar.gz \
 https://cloudypipeline.com:9555/api/download/physionet2020training/PhysioNetChallenge2020_PTB-XL.tar.gz/
-wget -O PhysioNetChallenge2020_Training_2.tar.gz \
+wget -O PhysioNetChallenge2020_Training_E.tar.gz \
 https://cloudypipeline.com:9555/api/download/physionet2020training/PhysioNetChallenge2020_Training_E.tar.gz/
 ```
 The test set comprises data from one of the training sets, and one entire new set recorded from a geographically distinct institution from the training. Therefore, while there may be a small number of ECGs from patients that are in both training and test data, there is at least one test database in which the likelihood of any patients in the training database being represented in the test data is vanishingly small (but not zero).
@@ -136,31 +136,9 @@ For the first time in any public competition, we will require code both for your
 
 ## <a name="scoring"></a> Scoring
 
-For this Challenge, we will initially consider multiple evaluation metrics that assign different weights to different classes and classification errors. We welcome discussion about the evaluation metric for this year's Challenge.
+For this year’s Challenge, we developed a [new scoring metric](https://github.com/physionetchallenges/evaluation-2020) that awards partial credit to misdiagnoses that result in similar treatments or outcomes as the true diagnosis as judged by our cadiologists. This scoring metric reflects the clinical reality that some misdiagnoses are more harmful than others and should be scored accordingly. It is defined as follows:
 
-The first scoring function is a general class-weighted _F_-score, the _F_<sub>_β_</sub> measure, where we have assigned more weight to recall than precision. For each class _ℓ_, we compute
-
-<p align="center"><img src="eqn_f_measure.svg"></p>
-
-This score is calculated over all recordings, weighted by the relative importance of the diagnosis as
-
-<p align="center"><img src="eqn_sum_f_measure.svg"></p>
-
-where _C_<sup>_ℓ_</sup> is the importance of class _ℓ_ and _N_ is the number of classes. We initially set _C_<sup>_ℓ_</sup> = 1 so that each class is equally important.
-
-The second scoring function is a generalization of the Jaccard measure, where we have given missed diagnoses twice as much weight as correct diagnoses and false alarms. For each class _ℓ_, we compute
-
-<p align="center"><img src="eqn_jaccard_index.svg"></p>
-
-This score is calculated over all recordings, weighted by the relative importance of the diagnosis as
-
-<p align="center"><img src="eqn_sum_g_measure.svg"></p>
-
-where _C_<sup>_ℓ_</sup> is the importance of class _ℓ_ and _N_ is the number of classes. We initially set _C_<sup>_ℓ_</sup> = 1 so that each class is equally important.
-
-Since some recordings may have multiple labels, we normalize their contributions to these scoring functions so that each recording, not each class, makes an equal contribution. For example, if a recording has six classes, and your classifier identifies three labels correctly, identifies one label incorrectly, and misses two labels, then we increment the true positives by 3/6, false positives by 1/6, and false negatives by 2/6 for both scoring functions.
-
-We have implemented these [scoring functions](https://github.com/physionetchallenges/evaluation-2020) in both MATLAB and Python, and we will use the Python implementation for evaluating your submissions.
+Let _C_ = [_c_<sub>_i_</sub>] be a collection of diagnoses. We compute a multi-class confusion matrix _A_ = [_a_<sub>_ij_</sub>], where _a_<sub>_ij_</sub> is the number of recordings in a database that were classified as belonging to class _c_<sub>_i_</sub> but actually belong to class _c_<sub>_j_</sub>. We assign different weights _A_ = [_a_<sub>_ij_</sub>] to different entries in this matrix based on the similarity of treatments or differences in risks. The score _s_ is given by _s_ = &Sigma;<sub>ij</sub> _w_<sub>_ij_</sub> _a_<sub>_ij_</sub>, which is a generalized version of the traditional accuracy metric. The score _s_ is then normalized so that a classifier that always outputs the true class(es) receives a score of 1 and an inactive classifier that always outputs the normal class receives a score of 0.
 
 See the [leaderboard](https://docs.google.com/spreadsheets/d/e/2PACX-1vQP88VkqNp8vZgGF5PuPFk5rb1dlDzbaHm8rrNUDz_Nbh5JOWCauGiX5m32AChYq2Q3F_TbOJmR7srE/pubhtml) for the current scores from the Challenge.
 
