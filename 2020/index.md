@@ -5,11 +5,14 @@ layout: 2020
 # Classification of 12-lead ECGs: the PhysioNet/Computing in Cardiology Challenge 2020
 
 ## <a name="announcements"></a> Announcements
+
+__June 24, 2020:__ We have posted an updated SNOMED CT code mapping [here](https://github.com/physionetchallenges/evaluation-2020/blob/master/dx_mapping_scored.csv) and [here](https://github.com/physionetchallenges/evaluation-2020/blob/master/dx_mapping_unscored.csv) and an updated scoring metric in Python [here](https://github.com/physionetchallenges/evaluation-2020).  See the [full announcement](https://groups.google.com/g/physionet-challenges/c/HKX8YQ36l2w) on the [Challenge forum](https://groups.google.com/g/physionet-challenges/).
+
 __June 8, 2020:__ We are releasing 4 new tranches of 12-lead ECGs with SNOMED-CT labels to complement the 2 previously released tranches. Altogether, 6 databases with 43,101 labeled recordings are now available. We will reopen the scoring system and release an updated scoring metric in the coming days. See the full announcement on the [Challenge forum](https://groups.google.com/forum/#!topic/physionet-challenges/0ldKZgDGi0Y).
 
 __June 3, 2020:__ All abstract acceptances and rejections have been announced. Please check the [Google Group announcement](https://groups.google.com/forum/#!topic/physionet-challenges/xC3y-rH-EWU) for more details.
 
-__May 27, 2020:__ The full list of diagnoses for the challenge have now been posted [here](https://github.com/physionetchallenges/physionetchallenges.github.io/blob/master/2020/Dx_map.csv). See the full announcement on the Challenge Google Group [here](https://groups.google.com/forum/#!topic/physionet-challenges/CMBOS7USKbw).
+__May 27, 2020:__ The full list of diagnoses for the Challenge have now been posted [here](https://github.com/physionetchallenges/physionetchallenges.github.io/blob/master/2020/Dx_map.csv). See the full announcement on the Challenge Google Group [here](https://groups.google.com/forum/#!topic/physionet-challenges/CMBOS7USKbw).
 
 __May 26, 2020:__ Abstract reviews are now complete and will be announced within the next week. Please see the updated [key dates/deadlines](#dates-and-deadlines) and details on the [wild card entries](#wild-card) below. See the full announcement on the Challenge Google Group [here](https://groups.google.com/forum/#!topic/physionet-challenges/KBzTLnxdwzY). 
 
@@ -108,7 +111,7 @@ The test set comprises data from one of the training sets, and one entire new se
 
 We are not planning to release the test data at any point, including after the end of the Challenge. Requests for the test data will not receive a response. We do not release test data to prevent overfitting on the test data and claims or publications of inflated performances. We will entertain requests to run code on the test data after the Challenge on a limited basis based on publication necessity and capacity. (The Challenge is largely staged by volunteers.)
 
-Please note that there are bound to be some errors or debatable labels in each database. Although we have updated some of the data and labels from the unofficial period of the Challenge, many errors will persist. Part of the Challenge is to work out how to deal with these issues. Some databases have human overread machine labels, and some have single or multiple human labels, so the quality will vary, as well as the demographics and diagnoses. For the training dataset, we created a [form](https://docs.google.com/forms/d/e/1FAIpQLSd6fN81LoDI5OB4fYLzaNNAYM9Zs7HlRVsZQ9wiDD4jecmskw/viewform) for participants to submit errors or missing labels on the training set. We will review the error submissions and update the training dataset appropriately.
+Please note that there are bound to be some errors or debatable labels in each database. Although we have updated some of the data and labels from the unofficial period of the Challenge, many errors will persist. Part of the Challenge is to work out how to deal with these issues. Some databases have human overread machine labels, and some have single or multiple human labels, so the quality will vary, as well as the demographics and diagnoses. There will also be no more updates to the training data from this point onwards. 
 
 ## <a name="registration"></a> Registering for the Challenge and Conditions of Participation 
 
@@ -136,7 +139,7 @@ For the first time in any public competition, we will require code both for your
 
 ## <a name="scoring"></a> Scoring
 
-For this year’s Challenge, we developed a [new scoring metric](https://github.com/physionetchallenges/evaluation-2020) that awards partial credit to misdiagnoses that result in similar treatments or outcomes as the true diagnosis as judged by our cadiologists. This scoring metric reflects the clinical reality that some misdiagnoses are more harmful than others and should be scored accordingly. It is defined as follows:
+For this year’s Challenge, we developed a [new scoring metric](https://github.com/physionetchallenges/evaluation-2020) that awards partial credit to misdiagnoses that result in similar treatments or outcomes as the true diagnosis as judged by our cadiologists. This scoring metric reflects the clinical reality that some misdiagnoses are more harmful than others and should be scored accordingly. Moreover, it reflects the fact that confusing some classes is much less harmful that confusing others classes. It is defined as follows:
 
 Let _C_ = [_c_<sub>_i_</sub>] be a collection of diagnoses. We compute a multi-class confusion matrix _A_ = [_a_<sub>_ij_</sub>], where _a_<sub>_ij_</sub> is the number of recordings in a database that were classified as belonging to class _c_<sub>_i_</sub> but actually belong to class _c_<sub>_j_</sub>. We assign different weights _A_ = [_a_<sub>_ij_</sub>] to different entries in this matrix based on the similarity of treatments or differences in risks. The score _s_ is given by _s_ = &Sigma;<sub>ij</sub> _w_<sub>_ij_</sub> _a_<sub>_ij_</sub>, which is a generalized version of the traditional accuracy metric. The score _s_ is then normalized so that a classifier that always outputs the true class(es) receives a score of 1 and an inactive classifier that always outputs the normal class receives a score of 0.
 
