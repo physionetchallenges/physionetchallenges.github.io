@@ -52,9 +52,9 @@ The first source is the public and unused data from the [China Physiological Sig
 
 The second source set is the public dataset from [St Petersburg INCART 12-lead Arrhythmia Database](https://physionet.org/content/incartdb/1.0.0/). This database consists of 75 annotated recordings extracted from 32 Holter records. Each record is 30 minutes long and contains 12 standard leads, each sampled at 257 Hz.
 
-The third source from the Physikalisch Technische Bundesanstalt (PTB) comprises two public databases: the [PTB Diagnostic ECG Database](https://physionet.org/content/ptbdb/1.0.0/) and the [PTB-XL](https://physionet.org/content/ptb-xl/1.0.1/), a large publicly available electrocardiography dataset. The first PTB database contains 549 records (male: 377, female: 139). Each recording was sampled at 1000 Hz. The PTB-XL contains 21,837 clinical 12-lead ECGs (male: 11,379 and female: 10,458) of 10 second length with a sampling frequency of 500Hz.
+The third source from the Physikalisch Technische Bundesanstalt (PTB) comprises two public databases: the [PTB Diagnostic ECG Database](https://physionet.org/content/ptbdb/1.0.0/) and the [PTB-XL](https://physionet.org/content/ptb-xl/1.0.1/), a large publicly available electrocardiography dataset. The first PTB database contains 549 records (male: 377, female: 139). Each recording was sampled at 1000 Hz. The PTB-XL contains 21,837 clinical 12-lead ECGs (male: 11,379 and female: 10,458) of 10 second length with a sampling frequency of 500 Hz.
 
-The fourth source is a Georgia database which represents a unique demographic of the South Eastern United States. This training set contains 10,344 12-lead ECGs (male: 5,551, female: 4,793) of 10 second length with a sampling frequency of 500Hz.
+The fourth source is a Georgia database which represents a unique demographic of the Southeastern United States. This training set contains 10,344 12-lead ECGs (male: 5,551, female: 4,793) of 10 second length with a sampling frequency of 500 Hz.
 
 All data is provided in [WFDB format](https://www.physionet.org/physiotools/wpg/wpg_35.htm). Each ECG recording has a binary [MATLAB v4 file](https://www.mathworks.com/help/matlab/import_export/mat-file-versions.html) ([see page 27](matfile_format.pdf)) for the ECG signal data and a text file in [WFDB header format](https://www.physionet.org/physiotools/wag/header-5.htm) describing the recording and patient attributes, including the diagnosis (the labels for the recording). The binary files can be read using the [load function](https://www.mathworks.com/help/matlab/ref/load.html) in MATLAB and the [scipy.io.loadmat](https://docs.scipy.org/doc/scipy/reference/generated/scipy.io.loadmat.html) function in Python; please see our [baseline models](https://physionetchallenges.github.io/2020/#submissions) for examples of loading the data. The first line of the header provides information about the total number of leads and the total number of samples or points per lead. The following lines describe how each lead was saved, and the last lines provide information on demographics and diagnosis. Below is an example header file `A0001.hea`:
 ```
@@ -162,8 +162,8 @@ Entrants may have an overall total of up to 15 scored entries over both the unof
 |Abstract deadline| 1 May 2020       | 1 May 2020       | 1 abstract      |
 |Official phase   | 11 May 2020      | 23 August 2020   | 1-10 scored entries (*)|
 |Challengers notified of abstract accept/reject decisions|	1 June 2020|	3 June 2020|	N/A|
-|Wild card eligibility notification|	15 July 2020|	15 July 2020|	1-10 scored entries (*)|
-|Wild card abstract submission deadline|	17 July 2020|	17 July 2020|	1 abstract|
+|Wild card eligibility notification|	29 July 2020|	29 July 2020|	1-10 scored entries (*)|
+|Wild card abstract submission deadline|	5 August 2020|	5 August 2020|	1 abstract|
 |Hiatus           | 24 August 2020   | 12 September 2020| N/A             |
 |Preprint deadline| 6 September 2020 | 6 September 2020 | One 4-page paper (**)|
 |Conference       | 13 September 2020| 16 September 2020| One 4-page paper (***)|
