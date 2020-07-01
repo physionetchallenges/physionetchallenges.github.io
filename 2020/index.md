@@ -6,9 +6,12 @@ layout: 2020
 
 ## <a name="announcements"></a> Announcements
 
-__June 24, 2020:__ We have posted an updated SNOMED CT code mapping [here](https://github.com/physionetchallenges/evaluation-2020/blob/master/dx_mapping_scored.csv) and [here](https://github.com/physionetchallenges/evaluation-2020/blob/master/dx_mapping_unscored.csv) and an updated scoring metric in Python [here](https://github.com/physionetchallenges/evaluation-2020).  See the [full announcement](https://groups.google.com/g/physionet-challenges/c/HKX8YQ36l2w) on the [Challenge forum](https://groups.google.com/g/physionet-challenges/).
+__July 1, 2020:__ We are now accepting entries for the official phase of the Challenge. For the first time, we are requiring teams to submit their pretrained models and code for training their models. See the [full announcement](https://groups.google.com/g/physionet-challenges/c/CS-XVt6vrVE) on the [Challenge forum](https://groups.google.com/g/physionet-challenges/) and the previous two announcements for details.
 
-__June 8, 2020:__ We are releasing 4 new tranches of 12-lead ECGs with SNOMED-CT labels to complement the 2 previously released tranches. Altogether, 6 databases with 43,101 labeled recordings are now available. We will reopen the scoring system and release an updated scoring metric in the coming days. See the full announcement on the [Challenge forum](https://groups.google.com/forum/#!topic/physionet-challenges/0ldKZgDGi0Y).
+
+__June 24, 2020:__ We have posted an updated SNOMED CT code mapping [here](https://github.com/physionetchallenges/evaluation-2020/blob/master/dx_mapping_scored.csv) and [here](https://github.com/physionetchallenges/evaluation-2020/blob/master/dx_mapping_unscored.csv) and an updated scoring metric in Python [here](https://github.com/physionetchallenges/evaluation-2020).  See the [full announcement](https://groups.google.com/g/physionet-challenges/c/HKX8YQ36l2w) on the [Challenge forum](https://groups.google.com/g/physionet-challenges/) for details.
+
+__June 8, 2020:__ We are releasing 4 new tranches of 12-lead ECGs with SNOMED-CT labels to complement the 2 previously released tranches. Altogether, 6 databases with 43,101 labeled recordings are now available. We will reopen the scoring system and release an updated scoring metric in the coming days. See the [full](https://groups.google.com/forum/#!topic/physionet-challenges/0ldKZgDGi0Y) on the [Challenge forum](https://groups.google.com/g/physionet-challenges/) for details.
 
 __June 3, 2020:__ All abstract acceptances and rejections have been announced. Please check the [Google Group announcement](https://groups.google.com/forum/#!topic/physionet-challenges/xC3y-rH-EWU) for more details.
 
