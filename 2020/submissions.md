@@ -40,7 +40,7 @@ For the first time in a public competition, teams must submit both the code for 
 7. run_12ECG_classifier.m: Update this script to run your model. It takes the header with all the data and demographics information, a matrix of 12 leads ECG (columns are ECG leads and rows are time windows), and the output from load_12ECG_model as input and returns a probability or confidence score and a binary classification for each class as output. You must implement this function in the run_12ECG_classifier.m script. 
 8. driver.m: Do not change this script. It calls your load_12ECG_model function once, and it calls your run_12ECG_classifier function for each 12ECG recording. It also performs all file input and output. We will not use the driver.m script from your repository, so any change made to this code will not be included.
 9. Add your code to the root/base directory of the master branch of your repository.
-10. We will download your code, compile it using the MATLAB compiler: training (mcc -m train_model.m -a .) and running (mcc -m driver.m -a .) your classifier, and run them on Google Cloud.
+10. We will download your code, compile it using the MATLAB compiler: training (`mcc -m train_model.m -a .`) and running (`mcc -m driver.m -a .`) your classifier, and run them on Google Cloud.
 11. Here is a sample repository that you can use as a template: [MATLAB classifier](https://github.com/physionetchallenges/matlab-classifier-2020).
 
 ### <a name="python"></a>Python-specific instructions
@@ -55,34 +55,6 @@ For the first time in a public competition, teams must submit both the code for 
 7. Add your code to the root/base directory of the master branch of your repository.
 8. We will download your code, build a Docker container from your Dockerfile, and run it on Google Cloud.
 9. Here is a sample repository that you can use as a template: [Python classifier](https://github.com/physionetchallenges/python-classifier-2020).
-
-###  <a name="r"></a>R-specific instructions
-
-1. Using our sample R classification code ([link](https://github.com/physionetchallenges/r-classifier-2020)) as a template, format your code in the following way. Consider downloading this repository, replacing our code with your code, and adding the updated files to your repository.
-2. Dockerfile: Update to specify the version of R that you are using on your machine. Add any additional packages that you need. Do not change the name or the location of this file. The structure of this file is important, and especially the 3 lines that are marked as Do Not Delete.
-3. AUTHORS.txt, LICENSE.txt, README.md: Update as needed. Unfortunately, our submission system will be unable to read your README.
-4. run_12ECG_classifier.R: Update this script to load and run your model using the following functions.
-    - load_12ECG_model: Update this function to load your model weights and any parameters from files in your submission. It takes no input (place any filenames, etc. in the body of the function itself) and returns any output that you choose. You must implement this function in the run_12ECG_classifier.R script.
-    - run_12ECG_classifier: Update this function to run your model. It takes the header with all the data and demographics information, a matrix of 12 leads ECG (columns are ECG leads and rows are time windows), and the output from load_12ECG_model as input and returns a risk score and a binary classification for each class as output. You must implement this function in the run_12ECG_classifier.R script.
-5. train_12ECG_classifier.py: Update this script to create and save your model.  It also performs all file input and model output.  It takes the header with all the data and demographics information, a matrix of 12 leads ECG (columns are ECG leads and rows are time windows), and outputs your model (weights and any needed parameters). You can edit this script as much as you need.
-6. train_model.py: Do not edit this script. It calls your train_12ECG_classifier.py script. We will not use the train_model.py script from your repository, so any change made to this code will not be included.
-7. driver.R: Do not change this script. It calls your load_12ECG_model function only once and your run_12ECG_classifier function for each 12ECG recording. It also performs all file input and output. We will not use the driver.R script from your repository, so any change made to this code will not be included.
-8. Add your code to the root/base directory of the master branch of your repository.
-9. We will download your code, build a Docker container from your Dockerfile, and run it on Google Cloud.
-10. Here is a sample repository (coming soon) that you can use as a template: [R classifier](https://github.com/physionetchallenges/r-classifier-2020)
-
-###  <a name="julia"></a>Julia-specific instructions
-
-1. Using our sample Julia classification code (link) as a template, format your code in the following way. Consider downloading this repository, replacing our code with your code, and adding the updated files to your repository.
-2. Dockerfile: Update to specify the version of Julia that you are using on your machine. Add any additional packages that you need. Do not change the name or the location of this file. The structure of this file is important, and especially the 3 lines that are marked as Do Not Delete.
-3. AUTHORS.txt, LICENSE.txt, README.md: Update as needed. Unfortunately, our submission system will be unable to read your README.
-4. run_12ECG_classifier.jl: Update this script to load and run your model using the following functions.
-    - load_12ECG_model: Update this function to load your model weights and any parameters from files in your submission. It takes no input (place any filenames, etc. in the body of the function itself) and returns any output that you choose. You must implement this function in the run_12ECG_classifier.jl script.
-    - run_12ECG_classifier: Update this function to run your model. It takes the header with all the data and demographics information, a matrix of 12 leads ECG (columns are ECG leads and rows are time windows), and the output from load_12ECG_model as input and returns a risk score and a binary classification for each class as output. You must implement this function in the run_12ECG_classifier.jl script.
-5. driver.jl: Do not change this script. It calls your load_12ECG_model function only once and your run_12ECG_classifier function for each 12ECG recording. It also performs all file input and output. We will not use the driver.jl script from your repository, so any change made to this code will not be included.
-6. Add your code to the root/base directory of the master branch of your repository.
-7. We will download your code, build a Docker container from your Dockerfile, and run it on Google Cloud.
-8. Here is a sample repository (coming soon) that you can use as a template: [Julia classifier](https://github.com/physionetchallenges/julia-classifier-2020).
 
 ###  <a name="docker"></a> Docker-specific FAQs
 
