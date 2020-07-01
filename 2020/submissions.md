@@ -74,6 +74,7 @@ Here are instructions for testing the [Python example code](https://github.com/p
 First, create a folder, `docker_test`, in your home directory. Then, put the example code from GitHub in `docker_test/python-classifier-2020-master`, some of the training data in `docker_test/input_directory`, and an empty folder for the classifications in `docker_test/output_directory.`  Finally, build a Docker image and run the example code using the following steps:
 
 ```
+Docker
 user@computer:~/docker_test$ ls
 input_directory  output_directory  python-classifier-2020-master
 
@@ -88,12 +89,17 @@ Sending build context to Docker daemon  30.21kB
 [...]
 Successfully tagged image:latest
 
-user@computer:~/docker_test/python-classifier-2020-master$ docker run -it -v ~/docker_test/input_directory:/physionet/input_directory -v ~/docker_test/output_directory:/physionet/output_directory image bash
+user@computer:~/docker_test/python-classifier-2020-master$ docker run -it -v 
+~/docker_test/input_directory:/physionet/input_training_directory -v 
+~/docker_test/input_directory:/physionet/output_training_directory -v 
+~/docker_test/input_directory:/physionet/input_directory -v ~/docker_test/output_directory:/physionet/output_directory image bash
 
 root@[...]:/physionet# ls
 AUTHORS.txt  Dockerfile LICENSE.txt  README.md driver.py  run_12ECG_classifier.py  get_12ECG_features.py   input_directory  output_directory  requirements.txt
 
-root@[...]:/physionet# python driver.py input_directory/ output_directory/
+root@[...]:/physionet# python train_model.py input_training_directory/ output_training_directory/
+
+root@[...]:/physionet# python driver.py output_training_directory/ input_directory/ output_directory/
 
 root@[...]:/physionet# exit
 Exit
