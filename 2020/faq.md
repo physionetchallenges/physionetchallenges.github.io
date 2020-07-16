@@ -6,12 +6,26 @@ layout: 2020
 
 __Are we allowed to do transfer learning using pre-trained networks?__
 
-Most certainly - we encourage you to do this. You do not need to include your data in the code stack for training the algorithm, but you do need to include the pretrained mode in the code harness and provide code to retrain (continue training) on the training data we provide. 
+Yes, most certainly. We encourage you to do this. You do not need to include your data in the code stack for training the algorithm, but you do need to include the pre-trained model in the code and provide code to retrain (continue training) on the training data we provide. 
 You must also thoroughly document the content of the database you used to pre-train. 
+
+__Do we need to provide our training code?__
+
+Yes, this is a new and required (and exciting) part of this year's Challenge.
+
+__Can I provide my training code but request that you not use/run it?__
+
+No, the training code is an important part of this year's Challenge.
+
+__What computational resources do you provide for our code?__
+
+We run your training code on Google Cloud using 8 vCPUs, 30 GB RAM, and an NVIDIA T4 Tensor Core GPU (optional). The training code has a 96 hour time limit.
+
+We run each your trained model on Google Cloud using 2 vCPUs, 13 GB RAM, and an NVIDIA T4 Tensor Core GPU (optional). Your trained model has a 24 hour time limit on the test set.
 
 __For the license, can we make it open source but restrict to non-commercial use?__
 
-Yes - the philosophy of the Challenge is to encourage researchers to make their code free to use for research, and we hope that companies will approach you to license the code too!
+Yes, the philosophy of the Challenge is to encourage researchers to make their code free to use for research. Qe hope that companies will approach you to license the code, too!
 
 __Are the provided records a more accurate representation of the hold-out evaluation data that what was previously provided?__
 
@@ -40,10 +54,6 @@ No, not yet. If you change your code after submitting, then we may or may not ru
 __Why is my entry unsuccessful on your submission system? It works on my computer.__
 
 If you used Python, then make sure that it runs in Docker.
-
-__Why does my code take so long to run on your submission system? It runs quickly on my computer.__
-
-We run each classifier on Google Cloud using an `n1-highmem-2` [VM instance](https://cloud.google.com/compute/docs/machine-types#n1_high-memory_machine_types) with 2 vCPUs, 13 GB RAM, and an NVIDIA T4 Tensor Core GPU (optional). Each classifier has a 24 hour time limit on the test set.
     
 __My entry had some kind of error. Did I lose one of my total entries?__
 
