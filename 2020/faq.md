@@ -19,7 +19,7 @@ No, the training code is an important part of this year's Challenge.
 
 __What computational resources do you provide for our code?__
 
-We run your training code on Google Cloud using 8 vCPUs, 54 GB RAM, and an optional NVIDIA T4 Tensor Core GPU. The training code has a 24 hour time limit.
+We run your training code on Google Cloud using 8 vCPUs, 64 GB RAM, and an optional NVIDIA T4 Tensor Core GPU. The training code has a 72 hour time limit.
 
 We run each your trained model on Google Cloud using 2 vCPUs, 13 GB RAM, and an optional NVIDIA T4 Tensor Core GPU. Your trained model has a 24 hour time limit on the test set.
 
