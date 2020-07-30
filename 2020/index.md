@@ -6,8 +6,9 @@ layout: 2020
 
 ## <a name="announcements"></a> Announcements
 
-__July 1, 2020:__ We are now accepting entries for the official phase of the Challenge. For the first time, we are requiring teams to submit their pretrained models and code for training their models. See the [full announcement](https://groups.google.com/g/physionet-challenges/c/CS-XVt6vrVE) on the [Challenge forum](https://groups.google.com/g/physionet-challenges/) and the previous two announcements for details.
+__July 29, 2020:__ We have invited two ["wild card"](#wild-card) teams to the Challenge and increased the resources available for training your models. See the [FAQ](https://physionetchallenges.github.io/2020/faq) for details.
 
+__July 1, 2020:__ We are now accepting entries for the official phase of the Challenge. For the first time, we are requiring teams to submit their pretrained models and code for training their models. See the [full announcement](https://groups.google.com/g/physionet-challenges/c/CS-XVt6vrVE) on the [Challenge forum](https://groups.google.com/g/physionet-challenges/) and the previous two announcements for details.
 
 __June 24, 2020:__ We have posted an updated SNOMED CT code mapping [here](https://github.com/physionetchallenges/evaluation-2020/blob/master/dx_mapping_scored.csv) and [here](https://github.com/physionetchallenges/evaluation-2020/blob/master/dx_mapping_unscored.csv) and an updated scoring metric in Python [here](https://github.com/physionetchallenges/evaluation-2020).  See the [full announcement](https://groups.google.com/g/physionet-challenges/c/HKX8YQ36l2w) on the [Challenge forum](https://groups.google.com/g/physionet-challenges/) for details.
 
@@ -194,7 +195,7 @@ You must not submit analysis of this year’s Challenge data to other conference
 
 ## <a name="wild-card"></a> Wild Card Entries
 
-If your abstract is rejected, or you failed to qualify during the unofficial period, then there is still a chance to win the Challenge. Two "wild card" entries have been reserved for you in the conference program (poster presentaitons only) for this purpose. On the 28 July (23:59 UTC) we will select the top two scored entries, using the official scoring metric at the time, and offer the two teams the opportunity to submit an abstract directly to the Challenge organizers. The abstract will still be reviewed as thoroughly as any other abstract accepted for the conference and the team must submit an abstract of an acceptable standard. See [Advice on Writing an Abstract](#abstract-advice).  
+If your abstract is rejected, or you failed to qualify during the unofficial period, then there is still a chance to win the Challenge. Two "wild card" entries have been reserved for you in the conference program (poster presentaitons only) for this purpose. On the 28 July (23:59 UTC) we will select two top scored entries, using the official scoring metric at the time, and offer the two teams the opportunity to submit an abstract directly to the Challenge organizers. The abstract will still be reviewed as thoroughly as any other abstract accepted for the conference and the team must submit an abstract of an acceptable standard. See [Advice on Writing an Abstract](#abstract-advice).  
 
 ## <a name="abstract-advice"></a> Advice on Writing an Abstract 
 
