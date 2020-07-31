@@ -71,7 +71,7 @@ Install Docker. Clone your repository. Build an image. Run it on a single record
 <a name="commands"></a> __Less quickly, how can I test my submission locally?  Please give me commands that I can copy and paste.__
 
 Here are instructions for testing the [Python example code](https://github.com/physionetchallenges/python-classifier-2020) in Linux.  You can test the non-Python example code in a Mac, for example, in a similar way.  If you have trouble testing your code, then make sure that you can test the example code, which is known to work.
-First, create a folder, `docker_test`, in your home directory. Then, put the example code from GitHub in `docker_test/python-classifier-2020-master`, some of the training data in `docker_test/input_directory`, and an empty folder for the classifications in `docker_test/output_directory.`  Finally, build a Docker image and run the example code using the following steps:
+First, create a folder, `docker_test`, in your home directory. Then, put the example code from GitHub in `docker_test/python-classifier-2020-master`, some of the training data in `docker_test/input_directory` and `docker_test/input_training_directory`, an empty folders for the output of the training code in `docker_test/output_training_directory`, and empty folder for the classifications in `docker_test/output_directory.`  Finally, build a Docker image and run the example code using the following steps:
 
 ```
 Docker
@@ -90,8 +90,8 @@ Sending build context to Docker daemon  30.21kB
 Successfully tagged image:latest
 
 user@computer:~/docker_test/python-classifier-2020-master$ docker run -it -v 
-~/docker_test/input_directory:/physionet/input_training_directory -v 
-~/docker_test/input_directory:/physionet/output_training_directory -v 
+~/docker_test/input_training_directory:/physionet/input_training_directory -v 
+~/docker_test/input_training_directory:/physionet/output_training_directory -v 
 ~/docker_test/input_directory:/physionet/input_directory -v ~/docker_test/output_directory:/physionet/output_directory image bash
 
 root@[...]:/physionet# ls
