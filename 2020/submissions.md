@@ -91,7 +91,7 @@ Successfully tagged image:latest
 
 user@computer:~/docker_test/python-classifier-2020-master$ docker run -it -v 
 ~/docker_test/input_training_directory:/physionet/input_training_directory -v 
-~/docker_test/input_training_directory:/physionet/output_training_directory -v 
+~/docker_test/output_training_directory:/physionet/output_training_directory -v 
 ~/docker_test/input_directory:/physionet/input_directory -v ~/docker_test/output_directory:/physionet/output_directory image bash
 
 root@[...]:/physionet# ls
