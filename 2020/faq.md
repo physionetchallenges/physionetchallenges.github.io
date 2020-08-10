@@ -4,6 +4,9 @@ layout: 2020
 
 # Frequently Asked Questions (FAQ)
 
+__Can I attend this year's conference remotely? Will I be eligble for prizes?__
+Yes, due to the unique circumstances of this year, remote attendance is allowed for CinC 2020. You are still eligible for prizes if you attend remotely (as long as you satisfy the other criteria).
+
 __Are we allowed to do transfer learning using pre-trained networks?__
 
 Yes, most certainly. We encourage you to do this. You do not need to include your data in the code stack for training the algorithm, but you do need to include the pre-trained model in the code and provide code to retrain (continue training) on the training data we provide. 
