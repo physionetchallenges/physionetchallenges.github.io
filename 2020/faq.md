@@ -8,9 +8,13 @@ __Can I attend this year's conference remotely? Will I be eligble for prizes?__
 
 Yes, due to the unique circumstances of this year, remote attendance is allowed for CinC 2020. You are still eligible for prizes if you attend remotely (as long as you satisfy the other criteria).
 
-__Are the scores currently on the leaderboard the final scores?__
+__Are the scores currently on the leaderboard the final scores for the Challenge?__
 
-The leaderboard contains scores on a subset of the test data during the unofficial and official phases of the Challenge. The final scores on the full test data are released after the conference.
+No, the leaderboard contains scores on a subset of the test data during the unofficial and official phases of the Challenge. The final scores on the full test data are released after the conference for the "best" model selected by each team.
+
+__How will you choose which model to evaluate on the full test data? The latest entry? The best-scoring entry?__
+
+You will be able to choose which model you would like to have scored on the full test set. We will ask for teams to choose their “best” model shortly before the end of the official phase of the Challenge. If you do not choose a model, or if there is any ambiguity about your choice, then we will use the model with the highest score on the current subset of the test data.
 
 __Are we allowed to do transfer learning using pre-trained networks?__
 
