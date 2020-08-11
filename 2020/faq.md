@@ -5,7 +5,12 @@ layout: 2020
 # Frequently Asked Questions (FAQ)
 
 __Can I attend this year's conference remotely? Will I be eligble for prizes?__
+
 Yes, due to the unique circumstances of this year, remote attendance is allowed for CinC 2020. You are still eligible for prizes if you attend remotely (as long as you satisfy the other criteria).
+
+__Are the scores currently on the leaderboard the final scores?__
+
+The leaderboard contains scores on a subset of the test data during the unofficial and official phases of the Challenge. The final scores on the full test data are released after the conference.
 
 __Are we allowed to do transfer learning using pre-trained networks?__
 
