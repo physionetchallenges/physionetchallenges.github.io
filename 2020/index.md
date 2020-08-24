@@ -6,6 +6,8 @@ layout: 2020
 
 ## <a name="announcements"></a> Announcements
 
+__August 24, 2020:__ The official phase of the Challenge is now over. We will contact teams scores for recent entries over the next few days, and we encourage teams to [choose their favorite entry](https://forms.gle/CM9LZPMhnw28wSfh7) for evaluation on the full test set. Please see the [full announcement](https://groups.google.com/g/physionet-challenges/c/-VcOItba7Ys) on the Challenge forum for details, including important information about preparing for CinC.
+
 __July 29, 2020:__ We have invited two ["wild card"](#wild-card) teams to the Challenge and increased the resources available for training your models. See the [FAQ](https://physionetchallenges.github.io/2020/faq) for details.
 
 __July 1, 2020:__ We are now accepting entries for the official phase of the Challenge. For the first time, we are requiring teams to submit their pretrained models and code for training their models. See the [full announcement](https://groups.google.com/g/physionet-challenges/c/CS-XVt6vrVE) on the [Challenge forum](https://groups.google.com/g/physionet-challenges/) and the previous two announcements for details.
