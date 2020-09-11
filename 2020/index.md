@@ -222,6 +222,8 @@ We encourage the use of open-source licenses for your entries.
 
 Entries with non open-source licenses will be scored but not ranked in the official competition. All scores will be made public. At the end of the competition, all entries will be posted publicly, and therefore automatically mirrored on several sites around the world. We have no control over these sites, so we cannot remove your code even on request. Before the end of the competition, your code is not publicly available, and you can choose to withdraw it until the end of the Challenge in August. However, the Organizers reserve the right to retain and use a copy of the code for non-commercial use. This allows us to re-score if definitions change and validate any claims made by competitors.
 
+ If no license is specified by the participant, the organizers will assume the license is BSD 3.0.
+
 ## <a name="collaboration"></a> Rules on Competing in Teams / Collaboration
 
 To maintain the scientific impact of the Challenges, it is important that all Challengers contribute truly independent ideas. For this reason, we impose the following rules on team composition/collaboration:
