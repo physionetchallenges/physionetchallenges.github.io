@@ -37,8 +37,7 @@ We run each your trained model on Google Cloud using 2 vCPUs, 13 GB RAM, and an 
 
 __For the license, can we make it open source but restrict to non-commercial use?__
 
-Yes, the philosophy of the Challenge is to encourage researchers to make their code free to use for research. Qe hope that companies will approach you to license the code, too! If you do not specify any license, the we will assume the license is BSD 3.0.
-
+Yes, the philosophy of the Challenge is to encourage researchers to make their code free to use for research. We hope that companies will approach you to license the code, too! If you do not specify any license, then we will assume that the license is the BSD 3-Clause License.
 
 __Are the provided records a more accurate representation of the hold-out evaluation data that what was previously provided?__
 
