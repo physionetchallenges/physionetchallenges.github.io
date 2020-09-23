@@ -6,6 +6,8 @@ layout: 2020
 
 ## <a name="announcements"></a> Announcements
 
+__September 21, 2020:__ The winners of the 2020 Challenge were announced at [CinC](https://www.cinc2020.org/) in Rimini, Italy on September 16. From 1395 entries (707 successful) by 217 teams, 110 abstracts were accepted for presentation and 41 teams were officially ranked. Results can be found [here](https://github.com/physionetchallenges/evaluation-2020/blob/master/Results/).  
+
 __August 24, 2020:__ The official phase of the Challenge is now over. We will contact teams scores for recent entries over the next few days, and we encourage teams to [choose their favorite entry](https://forms.gle/CM9LZPMhnw28wSfh7) for evaluation on the full test set. Please see the [full announcement](https://groups.google.com/g/physionet-challenges/c/-VcOItba7Ys) on the Challenge forum for details, including important information about preparing for CinC.
 
 __July 29, 2020:__ We have invited two ["wild card"](#wild-card) teams to the Challenge and increased the resources available for training your models. See the [FAQ](https://physionetchallenges.github.io/2020/faq) for details.
