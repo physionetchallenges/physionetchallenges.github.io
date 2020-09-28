@@ -6,6 +6,8 @@ layout: 2020
 
 ## <a name="announcements"></a> Announcements
 
+__September 28, 2020:__ Our paper about the Challenge is under review. Please cite [Perez Alday EA, Gu A, Shah A, Robichaux C, Wong AKI, Liu C, Liu F, Rad BA, Elola A, Seyedi S, Li Q, Sharma A, Clifford GD, Reyna MA. Classification of 12-lead ECGs: the PhysioNet/Computing in Cardiology Challenge 2020. Physiol. Meas. 2020 (Under Review)](https://www.medrxiv.org/content/10.1101/2020.08.11.20172601v1) to refer to this year's Challenge.
+
 __September 24, 2020:__ The [focus issue in Physiological Measurement](https://iopscience.iop.org/journal/0967-3334/page/Classification_Multilead_ECGs) is now open for submissions! To submit, [create an account](https://mc04.manuscriptcentral.com/pmea-ipem) and choose "Special Issue Article" and then "Classification of Multilead ECGs". Please do not use the phrases "PhysioNet Challenge", "Computing in Cardiology", or "classification of multilead ECGs" in your title, which should be specific to your contributions.
 
 __September 21, 2020:__ The winners of the 2020 Challenge were announced at [CinC](https://www.cinc2020.org/) in Rimini, Italy on September 16. From 1395 entries (707 successful) by 217 teams, 110 abstracts were accepted for presentation and 41 teams were officially ranked. Results can be found [here](https://github.com/physionetchallenges/evaluation-2020/blob/master/Results/).  
