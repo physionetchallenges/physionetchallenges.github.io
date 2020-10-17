@@ -3,7 +3,10 @@ layout: 2020
 ---
 
 # Classification of 12-lead ECGs: the PhysioNet/Computing in Cardiology Challenge 2020
+
 ## Papers
+
+These conference papers for [Computing in Cardiology 2020](https://www.cinc2020.org/) will appear on the [CinC](https://www.cinc.org/cinc-papers-on-line/) and [IEEE](https://ieeexplore.ieee.org/xpl/conhome/1000157/all-proceedings) websites.
 
 | Abstract | Team Name | Title | Author(s) |
 | --- | --- | --- | --- |
