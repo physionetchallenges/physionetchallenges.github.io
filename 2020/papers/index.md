@@ -20,7 +20,7 @@ layout: 2020
 | [85](85.pdf) | CQUPT_ECG | SE-ECGNet: Multi-scale SE-Net for Multi-lead ECG Data | Jiabo Chen, Tianlong Chen, Bin Xiao, Xiuli Bi, Yongchao Wang, Weisheng Li, Han Duan, Junhui Zhang and Xu Ma |
 | [95](95.pdf) | ECGLearner | Deep Multi-Label Multi-Instance Classification on 12-Lead ECG | Yingjing Feng and Edward Vigmond |
 | [107](107.pdf) | prna | A Wide and Deep Transformer Neural Network for 12-Lead ECG Classification | Annamalai Natarajan, Yale Chang, Sara Mariani, Asif Rahman, Gregory Boverman, Shruti Vij and Jonathan Rubin |
-| [112](112.pdf) | Between_a_ROC_and_a_heart_place | Adaptive lead weighted ResNet trained with different duration signals for classifying 12-lead ECGs | Zhibin Zhao, Hui Fang, Samuel Relton, Ruqiang Yan, Yuhong Liu, Zhijing Li, Jing Qin and David Wong |
+| [112](112.pdf) | Between a ROC and a heart place | Adaptive lead weighted ResNet trained with different duration signals for classifying 12-lead ECGs | Zhibin Zhao, Hui Fang, Samuel Relton, Ruqiang Yan, Yuhong Liu, Zhijing Li, Jing Qin and David Wong |
 | [116](116.pdf) | Gio_Ivo | Rule-Based methods and Deep Learning Networks for Automatic Classification of ECG | giovanni bortolan, Ivaylo Christov and Iana Simova |
 | [124](124.pdf) | BioS | 12-lead ECG Arrythmia Classification Using Convolutional Neural Network for Mutually Non-Exclusive Classes | Mateusz Soliński, Michał Łepek, Antonina Pater, Katarzyna Muter, Przemysław Wiszniewski, Dorota Kokosińska, Judyta Salamon and Zuzanna Puzio |
 | [127](127.pdf) | Care4MyHeart | Identification of Cardiac Arrhythmias from 12-lead ECG using Beat-wise Analysis and a Combination of CNN and LSTM | Mohanad Alkhodari, Leontios J. Hadjileontiadis and Ahsan H. Khandoker |
