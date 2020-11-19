@@ -6,6 +6,8 @@ layout: 2020
 
 ## <a name="announcements"></a> Announcements
 
+__November 11, 2020:__ Our paper describing this year's Challenge is now available at [Physiological Measurement](https://iopscience.iop.org/article/10.1088/1361-6579/abc960) as part of the [focus issue on multilead ECG classification](https://iopscience.iop.org/journal/0967-3334/page/Classification_Multilead_ECGs). Please cite this paper to describe the Challege, consider submitting your work to the focus issue, and stay tuned for the launch of next year's Challenge!
+
 __October 18, 2020:__ The [conference papers](https://physionetchallenges.github.io/2020/papers/) for [Computing in Cardiology 2020](https://www.cinc2020.org/) will appear on the [CinC](https://www.cinc.org/cinc-papers-on-line/) and [IEEE](https://ieeexplore.ieee.org/xpl/conhome/1000157/all-proceedings) websites.
 
 __September 28, 2020:__ Our paper about the Challenge is under review. Please cite [Perez Alday EA, Gu A, Shah A, Robichaux C, Wong AKI, Liu C, Liu F, Rad BA, Elola A, Seyedi S, Li Q, Sharma A, Clifford GD, Reyna MA. Classification of 12-lead ECGs: the PhysioNet/Computing in Cardiology Challenge 2020. Physiol. Meas. 2020 (Under Review)](https://www.medrxiv.org/content/10.1101/2020.08.11.20172601v1) to refer to this year's Challenge.
