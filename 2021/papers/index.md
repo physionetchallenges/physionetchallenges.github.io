@@ -4,19 +4,9 @@ layout: 2020
 
 # Classification of 12-lead ECGs: the PhysioNet/Computing in Cardiology Challenge 2020
 
-## Citations
+## Papers
 
-For this year's Challenge, please cite
-
-    [Perez Alday EA, Gu A, Shah AJ, Robichaux C, Wong AI, Liu C, Liu F, Rad AB, Elola A, Seyedi S, Li Q, Sharma A, Clifford GD<sup>*</sup>, Reyna MA<sup>*</sup>. Classification of 12-lead ECGs: the PhysioNet/Computing in Cardiology Challenge 2020. Physiol Meas. 2020 Nov 11. doi: 10.1088/1361-6579/abc960](2020ChallengePaper.pdf)
-
-## Focus Issue Papers
-
-The [Physiological Measurement Focus Collection: Classification of Multilead ECGs](https://iopscience.iop.org/journal/0967-3334/page/Focus%20issues) includes the above [paper](https://iopscience.iop.org/article/10.1088/1361-6579/abc960).
-
-## Conference Papers
-
-The conference papers for [Computing in Cardiology 2020](https://www.cinc2020.org/) will appear on the [CinC](https://www.cinc.org/cinc-papers-on-line/) and [IEEE](https://ieeexplore.ieee.org/xpl/conhome/1000157/all-proceedings) websites.
+These conference papers for [Computing in Cardiology 2020](https://www.cinc2020.org/) will appear on the [CinC](https://www.cinc.org/cinc-papers-on-line/) and [IEEE](https://ieeexplore.ieee.org/xpl/conhome/1000157/all-proceedings) websites.
 
 | Abstract | Team Name | Title | Author(s) |
 | --- | --- | --- | --- |

@@ -6,15 +6,15 @@ layout: 2020
 
 ## <a name="announcements"></a> Announcements
 
-__November 11, 2020:__ Our paper describing this year's Challenge is now available at [Physiological Measurement](https://iopscience.iop.org/article/10.1088/1361-6579/abc960) as part of the [focus issue on multilead ECG classification](https://iopscience.iop.org/journal/0967-3334/page/Classification_Multilead_ECGs). Please cite this paper to describe the Challege, consider submitting your work to the focus issue, and stay tuned for the launch of next year's Challenge!
+__November 11, 2020:__ [Our paper](paper/2020ChallengePaper.pdf) describing this year's Challenge is now available at [Physiological Measurement](https://iopscience.iop.org/article/10.1088/1361-6579/abc960) as part of the [focus issue on multilead ECG classification](https://iopscience.iop.org/journal/0967-3334/page/Classification_Multilead_ECGs). Please cite this paper to describe the Challenge, consider submitting your work to the focus issue, and stay tuned for the launch of next year's Challenge!
 
 __October 18, 2020:__ The [conference papers](https://physionetchallenges.github.io/2020/papers/) for [Computing in Cardiology 2020](https://www.cinc2020.org/) will appear on the [CinC](https://www.cinc.org/cinc-papers-on-line/) and [IEEE](https://ieeexplore.ieee.org/xpl/conhome/1000157/all-proceedings) websites.
 
-__September 28, 2020:__ Our paper about the Challenge is under review. Please cite [Perez Alday EA, Gu A, Shah A, Robichaux C, Wong AKI, Liu C, Liu F, Rad BA, Elola A, Seyedi S, Li Q, Sharma A, Clifford GD, Reyna MA. Classification of 12-lead ECGs: the PhysioNet/Computing in Cardiology Challenge 2020. Physiol. Meas. 2020 (Under Review)](https://www.medrxiv.org/content/10.1101/2020.08.11.20172601v1) to refer to this year's Challenge.
+__September 28, 2020:__ Our paper about the Challenge is under review. Please cite [Perez Alday EA, Gu A, Shah AJ, Robichaux C, Wong AI, Liu C, Liu F, Rad AB, Elola A, Seyedi S, Li Q, Sharma A, Clifford GD<sup>*</sup>, Reyna MA<sup>*</sup>. Classification of 12-lead ECGs: the PhysioNet/Computing in Cardiology Challenge 2020. Physiol Meas. 2020 Nov 11. doi: 10.1088/1361-6579/abc960](2020ChallengePaper.pdf) to refer to this year's Challenge.
 
 __September 24, 2020:__ The [focus issue in Physiological Measurement](https://iopscience.iop.org/journal/0967-3334/page/Classification_Multilead_ECGs) is now open for submissions! To submit, [create an account](https://mc04.manuscriptcentral.com/pmea-ipem) and choose "Special Issue Article" and then "Classification of Multilead ECGs". Please do not use the phrases "PhysioNet Challenge", "Computing in Cardiology", or "classification of multilead ECGs" in your title, which should be specific to your contributions.
 
-__September 21, 2020:__ The winners of the 2020 Challenge were announced at [CinC](https://www.cinc2020.org/) in Rimini, Italy on September 16. From 1395 entries (707 successful) by 217 teams, 110 abstracts were accepted for presentation and 41 teams were officially ranked. Results can be found [here](https://github.com/physionetchallenges/evaluation-2020/blob/master/Results/).  
+__September 21, 2020:__ The winners of the 2020 Challenge were announced at [CinC](https://www.cinc2020.org/) in Rimini, Italy on September 16. From 1395 entries (707 successful) by 217 teams, 110 abstracts were accepted for presentation and 41 teams were officially ranked. Results can be found [here](https://github.com/physionetchallenges/evaluation-2020/blob/master/Results/).
 
 __August 24, 2020:__ The official phase of the Challenge is now over. We will contact teams scores for recent entries over the next few days, and we encourage teams to [choose their favorite entry](https://forms.gle/CM9LZPMhnw28wSfh7) for evaluation on the full test set. Please see the [full announcement](https://groups.google.com/g/physionet-challenges/c/-VcOItba7Ys) on the Challenge forum for details, including important information about preparing for CinC.
 
@@ -30,7 +30,7 @@ __June 3, 2020:__ All abstract acceptances and rejections have been announced. P
 
 __May 27, 2020:__ The full list of diagnoses for the Challenge have now been posted [here](https://github.com/physionetchallenges/physionetchallenges.github.io/blob/master/2020/Dx_map.csv). See the full announcement on the Challenge Google Group [here](https://groups.google.com/forum/#!topic/physionet-challenges/CMBOS7USKbw).
 
-__May 26, 2020:__ Abstract reviews are now complete and will be announced within the next week. Please see the updated [key dates/deadlines](#dates-and-deadlines) and details on the [wild card entries](#wild-card) below. See the full announcement on the Challenge Google Group [here](https://groups.google.com/forum/#!topic/physionet-challenges/KBzTLnxdwzY). 
+__May 26, 2020:__ Abstract reviews are now complete and will be announced within the next week. Please see the updated [key dates/deadlines](#dates-and-deadlines) and details on the [wild card entries](#wild-card) below. See the full announcement on the Challenge Google Group [here](https://groups.google.com/forum/#!topic/physionet-challenges/KBzTLnxdwzY).
 
 __May 12, 2020:__ Your abstracts are under review, and we hope to release acceptances and rejections by early June. For those who missed the abstract deadline, we will provide an opportunity to qualify as a wild card participant over the summer, so please don’t give up!
 

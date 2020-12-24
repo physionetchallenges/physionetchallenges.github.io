@@ -4,14 +4,20 @@ layout: default
 
 # The PhysioNet/Computing in Cardiology Challenges
 
-For the past 21 years, [PhysioNet](https://physionet.org) and [Computing in Cardiology](http://www.cinc.org/) have co-hosted a series of annual challenges to tackle clinically interesting questions that are either unsolved or not well-solved. 
+For the past 22 years, [PhysioNet](https://physionet.org) and [Computing in Cardiology](http://www.cinc.org/) have co-hosted a series of annual challenges to tackle clinically interesting questions that are either unsolved or not well-solved.
 
-The [PhysioNet/Computing in Cardiology Challenge 2020](/2020/) invites participants to identify clinical diagnoses from 12-lead ECG recordings. We ask participants to design and implement a working, open-source algorithm that can, based only on the clinical data provided, automatically identify the cardiac abnormality or abnormalities present in each 12-lead ECG recording. The winners of the Challenge will be the team whose algorithm achieves the highest score for recordings in the hidden test set.
+The [PhysioNet/Computing in Cardiology Challenge 2021](/2021/) invites participants to identify clinical diagnoses from reduced-lead ECG recordings, extending last year's Challenge on considered 12-lead ECGs.
 
-## Current Challenge
-- __2020__: [Classification of 12-lead ECGs](/2020/)
+We ask participants to design and implement working, open-source algorithms that can, based only on the provided clinical data, automatically identify the cardiac abnormality or abnormalities present in an ECG recording. The winners of the Challenge will be the team whose algorithm achieves the highest score for hidden test sets of 12-lead or 2-lead ECG recordings.
 
-## Past Challenges
+Please check the below links for information about [current](#current) and [past](#past) Challenges, including [important details](/faq/) about scoring and test data for previous Challenges.
+
+## <a name="current"></a> Current Challenge
+- __2021__: [Will Two Do? Varying Dimensions in Electrocardiography](/2021/)
+
+## <a name="past"></a> Past Challenges
+- __2020__: [Classification of 12-lead ECGs](/2020/)  
+ Papers and contributed software ongoing
 - __2019__: [Early Prediction of Sepsis from Clinical Data](https://physionet.org/content/challenge-2019/)  
  Papers and contributed software ongoing
 - __2018__: [You Snooze, You Win](https://physionet.org/content/challenge-2018/)  
