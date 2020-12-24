@@ -6,7 +6,7 @@ layout: 2021
 
 ## <a name="announcements"></a> Announcements
 
-__December 23, 2020:__ The 2021 Challenge is now open! See below for details. Please read this website for details and share questions and comments on [Challenge forum](https://groups.google.com/g/physionet-challenges/).
+__December 24, 2020:__ The 2021 Challenge is now open! See below for details. Please read this website for details and share questions and comments on [Challenge forum](https://groups.google.com/g/physionet-challenges/).
 
 ## <a name="introduction"></a> Introduction
 
@@ -126,7 +126,7 @@ __Please__ submit your entries early to ensure that you have the most chances fo
 
 |                 |    Start         | End              | Submissions            |
 |-----------------|------------------|------------------|------------------------|
-|Unofficial phase | 23 December 2020 | 8 April 2021     | 1-5 scored entries (*) |
+|Unofficial phase | 24 December 2020 | 8 April 2021     | 1-5 scored entries (*) |
 |Hiatus           | 9 April 2021     | 30 April 2021    | N/A                    |
 |Abstract deadline| 15 April 2021    | 15 April 2021    | 1 abstract             |
 |Official phase   | 1 May 2021       | 23 August 2021   | 1-10 scored entries (*)|
@@ -250,4 +250,4 @@ This year's Challenge is generously co-sponsored by Google, MathWorks, and the G
 
 ---
 
-[Back](../index.html
+[Back](../index.html)
