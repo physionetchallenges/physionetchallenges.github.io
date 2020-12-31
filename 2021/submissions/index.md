@@ -140,10 +140,10 @@ This will take you into your container and you should see your code.
 __What can I do to make sure that my submission is successful?__
 
 You can avoid most submission errors with the following steps: 
-   - Do not change the driver script.  We will only use the driver scripts (driver.m, driver.py) in the MATLAB, Python example repositories ([https://github.com/physionetchallenges](https://github.com/physionetchallenges), so any changes that you make will not be used.
+   - Do not change the train_model or test_model scripts.  We will only use the versions of these scripts in the MATLAB and Python example repositories ([https://github.com/physionetchallenges](https://github.com/physionetchallenges), so any changes that you make will not be used.
    - Do build your Docker image.  The above FAQ provides advice for common Docker-related issues.
    - Do test your Docker code on at least one file from the training dataset.
-   - Do try to reduce the run time of your code by moving code from the run_12ECG_classifier function to the load_12ECG_model function for repeated tasks.  Most submissions run in a couple of hours on the test data.
+   - Do try to reduce the run time of your code by moving code from the run_model function to the load_model function for repeated tasks.  Most submissions can run in a couple of hours on the test data.
 
 __Why is my entry unsuccessful on your submission system? It works on my computer.__
 
