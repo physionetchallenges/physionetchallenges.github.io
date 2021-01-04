@@ -98,7 +98,7 @@ The example algorithms are classifiers that use simple logistic regression model
 
 Please use the above [example code](#algorithms) as templates for your submissions.
 
-Please see the [submission instructions](https://physionetchallenges.github.io/2021/submissions/) for detailed information about how to submit a successful Challenge entry. We will open scoring in January. We will provide feedback on your entry as soon as possible, so please wait at least __72 hours__ before contacting us about the status of your entry.
+Please see the [submission instructions](submissions/) for detailed information about how to submit a successful Challenge entry. We will open scoring in January. We will provide feedback on your entry as soon as possible, so please wait at least __72 hours__ before contacting us about the status of your entry.
 
 Like [last year's Challenge](../2020/#submissions), we will continue to require code both for your trained model and for testing your model. If we cannot reproduce your model from the training code, then you will not be eligible for ranking or a prize.
 
