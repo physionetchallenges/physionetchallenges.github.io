@@ -98,7 +98,7 @@ The example algorithms are classifiers that use simple logistic regression model
 
 Please use the above [example code](#algorithms) as templates for your submissions.
 
-Please see the [submission instructions](https://physionetchallenges.github.io/2021/submissions.html) for detailed information about how to submit a successful Challenge entry. We will open scoring in January. We will provide feedback on your entry as soon as possible, so please wait at least __72 hours__ before contacting us about the status of your entry.
+Please see the [submission instructions](https://physionetchallenges.github.io/2021/submissions/) for detailed information about how to submit a successful Challenge entry. We will open scoring in January. We will provide feedback on your entry as soon as possible, so please wait at least __72 hours__ before contacting us about the status of your entry.
 
 Like [last year's Challenge](../2020/#submissions), we will continue to require code both for your trained model and for testing your model. If we cannot reproduce your model from the training code, then you will not be eligible for ranking or a prize.
 
@@ -148,7 +148,7 @@ To be eligible for the open-source award, you must do all the following:
 
 1. Register for the Challenge [here](../).
 2. Submit at least one open-source entry that can be scored during the unofficial phase.
-3. [Submit an abstract to CinC](http://www.cinc.org/information-for-computing-in-cardiology-authors/) by the abstract submission deadline. Include your team name and score from the unofficial phase in your abstract. Please select 'PhysioNet/CinC Challenge' as the topic of your abstract so that it can be identified easily by the abstract review committee. __Please__ read [“Advice on Writing an Abstract”](#abstract) for important information on writing a successful abstract.
+3. [Submit an abstract to CinC](http://www.cinc.org/information-for-computing-in-cardiology-authors/) by the abstract submission deadline. Include your team name and score from the unofficial phase in your abstract. Please select 'PhysioNet/CinC Challenge' as the topic of your abstract so that it can be identified easily by the abstract review committee. __Please__ read [“Advice on Writing an Abstract”](#abstracts) for important information on writing a successful abstract.
 4. Submit at least one open-source entry that can be scored during the official phase.
 5. [Submit a full 4-page paper](http://www.cinc.org/information-for-computing-in-cardiology-authors/) on your work to CinC by the above preprint deadline.
 6. One of your team members must attend [CinC 2021](http://www.cinc2021.org/) to present your work either orally or as a poster (depending on your abstract acceptance). If you have a poster, then you must stand by it to defend your work. No shows (oral or poster) will be disqualified. One of your team members must also attend the closing ceremony to collect your prize. No substitutes will be allowed.
