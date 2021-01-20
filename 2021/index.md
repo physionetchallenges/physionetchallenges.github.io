@@ -22,13 +22,15 @@ We ask participants to design and implement a working, open-source algorithm tha
 
 ## <a name="data"></a> Data
 
-### Data Sources
-
 The training data contains twelve-lead ECGs. The validation and test data contains twelve-lead, six-lead, and two-lead ECGs:
 
 1. Twelve leads: I, II, III, aVR, aVL, aVF, V1, V2, V3, V4, V5, V6
 2. Six leads: I, II, III, aVL, aVR, aVF
 3. Two leads: II, V5
+
+Each ECG recording has one or more labels that describe cardiac abnormalities (and/or a normal sinus rhythm). We mapped the labels for each recording to [SNOMED-CT codes](http://bioportal.bioontology.org/ontologies/SNOMEDCT). The lists of [scored labels](https://github.com/physionetchallenges/evaluation-2021/blob/main/dx_mapping_scored.csv) and [unscored labels](https://github.com/physionetchallenges/evaluation-2021/blob/main/dx_mapping_unscored.csv) are given with the [evaluation code](https://github.com/physionetchallenges/evaluation-2021); see the [scoring section](#scoring) for details.
+
+### Data Sources
 
 The initial data for this Challenge are from [last year's Challenge](../2020/#data), which includes annotated twelve-lead ECG recordings from five sources in four countries across three continents. These databases included 66,361 twelve-lead ECG recordings with 43,101 ECGs shared publicly as training data, 6,630 ECGs retained privately as validation data, and 16,630 ECGs retained privately as test data:
 
@@ -74,8 +76,6 @@ A0001.mat 16+24 1000/mV 16 0 -16 -3112 0 V6
 ```
 
 From the first line of the file, we see that the recording number is A0001, and the recording file is `A0001.mat`. The recording has 12 leads, each recorded at a 500 Hz sampling frequency, and contains 7500 samples. From the next 12 lines of the file (one for each lead), we see that each signal was written at 16 bits with an offset of 24 bits, the amplitude resolution is 1000 mV, the resolution of the analog-to-digital converter (ADC) used to digitize the signal is 16 bits, and the baseline value corresponding to 0 physical units is 0. The first value of the signal (-1716, etc.), the checksum (0, etc.), and the lead name (I, etc.) are the last three entries of each of these lines. From the final 6 lines, we see that the patient is a 74-year-old male with a diagnosis (Dx) of 426783006, which is the [SNOMED-CT code](http://bioportal.bioontology.org/ontologies/SNOMEDCT) for sinus rhythm. The medical prescription (Rx), history (Hx), and symptom or surgery (Sx) are unknown.
-
-Each ECG recording has one or more labels that describe cardiac abnormalities (and/or a normal sinus rhythm). We mapped the labels for each database to [SNOMED-CT codes](http://bioportal.bioontology.org/ontologies/SNOMEDCT). The total list of diagnoses is available [here](https://github.com/physionetchallenges/evaluation-2021).
 
 ### Data Access
 
