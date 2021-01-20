@@ -22,6 +22,8 @@ We ask participants to design and implement a working, open-source algorithm tha
 
 ## <a name="data"></a> Data
 
+### Data Sources
+
 The training data contains twelve-lead ECGs. The validation and test data contains twelve-lead, six-lead, and two-lead ECGs:
 
 1. Twelve leads: I, II, III, aVR, aVL, aVF, V1, V2, V3, V4, V5, V6
@@ -39,6 +41,12 @@ The initial data for this Challenge are from [last year's Challenge](../2020/#da
 - The fourth source is a Georgia database which represents a unique demographic of the Southeastern United States. The source contains 20,678 ECGs (10,334 ECGs shared as training data, 5,167 retained as validation data, and 5,167 retained as test data). Each recording is between 5 and 10 seconds long with a sampling frequency of 500 Hz.
 
 - The fifth source is an undisclosed American database that is geographically distinct from the Georgia database. The source contains 10,000 ECGs (all retained as test data).
+
+Like other real-world datasets, different databases may have different proportions of cardiac abnormalities, but all of the labels in the validation or test data are represented in the training data. Moreover, while this is a curated dataset, some of the data and labels are likely to have errors, and an important part of the Challenge is to work out these issues. In particular, some of the databases have human-overread machine labels with single or multiple human readers, so the quality of the labels varies between databases.
+
+We are not planning to release the test data at any point, including after the end of the Challenge. Requests for the test data will not receive a response. We do not release test data to prevent overfitting on the test data and claims or publications of inflated performances. We will entertain requests to run code on the test data after the Challenge on a limited basis based on publication necessity and capacity. (The Challenge is largely staged by volunteers.)
+
+### Data Format
 
 All data was formatted in [WFDB format](https://www.physionet.org/physiotools/wpg/wpg_35.htm). Each ECG recording uses a [binary MATLAB v4 file](https://www.mathworks.com/help/matlab/import_export/mat-file-versions.html) ([see page 27](matfile_format.pdf)) for the ECG signal data and a plain text file in [WFDB header format](https://www.physionet.org/physiotools/wag/header-5.htm) for the recording and patient attributes, including the diagnosis, i.e., the labels for the recording. The binary files can be read using the [load function](https://www.mathworks.com/help/matlab/ref/load.html) in MATLAB and the [scipy.io.loadmat](https://docs.scipy.org/doc/scipy/reference/generated/scipy.io.loadmat.html) function in Python; see our [MATLAB](https://github.com/physionetchallenges/matlab-classifier-2021) and [Python](https://github.com/physionetchallenges/python-classifier-2021) example code for working examples. The first line of the header provides information about the total number of leads and the total number of samples or time points per lead, the following lines describe how each lead was encoded, and the last lines provide information on the demographics and diagnosis of the patient.
 
@@ -69,9 +77,32 @@ From the first line of the file, we see that the recording number is A0001, and 
 
 Each ECG recording has one or more labels that describe cardiac abnormalities (and/or a normal sinus rhythm). We mapped the labels for each database to [SNOMED-CT codes](http://bioportal.bioontology.org/ontologies/SNOMEDCT). The total list of diagnoses is available [here](https://github.com/physionetchallenges/evaluation-2021).
 
-Like other real-world datasets, different databases may have different proportions of cardiac abnormalities, but all of the labels in the validation or test data are represented in the training data. Moreover, while this is a curated dataset, some of the data and labels are likely to have errors, and an important part of the Challenge is to work out these issues. In particular, some of the databases have human-overread machine labels with single or multiple human readers, so the quality of the labels varies between databases.
+### Data Access
 
-We are not planning to release the test data at any point, including after the end of the Challenge. Requests for the test data will not receive a response. We do not release test data to prevent overfitting on the test data and claims or publications of inflated performances. We will entertain requests to run code on the test data after the Challenge on a limited basis based on publication necessity and capacity. (The Challenge is largely staged by volunteers.)
+The training data from the 2020 Challenge can be downloaded from these links. You can use the [MD5 hash](https://en.wikipedia.org/wiki/Md5sum) to verify the integrity of the `tar.gz` file:
+
+1. CPSC2018 training set, 6,877 recordings: [link](https://storage.cloud.google.com/physionet-challenge-2020-12-lead-ecg-public/PhysioNetChallenge2020_Training_CPSC.tar.gz); MD5-hash: `7b6b1f1ab1b4c59169c639d379575a87`
+2. China 12-Lead ECG Challenge Database (unused CPSC2018 data), 3,453 recordings: [link](https://storage.cloud.google.com/physionet-challenge-2020-12-lead-ecg-public/PhysioNetChallenge2020_Training_2.tar.gz); MD5-hash: `36b409ee2b46aa6f1d2bef99b8451925`
+3. St Petersburg INCART 12-lead Arrhythmia Database, 74 recordings: [link](https://storage.cloud.google.com/physionet-challenge-2020-12-lead-ecg-public/PhysioNetChallenge2020_Training_StPetersburg.tar.gz); MD5-hash: `abcdf9fd1b2f2ca8b1ff158f3b9789b0`
+4. PTB Diagnostic ECG Database, 516 recordings: [link](https://storage.cloud.google.com/physionet-challenge-2020-12-lead-ecg-public/PhysioNetChallenge2020_Training_PTB.tar.gz); MD5-hash: `349316b6985cd21940210e36af9415ec`
+5. PTB-XL electrocardiography Database, 21,837 recordings:[link](https://storage.googleapis.com/physionet-challenge-2020-12-lead-ecg-public/PhysioNetChallenge2020_Training_PTB-XL.tar.gz); MD5-hash: `7ae20a89ae21fd68626ddb3c6b44fdd4`
+6. Georgia 12-Lead ECG Challenge Database, 10,344 recordings: [link](https://storage.cloud.google.com/physionet-challenge-2020-12-lead-ecg-public/PhysioNetChallenge2020_Training_E.tar.gz); MD5-hash: `4971a0562df4a7e2fd8f58e060927ff2`
+
+If you are unable to use these links to access the data, or if you want to use a command-line tool to access the data through Google Colab, then you can use these commands:
+```
+wget -O PhysioNetChallenge2020_Training_CPSC.tar.gz \
+https://cloudypipeline.com:9555/api/download/physionet2020training/PhysioNetChallenge2020_Training_CPSC.tar.gz/
+wget -O PhysioNetChallenge2020_Training_2.tar.gz \
+https://cloudypipeline.com:9555/api/download/physionet2020training/PhysioNetChallenge2020_Training_2.tar.gz/
+wget -O PhysioNetChallenge2020_Training_StPetersburg.tar.gz \
+https://cloudypipeline.com:9555/api/download/physionet2020training/PhysioNetChallenge2020_Training_StPetersburg.tar.gz/
+wget -O PhysioNetChallenge2020_Training_PTB.tar.gz \
+https://cloudypipeline.com:9555/api/download/physionet2020training/PhysioNetChallenge2020_Training_PTB.tar.gz/
+wget -O PhysioNetChallenge2020_Training_PTB-XL.tar.gz \
+https://cloudypipeline.com:9555/api/download/physionet2020training/PhysioNetChallenge2020_PTB-XL.tar.gz/
+wget -O PhysioNetChallenge2020_Training_E.tar.gz \
+https://cloudypipeline.com:9555/api/download/physionet2020training/PhysioNetChallenge2020_Training_E.tar.gz/
+```
 
 ## <a name="registration"></a> Registering for the Challenge and Conditions of Participation
 
