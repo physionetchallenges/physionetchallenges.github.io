@@ -149,7 +149,9 @@ The scoring metric is designed to award full credit to correct diagnoses and par
 
 We welcome a discussion about scoring on the [Challenge forum](https://groups.google.com/g/physionet-challenges/). We will share a leaderboard of successful submissions and their scores once we start accepting entries.
 
-## <a name="rules"></a> Rules and Deadlines
+## <a name="rules-and-deadlines"></a> Rules and Deadlines
+
+### <a name="rules"></a> Overview of rules
 
 There are two phases for the Challenge: an unofficial phase and an official phase. The unofficial phase of the Challenge allows us to introduce and 'beta test' the data, scores, and submission system before the official phase of the Challenge. Participation in the unofficial phase is mandatory for participating in the official phase of the Challenge because it helps us to improve the official phase.
 
@@ -157,7 +159,7 @@ Entrants may have an overall total of up to 15 scored entries over both the unof
 
 __Please__ submit your entries early to ensure that you have the most chances for success. If you wait until the last few days to submit your entries, then you may not receive feedback before the submission deadline, and you may be unable to resubmit your entries if there are unexpected errors or issues with your submissions. Every year, several teams wait until the last few days to submit their first entry and are unable to debug their work before the deadline.
 
-<a name="deadlines"></a>__Key dates/deadlines__
+### <a name="deadlines"></a> Key dates/deadlines
 
 |                 |    Start         | End              | Submissions            |
 |-----------------|------------------|------------------|------------------------|
