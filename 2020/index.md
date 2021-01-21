@@ -8,7 +8,7 @@ layout: 2020
 
 __November 11, 2020:__ [Our paper](papers/2020ChallengePaper.pdf) describing this year's Challenge is now available at [Physiological Measurement](https://iopscience.iop.org/article/10.1088/1361-6579/abc960) as part of the [focus issue on multilead ECG classification](https://iopscience.iop.org/journal/0967-3334/page/Classification_Multilead_ECGs). Please cite this paper to describe the Challenge, consider submitting your work to the focus issue, and stay tuned for the launch of next year's Challenge!
 
-__October 18, 2020:__ The [conference papers](https://physionetchallenges.github.io/2020/papers/) for [Computing in Cardiology 2020](https://www.cinc2020.org/) will appear on the [CinC](https://www.cinc.org/cinc-papers-on-line/) and [IEEE](https://ieeexplore.ieee.org/xpl/conhome/1000157/all-proceedings) websites.
+__October 18, 2020:__ The [conference papers](papers/) for [Computing in Cardiology 2020](https://www.cinc2020.org/) will appear on the [CinC](https://www.cinc.org/cinc-papers-on-line/) and [IEEE](https://ieeexplore.ieee.org/xpl/conhome/1000157/all-proceedings) websites.
 
 __September 28, 2020:__ Our paper about the Challenge is under review. Please cite [Perez Alday EA, Gu A, Shah AJ, Robichaux C, Wong AI, Liu C, Liu F, Rad AB, Elola A, Seyedi S, Li Q, Sharma A, Clifford GD<sup>*</sup>, Reyna MA<sup>*</sup>. Classification of 12-lead ECGs: the PhysioNet/Computing in Cardiology Challenge 2020. Physiol Meas. 41 (2020). doi: 10.1088/1361-6579/abc960](papers/2020ChallengePaper.pdf) to refer to this year's Challenge.
 
@@ -289,4 +289,6 @@ This year's Challenge is generously co-sponsored by Google, MathWorks, and the G
 
 ---
 
-[Back](../index.html)
+Supported by the [National Institute of Biomedical Imaging and Bioengineering (NIBIB)](https://www.nibib.nih.gov/) under NIH grant R01EB030362.
+
+[Back](../)

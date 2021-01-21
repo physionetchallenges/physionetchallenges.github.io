@@ -6,9 +6,9 @@ layout: 2020
 
 ## Citations
 
-For this year's Challenge, please cite
+For this year's Challenge, please cite:
 
-    [Perez Alday EA, Gu A, Shah AJ, Robichaux C, Wong AI, Liu C, Liu F, Rad AB, Elola A, Seyedi S, Li Q, Sharma A, Clifford GD<sup>*</sup>, Reyna MA<sup>*</sup>. Classification of 12-lead ECGs: the PhysioNet/Computing in Cardiology Challenge 2020. Physiol Meas. 2020 Nov 11. doi: 10.1088/1361-6579/abc960](2020ChallengePaper.pdf)
+[Perez Alday EA, Gu A, Shah AJ, Robichaux C, Wong AI, Liu C, Liu F, Rad AB, Elola A, Seyedi S, Li Q, Sharma A, Clifford GD<sup>*</sup>, Reyna MA<sup>*</sup>. Classification of 12-lead ECGs: the PhysioNet/Computing in Cardiology Challenge 2020. Physiol Meas. 2020 Nov 11. doi: 10.1088/1361-6579/abc960](2020ChallengePaper.pdf)
 
 ## Focus Issue Papers
 
@@ -82,4 +82,6 @@ The conference papers for [Computing in Cardiology 2020](https://www.cinc2020.or
 | [456](456.pdf) | UIDT-UNAM | Cardiac Arrhythmias Identification by Parallel CNNs and ECG Time-Frequency Representation | Jonathan Roberto Torres Castillo, K De Los Rios and Miguel Ángel Padilla Castañeda |
 | [462](462.pdf) | BitScattered | Arrhythmia classification of 12-lead Electrocardiograms by Hybrid Scattering-LSTM networks | Philip Warrick, Masun Nabhan Homsi, Vincent Lostanlen, Michael Eikenberg and Joakim Andén |
 
-[Back](../index.html)
+Supported by the [National Institute of Biomedical Imaging and Bioengineering (NIBIB)](https://www.nibib.nih.gov/) under NIH grant R01EB030362.
+
+[Back](../)

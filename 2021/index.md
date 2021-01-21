@@ -287,4 +287,6 @@ This year's Challenge is generously co-sponsored by Google, MathWorks, and the G
 
 ---
 
-[Back](../index.html)
+Supported by the [National Institute of Biomedical Imaging and Bioengineering (NIBIB)](https://www.nibib.nih.gov/) under NIH grant R01EB030362.
+
+[Back](../)

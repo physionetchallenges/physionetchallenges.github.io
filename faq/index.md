@@ -27,3 +27,9 @@ Yes, we are happy to support ongoing research with past Challenges subject to av
 7. We must be able to run your code. For recent Challenges, we expect you to follow the submission instructions and format your submission in the same way.
 
 If you agree to the above conditions, then please contact us at challenge@physionet.org to submit your entry. Even so, we cannot guarantee that we will be able to run your code.
+
+---
+
+Supported by the [National Institute of Biomedical Imaging and Bioengineering (NIBIB)](https://www.nibib.nih.gov/) under NIH grant R01EB030362.
+
+[Back](../index.html)
