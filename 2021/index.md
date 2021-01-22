@@ -2,15 +2,21 @@
 layout: 2021
 ---
 
+[comment]: <> (<img style="float: right;" src="../assets/img/physionet-cinc.gif" width="258" height="105" align="right">)
+
 # Will Two Do? Varying Dimensions in Electrocardiography: The PhysioNet/Computing in Cardiology Challenge 2021
 
 ## <a name="announcements"></a> Announcements
 
-__December 24, 2020:__ The 2021 Challenge is now open! See below for details. Please read this website for details and share questions and comments on [Challenge forum](https://groups.google.com/g/physionet-challenges/). This year's Challenge is generously co-sponsored by Google, MathWorks, and the Gordon and Betty Moore Foundation.
+__December 24, 2020:__ The NIH-funded 2021 Challenge is now open! See below for details. Please read this website for details and share questions and comments on [Challenge forum](https://groups.google.com/g/physionet-challenges/). This year's Challenge is generously co-sponsored by Google, MathWorks, and the Gordon and Betty Moore Foundation.
 
+{: style="text-align:center"}
 ![Google Cloud](logo_google_cloud.png){:height="40px"}
 ![MathWorks](logo_mathworks.png){:height="40px"}&nbsp;&nbsp;&nbsp;
 ![Moore Foundation](logo_moore_foundation.png){:height="40px"}
+
+{: style="text-align:center"}
+![PhysioNet-CinC](../assets/img/physionet-cinc.gif){:height="120px"}
 
 ## <a name="introduction"></a> Introduction
 
