@@ -22,11 +22,11 @@ __December 24, 2020:__ The NIH-funded 2021 Challenge is now open! See below for 
 
 The electrocardiogram (ECG) is a non-invasive representation of the electrical activity of the heart. Although the twelve-lead ECG is the standard diagnostic screening system for many cardiological issues, the limited accessibility of twelve-lead ECG devices provides a rationale for smaller, lower-cost, and easier to use devices. While single-lead ECGs are limiting [[1](https://pubmed.ncbi.nlm.nih.gov/9740885/)], reduced-lead ECG systems hold promise, with evidence that subsets of the standard twelve leads can capture useful information [[2](https://pubmed.ncbi.nlm.nih.gov/12539095)], [[3](https://www.sciencedirect.com/science/article/abs/pii/S0022073606005346)], [[4](https://pubmed.ncbi.nlm.nih.gov/3812249)] and even be comparable to twelve-lead ECGs in some limited contexts. In 2017 we challenged the public to classify AF from a single-lead ECG, and in 2020 we challenged the public to diagnose a much larger number of cardiac problems using twelve-lead recordings. However, there is limited evidence to demonstrate the utility of reduced-lead ECGs for capturing a wide range of diagnostic information.
 
-In this year's Challenge, we ask the following question: __'Will two do?'__ This year's Challenge builds on [last year's Challenge](../2020/), which asked participants to classify cardiac abnormalities from twelve-lead ECGs. We are asking you to build an algorithm that can classify cardiac abnormalities from either twelve-lead, six-lead, and two-lead ECGs. We will test each algorithm on databases of twelve-lead, six-lead and two-lead ECGs, and the differences in performances of the algorithms on these databases will reveal the utility of two-lead or six-lead ECGs in comparison to standard twelve-lead EGCs.
+In this year's Challenge, we ask the following question: __'Will two do?'__ This year's Challenge builds on [last year's Challenge](../2020/), which asked participants to classify cardiac abnormalities from twelve-lead ECGs. We are asking you to build an algorithm that can classify cardiac abnormalities from either twelve-lead, six-lead, three-lead, and two-lead ECGs. We will test each algorithm on databases of twelve-lead, six-lead, three-lead, and two-lead ECGs, and the differences in performances of the algorithms on these databases will reveal the utility of reduced-lead ECGs in comparison to standard twelve-lead EGCs.
 
 ## <a name="objective"></a> Objective
 
-The goal of the 2021 Challenge is to identify clinical diagnoses from twelve-lead, six-lead (I, II, III, aVL, aVR, and aVF), and two-lead (II and V5) ECG recordings.
+The goal of the 2021 Challenge is to identify clinical diagnoses from twelve-lead, six-lead (I, II, III, aVL, aVR, and aVF), three-lead (I, II, V2), and two-lead (II and V5) ECG recordings.
 
 We ask participants to design and implement a working, open-source algorithm that, based only on the provided twelve-lead ECG recordings and routine demographic data, can automatically identify any cardiac abnormalities present in the recording. We will award prizes for the top performing twelve-lead algorithm and the top performing two-lead and six-lead algorithms.
 
@@ -36,7 +36,8 @@ The training data contains twelve-lead ECGs. The validation and test data contai
 
 1. Twelve leads: I, II, III, aVR, aVL, aVF, V1, V2, V3, V4, V5, V6
 2. Six leads: I, II, III, aVL, aVR, aVF
-3. Two leads: II, V5
+3. Three leads: I, II, V2
+4. Two leads: II, V5
 
 Each ECG recording has one or more labels that describe cardiac abnormalities (and/or a normal sinus rhythm). We mapped the labels for each recording to [SNOMED-CT codes](http://bioportal.bioontology.org/ontologies/SNOMEDCT). The lists of [scored labels](https://github.com/physionetchallenges/evaluation-2021/blob/main/dx_mapping_scored.csv) and [unscored labels](https://github.com/physionetchallenges/evaluation-2021/blob/main/dx_mapping_unscored.csv) are given with the [evaluation code](https://github.com/physionetchallenges/evaluation-2021); see the [scoring section](#scoring) for details.
 
