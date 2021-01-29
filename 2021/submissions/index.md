@@ -43,50 +43,58 @@ Containers allow you to define the environment that you think is best suited for
 
 __Quickly, how can I test my submission locally?__
 
-Install Docker. Clone your repository. Build an image. Run it on a single recording. 
+Install Docker. Clone your repository. Build an image. Run it on a single recording.
 
 <a name="commands"></a> __Less quickly, how can I test my submission locally?  Please give me commands that I can copy and paste.__
 
-Here are instructions for testing the [Python example code](https://github.com/physionetchallenges/python-classifier-2021) in Linux.  You can test the non-Python example code in a Mac, for example, in a similar way.  If you have trouble testing your code, then make sure that you can test the example code, which is known to work.
+1. Create a folder `example` in your home directory with several subfolders.
 
-First, create a folder, `docker_test`, in your home directory. Then, put the example code from GitHub in `docker_test/python-classifier-2021-master`, some of the training data in `docker_test/input_directory` and `docker_test/input_training_directory`, an empty folders for the output of the training code in `docker_test/output_training_directory`, and empty folder for the classifications in `docker_test/output_directory.`  Finally, build a Docker image and run the example code using the following steps:
+        user@computer:~$ cd ~/
+        user@computer:~$ mkdir example
+        user@computer:~$ cd example
+        user@computer:~/example$ mkdir training_data test_data model test_outputs
 
-```
-Docker
-user@computer:~/docker_test$ ls
-input_directory  output_directory  python-classifier-2021
+2. Download the training data from the [Challenge website](https://physionetchallenges.org/2021/#data-access). Put some of the training data in `training_data` and `test_data`. You can use some of the training data to check your code (and should perform cross-validation on the training data to evaluate your algorithm).
 
-user@computer:~/docker_test$ ls input_directory/
-A0001.hea  A0001.mat  A0002.hea  A0002.mat  A0003.hea ...
+3. Download or clone this repository in your terminal.
 
-user@computer:~/docker_test$ cd python-classifier-2021/
+        user@computer:~/example$ git clone https://github.com/physionetchallenges/python-classifier-2021.git
 
-user@computer:~/docker_test/python-classifier-2021$ docker build -t image .
+4. Build a Docker image and run the example code in your terminal.
 
-Sending build context to Docker daemon  30.21kB
-[...]
-Successfully tagged image:latest
+        user@computer:~/example$ ls
+        model  python-classifier-2021  test_data  test_outputs  training_data
 
-user@computer:~/docker_test/python-classifier-2021$ docker run -it -v 
-~/docker_test/input_training_directory:/physionet/input_training_directory -v 
-~/docker_test/output_training_directory:/physionet/output_training_directory -v 
-~/docker_test/input_directory:/physionet/input_directory -v ~/docker_test/output_directory:/physionet/output_directory image bash
+        user@computer:~/example$ ls training_data/
+        A0001.hea  A0001.mat  A0002.hea  A0002.mat  A0003.hea  ...
 
-root@[...]:/physionet# ls
-AUTHORS.txt  Dockerfile LICENSE.txt  README.md extract_leads_wfdb.py  helper_code.py  input_directory  output_directory  requirements.txt team_code.py test_model.py    train_model.py
+        user@computer:~/example$ cd python-classifier-2021/
 
-root@[...]:/physionet# python train_model.py input_training_directory/ output_training_directory/
+        user@computer:~/example/python-classifier-2021$ docker build -t image .
 
-root@[...]:/physionet# python test_model.py output_training_directory/ input_directory/ output_directory/
+        Sending build context to Docker daemon  30.21kB
+        [...]
+        Successfully tagged image:latest
 
-root@[...]:/physionet# exit
-Exit
+        user@computer:~/example/python-classifier-2021$ docker run -it -v ~/example/model:/physionet/model -v ~/example/test_data:/physionet/test_data -v ~/example/test_outputs:/physionet/test_outputs -v ~/example/training_data:/physionet/training_data image bash
 
-user@computer:~/docker_test$ cd ..
+        root@[...]:/physionet# ls
+            Dockerfile             model             test_data      train_model.py
+            extract_leads_wfdb.py  README.md         test_model.py
+            helper_code.py         requirements.txt  test_outputs
+            LICENSE                team_code.py      training_data
 
-user@computer:~/docker_test$ ls output_directory/
-A0001.csv  A0002.csv  A0003.csv  A0004.csv  A0005.csv
-```
+        root@[...]:/physionet# python train_model.py training_data model
+
+        root@[...]:/physionet# python test_model.py model test_data test_outputs
+
+        root@[...]:/physionet# exit
+        Exit
+
+        user@computer:~/example/python-classifier-2021$ cd ..
+
+        user@computer:~/example$ ls test_outputs/
+        A0006.csv  A0007.csv  A0008.csv  A0009.csv  A0010.csv  ...
 
 __How do I install Docker?__
 
