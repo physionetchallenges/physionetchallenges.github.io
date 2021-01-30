@@ -175,7 +175,7 @@ __Please__ submit your entries early to ensure that you have the most chances fo
 |Abstract deadline| 15 April 2021    | 15 April 2021    | 1 abstract             |
 |Official phase   | 1 May 2021       | 15 August 2021   | 1-10 scored entries (*)|
 |Abstract decisions released|	1 June 2021 |	1 June 2021 |	N/A                    |
-|Wild card entry date|	31 July 2021  |	31 Julu 2021    |	N/A                    |
+|Wild card entry date|	31 July 2021  |	31 July 2021    |	N/A                    |
 |Hiatus           | 16 August 2021   | 10 September 2021| N/A                    |
 |Preprint deadline| 1 September 2021 | 1 September 2021 | One 4-page paper (**)  |
 |Hackathon        | 11 September 2021| 11 September 2021| 1-2 scored entries     |
