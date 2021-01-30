@@ -17,26 +17,26 @@ layout: 2021
 
 ### <a name="introduction"></a>Introduction
 
-Much like for [last year's Challenge](../../2020/), teams must submit both the code for their models and the code for training their models. To help, we implemented example entries in both MATLAB and Python, and we encourage teams to use these example entries as templates for their entries.
+Similarly to [last year's Challenge](../../2020/), teams must submit both the code for their models and the code for training their models. To help, we have implemented example entries in both MATLAB and Python, and we encourage teams to use these example entries as templates for their entries.
 
 ### <a name="preparation"></a>Preparation and submission instructions
 
 1. Create a private GitHub or Gitlab repository for your code. We recommend cloning our example code and replacing it with your code. Add `physionetchallengeshelper` as a collaborator to your repository.
 2. Add your classification code to your repository. Like the example code, your code must be in the root directory of the master branch.
-3. Do not include extra files that are not required to create and run your classification code.
+3. Do not include extra files that are not required to create and run your classification code, such as the training data.
 4. Follow the instructions for the programming language of your submission.
-5. Use Google Forms to submit your entry. We will clone your repository using the HTTPS URL that ends in `.git`. On GitHub, you can get this URL by clicking on “Clone or download” and copying and pasting the URL, e.g., `https://github.com/physionetchallenges/python-classifier-2021.git`. Please see [here](https://help.github.com/en/articles/which-remote-url-should-i-use) for an example.
+5. Submit your entry through [this form](https://docs.google.com/forms/d/e/1FAIpQLSciBaEzZn04pY_8_uT3zUDmcjnfnWJALYmdqGmb43vZxIOUUA/viewform?usp=sf_link). We will clone your repository using the HTTPS URL that ends in `.git`. On GitHub, you can get this URL by clicking on “Clone or download” and copying and pasting the URL, e.g., `https://github.com/physionetchallenges/python-classifier-2021.git`. Please see [here](https://help.github.com/en/articles/which-remote-url-should-i-use) for an example.
 6. We will put the scores for successful entries on the leaderboard.  The leaderboard will publicly show your team name, run time, and score.
 
 ### <a name="matlab"></a>MATLAB-specific instructions
 
-1. Confirm that your MATLAB code compiles and runs in MATLAB 2019b, MATLAB 2020a or MATLAB 2020b.
+1. Confirm that your MATLAB code compiles and runs in MATLAB R2020B or R2021A (when available).
 2. Using our sample MATLAB classification code ([link](https://github.com/physionetchallenges/matlab-classifier-2021.git)) as a template, format your code in the following way. Consider downloading this repository, replacing our code with your code, and adding the updated files to your repository.
-3. AUTHORS.txt, LICENSE.txt, README.md: Update as needed. Unfortunately, our submission system will be unable to read your README.
+3. `AUTHORS.txt`, `LICENSE.txt`, `README.md`: Update as appropriate. Please include your authors. Unfortunately, our submission system will be unable to read your README file to change how we run your code.
 4. `train_model.m`: Do not edit this script. It calls your `team_training_code.m` script. We will not use the `train_model.m` script from your repository, so any change made to this code will not be included.
-5. `team_training_code.m`: Update this script to create and save your model. It takes the header with the data and demographics information, extrat features from data using `get_features.m` function which you can update and edit, and outputs and saves your model (weights and any needed parameters). You can edit this script and `get_features.m` function as much as you need.
+5. `team_training_code.m`: Update this script to create and save your model. It loads the header with the data and demographics information for a recording, extracts features from the data using the `get_features.m` function which you can update and edit, and outputs and saves your model (weights and any needed parameters). You can edit this script and the `get_features.m` function as much as you need.
 6. `test_model.m`: Do not change this script. It loads your models by calling `load_ECG_*leads_model` functions (`*=2,3,6 or 12` for four different lead sets; 2-leads, 3-leads, 6-leads and 12-leads models). Then, it calls your `team_testing_code` function for each recording and performs on all file input and output. We will not use the `test_model.m` script from your repository, so any change made to this code will not be included.
-7. `team_testing_code.m`: Update this script to load and run your model weights and any parameters from files in your submission. It takes the input test data, header files and the loaded models (outputs of your `train_model.m`) and returns a probability or confidence score and a binary classification for each class as output. 
+7. `team_testing_code.m`: Update this script to load and run your model weights and any parameters from files in your submission. It takes the input test data, header files, and the loaded models (outputs of your `train_model.m`) and returns a probability or confidence score and a binary classification for each class as output. 
 8. `get_features.m`: Update this scripts to extract your choice of features from the ECG recordings.
 9. `get_leads.m`: Do not edit this script. It extracts 4 different lead sets (2-leads, 3-leads, 6-leads and 12-leads) of ECG recordings.
 10. `extract_data_from_header.m`: Do not edit this script. It extracts the data information from the header files.
@@ -46,15 +46,15 @@ Much like for [last year's Challenge](../../2020/), teams must submit both the c
 
 ### <a name="python"></a>Python-specific instructions
 1. Using our sample Python classification code ([link](https://github.com/physionetchallenges/python-classifier-2021)) as a template, format your code in the following way. Consider downloading this repository, replacing our code with your code, and adding the updated files to your repository.
-2. Dockerfile: Update to specify the version of Python that you are using on your machine. Add any additional packages that you need. Do not change the name or location of this file. The structure of this file is important, especially the 3 lines that are marked as Do Not Delete.
-3. requirements.txt: Add Python packages to be installed with pip. Specify the versions of these packages that you are using on your machine. Remove unnecessary packages, such as Matplotlib, that your classification code does not need.
-4. `AUTHORS.txt`, `LICENSE.txt`, `README.md`: Update as needed. Unfortunately, our submission system will be unable to read your README.
+2. `Dockerfile`: Update to specify the version of Python that you are using on your machine. Add any additional packages that you need. Do not change the name or location of this file. The structure of this file is important, especially the 3 lines that are marked as "DO NOT EDIT".
+3. `requirements.txt`: Add Python packages to be installed with `pip`. Specify the versions of these packages that you are using on your machine. Remove unnecessary packages, such as Matplotlib, that your classification code does not need.
+4. `AUTHORS.txt`, `LICENSE.txt`, `README.md`: Update as appropriate. Please include your authors. Unfortunately, our submission system will be unable to read your README file to change how we run your code.
 5. `team_code.py`: Update this script to load and run your trained model.  
-6. `train_model.py`: Do not change this script. It calls the `team_code`, your training code to run on the training data.
+6. `train_model.py`: Do not change this script. It calls functions from the `team_code` script to run your training code on the training data.
 7. `helper_code.py` Do not change this script. It is a script with helper variables and functions used for our code. You are welcome to use them in your code.
 8. `test_model.py`: Do not change this script. It calls your trained models to run on the test data. We will not use the `test_model.py` script from your repository, so any change made to this code will not be included.
 9. Add your code to the root/base directory of the master branch of your repository.
-10. We will download your code, build a Docker container from your Dockerfile, and run it on Google Cloud.
+10. We will download your code, build a Docker image from your Dockerfile, and run it on Google Cloud.
 11. Here is a sample repository that you can use as a template: [Python classifier](https://github.com/physionetchallenges/python-classifier-2021).
 
 ###  <a name="docker"></a> Docker-specific FAQs
@@ -140,7 +140,7 @@ Think of Docker as a series of images, or snapshots of a virtual machine, that a
 
 __sklearn or scikit-learn?__
 
-The single most common error we noticed in the requirements.txt file for Python submissions was the sklearn package. If your entry uses scikit-learn, then you need to install via pip using the package name scikit-learn instead of sklearn in your requirements.txt file: [See here](https://scikit-learn.org/stable/install.html).
+For Python, if your entry uses scikit-learn, then you need to install it via `pip` using the package name `scikit-learn` instead of `sklearn` in your `requirements.txt` file: [See here](https://scikit-learn.org/stable/install.html).
 
 __xgboost?__
 
@@ -149,11 +149,11 @@ For R, add `RUN R -e 'install.packages(“xgboost”)'` to your Dockerfile.
 
 __Pandas?__
 
-Replace `python:3.8.6-slim` with `python:3.8.6-stretch` in the first line of your Dockerfile.
+For Python, you can replace `python:3.8.6-slim` with `python:3.8.6-stretch` in the first line of your Dockerfile if you experience errors.
 
 __Why can’t I install a common Python or R package using Python or R’s package manager?__
 
- Some packages have dependencies, such as GCC, that need to be installed.  Try replacing `python:3.8.6-slim` with `python:3.8.6-stretch`, which includes more packages by default, or installing the dependencies
+Some packages have dependencies, such as GCC, that need to be installed.  Try replacing `python:3.8.6-slim` with `python:3.8.6-stretch`, which includes more packages by default, or installing the dependencies
 
 If the first line of your Dockerfile is `FROM python:3.8.6-slim`, then you are building a Docker image with the Debian Linux distribution, so you can install GCC and other related libraries that many Python and R packages use by adding the line `RUN apt install build-essential` to your Dockerfile before installing these packages.
 
