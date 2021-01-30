@@ -173,8 +173,9 @@ __Please__ submit your entries early to ensure that you have the most chances fo
 |Unofficial phase | 24 December 2020 | 8 April 2021     | 1-5 scored entries (*) |
 |Hiatus           | 9 April 2021     | 30 April 2021    | N/A                    |
 |Abstract deadline| 15 April 2021    | 15 April 2021    | 1 abstract             |
-|Official phase   | 1 May 2021       | 23 August 2021   | 1-10 scored entries (*)|
-|Abstract decisions released|	1 June 2021 |	1 June 2021 |	N/A |
+|Official phase   | 1 May 2021       | 15 August 2021   | 1-10 scored entries (*)|
+|Abstract decisions released|	1 June 2021 |	1 June 2021 |	N/A                    |
+|Wild card entry date|	31 July 2021  |	31 Julu 2021    |	N/A                    |
 |Hiatus           | 16 August 2021   | 10 September 2021| N/A                    |
 |Preprint deadline| 1 September 2021 | 1 September 2021 | One 4-page paper (**)  |
 |Hackathon        | 11 September 2021| 11 September 2021| 1-2 scored entries     |
@@ -202,7 +203,7 @@ You must not submit analysis of this year’s Challenge data to other conference
 
 ## <a name="wild-card"></a> Wild Card Entries
 
-If your abstract is rejected or if you otherwise failed to qualify during the unofficial period, then there is still a chance to present as CinC and win the Challenge. A 'wild card' entry has been reserved for a high-scoring entry from a team that was unable to submit an accepted abstract to CinC by the original abstract submission deadline. The abstract will still be reviewed as thoroughly as any other abstract accepted for the conference, and the team must submit an acceptable abstract. See [Advice on Writing an Abstract](#abstracts).
+If your abstract is rejected or if you otherwise failed to qualify during the unofficial period, then there is still a chance to present as CinC and win the Challenge. A 'wild card' entry has been reserved for a high-scoring entry from a team that was unable to submit an accepted abstract to CinC by the original abstract submission deadline. A successful entry must be submitted by the wild card entry deadline. The abstract will still be reviewed as thoroughly as any other abstract accepted for the conference, and the team must submit a acceptable abstract. See [Advice on Writing an Abstract](#abstracts).
 
 ## <a name="abstracts"></a> Advice on Writing an Abstract
 
