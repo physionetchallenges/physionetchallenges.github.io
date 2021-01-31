@@ -1,0 +1,15 @@
+Rank	Team name	Team members	Title of abstract	Utility score on full test set	Utility score on test set A	Utility score on test set B	Utility score on test set C	AUROC on test set A	AUROC on test set B	AUROC on test set C	AUPRC on test set A	AUPRC on test set B	AUPRC on test set C	Accuracy on test set A	Accuracy on test set B	Accuracy on test set C	F-measure on test set A	F-measure on test set B	F-measure on test set C	Execution time on test set A (h:m:s)	Number of successful entries submitted
+1	SailOcean	Meicheng Yang, Hongxiang Gao, Xingyao Wang, Yuwen Li, Xing Liu, Jianqing Li, Chengyu Liu	N/A	0.364	0.430	0.422	-0.045	0.823	0.859	0.814	0.106	0.129	0.071	0.784	0.885	0.777	0.123	0.136	0.050	4:43:08	2
+2	prna	Jonathan Rubin, Yale Chang, Saman Parvaneh, Gregory Boverman	N/A	0.342	0.417	0.420	-0.156	0.167	0.173	0.155	0.014	0.015	0.005	0.778	0.887	0.740	0.120	0.137	0.044	10:38:44	2
+3	Sepsyd	John Anda Du, Miquel Alfaras, Naoki Nonaka, Inès Krissaane, Edwar Hernando Macias Toro, Matthieu Scherpf 	N/A	0.329	0.399	0.389	-0.104	0.804	0.845	0.793	0.102	0.107	0.055	0.804	0.889	0.772	0.124	0.131	0.046	1:35:37	2
+4	TAG	Xiaopeng Zhao, Simon Lyra, Marcus Vollmer, Christoph Hoog Antink	N/A	0.308	0.397	0.375	-0.220	0.000	0.000	0.000	0.000	0.000	0.000	0.831	0.899	0.731	0.133	0.135	0.041	9:29:15	2
+5	vn	ByeongTak Lee, KyungJae Cho, Oyeon Kwon	N/A	0.301	0.372	0.345	-0.101	0.802	0.815	0.782	0.097	0.090	0.041	0.882	0.914	0.786	0.156	0.139	0.046	3:47:44	1
+6	cinc_sepsis_pass	Mengsha Fu	N/A	0.087	0.154	0.072	-0.155	0.689	0.719	0.701	0.046	0.033	0.021	0.806	0.892	0.848	0.081	0.066	0.036	14:08:44	2
+7	Ulster University	Pardis Biglarbeigi, Donal McLaughlin, Khaled Rjoob, Abdullah Abdullah, Niamh McCallan, Alicja Jasinska-Piadlo, Raymond Bond, Dewar Finlay, Kok Yew Ng, Alan Kennedy, Jim McLaughlin	N/A	0.035	0.042	0.037	0.002	0.000	0.000	0.500	0.000	0.000	0.009	0.950	0.960	0.958	0.065	0.062	0.047	10:49:01	2
+8	CRASHers	Marco AF Pimentel, Adam Mahdi, Oliver Redfern, Mauro Santos	N/A	0.000	0.000	0.000	0.000	0.500	0.500	0.500	0.022	0.014	0.009	0.978	0.986	0.991	0.000	0.000	0.000	0:48:54	1
+x	ARUL	Induparkavi Murugesan, Lingeshwaran Balasubramanian, Malathi Murugesan	N/A																	N/A	1
+																					
+* Failed to satisfy all conditions of competition																					
+x Failed to submit successful entry																					
+? Did not identify team members																					
+# Disqualified for submitting code substantially similar to another team																					
