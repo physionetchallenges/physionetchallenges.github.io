@@ -199,9 +199,8 @@ Please see the [PhysioNet/CinC Challenge 2021 webpage](https://physionetchalleng
 
 ## Useful links
 
+* [Submission Form](https://docs.google.com/forms/d/e/1FAIpQLSciBaEzZn04pY_8_uT3zUDmcjnfnWJALYmdqGmb43vZxIOUUA/viewform?usp=sf_link)
 * [The PhysioNet/CinC Challenge 2021 webpage](https://physionetchallenges.org/2021/)
-* [MATLAB example code for the PhysioNet/CinC Challenge 2021](https://github.com/physionetchallenges/matlab-classifier-2021)
-* [Evaluation code for the PhysioNet/CinC Challenge 2021](https://github.com/physionetchallenges/evaluation-2021)
 * [Frequently Asked Questions (FAQ)](https://physionetchallenges.org/faq/)
 
 ---
