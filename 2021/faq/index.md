@@ -12,6 +12,21 @@ __Can I collaborate with another team from the 2020 Challenge?__
 
 Yes, as long as no one from either team competes in a different team.
 
+__Why don't you merge PVC, VEB, and VPB labels?__
+
+Each database is labelled using a different ontology, or subset of terms in an ontology (or sometimes no ontology, i.e., just a free-text description). We needed to decide how to map these ontologies to a consistent set of labels. For example, we have the following four labels for ventricular ectopic beats:
+ 
+Description                        | SNOMED Code | Abbreviation
+---------------------------------------------------------------
+Premature ventricular complexes    |   164884008 | PVC
+Premature ventricular contractions |   427172004 | PVC
+Ventricular ectopic beats          |    17338001 | VEB
+Ventricular premature beat         |    17338001 | VPB
+
+We have chosen to retain the distinction between these in terms of SNOMED codes (but merged PVCs because we could really see no reason they had two separate codes), but the scored labels carry the same weight in scoring matrix, so mixing them up doesn't cost you any points. You may then ask, 'why not merge them all in the labelling'? That's a question you have to answer for yourself! You are certainly welcome to do that - but you may not want to. You may note that only VPB indicates the temporal location of the beat relative to the preceding normal beat. This may, or may not, affect your algorithm, depending on how you write your code. You may or may not want it to affect your algorithm - the relative timing of beats certainly gives you information!
+
+In general, we have tried to provide you with as much useful information as possible, without overwhelming you with a complete data dump.
+
 __Are the scores currently on the leaderboard the final scores for the Challenge?__
 
 No, the leaderboard contains scores on a subset of the hidden data during the unofficial and official phases of the Challenge. The final scores on the full test data are released after the conference for the "best" model selected by each team.
