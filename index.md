@@ -6,9 +6,9 @@ layout: default
 
 For the past 22 years, [PhysioNet](https://physionet.org) and [Computing in Cardiology](http://www.cinc.org/) have co-hosted a series of annual challenges to tackle clinically interesting questions that are either unsolved or not well-solved.
 
-The [PhysioNet/Computing in Cardiology Challenge 2021](/2021/) invites participants to identify clinical diagnoses from reduced-lead ECG recordings, extending last year's Challenge on 12-lead ECGs.
+The [PhysioNet/Computing in Cardiology Challenge 2021](/2021/) invites participants to identify clinical diagnoses from reduced-lead ECG recordings, extending last year's Challenge on twelve-lead ECGs.
 
-We ask participants to design and implement working, open-source algorithms that can, based only on the provided clinical data, automatically identify any cardiac abnormalities present in an ECG recording. The winners of the Challenge will be the team whose algorithm achieves the highest score for hidden test sets of 12-lead, 6-lead, 3-lead, or 2-lead ECG recordings.
+We ask participants to design and implement working, open-source algorithms that can, based only on the provided clinical data, automatically identify any cardiac abnormalities present in an ECG recording. The winners of the Challenge will be the team whose algorithm achieves the highest score for hidden test sets of twelve-lead, six-lead, three-lead, or two-lead ECG recordings.
 
 Please check the below links for information about [current](#current) and [past](#past) Challenges, including [important details](/faq/) about scoring and test data for previous Challenges.
 
