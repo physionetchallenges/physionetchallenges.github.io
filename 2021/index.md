@@ -59,6 +59,8 @@ The initial data for this Challenge are from [last year's Challenge](../2020/#da
 
 Like other real-world datasets, different databases may have different proportions of cardiac abnormalities, but all of the labels in the validation or test data are represented in the training data. Moreover, while this is a curated dataset, some of the data and labels are likely to have errors, and an important part of the Challenge is to work out these issues. In particular, some of the databases have human-overread machine labels with single or multiple human readers, so the quality of the labels varies between databases.
 
+The six-lead, three-lead, and two-lead validation data are reduced-lead versions of the twelve-lead validation data: the same recordings with the same header data but only with signal data for the relevant leads.
+
 We are not planning to release the test data at any point, including after the end of the Challenge. Requests for the test data will not receive a response. We do not release test data to prevent overfitting on the test data and claims or publications of inflated performances. We will entertain requests to run code on the test data after the Challenge on a limited basis based on publication necessity and capacity. (The Challenge is largely staged by volunteers.)
 
 ### Data Format
