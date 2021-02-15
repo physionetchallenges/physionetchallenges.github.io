@@ -30,7 +30,7 @@ In this year's Challenge, we ask the following question: __'Will two do?'__ This
 
 The goal of the 2021 Challenge is to identify clinical diagnoses from twelve-lead, six-lead (I, II, III, aVL, aVR, and aVF), three-lead (I, II, V2), and two-lead (II and V5) ECG recordings.
 
-We ask participants to design and implement a working, open-source algorithm that, based only on the provided twelve-lead ECG recordings and routine demographic data, can automatically identify any cardiac abnormalities present in the recording. We will award prizes for the top performing twelve-lead algorithm and the top performing two-lead and six-lead algorithms.
+We ask participants to design and implement a working, open-source algorithm that, based only on the provided twelve-lead ECG recordings and routine demographic data, can automatically identify any cardiac abnormalities present in the recording. We will award prizes for the top performing twelve-lead, six-lead, three-lead, and two-lead algorithms.
 
 ## <a name="data"></a> Data
 
