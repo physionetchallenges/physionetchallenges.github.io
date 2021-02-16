@@ -2,11 +2,11 @@
 layout: 2021
 ---
 
-# Leaderboard
+# Leaderboards
 
-This is the leaderboard for the unofficial phase of the Challenge. The scores are the [Challenge scoring metric](../#scoring) on the twelve-lead, six-lead, three-lead, and two-lead versions of the [validation data](../#data) (the same recordings but with subsets of the original twelve leads).
+These are the leaderboards for the unofficial phase of the Challenge. The scores are the [Challenge scoring metric](../#scoring) on the twelve-lead, six-lead, three-lead, and two-lead versions of the [validation data](../#data) (the same recordings but with subsets of the original twelve leads).
 
-<iframe width='100%' height='500' src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRYJg9WqbA3mLhnnWw1cLbAm1ikPFotu4a5SMh32yeSFSJic9yZyLSs6crLszuLGgbogLvapRLXaP1l/pubhtml?widget=true&amp;headers=false&amp;chrome=false"></iframe>
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vT7P5ptzE7rSROOPerI8s_MD-5bHxA5wtf88hnMa8ZwLQYWcgVkAVJO098NGRYunCjHL3zKGxDsDE-f/pubhtml?widget=true&amp;headers=false"></iframe>
 
 ---
 
