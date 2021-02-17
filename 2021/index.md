@@ -105,18 +105,18 @@ The training data from the 2020 Challenge can be downloaded from these links. Yo
 
 If you are unable to use these links to access the data, or if you want to use a command-line tool to access the data through Google Colab, then you can use these commands:
 ```
-wget -O PhysioNetChallenge2020_Training_CPSC.tar.gz \
-https://cloudypipeline.com:9555/api/download/physionet2020training/PhysioNetChallenge2020_Training_CPSC.tar.gz/
-wget -O PhysioNetChallenge2020_Training_2.tar.gz \
-https://cloudypipeline.com:9555/api/download/physionet2020training/PhysioNetChallenge2020_Training_2.tar.gz/
-wget -O PhysioNetChallenge2020_Training_StPetersburg.tar.gz \
-https://cloudypipeline.com:9555/api/download/physionet2020training/PhysioNetChallenge2020_Training_StPetersburg.tar.gz/
-wget -O PhysioNetChallenge2020_Training_PTB.tar.gz \
-https://cloudypipeline.com:9555/api/download/physionet2020training/PhysioNetChallenge2020_Training_PTB.tar.gz/
-wget -O PhysioNetChallenge2020_Training_PTB-XL.tar.gz \
-https://cloudypipeline.com:9555/api/download/physionet2020training/PhysioNetChallenge2020_PTB-XL.tar.gz/
-wget -O PhysioNetChallenge2020_Training_E.tar.gz \
-https://cloudypipeline.com:9555/api/download/physionet2020training/PhysioNetChallenge2020_Training_E.tar.gz/
+wget -O WFDB_CPSC2018.tar.gz \
+https://pipelineapi.org:9555/api/download/physionet2020training/WFDB_CPSC2018.tar.gz/
+wget -O WFDB_CPSC2018_2.tar.gz \
+https://pipelineapi.org:9555/api/download/physionet2020training/WFDB_CPSC2018_2.tar.gz/
+wget -O WFDB_StPetersburg.tar.gz \
+https://pipelineapi.org:9555/api/download/physionet2020training/WFDB_StPetersburg.tar.gz/
+wget -O WFDB_PTB.tar.gz \
+https://pipelineapi.org:9555/api/download/physionet2020training/WFDB_PTB.tar.gz/
+wget -O WFDB_PTBXL.tar.gz \
+https://pipelineapi.org:9555/api/download/physionet2020training/WFDB_PTBXL.tar.gz/
+wget -O WFDB_Ga.tar.gz \
+https://pipelineapi.org:9555/api/download/physionet2020training/WFDB_Ga.tar.gz/
 ```
 
 ## <a name="registration"></a> Registering for the Challenge and Conditions of Participation
