@@ -195,7 +195,7 @@ __Please__ submit your entries early to ensure that you have the most chances fo
 
 To be eligible for the open-source award, you must do all the following:
 
-1. Register for the Challenge [here](../).
+1. Register for the Challenge [here](https://docs.google.com/forms/d/e/1FAIpQLSc52DgT5dy_rqZioxbEdRF5Dd2sTx-MesnK8viJP457bYiWrw/viewform?usp=sf_link).
 2. Submit at least one open-source entry that can be scored during the unofficial phase.
 3. [Submit an abstract to CinC](http://www.cinc.org/information-for-computing-in-cardiology-authors/) by the abstract submission deadline. Include your team name and score from the unofficial phase in your abstract. Please select 'PhysioNet/CinC Challenge' as the topic of your abstract so that it can be identified easily by the abstract review committee. __Please__ read [“Advice on Writing an Abstract”](#abstracts) for important information on writing a successful abstract.
 4. Submit at least one open-source entry that can be scored during the official phase.
