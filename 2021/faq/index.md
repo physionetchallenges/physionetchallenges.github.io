@@ -6,7 +6,7 @@ layout: 2021
 
 __Can I attend this year's conference remotely? Will I be eligible for prizes?__
 
-We don't yet. Due to the unique circumstances of 2020, remote attendance was allowed for CinC 2020. Participants were still eligible for prizes if they attended remotely (as long as they satisfied the other criteria).
+We don't know yet. Due to the unique circumstances of 2020, remote attendance was allowed for CinC 2020. Participants were still eligible for prizes if they attended remotely (as long as they satisfied the other criteria).
 
 __Can I collaborate with another team from the 2020 Challenge?__
 
