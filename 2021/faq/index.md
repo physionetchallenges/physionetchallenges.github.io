@@ -2,31 +2,34 @@
 layout: 2021
 ---
 
-[General Challenge FAQ](https://physionetchallenges.org/faq/)
+# Frequently Asked Questions (FAQ) - 2021 Challenge
 
-# Frequently Asked Questions (FAQ)
+[General Challenge FAQs (please read first)](https://physionetchallenges.org/faq/)
 
-### List of Questions
+- [Rules](#Rules)
+  - [Can I attend this year's conference remotely? Will I be eligible for prizes?](#remotely)
+  - [Can I collaborate with another team from the 2020 Challenge?](#collaborate)
+  - [For the license, can we make it open source but restrict to non-commercial use?](#license)
+- [Labels and scores](#Labels_Scores)
+  - [Why don't you merge PVC, VEB, and VPB labels?](#labels)
+  - [Are the scores currently on the leaderboard the final scores for the Challenge?](#leaderboard)
+- [Training and testing](#Train_test)
+  - [How will you choose which model to evaluate on the full test data? The latest entry? The best-scoring entry?](#ChooseModel)
+  - [Are we allowed to do transfer learning using pre-trained networks?](#pre-trained)
+  - [Do we need to provide our training code?](#TrainingCode)
+  - [Can I provide my training code but request that you not use/run it?](#NotTrain)
+  - [Are the provided records a more accurate representation of the hold-out evaluation data that what was previously provided?](#hold-out)
+  - [Should I submit your example code to test the submission system?](#TestSubmission)
+  - [Should I submit an empty repository to test the submission system?](#empty)
+  - [Should I submit your example code to test the submission system?](#TestSubmission)
+  - [I left out a file, or I missed the deadline, or something else. Can I email you my code?](#EmailCode) 
+  - [Do I need to upload your training data? What about the code for evaluating my algorithm?](#UploadData)
+  - [Do you run the code that was in my repository at the time of submission?](#Repository)
+  - [Why is my entry unsuccessful on your submission system? It works on my computer.](#unsuccessfulEntry)
+  - [My entry had some kind of error. Did I lose one of my total entries?](#ErrorLoseEntry)
 
-- [Can I attend this year's conference remotely? Will I be eligible for prizes?](#remotely)
-- [Can I collaborate with another team from the 2020 Challenge?](#collaborate)
-- [Why don't you merge PVC, VEB, and VPB labels?](#labels)
-- [Are the scores currently on the leaderboard the final scores for the Challenge?](#leaderboard)
-- [How will you choose which model to evaluate on the full test data? The latest entry? The best-scoring entry?](#ChooseModel)
-- [Are we allowed to do transfer learning using pre-trained networks?](#pre-trained)
-- [Do we need to provide our training code?](#TrainingCode)
-- [Can I provide my training code but request that you not use/run it?](#NotTrain)
-- [For the license, can we make it open source but restrict to non-commercial use?](#license)
-- [Are the provided records a more accurate representation of the hold-out evaluation data that what was previously provided?](#hold-out)
-- [Should I submit your example code to test the submission system?](#TestSubmission)
-- [Should I submit an empty repository to test the submission system?](#empty)
-- [Should I submit your example code to test the submission system?](#TestSubmission)
-- [I left out a file, or I missed the deadline, or something else. Can I email you my code?](#EmailCode) 
-- [Do I need to upload your training data? What about the code for evaluating my algorithm?](#UploadData)
-- [Do you run the code that was in my repository at the time of submission?](#Repository)
-- [Why is my entry unsuccessful on your submission system? It works on my computer.](#unsuccessfulEntry)
-- [My entry had some kind of error. Did I lose one of my total entries?](#ErrorLoseEntry)
 
+## <a name="Rules"></a> Rules
 
 <a name="remotely"></a> __Can I attend this year's conference remotely? Will I be eligible for prizes?__
 
@@ -35,6 +38,12 @@ We don't know yet. Due to the unique circumstances of 2020, remote attendance wa
 <a name="collaborate"></a> __Can I collaborate with another team from the 2020 Challenge?__
 
 Yes, as long as no one from either team competes in a different team.
+
+<a name="license"></a>__For the license, can we make it open source but restrict to non-commercial use?__
+
+Yes, the philosophy of the Challenge is to encourage researchers to make their code free to use for research. We hope that companies will approach you to license the code, too! If you do not specify any license, then we will assume that the license is the BSD 3-Clause License.
+
+## <a name="Labels_Scores"></a> Labels and scores
 
 <a name="labels"></a> __Why don't you merge PVC, VEB, and VPB labels?__
 
@@ -54,6 +63,8 @@ In general, we have tried to provide you with as much useful information as poss
 <a name="leaderboard"></a>__Are the scores currently on the leaderboard the final scores for the Challenge?__
 
 No, the leaderboard contains scores on a subset of the hidden data during the unofficial and official phases of the Challenge. The final scores on the full test data are released after the conference for the "best" model selected by each team.
+
+## <a name="Train_test"></a> Training and Testing
 
 <a name="ChooseModel"></a>__How will you choose which model to evaluate on the full test data? The latest entry? The best-scoring entry?__
 
@@ -76,10 +87,6 @@ No, the training code is an important part of this year's Challenge.
 We run your training code on Google Cloud using 8 vCPUs, 64 GB RAM, and an optional NVIDIA T4 Tensor Core GPU. The training code has a 72 hour time limit.
 
 We run each your trained model on Google Cloud using 2 vCPUs, 13 GB RAM, and an optional NVIDIA T4 Tensor Core GPU. Your trained model has a 24 hour time limit on the test set.
-
-<a name="license"></a>__For the license, can we make it open source but restrict to non-commercial use?__
-
-Yes, the philosophy of the Challenge is to encourage researchers to make their code free to use for research. We hope that companies will approach you to license the code, too! If you do not specify any license, then we will assume that the license is the BSD 3-Clause License.
 
 <a name="hold-out"></a>__Are the provided records a more accurate representation of the hold-out evaluation data that what was previously provided?__
 
@@ -112,6 +119,8 @@ If you used Python for your entry, then test it in Docker.
 <a name="ErrorLoseEntry"></a>__My entry had some kind of error. Did I lose one of my total entries?__
 
 No, only scored entries (submitted entries that receive a score) count against the total number of allowed entries.
+
+__For General Challenge FAQs, please visit [here](https://physionetchallenges.org/faq/).__
 
 ---
 
