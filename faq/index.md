@@ -7,6 +7,8 @@ layout: default
 [Current Challenge FAQs](https://physionetchallenges.org/2021/faq/)
 
 
+- [Challenge History](#challenge-history)
+  - [What is the history of these challenges? ](#history)
 - [Data](#data)
   - [I want to evaluate my code on the test data - can you provide either the test data or test labels for the current Challenge or a previous Challenge please?](#test-data) 
   - [Are we allowed to use external public or private data, and/or to leverage transfer learning using pre-trained networks?](#external-data)
@@ -15,6 +17,13 @@ layout: default
   - [Can you score my algorithm for one of the previous Challenges?](#previous-scoring)
 - [Contribution](#contribution)
   - [I would like to suggest/help organize/contribute software or data to a Challenge - how can I do this?](#software-data)
+
+
+## <a name="challenge-history"></a> Challenge History
+
+<a name="history"></a> __What is the history of these challenges?__
+
+To find the information about the history of the Challenges, please see [here](https://physionetchallenges.org/about/). 
 
 ## <a name="data"></a> Data
 
