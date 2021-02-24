@@ -175,9 +175,8 @@ __Please__ submit your entries early to ensure that you have the most chances fo
 ### <a name="Timing"></a> Timing and priority of entries 
 
 Although we score on a first-come-first-serve basis, please note that if you submit more than one entry in a 24-hour period, your second entry will be deprioritized compared to other teams' first entries. If you submit more than one entry in the final 24-hours before the Challenge deadline, we may be unable to provide feedback or a score for more than one of your entries. It is unlikely that we will be able to debug any code in the final days of the Challenge. 
-For these reasons, we strongly suggest you start submitting entries at least 5 days before the unofficial deadline and 10 days before the official deadline. 
 
-In fact, we have found that the earlier teams enter the Challenge, the better they do because they have time to digest feedback and performance. We therefore suggest entering your submissions many weeks before the deadline to give yourself the best chance of achieving the highest score.
+For these reasons, we strongly suggest you start submitting entries at least 5 days before the unofficial deadline and 10 days before the official deadline. In fact, we have found that the earlier teams enter the Challenge, the better they do because they have time to digest feedback and performance. We therefore suggest entering your submissions many weeks before the deadline to give yourself the best chance of achieving the highest score.
 
 ### <a name="deadlines"></a> Key dates/deadlines
 
