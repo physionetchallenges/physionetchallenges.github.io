@@ -8,6 +8,8 @@ layout: 2021
 
 ## <a name="announcements"></a> Announcements
 
+__February 24, 2021:__ The [leaderboard](https://physionetchallenges.org/2021/leaderboard/) is now live! Please find the [announcement on the forum](https://groups.google.com/g/physionet-challenges/c/LPstJNLo-NQ). See below for [updates on the rules](https://github.com/physionetchallenges/physionetchallenges.github.io/blob/master/2021/index.md#-timing-and-priority-of-entries).
+
 __January 30, 2021:__ We are now accepting submissions for the 2021 Challenge! See below for [details](https://groups.google.com/g/physionet-challenges/c/7i-rTHFSSV4). Please [register](https://docs.google.com/forms/d/e/1FAIpQLSc52DgT5dy_rqZioxbEdRF5Dd2sTx-MesnK8viJP457bYiWrw/viewform?usp=sf_link) your team (even if you registered last year), check the [submission instructions](submissions/), and [submit your code](https://docs.google.com/forms/d/e/1FAIpQLSciBaEzZn04pY_8_uT3zUDmcjnfnWJALYmdqGmb43vZxIOUUA/viewform?usp=sf_link) when ready. As always, please join the [Challenge forum](https://groups.google.com/g/physionet-challenges/) to discuss this year's Challenge.
 
 __December 24, 2020:__ The NIH-funded 2021 Challenge is now open! See below for [details](https://groups.google.com/g/physionet-challenges/c/isPy636jOMg). Please read this website for details and share questions and comments on [Challenge forum](https://groups.google.com/g/physionet-challenges/). This year's Challenge is generously co-sponsored by Google, MathWorks, and the Gordon and Betty Moore Foundation.
