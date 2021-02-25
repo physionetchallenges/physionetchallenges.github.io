@@ -4,6 +4,10 @@ layout: 2021
 
 # Frequently Asked Questions (FAQ) - 2021 Challenge
 
+This page provides more specific FAQs for 2021 PhysioNet Challenge.
+
+Please see [General Challenge FAQs](https://physionetchallenges.org/faq/) for general information of the PhysioNet Challenges.
+
 [General Challenge FAQs (please read first)](https://physionetchallenges.org/faq/)
 
 [Rules](#rules)
