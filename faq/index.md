@@ -4,19 +4,26 @@ layout: default
 
 # Frequently Asked Questions (FAQ) - General
 
-[Current Challenge FAQs](https://physionetchallenges.org/2021/faq/)
+This page provides general information and FAQs of the PhysioNet Challenges.
+
+Please see [Current Challenge FAQs](https://physionetchallenges.org/2021/faq/) for more specific information of the current PhysioNet Challenge.
 
 
-- [Challenge History](#challenge-history)
-  - [What is the history of these challenges? ](#history)
+[Challenge History](#challenge-history)
+
+- [What is the history of these challenges? ](#history)
 - [Data](#data)
-  - [I want to evaluate my code on the test data - can you provide either the test data or test labels for the current Challenge or a previous Challenge please?](#test-data) 
-  - [Are we allowed to use external public or private data, and/or to leverage transfer learning using pre-trained networks?](#external-data)
-- [Scoring](#score)
-  - [I missed the Challenge/Journal Focus Issue, but I still want to run my code on the test data to be able to compare with the Challenge algorithms. If you aren't providing test data or labels, can you run my code for me?](#run-code)
-  - [Can you score my algorithm for one of the previous Challenges?](#previous-scoring)
-- [Contribution](#contribution)
-  - [I would like to suggest/help organize/contribute software or data to a Challenge - how can I do this?](#software-data)
+- [I want to evaluate my code on the test data - can you provide either the test data or test labels for the current Challenge or a previous Challenge please?](#test-data) 
+- [Are we allowed to use external public or private data, and/or to leverage transfer learning using pre-trained networks?](#external-data)
+
+[Scoring](#score)
+
+- [I missed the Challenge/Journal Focus Issue, but I still want to run my code on the test data to be able to compare with the Challenge algorithms. If you aren't providing test data or labels, can you run my code for me?](#run-code)
+- [Can you score my algorithm for one of the previous Challenges?](#previous-scoring)
+
+[Contribution](#contribution)
+
+- [I would like to suggest/help organize/contribute software or data to a Challenge - how can I do this?](#software-data)
 
 
 ## <a name="challenge-history"></a> Challenge History
