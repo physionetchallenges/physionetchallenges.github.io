@@ -8,7 +8,7 @@ layout: 2021
 
 ## <a name="announcements"></a> Announcements
 
-__February 24, 2021:__ The [leaderboard](https://physionetchallenges.org/2021/leaderboard/) is now live! Please find the [announcement on the forum](https://groups.google.com/g/physionet-challenges/c/LPstJNLo-NQ). Please see the [updated rules](https://physionetchallenges.org/2021/#Timing) about the number of submissions allowed per day - Please submit early!
+__February 24, 2021:__ The [leaderboard](https://physionetchallenges.org/2021/leaderboard/) is now live! Please find the [announcement on the forum](https://groups.google.com/g/physionet-challenges/c/LPstJNLo-NQ). Please see the [updated rules](#timing) about the number of submissions allowed per day - Please submit early!
 
 __January 30, 2021:__ We are now accepting submissions for the 2021 Challenge! See below for [details](https://groups.google.com/g/physionet-challenges/c/7i-rTHFSSV4). Please [register](https://docs.google.com/forms/d/e/1FAIpQLSc52DgT5dy_rqZioxbEdRF5Dd2sTx-MesnK8viJP457bYiWrw/viewform?usp=sf_link) your team (even if you registered last year), check the [submission instructions](submissions/), and [submit your code](https://docs.google.com/forms/d/e/1FAIpQLSciBaEzZn04pY_8_uT3zUDmcjnfnWJALYmdqGmb43vZxIOUUA/viewform?usp=sf_link) when ready. As always, please join the [Challenge forum](https://groups.google.com/g/physionet-challenges/) to discuss this year's Challenge.
 
@@ -157,11 +157,11 @@ Entrants may have an overall total of up to 15 scored entries over both the unof
 
 __Please__ submit your entries early to ensure that you have the most chances for success. If you wait until the last few days to submit your entries, then you may not receive feedback before the submission deadline, and you may be unable to resubmit your entries if there are unexpected errors or issues with your submissions. Every year, several teams wait until the last few days to submit their first entry and are unable to debug their work before the deadline.
 
-### <a name="Timing"></a> Timing and priority of entries 
+### <a name="timing"></a> Timing and priority of entries 
 
-Although we score on a first-come-first-serve basis, please note that if you submit more than one entry in a 24-hour period, your second entry will be deprioritized compared to other teams' first entries. If you submit more than one entry in the final 24-hours before the Challenge deadline, we may be unable to provide feedback or a score for more than one of your entries. It is unlikely that we will be able to debug any code in the final days of the Challenge. 
+Although we score on a first-come-first-serve basis, please note that if you submit more than one entry in a 24-hour period, your second entry may be deprioritized compared to other teams' first entries. If you submit more than one entry in the final 24 hours before the Challenge deadline, then we may be unable to provide feedback or a score for more than one of your entries. It is unlikely that we will be able to debug any code in the final days of the Challenge. 
 
-For these reasons, we strongly suggest you start submitting entries at least 5 days before the unofficial deadline and 10 days before the official deadline. In fact, we have found that the earlier teams enter the Challenge, the better they do because they have time to digest feedback and performance. We therefore suggest entering your submissions many weeks before the deadline to give yourself the best chance of achieving the highest score.
+For these reasons, we strongly suggest that you start submitting entries at least 5 days before the unofficial deadline and 10 days before the official deadline. We have found that the earlier teams enter the Challenge, the better they do because they have time to digest feedback and performance. We therefore suggest entering your submissions many weeks before the deadline to give yourself the best chance for success.
 
 ### <a name="deadlines"></a> Key dates/deadlines
 
