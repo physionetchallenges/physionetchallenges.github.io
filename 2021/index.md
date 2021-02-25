@@ -96,14 +96,28 @@ From the first line of the file, we see that the recording number is A0001, and 
 
 ### Data Access
 
-The training data can be downloaded from these links. You can use the [MD5 hash](https://en.wikipedia.org/wiki/Md5sum) to verify the integrity of the `tar.gz` file:
+The training data from the 2021 Challenge can be downloaded from these links. You can use the [MD5 hash](https://en.wikipedia.org/wiki/Md5sum) to verify the integrity of the `tar.gz` file:
 
-1. CPSC2018 training set, 6,877 recordings: [link](https://storage.cloud.google.com/physionet-challenge-2020-12-lead-ecg-public/PhysioNetChallenge2020_Training_CPSC.tar.gz); MD5-hash: `7b6b1f1ab1b4c59169c639d379575a87`
-2. China 12-Lead ECG Challenge Database (unused CPSC2018 data), 3,453 recordings: [link](https://storage.cloud.google.com/physionet-challenge-2020-12-lead-ecg-public/PhysioNetChallenge2020_Training_2.tar.gz); MD5-hash: `36b409ee2b46aa6f1d2bef99b8451925`
-3. St Petersburg INCART 12-lead Arrhythmia Database, 74 recordings: [link](https://storage.cloud.google.com/physionet-challenge-2020-12-lead-ecg-public/PhysioNetChallenge2020_Training_StPetersburg.tar.gz); MD5-hash: `abcdf9fd1b2f2ca8b1ff158f3b9789b0`
-4. PTB Diagnostic ECG Database, 516 recordings: [link](https://storage.cloud.google.com/physionet-challenge-2020-12-lead-ecg-public/PhysioNetChallenge2020_Training_PTB.tar.gz); MD5-hash: `349316b6985cd21940210e36af9415ec`
-5. PTB-XL electrocardiography Database, 21,837 recordings:[link](https://storage.googleapis.com/physionet-challenge-2020-12-lead-ecg-public/PhysioNetChallenge2020_Training_PTB-XL.tar.gz); MD5-hash: `7ae20a89ae21fd68626ddb3c6b44fdd4`
-6. Georgia 12-Lead ECG Challenge Database, 10,344 recordings: [link](https://storage.cloud.google.com/physionet-challenge-2020-12-lead-ecg-public/PhysioNetChallenge2020_Training_E.tar.gz); MD5-hash: `4971a0562df4a7e2fd8f58e060927ff2`
+1. CPSC2018 training set, 6,877 recordings: [link](https://storage.cloud.google.com/physionetchallenge2021-public-datasets/WFDB_CPSC2018.tar.gz); MD5-hash: `5d4b520e3b6558a33dc9dbe49d08f8f1`[(headers only)](https://storage.cloud.google.com/physionetchallenge2021-public-datasets/CPSC2018-Headers.tar.gz)
+2. China 12-Lead ECG Challenge Database (unused CPSC2018 data), 3,453 recordings: [link](https://storage.cloud.google.com/physionetchallenge2021-public-datasets/WFDB_CPSC2018_2.tar.gz); MD5-hash: `cd4a8c8435591a383dfae5a158b6f2d8`[(headers only)](https://storage.cloud.google.com/physionetchallenge2021-public-datasets/CPSC2018-2-Headers.tar.gz)
+3. St Petersburg INCART 12-lead Arrhythmia Database, 74 recordings: [link](https://storage.cloud.google.com/physionetchallenge2021-public-datasets/WFDB_StPetersburg.tar.gz); MD5-hash: `525dde6bd26bff0dcb35189e78ae7d6d`[(headers only)](https://storage.cloud.google.com/physionetchallenge2021-public-datasets/StPetersburg-Headers.tar.gz)
+4. PTB Diagnostic ECG Database, 516 recordings: [link](https://storage.cloud.google.com/physionetchallenge2021-public-datasets/WFDB_PTB.tar.gz); MD5-hash: `3df4662a8a9189a6a5924424b0fcde0e`[(headers only)](https://storage.cloud.google.com/physionetchallenge2021-public-datasets/PTB-Headers.tar.gz)
+5. PTB-XL electrocardiography Database, 21,837 recordings:[link](https://storage.cloud.google.com/physionetchallenge2021-public-datasets/WFDB_PTBXL.tar.gz); MD5-hash: `55e8a5c25eadfeff4fcd38f5bbf3cb13`[(headers only)](https://storage.cloud.google.com/physionetchallenge2021-public-datasets/PTB-XL-Headers.tar.gz)
+6. Georgia 12-Lead ECG Challenge Database, 10,344 recordings: [link](https://storage.cloud.google.com/physionetchallenge2021-public-datasets/WFDB_Ga.tar.gz); MD5-hash: `8d4d1d1a6aa8af110cc22a14bbe1c78d`[(headers only)](https://storage.cloud.google.com/physionetchallenge2021-public-datasets/Ga-Headers.tar.gz)
+
+If you are unable to use these links to access the data, or if you want to use a command-line tool to access the data through Google Colab, then you can use these commands:
+```
+wget -O WFDB_CPSC2018.tar.gz \
+https://pipelineapi.org:9555/api/download/physionettraining/WFDB_CPSC2018.tar.gz/
+wget -O WFDB_CPSC2018_2.tar.gz \
+https://pipelineapi.org:9555/api/download/physionettraining/WFDB_CPSC2018_2.tar.gz/
+wget -O WFDB_PTB.tar.gz \
+https://pipelineapi.org:9555/api/download/physionettraining/WFDB_PTB.tar.gz/
+wget -O WFDB_PTBXL.tar.gz \
+https://pipelineapi.org:9555/api/download/physionettraining/WFDB_PTBXL.tar.gz/
+wget -O WFDB_Ga.tar.gz \
+https://pipelineapi.org:9555/api/download/physionettraining/WFDB_Ga.tar.gz/
+```
 
 
 ## <a name="registration"></a> Registering for the Challenge and Conditions of Participation
