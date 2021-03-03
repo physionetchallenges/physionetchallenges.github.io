@@ -138,8 +138,6 @@ For each ECG recording, your algorithm must identify a set of one or more classe
 ```
 
 We have implemented two example algorithms in [MATLAB](https://github.com/physionetchallenges/matlab-classifier-2021) and [Python](https://github.com/physionetchallenges/python-classifier-2021) as templates for successful submissions.
-
-The example algorithms are classifiers that use simple logistic regression models:
 - The Python classifier implements a random forest classifier that uses age, sex, and the root mean square of the ECG lead signals as features by extracting the available ECG leads and demographic data from the WFDB header file (the `.hea` file).
 - The MATLAB classifier implements a linear regression model that uses age, sex, and the root mean square of the ECG lead signals as features from the available ECG leads and demographic data from the WFDB header file (the `.hea` file).
 
@@ -150,6 +148,10 @@ Please use the above [example code](#algorithms) as templates for your submissio
 Please see the [submission instructions](submissions/) for detailed information about how to submit a successful Challenge entry. We will open scoring in January. We will provide feedback on your entry as soon as possible, so please wait at least __72 hours__ before contacting us about the status of your entry.
 
 Like [last year's Challenge](../2020/#submissions), we will continue to require code both for your trained model and for testing your model. If we cannot reproduce your model from the training code, then you will not be eligible for ranking or a prize.
+
+We will run your training code on Google Cloud using 8 vCPUs, 64 GB RAM, and an optional NVIDIA T4 Tensor Core GPU. Your training code has a 72 hour time limit.
+
+We will run your trained model on Google Cloud using 4 vCPUs, 32 GB RAM, and an optional NVIDIA T4 Tensor Core GPU. Your trained model has a 24 hour time limit on each of the validation and test sets.
 
 ## <a name="scoring"></a> Scoring
 
