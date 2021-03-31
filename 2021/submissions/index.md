@@ -21,7 +21,7 @@ Similarly to [last year's Challenge](../../2020/), teams must submit both the co
 
 ### <a name="preparation"></a>Preparation and submission instructions
 
-1. Create a private GitHub or Gitlab repository for your code. We recommend cloning our example code and replacing it with your code. Add `physionetchallengeshelper` as a collaborator to your repository.
+1. Create a private GitHub or GitLab repository for your code. We recommend cloning our example code and replacing it with your code. Add `physionetchallengeshelper` as a collaborator to your repository.
 2. Add your classification code to your repository. Like the example code, your code must be in the root directory of the master branch.
 3. Do not include extra files that are not required to create and run your classification code, such as the training data.
 4. Follow the instructions for the programming language of your submission.
@@ -150,6 +150,9 @@ For R, add `RUN R -e 'install.packages(“xgboost”)'` to your Dockerfile.
 __Pandas?__
 
 For Python, you can replace `python:3.8.6-slim` with `python:3.8.6-stretch` in the first line of your Dockerfile if you experience errors.
+
+__GPUs?__
+We provide an optional [NVIDIA T4 Tensor Core GPU](https://www.nvidia.com/en-us/data-center/tesla-t4/) with 16 GB VRAM. We use the NVIDIA `418.40.04` driver for the GPU. The latest supported version of CUDA is 10.1, and the latest supported version of PyTorch is therefore 1.7.1.
 
 __Why can’t I install a common Python or R package using Python or R’s package manager?__
 
