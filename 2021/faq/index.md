@@ -2,22 +2,18 @@
 layout: 2021
 ---
 
-# Frequently Asked Questions (FAQ) - 2021 Challenge
+# Frequently Asked Questions (FAQ) for the 2021 Challenge
 
-This page provides more specific FAQs for 2021 PhysioNet Challenge.
-
-Please see [General Challenge FAQs](https://physionetchallenges.org/faq/) for general information of the PhysioNet Challenges.
-
-[General Challenge FAQs (please read first)](https://physionetchallenges.org/faq/)
+This page provides specific FAQs for the 2021 Challenge. Please read the [general Challenge FAQs](../faq/) for more general questions about the Challenges.
 
 [Rules](#rules)
 - [Can I attend this year's conference remotely? Will I be eligible for prizes?](#remotely)
 - [Can I collaborate with another team from the 2020 Challenge?](#collaborate)
 - [For the license, can we make it open source but restrict to non-commercial use?](#license)
 
-[Labels and scores](#labels-scores)
+[Labels and scores](#scoring)
 
-- [Why don't you merge PVC, VEB, and VPB labels?](#labels)
+- [Why don't you merge PVC, VEB, and VPB labels?](#merge)
 - [Are the scores currently on the leaderboard the final scores for the Challenge?](#leaderboard)
 
 [Data](#data)
@@ -44,7 +40,7 @@ Please see [General Challenge FAQs](https://physionetchallenges.org/faq/) for ge
 
 <a name="remotely"></a> __Can I attend this year's conference remotely? Will I be eligible for prizes?__
 
-We don't know yet. Due to the unique circumstances of 2020, remote attendance was allowed for CinC 2020. Participants were still eligible for prizes if they attended remotely (as long as they satisfied the other criteria).
+Due to the unique circumstances of 2021 and 2202, remote attendance is allowed for both CinC 2020 and 2021. Participants were still eligible for prizes if they attend remotely (as long as they satisfied the other criteria).
 
 <a name="collaborate"></a> __Can I collaborate with another team from the 2020 Challenge?__
 
@@ -54,9 +50,9 @@ Yes, as long as no one from either team competes in a different team.
 
 Yes, the philosophy of the Challenge is to encourage researchers to make their code free to use for research. We hope that companies will approach you to license the code, too! If you do not specify any license, then we will assume that the license is the BSD 3-Clause License.
 
-## <a name="labels-scores"></a> Labels and scores
+## <a name="scoring"></a> Labels and scores
 
-<a name="labels"></a> __Why don't you merge PVC, VEB, and VPB labels?__
+<a name="merge"></a> __Why don't you merge PVC, VEB, and VPB labels?__
 
 Each database is labelled using a different ontology, or subset of terms in an ontology (or sometimes no ontology, i.e., just a free-text description). We needed to decide how to map these ontologies to a consistent set of labels. For example, we have the following four labels for ventricular ectopic beats:
  
@@ -77,17 +73,17 @@ No, the leaderboard contains scores on a subset of the hidden data during the un
 
 ## <a name="data"></a> Data
 
-<a name="hold-out"></a>__Are the provided records a more accurate representation of the hold-out evaluation data that what was previously provided?__
+<a name="hold-out"></a>__Are the provided records a more accurate representation of the held-out evaluation data that what was previously provided?__
 
-We are creating a large database of heterogeneous data with varying labels, some of which are wrong or incomplete. Leads can be inverted, noisy, mislabeled.  We have deliberately made no attempt to clean this up. The test data contains better labels, but it is not perfect either, and although it roughly correspond to the training data, it includes some deliberate differences.
+We are creating a large database of heterogeneous data with varying labels, some of which are wrong or incomplete. Leads can be inverted, noisy, and/or mislabeled. We have deliberately made no attempt to clean this up. The test data contains better labels, but it is not perfect either, and although it roughly correspond to the training data, it includes some deliberate differences.
 
 <a name="upload-data"></a>__Do I need to upload your training data? What about the code for evaluating my algorithm?__
 
-No, we have the training data, test data, and evaluation code.
+No, we have the training, validation, and test data along with the evaluation code?
 
 ## <a name="train-test"></a> Training and Testing
 
-<a name="choose-model"></a>__How will you choose which model to evaluate on the full test data? The latest entry? The best-scoring entry?__
+<a name="choose-model"></a>__How will you choose which model to evaluate on the test set? The latest entry? The best-scoring entry?__
 
 You will be able to choose which model you would like to have scored on the full test set. We will ask for teams to choose their “best” model shortly before the end of the official phase of the Challenge. If you do not choose a model, or if there is any ambiguity about your choice, then we will use the model with the highest score on the current subset of the test data.
 
@@ -133,7 +129,7 @@ If you used Python for your entry, then test it in Docker.
 
 No, only scored entries (submitted entries that receive a score) count against the total number of allowed entries.
 
-__For General Challenge FAQs, please visit [here](https://physionetchallenges.org/faq/).__
+__For more general Challenge FAQs, please visit [here](../faq/).__
 
 ---
 
