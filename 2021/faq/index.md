@@ -4,7 +4,7 @@ layout: 2021
 
 # Frequently Asked Questions (FAQ) for the 2021 Challenge
 
-This page provides specific FAQs for the 2021 Challenge. Please read the [general Challenge FAQs](../faq/) for more general questions about the Challenges.
+This page provides specific FAQs for the 2021 Challenge. Please read the [general Challenge FAQs](../../faq/) for more general questions about the Challenges.
 
 [Rules](#rules)
 - [Can I attend this year's conference remotely? Will I be eligible for prizes?](#remotely)
@@ -129,7 +129,7 @@ If you used Python for your entry, then test it in Docker.
 
 No, only scored entries (submitted entries that receive a score) count against the total number of allowed entries.
 
-__For more general Challenge FAQs, please visit [here](../faq/).__
+__For more general Challenge FAQs, please visit [here](../../faq/).__
 
 ---
 
