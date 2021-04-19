@@ -8,6 +8,8 @@ layout: 2021
 
 ## <a name="announcements"></a> Announcements
 
+__April 19, 2021:__ CinC has extended its abstract submission deadline to April 24, 2021. Please [submit your abstract](https://www.softconf.com/l/cinc2021/) if you have not done so already. Like last year, CinC will host a hybrid conference with both in-person and remote attendance. Please see our [announcement](https://groups.google.com/g/physionet-challenges/c/3dNhVvor5Lg) on the [Challenge forum](https://groups.google.com/g/physionet-challenges) for more details.
+
 __April 13, 2021:__ Only two days left to [submit an abstract to CinC](http://www.cinc.org/information-for-computing-in-cardiology-authors/)! Please find the [abstract submission announcement](https://groups.google.com/g/physionet-challenges/c/gchqYjCv5Kk) and the [instructions announcement](https://groups.google.com/g/physionet-challenges/c/wnCAoqZxFAI) on the [Challenge forum](https://groups.google.com/g/physionet-challenges). Please see the [leaderboard](leaderboard/) for the final scores of the unofficial phase, and please submit your abstract today! 
 
 __February 24, 2021:__ The [leaderboard](leaderboard/) is now live! Please see the [announcement](https://groups.google.com/g/physionet-challenges/c/LPstJNLo-NQ) on the [Challenge forum](https://groups.google.com/g/physionet-challenges). Please see the [updated rules](#timing) about the number of submissions allowed per day, so please submit early!
