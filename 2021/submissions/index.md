@@ -144,21 +144,20 @@ For Python, if your entry uses scikit-learn, then you need to install it via `pi
 
 __xgboost?__
 
-For Python, replace `python:3.8.6-slim` with `python:3.8.6-stretch` in the first line of your Dockerfile. This image includes additional packages, such as GCC, that xgboost needs. Additionally, include xgboost in your requirements.txt file.  Specify the version of xgboost that you are using in your requirements.txt file.
+For Python, try `python:3.8.9-buster` in the first line of your Dockerfile. This image includes additional packages, such as GCC, that xgboost needs. Additionally, include xgboost in your requirements.txt file.  Specify the version of xgboost that you are using in your requirements.txt file.
 For R, add `RUN R -e 'install.packages(“xgboost”)'` to your Dockerfile.
 
 __Pandas?__
 
-For Python, you can replace `python:3.8.6-slim` with `python:3.8.6-stretch` in the first line of your Dockerfile if you experience errors.
+For Python, try `python:3.8.9-buster` in the first line of your Dockerfile if you experience errors.
 
 __GPUs?__
+
 We provide an optional [NVIDIA T4 Tensor Core GPU](https://www.nvidia.com/en-us/data-center/tesla-t4/) with 16 GB VRAM. We use the NVIDIA `418.40.04` driver for the GPU. The latest supported version of CUDA is 10.1, and the latest supported version of PyTorch is therefore 1.7.1.
 
 __Why can’t I install a common Python or R package using Python or R’s package manager?__
 
-Some packages have dependencies, such as GCC, that need to be installed.  Try replacing `python:3.8.6-slim` with `python:3.8.6-stretch`, which includes more packages by default, or installing the dependencies
-
-If the first line of your Dockerfile is `FROM python:3.8.6-slim`, then you are building a Docker image with the Debian Linux distribution, so you can install GCC and other related libraries that many Python and R packages use by adding the line `RUN apt install build-essential` to your Dockerfile before installing these packages.
+Some packages have dependencies, such as GCC, that need to be installed.  Try `python:3.8.9-buster`, which includes more packages by default, or installing the dependencies. If the first line of your Dockerfile is `FROM python:3.8.6-slim`, then you are building a Docker image with the Debian Linux distribution, so you can install GCC and other related libraries that many Python and R packages use by adding the line `RUN apt install build-essential` to your Dockerfile before installing these packages.
 
 __How do I build my image?__
 
