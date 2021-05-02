@@ -66,7 +66,7 @@ The initial data for this Challenge are from [last year's Challenge](../2020/#da
 
 - The fifth source is an undisclosed American database that is geographically distinct from the Georgia database. This source contains 10,000 ECGs (all retained as test data).
 
-- The sixth source is Chapman University and Shaoxing University [[5]](https://doi.org/10.1038/s41597-020-0386-x), [[6]](https://doi.org/10.1038/s41598-020-59821-7). This source contains 45,152 ECGS (all shared as training data). Each recording is 10 seconds long with a sampling frequency of 500 Hz.
+- The sixth source is the Chapman University and Shaoxing University database [[5]](https://doi.org/10.1038/s41597-020-0386-x), [[6]](https://doi.org/10.1038/s41598-020-59821-7). This source contains 45,152 ECGS (all shared as training data). Each recording is 10 seconds long with a sampling frequency of 500 Hz.
 
 Like other real-world datasets, different databases may have different proportions of cardiac abnormalities, but all of the labels in the validation or test data are represented in the training data. Moreover, while this is a curated dataset, some of the data and labels are likely to have errors, and an important part of the Challenge is to work out these issues. In particular, some of the databases have human-overread machine labels with single or multiple human readers, so the quality of the labels varies between databases.
 
@@ -314,8 +314,8 @@ The Challenge Organizers, their employers, PhysioNet and Computing in Cardiology
 2. [Drew, _et al._, 2002. _J Electrocardiol_ 35 Suppl:13-21](https://pubmed.ncbi.nlm.nih.gov/12539095)
 3. [Green, _et al._, 2007. _Journal of Electrocardiology_ 40.3: 251-256](http://www.sciencedirect.com/science/article/pii/S0022073606005346).
 4. [Aldrich, _et al._, 1987. _Am J Cardiol_ 1.59: 20-3](https://pubmed.ncbi.nlm.nih.gov/3812249).
-5. [Zheng, J., Zhang, J., Danioko, S. _et al._ A 12-lead electrocardiogram database for arrhythmia research covering more than 10,000 patients. _Sci Data_ 7, 48 (2020).](https://doi.org/10.1038/s41597-020-0386-x)
-6. [Zheng, J., Chu, H., Struppa, D. _et al._ Optimal Multi-Stage Arrhythmia Classification Approach. _Sci Rep_ 10, 2898 (2020).](https://doi.org/10.1038/s41598-020-59821-7)
+5. [Zheng, _et al._ 2020. _Sci Data_ 48.7: 1-8](https://doi.org/10.1038/s41597-020-0386-x)
+6. [Zheng, _et al._ 2020. _Sci Rep_ 2898.10: 1-17](https://doi.org/10.1038/s41598-020-59821-7)
 
 ---
 
