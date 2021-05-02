@@ -66,7 +66,7 @@ The initial data for this Challenge are from [last year's Challenge](../2020/#da
 
 - The fifth source is an undisclosed American database that is geographically distinct from the Georgia database. This source contains 10,000 ECGs (all retained as test data).
 
-- The sixth source is the Chapman University and Shaoxing University database [[5]](https://doi.org/10.1038/s41597-020-0386-x), [[6]](https://doi.org/10.1038/s41598-020-59821-7). This source contains 45,152 ECGS (all shared as training data). Each recording is 10 seconds long with a sampling frequency of 500 Hz.
+- The sixth source is the Chapman University, Shaoxing People's Hospital and Ningbo First Hospital (CUSPHNFH) database [[5]](https://doi.org/10.1038/s41597-020-0386-x), [[6]](https://doi.org/10.1038/s41598-020-59821-7). This source contains 45,152 ECGS (all shared as training data). Each recording is 10 seconds long with a sampling frequency of 500 Hz.
 
 Like other real-world datasets, different databases may have different proportions of cardiac abnormalities, but all of the labels in the validation or test data are represented in the training data. Moreover, while this is a curated dataset, some of the data and labels are likely to have errors, and an important part of the Challenge is to work out these issues. In particular, some of the databases have human-overread machine labels with single or multiple human readers, so the quality of the labels varies between databases.
 
@@ -113,7 +113,7 @@ The training data from the 2021 Challenge can be downloaded from these links. Yo
 4. PTB Diagnostic ECG Database, 516 recordings: [link](https://storage.cloud.google.com/physionetchallenge2021-public-datasets/WFDB_PTB.tar.gz); MD5 hash: `3df4662a8a9189a6a5924424b0fcde0e`; [(headers only)](https://storage.cloud.google.com/physionetchallenge2021-public-datasets/PTB-Headers.tar.gz)
 5. PTB-XL Electrocardiography Database, 21,837 recordings: [link](https://storage.cloud.google.com/physionetchallenge2021-public-datasets/WFDB_PTBXL.tar.gz); MD5 hash: `55e8a5c25eadfeff4fcd38f5bbf3cb13`; [(headers only)](https://storage.cloud.google.com/physionetchallenge2021-public-datasets/PTB-XL-Headers.tar.gz)
 6. Georgia 12-Lead ECG Challenge Database, 10,344 recordings: [link](https://storage.cloud.google.com/physionetchallenge2021-public-datasets/WFDB_Ga.tar.gz); MD5 hash: `d064e3bf164d78a070e78fe5227d985c`; [(headers only)](https://storage.cloud.google.com/physionetchallenge2021-public-datasets/Ga-Headers.tar.gz)
-7. Chapman/Shaoxing 12-lead ECG Database, 45,152 recordings: [link](https://storage.cloud.google.com/physionetchallenge2021-public-datasets/WFDB_ShaoxingUniv.tar.gz); MD5 hash: `169b0696343f5bd004141c4dfac8e138`
+7. Chapman University, Shaoxing People's Hospital and Ningbo First Hospital (CUSPHNFH) 12-lead ECG Database, 45,152 recordings: [link](https://storage.cloud.google.com/physionetchallenge2021-public-datasets/WFDB_ShaoxingUniv.tar.gz); MD5 hash: `169b0696343f5bd004141c4dfac8e138`
 
 If you are unable to use these links to access the data, or if you want to use a command-line tool to access the data through Google Colab, then you can use these commands:
 ```
