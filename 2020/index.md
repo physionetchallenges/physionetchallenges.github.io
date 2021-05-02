@@ -65,7 +65,7 @@ The data for this Challenge are from multiple sources:
 4. The Georgia 12-lead ECG Challenge (G12EC) Database
 5. Undisclosed Database 
 
-The first source is the public and unused data from the [China Physiological Signal Challenge in 2018 (CPSC2018)](http://2018.icbeb.org/), held during the 7th International Conference on Biomedical Engineering and Biotechnology in Nanjing, China. The unused data from the CPSC2018 is NOT the test data from the CPSC2018. The test data of the CPSC2018 is included in the final private database that has been sequestered. This training set consists of two sets of 6,877 (male: 3,699; female: 3,178) and 3,453 (male: 1,843; female: 1,610) of 12-ECG recordings lasting from 6 seconds to 60 seconds. Each recording was sampled at 500 Hz.
+The first source is the public (CPSC Database) and unused data (CPSC-Extra Database) from the [China Physiological Signal Challenge in 2018 (CPSC2018)](http://2018.icbeb.org/), held during the 7th International Conference on Biomedical Engineering and Biotechnology in Nanjing, China. The unused data from the CPSC2018 is NOT the test data from the CPSC2018. The test data of the CPSC2018 is included in the final private database that has been sequestered. This training set consists of two sets of 6,877 (male: 3,699; female: 3,178) and 3,453 (male: 1,843; female: 1,610) of 12-ECG recordings lasting from 6 seconds to 60 seconds. Each recording was sampled at 500 Hz.
 
 The second source set is the public dataset from [St Petersburg INCART 12-lead Arrhythmia Database](https://physionet.org/content/incartdb/1.0.0/). This database consists of 75 annotated recordings extracted from 32 Holter records. Each record is 30 minutes long and contains 12 standard leads, each sampled at 257 Hz.
 
