@@ -59,10 +59,11 @@ We ask participants to design and implement a working, open-source algorithm tha
 
 The data for this Challenge are from multiple sources:
 
-1. Southeast University, China, including the data from the China Physiological Signal Challenge 2018
-2. St. Petersburg Institute of Cardiological Technics, St. Petersburg, Russia.
-3. The Physikalisch Technische Bundesanstalt, Brunswick, Germany.
-4. Georgia 12-Lead ECG Challenge Database, Emory University, Atlanta, Georgia, USA.
+1. CPSC Database and CPSC-Extra Database
+2. INCART Database
+3. PTB and PTB-XL Database
+4. The Georgia 12-lead ECG Challenge (G12EC) Database
+5. Undisclosed Database 
 
 The first source is the public and unused data from the [China Physiological Signal Challenge in 2018 (CPSC2018)](http://2018.icbeb.org/), held during the 7th International Conference on Biomedical Engineering and Biotechnology in Nanjing, China. The unused data from the CPSC2018 is NOT the test data from the CPSC2018. The test data of the CPSC2018 is included in the final private database that has been sequestered. This training set consists of two sets of 6,877 (male: 3,699; female: 3,178) and 3,453 (male: 1,843; female: 1,610) of 12-ECG recordings lasting from 6 seconds to 60 seconds. Each recording was sampled at 500 Hz.
 
@@ -71,6 +72,8 @@ The second source set is the public dataset from [St Petersburg INCART 12-lead A
 The third source from the Physikalisch Technische Bundesanstalt (PTB) comprises two public databases: the [PTB Diagnostic ECG Database](https://physionet.org/content/ptbdb/1.0.0/) and the [PTB-XL](https://physionet.org/content/ptb-xl/1.0.1/), a large publicly available electrocardiography dataset. The first PTB database contains 549 records (male: 377, female: 139). Each recording was sampled at 1000 Hz. The PTB-XL contains 21,837 clinical 12-lead ECGs (male: 11,379 and female: 10,458) of 10 second length with a sampling frequency of 500 Hz.
 
 The fourth source is a Georgia database which represents a unique demographic of the Southeastern United States. This training set contains 10,344 12-lead ECGs (male: 5,551, female: 4,793) of 10 second length with a sampling frequency of 500 Hz.
+
+The fifth source is an undisclosed American database that is geographically distinct from the Georgia database. This source contains 10,000 ECGs (all retained as test data).
 
 All data is provided in [WFDB format](https://www.physionet.org/physiotools/wpg/wpg_35.htm). Each ECG recording has a binary [MATLAB v4 file](https://www.mathworks.com/help/matlab/import_export/mat-file-versions.html) ([see page 27](matfile_format.pdf)) for the ECG signal data and a text file in [WFDB header format](https://www.physionet.org/physiotools/wag/header-5.htm) describing the recording and patient attributes, including the diagnosis (the labels for the recording). The binary files can be read using the [load function](https://www.mathworks.com/help/matlab/ref/load.html) in MATLAB and the [scipy.io.loadmat](https://docs.scipy.org/doc/scipy/reference/generated/scipy.io.loadmat.html) function in Python; please see our [baseline models](https://physionetchallenges.github.io/2020/#submissions) for examples of loading the data. The first line of the header provides information about the total number of leads and the total number of samples or points per lead. The following lines describe how each lead was saved, and the last lines provide information on demographics and diagnosis. Below is an example header file `A0001.hea`:
 ```

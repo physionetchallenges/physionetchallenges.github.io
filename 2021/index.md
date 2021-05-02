@@ -32,7 +32,7 @@ __December 24, 2020:__ The NIH-funded 2021 Challenge is now open! See below for 
 
 The electrocardiogram (ECG) is a non-invasive representation of the electrical activity of the heart. Although the twelve-lead ECG is the standard diagnostic screening system for many cardiological issues, the limited accessibility of twelve-lead ECG devices provides a rationale for smaller, lower-cost, and easier to use devices. While single-lead ECGs are limiting [[1](https://pubmed.ncbi.nlm.nih.gov/9740885/)], reduced-lead ECG systems hold promise, with evidence that subsets of the standard twelve leads can capture useful information [[2](https://pubmed.ncbi.nlm.nih.gov/12539095)], [[3](https://www.sciencedirect.com/science/article/abs/pii/S0022073606005346)], [[4](https://pubmed.ncbi.nlm.nih.gov/3812249)] and even be comparable to twelve-lead ECGs in some limited contexts. In 2017 we challenged the public to classify AF from a single-lead ECG, and in 2020 we challenged the public to diagnose a much larger number of cardiac problems using twelve-lead recordings. However, there is limited evidence to demonstrate the utility of reduced-lead ECGs for capturing a wide range of diagnostic information.
 
-In this year's Challenge, we ask the following question: __'Will two do?'__ This year's Challenge builds on [last year's Challenge](../2020/), which asked participants to classify cardiac abnormalities from twelve-lead ECGs. We are asking you to build an algorithm that can classify cardiac abnormalities from either twelve-lead, six-lead, four-lead, three-lead, and two-lead ECGs. We will test each algorithm on databases of these reduced-lead ECGs, and the differences in performances of the algorithms on these databases will reveal the utility of reduced-lead ECGs in comparison to standard twelve-lead EGCs.
+In this year's Challenge, we ask the following question: __'Will two do?'__ This year's Challenge builds on [last year's Challenge](../2020/) [[5]], which asked participants to classify cardiac abnormalities from twelve-lead ECGs. We are asking you to build an algorithm that can classify cardiac abnormalities from either twelve-lead, six-lead, four-lead, three-lead, and two-lead ECGs. We will test each algorithm on databases of these reduced-lead ECGs, and the differences in performances of the algorithms on these databases will reveal the utility of reduced-lead ECGs in comparison to standard twelve-lead EGCs.
 
 ## <a name="objective"></a> Objective
 
@@ -54,7 +54,16 @@ Each ECG recording has one or more labels that describe cardiac abnormalities (a
 
 ### Data Sources
 
-The initial data for this Challenge are from [last year's Challenge](../2020/#data), and we have doubled the size of these data for this year's Challenge. The Challenge data include annotated twelve-lead ECG recordings from six sources in four countries across three continents. These databases include over 100,000 twelve-lead ECG recordings with over 88,000 ECGs shared publicly as training data, 6,630 ECGs retained privately as validation data, and 16,630 ECGs retained privately as test data:
+The Challenge data include recordings from [last year's Challenge](../2020/#data) and many new recordings for this year's Challenge:
+
+1. CPSC Database and CPSC-Extra Database
+2. INCART Database
+3. PTB and PTB-XL Database
+4. The Georgia 12-lead ECG Challenge (G12EC) Database
+5. Augmented Undisclosed Database 
+6. CUSPHNFH Database 
+
+The Challenge data include annotated twelve-lead ECG recordings from six sources in four countries across three continents. These databases include over 100,000 twelve-lead ECG recordings with over 88,000 ECGs shared publicly as training data, 6,630 ECGs retained privately as validation data, and 16,630 ECGs retained privately as test data.
 
 - The first source is the [China Physiological Signal Challenge in 2018 (CPSC 2018)](http://2018.icbeb.org/), which was held during the 7th International Conference on Biomedical Engineering and Biotechnology in Nanjing, China. This source contains 13,256 ECGs (10,330 ECGs shared as training data, 1,463 retained as validation data, and 1,463 retained as test data). In particular, we shared the training set and an unused dataset from CPSC 2018 as training data, and we split the test set from CPSC 2018 into validation and test sets. Each recording is between 6 and 144 seconds long with a sampling frequency of 500 Hz.
 
@@ -310,12 +319,13 @@ The Challenge Organizers, their employers, PhysioNet and Computing in Cardiology
 
 ## <a name="references"></a> References
 
-1. [Drew, _et al._, 1998. _Am J Crit Care_ 7.5: 355-63](https://pubmed.ncbi.nlm.nih.gov/9740885).
+1. [Drew, _et al._, 1998. _Am J Crit Care_ 7.5: 355-63](https://pubmed.ncbi.nlm.nih.gov/9740885)
 2. [Drew, _et al._, 2002. _J Electrocardiol_ 35 Suppl:13-21](https://pubmed.ncbi.nlm.nih.gov/12539095)
-3. [Green, _et al._, 2007. _Journal of Electrocardiology_ 40.3: 251-256](http://www.sciencedirect.com/science/article/pii/S0022073606005346).
-4. [Aldrich, _et al._, 1987. _Am J Cardiol_ 1.59: 20-3](https://pubmed.ncbi.nlm.nih.gov/3812249).
-5. [Zheng, _et al._ 2020. _Sci Data_ 48.7: 1-8](https://doi.org/10.1038/s41597-020-0386-x)
-6. [Zheng, _et al._ 2020. _Sci Rep_ 2898.10: 1-17](https://doi.org/10.1038/s41598-020-59821-7)
+3. [Green, _et al._, 2007. _Journal of Electrocardiology_ 40.3: 251-256](http://www.sciencedirect.com/science/article/pii/S0022073606005346)
+4. [Aldrich, _et al._, 1987. _Am J Cardiol_ 1.59: 20-3](https://pubmed.ncbi.nlm.nih.gov/3812249)
+5. [Perez Alday, _et al._ 2020. _Physiol Meas_ 12.41: 1-11](https://doi.org/10.1088/1361-6579/abc960)
+6. [Zheng, _et al._ 2020. _Sci Data_ 48.7: 1-8](https://doi.org/10.1038/s41597-020-0386-x)
+7. [Zheng, _et al._ 2020. _Sci Rep_ 2898.10: 1-17](https://doi.org/10.1038/s41598-020-59821-7)
 
 ---
 
