@@ -8,6 +8,8 @@ layout: 2021
 
 ## <a name="announcements"></a> Announcements
 
+__May 1, 2021:__ The official phase of the Challenge reopens today. Due to your engagement, we have enormously expanded the training data, modified the lead combination, and modified the example code and scoring function. Please see [our announcement](https://groups.google.com/u/4/g/physionet-challenges/c/ICEtUoEFppM) on the [Challenge forum](https://groups.google.com/g/physionet-challenges) for more details. We will update and clarify these changes in response to your questions in the coming days. 
+
 __April 19, 2021:__ CinC has extended its abstract submission deadline to April 24, 2021. Please [submit your abstract](https://www.softconf.com/l/cinc2021/) if you have not done so already. Like last year, CinC will host a hybrid conference with both in-person and remote attendance. Please see our [announcement](https://groups.google.com/g/physionet-challenges/c/3dNhVvor5Lg) on the [Challenge forum](https://groups.google.com/g/physionet-challenges) for more details.
 
 __April 13, 2021:__ Only two days left to [submit an abstract to CinC](http://www.cinc.org/information-for-computing-in-cardiology-authors/)! Please find the [abstract submission announcement](https://groups.google.com/g/physionet-challenges/c/gchqYjCv5Kk) and the [instructions announcement](https://groups.google.com/g/physionet-challenges/c/wnCAoqZxFAI) on the [Challenge forum](https://groups.google.com/g/physionet-challenges). Please see the [leaderboard](leaderboard/) for the final scores of the unofficial phase, and please submit your abstract today! 
@@ -30,28 +32,29 @@ __December 24, 2020:__ The NIH-funded 2021 Challenge is now open! See below for 
 
 The electrocardiogram (ECG) is a non-invasive representation of the electrical activity of the heart. Although the twelve-lead ECG is the standard diagnostic screening system for many cardiological issues, the limited accessibility of twelve-lead ECG devices provides a rationale for smaller, lower-cost, and easier to use devices. While single-lead ECGs are limiting [[1](https://pubmed.ncbi.nlm.nih.gov/9740885/)], reduced-lead ECG systems hold promise, with evidence that subsets of the standard twelve leads can capture useful information [[2](https://pubmed.ncbi.nlm.nih.gov/12539095)], [[3](https://www.sciencedirect.com/science/article/abs/pii/S0022073606005346)], [[4](https://pubmed.ncbi.nlm.nih.gov/3812249)] and even be comparable to twelve-lead ECGs in some limited contexts. In 2017 we challenged the public to classify AF from a single-lead ECG, and in 2020 we challenged the public to diagnose a much larger number of cardiac problems using twelve-lead recordings. However, there is limited evidence to demonstrate the utility of reduced-lead ECGs for capturing a wide range of diagnostic information.
 
-In this year's Challenge, we ask the following question: __'Will two do?'__ This year's Challenge builds on [last year's Challenge](../2020/), which asked participants to classify cardiac abnormalities from twelve-lead ECGs. We are asking you to build an algorithm that can classify cardiac abnormalities from either twelve-lead, six-lead, three-lead, and two-lead ECGs. We will test each algorithm on databases of twelve-lead, six-lead, three-lead, and two-lead ECGs, and the differences in performances of the algorithms on these databases will reveal the utility of reduced-lead ECGs in comparison to standard twelve-lead EGCs.
+In this year's Challenge, we ask the following question: __'Will two do?'__ This year's Challenge builds on [last year's Challenge](../2020/), which asked participants to classify cardiac abnormalities from twelve-lead ECGs. We are asking you to build an algorithm that can classify cardiac abnormalities from either twelve-lead, six-lead, four-lead, three-lead, and two-lead ECGs. We will test each algorithm on databases of these reduced-lead ECGs, and the differences in performances of the algorithms on these databases will reveal the utility of reduced-lead ECGs in comparison to standard twelve-lead EGCs.
 
 ## <a name="objective"></a> Objective
 
-The goal of the 2021 Challenge is to identify clinical diagnoses from twelve-lead, six-lead (I, II, III, aVL, aVR, and aVF), three-lead (I, II, V2), and two-lead (II and V5) ECG recordings.
+The goal of the 2021 Challenge is to identify clinical diagnoses from twelve-lead, six-lead (I, II, III, aVL, aVR, aVF), four-lead (I, II, II, V2), three-lead (I, II, V2), and two-lead (I and II) ECG recordings.
 
-We ask participants to design and implement a working, open-source algorithm that, based only on the provided twelve-lead ECG recordings and routine demographic data, can automatically identify any cardiac abnormalities present in the recording. We will award prizes for the top performing twelve-lead, six-lead, three-lead, and two-lead algorithms.
+We ask participants to design and implement a working, open-source algorithm that, based only on the provided twelve-lead ECG recordings and routine demographic data, can automatically identify any cardiac abnormalities present in the recording. We will award prizes for the top performing twelve-lead, six-lead, four-lead, three-lead, and two-lead algorithms.
 
 ## <a name="data"></a> Data
 
-The training data contains twelve-lead ECGs. The validation and test data contains twelve-lead, six-lead, three-lead, and two-lead ECGs:
+The training data contains twelve-lead ECGs. The validation and test data contains twelve-lead, six-lead, four-lead, three-lead, and two-lead ECGs:
 
 1. Twelve leads: I, II, III, aVR, aVL, aVF, V1, V2, V3, V4, V5, V6
 2. Six leads: I, II, III, aVR, aVL, aVF
-3. Three leads: I, II, V2
-4. Two leads: II, V5
+3. Four leads: I, II, III, V2
+4. Three leads: I, II, V2
+5. Two leads: I, II
 
 Each ECG recording has one or more labels that describe cardiac abnormalities (and/or a normal sinus rhythm). We mapped the labels for each recording to [SNOMED-CT codes](http://bioportal.bioontology.org/ontologies/SNOMEDCT). The lists of [scored labels](https://github.com/physionetchallenges/evaluation-2021/blob/main/dx_mapping_scored.csv) and [unscored labels](https://github.com/physionetchallenges/evaluation-2021/blob/main/dx_mapping_unscored.csv) are given with the [evaluation code](https://github.com/physionetchallenges/evaluation-2021); see the [scoring section](#scoring) for details.
 
 ### Data Sources
 
-The initial data for this Challenge are from [last year's Challenge](../2020/#data), which includes annotated twelve-lead ECG recordings from five sources in four countries across three continents. These databases included 66,361 twelve-lead ECG recordings with 43,101 ECGs shared publicly as training data, 6,630 ECGs retained privately as validation data, and 16,630 ECGs retained privately as test data:
+The initial data for this Challenge are from [last year's Challenge](../2020/#data), and we have doubled the size of these data for this year's Challenge. The Challenge data include annotated twelve-lead ECG recordings from six sources in four countries across three continents. These databases include over 100,000 twelve-lead ECG recordings with over 88,000 ECGs shared publicly as training data, 6,630 ECGs retained privately as validation data, and 16,630 ECGs retained privately as test data:
 
 - The first source is the [China Physiological Signal Challenge in 2018 (CPSC 2018)](http://2018.icbeb.org/), which was held during the 7th International Conference on Biomedical Engineering and Biotechnology in Nanjing, China. This source contains 13,256 ECGs (10,330 ECGs shared as training data, 1,463 retained as validation data, and 1,463 retained as test data). In particular, we shared the training set and an unused dataset from CPSC 2018 as training data, and we split the test set from CPSC 2018 into validation and test sets. Each recording is between 6 and 144 seconds long with a sampling frequency of 500 Hz.
 
@@ -59,13 +62,15 @@ The initial data for this Challenge are from [last year's Challenge](../2020/#da
 
 - The third source is the Physikalisch-Technische Bundesanstalt (PTB) and includes two public datasets: the [PTB](https://physionet.org/content/ptbdb/) and the [PTB-XL](https://physionet.org/content/ptb-xl/) databases. The source contains 22,353 ECGs (all shared as training data). Each recording is between 10 and 120 seconds long with a sampling frequency of either 500 or 1,000 Hz.
 
-- The fourth source is a Georgia database which represents a unique demographic of the Southeastern United States. The source contains 20,678 ECGs (10,334 ECGs shared as training data, 5,167 retained as validation data, and 5,167 retained as test data). Each recording is between 5 and 10 seconds long with a sampling frequency of 500 Hz.
+- The fourth source is a Georgia database which represents a unique demographic of the Southeastern United States. This source contains 20,678 ECGs (10,334 ECGs shared as training data, 5,167 retained as validation data, and 5,167 retained as test data). Each recording is between 5 and 10 seconds long with a sampling frequency of 500 Hz.
 
-- The fifth source is an undisclosed American database that is geographically distinct from the Georgia database. The source contains 10,000 ECGs (all retained as test data).
+- The fifth source is an undisclosed American database that is geographically distinct from the Georgia database. This source contains 10,000 ECGs (all retained as test data).
+
+- The sixth source is Chapman University and Shaoxing University [[5]](https://doi.org/10.1038/s41597-020-0386-x), [[6]](https://doi.org/10.1038/s41598-020-59821-7). This source contains 45,152 ECGS (all shared as training data). Each recording is 10 seconds long with a sampling frequency of 500 Hz.
 
 Like other real-world datasets, different databases may have different proportions of cardiac abnormalities, but all of the labels in the validation or test data are represented in the training data. Moreover, while this is a curated dataset, some of the data and labels are likely to have errors, and an important part of the Challenge is to work out these issues. In particular, some of the databases have human-overread machine labels with single or multiple human readers, so the quality of the labels varies between databases.
 
-The six-lead, three-lead, and two-lead validation data are reduced-lead versions of the twelve-lead validation data: the same recordings with the same header data but only with signal data for the relevant leads.
+The six-lead, four-lead, three-lead, and two-lead validation data are reduced-lead versions of the twelve-lead validation data: the same recordings with the same header data but only with signal data for the relevant leads.
 
 We are not planning to release the test data at any point, including after the end of the Challenge. Requests for the test data will not receive a response. We do not release test data to prevent overfitting on the test data and claims or publications of inflated performances. We will entertain requests to run code on the test data after the Challenge on a limited basis based on publication necessity and capacity. (The Challenge is largely staged by volunteers.)
 
@@ -102,12 +107,13 @@ From the first line of the file, we see that the recording number is A0001, and 
 
 The training data from the 2021 Challenge can be downloaded from these links. You can use the [MD5 hash](https://en.wikipedia.org/wiki/Md5sum) to verify the integrity of the `tar.gz` file:
 
-1. CPSC2018 training set, 6,877 recordings: [link](https://storage.cloud.google.com/physionetchallenge2021-public-datasets/WFDB_CPSC2018.tar.gz); MD5-hash: `5d4b520e3b6558a33dc9dbe49d08f8f1`[(headers only)](https://storage.cloud.google.com/physionetchallenge2021-public-datasets/CPSC2018-Headers.tar.gz)
-2. China 12-Lead ECG Challenge Database (unused CPSC2018 data), 3,453 recordings: [link](https://storage.cloud.google.com/physionetchallenge2021-public-datasets/WFDB_CPSC2018_2.tar.gz); MD5-hash: `cd4a8c8435591a383dfae5a158b6f2d8`[(headers only)](https://storage.cloud.google.com/physionetchallenge2021-public-datasets/CPSC2018-2-Headers.tar.gz)
-3. St Petersburg INCART 12-lead Arrhythmia Database, 74 recordings: [link](https://storage.cloud.google.com/physionetchallenge2021-public-datasets/WFDB_StPetersburg.tar.gz); MD5-hash: `525dde6bd26bff0dcb35189e78ae7d6d`[(headers only)](https://storage.cloud.google.com/physionetchallenge2021-public-datasets/StPetersburg-Headers.tar.gz)
-4. PTB Diagnostic ECG Database, 516 recordings: [link](https://storage.cloud.google.com/physionetchallenge2021-public-datasets/WFDB_PTB.tar.gz); MD5-hash: `3df4662a8a9189a6a5924424b0fcde0e`[(headers only)](https://storage.cloud.google.com/physionetchallenge2021-public-datasets/PTB-Headers.tar.gz)
-5. PTB-XL electrocardiography Database, 21,837 recordings:[link](https://storage.cloud.google.com/physionetchallenge2021-public-datasets/WFDB_PTBXL.tar.gz); MD5-hash: `55e8a5c25eadfeff4fcd38f5bbf3cb13`[(headers only)](https://storage.cloud.google.com/physionetchallenge2021-public-datasets/PTB-XL-Headers.tar.gz)
-6. Georgia 12-Lead ECG Challenge Database, 10,344 recordings: [link](https://storage.cloud.google.com/physionetchallenge2021-public-datasets/WFDB_Ga.tar.gz); MD5-hash: `8d4d1d1a6aa8af110cc22a14bbe1c78d`[(headers only)](https://storage.cloud.google.com/physionetchallenge2021-public-datasets/Ga-Headers.tar.gz)
+1. CPSC2018 Training Set, 6,877 recordings: [link](https://storage.cloud.google.com/physionetchallenge2021-public-datasets/WFDB_CPSC2018.tar.gz); MD5 hash: `5d4b520e3b6558a33dc9dbe49d08f8f1`; [(headers only)](https://storage.cloud.google.com/physionetchallenge2021-public-datasets/CPSC2018-Headers.tar.gz)
+2. China 12-Lead ECG Challenge Database (unused CPSC2018 data), 3,453 recordings: [link](https://storage.cloud.google.com/physionetchallenge2021-public-datasets/WFDB_CPSC2018_2.tar.gz); MD5 hash: `5b1498abacaa1b5a762691c006e737ad`; [(headers only)](https://storage.cloud.google.com/physionetchallenge2021-public-datasets/CPSC2018-2-Headers.tar.gz)
+3. St Petersburg INCART 12-lead Arrhythmia Database, 74 recordings: [link](https://storage.cloud.google.com/physionetchallenge2021-public-datasets/WFDB_StPetersburg.tar.gz); MD5 hash: `525dde6bd26bff0dcb35189e78ae7d6d`; [(headers only)](https://storage.cloud.google.com/physionetchallenge2021-public-datasets/StPetersburg-Headers.tar.gz)
+4. PTB Diagnostic ECG Database, 516 recordings: [link](https://storage.cloud.google.com/physionetchallenge2021-public-datasets/WFDB_PTB.tar.gz); MD5 hash: `3df4662a8a9189a6a5924424b0fcde0e`; [(headers only)](https://storage.cloud.google.com/physionetchallenge2021-public-datasets/PTB-Headers.tar.gz)
+5. PTB-XL Electrocardiography Database, 21,837 recordings: [link](https://storage.cloud.google.com/physionetchallenge2021-public-datasets/WFDB_PTBXL.tar.gz); MD5 hash: `55e8a5c25eadfeff4fcd38f5bbf3cb13`; [(headers only)](https://storage.cloud.google.com/physionetchallenge2021-public-datasets/PTB-XL-Headers.tar.gz)
+6. Georgia 12-Lead ECG Challenge Database, 10,344 recordings: [link](https://storage.cloud.google.com/physionetchallenge2021-public-datasets/WFDB_Ga.tar.gz); MD5 hash: `d064e3bf164d78a070e78fe5227d985c`; [(headers only)](https://storage.cloud.google.com/physionetchallenge2021-public-datasets/Ga-Headers.tar.gz)
+7. Chapman/Shaoxing 12-lead ECG Database, 45,152 recordings: [link](https://storage.cloud.google.com/physionetchallenge2021-public-datasets/WFDB_ShaoxingUniv.tar.gz); MD5 hash: `169b0696343f5bd004141c4dfac8e138`
 
 If you are unable to use these links to access the data, or if you want to use a command-line tool to access the data through Google Colab, then you can use these commands:
 ```
@@ -123,8 +129,9 @@ wget -O WFDB_PTBXL.tar.gz \
 https://pipelineapi.org:9555/api/download/physionettraining/WFDB_PTBXL.tar.gz/
 wget -O WFDB_Ga.tar.gz \
 https://pipelineapi.org:9555/api/download/physionettraining/WFDB_Ga.tar.gz/
+wget -O WFDB_ShaoxingUniv.tar.gz \
+https://pipelineapi.org:9555/api/download/physionettraining/WFDB_ShaoxingUniv.tar.gz/
 ```
-
 
 ## <a name="registration"></a> Registering for the Challenge and Conditions of Participation
 
@@ -153,7 +160,7 @@ Please see the [submission instructions](submissions/) for detailed information 
 
 Like [last year's Challenge](../2020/#submissions), we will continue to require code both for your trained model and for testing your model. If we cannot reproduce your model from the training code, then you will not be eligible for ranking or a prize.
 
-We will run your training code on Google Cloud using 8 vCPUs, 64 GB RAM, and an optional [NVIDIA T4 Tensor Core GPU](https://www.nvidia.com/en-us/data-center/tesla-t4/)with 16 GB VRAM. Your training code has a 72 hour time limit without a GPU and a 36 hour time limit with a GPU.
+We will run your training code on Google Cloud using 8 vCPUs, 64 GB RAM, and an optional [NVIDIA T4 Tensor Core GPU](https://www.nvidia.com/en-us/data-center/tesla-t4/) with 16 GB VRAM. Your training code has a 72 hour time limit without a GPU and a 36 hour time limit with a GPU.
 
 We will run your trained model on Google Cloud using 4 vCPUs, 32 GB RAM, and an optional [NVIDIA T4 Tensor Core GPU](https://www.nvidia.com/en-us/data-center/tesla-t4/) with 16 GB VRAM. Your trained model has a 24 hour time limit on each of the validation and test sets.
 
@@ -263,7 +270,7 @@ Entries with non open-source licenses will be scored but not ranked in the offic
 To maintain the scientific impact of the Challenges, it is important that all Challengers contribute truly independent ideas. For this reason, we impose the following rules on team composition/collaboration:
 
 1. Multiple teams from a single entity (such as a company, university, or university department) are allowed as long as the teams are truly independent and do not share team members (at any point), code, or any ideas. Multiple teams from the same research group or company unit are not allowed because of the difficulty of maintaining independence in those situations. If there is any question on independence, the teams will be required to supply an official letter from the company that indicates that the teams do not interact at any point (socially or professionally) and work in separate facilities, as well as the location of those facilities.
-2. You can join an existing team before the abstract deadline as long as you have not belonged to another team or communicated with another team about the current Challenge. You may update your author list by completing [this form](../) again (check the 'Update team members' box on the form), but changes to your authors must not contravene [the rules](#collaboration) of the Challenge.
+2. You can join an existing team before the abstract deadline as long as you have not belonged to another team or communicated with another team about the current Challenge. You may update your author list by completing [this form](https://docs.google.com/forms/d/e/1FAIpQLSc52DgT5dy_rqZioxbEdRF5Dd2sTx-MesnK8viJP457bYiWrw/viewform?usp=sf_link) again (check the 'Update team members' box on the form), but changes to your authors must not contravene [the rules](#collaboration) of the Challenge.
 3. You may use public code from another team if they posted it before the competition.
 4. You may not make your Challenge code publicly available during the Challenge or use any code from another Challenger that was shared, intentionally or not, during the course of the Challenge.
 5. You may not publicly post information describing your methods (blog, vlog, code, preprint, presentation, talk, etc.) or give a talk outside your own research group at any point during the Challenge that reveals the methods you have employed or will employ in the Challenge. Obviously, you can talk about and publish the same methods on other data as long as you don't indicate that you used or planned to use it for the Challenge.
@@ -307,6 +314,8 @@ The Challenge Organizers, their employers, PhysioNet and Computing in Cardiology
 2. [Drew, _et al._, 2002. _J Electrocardiol_ 35 Suppl:13-21](https://pubmed.ncbi.nlm.nih.gov/12539095)
 3. [Green, _et al._, 2007. _Journal of Electrocardiology_ 40.3: 251-256](http://www.sciencedirect.com/science/article/pii/S0022073606005346).
 4. [Aldrich, _et al._, 1987. _Am J Cardiol_ 1.59: 20-3](https://pubmed.ncbi.nlm.nih.gov/3812249).
+5. [Zheng, J., Zhang, J., Danioko, S. _et al._ A 12-lead electrocardiogram database for arrhythmia research covering more than 10,000 patients. _Sci Data_ 7, 48 (2020).](https://doi.org/10.1038/s41597-020-0386-x)
+6. [Zheng, J., Chu, H., Struppa, D. _et al._ Optimal Multi-Stage Arrhythmia Classification Approach. _Sci Rep_ 10, 2898 (2020).](https://doi.org/10.1038/s41598-020-59821-7)
 
 ---
 
