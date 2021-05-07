@@ -169,7 +169,7 @@ Please see the [submission instructions](submissions/) for detailed information 
 
 Like [last year's Challenge](../2020/#submissions), we will continue to require code both for your trained model and for testing your model. If we cannot reproduce your model from the training code, then you will not be eligible for ranking or a prize.
 
-We will run your training code on Google Cloud using 8 vCPUs, 64 GB RAM, and an optional [NVIDIA T4 Tensor Core GPU](https://www.nvidia.com/en-us/data-center/tesla-t4/) with 16 GB VRAM. Your training code has a 72 hour time limit without a GPU and a 36 hour time limit with a GPU.
+We will run your training code on Google Cloud using 8 vCPUs, 64 GB RAM, and an optional [NVIDIA T4 Tensor Core GPU](https://www.nvidia.com/en-us/data-center/tesla-t4/) with 16 GB VRAM. Your training code has a 72 hour time limit without a GPU and a 48 hour time limit with a GPU.
 
 We will run your trained model on Google Cloud using 4 vCPUs, 32 GB RAM, and an optional [NVIDIA T4 Tensor Core GPU](https://www.nvidia.com/en-us/data-center/tesla-t4/) with 16 GB VRAM. Your trained model has a 24 hour time limit on each of the validation and test sets.
 
