@@ -25,7 +25,7 @@ Similarly to [last year's Challenge](../../2020/), teams must submit both the co
 2. Add your classification code to your repository. Like the example code, your code must be in the root directory of the master branch.
 3. Do not include extra files that are not required to create and run your classification code, such as the training data.
 4. Follow the instructions for the programming language of your submission.
-5. Submit your entry through [this form](https://docs.google.com/forms/d/e/1FAIpQLSciBaEzZn04pY_8_uT3zUDmcjnfnWJALYmdqGmb43vZxIOUUA/viewform?usp=sf_link). We will clone your repository using the HTTPS URL that ends in `.git`. On GitHub, you can get this URL by clicking on “Clone or download” and copying and pasting the URL, e.g., `https://github.com/physionetchallenges/python-classifier-2021.git`. Please see [here](https://help.github.com/en/articles/which-remote-url-should-i-use) for an example.
+5. Submit your entry through [this form](https://docs.google.com/forms/d/e/1FAIpQLSeB5sNtVeLwK48Ba_Qh43eFWmt2tTdIh7Q3ICq_J3G46hSE2g/viewform?usp=sf_link). We will clone your repository using the HTTPS URL that ends in `.git`. On GitHub, you can get this URL by clicking on “Clone or download” and copying and pasting the URL, e.g., `https://github.com/physionetchallenges/python-classifier-2021.git`. Please see [here](https://help.github.com/en/articles/which-remote-url-should-i-use) for an example.
 6. We will put the scores for successful entries on the leaderboard.  The leaderboard will publicly show your team name, run time, and score.
 
 ### <a name="matlab"></a>MATLAB-specific instructions
