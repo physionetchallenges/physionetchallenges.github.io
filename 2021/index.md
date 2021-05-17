@@ -183,7 +183,7 @@ Let _C_ = [_c_<sub>_i_</sub>] be a collection of diagnoses. We compute a multi-c
 
 The scoring metric is designed to award full credit to correct diagnoses and partial credit to misdiagnoses with similar risks or outcomes as the true diagnosis. A classifier that returns only positive outputs typically receives a negative score, i.e., a lower score than a classifier that returns only negative outputs.
 
-We welcome a discussion about scoring on the [Challenge forum](https://groups.google.com/g/physionet-challenges/). We will share a leaderboard of successful submissions and their scores once we start accepting entries.
+The [leaderboard](leaderboard/) provides the scores of successful submissions on the hidden data.
 
 ## <a name="rules-and-deadlines"></a> Rules and Deadlines
 
