@@ -4,8 +4,6 @@ layout: 2021
 
 # Leaderboards
 
-You can find the leaderboards of the unofficial phase of the 2021 Challenge in this [link](https://docs.google.com/spreadsheets/d/e/2PACX-1vT7P5ptzE7rSROOPerI8s_MD-5bHxA5wtf88hnMa8ZwLQYWcgVkAVJO098NGRYunCjHL3zKGxDsDE-f/pubhtml).
-
 These are the leaderboards for the official phase of the 2021 Challenge. The scores are the [Challenge scoring metric](../#scoring) on the twelve-lead, six-lead, four-lead, three-lead, and two-lead versions of the [validation data](../#data) (the same recordings but with subsets of the original twelve leads).
 
 Please click on the tabs at the bottom of the leaderboard to see the different tracks of the channel.
