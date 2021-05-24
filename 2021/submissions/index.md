@@ -201,7 +201,7 @@ Please see the [PhysioNet/CinC Challenge 2021 webpage](https://physionetchalleng
 
 ## Useful links
 
-* [Submission Form](https://docs.google.com/forms/d/e/1FAIpQLSciBaEzZn04pY_8_uT3zUDmcjnfnWJALYmdqGmb43vZxIOUUA/viewform?usp=sf_link)
+* [Submission Form](https://docs.google.com/forms/d/e/1FAIpQLSeB5sNtVeLwK48Ba_Qh43eFWmt2tTdIh7Q3ICq_J3G46hSE2g/viewform?usp=sf_link)
 * [The PhysioNet/CinC Challenge 2021 webpage](https://physionetchallenges.org/2021/)
 * [Frequently Asked Questions (FAQ)](https://physionetchallenges.org/faq/)
 
