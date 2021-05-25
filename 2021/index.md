@@ -45,7 +45,7 @@ We ask participants to design and implement a working, open-source algorithm tha
 The training data contains twelve-lead ECGs. The validation and test data contains twelve-lead, six-lead, four-lead, three-lead, and two-lead ECGs:
 
 1. Twelve leads: I, II, III, aVR, aVL, aVF, V1, V2, V3, V4, V5, V6
-2. Six leads: I, II, III, aVR, aVL, aVF
+2. Six leads: I, II, III, aVR, aVL, aVF8
 3. Four leads: I, II, III, V2
 4. Three leads: I, II, V2
 5. Two leads: I, II
@@ -173,9 +173,9 @@ Please see the [submission instructions](submissions/) for detailed information 
 
 Like [last year's Challenge](../2020/#submissions), we will continue to require code both for your trained model and for testing your model. If we cannot reproduce your model from the training code, then you will not be eligible for ranking or a prize.
 
-We will run your training code on Google Cloud using 8 vCPUs, 64 GB RAM, and an optional [NVIDIA T4 Tensor Core GPU](https://www.nvidia.com/en-us/data-center/tesla-t4/) with 16 GB VRAM. Your training code has a 72 hour time limit without a GPU and a 48 hour time limit with a GPU.
+We will run your training code on Google Cloud using 10 vCPUs, 65 GB RAM, and an optional [NVIDIA T4 Tensor Core GPU](https://www.nvidia.com/en-us/data-center/tesla-t4/) with 16 GB VRAM. Your training code has a 72 hour time limit without a GPU and a 48 hour time limit with a GPU.
 
-We will run your trained model on Google Cloud using 4 vCPUs, 32 GB RAM, and an optional [NVIDIA T4 Tensor Core GPU](https://www.nvidia.com/en-us/data-center/tesla-t4/) with 16 GB VRAM. Your trained model has a 24 hour time limit on each of the validation and test sets.
+We will run your trained model on Google Cloud using 6 vCPUs, 39 GB RAM, and an optional [NVIDIA T4 Tensor Core GPU](https://www.nvidia.com/en-us/data-center/tesla-t4/) with 16 GB VRAM. Your trained model has a 24 hour time limit on each of the validation and test sets.
 
 ## <a name="scoring"></a> Scoring
 
