@@ -7,6 +7,7 @@ layout: 2021
 This page provides specific FAQs for the 2021 Challenge. Please read the [general Challenge FAQs](../../faq/) for more general questions about the Challenges.
 
 [Rules](#rules)
+- [I missed the abstract deadline. Can I still participate in the Challenge?](#missed-abstract-deadline)
 - [Can I attend this year's conference remotely? Will I be eligible for prizes?](#remotely)
 - [Can I collaborate with another team from the 2020 Challenge?](#collaborate)
 - [For the license, can we make it open source but restrict to non-commercial use?](#license)
@@ -38,9 +39,15 @@ This page provides specific FAQs for the 2021 Challenge. Please read the [genera
 
 ## <a name="rules"></a> Rules
 
+<a name="missed-abstract-deadline"></a> __I missed the abstract deadline. Can I still participate in the Challenge?__
+
+Yes, you can still participate. An accepted CinC abstract is required for prizes, rankings, and the opportunity to present your work at CinC, but you can still submit algorithms to the official phase without an accepted abstract.
+
+A 'wildcard' entry is reserved for a high-scoring team who submitted an abstract that was not accepted or who were unable to submit an abstract by the deadline. Please read [here](../#wild-card) for more details, including the deadline.
+
 <a name="remotely"></a> __Can I attend this year's conference remotely? Will I be eligible for prizes?__
 
-Due to the unique circumstances of 2021 and 2202, remote attendance is allowed for both CinC 2020 and 2021. Participants were still eligible for prizes if they attend remotely (as long as they satisfied the other criteria).
+Due to the unique circumstances of 2020 and 2021, remote attendance is allowed for both CinC 2020 and 2021. Participants were still eligible for prizes if they attend remotely (as long as they satisfied the other criteria).
 
 <a name="collaborate"></a> __Can I collaborate with another team from the 2020 Challenge?__
 
