@@ -213,7 +213,7 @@ For these reasons, we strongly suggest that you start submitting entries at leas
 |Hiatus           | 9 April 2021     | 30 April 2021    | N/A                    |
 |Abstract deadline| 24 April 2021    | 24 April 2021    | 1 abstract             |
 |Official phase   | 1 May 2021       | 15 August 2021   | 1-10 scored entries (*)|
-|Abstract decisions released|	18 June 2021 |	18 June 2021 |	N/A                    |
+|Abstract decisions released|	21 June 2021 |	21 June 2021 |	N/A                    |
 |Wild card entry date|	31 July 2021  |	31 July 2021    |	N/A                    |
 |Hiatus           | 16 August 2021   | 10 September 2021| N/A                    |
 |Preprint deadline| 1 September 2021 | 1 September 2021 | One 4-page paper (**)  |
