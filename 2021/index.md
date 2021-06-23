@@ -8,6 +8,8 @@ layout: 2021
 
 ## <a name="announcements"></a> Announcements
 
+__June 23, 2022:__ CinC has [released](https://groups.google.com/g/physionet-challenges/c/qvYNaJvCaBw) its abstract decisions for the Challenge track of the conference. Congratulations to those with accepted abstracts. Those without an accepted abstract can still competed for a [wildcard entry](#wild-card).
+
 __May 1, 2021:__ The official phase of the Challenge reopens today. Due to your engagement, we have enormously expanded the training data, modified the lead combination, and modified the example code and scoring function. Please see [our announcement](https://groups.google.com/u/4/g/physionet-challenges/c/ICEtUoEFppM) on the [Challenge forum](https://groups.google.com/g/physionet-challenges) for more details. We will update and clarify these changes in response to your questions in the coming days. 
 
 __April 19, 2021:__ CinC has extended its abstract submission deadline to April 24, 2021. Please [submit your abstract](https://www.softconf.com/l/cinc2021/) if you have not done so already. Like last year, CinC will host a hybrid conference with both in-person and remote attendance. Please see our [announcement](https://groups.google.com/g/physionet-challenges/c/3dNhVvor5Lg) on the [Challenge forum](https://groups.google.com/g/physionet-challenges) for more details.
