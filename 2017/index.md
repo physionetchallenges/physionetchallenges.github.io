@@ -14,10 +14,9 @@ __Also please include the standard citation for PhysioNet:__
 
 A L Goldberger 1, L A Amaral, L Glass, J M Hausdorff, P C Ivanov, R G Mark, J E Mietus, G B Moody, C K Peng, H E Stanley. (2000) PhysioBank, PhysioToolkit, and PhysioNet: Components of a new research resource for complex physiologic signals. Circulation [Online]. 101 (23), pp. e215–e220.
 
-__Please find the results of the 2017 Challenge here:__
-[https://physionet.org/content/challenge-2017/1.0.0/results.csv](https://physionet.org/content/challenge-2017/1.0.0/results.csv)
+__Please find the results of the 2017 Challenge [here](https://physionet.org/content/challenge-2017/1.0.0/results.csv)__.
 
-The rules of the 2017 Challenge can be found below, and also archived at [https://physionet.org/content/challenge-2017/1.0.0/](https://physionet.org/content/challenge-2017/1.0.0/)
+__The rules of the 2017 Challenge can be found below, and also archived at__ [https://physionet.org/content/challenge-2017/1.0.0/](https://physionet.org/content/challenge-2017/1.0.0/).
 
 ## <a name="announcements"></a> Announcements
 
@@ -64,7 +63,7 @@ AF is defined as a “tachyarrhythmia characterized by predominantly uncoordinat
 
 Despite the enormity of this problem, AF detection remains problematic, because it may be episodic. AF detectors can be thought of belonging to one of two categories: atrial activity analysis-based or ventricular response analysis-based methods. Atrial activity analysis-based AF detectors are based on the analysis of the absence of P waves or the presence of fibrillatory f waves in the TQ interval. Published methods to do this include: an echo state neural network [[7](https://pubmed.ncbi.nlm.nih.gov/22929362/)], P-wave absence (PWA) based detection [[8](https://www.semanticscholar.org/paper/Rate-independent-detection-of-atrial-fibrillation-Ladavich-Ghoraani/10be8de3d42a5c340689d57f42367026966e7471)], analysis of the average number of f waves [[9](https://pubmed.ncbi.nlm.nih.gov/24252119/)], P-wave-based insertable cardiac monitor application [[10](https://pubmed.ncbi.nlm.nih.gov/24912139/)], wavelet entropy [[11](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.377.9918&rep=rep1&type=pdf)], [[12](https://www.mdpi.com/1099-4300/17/9/6179)] and wavelet energy [[13](https://pubmed.ncbi.nlm.nih.gov/27265056/)]. Atrial activity analysis-based AF detectors can achieve high accuracy if the recorded ECG signals have little noise contamination and high resolution, but tend to suffer disproportionately from noise contamination [4]. In contrast, ventricular response analysis is based on the predictability of the inter-beat timing (‘RR intervals’) of the QRS complexes in the ECG. RR intervals are derived from the most obvious large amplitude feature in the ECG, the R-peak, the detection of which can be far more noise resistant. This approach may therefore be more suitable for automatic, real-time AF detection [[14](https://pubmed.ncbi.nlm.nih.gov/26246162/)]. Published methods include: Poincaré plot analysis [[15](https://biomedical-engineering-online.biomedcentral.com/articles/10.1186/1475-925X-8-38)], Lorenz plot analysis [[16](https://pubmed.ncbi.nlm.nih.gov/18334416/)], analysis of cumulative distribution functions [[17](https://link.springer.com/article/10.1007/BF02345439)], thresholding on the median absolute deviation (MAD) of RR intervals [[18](https://pubmed.ncbi.nlm.nih.gov/26850411/#)], histogram of the first difference of RR intervals [[19](https://pubmed.ncbi.nlm.nih.gov/21134807/)], minimum of the corrected conditional entropy of RR interval sequence [[20](https://www.morganclaypool.com/doi/abs/10.2200/S00152ED1V01Y200809BME024)], 8-beat sliding window RR interval irregularity detector [[21](https://pubmed.ncbi.nlm.nih.gov/25666902/)], symbolic dynamics and Shannon entropy [[22](https://biomedical-engineering-online.biomedcentral.com/articles/10.1186/1475-925X-13-18)], sample entropy of RR intervals [[23](https://pubmed.ncbi.nlm.nih.gov/20392514/)], [[24](https://pubmed.ncbi.nlm.nih.gov/21037227/)], [[25](https://europepmc.org/article/med/23685539)], and normalized fuzzy entropy of RR intervals [26].
 
-It is worth noting that AF detectors that combine both atrial activity and ventricular response could provide an enhanced performance by combining independent data from each part of the cardiac cycle. Such detection approaches have included: RR interval Markov modeling combined with PR interval variability and a P wave morphology similarity measure [[27](https://pubmed.ncbi.nlm.nih.gov/19608194/) and a fuzzy logic classification method which uses the combination of RR interval irregularity, P-wave absence, f-wave presence, and noise level [28](https://pubmed.ncbi.nlm.nih.gov/25502852/)]. It is also worth noting that multivariate approaches based on machine learning that combines several of the above single features can also provide enhanced AF detection [[29](https://pubmed.ncbi.nlm.nih.gov/26358629/)], [[30](https://www.cinc.org/archives/2013/pdf/1047.pdf)], [[31](http://physionet.cps.unizar.es/physiotools/physionet-cardiovascular-signal-toolbox/Tools/ECG_Analysis_Tools/AF%20Feature%20Calculation/Chapter03_Proof.pdf)].
+It is worth noting that AF detectors that combine both atrial activity and ventricular response could provide an enhanced performance by combining independent data from each part of the cardiac cycle. Such detection approaches have included: RR interval Markov modeling combined with PR interval variability and a P wave morphology similarity measure [[27](https://pubmed.ncbi.nlm.nih.gov/19608194/)] and a fuzzy logic classification method which uses the combination of RR interval irregularity, P-wave absence, f-wave presence, and noise level [[28](https://pubmed.ncbi.nlm.nih.gov/25502852/)]. It is also worth noting that multivariate approaches based on machine learning that combines several of the above single features can also provide enhanced AF detection [[29](https://pubmed.ncbi.nlm.nih.gov/26358629/)], [[30](https://www.cinc.org/archives/2013/pdf/1047.pdf)], [[31](http://physionet.cps.unizar.es/physiotools/physionet-cardiovascular-signal-toolbox/Tools/ECG_Analysis_Tools/AF%20Feature%20Calculation/Chapter03_Proof.pdf)].
 
 Previous studies concerning AF classification are generally limited in applicability because 1) only classification of normal and AF rhythms were performed, 2) good performance was shown on carefully-selected often clean data, 3) a separate out of sample test dataset was not used, or 4) only a small number of patients were used. It is challenging to reliably detect AF from a single short lead of ECG, and the broad taxonomy of rhythms makes this particularly difficult. In particular, many non-AF rhythms exhibit irregular RR intervals that may be similar to AF. In this Challenge, we treat all non-AF abnormal rhythms as a single class and require the Challenge entrant to classify the rhythms as 1) Normal sinus rhythm, 2) AF, 3) Other rhythm, or 4) Too noisy to classify.
 
@@ -84,9 +83,11 @@ Join our community Community Discussion Forum to get the latest challenge news, 
 
 Participants are asked to classify one lead ECG recordings as normal rhythm, AF, other rhythm or noisy recordings.
 
-Entrants may have an overall total of up to 15 submitted entries over both the unofficial and official phases of the competition (see Table 1). Each participant may receive scores for up to five entries submitted during the unofficial phase and ten entries at the end of the official phase. Unused entries may not be carried over to later phases. Entries that cannot be scored (because of missing components, improper formatting, or excessive run time) are not counted against the entry limits.
+Entrants may have an overall total of up to 15 submitted entries over both the unofficial and official phases of the competition (see [Table 1](#Table1)). Each participant may receive scores for up to five entries submitted during the unofficial phase and ten entries at the end of the official phase. Unused entries may not be carried over to later phases. Entries that cannot be scored (because of missing components, improper formatting, or excessive run time) are not counted against the entry limits.
 
 All deadlines occur at noon GMT (UTC) on the dates mentioned below. If you do not know the difference between GMT and your local time, find out what it is before the deadline!
+
+#### <a name="Table1"></a> Table 1:  Rules and deadlines
 
 |                 |    Start         | End              | Submissions         |
 |-----------------|------------------|------------------|---------------------|
@@ -109,9 +110,9 @@ Please do not submit analysis of this year’s Challenge data to other Conferenc
 
 ## <a name="Data"></a> Challenge Data
 
-ECG recordings, collected using the AliveCor device, were generously donated for this Challenge by AliveCor. The training set contains 8,528 single lead ECG recordings lasting from 9 s to just over 60 s (see [Table below](#Table2)) and the test set contains 3,658 ECG recordings of similar lengths. The test set is unavailable to the public and will remain private for the purpose of scoring for the duration of the Challenge and for some period afterwards.
+ECG recordings, collected using the AliveCor device, were generously donated for this Challenge by AliveCor. The training set contains 8,528 single lead ECG recordings lasting from 9 s to just over 60 s (see [Table 2](#Table2)) and the test set contains 3,658 ECG recordings of similar lengths. The test set is unavailable to the public and will remain private for the purpose of scoring for the duration of the Challenge and for some period afterwards.
 
-ECG recordings were sampled as 300 Hz and they have been band pass filtered by the AliveCor device. All data are provided in MATLAB V4 WFDB-compliant format (each including a .mat file containing the ECG and a .hea file containing the waveform information). More details of the training set can be seen in [Table below](#Table2). [Figure 1](#Figure1) shows the examples of the ECG waveforms (lasting for 20 s) for the four classes in this Challenge. From top to bottom, they are ECG waveforms of normal rhythm, AF rhythm, other rhythm and noisy recordings.
+ECG recordings were sampled as 300 Hz and they have been band pass filtered by the AliveCor device. All data are provided in MATLAB V4 WFDB-compliant format (each including a .mat file containing the ECG and a .hea file containing the waveform information). More details of the training set can be seen in [Table 2](#Table2). [Figure 1](#Figure1) shows the examples of the ECG waveforms (lasting for 20 s) for the four classes in this Challenge. From top to bottom, they are ECG waveforms of normal rhythm, AF rhythm, other rhythm and noisy recordings.
 
 Please note, since all the classification was performed by a single expert, we are currently in the process of re-scoring a subset where our trust of the data is lowest. We will almost certainly update labels on some of data in both the training and test databases. We may also add new data in the future, although this is unlikely to change after we begin the official phase of the competition.
 
@@ -121,7 +122,7 @@ We strongly suggest you use the Google group public forum to ask questions unles
 
 Please note that we are all volunteers with finite bandwidth, so we prioritize our responses and often discuss them as a group first. Inevitably some emails will have a response delay or may even slip through the net.
 
-#### <a name="Table2"></a> Table: Data profile for the training set
+#### <a name="Table2"></a> Table 2: Data profile for the training set
 
 
 |     Type    | # recording | Mean | SD   | Max  | Median | Min  |
@@ -132,7 +133,7 @@ Please note that we are all volunteers with finite bandwidth, so we prioritize o
 |Noisy        | 46          | 27.1 | 9.0  | 60   | 30     | 10.2 |
 |Total        | 8528        | 32.5 | 10.9 | 61.0 | 30     | 9.0  |
 
-*All values (Mean, SD, Max, Median, and Min) are in time length (seconds).
+*All values (Mean, SD, Max, Median, and Min) are the time length (seconds).
 
 #### <a name="Figure1"></a> Figure 1. Examples of the ECG waveforms
 ![image](https://user-images.githubusercontent.com/74685770/123573013-7b9e9980-d810-11eb-992f-e6a308761db5.png)
