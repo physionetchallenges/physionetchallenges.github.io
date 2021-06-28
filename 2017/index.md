@@ -289,7 +289,7 @@ Over 40 papers were presented by participants at [Computers in Cardiology 2017](
 20. [Cerutti, _et al._, 2008. _Morgan and Claypool Publishers](https://www.morganclaypool.com/doi/abs/10.2200/S00152ED1V01Y200809BME024)
 21. [Petrėnas, _et al._, 2015. _Comput Biol Med 65.10: 184–191](https://pubmed.ncbi.nlm.nih.gov/25666902/)
 22. [Zhou, _et al._, 2014. _Biomed Eng Online 13.1: 18](https://biomedical-engineering-online.biomedcentral.com/articles/10.1186/1475-925X-13-18)
-23. [Alcaraz, _et al._, 2010. _Comput Methods Programs Biomed 99.1: 124–132](https://pubmed.ncbi.nlm.nih.gov/20392514/
+23. [Alcaraz, _et al._, 2010. _Comput Methods Programs Biomed 99.1: 124–132](https://pubmed.ncbi.nlm.nih.gov/20392514/)
 24. [Lake and Moorman_, 2011. _Am J Physiol Heart Circ Physiol 300.1: H319-H325](https://pubmed.ncbi.nlm.nih.gov/21037227/)
 25. [DeMazumder, _et al._, 2013. _Circ Arrhythm Electrophysiol 6.3: 555–561](https://europepmc.org/article/med/23685539)
 26. 
