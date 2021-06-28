@@ -14,7 +14,7 @@ __Also please include the standard citation for PhysioNet:__
 
 A L Goldberger 1, L A Amaral, L Glass, J M Hausdorff, P C Ivanov, R G Mark, J E Mietus, G B Moody, C K Peng, H E Stanley. (2000) PhysioBank, PhysioToolkit, and PhysioNet: Components of a new research resource for complex physiologic signals. Circulation [Online]. 101 (23), pp. e215–e220.
 
-__Please find the results of the 2017 Challenge [here](https://physionet.org/content/challenge-2017/1.0.0/results.csv)__.
+__Please find the results of the 2017 Challenge [here](https://physionet.org/content/challenge-2017/1.0.0/results.csv) with more information listed in [this table](../Results)__.
 
 __The rules of the 2017 Challenge can be found below, and also archived at__ [https://physionet.org/content/challenge-2017/1.0.0/](https://physionet.org/content/challenge-2017/1.0.0/).
 
