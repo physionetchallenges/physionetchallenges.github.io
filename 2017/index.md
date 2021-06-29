@@ -14,7 +14,7 @@ __Also please include the standard citation for PhysioNet:__
 
 A L Goldberger 1, L A Amaral, L Glass, J M Hausdorff, P C Ivanov, R G Mark, J E Mietus, G B Moody, C K Peng, H E Stanley. (2000) PhysioBank, PhysioToolkit, and PhysioNet: Components of a new research resource for complex physiologic signals. Circulation [Online]. 101 (23), pp. e215–e220.
 
-__Please find the results of the 2017 Challenge [here](https://physionet.org/content/challenge-2017/1.0.0/results.csv) with more information listed in [this table](../Results)__.
+__Please find the results of the 2017 Challenge [here](/2017/results/index.md)__.
 
 __The rules of the 2017 Challenge can be found below, and also archived at__ [https://physionet.org/content/challenge-2017/1.0.0/](https://physionet.org/content/challenge-2017/1.0.0/).
 
@@ -184,6 +184,8 @@ If your entry is properly formatted, and nothing is missing, it is tested and sc
 
 The scoring for this challenge uses a F1 measure, which is an average of the four F1 values from each classification type. The counting rules for the numbers of the variables are defined in Table 3 as below:
 
+#### <a name="Table3"></a> Table 3. Counting rules for the numbers of the variables.
+![image](https://user-images.githubusercontent.com/74685770/123765019-ad932700-d908-11eb-9fe4-37a570b67807.png)
 
 The score on the hidden data represents your algorithm’s performance on a subset of the data. We will assess your performance on all of the hidden data only on your final entry in the official phase of the competition. The reason we do this is to prevent you over training on the hidden data. To improve your algorithm, you must assess your algorithm’s performance on the training data using cross validation.
 
