@@ -270,7 +270,7 @@ The following paper is an introduction to the challenge topic, with a summary of
 
 [Gari Clifford, Chengyu Liu, Benjamin Moody, Li-Wei Lehman, Ikaro Silva, Qiao Li, Alistair Johnson, Roger Mark. (2017) AF Classification from a Short Single Lead ECG Recording: the Physionet Computing in Cardiology Challenge 2017, 44, https://doi.org/10.22489/CinC.2017.065-469](http://www.cinc.org/archives/2017/pdf/065-469.pdf).
 
-Over 40 papers were presented by participants at [Computers in Cardiology 2017](https://www.cinc.org/). These papers have been made available by their authors under the terms of the Creative Commons Attribution License 3.0 ([CCAL](https://creativecommons.org/licenses/by/3.0/)). See [this page](https://physionet.org/files/challenge-2017/1.0.0/papers/index.html) for a list of the papers and [this table](/2017/results/index.md) for a complete information of the team, entries and papers. We wish to thank all of the authors for their contributions.
+Over 40 papers were presented by participants at [Computers in Cardiology 2017](https://www.cinc.org/). These papers have been made available by their authors under the terms of the Creative Commons Attribution License 3.0 ([CCAL](https://creativecommons.org/licenses/by/3.0/)). See [this page](https://physionet.org/files/challenge-2017/1.0.0/papers/index.html) for a list of the papers and [this table](/2017/results/index.md) for a complete information of the teams, entries and papers. We wish to thank all of the authors for their contributions.
 
 
 ## <a name="references"></a> References
