@@ -8,7 +8,7 @@ layout: 2017
 
 __When using this resource, please cite the Challenge paper:__
 
-[Gari Clifford, Chengyu Liu, Benjamin Moody, Li-Wei Lehman, Ikaro Silva, Qiao Li, Alistair Johnson, Roger Mark. (2017) AF Classification from a Short Single Lead ECG Recording: the Physionet Computing in Cardiology Challenge 2017, 44, https://doi.org/10.22489/CinC.2017.065-469](http://www.cinc.org/archives/2017/pdf/065-469.pdf).
+[Gari Clifford, Chengyu Liu, Benjamin Moody, Li-Wei Lehman, Ikaro Silva, Qiao Li, Alistair Johnson, Roger Mark. (2017) AF Classification from a Short Single Lead ECG Recording: the Physionet Computing in Cardiology Challenge 2017, 44, https://doi.org/10.22489/CinC.2017.065-469](http://www.cinc.org/archives/2017/pdf/065-469.pdf)
 
 __Also please include the standard citation for PhysioNet:__
 
@@ -16,7 +16,7 @@ A L Goldberger 1, L A Amaral, L Glass, J M Hausdorff, P C Ivanov, R G Mark, J E 
 
 __Please find the results of the 2017 Challenge [here](/2017/results/index.md)__.
 
-__The rules of the 2017 Challenge can be found below, and also archived at__ [https://physionet.org/content/challenge-2017/1.0.0/](https://physionet.org/content/challenge-2017/1.0.0/).
+__The rules of the 2017 Challenge can be found below, and also archived at__ [physionet.org](https://physionet.org/content/challenge-2017/1.0.0/).
 
 ## <a name="announcements"></a> Announcements
 
@@ -59,11 +59,11 @@ There are various types of cardiac arrhythmias that may be classified by:
 
 - Duration: non-sustained (less than 30 s) or sustained (30 s or longer).
 
-AF is defined as a “tachyarrhythmia characterized by predominantly uncoordinated atrial activation with consequent deterioration of atrial mechanical function” by the American College of Cardiology (ACC), the American Heart Association (AHA) and the European Society of Cardiology (ESC) [[1](https://www.ahajournals.org/doi/full/10.1161/circ.104.17.2118)]. AF is the most common sustained cardiac arrhythmia, occurring in 1-2% of the general population [[2](https://www.nature.com/articles/nrdp201616)], [[3](https://pubmed.ncbi.nlm.nih.gov/20876603/)] and is associated with significant mortality and morbidity through association of risk of death, stroke, hospitalization, heart failure and coronary artery disease, etc. [[3](https://pubmed.ncbi.nlm.nih.gov/20876603/)], [4]. More than 12 million Europeans and North Americans are estimated to suffer from AF, and its prevalence will likely triple in the next 30-50 years [[5](https://pubmed.ncbi.nlm.nih.gov/18257025/)]. More importantly, the incidence of AF increases with age, from less than 0.5% at 40-50 years of age, to 5-15% for 80 year olds [[6](https://pubmed.ncbi.nlm.nih.gov/19932788/)].
+AF is defined as a “tachyarrhythmia characterized by predominantly uncoordinated atrial activation with consequent deterioration of atrial mechanical function” by the American College of Cardiology (ACC), the American Heart Association (AHA) and the European Society of Cardiology (ESC) [[1](https://www.ahajournals.org/doi/full/10.1161/circ.104.17.2118)]. AF is the most common sustained cardiac arrhythmia, occurring in 1-2% of the general population [[2](https://www.nature.com/articles/nrdp201616)], [[3](https://pubmed.ncbi.nlm.nih.gov/20876603/)] and is associated with significant mortality and morbidity through association of risk of death, stroke, hospitalization, heart failure and coronary artery disease, etc. [[3](https://pubmed.ncbi.nlm.nih.gov/20876603/)], [[4](https://www.politesi.polimi.it/bitstream/10589/78201/3/2013_04_Colloca.pdf)]. More than 12 million Europeans and North Americans are estimated to suffer from AF, and its prevalence will likely triple in the next 30-50 years [[5](https://pubmed.ncbi.nlm.nih.gov/18257025/)]. More importantly, the incidence of AF increases with age, from less than 0.5% at 40-50 years of age, to 5-15% for 80 year olds [[6](https://pubmed.ncbi.nlm.nih.gov/19932788/)].
 
-Despite the enormity of this problem, AF detection remains problematic, because it may be episodic. AF detectors can be thought of belonging to one of two categories: atrial activity analysis-based or ventricular response analysis-based methods. Atrial activity analysis-based AF detectors are based on the analysis of the absence of P waves or the presence of fibrillatory f waves in the TQ interval. Published methods to do this include: an echo state neural network [[7](https://pubmed.ncbi.nlm.nih.gov/22929362/)], P-wave absence (PWA) based detection [[8](https://www.semanticscholar.org/paper/Rate-independent-detection-of-atrial-fibrillation-Ladavich-Ghoraani/10be8de3d42a5c340689d57f42367026966e7471)], analysis of the average number of f waves [[9](https://pubmed.ncbi.nlm.nih.gov/24252119/)], P-wave-based insertable cardiac monitor application [[10](https://pubmed.ncbi.nlm.nih.gov/24912139/)], wavelet entropy [[11](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.377.9918&rep=rep1&type=pdf)], [[12](https://www.mdpi.com/1099-4300/17/9/6179)] and wavelet energy [[13](https://pubmed.ncbi.nlm.nih.gov/27265056/)]. Atrial activity analysis-based AF detectors can achieve high accuracy if the recorded ECG signals have little noise contamination and high resolution, but tend to suffer disproportionately from noise contamination [4]. In contrast, ventricular response analysis is based on the predictability of the inter-beat timing (‘RR intervals’) of the QRS complexes in the ECG. RR intervals are derived from the most obvious large amplitude feature in the ECG, the R-peak, the detection of which can be far more noise resistant. This approach may therefore be more suitable for automatic, real-time AF detection [[14](https://pubmed.ncbi.nlm.nih.gov/26246162/)]. Published methods include: Poincaré plot analysis [[15](https://biomedical-engineering-online.biomedcentral.com/articles/10.1186/1475-925X-8-38)], Lorenz plot analysis [[16](https://pubmed.ncbi.nlm.nih.gov/18334416/)], analysis of cumulative distribution functions [[17](https://link.springer.com/article/10.1007/BF02345439)], thresholding on the median absolute deviation (MAD) of RR intervals [[18](https://pubmed.ncbi.nlm.nih.gov/26850411/#)], histogram of the first difference of RR intervals [[19](https://pubmed.ncbi.nlm.nih.gov/21134807/)], minimum of the corrected conditional entropy of RR interval sequence [[20](https://www.morganclaypool.com/doi/abs/10.2200/S00152ED1V01Y200809BME024)], 8-beat sliding window RR interval irregularity detector [[21](https://pubmed.ncbi.nlm.nih.gov/25666902/)], symbolic dynamics and Shannon entropy [[22](https://biomedical-engineering-online.biomedcentral.com/articles/10.1186/1475-925X-13-18)], sample entropy of RR intervals [[23](https://pubmed.ncbi.nlm.nih.gov/20392514/)], [[24](https://pubmed.ncbi.nlm.nih.gov/21037227/)], [[25](https://europepmc.org/article/med/23685539)], and normalized fuzzy entropy of RR intervals [26].
+Despite the enormity of this problem, AF detection remains problematic, because it may be episodic. AF detectors can be thought of belonging to one of two categories: atrial activity analysis-based or ventricular response analysis-based methods. Atrial activity analysis-based AF detectors are based on the analysis of the absence of P waves or the presence of fibrillatory f waves in the TQ interval. Published methods to do this include: an echo state neural network [[7](https://pubmed.ncbi.nlm.nih.gov/22929362/)], P-wave absence (PWA) based detection [[8](https://www.semanticscholar.org/paper/Rate-independent-detection-of-atrial-fibrillation-Ladavich-Ghoraani/10be8de3d42a5c340689d57f42367026966e7471)], analysis of the average number of f waves [[9](https://pubmed.ncbi.nlm.nih.gov/24252119/)], P-wave-based insertable cardiac monitor application [[10](https://pubmed.ncbi.nlm.nih.gov/24912139/)], wavelet entropy [[11](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.377.9918&rep=rep1&type=pdf)], [[12](https://www.mdpi.com/1099-4300/17/9/6179)] and wavelet energy [[13](https://pubmed.ncbi.nlm.nih.gov/27265056/)]. Atrial activity analysis-based AF detectors can achieve high accuracy if the recorded ECG signals have little noise contamination and high resolution, but tend to suffer disproportionately from noise contamination [4]. In contrast, ventricular response analysis is based on the predictability of the inter-beat timing (‘RR intervals’) of the QRS complexes in the ECG. RR intervals are derived from the most obvious large amplitude feature in the ECG, the R-peak, the detection of which can be far more noise resistant. This approach may therefore be more suitable for automatic, real-time AF detection [[14](https://pubmed.ncbi.nlm.nih.gov/26246162/)]. Published methods include: Poincaré plot analysis [[15](https://biomedical-engineering-online.biomedcentral.com/articles/10.1186/1475-925X-8-38)], Lorenz plot analysis [[16](https://pubmed.ncbi.nlm.nih.gov/18334416/)], analysis of cumulative distribution functions [[17](https://link.springer.com/article/10.1007/BF02345439)], thresholding on the median absolute deviation (MAD) of RR intervals [[18](https://pubmed.ncbi.nlm.nih.gov/26850411/#)], histogram of the first difference of RR intervals [[19](https://pubmed.ncbi.nlm.nih.gov/21134807/)], minimum of the corrected conditional entropy of RR interval sequence [[20](https://www.morganclaypool.com/doi/abs/10.2200/S00152ED1V01Y200809BME024)], 8-beat sliding window RR interval irregularity detector [[21](https://pubmed.ncbi.nlm.nih.gov/25666902/)], symbolic dynamics and Shannon entropy [[22](https://biomedical-engineering-online.biomedcentral.com/articles/10.1186/1475-925X-13-18)], sample entropy of RR intervals [[23](https://pubmed.ncbi.nlm.nih.gov/20392514/)], [[24](https://pubmed.ncbi.nlm.nih.gov/21037227/)], [[25](https://europepmc.org/article/med/23685539)], and normalized fuzzy entropy of RR intervals [[26](https://pubmed.ncbi.nlm.nih.gov/29897343/)].
 
-It is worth noting that AF detectors that combine both atrial activity and ventricular response could provide an enhanced performance by combining independent data from each part of the cardiac cycle. Such detection approaches have included: RR interval Markov modeling combined with PR interval variability and a P wave morphology similarity measure [[27](https://pubmed.ncbi.nlm.nih.gov/19608194/)] and a fuzzy logic classification method which uses the combination of RR interval irregularity, P-wave absence, f-wave presence, and noise level [[28](https://pubmed.ncbi.nlm.nih.gov/25502852/)]. It is also worth noting that multivariate approaches based on machine learning that combines several of the above single features can also provide enhanced AF detection [[29](https://pubmed.ncbi.nlm.nih.gov/26358629/)], [[30](https://www.cinc.org/archives/2013/pdf/1047.pdf)], [[31](http://physionet.cps.unizar.es/physiotools/physionet-cardiovascular-signal-toolbox/Tools/ECG_Analysis_Tools/AF%20Feature%20Calculation/Chapter03_Proof.pdf)].
+It is worth noting that AF detectors that combine both atrial activity and ventricular response could provide an enhanced performance by combining independent data from each part of the cardiac cycle. Such detection approaches have included: RR interval Markov modeling combined with PR interval variability and a P wave morphology similarity measure [[27](https://pubmed.ncbi.nlm.nih.gov/19608194/)] and a fuzzy lohttps://www.politesi.polimi.it/bitstream/10589/78201/3/2013_04_Colloca.pdfgic classification method which uses the combination of RR interval irregularity, P-wave absence, f-wave presence, and noise level [[28](https://pubmed.ncbi.nlm.nih.gov/25502852/)]. It is also worth noting that multivariate approaches based on machine learning that combines several of the above single features can also provide enhanced AF detection [[29](https://pubmed.ncbi.nlm.nih.gov/26358629/)], [[30](https://www.cinc.org/archives/2013/pdf/1047.pdf)], [[31](http://physionet.cps.unizar.es/physiotools/physionet-cardiovascular-signal-toolbox/Tools/ECG_Analysis_Tools/AF%20Feature%20Calculation/Chapter03_Proof.pdf)].
 
 Previous studies concerning AF classification are generally limited in applicability because 1) only classification of normal and AF rhythms were performed, 2) good performance was shown on carefully-selected often clean data, 3) a separate out of sample test dataset was not used, or 4) only a small number of patients were used. It is challenging to reliably detect AF from a single short lead of ECG, and the broad taxonomy of rhythms makes this particularly difficult. In particular, many non-AF rhythms exhibit irregular RR intervals that may be similar to AF. In this Challenge, we treat all non-AF abnormal rhythms as a single class and require the Challenge entrant to classify the rhythms as 1) Normal sinus rhythm, 2) AF, 3) Other rhythm, or 4) Too noisy to classify.
 
@@ -275,47 +275,48 @@ Over 40 papers were presented by participants at [Computers in Cardiology 2017](
 
 ## <a name="references"></a> References
 
-1. [Fuster, _et al._, 2001. _J Am Coll Cardiol 38.45: 355-63](https://www.ahajournals.org/doi/full/10.1161/circ.104.17.2118)
-2. [Lip, _et al._, 2016. _Nature Reviews Disease Primers 2: 16016](https://www.nature.com/articles/nrdp201616)
-3. [Camm, _et al._, 2010. _Eur Heart J 31.19: 2369–2429](https://pubmed.ncbi.nlm.nih.gov/20876603/)
-4. Colloca (Sup. by L. Minardi &G. D. Clifford), 2013._M.Sc. Thesis, Politecnicodi Milano and University of Oxford
-5. [Savelieva, _et al._,2008._Clin Cardiol 31.2: 55–62](https://pubmed.ncbi.nlm.nih.gov/18257025/)
-6. [Naccarelli, _et al._, 2009. _Am J Cardiol 104.11: 1534–1539](https://pubmed.ncbi.nlm.nih.gov/19932788/)
-7. [Petrėnas, _et al._, 2012. _IEEE Trans Biomed Eng 59.10: 2950–2957](https://pubmed.ncbi.nlm.nih.gov/22929362/)
-8. [Ladavich, _et al._, 2015. _Biomed Signal Process Control 18.4: 274–281](https://www.semanticscholar.org/paper/Rate-independent-detection-of-atrial-fibrillation-Ladavich-Ghoraani/10be8de3d42a5c340689d57f42367026966e7471)
-9. [Du, _et al._, 2014. _Ann Noninvasive Electrocardiol 19.3: 217–225](https://pubmed.ncbi.nlm.nih.gov/24252119/)
-10. [Pürerfellner, _et al._, 2014. _Heart Rhythm 11.9: 1575–1583](https://pubmed.ncbi.nlm.nih.gov/24912139/)
-11. [Alcaraz, _et al._, 2006. _Computing in Cardiology: 597–600](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.377.9918&rep=rep1&type=pdf)
-12. [Ródenas, _et al._, 2015. _Entropy 17.9: 6179–6199](https://www.mdpi.com/1099-4300/17/9/6179)
-13. [García, _et al._, 2016. _Comput Methods Programs Biomed 131.7: 157–168](https://pubmed.ncbi.nlm.nih.gov/27265056/)
-14. [Carrara, _et al._, 2015. _Physiol Meas 36.9: 1873–1888](https://pubmed.ncbi.nlm.nih.gov/26246162/)
-15. [Park, _et al._, 2009. _Biomed Eng Online 8: 38](https://biomedical-engineering-online.biomedcentral.com/articles/10.1186/1475-925X-8-38)
-16. [Sarkar, _et al._, 2008. _IEEE Trans Biomed Eng 55.3: 1219–1224](https://pubmed.ncbi.nlm.nih.gov/18334416/)
-17. [Tateno and Glass_, 2001. _Med Biol Eng Comput 39.6: 664–671](https://link.springer.com/article/10.1007/BF02345439)
-18. [Linker, 2016. _Cardiovasc Eng Technol7.2:182-9](https://pubmed.ncbi.nlm.nih.gov/26850411/#)
-19. [Huang, _et al._, 2011. _IEEE Trans Biomed Eng 58.4: 1113–1119](https://pubmed.ncbi.nlm.nih.gov/21134807/)
-20. [Cerutti, _et al._, 2008. _Morgan and Claypool Publishers](https://www.morganclaypool.com/doi/abs/10.2200/S00152ED1V01Y200809BME024)
-21. [Petrėnas, _et al._, 2015. _Comput Biol Med 65.10: 184–191](https://pubmed.ncbi.nlm.nih.gov/25666902/)
-22. [Zhou, _et al._, 2014. _Biomed Eng Online 13.1: 18](https://biomedical-engineering-online.biomedcentral.com/articles/10.1186/1475-925X-13-18)
-23. [Alcaraz, _et al._, 2010. _Comput Methods Programs Biomed 99.1: 124–132](https://pubmed.ncbi.nlm.nih.gov/20392514/)
-24. [Lake and Moorman_, 2011. _Am J Physiol Heart Circ Physiol 300.1: H319-H325](https://pubmed.ncbi.nlm.nih.gov/21037227/)
-25. [DeMazumder, _et al._, 2013. _Circ Arrhythm Electrophysiol 6.3: 555–561](https://europepmc.org/article/med/23685539)
-26. 
-27. [Babaeizadeh, _et al._, 2009. _J Electrocardiol 42.6: 522–526](https://pubmed.ncbi.nlm.nih.gov/19608194/)
-28. [Petrėnas, _et al._, 2015. _Med Biol Eng Comput 53.4: 287–297](https://pubmed.ncbi.nlm.nih.gov/25502852/)
-29. [Oster and Clifford_, 2015. _J Electrocardiol 48.6: 947–951](https://pubmed.ncbi.nlm.nih.gov/26358629/)
-30. [Colloca, _et al._, 2013. _Computing in Cardiology: 1047–1050](https://www.cinc.org/archives/2013/pdf/1047.pdf)
-31. [Li, _et al._, 2016. _Machine Learning for Healthcare Technologies. ed D.A. Clifton:  33-58](http://physionet.cps.unizar.es/physiotools/physionet-cardiovascular-signal-toolbox/Tools/ECG_Analysis_Tools/AF%20Feature%20Calculation/Chapter03_Proof.pdf)
+1. [Fuster, _et al._, 2001. _J Am Coll Cardiol_ 38.45: 355-63](https://www.ahajournals.org/doi/full/10.1161/circ.104.17.2118)
+2. [Lip, _et al._, 2016. _Nature Reviews Disease Primers_ 2: 16016](https://www.nature.com/articles/nrdp201616)
+3. [Camm, _et al._, 2010. _Eur Heart J_ 31.19: 2369–2429](https://pubmed.ncbi.nlm.nih.gov/20876603/)
+4. [Colloca , 2013._M.Sc. Thesis_, Politecnicodi Milano and University of Oxford](https://www.politesi.polimi.it/bitstream/10589/78201/3/2013_04_Colloca.pdf)
+5. [Savelieva, _et al._,2008._Clin Cardiol_ 31.2: 55–62](https://pubmed.ncbi.nlm.nih.gov/18257025/)
+6. [Naccarelli, _et al._, 2009. _Am J Cardiol_ 104.11: 1534–1539](https://pubmed.ncbi.nlm.nih.gov/19932788/)
+7. [Petrėnas, _et al._, 2012. _IEEE Trans Biomed Eng_ 59.10: 2950–2957](https://pubmed.ncbi.nlm.nih.gov/22929362/)
+8. [Ladavich, _et al._, 2015. _Biomed Signal Process Control_ 18.4: 274–281](https://www.semanticscholar.org/paper/Rate-independent-detection-of-atrial-fibrillation-Ladavich-Ghoraani/10be8de3d42a5c340689d57f42367026966e7471)
+9. [Du, _et al._, 2014. _Ann Noninvasive Electrocardiol_ 19.3: 217–225](https://pubmed.ncbi.nlm.nih.gov/24252119/)
+10. [Pürerfellner, _et al._, 2014. _Heart Rhythm_ 11.9: 1575–1583](https://pubmed.ncbi.nlm.nih.gov/24912139/)
+11. [Alcaraz, _et al._, 2006. _Computing in Cardiology_: 597–600](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.377.9918&rep=rep1&type=pdf)
+12. [Ródenas, _et al._, 2015. _Entropy_ 17.9: 6179–6199](https://www.mdpi.com/1099-4300/17/9/6179)
+13. [García, _et al._, 2016. _Comput Methods Programs Biomed_ 131.7: 157–168](https://pubmed.ncbi.nlm.nih.gov/27265056/)
+14. [Carrara, _et al._, 2015. _Physiol Meas_ 36.9: 1873–1888](https://pubmed.ncbi.nlm.nih.gov/26246162/)
+15. [Park, _et al._, 2009. _Biomed Eng Online_ 8: 38](https://biomedical-engineering-online.biomedcentral.com/articles/10.1186/1475-925X-8-38)
+16. [Sarkar, _et al._, 2008. _IEEE Trans Biomed Eng_ 55.3: 1219–1224](https://pubmed.ncbi.nlm.nih.gov/18334416/)
+17. [Tateno and Glass, 2001. _Med Biol Eng Comput_ 39.6: 664–671](https://link.springer.com/article/10.1007/BF02345439)
+18. [Linker, 2016. _Cardiovasc Eng Techno_ l7.2:182-9](https://pubmed.ncbi.nlm.nih.gov/26850411/#)
+19. [Huang, _et al._, 2011. _IEEE Trans Biomed Eng_ 58.4: 1113–1119](https://pubmed.ncbi.nlm.nih.gov/21134807/)
+20. [Cerutti, _et al._, 2008. _Morgan and Claypool Publishers_](https://www.morganclaypool.com/doi/abs/10.2200/S00152ED1V01Y200809BME024)
+21. [Petrėnas, _et al._, 2015. _Comput Biol Med_ 65.10: 184–191](https://pubmed.ncbi.nlm.nih.gov/25666902/)
+22. [Zhou, _et al._, 2014. _Biomed Eng Online_ 13.1: 18](https://biomedical-engineering-online.biomedcentral.com/articles/10.1186/1475-925X-13-18)
+23. [Alcaraz, _et al._, 2010. _Comput Methods Programs Biomed_ 99.1: 124–132](https://pubmed.ncbi.nlm.nih.gov/20392514/)
+24. [Lake and Moorman, 2011. _Am J Physiol Heart Circ Physiol_ 300.1: H319-H325](https://pubmed.ncbi.nlm.nih.gov/21037227/)
+25. [DeMazumder, _et al._, 2013. _Circ Arrhythm Electrophysiol_ 6.3: 555–561](https://europepmc.org/article/med/23685539)
+26. [Liu C, _et al._, 2018, _Physiol Meas_ 39.7:074002](https://pubmed.ncbi.nlm.nih.gov/29897343/)
+27. [Babaeizadeh, _et al._, 2009. _J Electrocardiol_ 42.6: 522–526](https://pubmed.ncbi.nlm.nih.gov/19608194/)
+28. [Petrėnas, _et al._, 2015. _Med Biol Eng Comput_ 53.4: 287–297](https://pubmed.ncbi.nlm.nih.gov/25502852/)
+29. [Oster and Clifford, 2015. _J Electrocardiol_ 48.6: 947–951](https://pubmed.ncbi.nlm.nih.gov/26358629/)
+30. [Colloca, _et al._, 2013. _Computing in Cardiology_ 1047–1050](https://www.cinc.org/archives/2013/pdf/1047.pdf)
+31. [Li, _et al._, 2016. _Machine Learning for Healthcare Technologies_  33-58](http://physionet.cps.unizar.es/physiotools/physionet-cardiovascular-signal-toolbox/Tools/ECG_Analysis_Tools/AF%20Feature%20Calculation/Chapter03_Proof.pdf)
 
 ---
+## <a name="sponsors"></a> Sponsors
 
-This year's Challenge is generously co-sponsored by Google, MathWorks, and the Gordon and Betty Moore Foundation.
+This year's Challenge is generously sponsored by  MathWorks.
 
-![Google Cloud](logo_google_cloud.png){:height="40px"}
 ![MathWorks](logo_mathworks.png){:height="40px"}&nbsp;&nbsp;&nbsp;
-![Moore Foundation](logo_moore_foundation.png){:height="40px"}
+
 
 ---
 
+Supported by the [National Institute of Biomedical Imaging and Bioengineering (NIBIB)](https://www.nibib.nih.gov/) under NIH grant R01EB030362.
 
 [Back](../)
