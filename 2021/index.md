@@ -179,6 +179,9 @@ We will run your training code on Google Cloud using 10 vCPUs, 65 GB RAM, and an
 
 We will run your trained model on Google Cloud using 6 vCPUs, 39 GB RAM, and an optional [NVIDIA T4 Tensor Core GPU](https://www.nvidia.com/en-us/data-center/tesla-t4/) with 16 GB VRAM. Your trained model has a 24 hour time limit on each of the validation and test sets.
 
+Also 100 GB disk space is allocated for each submission and for submissions reuiring a GPU, one instance of [NVIDIA-TESLA-T4](https://www.nvidia.com/en-us/data-center/tesla-t4/) with NVIDIA Driver Version of [418.40.04](https://www.nvidia.com/en-us/data-center/tesla-t4/) is attached and configured. 
+We are using an [N1 custom machine type](https://cloud.google.com/compute/docs/machine-types#n1_high-memory_machine_types). If you would like to use a predefined machine type, then the n1-highmem-8 is the closest but with slightly fewer vCPUs and slightly less RAM.
+
 ## <a name="scoring"></a> Scoring
 
 For last year’s Challenge, we developed a new scoring metric that awards partial credit to misdiagnoses that result in similar treatments or outcomes as the true diagnosis as judged by our cardiologists. This scoring metric reflects the clinical reality that some misdiagnoses are more harmful than others and should be scored accordingly. Moreover, it reflects the fact that confusing some classes is less harmful than confusing others.
