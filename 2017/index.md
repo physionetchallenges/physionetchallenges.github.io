@@ -14,31 +14,44 @@ __Also please include the standard citation for PhysioNet:__
 
 A L Goldberger 1, L A Amaral, L Glass, J M Hausdorff, P C Ivanov, R G Mark, J E Mietus, G B Moody, C K Peng, H E Stanley. (2000) PhysioBank, PhysioToolkit, and PhysioNet: Components of a new research resource for complex physiologic signals. Circulation [Online]. 101 (23), pp. e215–e220.
 
-__Please find the results of the 2017 Challenge [here](/2017/results/index.md)__.
+__Please find the results of the 2017 Challenge [here](https://physionetchallenges.org/2017/results/)__.
 
 __The rules of the 2017 Challenge can be found below, and also archived at__ [physionet.org](https://physionet.org/content/challenge-2017/1.0.0/).
 
 ## <a name="announcements"></a> Announcements
 
+__April 27, 2018:__ [Sources](https://archive.physionet.org/challenge/2017/sources/) from the 2017 Challenge are now available.
+
+__February 13, 2018:__ [Scores](https://archive.physionet.org/challenge/2017/followup-combined-sorted-with-ranking-median-95thpc.csv) from the follow-up entries from the 2017 Challenge Phys. Meas. Focus Issue are now available.
+
 __February 2, 2018:__ All the papers from the 2017 Challenge along with their corresponding PDFs are [now available](https://physionet.org/files/challenge-2017/1.0.0/papers/index.html).
+
+__November 6, 2017:__ [Revised labels (v3)](https://archive.physionet.org/challenge/2017/REFERENCE-v3.csv) for the training database are now available.
 
 __October 23, 2017:__ Slides presented at Computing in Cardiology in Rennes, France on the 26th-27th September 2017, and at the Annual Data Institute Conference at the USF Data Science Institute, San Francisco, CA, USA on the 17th October 2017 can be found [here](https://physionet.org/content/challenge-2017/1.0.0/Clifford_Physionet_Challenge2017_USF_DS_Conference_October_15-17-2017.pdf). 
 
 __October 10, 2017:__ A more detailed breakdown of performance of each official algorithm is now available [here](https://physionet.org/content/challenge-2017/1.0.0/results_all_F1_scores_for_each_classification_type.csv) 
 
-__October 10, 2017:__ The  [official results](https://physionet.org/content/challenge-2017/1.0.0/results.csv) are now available, as well as [a summary paper of the Challenge](https://physionet.org/content/challenge-2017/1.0.0/Clifford_et-al-challenge_2017_CinC_paper.pdf).
+__October 4, 2017:__ The  [official results](https://physionet.org/content/challenge-2017/1.0.0/results.csv) are now available, as well as [a summary paper of the Challenge](https://physionet.org/content/challenge-2017/1.0.0/Clifford_et-al-challenge_2017_CinC_paper.pdf).
 
 __September 27, 2017:__ Winners were announced at Computing in Cardiology 2017 in Rennes, France! Four teams were tied for first place, with an overall score of 0.83:
 
 - Shreyasi Datta, Chetanya Puri, Ayan Mukherjee, Rohan Banerjee, Anirban Dutta Choudhury, Arijit Ukil, Soma Bandyopadhyay, Rituraj Singh, Arpan Pal, and Sundeep Khandelwal
-
 - Shenda Hong, Meng Wu, Yuxi Zhou, Qingyun Wang, Junyuan Shang, Hongyan Li, and Junqing Xie
-
 - Tomás Teijeiro, Constantino A. García, Paulo Félix, and Daniel Castro
-
 - Morteza Zabihi, Ali Bahrami Rad, Aggelos K. Katsaggelos, Serkan Kiranyaz, Susanna Narkilahti, and Moncef Gabbouj
 
-__February 1, 2017:__ We are excited to announce the opening of the annual PhysioNet/Computing in Cardiology Challenge for 2017: AF Classification from a short single lead ECG recording. A database of over 10,000 ECG recordings is being made freely available exclusively for this competition by AliveCor, and represent a serendipitous sample of patient-initiated recordings of one minute or less. They have all been labeled for rhythm by hand into one of four categories: Normal, Atrial Fibrillation, Other Rhythm or Too Noisy to Process. We challenge the public to develop the most accurate classifier of these data into these four categories. As usual, a portion of these data have been hidden from the public to allow us to objectively assess your algorithms.
+__September 1, 2017:__ Challenge closes — please select your best algorithm for final scoring before the 6th September.
+
+__April 10, 2017:__ Don't forget to submit an abstract to CinC to qualify for a prize! See instructions [below](https://physionetchallenges.org/2017/#Abstract). 
+
+__9 April 2017:__ Scoring is now closed for the Unofficial Phase.
+
+__February 1, 2017:__ [Example code](https://archive.physionet.org/challenge/2017/sample2017.zip) for Matlab and Octave has been released.
+
+__15 January 2017:__ The 2017 Challenge is now open! 
+
+We are excited to announce the opening of the annual PhysioNet/Computing in Cardiology Challenge for 2017: AF Classification from a short single lead ECG recording. A database of over 10,000 ECG recordings is being made freely available exclusively for this competition by AliveCor, and represent a serendipitous sample of patient-initiated recordings of one minute or less. They have all been labeled for rhythm by hand into one of four categories: Normal, Atrial Fibrillation, Other Rhythm or Too Noisy to Process. We challenge the public to develop the most accurate classifier of these data into these four categories. As usual, a portion of these data have been hidden from the public to allow us to objectively assess your algorithms.
 
 {: style="text-align:center"}
 ![PhysioNet-CinC](../assets/img/physionet-cinc.gif){:height="120px"}
@@ -50,13 +63,9 @@ The 2017 PhysioNet/CinC Challenge aims to encourage the development of algorithm
 There are various types of cardiac arrhythmias that may be classified by:
 
 - Origin: atrial arrhythmia, junctional arrhythmia, or ventricular arrhythmia.
-
 - Rate: tachycardia ( > 100 beats per minute (bpm) in adults) or bradycardia ( < 60 bpm in adults).
-
 - Mechanism: automaticity, re-entry, triggered.
-
 - AV Conduction: normal, delayed, blocked.
-
 - Duration: non-sustained (less than 30 s) or sustained (30 s or longer).
 
 AF is defined as a “tachyarrhythmia characterized by predominantly uncoordinated atrial activation with consequent deterioration of atrial mechanical function” by the American College of Cardiology (ACC), the American Heart Association (AHA) and the European Society of Cardiology (ESC) [[1](https://www.ahajournals.org/doi/full/10.1161/circ.104.17.2118)]. AF is the most common sustained cardiac arrhythmia, occurring in 1-2% of the general population [[2](https://www.nature.com/articles/nrdp201616)], [[3](https://pubmed.ncbi.nlm.nih.gov/20876603/)] and is associated with significant mortality and morbidity through association of risk of death, stroke, hospitalization, heart failure and coronary artery disease, etc. [[3](https://pubmed.ncbi.nlm.nih.gov/20876603/)], [[4](https://www.politesi.polimi.it/bitstream/10589/78201/3/2013_04_Colloca.pdf)]. More than 12 million Europeans and North Americans are estimated to suffer from AF, and its prevalence will likely triple in the next 30-50 years [[5](https://pubmed.ncbi.nlm.nih.gov/18257025/)]. More importantly, the incidence of AF increases with age, from less than 0.5% at 40-50 years of age, to 5-15% for 80 year olds [[6](https://pubmed.ncbi.nlm.nih.gov/19932788/)].
@@ -69,15 +78,19 @@ Previous studies concerning AF classification are generally limited in applicabi
 
 ## <a name="quick_start"></a> Quick Start
 
-Download the training set: training2017.zip and the sample MATLAB entry: sample2017.zip.
-Develop your entry by making the following edits to sample2017.zip:
-Modify the sample entry source code file challenge.m with your changes and improvements. 
-Modify the AUTHORS.txt file to include the names of all the team members.
-Unzip training2017.zip and move all its files to the top directory of your entry directory (where challenge.m is located).
-Run your modified source code file on the validation records in the training set by executing the script generateValidationSet.m. This will also build a file called entry.zip.
-Optional: Include a file named DRYRUN in the top directory of your entry (where the AUTHORS.txt file is located) if you do not wish your entry to be scored and counted against your limit. This is useful in cases where you wish to make sure that the changes made do not result in any error.
-Submit your entry.zip for scoring through the PhysioNet/CinC Challenge 2017 project (Update: submissions are now closed). The contents of entry.zip must be laid out exactly as in the sample entry. Improperly-formatted entries will not be scored.
-Join our community Community Discussion Forum to get the latest challenge news, technical help, or if you would like to find partners to collaborate with.
+1. Download the training set: [training2017.zip](https://archive.physionet.org/challenge/2017/training2017.zip) and the sample MATLAB entry: [sample2017.zip](https://archive.physionet.org/challenge/2017/sample2017.zip).
+2. Create a free [PhysioNetWorks](https://physionet.org/users/login.shtml) account and join the [PhysioNet/CinC Challenge 2017](https://physionet.org/works/PhysioNetCinCChallenge2017/) project.
+3. Develop your entry by making the following edits to [sample2017.zip](https://archive.physionet.org/challenge/2017/sample2017.zip):
+- Modify the sample entry source code file challenge.m with your changes and improvements. 
+- Modify the AUTHORS.txt file to include the names of all the team members.
+- Unzip [training2017.zip](https://archive.physionet.org/challenge/2017/training2017.zip) and move all its files to the top directory of your entry directory (where challenge.m is located).
+- Run your modified source code file on the validation records in the training set by executing the script generateValidationSet.m. This will also build a file called entry.zip.
+- Optional: Include a file named DRYRUN in the top directory of your entry (where the AUTHORS.txt file is located) if you do not wish your entry to be scored and counted against your limit. This is useful in cases where you wish to make sure that the changes made do not result in any error.
+4. Submit your entry.zip for scoring through the [PhysioNet/CinC Challenge 2017](https://physionet.org/works/PhysioNetCinCChallenge2017/) project (Update: submissions are now closed). The contents of entry.zip must be laid out exactly as in the sample entry. Improperly-formatted entries will not be scored.
+
+For those wishing to compete officially, please follow the additional four steps described in the [Rules and Deadlines](https://physionetchallenges.org/2017/#Rules).
+
+Join our [Community Discussion Forum](https://archive.physionet.org/challenge/2017/#forum) to get the latest challenge news, technical help, or if you would like to find partners to collaborate with.
 
 ## <a name="Rules"></a> Rules and Deadlines
 
@@ -149,11 +162,11 @@ __NOTE:__ You do not need any additional software, apart from Matlab or GNU Octa
 
 ## <a name="Prepare_entry"></a> Preparing an entry for the challenge
 
-To participate in the challenge, you will need to create software that is able to read the test data and output the final classification result without user interaction in our test environment. One sample entry (`sample2017.zip`, written in MATLAB) is available to help you get started. In addition to MATLAB, you may use any programming language (or combination of languages) supported using open source compilers or interpreters on GNU/Linux, including C, C++, Fortran, Haskell, Java, Octave, Perl, Python, and R.
+To participate in the challenge, you will need to create software that is able to read the test data and output the final classification result without user interaction in our test environment. One sample entry ([sample2017.zip](https://archive.physionet.org/challenge/2017/sample2017.zip), written in MATLAB) is available to help you get started. In addition to MATLAB, you may use any programming language (or combination of languages) supported using open source compilers or interpreters on GNU/Linux, including C, C++, Fortran, Haskell, Java, Octave, Perl, Python, and R.
 
 __If your entry requires software that is not installed in our sandbox environment, we will work with you during Phase I to try to ensure your code can run. We will not modify the test environment after the start of Phase II of the challenge.__
 
-Participants should download the sample entry (`sample2017.zip`). Entries should have the exact layout of the sample entry; specifically, they must contain:
+Participants should download the sample entry ([sample2017.zip](https://archive.physionet.org/challenge/2017/sample2017.zip)). Entries should have the exact layout of the sample entry; specifically, they must contain:
 
 - `setup.sh`, a bash script runs once before any other code from the entry; use this to compile your code as needed.
 - `next.sh`, a bash script runs once per training or test record; it should analyze the record using your code, saving the results as a text file for each record.
@@ -259,19 +272,6 @@ As is customary, we hope to run a special issue in [Physiological Measurement](h
 ## <a name="Licence"></a> Obtaining complimentary MATLAB licenses
 
 [The MathWorks](https://mathworks.com/) has kindly decided to sponsor Physionet’s 2017 Challenge providing both prize money and licenses. The MathWorks is offering to all teams that wish to use MATLAB, complimentary licenses. User can apply for a license and learn more about MATLAB support through The Mathwork’s [PhysioNet Challenge](https://au.mathworks.com/academia/student-competitions/physionet.html) link. If you have questions or need technical support, please contact The MathWorks at [academicsupport@mathworks.com](academicsupport@mathworks.com).
-
-## <a name="Results"></a> Challenge Results
-
-The top-scoring programs submitted in the [PhysioNet/Computing in Cardiology Challenge 2017](https://physionet.org/content/challenge-2017/1.0.0/) are listed [here](/2017/results/index.md). For more information about the details of these algorithms, see the [corresponding papers](/2017/results/index.md).
-
-## <a name="Papers"></a> Papers
-
-The following paper is an introduction to the challenge topic, with a summary of the challenge results and a discussion of their implications. Please cite this publication when referencing the Challenge.
-
-[Gari Clifford, Chengyu Liu, Benjamin Moody, Li-Wei Lehman, Ikaro Silva, Qiao Li, Alistair Johnson, Roger Mark. (2017) AF Classification from a Short Single Lead ECG Recording: the Physionet Computing in Cardiology Challenge 2017, 44, https://doi.org/10.22489/CinC.2017.065-469](http://www.cinc.org/archives/2017/pdf/065-469.pdf).
-
-Over 40 papers were presented by participants at [Computers in Cardiology 2017](https://www.cinc.org/). These papers have been made available by their authors under the terms of the Creative Commons Attribution License 3.0 ([CCAL](https://creativecommons.org/licenses/by/3.0/)). See [this page](https://physionet.org/files/challenge-2017/1.0.0/papers/index.html) for a list of the papers and [this table](/2017/results/index.md) for a complete information of the teams, entries and papers. We wish to thank all of the authors for their contributions.
-
 
 ## <a name="references"></a> References
 
