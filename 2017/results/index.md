@@ -61,7 +61,7 @@ The scores for the teams and their papers and entry code are available in the ta
 | 38 | 0.76 |Teo Soo-Kng, Yang Xulei, Nguyen Phu Binh, Gabriel Tjio, Feng Ling, Su Yi, Lim Toon Wei| |[teo-soo-kng-244](https://physionet.org/content/challenge-2017/1.0.0/sources/teo-soo-kng-244.zip)|
 | 39 | 0.75 |Joel Karel, Pietro Bonizzi, Kurt Driessens|[Detection of Atrial Fibrillation Episodes from Short Single Lead Recordings by Means of Ensemble Learning](http://www.cinc.org/archives/2017/pdf/169-313.pdf)|[joel-karel-203](https://physionet.org/content/challenge-2017/1.0.0/sources/joel-karel-203.zip)|
 | 39 | 0.75 |Zhenning Mei, Hongyu Chen, Xiao Gu, Wei Chen||[zhenning-mei-209](https://physionet.org/content/challenge-2017/1.0.0/sources/zhenning-mei-209.zip)|
-| 39 | 0.75 |Rymko, Perka, Solinski, Rosinski, Lepek|[rymko-207](https://physionet.org/content/challenge-2017/1.0.0/sources/rymko-207.zip)|
+| 39 | 0.75 |Rymko, Perka, Solinski, Rosinski, Lepek||[rymko-207](https://physionet.org/content/challenge-2017/1.0.0/sources/rymko-207.zip)|
 | 39 | 0.75 |Katarzyna Stepien, Iga Grzegorczyk|[Classification of ECG Recordings with Neural Networks Based on Specific Morphological Features and Regularity of the Signal](http://www.cinc.org/archives/2017/pdf/356-350.pdf)|[katarzyna-stepien-209](https://physionet.org/content/challenge-2017/1.0.0/sources/katarzyna-stepien-209.zip)|
 | 44 | 0.74 |Griet Goovaerts, Martijn Boussé, Otto Debals, Lieven De Lathauwer, Sabine Van Huffel||[griet-goovaerts-206.zip](https://physionet.org/content/challenge-2017/1.0.0/sources/griet-goovaerts-206.zip)|
 | 45 | 0.73 |Pedro Álvarez, Andreu M. Climent, María S. Guillem||[pedro-alvarez-204](https://physionet.org/content/challenge-2017/1.0.0/sources/pedro-alvarez-204.zip)|
