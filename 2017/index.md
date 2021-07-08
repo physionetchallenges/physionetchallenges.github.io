@@ -200,6 +200,30 @@ The scoring for this challenge uses a F1 measure, which is an average of the fou
 #### <a name="Table3"></a> Table 3. Counting rules for the numbers of the variables.
 ![image](https://user-images.githubusercontent.com/74685770/123765019-ad932700-d908-11eb-9fe4-37a570b67807.png)
 
+For each of the four types, F<sub>1</sub> is defined as:
+
+* Normal rhythm: 
+
+<font size="+6"><div align="center"><img src="https://render.githubusercontent.com/render/math?math=F_{1n}=\frac{2\times N_n}{(\sum_N%2B\sum_n)}"></div></font>
+  
+* AF rhythm: 
+
+<font size="+6"><div align="center"><img src="https://render.githubusercontent.com/render/math?math=F_{1a}=\frac{2\times A_a}{(\sum_A%2B\sum_a)}"></div></font>
+  
+* Other rhythm: 
+
+<font size="+6"><div align="center"><img src="https://render.githubusercontent.com/render/math?math=F_{1o}=\frac{2\times O_o}{(\sum_O%2B\sum_o)}"></div></font>
+  
+* Noisy: 
+
+<font size="+6"><div align="center"><img src="https://render.githubusercontent.com/render/math?math=F_{1p}=\frac{2\times P_p}{(\sum_P%2B\sum_p)}"></div></font>
+  
+The `script score2017Challenge.m` in the sample entry, `sample2017.zip`, generates the final challenge score as follows: 
+
+<font size="+6"><div align="center"><img src="https://render.githubusercontent.com/render/math?math=F_{1}=\frac{(F_{1n}%2BF_{1a}%2BF_{1o}%2BF_{1p})}{4}"></div></font>
+  
+  
+
 The score on the hidden data represents your algorithm’s performance on a subset of the data. We will assess your performance on all of the hidden data only on your final entry in the official phase of the competition. The reason we do this is to prevent you over training on the hidden data. To improve your algorithm, you must assess your algorithm’s performance on the training data using cross validation.
 
 We are arbitrarily following the olympic model (for swimming events). Anyone with exactly the same score would split the 'medals' as normal. If two tie for gold (1st place) then we skip silver and the prize money for first and second place are divided equally between the 1st place winners. The 3rd place is awarded as normal. If three or more tie for gold then we award no other places and the entire cash prize for all three places is split equally. If any number tie for silver we skip bronze and split the silver and bronze cash prizes equally between all the 2nd place teams. If several tie for bronze then they all are awarded 3rd place share the 3rd place prize money equally.
