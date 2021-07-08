@@ -12,7 +12,7 @@ __When using this resource, please cite the Challenge paper:__
 
 __Also please include the standard citation for PhysioNet:__
 
-A L Goldberger 1, L A Amaral, L Glass, J M Hausdorff, P C Ivanov, R G Mark, J E Mietus, G B Moody, C K Peng, H E Stanley. (2000) PhysioBank, PhysioToolkit, and PhysioNet: Components of a new research resource for complex physiologic signals. Circulation [Online]. 101 (23), pp. e215–e220.
+A L Goldberger, L A Amaral, L Glass, J M Hausdorff, P C Ivanov, R G Mark, J E Mietus, G B Moody, C K Peng, H E Stanley. (2000) PhysioBank, PhysioToolkit, and PhysioNet: Components of a new research resource for complex physiologic signals. Circulation [Online]. 101 (23), pp. e215–e220.
 
 __Please find the results of the 2017 Challenge [here](https://physionetchallenges.org/2017/results/)__.
 
@@ -195,7 +195,7 @@ We would like to note that the competition does not give the company donating th
 
 If your entry is properly formatted, and nothing is missing, it is tested and scored automatically, and you will receive your scores when the test is complete (depending on your entry’s run time, this may take an hour or more). If you receive an error message instead, read it carefully and correct the problem(s) before resubmitting. Missing answers are treated as noise labels.
 
-The scoring for this challenge uses a F1 measure, which is an average of the four F1 values from each classification type. The counting rules for the numbers of the variables are defined in Table 3 as below:
+The scoring for this challenge uses a F<sub>1</sub> measure, which is an average of the four F<sub>1</sub> values from each classification type. The counting rules for the numbers of the variables are defined in Table 3 as below:
 
 #### <a name="Table3"></a> Table 3. Counting rules for the numbers of the variables.
 ![image](https://user-images.githubusercontent.com/74685770/123765019-ad932700-d908-11eb-9fe4-37a570b67807.png)
