@@ -202,30 +202,25 @@ The scoring for this challenge uses a F<sub>1</sub> measure, which is an average
 
 For each of the four types, F<sub>1</sub> is defined as:
 
-* Normal rhythm:  $F_{1n}= \frac{2 \times N_n}{&Sigma;N + &Sigma;n}$
+* Normal rhythm:  
 
-<font size="+6"><div align="center"><img src="https://render.githubusercontent.com/render/math?math=F_{1n}=\frac{2\times N_n}{\sum N%2B\sum n}"></div></font>
-  
+$$ F_{1n}=\frac{2 \times N_n}{(\sum N + \sum n)} $$
+
 * AF rhythm: 
 
-$$ F_{1a}=\frac{2 \times A_a}{(\sum A%2B\sum a)} $$
-
-<font size="+6"><div align="center"><img src="https://render.githubusercontent.com/render/math?math=F_{1a}=\frac{2\times A_a}{\sum A%2B\sum a}"></div></font>
+$$ F_{1a}=\frac{2 \times A_a}{(\sum A + \sum a)} $$
   
 * Other rhythm: 
 
-<font size="+6"><div align="center"><img src="https://render.githubusercontent.com/render/math?math=F_{1o}=\frac{2\times O_o}{\sum O%2B\sum o}"></div></font>
+$$ F_{1o}=\frac{2 \times O_o}{(\sum O + \sum o)} $$
   
 * Noisy: 
 
-<font size="+6"><div align="center"><img src="https://render.githubusercontent.com/render/math?math=F_{1p}=\frac{2\times P_p}{\sum P%2B\sum p}"></div></font>
+$$ F_{1p}=\frac{2 \times P_p}{(\sum P + \sum p)} $$
   
 The `script score2017Challenge.m` in the sample entry, `sample2017.zip`, generates the final challenge score as follows: 
 
-<font size="+6"><div align="center"><img src="https://render.githubusercontent.com/render/math?math=F_{1}=\frac{F_{1n}%2BF_{1a}%2BF_{1o}%2BF_{1p}}{4}"></div></font>
-  
-  
-  
+$$ F_1=\frac{F_{1n} + F_{1a} + F_{1o} + F_{1p}}{4} $$
 
 The score on the hidden data represents your algorithm’s performance on a subset of the data. We will assess your performance on all of the hidden data only on your final entry in the official phase of the competition. The reason we do this is to prevent you over training on the hidden data. To improve your algorithm, you must assess your algorithm’s performance on the training data using cross validation.
 
