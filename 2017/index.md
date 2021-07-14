@@ -202,25 +202,28 @@ The scoring for this challenge uses a F<sub>1</sub> measure, which is an average
 
 For each of the four types, F<sub>1</sub> is defined as:
 
-* Normal rhythm: 
+* Normal rhythm:  $F_{1n}= \frac{2 \times N_n}{&Sigma;N + &Sigma;n}$
 
-<font size="+6"><div align="center"><img src="https://render.githubusercontent.com/render/math?math=F_{1n}=\frac{2\times N_n}{(\sum_N%2B\sum_n)}"></div></font>
+<font size="+6"><div align="center"><img src="https://render.githubusercontent.com/render/math?math=F_{1n}=\frac{2\times N_n}{\sum N%2B\sum n}"></div></font>
   
 * AF rhythm: 
 
-<font size="+6"><div align="center"><img src="https://render.githubusercontent.com/render/math?math=F_{1a}=\frac{2\times A_a}{(\sum_A%2B\sum_a)}"></div></font>
+$$ F_{1a}=\frac{2 \times A_a}{(\sum A%2B\sum a)} $$
+
+<font size="+6"><div align="center"><img src="https://render.githubusercontent.com/render/math?math=F_{1a}=\frac{2\times A_a}{\sum A%2B\sum a}"></div></font>
   
 * Other rhythm: 
 
-<font size="+6"><div align="center"><img src="https://render.githubusercontent.com/render/math?math=F_{1o}=\frac{2\times O_o}{(\sum_O%2B\sum_o)}"></div></font>
+<font size="+6"><div align="center"><img src="https://render.githubusercontent.com/render/math?math=F_{1o}=\frac{2\times O_o}{\sum O%2B\sum o}"></div></font>
   
 * Noisy: 
 
-<font size="+6"><div align="center"><img src="https://render.githubusercontent.com/render/math?math=F_{1p}=\frac{2\times P_p}{(\sum_P%2B\sum_p)}"></div></font>
+<font size="+6"><div align="center"><img src="https://render.githubusercontent.com/render/math?math=F_{1p}=\frac{2\times P_p}{\sum P%2B\sum p}"></div></font>
   
 The `script score2017Challenge.m` in the sample entry, `sample2017.zip`, generates the final challenge score as follows: 
 
-<font size="+6"><div align="center"><img src="https://render.githubusercontent.com/render/math?math=F_{1}=\frac{(F_{1n}%2BF_{1a}%2BF_{1o}%2BF_{1p})}{4}"></div></font>
+<font size="+6"><div align="center"><img src="https://render.githubusercontent.com/render/math?math=F_{1}=\frac{F_{1n}%2BF_{1a}%2BF_{1o}%2BF_{1p}}{4}"></div></font>
+  
   
   
 
