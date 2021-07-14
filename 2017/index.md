@@ -204,19 +204,19 @@ For each of the four types, F<sub>1</sub> is defined as:
 
 * Normal rhythm:  
 
-$$ F_{1n}=\frac{2 \times N_n}{(\sum N + \sum n)} $$
+$$ F_{1n}=\frac{2 \times N_n}{\sum N + \sum n} $$
 
 * AF rhythm: 
 
-$$ F_{1a}=\frac{2 \times A_a}{(\sum A + \sum a)} $$
+$$ F_{1a}=\frac{2 \times A_a}{\sum A + \sum a} $$
   
 * Other rhythm: 
 
-$$ F_{1o}=\frac{2 \times O_o}{(\sum O + \sum o)} $$
+$$ F_{1o}=\frac{2 \times O_o}{\sum O + \sum o} $$
   
 * Noisy: 
 
-$$ F_{1p}=\frac{2 \times P_p}{(\sum P + \sum p)} $$
+$$ F_{1p}=\frac{2 \times P_p}{\sum P + \sum p} $$
   
 The `script score2017Challenge.m` in the sample entry, `sample2017.zip`, generates the final challenge score as follows: 
 
