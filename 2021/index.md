@@ -175,12 +175,11 @@ Please see the [submission instructions](submissions/) for detailed information 
 
 Like [last year's Challenge](../2020/#submissions), we will continue to require code both for your trained model and for testing your model. If we cannot reproduce your model from the training code, then you will not be eligible for ranking or a prize.
 
-We will run your training code on Google Cloud using 10 vCPUs, 65 GB RAM, and an optional [NVIDIA T4 Tensor Core GPU](https://www.nvidia.com/en-us/data-center/tesla-t4/) with 16 GB VRAM. Your training code has a 72 hour time limit without a GPU and a 48 hour time limit with a GPU.
+We will run your training code on Google Cloud using 10 vCPUs, 65 GB RAM, 100 GB disk space, and an optional [NVIDIA T4 Tensor Core GPU](https://www.nvidia.com/en-us/data-center/tesla-t4/) with 16 GB VRAM. Your training code has a 72 hour time limit without a GPU and a 48 hour time limit with a GPU.
 
-We will run your trained model on Google Cloud using 6 vCPUs, 39 GB RAM, and an optional [NVIDIA T4 Tensor Core GPU](https://www.nvidia.com/en-us/data-center/tesla-t4/) with 16 GB VRAM. Your trained model has a 24 hour time limit on each of the validation and test sets.
+We will run your trained model on Google Cloud using 6 vCPUs, 39 GB RAM, 100 GB disk space, and an optional [NVIDIA T4 Tensor Core GPU](https://www.nvidia.com/en-us/data-center/tesla-t4/) with 16 GB VRAM. Your trained model has a 24 hour time limit on each of the validation and test sets.
 
-Also 100 GB disk space is allocated for each submission and for submissions reuiring a GPU, one instance of [NVIDIA-TESLA-T4](https://www.nvidia.com/en-us/data-center/tesla-t4/) with NVIDIA Driver Version of [418.40.04](https://www.nvidia.com/en-us/data-center/tesla-t4/) is attached and configured. 
-We are using an [N1 custom machine type](https://cloud.google.com/compute/docs/machine-types#n1_high-memory_machine_types). If you would like to use a predefined machine type, then the n1-highmem-8 is the closest but with slightly fewer vCPUs and slightly less RAM.
+We are using an [N1 custom machine type](https://cloud.google.com/compute/docs/machine-types#n1_high-memory_machine_types) to run submissions on [GCP](https://cloud.google.com/compute/). If you would like to use a predefined machine type, then the `n1-highmem-8` is the closest predefined machine type, but with 2 fewer vCPUs and 13 GB less RAM. For GPU submissions, we use the [418.40.04 driver version](https://docs.nvidia.com/datacenter/tesla/tesla-release-notes-418-4004/index.html).
 
 ## <a name="scoring"></a> Scoring
 
