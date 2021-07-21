@@ -8,8 +8,8 @@ layout: 2021
 
 ## <a name="announcements"></a> Announcements
 
-__July 21, 2021:__ As you prepare your CinC papers, please follow the [CinC preparation and submission instructions](https://www.cinc.org/instructions-for-preparing-and-submitting-full-papers/) and use either the LaTeX ([Overleaf](https://www.overleaf.com/read/qqsvqvyrqkzr
-); [download](cinc_template.zip)) or [Word](cinc_template.docx) [templates](cinc_template.pdf), which include important instructions, advice, and references. Please see [here](papers/) for more information, including important citation information.
+__July 21, 2021:__ As you prepare your CinC papers, please follow the [CinC preparation and submission instructions](https://www.cinc.org/instructions-for-preparing-and-submitting-full-papers/) and use either our LaTeX ([Overleaf](https://www.overleaf.com/read/qqsvqvyrqkzr
+) or [download](cinc_template.zip)) or [Word](cinc_template.docx) templates, which include important instructions, advice, and references. Please see [here](papers/) for more information, including our draft paper and important citation information.
 
 __June 23, 2021:__ CinC has [released](https://groups.google.com/g/physionet-challenges/c/qvYNaJvCaBw) its abstract decisions for the Challenge track of the conference. Congratulations to those with accepted abstracts. Those without an accepted abstract can still competed for a [wildcard entry](#wild-card).
 
