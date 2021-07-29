@@ -253,7 +253,7 @@ After the Challenge is over and the final scores have been posted (in late Septe
 
 ## <a name="wild-card"></a> Wild Card Entries
 
-If your abstract is rejected or if you otherwise failed to qualify during the unofficial period, then there is still a chance to present as CinC and win the Challenge. A 'wild card' entry has been reserved for a high-scoring entry from a team that was unable to submit an accepted abstract to CinC by the original abstract submission deadline. A successful entry must be submitted by the wild card entry deadline. The abstract will still be reviewed as thoroughly as any other abstract accepted for the conference, and the team must submit a acceptable abstract. See [Advice on Writing an Abstract](#abstracts).
+If your abstract is rejected or if you otherwise failed to qualify during the unofficial period, then there is still a chance to present as CinC and win the Challenge. A 'wild card' entry has been reserved for a high-scoring entry from a team that was unable to submit an accepted abstract to CinC by the original abstract submission deadline. A successful entry must be submitted by the wild card entry deadline. We will contact eligible teams and ask them to submit an abstract. The abstract will still be reviewed as thoroughly as any other abstract accepted for the conference. See [Advice on Writing an Abstract](#abstracts).
 
 ## <a name="abstracts"></a> Advice on Writing an Abstract
 
@@ -305,7 +305,7 @@ If we discover evidence of the contravention of these rules, then you will be in
 
 ## <a name="hackathon"></a> Hackathon
 
-To be announced!
+Due to the uncertainties around travel, we have unfortunately decided not to run the Hackathon again this year.
 
 ## <a name="sponsors"></a> Sponsors
 
