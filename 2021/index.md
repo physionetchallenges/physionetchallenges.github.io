@@ -223,9 +223,9 @@ For these reasons, we strongly suggest that you start submitting entries at leas
 |Abstract decisions released|	21 June 2021 |	21 June 2021 |	N/A                    |
 |Wild card entry date|	31 July 2021  |	31 July 2021    |	N/A                    |
 |Hiatus           | 16 August 2021   | 10 September 2021| N/A                    |
-|Preprint deadline| 1 September 2021 | 1 September 2021 | One 4-page paper (**)  |
+|Preprint deadline| 1 September 2021 | 3 September 2021 | One 4-page paper (**)  |
 |Hackathon        | 11 September 2021| 11 September 2021| 1-2 scored entries     |
-|Conference       | 12 September 2021| 15 September 2021| One 4-page paper (***) |
+|Conference       | 12 September 2021| 15 September 2021| 1 presentation (***)   |
 |Final scores released| 16 September 2021| 16 September 2021| N/A                |
 |Final paper deadline| 23 September 2021| 30 September 2021| One 4-page paper (***)|
 
@@ -233,7 +233,7 @@ For these reasons, we strongly suggest that you start submitting entries at leas
 
 (** Must include preliminary scores.)
 
-(*** Must include final scores, your ranking in the Challenge, and any updates to your work as a result of feedback after presenting at CinC.)
+(*** Must include final scores, your ranking in the Challenge, and any updates to your work as a result of feedback after presenting at CinC. This final paper daedline is earlier than the deadline given by CinC so that we can check these details.)
 
 To be eligible for the open-source award, you must do all the following:
 
