@@ -8,8 +8,8 @@ This folder contains the results of the 2021 PhysioNet/CinC Challenge on the 202
 
 Final scores for the 2021 Challenge:
 
-- __Official entries__: [only Challenge metric scores of the official entries](https://docs.google.com/spreadsheets/d/1cTLRmSLS1_TOwx-XnY-QVoUyO2rFyPUGTHRzNm3u8EM/edit?usp=sharing) and [all scores of the official entries](https://docs.google.com/spreadsheets/d/1Zf7A_w_Pn3A--jSOHinrSQ-FnJ8CrptzeHm6U9Gph4M/edit?usp=sharing)
-- __Unofficial entries__: [only Challenge metric scores of the unofficial entries](https://docs.google.com/spreadsheets/d/1iMKPXDvqfyQlwhsd4N6CjKZccikhsIkSDygLEsICqsw/edit?usp=sharing) and [all scores of the unofficial entries](https://docs.google.com/spreadsheets/d/1iPDrWi1SsWUO-VNMwQK8W63iA_mJgzDN-Z-mmhaGcN4/edit?usp=sharing)
+- __Official entries__: [only Challenge metric scores](https://docs.google.com/spreadsheets/d/1cTLRmSLS1_TOwx-XnY-QVoUyO2rFyPUGTHRzNm3u8EM/edit?usp=sharing) and [all scores](https://docs.google.com/spreadsheets/d/1Zf7A_w_Pn3A--jSOHinrSQ-FnJ8CrptzeHm6U9Gph4M/edit?usp=sharing)
+- __Unofficial entries__: [only Challenge metric scores](https://docs.google.com/spreadsheets/d/1iMKPXDvqfyQlwhsd4N6CjKZccikhsIkSDygLEsICqsw/edit?usp=sharing) and [all scores](https://docs.google.com/spreadsheets/d/1iPDrWi1SsWUO-VNMwQK8W63iA_mJgzDN-Z-mmhaGcN4/edit?usp=sharing)
 - __Team eligibility table__: [here](https://docs.google.com/spreadsheets/d/1sSKA9jMp8oT2VqyX4CTirIT3m5lSohIuk5GWf-Cq8FU/edit?usp=sharing) (determines whether entries are official or unofficial)
 
 Please see below for more information about these scores.
