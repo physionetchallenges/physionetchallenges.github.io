@@ -42,20 +42,16 @@ You can find the tables with the information and scores of the 2021 PhysoNet/Cin
 2. The leaderboards of the 2021 Challenge entries on the hidden datasets for the official and unofficial entries separately, with each having six tabs for the 12-leads, 6-leads, 4-leads, 3-leads, 2-leads and all-leads (average of the scores on the 12-leads, 3-leads and 2-leads sets), representing the Challenge metric for validation set, separate test datasets and full test set. Please click on the tabs at the bottom of the leaderboards to see the different tracks of the channel.
  You can also find the running time of the entries during training and testing on validation set and full test set in these tables: 
 
-    The leaderboard of the official entries which satisfied all of the [rules](https://physionetchallenges.org/2021/#rules) and were ranked in the Challenge:
-    <iframe width='100%' height='500' src=https://docs.google.com/spreadsheets/d/1cTLRmSLS1_TOwx-XnY-QVoUyO2rFyPUGTHRzNm3u8EM/edit?usp=sharing;headers=false"></iframe>
+     [2021 Challenge Test Results Leaderboard For Official Entries](https://docs.google.com/spreadsheets/d/1cTLRmSLS1_TOwx-XnY-QVoUyO2rFyPUGTHRzNm3u8EM/edit?usp=sharing) which satisfied all of the [rules](https://physionetchallenges.org/2021/#rules) and were ranked in the Challenge, and 
 
-    The leaderboard of the unofficial entries which did not satisfy all of the [rules](https://physionetchallenges.org/2021/#rules) and were not ranked in the Challenge: 
-    <iframe width='100%' height='500' src=https://docs.google.com/spreadsheets/d/1iMKPXDvqfyQlwhsd4N6CjKZccikhsIkSDygLEsICqsw/edit?usp=sharing;headers=false"></iframe>
+    [2021 Challenge Test Results Leaderboard For Unofficial Entries](https://docs.google.com/spreadsheets/d/1iMKPXDvqfyQlwhsd4N6CjKZccikhsIkSDygLEsICqsw/edit?usp=sharing) which did not satisfy all of the [rules](https://physionetchallenges.org/2021/#rules) and were not ranked in the Challenge.
 
 3. The final Challenge results represent more information with the following metrics for the Challenge entries: the area under the receiver operating characteristic (AUROC), area under the precision recall curve (AUPRC), _F_-measure scores and the [Challenge scoring metric](https://physionetchallenges.org/2021/#scoring) which were used to evaluate the Challenge entries and rank the official entries to the macro-average of the Challenge metric score across all classes. The accuracy metric is the fraction of correctly diagnosed recordings, i.e., all classes for the recording are correct. You can find the results of these metrics and the processing time of the entries on the validation and separate test datasets in these tables. Please click on the tabs at the bottom of the leaderboard to see the different tracks of the channel.
 Each of these tables have five tabs for the scores on the 12-leads, 6-leads, 4-leads, 3-leads, and 2-leads combination sets:
 
-    More results for the official entries of the Challenge:  
-    <iframe width='100%' height='500' src="https://docs.google.com/spreadsheets/d/1Zf7A_w_Pn3A--jSOHinrSQ-FnJ8CrptzeHm6U9Gph4M/edit?usp=sharing;headers=false"></iframe>
+    [Final 2021 Challenge Results for Official Entries](https://docs.google.com/spreadsheets/d/1Zf7A_w_Pn3A--jSOHinrSQ-FnJ8CrptzeHm6U9Gph4M/edit?usp=sharing) presenting the metrics for the official entries of the Challenge, and 
 
-    More results for the un official entries of the Challenge:  
-    <iframe width='100%' height='500' src="https://docs.google.com/spreadsheets/d/1iPDrWi1SsWUO-VNMwQK8W63iA_mJgzDN-Z-mmhaGcN4/edit?usp=sharing;headers=false"></iframe>
+    [Final 2021 Challenge Results for Unofficial Entries](https://docs.google.com/spreadsheets/d/1iPDrWi1SsWUO-VNMwQK8W63iA_mJgzDN-Z-mmhaGcN4/edit?usp=sharing) presenting the same metrics for the unofficial entries of the Challenge. 
 
 
 ---
