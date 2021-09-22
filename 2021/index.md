@@ -69,8 +69,9 @@ The Challenge data include recordings from [last year's Challenge](../2020/#data
 4. The Georgia 12-lead ECG Challenge (G12EC) Database
 5. Augmented Undisclosed Database 
 6. Chapman-Shaoxing and Ningbo Database 
+7. The University of Michigan (UMich) Database
 
-The Challenge data include annotated twelve-lead ECG recordings from six sources in four countries across three continents. These databases include over 100,000 twelve-lead ECG recordings with over 88,000 ECGs shared publicly as training data, 6,630 ECGs retained privately as validation data, and 16,630 ECGs retained privately as test data.
+The Challenge data include annotated twelve-lead ECG recordings from six sources in four countries across three continents. These databases include over 100,000 twelve-lead ECG recordings with over 88,000 ECGs shared publicly as training data, 6,630 ECGs retained privately as validation data, and 36,266 ECGs retained privately as test data.
 
 - The first source is the [China Physiological Signal Challenge in 2018 (CPSC 2018)](http://2018.icbeb.org/), which was held during the 7th International Conference on Biomedical Engineering and Biotechnology in Nanjing, China. This source contains two databases: the data from CPSC 2018 (the CPSC Database) and unused data from CPSC 2018 (the CPSC-Extra Database). Together, these databases contain 13,256 ECGs (10,330 ECGs shared as training data, 1,463 retained as validation data, and 1,463 retained as test data). We shared the training set and an unused dataset from CPSC 2018 as training data, and we split the test set from CPSC 2018 into validation and test sets. Each recording is between 6 and 144 seconds long with a sampling frequency of 500 Hz.
 
@@ -78,11 +79,13 @@ The Challenge data include annotated twelve-lead ECG recordings from six sources
 
 - The third source is the Physikalisch-Technische Bundesanstalt (PTB) and includes two public datasets: the [PTB](https://physionet.org/content/ptbdb/) and the [PTB-XL](https://physionet.org/content/ptb-xl/) databases. The source contains 22,353 ECGs (all shared as training data). Each recording is between 10 and 120 seconds long with a sampling frequency of either 500 or 1,000 Hz.
 
-- The fourth source is a Georgia database which represents a unique demographic of the Southeastern United States. This source contains 20,678 ECGs (10,334 ECGs shared as training data, 5,167 retained as validation data, and 5,167 retained as test data). Each recording is between 5 and 10 seconds long with a sampling frequency of 500 Hz.
+- The fourth source is a Georgia database which represents a unique demographic of the Southeastern United States. This source contains 20,678 ECGs (10,334 ECGs shared as training data, 5,167 retained as validation data, and 5,161 retained as test data). Each recording is between 5 and 10 seconds long with a sampling frequency of 500 Hz.
 
 - The fifth source is an undisclosed American database that is geographically distinct from the Georgia database. This source contains 10,000 ECGs (all retained as test data).
 
 - The sixth source is the Chapman University, Shaoxing People's Hospital (Chapman-Shaoxing) and Ningbo First Hospital (Ningbo) database [[5]](https://doi.org/10.1038/s41597-020-0386-x), [[6]](https://doi.org/10.1038/s41598-020-59821-7). This source contains 45,152 ECGS (all shared as training data). Each recording is 10 seconds long with a sampling frequency of 500 Hz.
+
+- The seventh source is UMich Database from the University of Michigan. This source contains 19,642 ECGs (all retained as test data). Each recording is 10 seconds long with a sampling frequency of either 250 Hz or 500 Hz.
 
 Like other real-world datasets, different databases may have different proportions of cardiac abnormalities, but all of the labels in the validation or test data are represented in the training data. Moreover, while this is a curated dataset, some of the data and labels are likely to have errors, and an important part of the Challenge is to work out these issues. In particular, some of the databases have human-overread machine labels with single or multiple human readers, so the quality of the labels varies between databases.
 
