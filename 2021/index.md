@@ -8,6 +8,8 @@ layout: 2021
 
 ## <a name="announcements"></a> Announcements
 
+__October 25, 2021:__ We are currently evaluating entries on the 2021 Challenge test data in support of the Physiological Measurement [focus issue](https://iopscience.iop.org/journal/0967-3334/page/Classification_Multilead_ECGs) on multilead ECG classification. The deadline to submit your code and a preprint is 1 December 2021, and the deadline to submit your article is 11 January 2022. See this [forum announcement](https://groups.google.com/g/physionet-challenges/c/9X3N8FLEGE4) for details.
+
 __September 20, 2021:__ The winners of the 2021 Challenge were announced on 15 September 2021 at CinC in Brno, Czech Republic. Congratulations, teams! See this [page](https://physionetchallenges.org/2021/leaderboard/) for the results and the [full announcement](https://groups.google.com/g/physionet-challenges/c/klq1R7QsC00) for the final steps in this year’s Challenge, including details about the [focus issue](https://iopscience.iop.org/journal/0967-3334/page/Classification_Multilead_ECGs) (deadline: 11 January 2022).
 
 __July 21, 2021:__ As you prepare your CinC papers, please follow the [CinC preparation and submission instructions](https://www.cinc.org/instructions-for-preparing-and-submitting-full-papers/) and use either our LaTeX ([Overleaf](https://www.overleaf.com/read/qqsvqvyrqkzr
