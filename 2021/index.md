@@ -81,7 +81,7 @@ The Challenge data include annotated twelve-lead ECG recordings from six sources
 
 - The third source is the Physikalisch-Technische Bundesanstalt (PTB) and includes two public datasets: the [PTB](https://physionet.org/content/ptbdb/) and the [PTB-XL](https://physionet.org/content/ptb-xl/) databases. The source contains 22,353 ECGs (all shared as training data). Each recording is between 10 and 120 seconds long with a sampling frequency of either 500 or 1,000 Hz.
 
-- The fourth source is a Georgia database which represents a unique demographic of the Southeastern United States. This source contains 20,678 ECGs (10,334 ECGs shared as training data, 5,167 retained as validation data, and 5,161 retained as test data). Each recording is between 5 and 10 seconds long with a sampling frequency of 500 Hz.
+- The fourth source is a Georgia database which represents a unique demographic of the Southeastern United States. This source contains 20,672 ECGs (10,344 ECGs shared as training data, 5,167 retained as validation data, and 5,161 retained as test data). Each recording is between 5 and 10 seconds long with a sampling frequency of 500 Hz.
 
 - The fifth source is an undisclosed American database that is geographically distinct from the Georgia database. This source contains 10,000 ECGs (all retained as test data).
 
