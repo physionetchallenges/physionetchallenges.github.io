@@ -13,9 +13,11 @@ We ask participants to design and implement working, open-source algorithms that
 Please check the below links for information about [current](#current) and [past](#past) Challenges, including [important details](/faq/) about scoring and test data for previous Challenges.
 
 ## <a name="current"></a> Current Challenge
-- __2021__: [Will Two Do? Varying Dimensions in Electrocardiography](/2021/)
+- To be announced soon!
 
 ## <a name="past"></a> Past Challenges
+- __2021__: [Will Two Do? Varying Dimensions in Electrocardiography](/2021/)
+ Papers and contributed software ongoing
 - __2020__: [Classification of 12-lead ECGs](/2020/)  
  Papers and contributed software ongoing
 - __2019__: [Early Prediction of Sepsis from Clinical Data](https://physionet.org/content/challenge-2019/)  
