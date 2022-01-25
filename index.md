@@ -16,7 +16,7 @@ Please check the below links for information about [current](#current) and [past
 - To be announced soon!
 
 ## <a name="past"></a> Past Challenges
-- __2021__: [Will Two Do? Varying Dimensions in Electrocardiography](/2021/)
+- __2021__: [Will Two Do? Varying Dimensions in Electrocardiography](/2021/)  
  Papers and contributed software ongoing
 - __2020__: [Classification of 12-lead ECGs](/2020/)  
  Papers and contributed software ongoing
