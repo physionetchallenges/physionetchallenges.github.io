@@ -12,6 +12,8 @@ __October 25, 2021:__ We are currently evaluating entries on the 2021 Challenge 
 
 __September 20, 2021:__ The winners of the 2021 Challenge were announced on 15 September 2021 at CinC in Brno, Czech Republic. Congratulations, teams! See this [page](https://physionetchallenges.org/2021/leaderboard/) for the results and the [full announcement](https://groups.google.com/g/physionet-challenges/c/klq1R7QsC00) for the final steps in this year’s Challenge, including details about the [focus issue](https://iopscience.iop.org/journal/0967-3334/page/Classification_Multilead_ECGs) (deadline: 11 January 2022).
 
+__September 15, 2021:__ In honor of the contributions of [George Moody](https://physionet.org/news/post/355) to PhysioNet and Computing in Cardiology, the Board of CinC voted to rename the Challenges to the George B. Moody PhysioNet Challenge. 
+
 __July 21, 2021:__ As you prepare your CinC papers, please follow the [CinC preparation and submission instructions](https://www.cinc.org/instructions-for-preparing-and-submitting-full-papers/) and use either our LaTeX ([Overleaf](https://www.overleaf.com/read/qqsvqvyrqkzr
 ) or [download](cinc_template.zip)) or [Word](cinc_template.docx) templates, which include important instructions, advice, and references. Please see [here](papers/) for more information, including our draft paper and important citation information.
 
