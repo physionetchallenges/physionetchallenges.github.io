@@ -12,9 +12,9 @@ For this year's Challenge, please cite:
 
 [Reyna MA, Sadr N, Perez Alday EA, Gu A, Shah AJ, Robichaux C, Rad AB, Elola A, Seyedi S, Ansari S, Ghanbari H, Li Q, Sharma A, Clifford GD. Will Two Do? Varying Dimensions in Electrocardiography: the PhysioNet/Computing in Cardiology Challenge 2021. Computing in Cardiology 2021; 48: 1-4](https://www.cinc.org/archives/2021/pdf/CinC2021-134.pdf)
 
+<!--
 The above CinC paper is a draft. We will update it after CinC to include information about the conclusion of the Challenge.
 
-<!--
 ## Templates
 
 Please follow the [preparation and submission instructions](https://www.cinc.org/instructions-for-preparing-and-submitting-full-papers/) for your CinC papers.
