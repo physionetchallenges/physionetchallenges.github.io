@@ -195,12 +195,12 @@ We would like to note that the competition does not give the company donating th
 
 If your entry is properly formatted, and nothing is missing, it is tested and scored automatically, and you will receive your scores when the test is complete (depending on your entry’s run time, this may take an hour or more). If you receive an error message instead, read it carefully and correct the problem(s) before resubmitting. Missing answers are treated as noise labels.
 
-The scoring for this challenge uses a $F_1$ measure, which is an average of the four $F_1$ values from each classification type. The counting rules for the numbers of the variables are defined in Table 3 as below:
+The scoring for this challenge uses a $$F_1$$ measure, which is an average of the four $$F_1$$ values from each classification type. The counting rules for the numbers of the variables are defined in Table 3 as below:
 
 #### <a name="Table3"></a> Table 3. Counting rules for the numbers of the variables.
 ![image](https://user-images.githubusercontent.com/74685770/123765019-ad932700-d908-11eb-9fe4-37a570b67807.png)
 
-For each of the four types, $F_1$ is defined as:
+For each of the four types, $$F_1$$ is defined as:
 
 * Normal rhythm:  
 

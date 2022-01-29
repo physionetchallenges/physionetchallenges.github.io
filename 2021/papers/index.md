@@ -8,9 +8,9 @@ layout: 2021
 
 For this year's Challenge, please cite:
 
-[Perez Alday EA, Gu A, Shah AJ, Robichaux C, Wong AI, Liu C, Liu F, Rad AB, Elola A, Seyedi S, Li Q, Sharma A, Clifford GD<sup>*</sup>, Reyna MA<sup>*</sup>. Classification of 12-lead ECGs: the PhysioNet/Computing in Cardiology Challenge 2020. Physiol Meas. 2020 Nov 11. doi: 10.1088/1361-6579/abc960](2020ChallengePaper.pdf)
+[Reyna MA, Sadr N, Perez Alday EA, Gu A, Shah AJ, Robichaux C, Rad AB, Elola A, Seyedi S, Ansari S, Ghanbari H, Li Q, Sharma A, Clifford GD. Will Two Do? Varying Dimensions in Electrocardiography: The PhysioNet/Computing in Cardiology Challenge 2021. Computing in Cardiology 2021; 48: 1-4](2021ChallengePaperCinC.pdf)
 
-[Reyna MA, Sadr N, Perez Alday EA, Gu A, Shah AJ, Robichaux C, Rad AB, Elola A, Seyedi S, Ansari S, Ghanbari H, Li Q, Sharma A, Clifford GD. Will Two Do? Varying Dimensions in Electrocardiography: the PhysioNet/Computing in Cardiology Challenge 2021. Computing in Cardiology 2021; 48: 1-4](https://www.cinc.org/archives/2021/pdf/CinC2021-134.pdf)
+[Reyna MA, Sadr N, Perez Alday EA, Gu Annie, Shah AJ, Robichaux C, Rad AB, Elola A, Seyedi S, Ansari S, Ghanbari H, Li Q, Sharma A, Clifford GD. Issues in the automated classification of multilead ECGs using heterogeneous labels and populations. Preprint. 2021](2021ChallengePaperPMEA.pdf)
 
 <!--
 The above CinC paper is a draft. We will update it after CinC to include information about the conclusion of the Challenge.
