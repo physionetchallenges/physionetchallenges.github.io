@@ -7,7 +7,7 @@ layout: 2021
 This page contains the final scores for the 2021 PhysioNet/CinC Challenge: 
 - __Official entries__: [only Challenge metric scores](https://docs.google.com/spreadsheets/d/1cTLRmSLS1_TOwx-XnY-QVoUyO2rFyPUGTHRzNm3u8EM/edit?usp=sharing) and [all scores](https://docs.google.com/spreadsheets/d/1Zf7A_w_Pn3A--jSOHinrSQ-FnJ8CrptzeHm6U9Gph4M/edit?usp=sharing)
 - __Unofficial entries__: [only Challenge metric scores](https://docs.google.com/spreadsheets/d/1iMKPXDvqfyQlwhsd4N6CjKZccikhsIkSDygLEsICqsw/edit?usp=sharing) and [all scores](https://docs.google.com/spreadsheets/d/1iPDrWi1SsWUO-VNMwQK8W63iA_mJgzDN-Z-mmhaGcN4/edit?usp=sharing)
-- __Team eligibility__: [here](https://docs.google.com/spreadsheets/d/1sSKA9jMp8oT2VqyX4CTirIT3m5lSohIuk5GWf-Cq8FU/edit?usp=sharing) (determines whether entries are official or unofficial)
+- __Team eligibility__: [here](https://github.com/physionetchallenges/physionetchallenges.github.io/blob/master/2021/leaderboard/results/Summary_Information_2021_Challenge_Entries.csv) (determines whether entries are official or unofficial)
 - __Per-class metrics__: [here](https://docs.google.com/spreadsheets/d/1h8kTCOaizZCO_A9gSJs2XKOiC7RWGRRmBWSiSbw8H2Y/edit?usp=sharing) (for both official and unofficial entries)
 
 These tables contain scores for the 12-lead, 6-lead, 4-lead, 3-lead, and 2-lead versions of the hidden validation and test sets. The [2021 Challenge webpage](../) and [2021 Challenge paper](../papers/2021ChallengePaper2021.pdf) describes the [lead combinations](../#data) and the validation and test [data sources](../#data-sources). We also included an _all-lead_ score in the tables, which is computed as the mean of the 12-lead, 3-lead, and 2-lead scores.
