@@ -304,7 +304,7 @@ For these reasons, we strongly suggest that you start submitting entries at leas
 |Unofficial phase | 1 February 2022  | 8 April 2022     | 1-5 scored entries (*) |
 |Hiatus           | 9 April 2022     | 30 April 2022    | N/A                    |
 |Abstract deadline| 15 April 2022    | 15 April 2022    | 1 abstract             |
-|Official phase   | 1 May 2022       | 15 August 2022   | 1-10 scored entries (*)|
+|Official phase   | 2 May 2022       | 15 August 2022   | 1-10 scored entries (*)|
 |Abstract decisions released|21 June 2022|21 June 2022  | N/A                    |
 |Wild card entry date| 31 July 2022  | 31 July 2022     | N/A                    |
 |Hiatus           | 16 August 2022   | 3 September 2022 | N/A                    |
