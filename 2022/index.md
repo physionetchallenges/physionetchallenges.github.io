@@ -186,7 +186,7 @@ We have implemented two example algorithms in [MATLAB](https://github.com/physio
 
 ## <a name="submissions"></a> Submitting your Algorithm
 
-See this [page](submissions) for information about how to prepare your algorithm. We will start accepting submissions in the coming weeks.
+See [this page](submissions) for information about how to prepare your algorithm. We will start accepting submissions in the coming weeks.
 
 ## <a name="scoring"></a> Challenge Scoring
 
