@@ -264,7 +264,7 @@ be the total cost of only an expert for screening ***without algorithmic prescre
 $$
 \begin{align*}
 c_1  &=  c_\text{algorithm} \cdot n_\text{total} \\
- &+ c_\text{expert} \cdot (n_\text{TP} + n_\text{FPU} + n_\text{FP} + n_\text{FUP} + 2 n_\text{TU} + n_\text{FUN}) \\
+ &+ c_\text{expert} \cdot (n_\text{TP} + 2 n_\text{FPU} + n_\text{FP} + n_\text{FUP} + 2 n_\text{TU} + n_\text{FUN}) \\
  &+ c_\text{treatment} \cdot (n_\text{TP} + \alpha n_\text{FPU} + n_\text{FUP} + \alpha n_\text{TU})\\
  &+ c_\text{error} \cdot (n_\text{FN}+\alpha n_\text{FNU})
 \end{align*}
