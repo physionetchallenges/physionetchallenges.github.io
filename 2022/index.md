@@ -10,9 +10,9 @@ layout: 2022
 
 ## <a name="announcements"></a> Announcements
 
- <a name="2022.02.01"></a>__February 1, 2022:__ The ([newly named](#2021.09.15)) NIH-funded George B. Moody PhysioNet Challenge 2022 is [now open](https://groups.google.com/g/physionet-challenges/)! Please read this website for details and share questions and comments on [Challenge forum](https://groups.google.com/g/physionet-challenges/). This year's Challenge is generously co-sponsored by MathWorks and the Gordon and Betty Moore Foundation. 
+ <a name="2022.02.01"></a>__February 1, 2022:__ The ([newly named](#2021.09.15)) NIH-funded George B. Moody PhysioNet Challenge 2022 is [now open](https://groups.google.com/g/physionet-challenges/)! Please read this website for details and share questions and comments on [Challenge forum](https://groups.google.com/g/physionet-challenges/). This year's Challenge is generously co-sponsored by MathWorks and the Gordon and Betty Moore Foundation.
 
-<a name="2021.09.15"></a>__September 15, 2021:__ In honor of the contributions of [George Moody](https://physionet.org/news/post/355) to PhysioNet and Computing in Cardiology, the Board of CinC voted to rename the Challenges to the George B. Moody PhysioNet Challenge. 
+<a name="2021.09.15"></a>__September 15, 2021:__ In honor of the contributions of [George Moody](https://physionet.org/news/post/355) to PhysioNet and Computing in Cardiology, the Board of CinC voted to rename the Challenges to the George B. Moody PhysioNet Challenge.
 
 {: style="text-align:center"}
 ![MathWorks](logo_mathworks.png){:height="40px"}&nbsp;&nbsp;&nbsp;
@@ -51,9 +51,9 @@ The Challenge data contain one or more heart sound recordings for 1568 patients 
 
 ### <a name="data-sources"></a> Data Collection
 
-The Challenge data were collected from a pediatric population during two mass screening campaigns conducted in Northeast Brazil in July-August 2014 and June-July 2015. The data collection was approved by the 5192-Complexo Hospitalar HUOC/PROCAPE institutional review board, under the request of the Real Hospital Portugues de Beneficencia em Pernambuco. The target population was all participants presenting voluntarily for screening within the study period. Patients younger than 21 years old with a parental signed consent form were included. All participants completed a sociodemographic questionnaire and subsequently underwent a clinical examination, a nursing assessment, and cardiac investigations. A detailed description of the dataset can be found in [[9](#Oliveira2022)].
+The Challenge data were collected from a pediatric population during two mass screening campaigns conducted in Northeast Brazil in July-August 2014 and June-July 2015. The data collection was approved by the 5192-Complexo Hospitalar HUOC/PROCAPE institutional review board, under the request of the Real Hospital Portugues de Beneficencia em Pernambuco. The target population was individuals who were 21 years old or younger who presented voluntarily for screening with a signed parental or legal guardian consent form. All participants completed a sociodemographic questionnaire and subsequently underwent a clinical examination, a nursing assessment, and cardiac investigations. A detailed description of the dataset can be found in [[9](#Oliveira2022)].
 
-Each patient in the Challenge data has one or more recordings from one or more prominent auscultation locations: pulmonary valve (PV), aortic valve (AV), mitral valve (MV), tricuspid valve (TV), and other (Phc). The recordings were collected sequentially (not simultaneously) from different auscultation locations using a digital stethoscope. The number, location, and duration of the recordings varies between patients.
+Each patient in the Challenge data has one or more recordings from one or more prominent auscultation locations: pulmonary valve (PV), aortic valve (AV), mitral valve (MV), tricuspid valve (TV), and other (Phc). The recordings were collected sequentially (not simultaneously) from different auscultation locations using a digital stethoscope. The number, location, and duration of the recordings vary between patients.
 
 ### <a name="variables"></a> Data Variables
 
@@ -63,7 +63,7 @@ To create the training, validation, and test sets, the original dataset was part
 
 The public training set contains heart sound recordings, routine demographic information, labels (presence, absence, or unknown murmurs), annotations of the murmur characteristics (location, timing, shape, pitch, quality, and grade), and heart sound segmentations. The private validation and test sets only contain heart sound recordings and demographic information.
 
-The following [Data Table](#data-table) shows the available information in the training, validation, and test sets of the challenge data. A detailed description of this table can be found in the [Data Description](data/).
+The following [Data Table](#data-table) shows the available information in the training, validation, and test sets of the challenge data. A detailed description of this table can be found in the [Data Description](data).
 
 |        <a name="data-table"></a>Variable   |    Short description (format)    | Possible values       | Training    |Validation|Test|
 |-----------------|------------------|------------------|------------------------|------|------|
@@ -71,7 +71,7 @@ The following [Data Table](#data-table) shows the available information in the t
 |Sex|Reported sex (string)|Female<br>Male|✓|✓|✓|
 |Height|Height in centimeters (number)||✓|✓|✓|
 |Weight|Weight in kilograms (number)| |✓|✓|✓|
-|Pregnancy status|Whether or not the patient was pregnant at the time of the screening campaign (Boolean)| |✓|✓|✓|
+|Pregnancy status|Did the patient report being pregnant durign screening? (Boolean)| |✓|✓|✓|
 |Additional ID|The second identifier for patients that participated to both screening campaigns (string)| |✓|||
 |Campaign|Campaign attended by the patient (string)|CC2014<br> CC2015 |✓|||
 |Murmur|Indicates if a murmur is present, absent or unidentifiable for the annotator; the Challenge label (string)| Present<br>Absent<br>Unknown|✓|||
@@ -103,7 +103,7 @@ There are four data file types in the training set:
 
 The validation and test datasets have the same structure, but the `.txt` file does not provide information about murmurs, and the `.tsv` segmentation files are not provided.
 
-The filenames for the audio data, the header file, the segmentation annotation, and the subject description are formatted as `ABCDE_XY.wav`, `ABCDE_XY.hea`, `ABCDE_XY.tsv`, and `ABCDE.txt`, respectively. Here,`ABCDE` is a numeric subject identifier and `XY` is one of the following codes corresponding to the auscultation location where the PCG was collected on the body surface:
+The filenames for the audio data, the header file, the segmentation annotation, and the subject description are formatted as `ABCDE_XY.wav`, `ABCDE_XY.hea`, `ABCDE_XY.tsv`, and `ABCDE.txt`, respectively. Here, `ABCDE` is a numeric subject identifier and `XY` is one of the following codes corresponding to the auscultation location where the PCG was collected on the body surface:
 
 - PV corresponds to the pulmonary valve point;
 - TV corresponds to the tricuspid valve point;
@@ -111,7 +111,7 @@ The filenames for the audio data, the header file, the segmentation annotation, 
 - MV corresponds to the mitral valve point;
 - Phc corresponds to any other auscultation Location.
 
-If more than one recording exists per auscultation location, an integer index follows the auscultation location code in the file name, i.e, `ABCDE_XY_n.wav`, `ABCDE_XY_n.hea`, and `ABCDE_XY_n.tsv`, where `n` is an integer (1, 2, ...). Accordingly, each audio file has its own header and annotation segmentation file, but the subject description file `ABCDE.txt` is shared between all auscultation recordings of the same subject ID.
+If more than one recording exists per auscultation location, an integer index follows the auscultation location code in the file name, i.e, `ABCDE_XY_n.wav`, `ABCDE_XY_n.hea`, and `ABCDE_XY_n.tsv`, where `n` is an integer (1, 2, ...). Accordingly, each audio file has its own header and annotation segmentation file, but the subject description file `ABCDE.txt` is shared between all auscultation recordings of the same subject ID. These audio recordings were recorded sequentially, not simultaneously, and therefore may have different lengths. The sequence of signal aquisition locations is unknown and is not necessarily consisent across different subjects. 
 
 The subject description file has the following format:
 
@@ -168,14 +168,16 @@ To participate in the Challenge, [register your team](https://docs.google.com/fo
 
 ## <a name="algorithms"></a> Challenge Algorithms
 
-For each patient and independent of the number of recording locations, your algorithm must identify the class label (present, absent, unknown) as well as a probability or confidence score for each class. As an example, suppose that you have four recordings in four locations on the body, your classifier needs to analyze those recordings but at the end must generate only one label (e.g., present) with the score/probability for all classes, which are numbers between zero and one.
+For each patient (independently of the number of recording locations), your algorithm must identify the class label (present, absent, unknown) as well as a probability or confidence score for each class per subject ID. As an example, suppose that you have four recordings in four locations on the body, your classifier needs to analyze those recordings but at the end must generate only one label (e.g., present) per subject ID with the score/probability for all classes, which are numbers between zero and one.
 
-Your code might produce the following output for the patient ID 1234 to indicate that your classifier identifies the presence of murmur with the probability of 75%:
+Your code might produce the following output for the patient ID 1234:
 
     #1234
     Present, Unknown, Absent
            1,      0,      0
         0.75,   0.15,    0.1
+
+This output indicates that the classifier identified a murmur for patient 1234, and it indicates the probability of a murmur as 75%, the probability of the absence of murmurs as 10%, and the probability of an unknown status as 15%.
 
 We have implemented two example algorithms in [MATLAB](https://github.com/physionetchallenges/matlab-classifier-2022) and [Python](https://github.com/physionetchallenges/python-classifier-2022) as templates for successful submissions:
 
@@ -184,15 +186,15 @@ We have implemented two example algorithms in [MATLAB](https://github.com/physio
 
 ## <a name="submissions"></a> Submitting your Algorithm
 
-See this [page](/submissions) for information about how to prepare your algorithm. We will start accepting submissions in the coming weeks.
+See this [page](submissions) for information about how to prepare your algorithm. We will start accepting submissions in the coming weeks.
 
 ## <a name="scoring"></a> Challenge Scoring
 
 For this year's Challenge, we developed a scoring metric based on the *costs for algorithmic prescreening for human experts for heart murmur identification*. We assume that algorithms can make diagnostic errors. If an algorithmic prescreening is positive (i.e., it identifies a murmur) or unknown, then the patient is referred to an expert for screening. If the algorithmic prescreening is negative (i.e., it does not identify a murmur), then there is no expert referral.
 
-We also assume that experts do not make diagnostic errors, but an expert diagnosis may be unknown. If an expert diagnosis is positive, then the patient receives treatment. If the expert diagnosis is unknown, then the patient receives another expert screening, after which the patient receives treatment $$\alpha$$ of the time. If the expert diagnosis is negative, then the patient does not receive treatment.
+We also assume that experts do not make diagnostic errors, but an expert diagnosis may be unknown. If an expert diagnosis is positive, then the patient receives treatment. If the expert diagnosis is unknown, then the patient receives another expert screening, after which the patient receives treatment a fraction $$\alpha$$ of the time. If the expert diagnosis is negative, then the patient does not receive treatment.
 
-Let $$n_{\text{total}}$$ be the total number of subjects, where $$n_{\text{P}}$$, $$n_{\text{U}}$$, and $$n_{\text{N}}$$ are the numbers of positive (present murmur), unknown, and negative (absent murmur) cases, respectively:
+Let $$n_{\text{total}}$$ be the total number of subjects, where $$n_{\text{P}}$$, $$n_{\text{U}}$$, and $$n_{\text{N}}$$ are the numbers of positive (present murmur), unknown, and negative (absent murmur) cases, respectively (considered as ground truth):
 
 - $$n_{\text{total}} = n_{\text{P}} + n_{\text{U}} + n_{\text{N}}$$.
 
@@ -216,23 +218,23 @@ The following table provides a [confusion matrix](#conf-mat) for the numbers of 
             <th>Negative</th>
         </tr>
         <tr>
-            <td rowspan=3>Classifier</td>
-             <td>Positive</td>
-         <td>n<sub>TP</sub> </td>
-         <td>n<sub>FPU</sub></td>
-         <td>n<sub>FP</sub>  </td>
+            <td rowspan=3><b>Classifier</b></td>
+             <td><b>Positive</b></td>
+         <td><i>n</i><sub>TP</sub> </td>
+         <td><i>n</i><sub>FPU</sub></td>
+         <td><i>n</i><sub>FP</sub>  </td>
            </tr>
         <tr>
-            <td>Unknown</td>
-         <td>n<sub>FUP</sub></td>
-         <td>n<sub>TU</sub> </td>
-         <td>n<sub>FUN</sub></td>
+            <td><b>Unknown</b></td>
+         <td><i>n</i><sub>FUP</sub></td>
+         <td><i>n</i><sub>TU</sub> </td>
+         <td><i>n</i><sub>FUN</sub></td>
         </tr>
         <tr>
-            <td>Negative</td>
-         <td>n<sub>FN</sub> </td>
-         <td>n<sub>FNU</sub></td>
-         <td>n<sub>TN</sub></td>
+            <td><b>Negative</b></td>
+         <td><i>n</i><sub>FN</sub> </td>
+         <td><i>n</i><sub>FNU</sub></td>
+         <td><i>n</i><sub>TN</sub></td>
         </tr>
        </tbody>
 </table>
@@ -277,7 +279,7 @@ Given multiple algorithms, the algorithm with the smallest value $$c_1$$ wins as
 
 We are starting this year's Challenge with this [scoring metric](https://github.com/physionetchallenges/evaluation-2022) and welcome [feedback](https://groups.google.com/g/physionet-challenges/).
 
-The [leaderboard](/leaderboard/) provides the scores of successful submissions on the hidden validation data.
+The [leaderboard](leaderboard) provides the scores of successful submissions on the hidden validation data.
 
 ## <a name="rules-and-deadlines"></a> Challenge Rules and Deadlines
 
@@ -297,7 +299,7 @@ For these reasons, we strongly suggest that you start submitting entries at leas
 
 ### <a name="deadlines"></a> Key dates/deadlines
 
-|                 |    Start         | End              | Submissions            |
+|                 | Start            | End              | Submissions            |
 |-----------------|------------------|------------------|------------------------|
 |Unofficial phase | 1 February 2022  | 8 April 2022     | 1-5 scored entries (*) |
 |Hiatus           | 9 April 2022     | 30 April 2022    | N/A                    |
@@ -324,7 +326,7 @@ To be eligible for the open-source award, you must do all the following:
 3. [Submit an abstract to CinC](http://www.cinc.org/information-for-computing-in-cardiology-authors/) by the abstract submission deadline. Include your team name and score from the unofficial phase in your abstract. Please select 'PhysioNet/CinC Challenge' as the topic of your abstract so that it can be identified easily by the abstract review committee. __Please__ read ["Advice on Writing an Abstract"](#abstracts) for important information on writing a successful abstract.
 4. Submit at least one open-source entry that can be scored during the official phase.
 5. [Submit a full 4-page paper](http://www.cinc.org/information-for-computing-in-cardiology-authors/) on your work to CinC by the above preprint deadline.
-6. One of your team members must attend [CinC 2022](http://www.cinc2022.org/) to present your work either orally or as a poster (depending on your abstract acceptance). If you have a poster, then you must stand by it to defend your work. No shows (oral or poster) will be disqualified. One of your team members must also attend the closing ceremony to collect your prize. No substitutes will be allowed. Remote attendance may be allowed depending on the policies of the conference and the state of the pandemic.
+6. One of your team members must attend [CinC 2022](http://www.cinc2022.org/) to present your work either orally or as a poster (depending on your abstract acceptance). If you have a poster, then you must stand by it to defend your work. No-shows (oral or poster) will be disqualified. One of your team members must also attend the closing ceremony to collect your prize. No substitutes will be allowed. Remote attendance may be allowed depending on the policies of the conference and the state of the pandemic.
 7. [Submit a full 4-page paper](http://www.cinc.org/information-for-computing-in-cardiology-authors/) on your work to CinC by the above final paper deadline. Please note that we expect the abstract to change significantly both in terms of results and methods. You may also update your title with the caveat that it must not be substantially similar to the title of the competition or contain the words 'physionet', 'challenge', or 'competition'.
 
 You must not submit an analysis of this year's Challenge data to other conferences or journals until after CinC 2022 so that we can discuss the Challenge in a single forum. If we discover evidence that you have submitted elsewhere before the end of CinC 2022, then you will be disqualified and de-ranked on the website, banned from future Challenges, and the journal/conference will be contacted to request your article be withdrawn for contravention of the terms of use.
