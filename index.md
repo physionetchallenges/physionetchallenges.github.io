@@ -6,12 +6,15 @@ layout: default
 
 For the past 23 years, [PhysioNet](https://physionet.org) and [Computing in Cardiology](http://www.cinc.org/) have co-hosted a series of annual challenges, now called the [George B. Moody PhysioNet Challenges](/about/), to tackle clinically interesting questions that are either unsolved or not well-solved.
 
-The George B. Moody PhysioNet Challenge 2022 will be announced soon!
+The [George B. Moody PhysioNet Challenge 2022](/2022/) invites participants to identify murmurs in heart sound recordings collected from multiple auscultation locations.
+
+We ask participants to design and implement a working, open-source algorithm that, based only on the provided recordings and routine demographic data, can determine whether any murmurs are audible from a patient's recordings. We have designed a scoring function that reflects the burden of algorithmic pre-screening, expert screening, treatment, and missed diagnoses. The team with the lowest score wins the Challenge.
 
 Please check the below links for information about [current](#current) and [past](#past) Challenges, including [important details](/faq/) about scoring and test data for previous Challenges.
 
 ## <a name="current"></a> Current Challenge
-- To be announced soon!
+- __2022__: [Heart Murmur Detection from Phonocardiogram Recordings](/2022/)  
+ Challenge ongoing
 
 ## <a name="past"></a> Past Challenges
 - __2021__: [Will Two Do? Varying Dimensions in Electrocardiography](/2021/)  
