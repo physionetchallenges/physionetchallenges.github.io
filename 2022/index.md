@@ -256,7 +256,7 @@ Let $$c_\text{algorithm}$$ be the cost of a single algorithmic prescreening, let
 Let
 
 $$
-c_0 = c_{\text{expert}_1} \cdot n_\text{total} + c_{\text{expert}_2} \cdot n_\text{U}+ c_\text{treatment} \cdot (n_\text{P} + \alpha n_\text{U})
+c_0 = c_{\text{expert}_1} \cdot n_\text{total} + c_{\text{expert}_2} \cdot n_\text{U} + c_\text{treatment} \cdot (n_\text{P} + \alpha n_\text{U})
 $$
 
 be the total cost of only an expert for screening ***without algorithmic prescreening***, and let
@@ -265,22 +265,29 @@ $$
 \begin{align*}
 c_1  &=  c_\text{algorithm} \cdot n_\text{total} \\
  &+ c_{\text{expert}_1} \cdot (n_\text{PP} + n_\text{PU} + n_\text{PN} + n_\text{UP} + n_\text{UU} + n_\text{UN}) \\
-  &+ c_{\text{expert}_2} \cdot (n_\text{PU} + n_\text{UU}) \\
+ &+ c_{\text{expert}_2} \cdot (n_\text{PU} + n_\text{UU}) \\
  &+ c_\text{treatment} \cdot (n_\text{PP} + \alpha n_\text{PU} + n_\text{UP} + \alpha n_\text{UU})\\
  &+ c_\text{error} \cdot (n_\text{NP}+\alpha n_\text{NU})
 \end{align*}
 $$
 
-be the total cost of using an expert for screening ***with algorithmic prescreening***. The **mean** cost, i.e., the total cost divided by the number of patients, is the cost function for an algorithm.
+be the total cost of using an expert for screening ***with algorithmic prescreening***.
 
-<!--{: style="text-align:center"}
-![flowchart](flowchart.png)-->
+**The mean cost $$c_1/n_\text{total}$$, i.e., the total cost divided by the number of patients, is the Challenge cost function.**
 
 Given multiple algorithms, the algorithm with the smallest value $$c_1$$ wins as long as $$c_1 < c_0$$, i.e., algorithmic prescreening reduces costs.
 
-We are starting this year's Challenge with this [scoring metric](https://github.com/physionetchallenges/evaluation-2022) and welcome [feedback](https://groups.google.com/g/physionet-challenges/).
+The below flowchart illustrates the decision making process and cost $$c_0$$ associated with conventional screening:
 
-The [leaderboard](leaderboard) provides the scores of successful submissions on the hidden validation data.
+{: style="text-align:center"}
+![flowchart](conventional_screening.svg)
+
+The below flowchart illustrates the decision making process and cost $$c_1$$ associated with algorithmic prescreening:
+
+{: style="text-align:center"}
+![flowchart](algorithmic_prescreening.svg)
+
+We are starting this year's Challenge with this [scoring metric](https://github.com/physionetchallenges/evaluation-2022) and welcome [feedback](https://groups.google.com/g/physionet-challenges/). The [leaderboard](leaderboard) provides the Challenge scoring metric for successful submissions on the hidden validation data.
 
 ## <a name="rules-and-deadlines"></a> Challenge Rules and Deadlines
 
