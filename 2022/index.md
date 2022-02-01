@@ -111,7 +111,7 @@ The filenames for the audio data, the header file, the segmentation annotation, 
 - MV corresponds to the mitral valve point;
 - Phc corresponds to any other auscultation Location.
 
-If more than one recording exists per auscultation location, an integer index follows the auscultation location code in the file name, i.e, `ABCDE_XY_n.wav`, `ABCDE_XY_n.hea`, and `ABCDE_XY_n.tsv`, where `n` is an integer (1, 2, ...). Accordingly, each audio file has its own header and annotation segmentation file, but the subject description file `ABCDE.txt` is shared between all auscultation recordings of the same subject ID. These audio recordings were recorded sequentially, not simultaneously, and therefore may have different lengths. The sequence of signal aquisition locations is unknown and is not necessarily consisent across different subjects. 
+If more than one recording exists per auscultation location, an integer index follows the auscultation location code in the file name, i.e, `ABCDE_XY_n.wav`, `ABCDE_XY_n.hea`, and `ABCDE_XY_n.tsv`, where `n` is an integer (1, 2, ...). Accordingly, each audio file has its own header and annotation segmentation file, but the subject description file `ABCDE.txt` is shared between all auscultation recordings of the same subject ID. These audio recordings were recorded sequentially, not simultaneously, and therefore may have different lengths. The sequence of signal aquisition locations is unknown and is not necessarily consisent across different subjects.
 
 The subject description file has the following format:
 
@@ -157,8 +157,7 @@ The segmentation annotation file (with `.tsv` extension and in plain text format
 
 ### <a name="data-access"></a> Data Access
 
-The training data of the 2022 Challenge can be downloaded from [PhysioNet](https://physionet.org/content/circor-heart-sound/). You can also download it directly using 
-this [link](https://physionet.org/static/published-projects/circor-heart-sound/the-circor-digiscope-phonocardiogram-dataset-1.0.1.zip) or the following command:
+The training data of the 2022 Challenge can be downloaded from [PhysioNet](https://physionet.org/content/circor-heart-sound/). You can also download it directly using this [link](https://physionet.org/static/published-projects/circor-heart-sound/the-circor-digiscope-phonocardiogram-dataset-1.0.1.zip) or the following command:
 
     wget -r -N -c -np https://physionet.org/files/circor-heart-sound/1.0.1/
 
@@ -220,35 +219,36 @@ The following table provides a [confusion matrix](#conf-mat) for the numbers of 
         <tr>
             <td rowspan=3><b>Classifier</b></td>
              <td><b>Positive</b></td>
-         <td><i>n</i><sub>TP</sub> </td>
-         <td><i>n</i><sub>FPU</sub></td>
-         <td><i>n</i><sub>FP</sub>  </td>
+         <td><i>n</i><sub>PP</sub> </td>
+         <td><i>n</i><sub>PU</sub></td>
+         <td><i>n</i><sub>PN</sub>  </td>
            </tr>
         <tr>
             <td><b>Unknown</b></td>
-         <td><i>n</i><sub>FUP</sub></td>
-         <td><i>n</i><sub>TU</sub> </td>
-         <td><i>n</i><sub>FUN</sub></td>
+         <td><i>n</i><sub>UP</sub></td>
+         <td><i>n</i><sub>UU</sub> </td>
+         <td><i>n</i><sub>UN</sub></td>
         </tr>
         <tr>
             <td><b>Negative</b></td>
-         <td><i>n</i><sub>FN</sub> </td>
-         <td><i>n</i><sub>FNU</sub></td>
-         <td><i>n</i><sub>TN</sub></td>
+         <td><i>n</i><sub>NP</sub> </td>
+         <td><i>n</i><sub>NU</sub></td>
+         <td><i>n</i><sub>NN</sub></td>
         </tr>
        </tbody>
 </table>
 
 The columns marginals/sums of this matrix are $$n_{\text{P}}$$, $$n_{\text{U}}$$, and $$n_{\text{N}}$$, respectively:
 
-- $$n_{\text{P}} = n_{\text{TP}} + n_{\text{FUP}} + n_{\text{FN}}$$,
-- $$n_{\text{U}} = n_{\text{FPU}} + n_{\text{TU}} + n_{\text{FNU}}$$,
-- $$n_{\text{N}} = n_{\text{FP}} + n_{\text{FUN}} + n_{\text{TN}}$$.
+- $$n_{\text{P}} = n_{\text{PP}} + n_{\text{UP}} + n_{\text{NP}}$$,
+- $$n_{\text{U}} = n_{\text{PU}} + n_{\text{UU}} + n_{\text{NU}}$$,
+- $$n_{\text{N}} = n_{\text{PN}} + n_{\text{UN}} + n_{\text{NN}}$$.
 
-Let $$c_\text{algorithm}$$ be the cost of a single algorithmic prescreening, $$c_\text{expert}$$ be the cost of a single expert screening, and $$c_\text{treatment}$$ be the cost of a single treatment, and let $$c_\text{error}$$ be the cost of a single diagnostic error, i.e., the cost of delayed treatment or no treatment for a heart murmur because of a late diagnosis. We can assume that these costs are averaged over many subjects and define them as follows:
+Let $$c_\text{algorithm}$$ be the cost of a single algorithmic prescreening, let $$c_{\text{expert}_1}$$ be the cost of a single expert screening, let $$c_{\text{expert}_2}$$ be the cost of a second expert screening, let $$c_\text{treatment}$$ be the cost of a single treatment, and let $$c_\text{error}$$ be the cost of a single diagnostic error, i.e., the cost of delayed treatment or no treatment for a heart murmur because of a late diagnosis. We assume that these costs are averaged over many subjects and define them as follows:
 
 - $$c_\text{algorithm} = 1$$,
-- $$c_\text{expert} = 250$$,
+- $$c_{\text{expert}_1} = 250$$,
+- $$c_{\text{expert}_2} = 500$$,
 - $$c_\text{treatment} = 1000$$,
 - $$c_\text{error} = 10000$$,
 - and $$\alpha = 0.5$$.
@@ -256,7 +256,7 @@ Let $$c_\text{algorithm}$$ be the cost of a single algorithmic prescreening, $$c
 Let
 
 $$
-c_0 = c_\text{expert} \cdot (n_\text{total} + n_\text{U}) + c_\text{treatment} \cdot (n_\text{P} + \alpha n_\text{U})
+c_0 = c_{\text{expert}_1} \cdot n_\text{total} + c_{\text{expert}_2} \cdot n_\text{U}+ c_\text{treatment} \cdot (n_\text{P} + \alpha n_\text{U})
 $$
 
 be the total cost of only an expert for screening ***without algorithmic prescreening***, and let
@@ -264,9 +264,10 @@ be the total cost of only an expert for screening ***without algorithmic prescre
 $$
 \begin{align*}
 c_1  &=  c_\text{algorithm} \cdot n_\text{total} \\
- &+ c_\text{expert} \cdot (n_\text{TP} + 2 n_\text{FPU} + n_\text{FP} + n_\text{FUP} + 2 n_\text{TU} + n_\text{FUN}) \\
- &+ c_\text{treatment} \cdot (n_\text{TP} + \alpha n_\text{FPU} + n_\text{FUP} + \alpha n_\text{TU})\\
- &+ c_\text{error} \cdot (n_\text{FN}+\alpha n_\text{FNU})
+ &+ c_{\text{expert}_1} \cdot (n_\text{PP} + n_\text{PU} + n_\text{PN} + n_\text{UP} + n_\text{UU} + n_\text{UN}) \\
+  &+ c_{\text{expert}_2} \cdot (n_\text{PU} + n_\text{UU}) \\
+ &+ c_\text{treatment} \cdot (n_\text{PP} + \alpha n_\text{PU} + n_\text{UP} + \alpha n_\text{UU})\\
+ &+ c_\text{error} \cdot (n_\text{NP}+\alpha n_\text{NU})
 \end{align*}
 $$
 
@@ -275,7 +276,7 @@ be the total cost of using an expert for screening ***with algorithmic prescreen
 <!--{: style="text-align:center"}
 ![flowchart](flowchart.png)-->
 
-Given multiple algorithms, the algorithm with the smallest value $$c_1$$ wins as long as $$c_1 < c_0$$, i.e., algorithmic prescreening reduces costs. 
+Given multiple algorithms, the algorithm with the smallest value $$c_1$$ wins as long as $$c_1 < c_0$$, i.e., algorithmic prescreening reduces costs.
 
 We are starting this year's Challenge with this [scoring metric](https://github.com/physionetchallenges/evaluation-2022) and welcome [feedback](https://groups.google.com/g/physionet-challenges/).
 
