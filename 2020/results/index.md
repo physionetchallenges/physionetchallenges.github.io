@@ -1,10 +1,10 @@
 # PhysioNet/CinC Challenge 2020 Results
 
 This page contains the final scores for the 2020 PhysioNet/CinC Challenge:
-1. [The official scores](https://github.com/physionetchallenges/physionetchallenges.github.io/blob/master/2020/leaderboard/results/physionet_2020_official_scores.csv)
-2. [The unofficial scores](https://github.com/physionetchallenges/physionetchallenges.github.io/blob/master/2020/leaderboard/results/physionet_2020_unofficial_scores.csv)
-3. [The metrics per database of the official entries](https://github.com/physionetchallenges/physionetchallenges.github.io/blob/master/2020/leaderboard/results/physionet_2020_metrics_perDatabase_official_entries.csv )
-4. [The per-class scoring metrics of the official entries on the validation data](https://github.com/physionetchallenges/physionetchallenges.github.io/blob/master/2020/leaderboard/results/physionet_2020_validation_metrics_by_class_official_entries.csv)
+1. [The official scores](physionet_2020_official_scores.csv)
+2. [The unofficial scores](physionet_2020_unofficial_scores.csv)
+3. [The metrics per database of the official entries](physionet_2020_metrics_perDatabase_official_entries.csv )
+4. [The per-class scoring metrics of the official entries on the validation data](physionet_2020_validation_metrics_by_class_official_entries.csv)
 
 We introduced a [new scoring metric](https://physionetchallenges.github.io/2020/#scoring) for this Challenge. We used this scoring metric to evaluate and rank the Challenge entries. We included several other metrics for reference. The area under the receiver operating characteristic (AUROC), area under the precision recall curve (AUPRC), and _F_-measure scores are the macro-average of the scores across all classes. The accuracy metric is the fraction of correctly diagnosed recordings, i.e., all classes for the recording are correct. These metrics were computed by the [evaluate_12ECG_score.py](https://github.com/physionetchallenges/evaluation-2020/blob/master/evaluate_12ECG_score.py) script. Please see the script for more details of these scores.
 
@@ -21,10 +21,10 @@ To refer to these tables in a publication, please cite [Perez Alday EA, Gu A, Sh
 In these tables, you can find the following information:
 
 1. Official entries that were scored on the validation and test data and ranked in the Challenge:
-[physionet_2020_official_scores.csv](https://github.com/physionetchallenges/physionetchallenges.github.io/blob/master/2020/leaderboard/results/physionet_2020_official_scores.csv)
+[physionet_2020_official_scores.csv](physionet_2020_official_scores.csv)
 2. Unofficial entries that were scored on the validation and test data but unranked because they did not satisfy all of the [rules](https://physionetchallenges.github.io/2020/#rules-and-deadlines) or were unsuccessful on one or more of the test sets:
-[physionet_2020_unofficial_scores.csv](https://github.com/physionetchallenges/physionetchallenges.github.io/blob/master/2020/leaderboard/results/physionet_2020_unofficial_scores.csv)
+[physionet_2020_unofficial_scores.csv](physionet_2020_unofficial_scores.csv)
 3. Challenge and other scoring metrics on all official entries broken with scores for each database in the validation and test data: 
-[physionet_2020_metrics_perDatabase_official_entries.csv](https://github.com/physionetchallenges/physionetchallenges.github.io/blob/master/2020/leaderboard/results/physionet_2020_metrics_perDatabase_official_entries.csv )
+[physionet_2020_metrics_perDatabase_official_entries.csv](physionet_2020_metrics_perDatabase_official_entries.csv )
 4. Per-class scoring metrics on the validation data:
-[physionet_2020_validation_metrics_by_class_official_entries.csv](https://github.com/physionetchallenges/physionetchallenges.github.io/blob/master/2020/leaderboard/results/physionet_2020_validation_metrics_by_class_official_entries.csv)
+[physionet_2020_validation_metrics_by_class_official_entries.csv](physionet_2020_validation_metrics_by_class_official_entries.csv)
