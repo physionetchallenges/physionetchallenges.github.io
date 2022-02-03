@@ -50,13 +50,13 @@ The tag `Systolic murmur pitch` describes the pressure gradient felt in the hear
 - Medium
 - Low
 
-The tag `Systolic murmur grading` describes the murmur's intensity grade feature in the systolic period according to the Levine scale [[10](../#Freeman1933)]. This feature is highly correlated with the severity of the murmur. The higher the grading, the worse the patient prognostic and outcome. Since not all subjects have auscultation sounds recorded from all the four prominent auscultation locations, the approach adopted by the expert annotator to provide grading annotations is as follows:
+The tag `Systolic murmur grading` describes the murmur's intensity grade feature in the systolic period according to the Levine scale [[12](../#Freeman1933)]. This feature is highly correlated with the severity of the murmur. The higher the grading, the worse the patient prognostic and outcome. Since not all subjects have auscultation sounds recorded from all the four prominent auscultation locations, the approach adopted by the expert annotator to provide grading annotations is as follows:
 
 - Grade I/VI: if barely audible and not heard/present or not recorded in all auscultation locations.
 - Grade II/VI: if soft, but easily heard in all auscultation locations.
 - Grade III/VI: if moderately loud or loud. In this dataset, grade III/VI denotes all grade III/VI and above (IV/VI, V/VI, and VI/VI).
 
-Accordingly, the grade annotations can diverge from the original definition of murmur grading, when applied to cases for which not all the auscultation locations are available. In such cases, murmurs were classified by default as grade I/VI.  Moreover, the cases classified as grade III/VI actually include murmurs that could potentially be of grade III/VI or higher, since discrimination among grades III/VI, IV/VI, V/VI, and VI/VI is associated with palpable murmurs, also known as thrills [[12](../#Keren2005)], which can only be assessed via in-person physical examination.
+Accordingly, the grade annotations can diverge from the original definition of murmur grading, when applied to cases for which not all the auscultation locations are available. In such cases, murmurs were classified by default as grade I/VI.  Moreover, the cases classified as grade III/VI actually include murmurs that could potentially be of grade III/VI or higher, since discrimination among grades III/VI, IV/VI, V/VI, and VI/VI is associated with palpable murmurs, also known as thrills [[13](../#Keren2005)], which can only be assessed via in-person physical examination.
 
 The tag `Systolic murmur quality` describes the murmur's quality feature from waves observed in the systolic period. It relates to the presence of harmonics and the overtones. The possible values are:
 
@@ -94,7 +94,7 @@ The tag `Diastolic murmur quality` describes the murmur's quality feature from w
 - Blowing
 - Harsh
 
-The tag `Age` provides the age category of the subject and according to the National Institute of Child Health and Human Development (NICHD) pediatric terminology [[13](../#Williams2012)]. The possible values of this variable are:
+The tag `Age` provides the age category of the subject and according to the National Institute of Child Health and Human Development (NICHD) pediatric terminology [[14](../#Williams2012)]. The possible values of this variable are:
 
 - Neonate: birth to 27 days old
 - Infant: 28 days old to 1 year old
@@ -121,7 +121,7 @@ The tag `Additional ID` provides the other identifier used by subjects who atten
 
 Note that for those subjects who attended both screening campaigns, the data from the same subject (regardless of the screening campaign) is provided only in the training, validation, or test set.
 
-The acquired audio samples were automatically segmented using the three algorithms proposed in [[14](../#Springer2016a)], [[15](../#Oliveira2019)], and [[16](../#Renna2019)]. These algorithms were only used to detect and identify the fundamental heart sounds (S1 and S2 sounds) and their corresponding boundaries. Two cardiac physiologists inspected the algorithms’ outputs on mutually exclusive data (as each expert screened only one of the two campaigns). Accordingly, each expert analyzed the automated annotations and whenever the annotator disagreed with the suggested automatic annotations, a manual annotation was required. In such cases, the annotator was instructed to annotate at least five complete heart cycles. Segmentation labels were retained for sections of heart sound recordings that were considered of high quality and representative by the cardiac physiologists. The remainder of the signal may include both low and high quality data. In this way, the users of the dataset may choose to use (or not to use) the suggested time windows, where the signal quality was manually inspected, and the automated labels were validated.
+The acquired audio samples were automatically segmented using the three algorithms proposed in [[15](../#Springer2016a)], [[16](../#Oliveira2019)], and [[17](../#Renna2019)]. These algorithms were only used to detect and identify the fundamental heart sounds (S1 and S2 sounds) and their corresponding boundaries. Two cardiac physiologists inspected the algorithms’ outputs on mutually exclusive data (as each expert screened only one of the two campaigns). Accordingly, each expert analyzed the automated annotations and whenever the annotator disagreed with the suggested automatic annotations, a manual annotation was required. In such cases, the annotator was instructed to annotate at least five complete heart cycles. Segmentation labels were retained for sections of heart sound recordings that were considered of high quality and representative by the cardiac physiologists. The remainder of the signal may include both low and high quality data. In this way, the users of the dataset may choose to use (or not to use) the suggested time windows, where the signal quality was manually inspected, and the automated labels were validated.
 
 ---
 
