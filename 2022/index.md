@@ -63,7 +63,7 @@ To create the training, validation, and test sets, the original dataset was part
 
 The public training set contains heart sound recordings, routine demographic information, labels (presence, absence, or unknown murmurs), annotations of the murmur characteristics (location, timing, shape, pitch, quality, and grade), and heart sound segmentations. The private validation and test sets only contain heart sound recordings and demographic information.
 
-The following [Data Table](#data-table) shows the available information in the training, validation, and test sets of the challenge data. A detailed description of this table can be found in the [Data Description](data).
+The following [Data Table](#data-table) shows the available information in the training, validation, and test sets of the Challenge data. A detailed description of this table can be found in the [Data Description](data).
 
 |        <a name="data-table"></a>Variable   |    Short description (format)    | Possible values       | Training    |Validation|Test|
 |-----------------|------------------|------------------|------------------------|------|------|
