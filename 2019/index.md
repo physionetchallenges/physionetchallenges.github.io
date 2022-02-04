@@ -364,7 +364,13 @@ The organizers would like to thank the sponsors of the 2019 PhysioNet Challenge.
 
 This year's challenge is co-sponsored by the Gordon and Betty Moore Foundation, MathWorks, and Google.
 
-![](/files/challenge-2019/1.0.0/img/logo_moore_foundation.png) ![](/files/challenge-2019/1.0.0/img/logo_mathworks.png) ![](/files/challenge-2019/1.0.0/img/logo_google_cloud.png)
+{: style="text-align:center"}
+![Google Cloud](logo_google_cloud.png){:height="40px"}
+![MathWorks](logo_mathworks.png){:height="40px"}&nbsp;&nbsp;&nbsp;
+![Moore Foundation](logo_moore_foundation.png){:height="40px"}
+
+{: style="text-align:center"}
+![PhysioNet-CinC](../assets/img/physionet-cinc.gif){:height="120px"}
 
 ### Conflicts of Interest
 
