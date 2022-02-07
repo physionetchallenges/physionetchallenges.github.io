@@ -186,10 +186,10 @@ Your final algorithm will be graded for its binary classification performance us
 We first define a score $$U(s,t)$$  for each prediction, i.e., for each patient _s_  and each time interval _t_ (each line in the data file):
 
 $$
-U(s, t) = U_{TP}(s,t), positive prediction at time _t_ for sepsis patient _s_, \\ 
+U(s, t) = \left\{ {U_{TP}(s,t), positive prediction at time _t_ for sepsis patient _s_,\\ 
  U_{FN}(s,t), negative prediction at time _t_ for sepsis patient _s_, \\
  U_{FP}(s,t), positive prediction at time _t_ for non-sepsis patient _s_, \\
- U_{TN}(s,t), negative prediction at time _t_ for non-sepsis patient _s_.
+ U_{TN}(s,t), negative prediction at time _t_ for non-sepsis patient _s_.}
 $$
 
 The following figures illustrate the utility function for a sepsis patient (upper plot) with $$t_{sepsis}= 48$$ as an example, and a non-sepsis patient (lower plot).
@@ -200,21 +200,18 @@ The following figures illustrate the utility function for a sepsis patient (uppe
 
 This utility function rewards or penalizes classifiers using their predictions on each patient:
 
-*   For patients that eventually have sepsis (i.e., with at least one `SepsisLabel` entry of 1), we reward classifiers that predict sepsis between 12 hours before and 3 hours after $$t_{sepsis}$$ , where the maximum reward is a parameter (1.0). We penalize classifiers that do not predict sepsis or predict sepsis more than 12 hours before t sepsis t\_\\text{sepsis} , where the maximum penalty for very early detection is a parameter (0.05) and the maximum penalty for late detection is also a parameter (-2.0).
+*   For patients that eventually have sepsis (i.e., with at least one `SepsisLabel` entry of 1), we reward classifiers that predict sepsis between 12 hours before and 3 hours after $$t_{sepsis}$$ , where the maximum reward is a parameter (1.0). We penalize classifiers that do not predict sepsis or predict sepsis more than 12 hours before $$t_{sepsis}$$ , where the maximum penalty for very early detection is a parameter (0.05) and the maximum penalty for late detection is also a parameter (-2.0).
 *   For patients that do **not** eventually have sepsis (i.e., all `SepsisLabel` entries of 0), we penalize classifiers that predict sepsis, where the maximum penalty for false alarms is a parameter (0.05; equal to the very early detection penalty). We neither reward nor penalize those that do not predict sepsis.
 
-We then compute a score for a classifier by summing $$U(s,t)$$<!--
-  over each prediction, i.e., over each patient _s_  and each time interval _t_ (each line in the data file):
+We then compute a score for a classifier by summing $$U(s,t)$$ over each prediction, i.e., over each patient _s_  and each time interval _t_ (each line in the data file):
 
-<!--
-U total \= ∑ s ∈ S ∑ t ∈ T ( s ) U ( s , t ) U\_\\text{total} = \\sum\_{s \\in S} \\sum\_{t \\in T(s)} U(s, t)
+$$ U_{total}=\sum_{s \in S} \sum_{t \in T(s)} U(s,t) $$
 
 To improve interpretability, we normalized the above classifier score so that the optimal classifier (highest possible score) receives a normalized score of 1 and that a completely inactive classifier (no positive predictions) receives a normalized score of 0:
 
-U normalized \= U total − U no predictions U optimal − U no predictions U\_\\text{normalized} = \\frac{U\_\\text{total} - U\_\\text{no predictions}}{U\_\\text{optimal} - U\_\\text{no predictions}}
+$$ U_{normalized} = \frac{U_{total} - U_{no predictions}}{U_{optimal} - U_{no predictions}} $$
 
-Each classifier receives a U normalized U\_\\text{normalized}  score, and the classifier with the highest U normalized U\_\\text{normalized}  score wins.
--->
+Each classifier receives a $$ U_{normalized} $$ score, and the classifier with the highest $$ U_{normalized} $$ score wins.
 
 A Python implementation of the scoring metric is available [here](https://github.com/physionetchallenges).
 
@@ -377,3 +374,18 @@ This year's challenge is co-sponsored by the Gordon and Betty Moore Foundation, 
 ### Conflicts of Interest
 
 The authors have no conflicts of interest.
+
+### Files
+
+Total uncompressed size: 327.3 KB.
+
+##### Access the files
+
+*   Access the files using the Google Cloud Storage Browser [here](https://console.cloud.google.com/storage/browser/challenge-2019-1.0.0.physionet.org/). Login with a Google account is required.
+*   Access the data using the Google Cloud command line tools (please refer to the [gsutil](https://cloud.google.com/storage/docs/gsutil_install) documentation for guidance):
+    
+    gsutil -m -u YOUR\_PROJECT\_ID cp -r gs://challenge-2019-1.0.0.physionet.org DESTINATION
+    
+*   Download the files using your terminal:
+    
+    wget -r -N -c -np https://physionet.org/files/challenge-2019/1.0.0/
