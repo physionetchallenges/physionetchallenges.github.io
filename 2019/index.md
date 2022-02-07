@@ -31,7 +31,6 @@ __April 25, 2019:__ Now accepting Challenge submissions:
    When ready, please submit your entry [here](https://forms.gle/ARfUYv5Vpsa24EaB7).
 
 __April 22, 2019:__ Official phase of the 20th PhysioNet/Computing in Cardiology Challenge is now open.
-
   We have made several changes from the unofficial phase of the Challenge (see below). We invite comments and questions about these changes. We plan to accept submissions again on Thursday, 25 April at 12:01 am GMT.
   We will only use our new cloud submission system for the official phase of the Challenge. See the updated instructions ([here](https://docs.google.com/document/d/1-YCLmie2_1gM4FrpBaSfkhYt8xpYghs8l2vbPemODkw/edit)) for details. The past submission system is no longer available.
   We ask participants to write causal algorithms that make predictions using current and past (but not future) information. See the [submission instructions](/content/challenge-2019/1.0.0/#submitting) and sample prediction code ([here](https://github.com/physionetchallenges)) for details.
@@ -111,7 +110,7 @@ Table 1: Columns in each training data file.
 | DBP           | Diastolic BP (mm Hg)                    | 
 | Resp          | Respiration rate (breaths per minute)   | 
 | EtCO2         | End tidal carbon dioxide (mm Hg)        |
-|__Laboratory values__ |(columns 9-34)           |
+|__Laboratory values__ | __(columns 9-34)__          |
 | BaseExcess    | Measure of excess bicarbonate (mmol/L)  |
 | HCO3          | Bicarbonate (mmol/L)                    |
 | FiO2          | Fraction of inspired oxygen (%)         |
@@ -138,14 +137,14 @@ Table 1: Columns in each training data file.
 | WBC           | Leukocyte count (count\*10^3/µL)        |
 | Fibrinogen    | (mg/dL)                                 |
 | Platelets     | (count\*10^3/µL)                        |
-| __Demographics__     |(columns 35-40)               |
+| __Demographics__     | __(columns 35-40)__               |
 | Age           | Years (100 for patients 90 or above)    |
 | Gender        | Female (0) or Male (1)                  |
 | Unit1         | Administrative identifier for ICU unit (MICU)  |
 | Unit2         | Administrative identifier for ICU unit (SICU)  |
 | HospAdmTime   | Hours between hospital admit and ICU admit |
 | ICULOS        | ICU length-of-stay (hours since ICU admit) |
-| __Outcome__               |(column 41)            |
+| __Outcome__               | __(column 41)__            |
 | SepsisLabel   | For sepsis patients, `SepsisLabel` is 1 if $$t ≥ t_{sepsis} − 6$$ and 0 if $$t < t_{sepsis} − 6$$. For non-sepsis patients, `SepsisLabel` is 0. |
 
 ## <a name="participation"></a>Participation
@@ -186,11 +185,13 @@ Your final algorithm will be graded for its binary classification performance us
 
 We first define a score $$U(s,t)$$  for each prediction, i.e., for each patient _s_  and each time interval _t_ (each line in the data file):
 
-$$U(s, t) =
-\Bigg\{ U_{TP}(s,t), & \text{positive prediction at time _t_ for sepsis patient _s_,}\\
-        U_{FN}(s,t), & \text{negative prediction at time _t_ for sepsis patient _s_,}\\
-        U_{FP}(s,t), & \text{positive prediction at time _t_ for non-sepsis patient _s_,}\\
-        U_{TN}(s,t), & \text{negative prediction at time _t_ for non-sepsis patient _s_.}$$
+$$
+U(s, t) =
+\Bigg\{ U_{TP}(s,t), positive prediction at time _t_ for sepsis patient _s_, \\
+        U_{FN}(s,t), negative prediction at time _t_ for sepsis patient _s_, \\
+        U_{FP}(s,t), positive prediction at time _t_ for non-sepsis patient _s_, \\
+        U_{TN}(s,t), negative prediction at time _t_ for non-sepsis patient _s_.
+$$
 
 The following figures illustrate the utility function for a sepsis patient (upper plot) with $$t_{sepsis}= 48$$ as an example, and a non-sepsis patient (lower plot).
 
