@@ -12,9 +12,9 @@ __November 4, 2019:__ The [official paper describing the 2019 PhysioNet Challeng
 
 __September 17, 2019:__ Official results for the 2019 PhysioNet [Challenge](/results/challenge.tsv) and [Hackathon](/results/hackathon.tsv) are now available.
 
-__July 8, 2019:__ Thanks to our sponsors, a pre-conference hackathon at Computing in Cardiology 2019 (with prize(s)) will take place on Sunday 8th September in Singapore. Registration is required. Rules and more information can be found [here](#hackathon) .
+__July 8, 2019:__ Thanks to our sponsors, a pre-conference hackathon at Computing in Cardiology 2019 (with prize(s)) will take place on Sunday 8th September in Singapore. Registration is required. Rules and more information can be found [here](#hackathon).
 
-__June 23, 2019:__ Two "wild card" teams were approved for inclusion in the Challenge. We are looking forward to meeting them in Singapore!
+__June 23, 2019:__ Two "wild card" teams were approved for inclusion in the Challenge. We are looking forward to meeting them in Singapore!
 
 __May 28, 2019:__ We are accepting requests for Google Cloud Credits ($500 per eligible team). Requests are due by 29 May, 2019. Please see [here](/content/challenge-2019/1.0.0/#google-cloud-credits) for more information on how to apply for them. Requests will be processed in order and sent on to Google. We cannot guarantee you will receive them, especially later in the competition.
 
@@ -82,7 +82,7 @@ Data used in the competition is sourced from ICU patients in three separate hosp
 
 The following time points are defined for each patient:
 
-$$t_{suspicion}$$
+$$t_\text{suspicion}$$
 
 1\. Clinical suspicion of infection identified as the earlier timestamp of IV antibiotics and blood cultures within a specified duration.
 
@@ -90,13 +90,13 @@ $$t_{suspicion}$$
 
 3\. Antibiotics must have been administered for at least 72 consecutive hours to be considered.
 
-$$t_{SOFA}$$
+$$t_\text{SOFA}$$
 
 The occurrence of end organ damage as identified by a two-point deterioration in SOFA score within a 24-hour period.
 
-$$t_{sepsis}$$
+$$t_\text{sepsis}$$
 
-The onset time of sepsis is the earlier of $$t_{suspicion}$$ and $$t_{SOFA}$$ as long as $$t_{SOFA}$$ occurs no more than 24 hours before or 12 hours after $$t_{suspicion}$$; otherwise, the patient is not marked as a sepsis patient. Specifically, if  $$t_{suspicion}$$ − 24 ≤ $$t_{SOFA}$$ ≤ $$t_{suspicion}$$ + 12, then $$t_{sepsis}$$ \= min ($$t_{suspicion}$$, $$t_{SOFA}$$).
+The onset time of sepsis is the earlier of $$t_{suspicion}$$ and $$t_\text{SOFA}$$ as long as $$t_\text{SOFA}$$ occurs no more than 24 hours before or 12 hours after $$t_\text{suspicion}$$; otherwise, the patient is not marked as a sepsis patient. Specifically, if $$t_\text{suspicion}- 24 \leq t_\text{SOFA} \leq t_\text{suspicion} + 12$$, then $$t_\text{sepsis} = \min (t_\text{suspicion}, t_\text{SOFA})$$.
 
 Table 1: Columns in each training data file.
 
@@ -145,17 +145,17 @@ Table 1: Columns in each training data file.
 | HospAdmTime   | Hours between hospital admit and ICU admit |
 | ICULOS        | ICU length-of-stay (hours since ICU admit) |
 | __Outcome__               | __(column 41)__            |
-| SepsisLabel   | For sepsis patients, `SepsisLabel` is 1 if $$t ≥ t_{sepsis} − 6$$ and 0 if $$t < t_{sepsis} − 6$$. For non-sepsis patients, `SepsisLabel` is 0. |
+| SepsisLabel   | For sepsis patients, `SepsisLabel` is 1 if $$t \geq t_\text{sepsis} - 6$$ and 0 if $$t < t_\text{sepsis} - 6$$. For non-sepsis patients, `SepsisLabel` is 0. |
 
 ## <a name="participation"></a>Participation
 
-PhysioNet Challenges are open to all. Participants enter by submitting entries and receiving scores via the PhysioNet Challenge website. 
+PhysioNet Challenges are open to all. Participants enter by submitting entries and receiving scores via the PhysioNet Challenge website.
 
 ### <a name="submitting_entry"></a>Submitting Your Entry
 
 Entries should be submitted through the new cloud submission system for the official phase of the Challenge. Please see [here](https://docs.google.com/document/d/1-YCLmie2_1gM4FrpBaSfkhYt8xpYghs8l2vbPemODkw/edit) for detailed instructions.
 
-Given a table of clinical measurements (columns) over time (rows), your entry must report the risk of sepsis (a real number) and a binary sepsis prediction (0 or 1) at each hour of a patient’s clinical record using the current and past (but not future) data for the patient (see the ["#Data Description" section](##data_description)). Please note that we have shifted the sepsis labels in the training data **ahead** by six hours (see the ["Challenge Data" section](#data)), so we are effectively asking participants to predict sepsis six hours early. We will repeat this process for _k_ = 1, 2, …, _N_ hours, where _N_ is the number of hours in a given patient's recording, and for each patient in the test set. Please see the [sample prediction and evaluation code"](https://github.com/physionetchallenges/) for details.
+Given a table of clinical measurements (columns) over time (rows), your entry must report the risk of sepsis (a real number) and a binary sepsis prediction (0 or 1) at each hour of a patient's clinical record using the current and past (but not future) data for the patient (see the [Data Description section](##data_description)). Please note that we have shifted the sepsis labels in the training data **ahead** by six hours (see the [Challenge Data section](#data)), so we are effectively asking participants to predict sepsis six hours early. We will repeat this process for $$k = 1, 2, \dots, N$$ hours, where $$N$$ is the number of hours in a given patient's recording, and for each patient in the test set. Please see the [sample prediction and evaluation code"](https://github.com/physionetchallenges/) for details.
 
 ## <a name="data_description"></a>Data Description
 
@@ -183,32 +183,38 @@ Your final algorithm will be graded for its binary classification performance us
 
 ### <a name="scoring"></a>Scoring
 
-We first define a score $$U(s,t)$$  for each prediction, i.e., for each patient _s_  and each time interval _t_ (each line in the data file):
+We first define a score $$U(s,t)$$  for each prediction, i.e., for each patient $$s$$ and each time interval $$t$$ (each line in the data file):
 
 $$
-U(s, t) = \left\{ {U_{TP}(s,t), positive prediction at time _t_ for sepsis patient _s_, \\ U_{FN}(s,t), negative prediction at time _t_ for sepsis patient _s_, \\ U_{FP}(s,t), positive prediction at time _t_ for non-sepsis patient _s_, \\ U_{TN}(s,t), negative prediction at time _t_ for non-sepsis patient _s_.}
+    U(s, t) =
+    \begin{cases}
+    U_\text{TP}(s, t), & \text{positive prediction at time } t \text{ for a septic patient } s, \\
+    U_\text{FP}(s, t), & \text{positive prediction at time } t \text{ for a non-septic patient } s, \\
+    U_\text{FN}(s, t), & \text{negative prediction at time } t \text{ for a septic patient } s, \\
+    U_\text{TN}(s, t), & \text{negative prediction at time } t \text{ for a non-septic patient } s,
+    \end{cases}
 $$
 
-The following figures illustrate the utility function for a sepsis patient (upper plot) with $$t_{sepsis}= 48$$ as an example, and a non-sepsis patient (lower plot).
+The following figures illustrate the utility function for a sepsis patient (upper plot) with $$t_\text{sepsis} = 48$$ as an example, and a non-sepsis patient (lower plot).
 
-![image](https://physionet.org/files/challenge-2019/1.0.0/utility_sepsis_diagram.svg)
+![image](utility_sepsis_diagram.svg)
 
-![image](https://physionet.org/files/challenge-2019/1.0.0/utility_nonsepsis_diagram.svg)
+![image](utility_nonsepsis_diagram.svg)
 
 This utility function rewards or penalizes classifiers using their predictions on each patient:
 
-*   For patients that eventually have sepsis (i.e., with at least one `SepsisLabel` entry of 1), we reward classifiers that predict sepsis between 12 hours before and 3 hours after $$t_{sepsis}$$ , where the maximum reward is a parameter (1.0). We penalize classifiers that do not predict sepsis or predict sepsis more than 12 hours before $$t_{sepsis}$$ , where the maximum penalty for very early detection is a parameter (0.05) and the maximum penalty for late detection is also a parameter (-2.0).
+*   For patients that eventually have sepsis (i.e., with at least one `SepsisLabel` entry of 1), we reward classifiers that predict sepsis between 12 hours before and 3 hours after $$t_\text{sepsis}$$ , where the maximum reward is a parameter (1.0). We penalize classifiers that do not predict sepsis or predict sepsis more than 12 hours before $$t_\text{sepsis}$$ , where the maximum penalty for very early detection is a parameter (0.05) and the maximum penalty for late detection is also a parameter (-2.0).
 *   For patients that do **not** eventually have sepsis (i.e., all `SepsisLabel` entries of 0), we penalize classifiers that predict sepsis, where the maximum penalty for false alarms is a parameter (0.05; equal to the very early detection penalty). We neither reward nor penalize those that do not predict sepsis.
 
-We then compute a score for a classifier by summing $$U(s,t)$$ over each prediction, i.e., over each patient _s_  and each time interval _t_ (each line in the data file):
+We then compute a score for a classifier by summing $$U(s,t)$$ over each prediction, i.e., over each patient $$s$$ and each time interval $$t$$ (each line in the data file):
 
-$$ U_{total}=\sum_{s \in S} \sum_{t \in T(s)} U(s,t) $$
+$$ U_\text{total}=\sum_{s \in S} \sum_{t \in T(s)} U(s,t) $$
 
 To improve interpretability, we normalized the above classifier score so that the optimal classifier (highest possible score) receives a normalized score of 1 and that a completely inactive classifier (no positive predictions) receives a normalized score of 0:
 
-$$ U_{normalized} = \frac{U_{total} - U_{no predictions}}{U_{optimal} - U_{no predictions}} $$
+$$ U_{normalized} = \frac{U_\text{total} - U_\text{no predictions}}{U_\text{optimal} - U_\text{no predictions}} $$
 
-Each classifier receives a $$ U_{normalized} $$ score, and the classifier with the highest $$ U_{normalized} $$ score wins.
+Each classifier receives a $$ U_\text{normalized} $$ score, and the classifier with the highest $$ U_\text{normalized} $$ score wins.
 
 A Python implementation of the scoring metric is available [here](https://github.com/physionetchallenges).
 
@@ -216,7 +222,7 @@ A Python implementation of the scoring metric is available [here](https://github
 
 A simple example algorithm is provided and may be used as a template for your own submission. Julia ([here](https://github.com/physionetchallenges/julia-example-2019)), MATLAB ([here](https://github.com/physionetchallenges/matlab-example-2019)), Python ([here](https://github.com/physionetchallenges/python-example-2019)), and R ([here](https://github.com/physionetchallenges/r-example-2019)) implementations are available.
 
-### ## <a name="rules"></a> Rules and Deadlines
+#### <a name="rules"></a> Rules and Deadlines
 
 Entrants may have an overall total of up to 15 submitted entries over both the unofficial and official phases of the competition (see Table 2).
 
@@ -258,25 +264,25 @@ To maintain scientific impact of the Challenges, it is important that all Challe
 
 If evidence of the contravention of these rules are discovered, you will be ineligible for a prize and your entry publicly marked as possibly associated with another entry. Although we will contact the team(s) in question, time and resources are limited and the Organizers must use their best judgement on the matter in a short period of time. The Organizer's decision on this will be final.
 
-### ## <a name="submit_abstract"></a> Submitting an Abstract to the Conference
+#### <a name="submit_abstract"></a> Submitting an Abstract to the Conference
 
 First, please think about your title very carefully. There are going to be over 100 abstracts with very similar titles, so your title must reflect the details of what you actually did. (Don't worry about the issue of your methods evolving over the competition, and making your title somewhat inappropriate - you can update it when you submit your final paper in early September.) If you use a vague title, it decreases the chances your abstract will be accepted and the organizers may modify it for the program to allow conference attendees to decide if the poster or talk will be of interest to them. For instance, 'Machine Learning for Predicting X' or 'Signal Processing Methods for Detection of Y' are not useful titles. Also, please do not use the terms 'PhysioNet', 'Challenge' or 'Computing in Cardiology' in the title. There will be an article in the proceedings which carries the same name as the competition (the title of this web page). Using any of these terms is likely to cause significant confusion when searching for the definitive article describing the Challenge and results. Please note, _when you submit to the abstract submission system please choose the track 'Physionet/CinC Challenge'_ to ensure it is reviewed by the Challenge organizers.
 
 Please ensure you describe your exact approach in the abstract, detailing novelty and specific pre/post-processing steps that made a difference in your performance. DO NOT rationalize or describe the competition and the data - this is a waste of valuable space (you only have 300 words). Your abstract is intended as preliminary evidence that you will attend the conference and have meaningfully contributed to the unofficial phase. If you have not been successful in receiving a score from our scoring system, don't worry. Report cross validated scores on the available public data we have posted and your methods in detail. Do not describe the challenge. It's a waste of valuable words - the reviewers know what the Challenge is this year. We also know your results and your methods will change. Your final abstract (which will accompany the preprint you post to the conference in early September before the conference begins) will be very different. The point of the abstract is to decide if you have an original idea, promising/logical approaches and can express these coherently. It helps us allocate limited oral presentations and poster space to the best entries. \[If you do get rejected, there may be a 'wild card' chance to enter later on in the Challenge, but if we able to do this, it will be for an exceptional entry, so please don't rely on this.\]
 
-### ## <a name="abstract_acceptance"></a> Abstract Acceptances/Rejections
+#### <a name="abstract_acceptance"></a> Abstract Acceptances/Rejections
 
 You should receive an acceptance or rejection notice by the end of May, although sometimes this is later. Some reviews will contain comments, but generally there is only a score. Although we try to include everyone, it is not possible given the limited space at the conference venue, so please take the abstract seriously. If you do not receive an email with the decision by the end of May (on the email address with which you registered for the conference), please check your spam filter. If you still can't find one, email [challenge@physionet.org](mailto:challenge@physionet.org) to obtain confirmation of the abstract acceptance/rejection. Please do not email any of the organizers directly (for any reason) - there's a good chance the email will go astray. If you email [challenge@physionet.org](mailto:challenge@physionet.org), the Challenge team will triage your email and try to address your issues. You may receive and email from the organizers indicating that we've modified your title slightly. This is to avoid confusion between abstracts that have vague or non-specific titles, and in particular mentioned the phrases 'Computing in Cardiology', 'Challenge' or PhysioNet'. You may modify this later to correct any misconceptions this may cause, or to update the content based on your evolving algorithm, but please do not re-insert the prohibited words/phrases or make the title generic once again. Your final paper will be rejection and you will be de-ranked from the leader board (since publishing a paper in the conference proceedings is part of the requirements of the competition).
 
-### ## <a name="wildcard"></a> Wild Card Submission
+#### <a name="wildcard"></a> Wild Card Submission
 
 If you failed to have your abstract accepted, or did not enter an abstract and submission in time for the deadline, you have a chance to become the 'wild card' entry. The top scoring entry on the leader board by the end of the day (midnight GMT) on June 20th, not already with an email acceptance from the conference, will have the chance to submit an abstract for inclusion in the program and be eligible for the final prizes with everyone else. If you think you qualify, please email [challenge@physionet.org](mailto:challenge@physionet.org) by 12 \*noon\* GMT June 21st for confirmation, and your updated abstract by might night GMT June 22nd.
 
-### ## <a name="hakathon"></a> Hackathon
+#### <a name="hakathon"></a> Hackathon
 
 There will be an on-site Hackathon revisiting the Challenge (with a separate award) on Sunday 8th September, before the conference begins in Singapore. Any team with at least one attendee at the conference, who turns up in person to register, is eligible to enter. You do not have to have entered the Challenge or have an abstract in the conference before this date. Moreover, you may combine forces with other teams to produce hybrid algorithms. We suggest you peruse the conference preprints in the first week of September to find potential partners. This part of the Challenge is organized and sponsored by MathWorks and Google Cloud, so there will be hands-on help, although you are not required to use Google Cloud or Matlab for developing and entry (although we use Google Cloud to run the results). The rules and restrictions are otherwise the same.
 
-### ## <a name="attend_conference"></a> Attending the Conference
+#### <a name="attend_conference"></a> Attending the Conference
 
 If your abstract is accepted, then you must log in to the conference site and agree that you will attend. You must also submit a full article describing your results and mark it as a preprint (for others to read) by 4 September. (Don't forget that the competition deadline is noon GMT on 25 August - this deadline will _not_ be extended.)
 
@@ -284,15 +290,15 @@ More details about the conference will follow.
 
 Look out for future announcements via [the community discussion forum](https://groups.google.com/group/physionet-challenges).
 
-### ## <a name="after_conference"></a> After the Challenge
+#### <a name="after_conference"></a> After the Challenge
 
 We hope to run a special issue with a closing date of (to be decided). We will therefore encourage competitors (and non-competitors) to submit updates and further reworks based on the Challenge after the award ceremony at the Computing in Cardiology Conference in Singapore in September.
 
-### ## <a name="matlab"></a> Obtaining complimentary MATLAB licenses
+#### <a name="matlab"></a> Obtaining complimentary MATLAB licenses
 
 [MathWorks](http://www.mathworks.com/) has generously decided to sponsor this Challenge by providing complimentary licenses to all teams that wish to use MATLAB. Users can apply for a license and learn more about MATLAB support by visiting the [PhysioNet Challenge page](https://www.mathworks.com/academia/student-competitions/physionet.html) from MathWorks. If you have questions or need technical support, then please contact MathWorks at [studentcompetitions@mathworks.com](mailto:studentcompetitions@mathworks.com).
 
-### ## <a name="google_cloud"></a> Google Cloud
+#### <a name="google_cloud"></a> Google Cloud
 
 [Google](http://cloud.google.com/) has generously agreed to provide $50,000 in Google Cloud Platform (GCP) credits for this Challenge. We will award these to the 100 top performing teams, probably in May (at a date yet to be determined). This will hopefully provide an added incentive to submit more entries earlier on, and give teams the maximum opportunity to learn **before** spending money in the cloud.
 
@@ -300,7 +306,7 @@ At the time of launching this Challenge, Google Cloud offers multiple services f
 
 Google Cloud credits of $500 per team will be made available to teams with both a successful entry to the official phase of the Challenge and an accepted abstract to CinC. Only one credit of exactly $500 will be provided to one email address associated with each team. The Challenge organizers, their employers, and Computing in Cardiology accept no responsibility for the loss of credits, or failure to issue credits for any reason. By providing us with this information, you are granting us permission to forward your details to Google for the distribution of credits. **Please complete [this form](https://docs.google.com/forms/d/1MbtZ69AZhZUq6DiGiL3tJ9zehRsTDVbyLzMre02F3e4) to request credits by May 29th.** _You will have until June 1st to redeem the credits and they will be valid for 90 days._
 
-### ## <a name="hackathon"></a> Pre-conference Challenge Hackathon
+#### <a name="hackathon"></a> Pre-conference Challenge Hackathon
 
 This year, for the first time, we are introducing a final opportunity to win a prize in the Challenge. On the Sunday morning before Computing in Cardiology starts, there will be an all-day hackathon (with on-site support from 9am-1pm local time) in Singapore, with the same objective as the current Challenge. This event is, once again, generously sponsored by the Gordon and Betty Moore Foundation, MathWorks and Google.
 
@@ -326,7 +332,7 @@ You may ask: why a hackathon?
 2.  You may collaborate with other teams from the Challenge or other teams that turn up (but only submit one entry per collaboration), thus potentially generating new and better hybrid approaches.
 3.  On-site support for Google Cloud and Matlab and domain experts in clinical informatics will be present.
 
-### ## <a name="timeline"></a> Challenge Timeline
+#### <a name="timeline"></a> Challenge Timeline
 
 A complete timeline of events in this Challenge is as follows:
 
@@ -352,7 +358,7 @@ A complete timeline of events in this Challenge is as follows:
 *   1st Feb 2020: \[Optional\] Closing date for focus issue full length articles to be submitted to PhysiologicalMeasurement.
 *   ~ March 2020: Code and papers from the Challenge will be posted as close to this time as possible.
 
-## ## <a name="achnowledgments"></a> Acknowledgements
+### <a name="achnowledgments"></a> Acknowledgements
 
 The organizers would like to thank the sponsors of the 2019 PhysioNet Challenge.
 
@@ -381,8 +387,8 @@ Total uncompressed size: 327.3 KB.
 *   Access the files using the Google Cloud Storage Browser [here](https://console.cloud.google.com/storage/browser/challenge-2019-1.0.0.physionet.org/). Login with a Google account is required.
 *   Access the data using the Google Cloud command line tools (please refer to the [gsutil](https://cloud.google.com/storage/docs/gsutil_install) documentation for guidance):
     
-    gsutil -m -u YOUR\_PROJECT\_ID cp -r gs://challenge-2019-1.0.0.physionet.org DESTINATION
+        gsutil -m -u YOUR\_PROJECT\_ID cp -r gs://challenge-2019-1.0.0.physionet.org DESTINATION
     
 *   Download the files using your terminal:
     
-    wget -r -N -c -np https://physionet.org/files/challenge-2019/1.0.0/
+        wget -r -N -c -np https://physionet.org/files/challenge-2019/1.0.0/
