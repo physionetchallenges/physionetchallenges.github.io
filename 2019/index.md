@@ -187,9 +187,9 @@ We first define a score $$U(s,t)$$  for each prediction, i.e., for each patient
 
 $$
 U(s, t) = \Bigg\{ U_{TP}(s,t), positive prediction at time _t_ for sepsis patient _s_, \\ 
-U_{FN}(s,t), negative prediction at time _t_ for sepsis patient _s_, \\
-U_{FP}(s,t), positive prediction at time _t_ for non-sepsis patient _s_, \\
-U_{TN}(s,t), negative prediction at time _t_ for non-sepsis patient _s_.
+ U_{FN}(s,t), negative prediction at time _t_ for sepsis patient _s_, \\
+ U_{FP}(s,t), positive prediction at time _t_ for non-sepsis patient _s_, \\
+ U_{TN}(s,t), negative prediction at time _t_ for non-sepsis patient _s_.
 $$
 
 The following figures illustrate the utility function for a sepsis patient (upper plot) with $$t_{sepsis}= 48$$ as an example, and a non-sepsis patient (lower plot).
