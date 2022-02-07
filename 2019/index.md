@@ -212,7 +212,7 @@ $$ U_\text{total}=\sum_{s \in S} \sum_{t \in T(s)} U(s,t) $$
 
 To improve interpretability, we normalized the above classifier score so that the optimal classifier (highest possible score) receives a normalized score of 1 and that a completely inactive classifier (no positive predictions) receives a normalized score of 0:
 
-$$ U_{normalized} = \frac{U_\text{total} - U_\text{no predictions}}{U_\text{optimal} - U_\text{no predictions}} $$
+$$ U_\text{normalized} = \frac{U_\text{total} - U_\text{no predictions}}{U_\text{optimal} - U_\text{no predictions}} $$
 
 Each classifier receives a $$ U_\text{normalized} $$ score, and the classifier with the highest $$ U_\text{normalized} $$ score wins.
 
@@ -382,7 +382,7 @@ The authors have no conflicts of interest.
 
 Total uncompressed size: 327.3 KB.
 
-##### Access the files
+#### Access the files
 
 *   Access the files using the Google Cloud Storage Browser [here](https://console.cloud.google.com/storage/browser/challenge-2019-1.0.0.physionet.org/). Login with a Google account is required.
 *   Access the data using the Google Cloud command line tools (please refer to the [gsutil](https://cloud.google.com/storage/docs/gsutil_install) documentation for guidance):
