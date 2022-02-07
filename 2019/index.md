@@ -8,20 +8,20 @@ layout: 2019
 
 ## <a name="announcements"></a> Announcements
 
-__November 4, 2019:__ The [official paper describing the 2019 PhysioNet Challenge](/content/challenge-2019/1.0.0/physionet_challenge_2019_ccm_manuscript.pdf) will appear in [Critical Care Medicine](https://journals.lww.com/ccmjournal/pages/default.aspx).
+__November 4, 2019:__ The [official paper describing the 2019 PhysioNet Challenge](https://www.cinc.org/archives/2019/pdf/CinC2019-412.pdf) appeared on the CinC website [here](https://cinc.org/archives/2019/) and the journal paper appeared in [Critical Care Medicine](https://journals.lww.com/ccmjournal/fulltext/2020/02000/early_prediction_of_sepsis_from_clinical_data__the.10.aspx).
 
-__September 17, 2019:__ Official results for the 2019 PhysioNet [Challenge](https://physionetchallenges.org/2019/results/challenge.tsv) and [Hackathon](https://physionetchallenges.org/2019/results/hackathon.tsv) are now available.
+__September 17, 2019:__ Official results for the 2019 PhysioNet [Challenge](/results/challenge.tsv) and [Hackathon](/results/hackathon.tsv) are now available.
 
-__July 8, 2019:__ Thanks to our sponsors, a pre-conference hackathon at Computing in Cardiology 2019 (with prize(s)) will take place on Sunday 8th September in Singapore. Registration is required. Rules and more information can be found [here](/content/challenge-2019/1.0.0/#hackathon) .
+__July 8, 2019:__ Thanks to our sponsors, a pre-conference hackathon at Computing in Cardiology 2019 (with prize(s)) will take place on Sunday 8th September in Singapore. Registration is required. Rules and more information can be found [here](#hackathon) .
 
 __June 23, 2019:__ Two "wild card" teams were approved for inclusion in the Challenge. We are looking forward to meeting them in Singapore!
 
 __May 28, 2019:__ We are accepting requests for Google Cloud Credits ($500 per eligible team). Requests are due by 29 May, 2019. Please see [here](/content/challenge-2019/1.0.0/#google-cloud-credits) for more information on how to apply for them. Requests will be processed in order and sent on to Google. We cannot guarantee you will receive them, especially later in the competition.
 
 __May 24, 2019:__ Notices of acceptance have been sent for CinC abstracts.
-  By now you should have received your acceptance or rejection notices for your abstracts. If you were rejected, please do not worry - there are two more options to compete. See [here](/content/challenge-2019/1.0.0/#wildcard) and [here](/content/challenge-2019/1.0.0/#hackathon) for more information on this.
-  We have added a \`wild card' entry to allow one more team to enter the competition and be eligible for all the prizes. See [here](/content/challenge-2019/1.0.0/#wildcard) for more information on this.
-  There will be an on-site hackathon revisiting the Challenge (with a separate award) on Sunday 8th September, before the conference begins in Singapore. Any team (whether previously registered for the Challenge or not) with at least one attendee at the conference, who turns up in person to register for the Hackathon, is eligible to enter. See [here](/content/challenge-2019/1.0.0/#hackathon) for more information on this.
+  By now you should have received your acceptance or rejection notices for your abstracts. If you were rejected, please do not worry - there are two more options to compete. See [here](#wildcard) and [here](/#hackathon) for more information on this.
+  We have added a \`wild card' entry to allow one more team to enter the competition and be eligible for all the prizes. See [here](#wildcard) for more information on this.
+  There will be an on-site hackathon revisiting the Challenge (with a separate award) on Sunday 8th September, before the conference begins in Singapore. Any team (whether previously registered for the Challenge or not) with at least one attendee at the conference, who turns up in person to register for the Hackathon, is eligible to enter. See [here](#hackathon) for more information on this.
 
 __May 2, 2019:__ Scoring for the PhysioNet Challenge are on leaderboard. Please check the [leaderboard](https://docs.google.com/spreadsheets/d/e/2PACX-1vQ_dGi-82KYDR0lCK0YfcOeHXDRCeunRiw9U8EZdZG654wwOoJX2UTu2AsxCcxfghrBNeZe5c9RYKVV/pubhtml?gid=0&single=true&widget=true&headers=false&chrome=false) for the current Challenge scores.
 
@@ -33,7 +33,7 @@ __April 25, 2019:__ Now accepting Challenge submissions:
 __April 22, 2019:__ Official phase of the 20th PhysioNet/Computing in Cardiology Challenge is now open.
   We have made several changes from the unofficial phase of the Challenge (see below). We invite comments and questions about these changes. We plan to accept submissions again on Thursday, 25 April at 12:01 am GMT.
   We will only use our new cloud submission system for the official phase of the Challenge. See the updated instructions ([here](https://docs.google.com/document/d/1-YCLmie2_1gM4FrpBaSfkhYt8xpYghs8l2vbPemODkw/edit)) for details. The past submission system is no longer available.
-  We ask participants to write causal algorithms that make predictions using current and past (but not future) information. See the [submission instructions](/content/challenge-2019/1.0.0/#submitting) and sample prediction code ([here](https://github.com/physionetchallenges)) for details.
+  We ask participants to write causal algorithms that make predictions using current and past (but not future) information. See the [submission instructions](#submitting) and sample prediction code ([here](https://github.com/physionetchallenges)) for details.
   Note that you will have 10 submissions in this official phase. We will score your results on a subset of the test data. At the end of the competition we will ask you to nominate your 'best' algorithm (it need not be the one that gave you the best score) and we will run it on the full test data to provide the final test score.
   Please do not submit all ten entries in the last week of the competition. Even though we can scale the computing, failures require manual intervention and feedback. We can't do this for 1000+ entries in the final week.
   Also - we will be offering up to $500 in Google Cloud credits (courtesy of the Google Cloud Team) to the best performing entries by June, so it's worth getting a good score before then!
@@ -186,10 +186,7 @@ Your final algorithm will be graded for its binary classification performance us
 We first define a score $$U(s,t)$$  for each prediction, i.e., for each patient _s_  and each time interval _t_ (each line in the data file):
 
 $$
-U(s, t) = \left\{ {U_{TP}(s,t), positive prediction at time _t_ for sepsis patient _s_,\\ 
- U_{FN}(s,t), negative prediction at time _t_ for sepsis patient _s_, \\
- U_{FP}(s,t), positive prediction at time _t_ for non-sepsis patient _s_, \\
- U_{TN}(s,t), negative prediction at time _t_ for non-sepsis patient _s_.}
+U(s, t) = \left\{ {U_{TP}(s,t), positive prediction at time _t_ for sepsis patient _s_, \\ U_{FN}(s,t), negative prediction at time _t_ for sepsis patient _s_, \\ U_{FP}(s,t), positive prediction at time _t_ for non-sepsis patient _s_, \\ U_{TN}(s,t), negative prediction at time _t_ for non-sepsis patient _s_.}
 $$
 
 The following figures illustrate the utility function for a sepsis patient (upper plot) with $$t_{sepsis}= 48$$ as an example, and a non-sepsis patient (lower plot).
@@ -219,7 +216,7 @@ A Python implementation of the scoring metric is available [here](https://github
 
 A simple example algorithm is provided and may be used as a template for your own submission. Julia ([here](https://github.com/physionetchallenges/julia-example-2019)), MATLAB ([here](https://github.com/physionetchallenges/matlab-example-2019)), Python ([here](https://github.com/physionetchallenges/python-example-2019)), and R ([here](https://github.com/physionetchallenges/r-example-2019)) implementations are available.
 
-### Rules and Deadlines
+### ## <a name="rules"></a> Rules and Deadlines
 
 Entrants may have an overall total of up to 15 submitted entries over both the unofficial and official phases of the competition (see Table 2).
 
@@ -261,25 +258,25 @@ To maintain scientific impact of the Challenges, it is important that all Challe
 
 If evidence of the contravention of these rules are discovered, you will be ineligible for a prize and your entry publicly marked as possibly associated with another entry. Although we will contact the team(s) in question, time and resources are limited and the Organizers must use their best judgement on the matter in a short period of time. The Organizer's decision on this will be final.
 
-### Submitting an Abstract to the Conference
+### ## <a name="submit_abstract"></a> Submitting an Abstract to the Conference
 
 First, please think about your title very carefully. There are going to be over 100 abstracts with very similar titles, so your title must reflect the details of what you actually did. (Don't worry about the issue of your methods evolving over the competition, and making your title somewhat inappropriate - you can update it when you submit your final paper in early September.) If you use a vague title, it decreases the chances your abstract will be accepted and the organizers may modify it for the program to allow conference attendees to decide if the poster or talk will be of interest to them. For instance, 'Machine Learning for Predicting X' or 'Signal Processing Methods for Detection of Y' are not useful titles. Also, please do not use the terms 'PhysioNet', 'Challenge' or 'Computing in Cardiology' in the title. There will be an article in the proceedings which carries the same name as the competition (the title of this web page). Using any of these terms is likely to cause significant confusion when searching for the definitive article describing the Challenge and results. Please note, _when you submit to the abstract submission system please choose the track 'Physionet/CinC Challenge'_ to ensure it is reviewed by the Challenge organizers.
 
 Please ensure you describe your exact approach in the abstract, detailing novelty and specific pre/post-processing steps that made a difference in your performance. DO NOT rationalize or describe the competition and the data - this is a waste of valuable space (you only have 300 words). Your abstract is intended as preliminary evidence that you will attend the conference and have meaningfully contributed to the unofficial phase. If you have not been successful in receiving a score from our scoring system, don't worry. Report cross validated scores on the available public data we have posted and your methods in detail. Do not describe the challenge. It's a waste of valuable words - the reviewers know what the Challenge is this year. We also know your results and your methods will change. Your final abstract (which will accompany the preprint you post to the conference in early September before the conference begins) will be very different. The point of the abstract is to decide if you have an original idea, promising/logical approaches and can express these coherently. It helps us allocate limited oral presentations and poster space to the best entries. \[If you do get rejected, there may be a 'wild card' chance to enter later on in the Challenge, but if we able to do this, it will be for an exceptional entry, so please don't rely on this.\]
 
-### Abstract Acceptances/Rejections
+### ## <a name="abstract_acceptance"></a> Abstract Acceptances/Rejections
 
 You should receive an acceptance or rejection notice by the end of May, although sometimes this is later. Some reviews will contain comments, but generally there is only a score. Although we try to include everyone, it is not possible given the limited space at the conference venue, so please take the abstract seriously. If you do not receive an email with the decision by the end of May (on the email address with which you registered for the conference), please check your spam filter. If you still can't find one, email [challenge@physionet.org](mailto:challenge@physionet.org) to obtain confirmation of the abstract acceptance/rejection. Please do not email any of the organizers directly (for any reason) - there's a good chance the email will go astray. If you email [challenge@physionet.org](mailto:challenge@physionet.org), the Challenge team will triage your email and try to address your issues. You may receive and email from the organizers indicating that we've modified your title slightly. This is to avoid confusion between abstracts that have vague or non-specific titles, and in particular mentioned the phrases 'Computing in Cardiology', 'Challenge' or PhysioNet'. You may modify this later to correct any misconceptions this may cause, or to update the content based on your evolving algorithm, but please do not re-insert the prohibited words/phrases or make the title generic once again. Your final paper will be rejection and you will be de-ranked from the leader board (since publishing a paper in the conference proceedings is part of the requirements of the competition).
 
-### Wild Card Submission
+### ## <a name="wild_card"></a> Wild Card Submission
 
 If you failed to have your abstract accepted, or did not enter an abstract and submission in time for the deadline, you have a chance to become the 'wild card' entry. The top scoring entry on the leader board by the end of the day (midnight GMT) on June 20th, not already with an email acceptance from the conference, will have the chance to submit an abstract for inclusion in the program and be eligible for the final prizes with everyone else. If you think you qualify, please email [challenge@physionet.org](mailto:challenge@physionet.org) by 12 \*noon\* GMT June 21st for confirmation, and your updated abstract by might night GMT June 22nd.
 
-### Hackathon
+### ## <a name="hakathon"></a> Hackathon
 
 There will be an on-site Hackathon revisiting the Challenge (with a separate award) on Sunday 8th September, before the conference begins in Singapore. Any team with at least one attendee at the conference, who turns up in person to register, is eligible to enter. You do not have to have entered the Challenge or have an abstract in the conference before this date. Moreover, you may combine forces with other teams to produce hybrid algorithms. We suggest you peruse the conference preprints in the first week of September to find potential partners. This part of the Challenge is organized and sponsored by MathWorks and Google Cloud, so there will be hands-on help, although you are not required to use Google Cloud or Matlab for developing and entry (although we use Google Cloud to run the results). The rules and restrictions are otherwise the same.
 
-### Attending the Conference
+### ## <a name="attend_conference"></a> Attending the Conference
 
 If your abstract is accepted, then you must log in to the conference site and agree that you will attend. You must also submit a full article describing your results and mark it as a preprint (for others to read) by 4 September. (Don't forget that the competition deadline is noon GMT on 25 August - this deadline will _not_ be extended.)
 
@@ -287,15 +284,15 @@ More details about the conference will follow.
 
 Look out for future announcements via [the community discussion forum](https://groups.google.com/group/physionet-challenges).
 
-### After the Challenge
+### ## <a name="after_conference"></a> After the Challenge
 
 We hope to run a special issue with a closing date of (to be decided). We will therefore encourage competitors (and non-competitors) to submit updates and further reworks based on the Challenge after the award ceremony at the Computing in Cardiology Conference in Singapore in September.
 
-### Obtaining complimentary MATLAB licenses
+### ## <a name="matlab"></a> Obtaining complimentary MATLAB licenses
 
 [MathWorks](http://www.mathworks.com/) has generously decided to sponsor this Challenge by providing complimentary licenses to all teams that wish to use MATLAB. Users can apply for a license and learn more about MATLAB support by visiting the [PhysioNet Challenge page](https://www.mathworks.com/academia/student-competitions/physionet.html) from MathWorks. If you have questions or need technical support, then please contact MathWorks at [studentcompetitions@mathworks.com](mailto:studentcompetitions@mathworks.com).
 
-### Google Cloud
+### ## <a name="google_cloud"></a> Google Cloud
 
 [Google](http://cloud.google.com/) has generously agreed to provide $50,000 in Google Cloud Platform (GCP) credits for this Challenge. We will award these to the 100 top performing teams, probably in May (at a date yet to be determined). This will hopefully provide an added incentive to submit more entries earlier on, and give teams the maximum opportunity to learn **before** spending money in the cloud.
 
@@ -303,7 +300,7 @@ At the time of launching this Challenge, Google Cloud offers multiple services f
 
 Google Cloud credits of $500 per team will be made available to teams with both a successful entry to the official phase of the Challenge and an accepted abstract to CinC. Only one credit of exactly $500 will be provided to one email address associated with each team. The Challenge organizers, their employers, and Computing in Cardiology accept no responsibility for the loss of credits, or failure to issue credits for any reason. By providing us with this information, you are granting us permission to forward your details to Google for the distribution of credits. **Please complete [this form](https://docs.google.com/forms/d/1MbtZ69AZhZUq6DiGiL3tJ9zehRsTDVbyLzMre02F3e4) to request credits by May 29th.** _You will have until June 1st to redeem the credits and they will be valid for 90 days._
 
-### Pre-conference Challenge Hackathon
+### ## <a name="prconference"></a> Pre-conference Challenge Hackathon
 
 This year, for the first time, we are introducing a final opportunity to win a prize in the Challenge. On the Sunday morning before Computing in Cardiology starts, there will be an all-day hackathon (with on-site support from 9am-1pm local time) in Singapore, with the same objective as the current Challenge. This event is, once again, generously sponsored by the Gordon and Betty Moore Foundation, MathWorks and Google.
 
@@ -329,7 +326,7 @@ You may ask: why a hackathon?
 2.  You may collaborate with other teams from the Challenge or other teams that turn up (but only submit one entry per collaboration), thus potentially generating new and better hybrid approaches.
 3.  On-site support for Google Cloud and Matlab and domain experts in clinical informatics will be present.
 
-### Challenge Timeline
+### ## <a name="timeline"></a> Challenge Timeline
 
 A complete timeline of events in this Challenge is as follows:
 
@@ -355,7 +352,7 @@ A complete timeline of events in this Challenge is as follows:
 *   1st Feb 2020: \[Optional\] Closing date for focus issue full length articles to be submitted to PhysiologicalMeasurement.
 *   ~ March 2020: Code and papers from the Challenge will be posted as close to this time as possible.
 
-## Acknowledgements
+## ## <a name="achnowledgments"></a> Acknowledgements
 
 The organizers would like to thank the sponsors of the 2019 PhysioNet Challenge.
 
