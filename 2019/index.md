@@ -27,7 +27,7 @@ __May 2, 2019:__ Scoring for the PhysioNet Challenge are on leaderboard. Please 
 
 __April 25, 2019:__ Now accepting Challenge submissions:
    We are now accepting submissions for the official phase of the Challenge.
-   Please check the [submission instructions](https://docs.google.com/document/d/1-YCLmie2_1gM4FrpBaSfkhYt8xpYghs8l2vbPemODkw) for information about how to submit your entry and a FAQ with common submission issues.
+   Please check the [submission instructions](#submission) for information about how to submit your entry and a FAQ with common submission issues.
    When ready, please submit your entry [here](https://forms.gle/ARfUYv5Vpsa24EaB7).
 
 __April 22, 2019:__ Official phase of the 20th PhysioNet/Computing in Cardiology Challenge is now open.
@@ -155,7 +155,7 @@ PhysioNet Challenges are open to all. Participants enter by submitting entries a
 
 Entries should be submitted through the new cloud submission system for the official phase of the Challenge. Please see [here](https://docs.google.com/document/d/1-YCLmie2_1gM4FrpBaSfkhYt8xpYghs8l2vbPemODkw/edit) for detailed instructions.
 
-Given a table of clinical measurements (columns) over time (rows), your entry must report the risk of sepsis (a real number) and a binary sepsis prediction (0 or 1) at each hour of a patient’s clinical record using the current and past (but not future) data for the patient (see the ["Data Description" section](#description)). Please note that we have shifted the sepsis labels in the training data **ahead** by six hours (see the ["Challenge Data" section](#background)), so we are effectively asking participants to predict sepsis six hours early. We will repeat this process for _k_ = 1, 2, …, _N_ hours, where _N_ is the number of hours in a given patient's recording, and for each patient in the test set. Please see the [sample prediction and evaluation code"](https://github.com/physionetchallenges/) for details.
+Given a table of clinical measurements (columns) over time (rows), your entry must report the risk of sepsis (a real number) and a binary sepsis prediction (0 or 1) at each hour of a patient’s clinical record using the current and past (but not future) data for the patient (see the ["#Data Description" section](##data_description)). Please note that we have shifted the sepsis labels in the training data **ahead** by six hours (see the ["Challenge Data" section](#data)), so we are effectively asking participants to predict sepsis six hours early. We will repeat this process for _k_ = 1, 2, …, _N_ hours, where _N_ is the number of hours in a given patient's recording, and for each patient in the test set. Please see the [sample prediction and evaluation code"](https://github.com/physionetchallenges/) for details.
 
 ## <a name="data_description"></a>Data Description
 
@@ -212,7 +212,7 @@ Each classifier receives a $$ U_{normalized} $$ score, and the classifier with 
 
 A Python implementation of the scoring metric is available [here](https://github.com/physionetchallenges).
 
-### Sample Submission
+### <a name="submission"></a>Sample Submission
 
 A simple example algorithm is provided and may be used as a template for your own submission. Julia ([here](https://github.com/physionetchallenges/julia-example-2019)), MATLAB ([here](https://github.com/physionetchallenges/matlab-example-2019)), Python ([here](https://github.com/physionetchallenges/python-example-2019)), and R ([here](https://github.com/physionetchallenges/r-example-2019)) implementations are available.
 
@@ -268,7 +268,7 @@ Please ensure you describe your exact approach in the abstract, detailing novelt
 
 You should receive an acceptance or rejection notice by the end of May, although sometimes this is later. Some reviews will contain comments, but generally there is only a score. Although we try to include everyone, it is not possible given the limited space at the conference venue, so please take the abstract seriously. If you do not receive an email with the decision by the end of May (on the email address with which you registered for the conference), please check your spam filter. If you still can't find one, email [challenge@physionet.org](mailto:challenge@physionet.org) to obtain confirmation of the abstract acceptance/rejection. Please do not email any of the organizers directly (for any reason) - there's a good chance the email will go astray. If you email [challenge@physionet.org](mailto:challenge@physionet.org), the Challenge team will triage your email and try to address your issues. You may receive and email from the organizers indicating that we've modified your title slightly. This is to avoid confusion between abstracts that have vague or non-specific titles, and in particular mentioned the phrases 'Computing in Cardiology', 'Challenge' or PhysioNet'. You may modify this later to correct any misconceptions this may cause, or to update the content based on your evolving algorithm, but please do not re-insert the prohibited words/phrases or make the title generic once again. Your final paper will be rejection and you will be de-ranked from the leader board (since publishing a paper in the conference proceedings is part of the requirements of the competition).
 
-### ## <a name="wild_card"></a> Wild Card Submission
+### ## <a name="wildcard"></a> Wild Card Submission
 
 If you failed to have your abstract accepted, or did not enter an abstract and submission in time for the deadline, you have a chance to become the 'wild card' entry. The top scoring entry on the leader board by the end of the day (midnight GMT) on June 20th, not already with an email acceptance from the conference, will have the chance to submit an abstract for inclusion in the program and be eligible for the final prizes with everyone else. If you think you qualify, please email [challenge@physionet.org](mailto:challenge@physionet.org) by 12 \*noon\* GMT June 21st for confirmation, and your updated abstract by might night GMT June 22nd.
 
@@ -300,7 +300,7 @@ At the time of launching this Challenge, Google Cloud offers multiple services f
 
 Google Cloud credits of $500 per team will be made available to teams with both a successful entry to the official phase of the Challenge and an accepted abstract to CinC. Only one credit of exactly $500 will be provided to one email address associated with each team. The Challenge organizers, their employers, and Computing in Cardiology accept no responsibility for the loss of credits, or failure to issue credits for any reason. By providing us with this information, you are granting us permission to forward your details to Google for the distribution of credits. **Please complete [this form](https://docs.google.com/forms/d/1MbtZ69AZhZUq6DiGiL3tJ9zehRsTDVbyLzMre02F3e4) to request credits by May 29th.** _You will have until June 1st to redeem the credits and they will be valid for 90 days._
 
-### ## <a name="prconference"></a> Pre-conference Challenge Hackathon
+### ## <a name="hackathon"></a> Pre-conference Challenge Hackathon
 
 This year, for the first time, we are introducing a final opportunity to win a prize in the Challenge. On the Sunday morning before Computing in Cardiology starts, there will be an all-day hackathon (with on-site support from 9am-1pm local time) in Singapore, with the same objective as the current Challenge. This event is, once again, generously sponsored by the Gordon and Betty Moore Foundation, MathWorks and Google.
 
