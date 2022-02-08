@@ -6,7 +6,7 @@ layout: 2019
 
 ## Citations
 
-For 2017 Challenge, please cite:
+For 2019 Challenge, please cite:
 
 [Reyna MA, Josef CS, Jeter R, Shashikumar SP, Westover MB, Nemati S, Clifford GD, Sharma A. Early Prediction of Sepsis From Clinical Data: The PhysioNet/Computing in Cardiology Challenge. Critical Care Medicine 48 2: 210-217 (2019). https://doi.org/10.1097/CCM.0000000000004145](https://journals.lww.com/ccmjournal/fulltext/2020/02000/early_prediction_of_sepsis_from_clinical_data__the.10.aspx)
 
@@ -16,7 +16,7 @@ For 2017 Challenge, please cite:
 
 The conference papers for [Computing in Cardiology 2019](https://cinc.org/archives/2019/) are available on the [CinC](https://www.cinc.org/cinc-papers-on-line/) and [IEEE](https://ieeexplore.ieee.org/xpl/conhome/1000157/all-proceedings) websites.
 
-The scores for the teams and their papers and entry code are available in the table below.
+The ranks of the teams and their papers and entry code are available in the table below.
 
 
 | Rank | Team Name | Team Member(s) | Paper | Entry Code | Journal Paper |
@@ -37,8 +37,8 @@ The scores for the teams and their papers and entry code are available in the ta
 | 11 | RadAsadi | Sepideh Rezaeirad, Atefeh Baniasadi, Mohammad Ghassemi, Habil Zare | |[RadAsadi](https://physionet.org/static/published-projects/challenge-2019/1.0.0/sources/RadAsadi.zip)|
 | 12 | SFAA | 	Sajad Mousavi |  |[SFAA](https://physionet.org/static/published-projects/challenge-2019/1.0.0/sources/SFAA.zip)||
 | 13 | PKU_DLIB | Luchen Liu, Haoxian Wu, Zichang Wang, Zequn Liu, Ming Zhang | [Early Prediction of Sepsis From Clinical Data via Heterogeneous Event Aggregation](http://www.cinc.org/archives/2019/pdf/CinC2019-157.pdf) |[PKUDLIB](https://physionet.org/static/published-projects/challenge-2019/1.0.0/sources/PKUDLIB.zip)||
-| 14 | SOS: Searching for Sepsis | Ben Sweely, Austin Park, Lia Winter, Longjian Liu, Xiaopeng Zhao |[Time-Padded Random Forest Ensemble to Capture Changes in Physiology Leading to Sepsis Development](http://www.cinc.org/archives/2019/pdf/CinC2019-281.pdf)|[SOSSearchingforSepsis](https://physionet.org/static/published-projects/challenge-2019/1.0.0/sources/SOSSearchingforSepsis.zip)||                                                                                                                                         |Prediction of Sepsis from Clinical Data Using LSTM and XGBoost                                                                                |0.313                         |0.392                      |0.381                      |-0.174                     |0.802              |0.849              |0.771              |0.101              |0.110              |0.052              |0.852                 |0.911                 |0.764                 |0.142                  |0.146                  |0.042                  |13:06:58                            |6                                     |
-|15  |CQUPT_Just_Try               |Yongchao Wang, Bin Xiao, Xiuli Bi, Weisheng Li, Junhui Zhang, Xu Ma|Prediction of Sepsis from Clinical Data Using LSTM and XGBoost| [Prediction of Sepsis from Clinical Data Using Long Short-Term Memory and eXtreme Gradient Boosting](http://www.cinc.org/archives/2019/pdf/CinC2019-192.pdf) |[CQUPTJustTry](https://physionet.org/static/published-projects/challenge-2019/1.0.0/sources/CQUPTJustTry.zip)
+| 14 | SOS: Searching for Sepsis | Ben Sweely, Austin Park, Lia Winter, Longjian Liu, Xiaopeng Zhao |[Time-Padded Random Forest Ensemble to Capture Changes in Physiology Leading to Sepsis Development](http://www.cinc.org/archives/2019/pdf/CinC2019-281.pdf)|[SOSSearchingforSepsis](https://physionet.org/static/published-projects/challenge-2019/1.0.0/sources/SOSSearchingforSepsis.zip)||                                                                                                 
+|15  |CQUPT_Just_Try               |Yongchao Wang, Bin Xiao, Xiuli Bi, Weisheng Li, Junhui Zhang, Xu Ma|[Prediction of Sepsis from Clinical Data Using Long Short-Term Memory and eXtreme Gradient Boosting](http://www.cinc.org/archives/2019/pdf/CinC2019-192.pdf) |[CQUPTJustTry](https://physionet.org/static/published-projects/challenge-2019/1.0.0/sources/CQUPTJustTry.zip)
 |16  |UCAS_DataMiner               |Zhengling He, Xianxiang Chen, Zhen Fang, Chenshuo Wang, Li Jiang, Zhongkai Tong, Zhongrui Bai, Yichen Pan, Yueqi Li|[Early Sepsis Prediction Using Ensemble Learning with Features Extracted from LSTM Recurrent Neural Network](http://www.cinc.org/archives/2019/pdf/CinC2019-269.pdf)|[UCASDataMiner](https://physionet.org/static/published-projects/challenge-2019/1.0.0/sources/UCASDataMiner.zip)
 |17  |IADI                         |Benjamin Roussel, Julien Oster|[A Recurrent Neural Network for the Prediction of Vital Sign Evolution and Sepsis in ICU](http://www.cinc.org/archives/2019/pdf/CinC2019-082.pdf)|[IADI](https://physionet.org/static/published-projects/challenge-2019/1.0.0/sources/IADI.zip)
 |18  |Shivpatidar                  |Shivnarayan Patidar|[Diagnosis of Sepsis Using Ratio Based Features](http://www.cinc.org/archives/2019/pdf/CinC2019-207.pdf)|[Shivpatidar](https://physionet.org/static/published-projects/challenge-2019/1.0.0/sources/Shivpatidar.zip)
@@ -137,7 +137,7 @@ The scores for the teams and their papers and entry code are available in the ta
 
 ## Hakathon results
 
-The scores of the hakathon for the teams and entry code are available in the table below.
+The ranks of the teams in hakathon are available in the table below.
 
 |Rank|Team name                    |Team members|
 |----|-----------------------------|------------|
