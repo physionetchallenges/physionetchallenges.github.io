@@ -6,7 +6,7 @@ layout: 2019
 
 # Early Prediction of Sepsis from Clinical Data: The PhysioNet/Computing in Cardiology Challenge 2019
 
-- [Papers and entry code](results)
+- [Papers and code](results)
 - [Challenge scores](/results/challenge.tsv)
 - [Hackathon scores](/results/hackathon.tsv)
 
