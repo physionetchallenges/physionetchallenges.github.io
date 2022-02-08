@@ -8,7 +8,7 @@ layout: 2019
 
 ## <a name="announcements"></a> Announcements
 
-__November 4, 2019:__ You can find the papers, entry code and ranks of the teams in the table of [results](/results). The official paper describing the 2019 PhysioNet Challenge appeared on the [CinC](https://cinc.org/archives/2019/) website, [here](https://www.cinc.org/archives/2019/pdf/CinC2019-412.pdf) and the journal paper appeared in [Critical Care Medicine](https://journals.lww.com/ccmjournal/fulltext/2020/02000/early_prediction_of_sepsis_from_clinical_data__the.10.aspx).
+__November 4, 2019:__ You can find the papers, entry code and ranks of the teams in the table of [results](results). The official paper describing the 2019 PhysioNet Challenge appeared on the [CinC](https://cinc.org/archives/2019/) website, [here](https://www.cinc.org/archives/2019/pdf/CinC2019-412.pdf) and the journal paper appeared in [Critical Care Medicine](https://journals.lww.com/ccmjournal/fulltext/2020/02000/early_prediction_of_sepsis_from_clinical_data__the.10.aspx).
 
 __September 17, 2019:__ Official results for the 2019 PhysioNet [Challenge](/results/challenge.tsv) and [Hackathon](/results/hackathon.tsv) are now available.
 
