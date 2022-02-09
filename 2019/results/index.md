@@ -141,13 +141,6 @@ The ranks of the teams and their papers and entry code are available in the tabl
 Kent Ridge AI: team 77 have two CinC papers?:
 
 Kent Ridge AI|Jia Yao, Ming Lun Ong, Kar Kin Mun, Shiyu Liu, Mehul Motani| Hybrid Feature Learning Using Autoencoders for Early Prediction of Sepsis](http://www.cinc.org/archives/2019/pdf/CinC2019-243.pdf)
-
-Not found teams for the following papers:
-
-[Victor G Marques, Miguel Rodrigo, María S Guillem, João Salinet. Effect of Reducing the Number of Leads from Body Surface Potential Mapping in Computer Models of Atrial Arrhythmias](http://www.cinc.org/archives/2019/pdf/CinC2019-099.pdf)
-[Francesco Renna, Miguel Coimbra. Source Separation of the Second Heart Sound Using Gaussian Mixture Models](http://www.cinc.org/archives/2019/pdf/CinC2019-236.pdf)
-
-
 -->
 
 ## Hakathon results
