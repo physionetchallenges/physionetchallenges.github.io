@@ -31,7 +31,7 @@ The ranks of the teams and their papers and entry code are available in the tabl
 | 6 | SBU |Ibrahim Hammoud, IV Ramakrishnan, Mark Henry| [Early Prediction of Sepsis Using Gradient Boosting Decision Trees with Optimal Sample Weighting](http://www.cinc.org/archives/2019/pdf/CinC2019-459.pdf)|[SBU](https://physionet.org/static/published-projects/challenge-2019/1.0.0/sources/SBU.zip)||
 | 7 | Ping An Health Technology	 |	Xiang Li, Yanni Kang, Xiaoyu Jia, Junmei Wang, Guotong Xie | |[PingAnHealthTechnology](https://physionet.org/static/published-projects/challenge-2019/1.0.0/sources/PingAnHealthTechnology.zip)|
 | 8 | prna | Yale Chang, Jonathan Rubin, Gregory Boverman, Shruti Vij, Asif Rahman, Annamalai Natarajan, Saman Parvaneh |[A Multi-Task Imputation and Classification Neural Architecture for Early Prediction of Sepsis from Multivariate Clinical Time Series](http://www.cinc.org/archives/2019/pdf/CinC2019-110.pdf)|[prna](https://physionet.org/static/published-projects/challenge-2019/1.0.0/sources/prna.zip)||
-| 9 | Antanas Kascenas | Filip Plesinger, Petr Nejedly, Josef Halamek, Ivo Viscor, Pavel Jurak|  |[AntanasKascenas](https://physionet.org/static/published-projects/challenge-2019/1.0.0/sources/AntanasKascenas.zip)||
+| 9 | Antanas Kascenas | Antanas Kascenas, Alison O'Neil |  |[AntanasKascenas](https://physionet.org/static/published-projects/challenge-2019/1.0.0/sources/AntanasKascenas.zip)||
 | 10 | NN-MIH	 | Naoki Nonaka, Jun Seita |[Demographic Information Initialized Stacked Gated Recurrent Unit for an Early Prediction of Sepsis](http://www.cinc.org/archives/2019/pdf/CinC2019-153.pdf)|[NNMIH](https://physionet.org/static/published-projects/challenge-2019/1.0.0/sources/NNMIH.zip)|
 | 11 | RadAsadi | Sepideh Rezaeirad, Atefeh Baniasadi, Mohammad Ghassemi, Habil Zare | |[RadAsadi](https://physionet.org/static/published-projects/challenge-2019/1.0.0/sources/RadAsadi.zip)| [Two-Step Imputation and AdaBoost-Based Classification for Early Prediction of Sepsis on Imbalanced Clinical Data](https://journals.lww.com/ccmjournal/Abstract/2021/01000/Two_Step_Imputation_and_AdaBoost_Based.28.aspx)
 | 12 | SFAA | 	Sajad Mousavi |  |[SFAA](https://physionet.org/static/published-projects/challenge-2019/1.0.0/sources/SFAA.zip)||
@@ -57,7 +57,7 @@ The ranks of the teams and their papers and entry code are available in the tabl
 |32  |Doctor Who                   |Michael Moor, Max Horn|                                             |[DoctorWho](https://physionet.org/static/published-projects/challenge-2019/1.0.0/sources/DoctorWho.zip)
 |33  |AI4Sepsis                    |Anamika Paul Rupa, Al Amin, Sanjay Purushotham|Benchmark of Machine Learning Models for Early Sepsis Prediction|[AI4Sepsis](https://physionet.org/static/published-projects/challenge-2019/1.0.0/sources/AI4Sepsis.zip)
 |34  |BRIC_LB                      |Mohammed Baydoun, Lise Safatly, Hassan Ghaziri, Ali ElHajj|Convolutional Neural Networks Based Model to Provide Early Prediction of Sepsis from Clinical Data|[BRICLB](https://physionet.org/static/published-projects/challenge-2019/1.0.0/sources/BRICLB.zip)
-|35  |UBC - DHIL                   |Roshan Pawar, Jeffrey Bone, Mark Ansermino, Matthias Görges|An Algorithm for Early [Detection of Sepsis Using Traditional Statistical Regression Modeling](http://www.cinc.org/archives/2019/pdf/CinC2019-061.pdf)|[UBCDHIL](https://physionet.org/static/published-projects/challenge-2019/1.0.0/sources/UBCDHIL.zip)
+|35  |UBC - DHIL                   |Roshan Pawar, Jeffrey Bone, Mark Ansermino, Matthias Görges|[An Algorithm for Early Detection of Sepsis Using Traditional Statistical Regression Modeling](http://www.cinc.org/archives/2019/pdf/CinC2019-061.pdf)|[UBCDHIL](https://physionet.org/static/published-projects/challenge-2019/1.0.0/sources/UBCDHIL.zip)
 |36  |ABC                          |Zhaowei Zhu, Zhuoyang Xu, Tingting Zhao|Extreme Gradient Boosting Method for Early Detection of Sepsis|[ABC](https://physionet.org/static/published-projects/challenge-2019/1.0.0/sources/ABC.zip)
 |37  |ESL                          |Dionisije Sopic, Tomas Teijeiro, Amir Aminifar, David Atienza|A Real-Time Technique for Early Prediction of Sepsis Using Wearable Devices|[](https://physionet.org/static/published-projects/challenge-2019/1.0.0/sources/ESL.zip)
 |38  |WIN-UAB                      |Edwar Macias, Guillem Boquet, Javier Serrano, Jose Lopez Vicario, Jose Ibeas, Antoni Morell|[Novel Imputing Method for the Early Prediction of Sepsis in ICU Using Deep Learning Techniques](http://www.cinc.org/archives/2019/pdf/CinC2019-038.pdf)|[WINUAB](https://physionet.org/static/published-projects/challenge-2019/1.0.0/sources/WINUAB.zip)
@@ -75,7 +75,7 @@ The ranks of the teams and their papers and entry code are available in the tabl
 |50  |IMSAT                        |Saman Noorzadeh, Shahrooz FaghihRoohi, Mojtaba Zarei|[A Comparative Analysis of HMM and CRF for Early Prediction of Sepsis](http://www.cinc.org/archives/2019/pdf/CinC2019-258.pdf)|[IMSAT](https://physionet.org/static/published-projects/challenge-2019/1.0.0/sources/IMSAT.zip)
 |51  |PLUX                         |Miquel Alfaras, Rui Varandas, Hugo Gamboa|[Ring-Topology Echo State Networks for ICU Sepsis Classification](http://www.cinc.org/archives/2019/pdf/CinC2019-327.pdf)|[PLUX](https://physionet.org/static/published-projects/challenge-2019/1.0.0/sources/PLUX.zip)
 |52  |LDBR                         |Lakshman Narayanaswamy, Devendra Garg, Bhargavi Narra, Ramkumar Narayanswamy|[Machine Learning Algorithmic and System Level Considerations for Early Prediction of Sepsis](http://www.cinc.org/archives/2019/pdf/CinC2019-161.pdf)|[LDBR](https://physionet.org/static/published-projects/challenge-2019/1.0.0/sources/LDBR.zip)
-|53  |Kriss                        |Ines Krissaane|[Anomaly Detection Semi-supervised Framework for Sepsis Treatment](http://www.cinc.org/archives/2019/pdf/CinC2019-174.pdf)|[Kriss](https://physionet.org/static/published-projects/challenge-2019/1.0.0/sources/Kriss.zip)
+|53  |Kriss                        |Ines Krissaane, Kingsley Hampton, Jumanah Alshenaifi, Richard Wilkinson|[Anomaly Detection Semi-supervised Framework for Sepsis Treatment](http://www.cinc.org/archives/2019/pdf/CinC2019-174.pdf)|[Kriss](https://physionet.org/static/published-projects/challenge-2019/1.0.0/sources/Kriss.zip)
 |54  |PhysioNet Example            |PhysioNet Team|[Early Prediction of Sepsis from Clinical Data: The PhysioNet/Computing in Cardiology Challenge 2019](http://www.cinc.org/archives/2019/pdf/CinC2019-412.pdf)|[PhysioNetExample](https://physionet.org/static/published-projects/challenge-2019/1.0.0/sources/PhysioNetExample.zip)
 |55  |CIS2216                      |Shenda Hong, Junyuan Shang, Meng Wu, Yuxi Zhou, Yongyue Sun, Yen Hsiu Chou, Moxian Song, Hongyan Li|[Early Sepsis Prediction with Deep Recurrent Reinforcement Learning]()|[CIS2216](https://physionet.org/static/published-projects/challenge-2019/1.0.0/sources/CIS2216.zip)
 |56  |anni                         |Annie Zheng |                                             |[anni](https://physionet.org/static/published-projects/challenge-2019/1.0.0/sources/anni.zip)
@@ -91,7 +91,7 @@ The ranks of the teams and their papers and entry code are available in the tabl
 |66  |VGTU                         |Vytautas Abromavicius, Artūras Serackis|[Sepsis Prediction Model Based on Vital Signs Related Features](http://www.cinc.org/archives/2019/pdf/CinC2019-095.pdf)|[VGTU](https://physionet.org/static/published-projects/challenge-2019/1.0.0/sources/VGTU.zip)
 |67  |RoBusto                      |Diogo Nunes |Trend and Filtered State Extraction through Savitzky-Golay Filtering for the Early Detection of Sepsis Events|[RoBusto](https://physionet.org/static/published-projects/challenge-2019/1.0.0/sources/RoBusto.zip)
 |68  |SHODH                        |Aruna Deogire|[A Low Dimensional Algorithm for Detection of Sepsis from Electronic Medical Record Data](http://www.cinc.org/archives/2019/pdf/CinC2019-037.pdf)|[SHODH](https://physionet.org/static/published-projects/challenge-2019/1.0.0/sources/SHODH.zip)
-|69  |UND_BERCLAB                  |Soufiane Chami, Guragain Bijay, Hoffmann Bradley, Majumder Shubha, Naima Kaabouche, Kouhyar Tavakolian|[Comparative Study of Light-GBM and a Combination of Survival Analysis with Deep Learning for Early Detection of Sepsis](http://www.cinc.org/archives/2019/pdf/CinC2019-367.pdf)|[UNDBERCLAB](https://physionet.org/static/published-projects/challenge-2019/1.0.0/sources/UNDBERCLAB.zip)
+|69  |UND_BERCLAB                  |Soufiane Chami, Guragain Bijay, Hoffmann Bradley, Majumder Shubha, Naima Kaabouche, Kouhyar Tavakolian|[Early Prediction of Sepsis From Clinical Data Using Single Light-GBM Model](http://www.cinc.org/archives/2019/pdf/CinC2019-367.pdf)|[UNDBERCLAB](https://physionet.org/static/published-projects/challenge-2019/1.0.0/sources/UNDBERCLAB.zip)
 |70  |Sepsis' debugger             |Aya Tello, Yazan Shikhani|                                             |[Sepsisdebugger](https://physionet.org/static/published-projects/challenge-2019/1.0.0/sources/Sepsisdebugger.zip)
 |71  |claguet                      |Clementine Aguet, Jérôme Van Zaen, Mathieu Lemay|[Sepsis Detection Using Missingness Information](http://www.cinc.org/archives/2019/pdf/CinC2019-392.pdf)|[claguet](https://physionet.org/static/published-projects/challenge-2019/1.0.0/sources/claguet.zip)
 |71  |CRASHers                     |Marco AF Pimentel, Adam Mahdi, Oliver Redfern, Mauro Santos|[Uncertainty-Aware Model for Reliable Prediction of Sepsis in the ICU](http://www.cinc.org/archives/2019/pdf/CinC2019-209.pdf)|[CRASHers](https://physionet.org/static/published-projects/challenge-2019/1.0.0/sources/CRASHers.zip)
@@ -103,7 +103,7 @@ The ranks of the teams and their papers and entry code are available in the tabl
 |78  |The Sepsis Detectives        |Akram Mohammed, Franco van Wyk, Anahita Khojandi, Rishikesan Kamaleswaran|When to Start Sepsis Bundle? A Machine Learning Approach to Earlier Detection Using Electronic Medical Records|[TheSepsisDetectives](https://physionet.org/static/published-projects/challenge-2019/1.0.0/sources/TheSepsisDetectives.zip)
 |x   |A_UNSW_Sepsis                |Unknown     |                                             |
 |x   |Bolloknoon Institute         |Unknown     |                                             |
-|x   |B-Secur                      |Peter Doggart, Megan Rutherford|Randomly under Sampled Boosted Tree for Predicting Sepsis from Intensive Care Unit Databases|
+|x   |B-Secur                      |Peter Doggart, Megan Rutherford|[Randomly under Sampled Boosted Tree for Predicting Sepsis from Intensive Care Unit Databases](https://physionet.org/static/published-projects/CinC2019-362.pdf)|
 |*   |CIBIM                        |Oliver Carr, Stefan Bostock, Nicolas Basty, John Prince, Kirubin Pillay, Navin Cooray, Maarten De Vos|Novelty Detection for the Early Prediction of Sepsis|[CIBIM](https://physionet.org/static/published-projects/challenge-2019/1.0.0/sources/CIBIM.zip)
 |x   |Main Lab                     |Unknown     |                                             |
 |x   |MELAB                        |Unknown     |                                             |
@@ -112,7 +112,7 @@ The ranks of the teams and their papers and entry code are available in the tabl
 |#   |PATH                         |Unknown     |                                             |
 |*   |Rx-LR                        |Edward Ho, Cathy Ong-Ly, Alex Zhou|Developing an Interpretable Predictive Model for Early Diagnosis of Sepsis Using Automatic Feature Extraction|[RxLR](https://physionet.org/static/published-projects/challenge-2019/1.0.0/sources/RxLR.zip)
 | *  | SailOcean                   | Meicheng Yang, Hongxiang Gao, Xingyao Wang, Yuwen Li, Jianqing Li, Chengyu Liu | [Early Prediction of Sepsis Using Multi-Feature Fusion Based XGBoost Learning and Bayesian Optimization.](https://www.cinc.org/archives/2019/pdf/CinC2019-020.pdf) | [SailOcean](https://physionet.org/static/published-projects/challenge-2019/1.0.0/sources/SailOcean.zip) | [An Explainable Artificial Intelligence Predictor for Early Detection of Sepsis](https://journals.lww.com/ccmjournal/Abstract/2020/11000/An_Explainable_Artificial_Intelligence_Predictor.37.aspx) |
-|x   |Sepsis_2G                    |Marcus Vollmer, Christian F. Luz, Philipp Sodmann, Bhanu Sinha, Sven-Olaf Kuhn|Time-specific Metalearners for the Early Prediction of Sepsis|
+|x   |Sepsis_2G                    |Marcus Vollmer, Christian F. Luz, Philipp Sodmann, Bhanu Sinha, Sven-Olaf Kuhn|[Time-specific Metalearners for the Early Prediction of Sepsis](https://www.cinc.org/archives/2019/pdf/CinC2019-029.pdf)|
 |?   |s(k)eptic                    |Tanuka Bhattacharjee, Sakyajit Bhattacharya, Varsha Sharma, Anirban Dutta Choudhury, Sunil Kumar Kopparapu, Rupayan Chakraborty, Upasana Tiwari, Murali Poduval, Sundeep Khandelwal, Kayapanda Muthana Mandana|Early Sepsis Prediction by Cascaded Classification of Multi-Modal Clinical Parameters|[skeptic](https://physionet.org/static/published-projects/challenge-2019/1.0.0/sources/skeptic.zip)
 |#   |smile                        |Unknown     |                                             |
 |#   |snow                         |Unknown     |                                             |
@@ -123,7 +123,7 @@ The ranks of the teams and their papers and entry code are available in the tabl
 | * | UAlberta | Humza Haider |  |[UAlberta](https://physionet.org/static/published-projects/challenge-2019/1.0.0/sources/UAlberta.zip)|
 |?   |UCAS_BigBird                 |Unknown     |                                             |[UCASBigBird](https://physionet.org/static/published-projects/challenge-2019/1.0.0/sources/UCASBigBird.zip)
 |?   |ucas-star                    |Unknown     |                                             |[ucasstar](https://physionet.org/static/published-projects/challenge-2019/1.0.0/sources/ucasstar.zip)
-|x   |UlsterTeam                   |Pardis Biglarbeigi, Donal McLaughlin, Khaleed Rjoob, Abdullah Abdullah, Niamh McCallan, Alicja Jasinska-Piadlo, Raymond Bond, Dewar Finlay, Mark Kok Yew Ng, Alan Kennedy, James McLaughlin|Early prediction of sepsis considering Early Warning Scoring systems|
+|x   |UlsterTeam                   |Pardis Biglarbeigi, Donal McLaughlin, Khaleed Rjoob, Abdullah Abdullah, Niamh McCallan, Alicja Jasinska-Piadlo, Raymond Bond, Dewar Finlay, Mark Kok Yew Ng, Alan Kennedy, James McLaughlin|[Early prediction of sepsis considering Early Warning Scoring systems](http://www.cinc.org/archives/2019/pdf/CinC2019-051.pdf)|
 |?   |WML                          |Unknown     |                                             |[WML](https://physionet.org/static/published-projects/challenge-2019/1.0.0/sources/WML.zip)
 |?   |XLS-IMECAS                   |Unknown     |                                             |[XLSIMECAS](https://physionet.org/static/published-projects/challenge-2019/1.0.0/sources/XLSIMECAS.zip)
 | * | Yuanfang Guan | Yuanfang Guan |   | [YuanfangGuan](https://physionet.org/static/published-projects/challenge-2019/1.0.0/sources/YuanfangGuan.zip) | |
@@ -135,6 +135,20 @@ The ranks of the teams and their papers and entry code are available in the tabl
 (?) Did not identify team members.
 
 (#) Disqualified for submitting code substantially similar to another team	.
+
+<!--
+
+Kent Ridge AI: team 77 have two CinC papers?:
+
+Kent Ridge AI|Jia Yao, Ming Lun Ong, Kar Kin Mun, Shiyu Liu, Mehul Motani| Hybrid Feature Learning Using Autoencoders for Early Prediction of Sepsis](http://www.cinc.org/archives/2019/pdf/CinC2019-243.pdf)
+
+Not found teams for the following papers:
+
+[Victor G Marques, Miguel Rodrigo, María S Guillem, João Salinet. Effect of Reducing the Number of Leads from Body Surface Potential Mapping in Computer Models of Atrial Arrhythmias](http://www.cinc.org/archives/2019/pdf/CinC2019-099.pdf)
+[Francesco Renna, Miguel Coimbra. Source Separation of the Second Heart Sound Using Gaussian Mixture Models](http://www.cinc.org/archives/2019/pdf/CinC2019-236.pdf)
+
+
+-->
 
 ## Hakathon results
 
