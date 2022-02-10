@@ -65,7 +65,7 @@ The public training set contains heart sound recordings, routine demographic inf
 
 The following [Data Table](#data-table) shows the available information in the training, validation, and test sets of the Challenge data. A detailed description of this table can be found in the [Data Description](data).
 
-|        <a name="data-table"></a>Variable   |    Short description (format)    | Possible values       | Training    |Validation|Test|
+| <a name="data-table"></a>Variable | Short description (format) | Possible values | Training | Validation | Test |
 |-----------------|------------------|------------------|------------------------|------|------|
 | Age | Age category (string)| Neonate <br>Infant<br> Child<br> Adolescent<br> Young adult |✓|✓|✓|
 |Sex|Reported sex (string)|Female<br>Male|✓|✓|✓|
@@ -189,9 +189,15 @@ See [this page](submissions) for information about how to prepare your algorithm
 
 ## <a name="scoring"></a> Challenge Scoring
 
-For this year's Challenge, we developed a scoring metric based on the *costs for algorithmic prescreening for human experts for heart murmur identification*. We assume that algorithms can make diagnostic errors. If an algorithmic prescreening is positive (i.e., it identifies a murmur) or unknown, then the patient is referred to an expert for screening. If the algorithmic prescreening is negative (i.e., it does not identify a murmur), then there is no expert referral.
+For this year's Challenge, we developed a scoring metric based on the *costs for algorithmic prescreening for human experts for heart murmur identification*.
 
-We also assume that experts do not make diagnostic errors, but an expert diagnosis may be unknown. If an expert diagnosis is positive, then the patient receives treatment. If the expert diagnosis is unknown, then the patient receives another expert screening, after which the patient receives treatment a fraction $$\alpha$$ of the time. If the expert diagnosis is negative, then the patient does not receive treatment.
+For this problem, we assume that algorithms can make diagnostic errors. Conversely, we assume that general practitioners (GPs) and specialists do not make diagnostic errors, but GP screening may be unsure/unknown and require a specialist to definitively identify it as a positive or negative case. We assume that such unknown cases are determined to be positive a fraction $$\alpha$$ of the time and negative a fraction $$1-\alpha$$ of the time.
+
+The screening procedure is as follows:
+
+- If an algorithmic prescreening is positive (i.e., it identifies a murmur) or unknown, then the patient is referred to an expert for screening: either a GP for positive cases or a specialist for unknown cases. If the algorithmic prescreening is negative (i.e., it does not identify a murmur), then there is no expert referral.
+- If the GP diagnosis is positive, then the patient receives treatment. If the GP diagnosis is unknown, then the patient is referred to a specialist for further screening. If the GP diagnosis is negative, then the patient does not receive treatment.
+- Like the GP screening, if the specialist diagnosis is positive, then the patient receives treatment. If the specialist diagnosis is negative, then the patient does not receive treatment.
 
 Let $$n_{\text{total}}$$ be the total number of subjects, where $$n_{\text{P}}$$, $$n_{\text{U}}$$, and $$n_{\text{N}}$$ are the numbers of positive (present murmur), unknown, and negative (absent murmur) cases, respectively (considered as ground truth):
 
@@ -238,17 +244,11 @@ The following table provides a [confusion matrix](#conf-mat) for the numbers of 
        </tbody>
 </table>
 
-The columns marginals/sums of this matrix are $$n_{\text{P}}$$, $$n_{\text{U}}$$, and $$n_{\text{N}}$$, respectively:
-
-- $$n_{\text{P}} = n_{\text{PP}} + n_{\text{UP}} + n_{\text{NP}}$$,
-- $$n_{\text{U}} = n_{\text{PU}} + n_{\text{UU}} + n_{\text{NU}}$$,
-- $$n_{\text{N}} = n_{\text{PN}} + n_{\text{UN}} + n_{\text{NN}}$$.
-
-Let $$c_\text{algorithm}$$ be the cost of a single algorithmic prescreening, let $$c_{\text{expert}_1}$$ be the cost of a single expert screening, let $$c_{\text{expert}_2}$$ be the cost of a second expert screening, let $$c_\text{treatment}$$ be the cost of a single treatment, and let $$c_\text{error}$$ be the cost of a single diagnostic error, i.e., the cost of delayed treatment or no treatment for a heart murmur because of a late diagnosis. We assume that these costs are averaged over many subjects and define them as follows:
+Let $$c_\text{algorithm}$$ be the cost of an algorithmic prescreening, let $$c_\text{GP}$$ be the cost of a screening by a general practitioner (GP), let $$c_\text{specialist}$$ be the cost of a screening by a specialist, let $$c_\text{treatment}$$ be the cost of a treatment, and let $$c_\text{error}$$ be the cost of a diagnostic error, i.e., the cost of delayed treatment or no treatment for a heart murmur because the algorithmic prescreening was negative. We assume that these costs are averaged over many subjects and define them as follows:
 
 - $$c_\text{algorithm} = 1$$,
-- $$c_{\text{expert}_1} = 250$$,
-- $$c_{\text{expert}_2} = 500$$,
+- $$c_\text{GP} = 250$$,
+- $$c_\text{specialist} = 500$$,
 - $$c_\text{treatment} = 1000$$,
 - $$c_\text{error} = 10000$$,
 - and $$\alpha = 0.5$$.
@@ -256,22 +256,22 @@ Let $$c_\text{algorithm}$$ be the cost of a single algorithmic prescreening, let
 Let
 
 $$
-c_0 = c_{\text{expert}_1} \cdot n_\text{total} + c_{\text{expert}_2} \cdot n_\text{U} + c_\text{treatment} \cdot (n_\text{P} + \alpha n_\text{U})
+c_0 = c_\text{GP} \cdot n_\text{total} + c_\text{specialist} \cdot n_\text{U} + c_\text{treatment} \cdot (n_\text{P} + \alpha n_\text{U})
 $$
 
-be the total cost of only an expert for screening ***without algorithmic prescreening***, and let
+be the total cost ***without algorithmic prescreening***, and let
 
 $$
 \begin{align*}
 c_1  &=  c_\text{algorithm} \cdot n_\text{total} \\
- &+ c_{\text{expert}_1} \cdot (n_\text{PP} + n_\text{PU} + n_\text{PN} + n_\text{UP} + n_\text{UU} + n_\text{UN}) \\
- &+ c_{\text{expert}_2} \cdot (n_\text{PU} + n_\text{UU}) \\
+ &+ c_\text{GP} \cdot (n_\text{PP} + n_\text{PU} + n_\text{PN}) \\
+ &+ c_\text{specialist} \cdot (n_\text{PU} + n_\text{UP} + n_\text{UU} + n_\text{UN}) \\
  &+ c_\text{treatment} \cdot (n_\text{PP} + \alpha n_\text{PU} + n_\text{UP} + \alpha n_\text{UU})\\
- &+ c_\text{error} \cdot (n_\text{NP}+\alpha n_\text{NU})
+ &+ c_\text{error} \cdot (n_\text{NP} + \alpha n_\text{NU})
 \end{align*}
 $$
 
-be the total cost of using an expert for screening ***with algorithmic prescreening***.
+be the total cost ***with algorithmic prescreening***.
 
 **The mean cost $$c_1/n_\text{total}$$, i.e., the total cost divided by the number of patients, is the Challenge cost function.**
 
