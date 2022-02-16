@@ -100,7 +100,7 @@ The occurrence of end organ damage as identified by a two-point deterioration in
 
 $$t_\text{sepsis}$$
 
-The onset time of sepsis is the earlier of $$t_{suspicion}$$ and $$t_\text{SOFA}$$ as long as $$t_\text{SOFA}$$ occurs no more than 24 hours before or 12 hours after $$t_\text{suspicion}$$; otherwise, the patient is not marked as a sepsis patient. Specifically, if $$t_\text{suspicion}- 24 \leq t_\text{SOFA} \leq t_\text{suspicion} + 12$$, then $$t_\text{sepsis} = \min (t_\text{suspicion}, t_\text{SOFA})$$.
+The onset time of sepsis is the earlier of $$t_\text{suspicion}$$ and $$t_\text{SOFA}$$ as long as $$t_\text{SOFA}$$ occurs no more than 24 hours before or 12 hours after $$t_\text{suspicion}$$; otherwise, the patient is not marked as a sepsis patient. Specifically, if $$t_\text{suspicion}- 24 \leq t_\text{SOFA} \leq t_\text{suspicion} + 12$$, then $$t_\text{sepsis} = \min (t_\text{suspicion}, t_\text{SOFA})$$.
 
 Table 1: Columns in each training data file.
 
