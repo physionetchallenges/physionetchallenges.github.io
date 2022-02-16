@@ -1,11 +1,4 @@
-Rank,Team Name,Validation set,"CPSC 
-test","G12EC
- test","Undisclosed
- test","UMich 
-test",Test set,"Train Running 
-Time (minutes)","Validation Running 
-Time (minutes)","Test Running 
-Time (minutes)"
+Rank,Team Name,Validation set,CPSC test,G12EC test,Undisclosed test,UMich test,Test set,Train Running Time (minutes),Validation Running Time (minutes),Test Running Time (minutes)
 1,ISIBrno-AIMT,0.62,0.69,0.60,0.54,0.59,0.58,1630,3,14
 2,DSAIL_SNU,0.59,0.58,0.59,0.58,0.56,0.57,2435,2,12
 3,NIMA,0.61,0.75,0.58,0.47,0.58,0.56,599,5,27
