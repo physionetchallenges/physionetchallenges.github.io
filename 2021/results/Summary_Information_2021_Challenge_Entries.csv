@@ -1,5 +1,4 @@
-Team Name,Submission ID,"Abstract Decision
-(R:Rejected, O:Oral, P:Poster)",Withdrawn,Successful Unofficial Phase Entry,Successful Official Phase Entry,Scored On Test Set,Working Training Code,Open Source Licence,Registered At CinC,Preprint At CinC By Deadline,Ranking and Main Prize Eligible,Note
+Team Name,Submission ID,Abstract Decision(R:Rejected, O:Oral, P:Poster),Withdrawn,Successful Unofficial Phase Entry,Successful Official Phase Entry,Scored On Test Set,Working Training Code,Open Source Licence,Registered At CinC,Preprint At CinC By Deadline,Ranking and Main Prize Eligible,Note
 AADAConglomerate,196,P,No,Yes,Yes,Yes,Yes,BSD 2-Clause,Yes,Yes,Yes,In person
 AIRCAS_MEL1,98,P,No,Yes,Yes,Yes,Yes,BSD 2-Clause,Yes,Yes,Yes,Remote
 Aizip-ECG-team,No Abstract,N/A,N/A,No,Yes,Yes,Yes,MIT License,No,No,No,
