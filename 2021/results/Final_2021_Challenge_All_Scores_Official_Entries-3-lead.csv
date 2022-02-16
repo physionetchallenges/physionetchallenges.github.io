@@ -1,35 +1,4 @@
-Rank,Team Name,Entry UID,"Training Run 
-Time (minutes)","Validation
-AUROC","Validation
-AUPRC","Validation
-Accuracy","Validation
-F-measure","Validation
-Challenge Metric","Validation 
-Run Time (minutes)","CPSC Test
-AUROC","CPSC Test
-AUPRC","CPSC Test
-Accuracy","CPSC Test
-F-measure","CPSC Test
-Challenge Metric","CPSC Test 
-Run Time","G12EC Test
-AUROC","G12EC Test
-AUPRC","G12EC Test
-Accuracy","G12EC Test
-F-measure","G12EC Test
-Challenge Metric","G12EC Test
-Run Time","Undisclosed Test
-AUROC","Undisclosed Test
-AUPRC","Undisclosed Test
-Accuracy","Undisclosed Test
-F-measure","Undisclosed Test
-Challenge Metric","Undisclosed Test
-Run Time","UMich Test
-AUROC","UMich Test
-AUPRC","UMich Test
-Accuracy","UMich Test
-F-measure","UMich Test
-Challenge Metric","UMich Test
-Run Time"
+Rank,Team Name,Entry UID,Training Run Time (minutes),Validation AUROC,Validation AUPRC,Validation Accuracy,Validation F-measure,Validation Challenge Metric,Validation Run Time (minutes),CPSC Test AUROC,CPSC Test AUPRC,CPSC Test Accuracy,CPSC Test F-measure,CPSC Test Challenge Metric,CPSC Test Run Time (minutes),G12EC Test AUROC,G12EC Test AUPRC,G12EC Test Accuracy,G12EC Test F-measure,G12EC Test Challenge Metric,G12EC Test Run Time (minutes),Undisclosed Test AUROC,Undisclosed Test AUPRC,Undisclosed Test Accuracy,Undisclosed Test F-measure,Undisclosed Test Challenge Metric,Undisclosed Test Run Time (minutes),UMich Test AUROC,UMich Test AUPRC,UMich Test Accuracy,UMich Test F-measure,UMich Test Challenge Metric,UMich Test Run Time (minutes)
 1,ISIBrno-AIMT,ISIBrnoAIMT_48,1630,0.901,0.422,0.295,0.406,0.634,3,0.96,0.807,0.414,0.206,0.716,1,0.878,0.417,0.24,0.398,0.61,2,0.921,0.597,0.347,0.468,0.539,4,0.88,0.444,0.301,0.411,0.586,8
 2,DSAIL_SNU,DSAILSNU_594_1,2435,0.926,0.453,0.178,0.399,0.589,2,0.957,0.803,0.221,0.164,0.596,1,0.901,0.478,0.156,0.408,0.582,2,0.931,0.606,0.284,0.38,0.571,4,0.917,0.493,0.211,0.421,0.571,7
 3,NIMA,NIMA_597,599,0.938,0.507,0.311,0.453,0.626,5,0.966,0.832,0.572,0.186,0.769,1,0.922,0.502,0.213,0.441,0.595,4,0.925,0.609,0.335,0.382,0.435,8,0.924,0.513,0.275,0.462,0.58,14
