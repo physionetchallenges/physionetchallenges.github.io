@@ -1,5 +1,4 @@
-Team Name,Data Source,Lead Combination,Training UID,Test UID,AUROC,AUPRC,Accuracy,F_measure,Challenge Metric,"Test Run Time
-(minutes)"
+Team Name,Data Source,Lead Combination,Training UID,Test UID,AUROC,AUPRC,Accuracy,F_measure,Challenge Metric,Test Run Time (minutes)
 PythonExampleCode,Training,12,Nadi_test_python_649,Nadi_test_python_649_DATASET_1_reruns_5,0.758,0.168,0.088,0.024,-0.524,19
 PythonExampleCode,Training,6,Nadi_test_python_649,Nadi_test_python_649_DATASET_2_reruns_5,0.722,0.141,0.081,0.021,-0.531,17
 PythonExampleCode,Training,4,Nadi_test_python_649,Nadi_test_python_649_DATASET_3_reruns_5,0.746,0.155,0.091,0.019,-0.517,18
