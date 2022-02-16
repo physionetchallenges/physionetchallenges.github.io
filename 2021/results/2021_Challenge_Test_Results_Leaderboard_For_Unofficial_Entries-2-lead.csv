@@ -1,11 +1,4 @@
-Team Name,Validation set,"CPSC 
-test","G12EC
- test","Undisclosed
- test","UMich 
-test",Test set,"Train Running 
-Time (minutes)","Validation Running 
-Time (minutes)","Test Running 
-Time (minutes)"
+Rank,Team Name,Validation set,CPSC test,G12EC test,Undisclosed test,UMich test,Test set,Train Running Time (minutes),Validation Running Time (minutes),Test Running Time (minutes)
 Aizip-ECG-team,0.59,0.58,0.58,0.46,0.58,0.55,2083,3,17
 AI_Health,-0.19,-0.28,-0.17,-0.28,-0.34,-0.29,2,0,0
 AI_Healthcare,0.62,0.78,0.59,-0.01,0.48,0.38,31,1,4
