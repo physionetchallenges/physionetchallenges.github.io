@@ -17,11 +17,11 @@ Please check the below links for information about [current](#current) and [past
 
 ## <a name="past"></a> Past Challenges
 - 2021: [Will Two Do? Varying Dimensions in Electrocardiography](/2021/)  
- Papers and contributed software ongoing
+ [59+ papers](https://physionet.org/files/challenge-2021/1.0.2/papers/index.html) and contributed software ongoing
 - 2020: [Classification of 12-lead ECGs](/2020/)  
- Papers and contributed software ongoing
+ [61+ papers](https://physionet.org/files/challenge-2020/1.0.1/papers/index.html) and contributed software ongoing
 - 2019: [Early Prediction of Sepsis from Clinical Data](https://physionet.org/content/challenge-2019/)  
- Papers and contributed software ongoing
+ [55+ papers](https://physionet.org/files/challenge-2019/1.0.0/papers/index.html) and [91 contributed software](https://physionet.org/static/published-projects/challenge-2019/1.0.0/sources/)
 - 2018: [You Snooze, You Win](https://physionet.org/content/challenge-2018/)  
  [23 papers](https://physionet.org/files/challenge-2018/1.0.0/papers/index.html) and [19 contributed software](https://physionet.org/static/published-projects/challenge-2018/1.0.0/sources/)
 - 2017: [AF Classification from a Short Single Lead ECG Recording](https://physionet.org/content/challenge-2017/)  
