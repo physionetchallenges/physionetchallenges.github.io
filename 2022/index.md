@@ -208,40 +208,40 @@ The following table provides a [confusion matrix](#conf-mat) for the numbers of 
 <a name="conf-mat"></a>
 <table>
     <thead>
-           <tr>
-            <th></th>
-            <th></th>
-             <th colspan=3>Expert</th>
-            </tr>
+        <tr>
+        <th></th>
+        <th></th>
+        <th colspan=3>Expert</th>
+        </tr>
     </thead>
     <tbody>
-     <tr>
-            <th></th>
-            <th></th>
-                 <th>Positive</th>
-           <th>Unknown</th>
-            <th>Negative</th>
-        </tr>
-        <tr>
-            <td rowspan=3><b>Classifier</b></td>
-             <td><b>Positive</b></td>
-         <td><i>n</i><sub>PP</sub> </td>
-         <td><i>n</i><sub>PU</sub></td>
-         <td><i>n</i><sub>PN</sub>  </td>
-           </tr>
-        <tr>
-            <td><b>Unknown</b></td>
-         <td><i>n</i><sub>UP</sub></td>
-         <td><i>n</i><sub>UU</sub> </td>
-         <td><i>n</i><sub>UN</sub></td>
-        </tr>
-        <tr>
-            <td><b>Negative</b></td>
-         <td><i>n</i><sub>NP</sub> </td>
-         <td><i>n</i><sub>NU</sub></td>
-         <td><i>n</i><sub>NN</sub></td>
-        </tr>
-       </tbody>
+    <tr>
+        <th></th>
+        <th></th>
+        <th>Positive</th>
+        <th>Unknown</th>
+        <th>Negative</th>
+    </tr>
+    <tr>
+    <td rowspan=3><b>Classifier</b></td>
+        <td><b>Positive</b></td>
+        <td>$$n_\text{PP}$$</td>
+        <td>$$n_\text{PU}$$</td>
+        <td>$$n_\text{PN}$$</td>
+    </tr>
+    <tr>
+    <td><b>Unknown</b></td>
+        <td>$$n_\text{UP}$$</td>
+        <td>$$n_\text{UU}$$</td>
+        <td>$$n_\text{UN}$$</td>
+    </tr>
+    <tr>
+    <td><b>Negative</b></td>
+        <td>$$n_\text{NP}$$</td>
+        <td>$$n_\text{NU}$$</td>
+        <td>$$n_\text{NN}$$</td>
+    </tr>
+    </tbody>
 </table>
 
 Let $$c_\text{algorithm}$$ be the cost of an algorithmic prescreening, let $$c_\text{GP}$$ be the cost of a screening by a general practitioner (GP), let $$c_\text{specialist}$$ be the cost of a screening by a specialist, let $$c_\text{treatment}$$ be the cost of a treatment, and let $$c_\text{error}$$ be the cost of a diagnostic error, i.e., the cost of delayed treatment or no treatment for a heart murmur because the algorithmic prescreening was negative. We assume that these costs are averaged over many subjects and define them as follows:
@@ -286,6 +286,47 @@ The below flowchart illustrates the decision making process and cost $$c_1$$ ass
 
 {: style="text-align:center"}
 ![flowchart](algorithmic_prescreening.svg)
+
+This flowchart is equivalent to assigning weights to the above [confusion matrix](#conf-mat) using the entries in the following [weight matrix](#weight-mat):
+
+<a name="weight-mat"></a>
+<table>
+    <thead>
+        <tr>
+        <th></th>
+        <th></th>
+        <th colspan=3>Expert</th>
+        </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <th></th>
+        <th></th>
+        <th>Positive</th>
+        <th>Unknown</th>
+        <th>Negative</th>
+    </tr>
+    <tr>
+        <td rowspan=3><b>Classifier</b></td>
+        <td><b>Positive</b></td>
+        <td>$$\begin{align*}&c_\text{algorithm}\\&+c_\text{GP}\\&+c_\text{treatment}\end{align*}$$</td>
+        <td>$$\begin{align*}&c_\text{algorithm}\\&+c_\text{GP}\\&+c_\text{specialist}\\&+\alpha c_\text{treatment}\end{align*}$$</td>
+        <td>$$\begin{align*}&c_\text{algorithm}\\&+c_\text{GP}\end{align*}$$</td>
+    </tr>
+    <tr>
+        <td><b>Unknown</b></td>
+        <td>$$\begin{align*}&c_\text{algorithm}\\&+c_\text{specialist}\\&+c_\text{treatment}\end{align*}$$</td>
+        <td>$$\begin{align*}&c_\text{algorithm}\\&+c_\text{specialist}\\&+\alpha c_\text{treatment}\end{align*}$$</td>
+        <td>$$\begin{align*}&c_\text{algorithm}\\&+c_\text{specialist}\end{align*}$$</td>
+    </tr>
+    <tr>
+        <td><b>Negative</b></td>
+        <td>$$\begin{align*}&c_\text{algorithm}\\&+c_\text{error}\end{align*}$$</td>
+        <td>$$\begin{align*}&c_\text{algorithm}\\&+\alpha c_\text{error}\end{align*}$$</td>
+        <td>$$\begin{align*}&c_\text{algorithm}\end{align*}$$</td>
+    </tr>
+    </tbody>
+</table>
 
 We are starting this year's Challenge with this [scoring metric](https://github.com/physionetchallenges/evaluation-2022) and welcome [feedback](https://groups.google.com/g/physionet-challenges/). The [leaderboard](leaderboard) provides the Challenge scoring metric for successful submissions on the hidden validation data.
 

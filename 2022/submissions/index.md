@@ -58,9 +58,7 @@ Similarly to [last year's Challenge](../../2021/), teams must submit both the co
 
 __Why containers?__
 
-Containers allow you to define the environment that you think is best suited for your algorithm. You can choose a specific version of a Linux distribution, install dependancies, and choose specific versions of your favorite libraries and frameworks. Here are two links with data science-centric introductions to Docker:
-[https://towardsdatascience.com/how-docker-can-help-you-become-a-more-effective-data-scientist-7fc048ef91d5](https://towardsdatascience.com/how-docker-can-help-you-become-a-more-effective-data-scientist-7fc048ef91d5)
-[https://link.medium.com/G87RxYuQIV](https://link.medium.com/G87RxYuQIV)
+Containers allow you to define the environment that you think is best suited for your algorithm. You can choose a specific version of a Linux distribution, install dependancies, and choose specific versions of your favorite libraries and frameworks. Here are [two](https://towardsdatascience.com/how-docker-can-help-you-become-a-more-effective-data-scientist-7fc048ef91d5) [links](https://link.medium.com/G87RxYuQIV) with data science-centric introductions to Docker.
 
 __Quickly, how can I test my submission locally?__
 
@@ -79,7 +77,7 @@ If you have trouble running your code, then please try the follow steps to run t
         user@computer:~$ cd example
         user@computer:~/example$ mkdir training_data test_data model test_outputs
 
-2. Download the training data from the [Challenge website](https://physionetchallenges.org/2022). Put some of the training data in `training_data` and `test_data`. You can use some of the training data to check your code (and should perform cross-validation on the training data to evaluate your algorithm).
+2. Download the training data from the [Challenge website](../). Put some of the training data in `training_data` and `test_data`. You can use some of the training data to check your code (and should perform cross-validation on the training data to evaluate your algorithm).
 
 3. Download or clone this repository in your terminal.
 
