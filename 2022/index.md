@@ -97,11 +97,13 @@ The following [Data Table](#data-table) shows the available information in the t
 There are four data file types in the training set:
 
 - A wave recording file (binary `.wav` format) per auscultation location for each subject, which contains the heart sound data.
-- A header file (text `.hea` format) describing the `.wav` file using the standard [WFDB format](https://physionet.org/content/wfdb/10.6.2/).
+- A header file (text `.hea` format) describing the `.wav` file using the standard [WFDB format](https://www.physionet.org/physiotools/wpg/wpg_35.htm).
 - A segmentation data file (text `.tsv` format) per auscultation location for all subjects, which contains segmentation information regarding the start and end points of the fundamental heart sounds S1 and S2.
 - A subject description text file (text `.txt` format) per subject, where the name of the file corresponds to the subject ID. Demographic data such as age, sex, height, weight, and pregnancy status as well as a detailed description of any murmur events are provided in this file.
 
 The validation and test datasets have the same structure, but the `.txt` file does not provide information about murmurs, and the `.tsv` segmentation files are not provided.
+
+The [MATLAB](https://github.com/physionetchallenges/matlab-classifier-2022) and [Python](https://github.com/physionetchallenges/python-classifier-2022) example classifiers include code for loading these files that you can use for your classifier.
 
 The filenames for the audio data, the header file, the segmentation annotation, and the subject description are formatted as `ABCDE_XY.wav`, `ABCDE_XY.hea`, `ABCDE_XY.tsv`, and `ABCDE.txt`, respectively. Here, `ABCDE` is a numeric subject identifier and `XY` is one of the following codes corresponding to the auscultation location where the PCG was collected on the body surface:
 
