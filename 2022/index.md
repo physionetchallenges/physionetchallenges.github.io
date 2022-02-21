@@ -199,9 +199,7 @@ The screening procedure is as follows:
 - If the GP diagnosis is positive, then the patient receives treatment. If the GP diagnosis is unknown, then the patient is referred to a specialist for further screening. If the GP diagnosis is negative, then the patient does not receive treatment.
 - Like the GP screening, if the specialist diagnosis is positive, then the patient receives treatment. If the specialist diagnosis is negative, then the patient does not receive treatment.
 
-Let $$n_{\text{total}}$$ be the total number of subjects, where $$n_{\text{P}}$$, $$n_{\text{U}}$$, and $$n_{\text{N}}$$ are the numbers of positive (present murmur), unknown, and negative (absent murmur) cases, respectively (considered as ground truth):
-
-- $$n_{\text{total}} = n_{\text{P}} + n_{\text{U}} + n_{\text{N}}$$.
+Let $$n_{\text{total}}$$ be the total number of subjects, where $$n_{\text{P}}$$, $$n_{\text{U}}$$, and $$n_{\text{N}}$$ are the numbers of positive (present murmur), unknown, and negative (absent murmur) cases, respectively (considered as ground truth), i.e., $$n_{\text{total}} = n_{\text{P}} + n_{\text{U}} + n_{\text{N}}$$.
 
 The following table provides a [confusion matrix](#conf-mat) for the numbers of cases that an algorithm and an expert identify as positive, unknown, and/or negative:
 
