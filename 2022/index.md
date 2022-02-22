@@ -10,7 +10,9 @@ layout: 2022
 
 ## <a name="announcements"></a> Announcements
 
- <a name="2022.02.01"></a>__February 1, 2022:__ The ([newly named](#2021.09.15)) NIH-funded George B. Moody PhysioNet Challenge 2022 is [now open](https://groups.google.com/g/physionet-challenges/c/uZnPlcnvqOM)! Please read this website for details and share questions and comments on [Challenge forum](https://groups.google.com/g/physionet-challenges/). This year's Challenge is generously co-sponsored by MathWorks and the Gordon and Betty Moore Foundation.
+<a name="2022.02.22"></a>__February 22, 2022:__ We are now accepting submissions to the unofficial phase of the George B. Moody PhysioNet Challenge 2022. Please review the [submission instructions](submissions) for details and submit your entry using [this form](https://docs.google.com/forms/d/e/1FAIpQLSeKp_2W4v7Pg7s1JEYXIhWNxNm2u7TC0U7Ni5Pr3BxHUiZWcg/viewform?usp=sf_link) when ready. Please see [this announcement]() for details, including a request to provide feedback about this year's [scoring metric](#scoring).
+
+<a name="2022.02.01"></a>__February 1, 2022:__ The ([newly named](#2021.09.15)) NIH-funded George B. Moody PhysioNet Challenge 2022 is [now open](https://groups.google.com/g/physionet-challenges/c/uZnPlcnvqOM)! Please read this website for details and share questions and comments on [Challenge forum](https://groups.google.com/g/physionet-challenges/). This year's Challenge is generously co-sponsored by MathWorks and the Gordon and Betty Moore Foundation.
 
 <a name="2021.09.15"></a>__September 15, 2021:__ In honor of the contributions of [George Moody](https://physionet.org/news/post/355) to PhysioNet and Computing in Cardiology, the Board of CinC voted to rename the Challenges to the George B. Moody PhysioNet Challenge.
 
@@ -187,7 +189,7 @@ We have implemented two example algorithms in [MATLAB](https://github.com/physio
 
 ## <a name="submissions"></a> Submitting your Algorithm
 
-See [this page](submissions) for information about how to prepare your algorithm. We will start accepting submissions in the coming weeks.
+See [this page](submissions) for information about how to prepare your algorithm and [this form](https://docs.google.com/forms/d/e/1FAIpQLSeKp_2W4v7Pg7s1JEYXIhWNxNm2u7TC0U7Ni5Pr3BxHUiZWcg/viewform?usp=sf_link) to submit your algorithm when ready.
 
 ## <a name="scoring"></a> Challenge Scoring
 
@@ -328,7 +330,7 @@ This flowchart is equivalent to assigning weights to the above [confusion matrix
     </tbody>
 </table>
 
-We are starting this year's Challenge with this [scoring metric](https://github.com/physionetchallenges/evaluation-2022) and welcome [feedback](https://groups.google.com/g/physionet-challenges/). The [leaderboard](leaderboard) provides the Challenge scoring metric for successful submissions on the hidden validation data.
+We are starting this year's Challenge with this [scoring metric](https://github.com/physionetchallenges/evaluation-2022) and welcome [feedback](https://groups.google.com/g/physionet-challenges/). The [leader board](leaderboard) provides the Challenge scoring metric for successful submissions on the hidden validation data.
 
 ## <a name="rules-and-deadlines"></a> Challenge Rules and Deadlines
 
@@ -406,7 +408,7 @@ Again, we cannot guarantee that your code will be run in time for the [CinC](htt
 
 Please make sure that __all of your team members are authors on your abstract__. If you need to add or subtract authors, do this at least a week before the abstract deadline. Asking us to alter your team membership near or after the deadline is going to lead to confusion that could affect your score during review. It is better to be more inclusive on the abstract in terms of authorship, though, and if we find authors have moved between abstracts/teams without permission, then this is likely to lead to disqualification. As noted above, you may change the authors/team members later in the Challenge.
 
-Please make sure that you include __your team name__, your __official score__ as it appears on the leaderboard, and __cross validation results__ in your abstract __using the scoring metrics for this year's Challenge__ (especially if you are unable to receive a score or are scoring poorly). The novelty of your approach and the rigor of your research is much more important during the unofficial phase. Please make sure you describe your technique and any novelty very specifically. General statements such as 'a 1D CNN was used' are uninformative and will score poorly in review.
+Please make sure that you include __your team name__, your __official score__ as it appears on the leader board, and __cross validation results__ in your abstract __using the scoring metrics for this year's Challenge__ (especially if you are unable to receive a score or are scoring poorly). The novelty of your approach and the rigor of your research is much more important during the unofficial phase. Please make sure you describe your technique and any novelty very specifically. General statements such as 'a 1D CNN was used' are uninformative and will score poorly in review.
 
 The Challenge Organizers have no ability to help with any problems with the abstract submission system. We do not operate it. Please do not email us with issues related to the abstract submission system.
 
