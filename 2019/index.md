@@ -4,12 +4,17 @@ layout: 2019
 
 [comment]: <> (<img style="float: right;" src="../assets/img/physionet-cinc.gif" width="258" height="105" align="right">)
 
+# Early Prediction of Sepsis from Clinical Data: The PhysioNet/Computing in Cardiology Challenge 2019
+
+[Papers and code](results) | [Challenge scores](/results/challenge.tsv) | [Hackathon scores](/results/hackathon.tsv)
+
+<!--
 <h1><a class="anchor" name="barlink">Early Prediction of Sepsis from Clinical Data: The PhysioNet/Computing in Cardiology Challenge 2019</a></h1>
 
 <a class="anchor" name="barlink">[Papers and code](results) | [Challenge scores](/results/challenge.tsv) | [Hackathon scores](/results/hackathon.tsv)
 </a>
 
-<!-- <details><summary>
+ <details><summary>
 [Papers and code](results) / [Challenge scores](/results/challenge.tsv) / [Hackathon scores](/results/hackathon.tsv)
 </summary>
   
