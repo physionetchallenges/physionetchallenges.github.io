@@ -6,9 +6,11 @@ layout: 2017
 
 # AF Classification from a Short Single Lead ECG Recording: The PhysioNet/Computing in Cardiology Challenge 2017
 
+[Papers and code](results) | [Challenge scores](https://archive.physionet.org/challenge/2017/followup-combined-sorted-with-ranking-median-95thpc.csv)
+
 __When using this resource, please cite the Challenge paper:__
 
-[Gari Clifford, Chengyu Liu, Benjamin Moody, Li-Wei Lehman, Ikaro Silva, Qiao Li, Alistair Johnson, Roger Mark. (2017) AF Classification from a Short Single Lead ECG Recording: the Physionet Computing in Cardiology Challenge 2017, 44, https://doi.org/10.22489/CinC.2017.065-469](http://www.cinc.org/archives/2017/pdf/065-469.pdf)
+[GD Clifford, C Liu, B Moody, L-W Lehman, I Silva, Q Li, A Johnson, R G Mark. (2017) AF Classification from a Short Single Lead ECG Recording: the Physionet Computing in Cardiology Challenge 2017, 44](http://www.cinc.org/archives/2017/pdf/065-469.pdf), ht<span>tp://</span>doi.org/10.22489/CinC.2017.065-469.
 
 __Also please include the standard citation for PhysioNet:__
 
