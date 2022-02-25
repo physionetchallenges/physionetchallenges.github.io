@@ -118,7 +118,7 @@ If you have trouble running your code, then please try the follow steps to run t
 
 __What computational resources will my entry have?__
 
-Your submissions have access to 8 vCPUs, 52 GB RAM, 50 GB local storage, and an optional [NVIDIA T4 Tensor Core GPU](https://www.nvidia.com/en-us/data-center/tesla-t4/) (driver version 418.40.04) with 16 GB VRAM. This is equivalent to a [`n1-highmem-8`](https://cloud.google.com/compute/docs/machine-types#n1_high-memory_machine_types).
+Your submissions have access to 8 vCPUs, 52 GB RAM, 50 GB local storage, and an optional [NVIDIA T4 Tensor Core GPU](https://www.nvidia.com/en-us/data-center/tesla-t4/) (driver version 470.82.01) with 16 GB VRAM. This is equivalent to a [`n1-highmem-8`](https://cloud.google.com/compute/docs/machine-types#n1_high-memory_machine_types).
 
 For training your model on the training data, we impose a 48 hour time limit for submissions that request a GPU and a 72 hour time limit for submissions that do not request a GPU. For running your trained model on the validation or test data, we impose a 24 hour time limit whether or not a submission requests a GPU.
 
