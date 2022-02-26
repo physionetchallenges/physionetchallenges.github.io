@@ -10,7 +10,7 @@ layout: 2022
 
 ## <a name="announcements"></a> Announcements
 
-<a name="2022.02.22"></a>__February 22, 2022:__ We are now accepting submissions to the unofficial phase of the George B. Moody PhysioNet Challenge 2022. Please review the [submission instructions](submissions) for details and submit your entry using [this form](https://docs.google.com/forms/d/e/1FAIpQLSeKp_2W4v7Pg7s1JEYXIhWNxNm2u7TC0U7Ni5Pr3BxHUiZWcg/viewform?usp=sf_link) when ready. Please see [this announcement]() for details, including a request to provide feedback about this year's [scoring metric](#scoring).
+<a name="2022.02.22"></a>__February 22, 2022:__ We are now accepting submissions to the unofficial phase of the George B. Moody PhysioNet Challenge 2022. Please review the [submission instructions](submissions) for details and submit your entry using [this form](https://docs.google.com/forms/d/e/1FAIpQLSeKp_2W4v7Pg7s1JEYXIhWNxNm2u7TC0U7Ni5Pr3BxHUiZWcg/viewform?usp=sf_link) when ready. Please see the [leader board](leaderboard) for scores and this [announcement](https://groups.google.com/g/physionet-challenges/c/AVet2iVTEvA) for details, including a request to provide feedback about this year's [scoring metric](#scoring).
 
 <a name="2022.02.01"></a>__February 1, 2022:__ The ([newly named](#2021.09.15)) NIH-funded George B. Moody PhysioNet Challenge 2022 is [now open](https://groups.google.com/g/physionet-challenges/c/uZnPlcnvqOM)! Please read this website for details and share questions and comments on [Challenge forum](https://groups.google.com/g/physionet-challenges/). This year's Challenge is generously co-sponsored by MathWorks and the Gordon and Betty Moore Foundation.
 
