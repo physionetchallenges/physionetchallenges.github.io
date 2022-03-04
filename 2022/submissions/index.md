@@ -108,7 +108,7 @@ If you have trouble running your code, then please try the follow steps to run t
 
         root@[...]:/physionet# python run_model.py model test_data test_outputs
 
-        root@[...]:/physionet# python evaluate_model.py model test_data test_outputs
+        root@[...]:/physionet# python evaluate_model.py test_data test_outputs
         [...]
 
         root@[...]:/physionet# exit
