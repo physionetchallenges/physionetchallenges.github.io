@@ -368,7 +368,7 @@ For these reasons, we strongly suggest that you start submitting entries at leas
 
 (** Must include preliminary scores.)
 
-(*** Must include final scores, your ranking in the Challenge, and any updates to your work as a result of feedback after presenting at CinC. This final paper daedline is earlier than the deadline given by CinC so that we can check these details.)
+(*** Must include final scores, your ranking in the Challenge, and any updates to your work as a result of feedback after presenting at CinC. This final paper deadline is earlier than the deadline given by CinC so that we can check these details.)
 
 To be eligible for the open-source award, you must do all the following:
 
