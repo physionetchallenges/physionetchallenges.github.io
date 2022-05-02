@@ -25,7 +25,7 @@ Similarly to [last year's Challenge](../../2021/), teams must submit both the co
 2. Add your classification code to your repository. Like the example code, your code must be in the root directory of the master branch.
 3. Do not include extra files that are not required to create and run your classification code, such as the training data.
 4. Follow the instructions for the programming language of your submission.
-5. Submit your entry through [this form](https://docs.google.com/forms/d/e/1FAIpQLSeKp_2W4v7Pg7s1JEYXIhWNxNm2u7TC0U7Ni5Pr3BxHUiZWcg/viewform?usp=sf_link). We will clone your repository using the HTTPS URL that ends in `.git`. On GitHub, you can get this URL by clicking on "Clone or download" and copying and pasting the URL, e.g., `https://github.com/physionetchallenges/python-classifier-2022.git`. Please see [here](https://help.github.com/en/articles/which-remote-url-should-i-use) for an example.
+5. Submit your entry through [this form](https://docs.google.com/forms/d/e/1FAIpQLSfxTFFtQXENkq-Do9tBgqK6MqF41TAXNB04XCIwhOCP9GwTkg/viewform?usp=sf_link). We will clone your repository using the HTTPS URL that ends in `.git`. On GitHub, you can get this URL by clicking on "Clone or download" and copying and pasting the URL, e.g., `https://github.com/physionetchallenges/python-classifier-2022.git`. Please see [here](https://help.github.com/en/articles/which-remote-url-should-i-use) for an example.
 6. We will put the scores for successful entries on the leaderboard.  The leaderboard will publicly show your team name, run time, and score.
 
 ### <a name="matlab"></a>MATLAB-specific instructions
@@ -140,7 +140,7 @@ For Python, if your entry uses scikit-learn, then you need to install it via `pi
 
 __Why can't I install a common Python or R package using Python or R's package manager?__
 
-Some packages have dependencies, such as GCC, that need to be installed.  Try `python:3.8.9-buster`, which includes more packages by default, or installing the dependencies. If the first line of your Dockerfile is `FROM python:3.8.6-slim`, then you are building a Docker image with the Debian Linux distribution, so you can install GCC and other related libraries that many Python and R packages use by adding the line `RUN apt install build-essential` to your Dockerfile before installing these packages.
+Some packages have dependencies, such as the GCC, that need to be installed.  Try `python:3.8.9-buster`, which includes more packages by default, or installing the dependencies. If the first line of your Dockerfile is `FROM python:3.8.6-slim`, then you are building a Docker image with the Debian Linux distribution, so you can install GCC and other related libraries that many Python and R packages use by adding the line `RUN apt install build-essential` to your Dockerfile before installing these packages.
 
 __How do I build my image?__
 
@@ -162,23 +162,22 @@ This will take you into your container and you should see your code.
 
 Please see [Docker-specific FAQs](#docker) for more information and description.
 
-
 __What can I do to make sure that my submission is successful?__
 
 You can avoid most submission errors with the following steps:
 
-   - Do not change the train_model or test_model scripts.  We will only use the versions of these scripts in the MATLAB and Python example repositories ([https://github.com/physionetchallenges](https://github.com/physionetchallenges)), so any changes that you make will not be used.
-   - Do build your Docker image.  The above FAQ provides advice for common Docker-related issues.
-   - Do test your Docker code on at least one file from the training dataset.
-   - Do try to reduce the run time of your code by moving code from the run_model function to the load_model function for repeated tasks.  Most submissions can run in a couple of hours on the test data.
+- Do not change the train_model or test_model scripts.  We will only use the versions of these scripts in the MATLAB and Python example repositories ([https://github.com/physionetchallenges](https://github.com/physionetchallenges)), so any changes that you make will not be used.
+- Do build your Docker image.  The above FAQ provides advice for common Docker-related issues.
+- Do test your Docker code on at least one file from the training dataset.
+- Do try to reduce the run time of your code by moving code from the run_model function to the load_model function for repeated tasks.  Most submissions can run in a couple of hours on the test data.
 
 __Why is my entry unsuccessful on your submission system? It works on my computer.__
 
 There are several common reasons for unexpected errors:
 
-   - You may have changed the driver script. For consistency across submissions from different participants, we will use the driver scripts available on [https://github.com/physionetchallenges/](https://github.com/physionetchallenges).
-   - You may have unmet dependencies. Note that packages in the requirements.txt file for Python submissions may have dependencies, such as gcc, that pip is unable to install. You can often identify such issues by trying to build a Docker image from your Dockerfile.
-   - You may have used a specific version of a Python package on your computer, but you didn't specify the version of the package in your Dockerfile or your requirements.txt file, so we installed the latest available version of the package. These versions may be incompatible. For example, if you train your data using one version of a machine learning package and we test it with another version of the package, then your entry may fail.
+- You may have changed the driver script. For consistency across submissions from different participants, we will use the driver scripts available on [https://github.com/physionetchallenges/](https://github.com/physionetchallenges).
+- You may have unmet dependencies. Note that packages in the requirements.txt file for Python submissions may have dependencies, such as gcc, that pip is unable to install. You can often identify such issues by trying to build a Docker image from your Dockerfile.
+- You may have used a specific version of a Python package on your computer, but you didn't specify the version of the package in your Dockerfile or your requirements.txt file, so we installed the latest available version of the package. These versions may be incompatible. For example, if you train your data using one version of a machine learning package and we test it with another version of the package, then your entry may fail.
 
 ## How do I learn more?
 
