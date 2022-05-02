@@ -10,7 +10,7 @@ layout: 2022
 
 ## <a name="announcements"></a> Announcements
 
-<a name="2022.05.01"></a>__May 1, 2022:__ The official phase of the George B. Moody PhysioNet Challenge 2022 has begun! We now have two tasks: murmur and clinical outcome identification, with updated data and new scoring functions for the official phase. Please see our announcement on the Challenge forum for more details.
+<a name="2022.05.01"></a>__May 1, 2022:__ The official phase of the George B. Moody PhysioNet Challenge 2022 has begun! We now have two tasks: murmur and clinical outcome identification, with updated data and new scoring functions for the official phase. Please see [our announcement](https://groups.google.com/g/physionet-challenges/c/P8_lA70KdZI) on the [Challenge forum](https://groups.google.com/g/physionet-challenges/) for more details.
 
 <a name="2022.02.22"></a>__February 22, 2022:__ We are now accepting submissions to the unofficial phase of the George B. Moody PhysioNet Challenge 2022. Please review the [submission instructions](submissions) for details and submit your entry using [this form](https://docs.google.com/forms/d/e/1FAIpQLSeKp_2W4v7Pg7s1JEYXIhWNxNm2u7TC0U7Ni5Pr3BxHUiZWcg/viewform?usp=sf_link) when ready. Please see the [leaderboard](leaderboard) for scores and this [announcement](https://groups.google.com/g/physionet-challenges/c/AVet2iVTEvA) for details, including a request to provide feedback about this year's [scoring metric](#scoring).
 
