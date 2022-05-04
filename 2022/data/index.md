@@ -4,9 +4,16 @@ layout: 2022
 
 ##  Data Description
 
-This page provides a short description of the variables extracted from a physical examination and a heart sound auscultation.
+This page provides a short description of the variables extracted from a physical examination and a heart sound auscultation. Please see this [page](https://physionet.org/content/circor-heart-sound/) for more details.
 
 Note that information about murmurs is provided in the subject description file (`.txt` file) only when a murmur is detected in at least one of the patient's recordings. Thus, no information about murmurs is provided for healthy subjects. For such subjects, a `nan` (not a number) symbol is provided for the murmur-associated variables.
+
+The tag `Outcome` provides the pediatric cardiologist's overall assessment of the patient's cardiac condition:
+
+- Normal: no referral or indication for treatment.
+- Abnormal: referral or indication for treatment.
+
+This is a holistic diagnosis based on clinical history, physical examination, analog auscultation, echocardiogram, etc. The cardiologists did not have access to the digital auscultations and the murmur gradings when making these diagnoses, and the indicated outcomes do not necessarily imply that the expert had identified a murmur during analog auscultation. The pediatric cardiologists were not the annotators of the digital auscultations.
 
 The tag `Murmur` provides one of the following outcomes:
 
