@@ -331,7 +331,7 @@ The second scoring metric is a cost-based metric that considers the costs of alg
 The screening procedure is as follows:
 
 - The algorithm either refers or does not refer a patient to an expert. If the algorithm's output is murmur present, murmur unknown, or outcome abnormal, then the patient is referred to an expert. If the algorithm's output is murmur absent or outcome normal, then the patient is not referred to an expert.
-- If the patient is referred to an expert, then the expert screens the patient. If the clinical outcome is abnormal, then the patient receives treatment. If the clinical outcome is normal, then the patient does not receive treatent. We assume that the expert does not make diagnostic errors.
+- If the patient is referred to an expert, then the expert screens the patient. If the clinical outcome is abnormal, then the patient receives treatment. If the clinical outcome is normal, then the patient does not receive treatment. We assume that the expert does not make diagnostic errors.
 - If the patient is not referred to an expert, then the patient does not receive treatment. If the expert would have identified an abnormal clinical outcome, then the patient would have received treatment, so this results in missed or late treatment. If the expert would have identified a normal clinical outcome, then the patient would not have received treatment anyway.
 
 To study the value of algorithmic prescreening, we have defined a nonlinear cost function for expert screening with our clinical collaborators.
