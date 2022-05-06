@@ -312,7 +312,7 @@ The first scoring metric is a weighted accuracy metric that places more importan
 
 For the murmur classifiers, the weighted accuracy metric is defined as
 
-$$
+<a name="murmur-score"></a>$$
 s_\text{murmur}
 = \frac{5m_\text{PP}+3m_\text{UU}+m_\text{AA}}{5(m_\text{PP}+m_\text{UP}+m_\text{AP})+3(m_\text{PU}+m_\text{UU}+m_\text{AU})+(m_\text{PA}+m_\text{UA}+m_\text{AA})}.
 $$
@@ -379,7 +379,7 @@ as the **mean cost** for using the murmur classifier for algorithmic prescreenin
 
 For a clinical outcome classifier, we define
 
-$$
+<a name="outcome-score"></a>$$
 \begin{align*}
 c_\text{outcome}^\text{total} &= c_\text{algorithm}(n_\text{TP} + n_\text{FP} + n_\text{FN} + n_\text{TN}) \\
 &+ c_\text{expert}(n_\text{TP} + n_\text{FP}, \: n_\text{patients}) \\
@@ -396,7 +396,7 @@ $$
 
 as the **mean cost** for using the outcome classifier for algorithmic prescreening, where $$n_\text{patients}$$ is the total number of patients.
 
-**We will use $$c_\text{outcome}$$ to rank the outcome classifiers.**
+**We will use $$c_\text{outcome}$$ to rank the clinical outcome classifiers.**
 
 The below flowchart illustrates the decision making process and cost $$c_\text{outcome}$$ associated with algorithmic prescreening:
 
