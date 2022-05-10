@@ -168,9 +168,9 @@ The segmentation annotation file (with `.tsv` extension and in plain text format
 
 ### <a name="data-access"></a> Data Access
 
-The training data of the 2022 Challenge can be downloaded from [PhysioNet](https://physionet.org/content/circor-heart-sound/). You can also download it directly using this [link](https://physionet.org/static/published-projects/circor-heart-sound/the-circor-digiscope-phonocardiogram-dataset-1.0.2.1.zip) or the following command:
+The training data of the 2022 Challenge can be downloaded from [PhysioNet](https://physionet.org/content/circor-heart-sound/). You can also download it directly using this [link](https://physionet.org/static/published-projects/circor-heart-sound/the-circor-digiscope-phonocardiogram-dataset-1.0.3.zip) or the following command:
 
-    wget -r -N -c -np https://physionet.org/files/circor-heart-sound/1.0.2.1/
+    wget -r -N -c -np https://physionet.org/files/circor-heart-sound/1.0.3/
 
 ## <a name="registration"></a> Registering for the Challenge and Conditions of Participation
 
@@ -196,7 +196,7 @@ We have implemented two example algorithms in [MATLAB](https://github.com/physio
 
 ## <a name="submissions"></a> Submitting your Algorithm
 
-See [this page](submissions) for information about how to prepare your algorithm and [this form](...) to submit your algorithm when ready.
+See [this page](submissions) for information about how to prepare your algorithm and [this form](https://docs.google.com/forms/d/e/1FAIpQLSfxTFFtQXENkq-Do9tBgqK6MqF41TAXNB04XCIwhOCP9GwTkg/viewform?usp=sf_link) to submit your algorithm when ready.
 
 ## <a name="scoring"></a> Challenge Scoring
 
