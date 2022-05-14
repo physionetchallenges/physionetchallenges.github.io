@@ -78,7 +78,7 @@ The following [Data Table](#data-table) shows the available information in the t
 |Sex|Reported sex (string)|Female<br>Male|✓|✓|✓|
 |Height|Height in centimeters (number)||✓|✓|✓|
 |Weight|Weight in kilograms (number)| |✓|✓|✓|
-|Pregnancy status|Did the patient report being pregnant durign screening? (Boolean)| |✓|✓|✓|
+|Pregnancy status|Did the patient report being pregnant during screening? (Boolean)| |✓|✓|✓|
 |Additional ID|The second identifier for patients that participated to both screening campaigns (string)| |✓|||
 |Campaign|Campaign attended by the patient (string)|CC2014<br> CC2015 |✓|||
 |**Murmur**|Indicates if a murmur is present, absent or unidentifiable for the annotator; the Challenge label (string)| Present<br>Absent<br>Unknown|✓|||
