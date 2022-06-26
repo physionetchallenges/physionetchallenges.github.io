@@ -68,7 +68,7 @@ If you agree to the above conditions, then please contact us at challenge@physio
 
  <a name="software-data"></a> __I would like to suggest/help organize/contribute software or data to a Challenge - how can I do this?__
 
-If you are interested in contributing to, or posing a Challenge, please feel free to contact us with details of the databases you can provide, the nature of the problem you wish to solve, and some demo code which makes a basic attempt to solve the problem. We strongly recommend having at least three independent databases, two to become public, and one to remain private/hidden. For more information on the general aims and framework of the Challenge, and the criteria for a successful event, please see [here](https://arxiv.org/abs/2007.10502).
+If you are interested in contributing to, or posing a Challenge, please feel free to contact us with details of the databases you can provide, the nature of the problem you wish to solve, and some demo code which makes a basic attempt to solve the problem. We strongly recommend having at least three independent databases, two to become public, and one to remain private/hidden. For more information on the general aims and framework of the Challenge, and the criteria for a successful event, please see [here](https://arxiv.org/abs/2007.10502) and [here](../criteria/).
 
 __For the current Challenge FAQs, please visit [here](../2021/faq/).__
 
