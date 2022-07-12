@@ -10,24 +10,11 @@ For this year's Challenge, please cite:
 
 [Reyna MA, Sadr N, Perez Alday EA, Gu A, Shah AJ, Robichaux C, Rad AB, Elola A, Seyedi S, Ansari S, Ghanbari H, Li Q, Sharma A, Clifford GD. Will Two Do? Varying Dimensions in Electrocardiography: The PhysioNet/Computing in Cardiology Challenge 2021. Computing in Cardiology 2021; 48: 1-4](2021ChallengePaperCinC.pdf)
 
-[Reyna MA, Sadr N, Perez Alday EA, Gu Annie, Shah AJ, Robichaux C, Rad AB, Elola A, Seyedi S, Ansari S, Ghanbari H, Li Q, Sharma A, Clifford GD. Issues in the automated classification of multilead ECGs using heterogeneous labels and populations. Preprint. 2021](2021ChallengePaperPMEA.pdf)
-
-<!--
-The above CinC paper is a draft. We will update it after CinC to include information about the conclusion of the Challenge.
-
-## Templates
-
-Please follow the [preparation and submission instructions](https://www.cinc.org/instructions-for-preparing-and-submitting-full-papers/) for your CinC papers.
-
-We have prepared templates to help you prepare your CinC papers. Please use the LaTeX template ([Overleaf](https://www.overleaf.com/read/qqsvqvyrqkzr
-) or [download](cinc_template.zip)) or the [Word template](cinc_template.docx). These [templates](cinc_template.pdf) include important instructions, advice, and references.
-
-Please *read* these instructions and one of the templates. Each year, we need to provide feedback for many teams that miss some of the paper requirements, and each year, some papers are unfortunately rejected because the teams were unable to address important issues.
--->
+[Reyna MA, Sadr N, Perez Alday EA, Gu Annie, Shah AJ, Robichaux C, Rad AB, Elola A, Seyedi S, Ansari S, Ghanbari H, Li Q, Sharma A, Clifford GD. Issues in the automated classification of multilead ECGs using heterogeneous labels and populations. Physiol. Meas. 2022](2021ChallengePaperPMEA.pdf)
 
 ## Focus Issue Papers
 
-The [Physiological Measurement Focus Collection: Classification of Multilead ECGs](https://iopscience.iop.org/journal/0967-3334/page/Focus%20issues) includes the above [paper](https://iopscience.iop.org/article/10.1088/1361-6579/abc960).
+The [Physiological Measurement Focus Collection: Classification of Multilead ECGs](https://iopscience.iop.org/journal/0967-3334/page/Focus%20issues) includes the above papers from [2020](https://iopscience.iop.org/article/10.1088/1361-6579/abc960) and [2021](https://iopscience.iop.org/article/10.1088/1361-6579/ac79fd).
 
 ## Conference Papers
 
