@@ -16,17 +16,18 @@ We appreciate when we receive suggestions that we run a particular Challenge, an
     5. Clearly documented
     6. Appropriate and standard file formats
     7. IRB approved
-    8. Ethically sound
+    8. Fully deidentified
+    9. Ethically sound
 2. Challenge objective
     1. Meaningful, clinically relevant, and relevant to PhysioNet
     2. Clearly defined and stated in collaboration with domain experts
 3. Challenge evaluation metrics
     1. Clinically relevant
     2. Capture the Challenge objective
-    3. Clearly defined and stated in collaboration with domain experts
+    3. Clearly defined and stated in collaboration with clinical domain experts
 4. Challenge algorithms
     1. Publicly available example implementations available in common languages with clear documentation and instructions
-    2. Flexible to encourage a diversity of approach but
+    2. Flexible to encourage a diversity of approaches
     3. Restrictive to ensure that algorithms address the defined problem
 5. Challenge timeline
     1. Challenge data, objective, evaluation metrics, and algorithms must be available from the beginning of the Challenge
