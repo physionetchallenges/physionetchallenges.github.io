@@ -14,8 +14,8 @@ Please check the below links for information about [current](#current) and [past
 
 ## <a name="news"></a> Recent News
 
-- July 8, 2022: We published an article, [Rethinking Algorithm Performance Metrics for Artificial Intelligence in Diagnostic Medicine](https://jamanetwork.com/journals/jama/fullarticle/2794258), in [JAMA](https://jamanetwork.com/). This article explores the clinical utility of performance metrics for AI from the perspective of the Challenges.
-- February 1, 2022: We launched the [PhysioNet Challenge 2022: Heart Murmur Detection from Phonocardiogram Recordings](/2022/).
+- __July 8, 2022:__ We published an article, [Rethinking Algorithm Performance Metrics for Artificial Intelligence in Diagnostic Medicine](https://jamanetwork.com/journals/jama/fullarticle/2794258), in [JAMA](https://jamanetwork.com/). This article explores the clinical utility of performance metrics for AI from the perspective of the Challenges.
+- __February 1, 2022:__ We launched the [PhysioNet Challenge 2022: Heart Murmur Detection from Phonocardiogram Recordings](/2022/).
 - ... see previous news articles [here](/news/).
 
 ## <a name="current"></a> Current Challenge
