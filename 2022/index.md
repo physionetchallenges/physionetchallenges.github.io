@@ -443,7 +443,7 @@ For these reasons, we strongly suggest that you start submitting entries at leas
 
 (*** Must include final scores, your ranking in the Challenge, and any updates to your work as a result of feedback after presenting at CinC. This final paper deadline is earlier than the deadline given by CinC so that we can check these details.)
 
-<a name="eligibility"></a>To be eligible for rankings and awards award, you must do all the following:
+<a name="eligibility"></a>To be eligible for rankings and awards, you must do all the following:
 
 1. Register for the Challenge [here](https://docs.google.com/forms/d/e/1FAIpQLSdADXQw3OW9Kvhc4xay_ua3Q9_A8O1d-JbAoW_aS-a9RjWutw/viewform?usp=sf_link).
 2. Submit at least one open-source entry that can be scored during the unofficial phase.
