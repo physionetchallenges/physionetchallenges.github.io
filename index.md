@@ -23,9 +23,9 @@ Please check the below links for information about [current](#current) and [past
 
 ## <a name="past"></a> Past Challenges
 - 2021: [Will Two Do? Varying Dimensions in Electrocardiography](/2021/)  
- [59+ papers](https://physionet.org/files/challenge-2021/1.0.2/papers/index.html) and contributed software ongoing
+ [60+ papers](https://physionet.org/files/challenge-2021/1.0.3/papers/index.html) and [58 contributed software](https://physionet.org/files/challenge-2021/1.0.3/sources)
 - 2020: [Classification of 12-lead ECGs](/2020/)  
- [61+ papers](https://physionet.org/files/challenge-2020/1.0.1/papers/index.html) and contributed software ongoing
+ [62+ papers](https://physionet.org/files/challenge-2020/1.0.2/papers/index.html) and [70 contributed software](https://physionet.org/files/challenge-2020/1.0.2/sources)
 - 2019: [Early Prediction of Sepsis from Clinical Data](https://physionet.org/content/challenge-2019/)  
  [55+ papers](https://physionet.org/files/challenge-2019/1.0.0/papers/index.html) and [91 contributed software](https://physionet.org/static/published-projects/challenge-2019/1.0.0/sources/)
 - 2018: [You Snooze, You Win](https://physionet.org/content/challenge-2018/)  
