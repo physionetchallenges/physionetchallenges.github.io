@@ -407,3 +407,9 @@ Total uncompressed size: 327.3 KB.
 *   Download the files using your terminal:
     
         wget -r -N -c -np https://physionet.org/files/challenge-2019/1.0.0/
+
+---
+
+Supported by the [National Institute of Biomedical Imaging and Bioengineering (NIBIB)](https://www.nibib.nih.gov/) under NIH grant R01EB030362.
+
+[Back](../)
