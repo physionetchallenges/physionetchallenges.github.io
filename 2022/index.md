@@ -10,6 +10,8 @@ layout: 2022
 
 ## <a name="announcements"></a> Announcements
 
+<a name="2022.08.17"></a>__August 256, 2022:__ Please see this [announcement](https://groups.google.com/g/physionet-challenges/c/N_wj5K1zvc8) for recent information about presentations, posters, and preprints for CinC 2022 with more information forthcoming.
+
 <a name="2022.08.17"></a>__August 17, 2022:__ Please see the Challenge description paper on [medRxiv](https://doi.org/10.1101/2022.08.11.22278688) and follow the [instructions](https://www.cinc.org/instructions-for-preparing-and-submitting-full-papers/) for preparing your CinC papers. Please use either our LaTeX ([Overleaf](https://www.overleaf.com/read/hcrttswmgkmt) or [download](/papers/cinc_template.zip)) or [Word](/papers/cinc_template.docx) templates, which include important instructions, advice, and references. Please see [here](papers) for more information, including our draft [paper](https://doi.org/10.1101/2022.08.11.22278688) and important citation information. Please see this [announcement](https://groups.google.com/g/physionet-challenges/c/Qra6re6biog) for more details about the next steps of the Challenge.
 
 <a name="2022.05.01"></a>__May 1, 2022:__ The official phase of the George B. Moody PhysioNet Challenge 2022 has begun! We now have two tasks: murmur and clinical outcome identification, with updated data and new scoring functions for the official phase. Please see [our announcement](https://groups.google.com/g/physionet-challenges/c/P8_lA70KdZI) on the [Challenge forum](https://groups.google.com/g/physionet-challenges/) for more details.
@@ -434,7 +436,8 @@ For these reasons, we strongly suggest that you start submitting entries at leas
 |Abstract decisions released|21 June 2022|21 June 2022  | N/A                    |
 |Wild card entry date| 31 July 2022  | 31 July 2022     | N/A                    |
 |Hiatus           | 16 August 2022   | 3 September 2022 | N/A                    |
-|Preprint deadline| 25 August 2022   | 25 August 2022   | One 4-page paper (**)  |
+|Preprint deadline| 1 September 2022   | 1 September 2022   | One 4-page paper (**)  |
+|Poster upload deadline| 4 September 2022   | 4 September 2022   | One poster (**)  |
 |Conference       | 4 September 2022| 7 September 2022  | 1 presentation (***)   |
 |Final scores released| 8 September 2022| 8 September 2022| N/A                  |
 |Final paper deadline| 23 September 2022| 30 September 2022| One 4-page paper (***)|
