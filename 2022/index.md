@@ -10,7 +10,7 @@ layout: 2022
 
 ## <a name="announcements"></a> Announcements
 
-<a name="2022.08.17"></a>__August 256, 2022:__ Please see this [announcement](https://groups.google.com/g/physionet-challenges/c/N_wj5K1zvc8) for recent information about presentations, posters, and preprints for CinC 2022 with more information forthcoming.
+<a name="2022.08.25"></a>__August 25, 2022:__ Please see this [announcement](https://groups.google.com/g/physionet-challenges/c/N_wj5K1zvc8) for recent information about presentations, posters, and preprints for CinC 2022 with more information forthcoming.
 
 <a name="2022.08.17"></a>__August 17, 2022:__ Please see the Challenge description paper on [medRxiv](https://doi.org/10.1101/2022.08.11.22278688) and follow the [instructions](https://www.cinc.org/instructions-for-preparing-and-submitting-full-papers/) for preparing your CinC papers. Please use either our LaTeX ([Overleaf](https://www.overleaf.com/read/hcrttswmgkmt) or [download](/papers/cinc_template.zip)) or [Word](/papers/cinc_template.docx) templates, which include important instructions, advice, and references. Please see [here](papers) for more information, including our draft [paper](https://doi.org/10.1101/2022.08.11.22278688) and important citation information. Please see this [announcement](https://groups.google.com/g/physionet-challenges/c/Qra6re6biog) for more details about the next steps of the Challenge.
 
