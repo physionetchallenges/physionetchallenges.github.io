@@ -6,7 +6,7 @@ layout: 2022
 
 # Heart Murmur Detection from Phonocardiogram Recordings: The George B. Moody PhysioNet Challenge 2022
 
-#### Matthew A. Reyna, Andoni Elola, Jorge Oliveira, Francesco Renna, Annie Gu, Nadi Sadr, Erick A. Perez Alday, Yashar Kiarashinejad, Ashish Sharma, Sandra Mattos, Miguel T. Coimbra, Reza Sameni, Ali Bahrami Rad, Gari D. Clifford
+#### Matthew A. Reyna, Yashar Kiarashinejad, Andoni Elola, Jorge Oliveira, Francesco Renna, Annie Gu, Erick A. Perez Alday, Nadi Sadr, Ashish Sharma, Sandra Mattos, Miguel T. Coimbra, Reza Sameni, Ali Bahrami Rad, Gari D. Clifford
 
 ## <a name="announcements"></a> Announcements
 
