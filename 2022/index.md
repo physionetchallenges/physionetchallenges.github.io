@@ -10,7 +10,7 @@ layout: 2022
 
 ## <a name="announcements"></a> Announcements
 
-<a name="2022.09.12"></a>__September 12, 2022:__ The winners of the 2021 Challenge were announced on 7 September 2022 at [CinC 2022](http://cinc2022.org) in Tampere, Finland. Congratulations, teams! See the [results](results) and [papers](papers) as well as the [full announcement](https://groups.google.com/g/physionet-challenges/c/IjX_GdhvDrc) for the final steps in this year’s Challenge, including details about [open peer pre-review](https://groups.google.com/g/physionet-challenges/c/IjX_GdhvDrc) for the focus issue.
+<a name="2022.09.12"></a>__September 12, 2022:__ The winners of the 2021 Challenge were announced on 7 September 2022 at [CinC 2022](http://cinc2022.org) in Tampere, Finland. Congratulations, teams! See the [results](results) and [papers](papers) as well as the [full announcement](https://groups.google.com/g/physionet-challenges/c/dCoWZOaqJ_M) for the final steps in this year’s Challenge, including details about [open peer pre-review](https://groups.google.com/g/physionet-challenges/c/IjX_GdhvDrc) for the focus issue.
 
 <a name="2022.08.25"></a>__August 25, 2022:__ Please see this [announcement](https://groups.google.com/g/physionet-challenges/c/N_wj5K1zvc8) for recent information about presentations, posters, and preprints for CinC 2022 with more information forthcoming.
 
