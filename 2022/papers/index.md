@@ -19,11 +19,11 @@ __For this year's Challenge, please cite the CirCor DigiScope Dataset publicatio
 
 __Additionally, please include the standard citation for PhysioNet:__
 
-[Goldberger, A., Amaral, L., Glass, L., Hausdorff, J., Ivanov, P. C., Mark, R., ... & Stanley, H. E. (2000). PhysioBank, PhysioToolkit, and PhysioNet: Components of a new research resource for complex physiologic signals. Circulation [Online]. 101 (23), pp. e215–e220.](https://www.ahajournals.org/doi/full/10.1161/01.CIR.101.23.e215)
+[Goldberger, A., Amaral, L., Glass, L., Hausdorff, J., Ivanov, P. C., Mark, R., ... & Stanley, H. E. (2000). PhysioBank, PhysioToolkit, and PhysioNet: Components of a new research resource for complex physiologic signals. Circulation [Online]. 101 (23), pp. e215-e220.](https://www.ahajournals.org/doi/full/10.1161/01.CIR.101.23.e215)
 
 ## Templates
 
-Please follow the [preparation and submission instructions](https://www.cinc.org/instructions-for-preparing-and-submitting-full-papers/) for your CinC papers.
+Please follow the [preparation and submission instructions](https://www.cinc.org/instructions-for-preparing-and-submitting-full-papers/) for your CinC paper, and please review the Challenge-specific [checklist](cinc_paper_checklist.pdf) before submitting your CinC paper.
 
 We have prepared templates to help you prepare your CinC papers. Please use the LaTeX template ([Overleaf](https://www.overleaf.com/read/hcrttswmgkmt
 ) or [download](cinc_template.zip)) or the [Word template](cinc_template.docx). These [templates](cinc_template.pdf) include important instructions, advice, and references.
