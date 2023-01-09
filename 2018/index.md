@@ -452,11 +452,5 @@ The MathWorks at <studentcompetitions@mathworks.com>.
 
 ---
 
-Your comments and suggestions are welcome. Please send them to [challenge\@physionet.org](mailto:challenge@physionet.org?subject=https://moody-challenge.physionet.org/2018/).
-
 PhysioNet is supported by the
 [National Institute of General Medical Sciences (NIGMS)](https://www.nigms.nih.gov/) and the [National Institute of Biomedical Imaging and Engineering (NIBIB)](https://www.nibib.nih.gov/) under NIH grant number 2R01GM104987-09.
-
-For general enquiries about PhysioNet and its contents and usage, please see our [FAQ](../faq/).
-
-Updated Friday, 22 February 2019 at 23:46 EST.
