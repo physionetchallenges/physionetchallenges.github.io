@@ -1,3 +1,7 @@
+---
+layout: 2018
+---
+
 # PhysioNet/CinC Challenge 2018: Training/Test Sets
 
 Data for [the 2018 PhysioNet/Computing in Cardiology
@@ -159,12 +163,12 @@ Matlab, and C programs.
 
 **Table 5**: Functions that can be used to import Challenge data.
 
-| File type                             | Python                                                                        | Matlab                                                                            | C/C++                                                                 |
-| :---                                   | :---                                                                          | :---                                                                              | :---                                                                  |
+| File type                             | Python                                                                         | Matlab                                                                  | C/C++                                                                 |
+| :---                                  | :---                                                                           | :---                                                                    | :---                                                                  |
 | Signal (.mat) and header (.hea) files | [wfdb.rdrecord](https://wfdb.readthedocs.io/en/latest/wfdb.html#wfdb.rdrecord) | [rdmat](https://physionet.org/content/wfdb-matlab/0.10.0/mcode/rdmat.m) | [isigopen](https://physionet.org/physiotools/wpg/wpg_18.htm#isigopen) |
 |
-| Arousal annotation files (.arousal) | [wfdb.rdann](https://wfdb.readthedocs.io/en/latest/wfdb.html#wfdb.rdann)                        | [rdann](https://physionet.org/physiotools/wag/rdann-1.htm) | [annopen](https://physionet.org/physiotools/wpg/wpg_18.htm#annopen) |
-| Arousal files (.mat)                | [scipy.io.loadmat](https://docs.scipy.org/doc/scipy/reference/generated/scipy.io.loadmat.html) | [load](https://www.mathworks.com/help/matlab/ref/load.html)                       | [libmatio](https://sourceforge.net/projects/matio/)                 |
+| Arousal annotation files (.arousal) | [wfdb.rdann](https://wfdb.readthedocs.io/en/latest/wfdb.html#wfdb.rdann)                       | [rdann](https://physionet.org/physiotools/wag/rdann-1.htm)  | [annopen](https://physionet.org/physiotools/wpg/wpg_18.htm#annopen) |
+| Arousal files (.mat)                | [scipy.io.loadmat](https://docs.scipy.org/doc/scipy/reference/generated/scipy.io.loadmat.html) | [load](https://www.mathworks.com/help/matlab/ref/load.html) | [libmatio](https://sourceforge.net/projects/matio/)                 |
 
 
 ## Files
