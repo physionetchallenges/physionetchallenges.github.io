@@ -159,12 +159,13 @@ Matlab, and C programs.
 
 **Table 5**: Functions that can be used to import Challenge data.
 
-| File type                             | Python                                                                         | Matlab                                                                            | C/C++                                                                 |
-| :---                                  | :---                                                                           | :---                                                                              | :---                                                                  |
-| Signal (.mat) and header (.hea) files | [wfdb.rdrecord](https://wfdb.readthedocs.io/en/latest/wfdb.html#wfdb.rdrecord) | [rdmat](https://physionet.org/physiotools/matlab/wfdb-app-matlab/html/rdmat.html) | [isigopen](https://physionet.org/physiotools/wpg/wpg_18.htm#isigopen) |
+| File type                             | Python                                                                        | Matlab                                                                            | C/C++                                                                 |
+| :---                                   | :---                                                                          | :---                                                                              | :---                                                                  |
+| Signal (.mat) and header (.hea) files | [wfdb.rdrecord](https://wfdb.readthedocs.io/en/latest/wfdb.html#wfdb.rdrecord) | [rdmat](https://physionet.org/content/wfdb-matlab/0.10.0/mcode/rdmat.m) | [isigopen](https://physionet.org/physiotools/wpg/wpg_18.htm#isigopen) |
 |
-| Arousal annotation files (.arousal) | [wfdb.rdann](https://wfdb.readthedocs.io/en/latest/wfdb.html#wfdb.rdann)                        | [rdann](https://physionet.org/physiotools/matlab/wfdb-app-matlab/html/rdann.html) | [annopen](https://physionet.org/physiotools/wpg/wpg_18.htm#annopen) |
+| Arousal annotation files (.arousal) | [wfdb.rdann](https://wfdb.readthedocs.io/en/latest/wfdb.html#wfdb.rdann)                        | [rdann](https://physionet.org/physiotools/wag/rdann-1.htm) | [annopen](https://physionet.org/physiotools/wpg/wpg_18.htm#annopen) |
 | Arousal files (.mat)                | [scipy.io.loadmat](https://docs.scipy.org/doc/scipy/reference/generated/scipy.io.loadmat.html) | [load](https://www.mathworks.com/help/matlab/ref/load.html)                       | [libmatio](https://sourceforge.net/projects/matio/)                 |
+
 
 ## Files
 
@@ -183,3 +184,8 @@ If you don’t have a BitTorrent client, we recommend
 * [age-sex.csv](age-sex.csv)
 * [test/](https://archive.physionet.org/physiobank/database/challenge/2018/test/)
 * [training/](https://archive.physionet.org/physiobank/database/challenge/2018/training/)
+
+---
+
+PhysioNet is supported by the
+[National Institute of General Medical Sciences (NIGMS)](https://www.nigms.nih.gov/) and the [National Institute of Biomedical Imaging and Engineering (NIBIB)](https://www.nibib.nih.gov/) under NIH grant number 2R01GM104987-09.
