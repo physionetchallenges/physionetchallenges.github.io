@@ -10,7 +10,7 @@ layout: 2018
 
 ### <a name="announcements"></a> Announcements
 
-<a name="2019.02.22"></a>__22 February 2019:__ [Publications](/papers/) from the 2018 Challenge are now available.
+<a name="2019.02.22"></a>__22 February 2019:__ [Publications](papers) from the 2018 Challenge are now available.
 
 <a name="2018.11.28"></a>__28 November 2018:__
 
@@ -28,7 +28,7 @@ layout: 2018
 <a name="2018.10.10"></a>__10 October 2018:__
 
 -   [Official results](results.csv), as well as a [paper describing the
-    Challenge](/papers/challenge2018cinc.pdf), are now available. Top scores
+    Challenge](papers/challenge2018cinc.pdf), are now available. Top scores
     were achieved by
     1.  __Matthew Howe-Patterson, Bahareh Pourbabaee, and Frederic
         Benard__ (0.54)
@@ -73,14 +73,14 @@ layout: 2018
 
 <a name="2018.05.07"></a>__7 May 2018:__
 
--   [Top scores in the Unofficial Phase](/results/unofficial-phase-results.csv)
+-   [Top scores in the Unofficial Phase](results/unofficial-phase-results.csv)
     were achieved by __Matthew HP and Bahareh Pourbabaee__ with a score
     of 0.439, __Yang Liu and Runnan He__ with a score of 0.244, and
     __Márton Görög, Bálint Varga, and Péter Hajas__ with a score of
     0.228.
 -   An [updated set of arousal files](new-arousals.zip) are now
     available.
--   A [Matlab implementation of the scoring function](/scoring/score2018.m) is
+-   A [Matlab implementation of the scoring function](scoring/score2018.m) is
     now available.
 -   Both the Python and Matlab sample submissions have been updated to
     use the new scoring code.
@@ -88,7 +88,7 @@ layout: 2018
 <a name="2018.04.19"></a>__19 April 2018:__
 
 -   A Python implementation of the scoring function (gross area under
-    precision-recall curve) is available [here](/scoring/score2018.py).
+    precision-recall curve) is available [here](scoring/score2018.py).
 
 <a name="2018.04.10"></a>__10 April 2018:__
 
@@ -218,15 +218,15 @@ regions that will be penalized if marked by your algorithm are marked by
 
 ## <a name="accessing-the-data"></a> Accessing the Data
 
--   __[Click here](/data/training.torrent) to download the complete training
+-   __[Click here](data/training.torrent) to download the complete training
     database (135 GB) using BitTorrent.__
--   __[Click here](/data/test.torrent) to download the complete test database
+-   __[Click here](data/test.torrent) to download the complete test database
     (133 GB) using BitTorrent.__
 
 If you don’t have a BitTorrent client, we recommend
 [Transmission](https://transmissionbt.com/).
 
-The [Challenge data repository](/data/)
+The [Challenge data repository](data/)
 contains two directories (`training` and `test`) which are each
 approximately 135 GB in size. Each directory contains one subdirectory
 per subject (e.g. `training/tr03-0005`). Each subdirectory contains
@@ -305,8 +305,8 @@ database_), which is not the same as averaging the AUPRC for each
 record.
 
 A Python implementation of the scoring algorithm is available
-[here](/scoring/score2018.py), and a Matlab/Octave implementation is
-[here](/scoring/score2018.m).
+[here](scoring/score2018.py), and a Matlab/Octave implementation is
+[here](scoring/score2018.m).
 
 ## <a name="sample-submission"></a> Sample Submission
 
