@@ -117,6 +117,15 @@ post it directly in our [Community Discussion Forum](https://groups.google.com/g
 increase transparency (benefiting all the competitors) and ensure that
 all the challenge organizers see your question.
 
+## <a name="citations"></a> Citations
+
+When using the resources on this site, please cite the following publications:
+
+- The PhysioNet Challenge description paper:
+[Ghassemi MM, Moody BE, Lehman LW, Song C, Li Q, Sun H, Mark RG, Westover MB, Clifford GD. You snooze, you win: the physionet/computing in cardiology challenge 2018. In 2018 Computing in Cardiology Conference (CinC) 2018 Sep 23 (Vol. 45, pp. 1-4). IEEE. doi: 10.22489/CinC.2018.049.](https://doi.org/10.22489/CinC.2018.049)
+- The PhysioNet resource:
+[Goldberger, A., Amaral, L., Glass, L., Hausdorff, J., Ivanov, P. C., Mark, R., ... & Stanley, H. E. (2000). PhysioBank, PhysioToolkit, and PhysioNet: Components of a new research resource for complex physiologic signals. Circulation [Online]. 101 (23), pp. e215-e220.](https://www.ahajournals.org/doi/full/10.1161/01.CIR.101.23.e215)
+
 ## <a name="introduction"></a> Introduction
 
 At the end of last year, American scientists Jeffrey Hall, Michael
