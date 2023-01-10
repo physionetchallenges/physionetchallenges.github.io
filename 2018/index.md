@@ -73,7 +73,7 @@ layout: 2018
 
 <a name="2018.05.07"></a>__7 May 2018:__
 
--   [Top scores in the Unofficial Phase](results/unofficial-phase-results.csv)
+-   [Top scores in the Unofficial Phase](unofficial-phase-results.csv)
     were achieved by __Matthew HP and Bahareh Pourbabaee__ with a score
     of 0.439, __Yang Liu and Runnan He__ with a score of 0.244, and
     __Márton Görög, Bálint Varga, and Péter Hajas__ with a score of
@@ -110,10 +110,10 @@ layout: 2018
 <a name="2018.02.21"></a>__21 February 2018:__
 
 -   PhysioNet Challenge data can now be [downloaded
-    here.](https://archive.physionet.org/physiobank/database/challenge/2018/#files)
+    here.](https://moody-challenge.physionet.org/2018/data/)
 
 If you have any questions or comments regarding this challenge, please
-post it directly in our [Community Discussion Forum](#community-discussion-forum). This will
+post it directly in our [Community Discussion Forum](https://groups.google.com/g/physionet-challenges). This will
 increase transparency (benefiting all the competitors) and ensure that
 all the challenge organizers see your question.
 
@@ -136,7 +136,7 @@ and well-being. Inadequate sleep is associated with a wide range of
 negative outcomes including: impaired memory and learning, obesity,
 irritability, cardiovascular dysfunction, hypotension, diminished immune
 function ([Harvard Medical School,
-2006](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3181883/%23!po%3D3.33333)),
+2006](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3181883/)),
 depression ([Nutt et al,
 2008](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3988690/)), and
 quality of life ([Lee,
@@ -250,9 +250,9 @@ __Table 1:__ Functions that can be used to import Challenge data.
 
 | File type                             | Python                                                                        | Matlab                                                                            | C/C++                                                                 |
 | :---                                   | :---                                                                          | :---                                                                              | :---                                                                  |
-| Signal (.mat) and header (.hea) files | [wfdb.rdrecord](https://wfdb.readthedocs.io/en/latest/wfdb.html#wfdb.rdrecord) | [rdmat](https://physionet.org/physiotools/matlab/wfdb-app-matlab/html/rdmat.html) | [isigopen](https://physionet.org/physiotools/wpg/wpg_18.htm#isigopen) |
+| Signal (.mat) and header (.hea) files | [wfdb.rdrecord](https://wfdb.readthedocs.io/en/latest/wfdb.html#wfdb.rdrecord) | [rdmat](https://physionet.org/content/wfdb-matlab/0.10.0/mcode/rdmat.m) | [isigopen](https://physionet.org/physiotools/wpg/wpg_18.htm#isigopen) |
 |
-| Arousal annotation files (.arousal) | [wfdb.rdann](https://wfdb.readthedocs.io/en/latest/wfdb.html#wfdb.rdann)                        | [rdann](https://physionet.org/physiotools/matlab/wfdb-app-matlab/html/rdann.html) | [annopen](https://physionet.org/physiotools/wpg/wpg_18.htm#annopen) |
+| Arousal annotation files (.arousal) | [wfdb.rdann](https://wfdb.readthedocs.io/en/latest/wfdb.html#wfdb.rdann)                        | [rdann](https://physionet.org/physiotools/wag/rdann-1.htm) | [annopen](https://physionet.org/physiotools/wpg/wpg_18.htm#annopen) |
 | Arousal files (.mat)                | [scipy.io.loadmat](https://docs.scipy.org/doc/scipy/reference/generated/scipy.io.loadmat.html) | [load](https://www.mathworks.com/help/matlab/ref/load.html)                       | [libmatio](https://sourceforge.net/projects/matio/)                 |
 
 ## <a name="submitting-your-entry"></a> Submitting your Entry 
