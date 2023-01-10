@@ -8,7 +8,7 @@ layout: 2018
 
 #### Mohammad Ghassemi, Benjamin Moody, Li-wei Lehman, Roger Mark, Gari D. Clifford 
 
-### <a name="announcements"></a> Announcements
+## <a name="announcements"></a> Announcements
 
 <a name="2019.02.22"></a>__22 February 2019:__ [Publications](papers) from the 2018 Challenge are now available.
 
