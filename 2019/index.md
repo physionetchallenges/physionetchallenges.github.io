@@ -25,16 +25,16 @@ layout: 2019
 
 __November 4, 2019:__ You can find the papers, entry code and ranks of the teams of the PhysioNet/Computing in Cardiology Challenge 2019 in the table of [results](results). The official paper describing the 2019 PhysioNet Challenge appeared on the [CinC](https://cinc.org/archives/2019/) website, [here](https://www.cinc.org/archives/2019/pdf/CinC2019-412.pdf) and the journal paper appeared in [Critical Care Medicine](https://journals.lww.com/ccmjournal/fulltext/2020/02000/early_prediction_of_sepsis_from_clinical_data__the.10.aspx).
 
-__September 17, 2019:__ Official results for the 2019 PhysioNet [Challenge](/results/challenge.tsv) and [Hackathon](/results/hackathon.tsv) are now available.
+__September 17, 2019:__ Official results for the 2019 PhysioNet [Challenge](results/challenge.tsv) and [Hackathon](results/hackathon.tsv) are now available.
 
 __July 8, 2019:__ Thanks to our sponsors, a pre-conference hackathon at Computing in Cardiology 2019 (with prize(s)) will take place on Sunday 8th September in Singapore. Registration is required. Rules and more information can be found [here](#hackathon).
 
 __June 23, 2019:__ Two "wild card" teams were approved for inclusion in the Challenge. We are looking forward to meeting them in Singapore!
 
-__May 28, 2019:__ We are accepting requests for Google Cloud Credits ($500 per eligible team). Requests are due by 29 May, 2019. Please see [here](/content/challenge-2019/1.0.0/#google-cloud-credits) for more information on how to apply for them. Requests will be processed in order and sent on to Google. We cannot guarantee you will receive them, especially later in the competition.
+__May 28, 2019:__ We are accepting requests for Google Cloud Credits ($500 per eligible team). Requests are due by 29 May, 2019. Please see [here](#google-cloud) for more information on how to apply for them. Requests will be processed in order and sent on to Google. We cannot guarantee you will receive them, especially later in the competition.
 
 __May 24, 2019:__ Notices of acceptance have been sent for CinC abstracts.
-  By now you should have received your acceptance or rejection notices for your abstracts. If you were rejected, please do not worry - there are two more options to compete. See [here](#wildcard) and [here](/#hackathon) for more information on this.
+  By now you should have received your acceptance or rejection notices for your abstracts. If you were rejected, please do not worry - there are two more options to compete. See [here](#wildcard) and [here](#hackathon) for more information on this.
   We have added a \`wild card' entry to allow one more team to enter the competition and be eligible for all the prizes. See [here](#wildcard) for more information on this.
   There will be an on-site hackathon revisiting the Challenge (with a separate award) on Sunday 8th September, before the conference begins in Singapore. Any team (whether previously registered for the Challenge or not) with at least one attendee at the conference, who turns up in person to register for the Hackathon, is eligible to enter. See [here](#hackathon) for more information on this.
 
@@ -48,12 +48,12 @@ __April 25, 2019:__ Now accepting Challenge submissions:
 __April 22, 2019:__ Official phase of the 20th PhysioNet/Computing in Cardiology Challenge is now open.
   We have made several changes from the unofficial phase of the Challenge (see below). We invite comments and questions about these changes. We plan to accept submissions again on Thursday, 25 April at 12:01 am GMT.
   We will only use our new cloud submission system for the official phase of the Challenge. See the updated instructions ([here](https://docs.google.com/document/d/1-YCLmie2_1gM4FrpBaSfkhYt8xpYghs8l2vbPemODkw/edit)) for details. The past submission system is no longer available.
-  We ask participants to write causal algorithms that make predictions using current and past (but not future) information. See the [submission instructions](#submitting) and sample prediction code ([here](https://github.com/physionetchallenges)) for details.
+  We ask participants to write causal algorithms that make predictions using current and past (but not future) information. See the [submission instructions](#submitting) and sample prediction code ([here](https://github.com/physionetchallenges/python-example-2019)) for details.
   Note that you will have 10 submissions in this official phase. We will score your results on a subset of the test data. At the end of the competition we will ask you to nominate your 'best' algorithm (it need not be the one that gave you the best score) and we will run it on the full test data to provide the final test score.
   Please do not submit all ten entries in the last week of the competition. Even though we can scale the computing, failures require manual intervention and feedback. We can't do this for 1000+ entries in the final week.
   Also - we will be offering up to $500 in Google Cloud credits (courtesy of the Google Cloud Team) to the best performing entries by June, so it's worth getting a good score before then!
 
-__April 11, 2019:__ Cloud submission system for the 2019 PhysioNet Challenge: We have now implemented a cloud submission system. Instructions for the cloud submission system available here. The deadline of the unofficial phase of the competition has been extended to 11.59pm GMT on Sunday 14th April 2019. This will give you enough time to receive scores and, very importantly, submit abstracts to cinc.org before the 15th. Please [see here](/content/challenge-2019/1.0.0/#abstracts) for important hints on how to prepare a successful abstract, even if you don't receive a score.
+__April 11, 2019:__ Cloud submission system for the 2019 PhysioNet Challenge: We have now implemented a cloud submission system. Instructions for the cloud submission system available here. The deadline of the unofficial phase of the competition has been extended to 11.59pm GMT on Sunday 14th April 2019. This will give you enough time to receive scores and, very importantly, submit abstracts to cinc.org before the 15th. Please [see here](#submit-abstract) for important hints on how to prepare a successful abstract, even if you don't receive a score.
   If you don't receive a score - don't panic - just submit an abstract to cinc.org by the deadline on the 15th April with some results - cross validated on the training data.
   The hiatus has now been moved, and starts on the 15th April and lasts until 12 midnight GMT on the 21st April. The Challenge re-opens at 12.01 am GMT on the 22 April.
 
@@ -170,7 +170,7 @@ PhysioNet Challenges are open to all. Participants enter by submitting entries a
 
 Entries should be submitted through the new cloud submission system for the official phase of the Challenge. Please see [here](https://docs.google.com/document/d/1-YCLmie2_1gM4FrpBaSfkhYt8xpYghs8l2vbPemODkw/edit) for detailed instructions.
 
-Given a table of clinical measurements (columns) over time (rows), your entry must report the risk of sepsis (a real number) and a binary sepsis prediction (0 or 1) at each hour of a patient's clinical record using the current and past (but not future) data for the patient (see the [Data Description section](##data_description)). Please note that we have shifted the sepsis labels in the training data **ahead** by six hours (see the [Challenge Data section](#data)), so we are effectively asking participants to predict sepsis six hours early. We will repeat this process for $$k = 1, 2, \dots, N$$ hours, where $$N$$ is the number of hours in a given patient's recording, and for each patient in the test set. Please see the [sample prediction and evaluation code"](https://github.com/physionetchallenges/) for details.
+Given a table of clinical measurements (columns) over time (rows), your entry must report the risk of sepsis (a real number) and a binary sepsis prediction (0 or 1) at each hour of a patient's clinical record using the current and past (but not future) data for the patient (see the [Data Description section](#data_description)). Please note that we have shifted the sepsis labels in the training data **ahead** by six hours (see the [Challenge Data section](#data)), so we are effectively asking participants to predict sepsis six hours early. We will repeat this process for $$k = 1, 2, \dots, N$$ hours, where $$N$$ is the number of hours in a given patient's recording, and for each patient in the test set. Please see the [sample prediction and evaluation code](https://github.com/physionetchallenges/) for details.
 
 ## <a name="data_description"></a>Data Description
 
@@ -279,7 +279,7 @@ To maintain scientific impact of the Challenges, it is important that all Challe
 
 If evidence of the contravention of these rules are discovered, you will be ineligible for a prize and your entry publicly marked as possibly associated with another entry. Although we will contact the team(s) in question, time and resources are limited and the Organizers must use their best judgement on the matter in a short period of time. The Organizer's decision on this will be final.
 
-#### <a name="submit_abstract"></a> Submitting an Abstract to the Conference
+#### <a name="submit-abstract"></a> Submitting an Abstract to the Conference
 
 First, please think about your title very carefully. There are going to be over 100 abstracts with very similar titles, so your title must reflect the details of what you actually did. (Don't worry about the issue of your methods evolving over the competition, and making your title somewhat inappropriate - you can update it when you submit your final paper in early September.) If you use a vague title, it decreases the chances your abstract will be accepted and the organizers may modify it for the program to allow conference attendees to decide if the poster or talk will be of interest to them. For instance, 'Machine Learning for Predicting X' or 'Signal Processing Methods for Detection of Y' are not useful titles. Also, please do not use the terms 'PhysioNet', 'Challenge' or 'Computing in Cardiology' in the title. There will be an article in the proceedings which carries the same name as the competition (the title of this web page). Using any of these terms is likely to cause significant confusion when searching for the definitive article describing the Challenge and results. Please note, _when you submit to the abstract submission system please choose the track 'Physionet/CinC Challenge'_ to ensure it is reviewed by the Challenge organizers.
 
@@ -313,7 +313,7 @@ We hope to run a special issue with a closing date of (to be decided). We will t
 
 [MathWorks](http://www.mathworks.com/) has generously decided to sponsor this Challenge by providing complimentary licenses to all teams that wish to use MATLAB. Users can apply for a license and learn more about MATLAB support by visiting the [PhysioNet Challenge page](https://www.mathworks.com/academia/student-competitions/physionet.html) from MathWorks. If you have questions or need technical support, then please contact MathWorks at [studentcompetitions@mathworks.com](mailto:studentcompetitions@mathworks.com).
 
-#### <a name="google_cloud"></a> Google Cloud
+#### <a name="google-cloud"></a> Google Cloud
 
 [Google](http://cloud.google.com/) has generously agreed to provide $50,000 in Google Cloud Platform (GCP) credits for this Challenge. We will award these to the 100 top performing teams, probably in May (at a date yet to be determined). This will hopefully provide an added incentive to submit more entries earlier on, and give teams the maximum opportunity to learn **before** spending money in the cloud.
 
