@@ -1,0 +1,13 @@
+https://physionet.org/content/challenge-2016/1.0.0/papers/challenge2016.pdf
+https://physionet.org/content/challenge-2016/1.0.0/papers/goda.pdf
+https://physionet.org/content/challenge-2016/1.0.0/papers/grzegorczyk.pdf
+https://physionet.org/content/challenge-2016/1.0.0/papers/homsi.pdf
+https://physionet.org/content/challenge-2016/1.0.0/papers/langley.pdf
+https://physionet.org/content/challenge-2016/1.0.0/papers/nilanon.pdf
+https://physionet.org/content/challenge-2016/1.0.0/papers/ortiz.pdf
+https://physionet.org/content/challenge-2016/1.0.0/papers/potes.pdf
+https://physionet.org/content/challenge-2016/1.0.0/papers/rubin.pdf
+https://physionet.org/content/challenge-2016/1.0.0/papers/singhmiller.pdf
+https://physionet.org/content/challenge-2016/1.0.0/papers/tschannen.pdf
+https://physionet.org/content/challenge-2016/1.0.0/papers/vernekar.pdf
+https://physionet.org/content/challenge-2016/1.0.0/papers/zabihi.pdf
