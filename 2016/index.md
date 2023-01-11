@@ -21,9 +21,9 @@ discussions at CinC 2016.
 
 **2016 CinC/PhysioNet Challenge papers** (Nov. 21, 2016, 12:38 p.m.)
 
-[Papers](https://physionet.org/files/challenge-2016/1.0.0/papers/index.html) and
+[Papers](papers) and
 corresponding [source
-code](https://physionet.org/static/published-projects/challenge-2016/1.0.0/sources/) from the
+code](#sources) from the
 2016 Challenge are now online.
 
 **Sample code released for the PhysioNet/CinC Challenge 2016** (March
@@ -115,7 +115,7 @@ of heart sounds. The accurate localization of the FHSs is a prerequisite
 for the identification of the systolic or diastolic regions, allowing
 the subsequent classification of pathological situations in these
 regions [\[2\]](#2-liang). Challenge participants could refer to the literature
-\[3-10\] for a quick review of previously developed segmentation
+\[[3](#3-liang)-[10](#10-springer)\] for a quick review of previously developed segmentation
 methods.
 
 The automated classification of pathology in heart sound recordings has
@@ -133,12 +133,12 @@ for heart sound classification in recent years. The studies can also be
 divided according to the feature extraction methods, including wavelet
 [\[15\]](#15-ari), time, frequency and time-frequency feature-based classifiers
 [\[16\]](#16-maglogiannis). Hidden Markov models (HMM) have also been employed for pathology
-classification in PCG recordings \[17,18\]. Clustering-based
+classification in PCG recordings \[[17](#17-wang),[18](#18-saracoglu)\]. Clustering-based
 classifiers, typically the k-nearest neighbors (kNN) algorithm
-\[19,20\], have also been employed to classify pathology in PGCs. In
+\[[19](#19-bentley),[20](#20-quinceno-manrique")\], have also been employed to classify pathology in PGCs. In
 addition, many other techniques have been applied, including
 threshold-based methods, decision trees [\[21\]](#21-pavlopoulos), discriminant function
-analysis \[22,23\] and logistic regression.
+analysis \[[22](#22-el-segaier),[23](#23-schmidt)\] and logistic regression.
 
 Although a number of the current studies for heart sound classification
 are flawed because of 1) good performance on carefully-selected data, 2)
@@ -319,10 +319,10 @@ the Official Phase.
 ### Sample Submission
 
 As a starting point, we have provided an example entry
-([sample2016.zip](/content/challenge-2016/1.0.0/sample2016.zip)),
+([sample2016.zip](sample2016.zip)),
 implemented using Matlab, which provides state of the art segmentation
 and rudimentary classification. This code first segments the heart
-sounds using Springer's improved version of Schmidt's method \[5,9\],
+sounds using Springer's improved version of Schmidt's method \[[5](#5-schmidt),[9](#9-springer")\],
 which uses a Hidden Markov Model (HMM) that has been trained (using
 database 'a' of the training set) to identify four 'states'; S1, S2,
 systole and diastole. Thereafter, 20 features are extracted from the
@@ -342,7 +342,7 @@ algorithms\", Physiol. Meas, 2016 Dec;37(12):2181-2213. doi:
 for details.
 
 A simpler version of this code
-([sample2016b.zip](/content/challenge-2016/1.0.0/sample2016b.zip)),
+([sample2016b.zip](sample2016b.zip)),
 using Schmidt\'s original algorithm, is faster and works in GNU Octave
 as well as in Matlab.
 
@@ -518,56 +518,56 @@ information about attribution and licensing. For more information about
 the details of these algorithms, see [the corresponding
 papers](/files/challenge-2016/1.0.0/papers/index.html).
 
-### Top-Scoring 2016 Challenge Entries
+### <a name="sources"></a> Top-Scoring 2016 Challenge Entries
 
 | Score  | Authors                                                                                                                                                                                                                                  |
-| 0.8602 | [Christhian Potes, Saman Parvaneh](/static/published-projects/challenge-2016/1.0.0/sources/cristhian.potes-204.zip)                                                                                                                      |
-| 0.8590 | [Morteza Zabihi, Ali Bahrami Rad](/static/published-projects/challenge-2016/1.0.0/sources/morteza.zabihi-208.zip)                                                                                                                        |
-| 0.8520 | [Edmund Kay, Anurag Agarwal](/static/published-projects/challenge-2016/1.0.0/sources/ek360-210.zip)                                                                                                                                      |
-| 0.8454 | [Ignacio Diaz Bobillo](/static/published-projects/challenge-2016/1.0.0/sources/ignaciod-203.zip)                                                                                                                                         |
-| 0.8448 | [Masun Nabhan Homsi, Natasha Medina, Miguel Hernandez, Natacha Quintero, Gilberto Perpiñan, Andrea Quintana, Philip Warrick](/static/published-projects/challenge-2016/1.0.0/sources/mnabhan-208.zip)                                    |
-| 0.8415 | [Vykintas Maknickas, Algirdas Maknickas](/static/published-projects/challenge-2016/1.0.0/sources/vykintas.mak-212.zip)                                                                                                                   |
-| 0.8411 | [Filip Plesinger, Juraj Jurco, Josef Halamek, Pavel Jurak](/static/published-projects/challenge-2016/1.0.0/sources/fplesinger-208.zip)                                                                                                   |
-| 0.8399 | [Jonathan Rubin, Kumar Sricharan, Anurag Ganguli, Rui Abreu, Saigopal Nelaturi, Ion Matei](/static/published-projects/challenge-2016/1.0.0/sources/jrubin01-206.zip)                                                                     |
-| 0.8282 | [Chen Jiayu](/static/published-projects/challenge-2016/1.0.0/sources/jiayuchen-203.zip)                                                                                                                                                  |
-| 0.8263 | [Mostafa Abdollahpur, Shadi Ghiasi, Javad Molakazemi](/static/published-projects/challenge-2016/1.0.0/sources/shadi1337-219.zip)                                                                                                         |
-| 0.8185 | [Mingjun Zhong, Hong Tang](/static/published-projects/challenge-2016/1.0.0/sources/tanghong-216.zip)                                                                                                                                     |
-| 0.8150 | [Wen-jie Zhang, Shi-wen Deng, Ji-qing Han](/static/published-projects/challenge-2016/1.0.0/sources/zwjhit-203.zip)                                                                                                                       |
-| 0.8148 | [Li Hu](/static/published-projects/challenge-2016/1.0.0/sources/lihuyeti-220.zip)                                                                                                                                                        |
-| 0.8122 | [Matthias Heinzmann, Thomas Kramer, Gian Marti, Michael Tschannen, Thomas Wiatowski](/static/published-projects/challenge-2016/1.0.0/sources/michaelt-213.zip)                                                                           |
-| 0.8111 | [Junheng Hao, Tanachat Nilanon, Jiayu Yao](/static/published-projects/challenge-2016/1.0.0/sources/tanachat.nilanon-218.zip)                                                                                                             |
-| 0.8073 | [Bradley M. Whitaker](/static/published-projects/challenge-2016/1.0.0/sources/b.whitaker-224.zip)                                                                                                                                        |
-| 0.8028 | [Hajas Péter, Mátron Áron Goda](/static/published-projects/challenge-2016/1.0.0/sources/itepsajah-212.zip)                                                                                                                               |
-| 0.8018 | [Te-Chung Isaac Yang, Haowei Hsieh](/static/published-projects/challenge-2016/1.0.0/sources/tcyang-201.zip)                                                                                                                              |
-| 0.7998 | [Sasan Yazdani, Silas Schlatter, Jean-Marc Vesin](/static/published-projects/challenge-2016/1.0.0/sources/sasan.yazdani-202.zip)                                                                                                         |
-| 0.7956 | [Rohan Banerjee, Swagata Biswas, Snehasis Banerjee, Anirban Dutta Choudhury, Tanushyam Chattopadhyay, Arpan Pal, Parijat Deshpande, Kayapanda M Mandana](/static/published-projects/challenge-2016/1.0.0/sources/rohan.banerjee-203.zip) |
-| 0.7941 | [Nicholas Singh-Miller, Natasha Singh-Miller, Virginia Randall](/static/published-projects/challenge-2016/1.0.0/sources/nicholas.singhmiller-222.zip)                                                                                    |
-| 0.7869 | [Xulei Yang, Feng Yang, Like Gobeawan, Si Yong Yeo, Shuang Le , Liang Zhong, Yi Su](/static/published-projects/challenge-2016/1.0.0/sources/yangx-202.zip)                                                                               |
-| 0.7869 | [Heechang Ryu](/static/published-projects/challenge-2016/1.0.0/sources/rhc93-205.zip)                                                                                                                                                    |
-| 0.7864 | [Anthony Bouril, Darya Aleinikava, Grace M. Mirsky](/static/published-projects/challenge-2016/1.0.0/sources/cincgrace-210.zip)                                                                                                           |
-| 0.7854 | [Jose Javier Gonzalez, Cheng Perng Phoo, Jenna Wiens](/static/published-projects/challenge-2016/1.0.0/sources/jjgo-224.zip)                                                                                                              |
-| 0.7847 | [Christoph Hoog Antink, Julian Becker, Steffen Leonhardt, Marian Walter](/static/published-projects/challenge-2016/1.0.0/sources/hoog.antink-213.zip)                                                                                    |
-| 0.7820 | [Arijit Ukil, Soma Bandyoapdhyay, Chetanya Puri, Rituraj Singh, Arpan Pal, Ayan Mukherjee, Debayan Mukherjee](/static/published-projects/challenge-2016/1.0.0/sources/chetanya.puri-211.zip)                                             |
-| 0.7799 | [Adriana C. Leal, Diogo B. Nunes, Ricardo Couceiro, João Pedro Ramos, Jorge Henriques, Paulo Carvalho, César Teixeira](/static/published-projects/challenge-2016/1.0.0/sources/adriana.costa.leal-205.zip)                               |
-| 0.7777 | [Sachin Vernekar, Saurabh Nair, Deepu Vijaya Senan](/static/published-projects/challenge-2016/1.0.0/sources/sachinvernekar50-206.tar.gz)                                                                                                 |
-| 0.7773 | [I.Grzegorczyk M.Solinski, K.Stepien M.Lepek, J.Rymko A.Perka, J. Rosinski J. Gierałtowski](/static/published-projects/challenge-2016/1.0.0/sources/sources/igagrze-213.zip)                                                             |
-| 0.7756 | [Christian Thomae](/static/published-projects/challenge-2016/1.0.0/sources/christian.thomae-216.zip)                                                                                                                                     |
-| 0.7724 | [Pedro Quintana-Morales, Antonio Ravelo-García, Eduardo Hernández-Pérez, Sofía Martín-González, Juan-Luis Navarro-Mesa](/static/published-projects/challenge-2016/1.0.0/sources/pquintana-202.zip)                                       |
-| 0.7708 | [Tanmay Gokhale](/static/published-projects/challenge-2016/1.0.0/sources/tanmay.gokhale-202.zip)                                                                                                                                         |
-| 0.7611 | [Philip Langley](/static/published-projects/challenge-2016/1.0.0/sources/p.langley-204.zip)                                                                                                                                              |
-| 0.7561 | [Jarno Mäkelä, Heikki Väänänen](/static/published-projects/challenge-2016/1.0.0/sources/jarno.makela-214.zip)                                                                                                                            |
-| 0.7475 | [Rui Rodrigues](/static/published-projects/challenge-2016/1.0.0/sources/rapr-201.zip)                                                                                                                                                    |
-| 0.7465 | [Tamanna T. K. Munia, Alireza Akhbardeh, Farzad Khosrow-Khavar, Vahid Zakeri, Reza Fazel-Rezai, Kouhyar Tavakolian](/static/published-projects/challenge-2016/1.0.0/sources/tamannatabassumkha.m-218.zip)                                |
-| 0.7451 | [Teo Soo-Kng, Su Yi, Yang Bo, Feng Ling](/static/published-projects/challenge-2016/1.0.0/sources/teosk-202.zip)                                                                                                                          |
-| 0.7418 | [Juan L. Domínguez-Olmedo, Jacinto Mata Vázquez](/static/published-projects/challenge-2016/1.0.0/sources/juan.dominguez-201.zip)                                                                                                         |
-| 0.7388 | [Christopher Schölzel, Andreas Dominik](/static/published-projects/challenge-2016/1.0.0/sources/christopher.schoelzel-202.zip)                                                                                                           |
-| 0.7317 | [Zhao Yizhang, Yuan Cheng, Wang Lisha](/static/published-projects/challenge-2016/1.0.0/sources/496101031-214.zip)                                                                                                                        |
-| 0.7151 | [Xinpei Wang, Yuanyang Li](/static/published-projects/challenge-2016/1.0.0/sources/sikao666-211.zip)                                                                                                                                     |
-| 0.6686 | [Koh Bee Hock](/static/published-projects/challenge-2016/1.0.0/sources/kohbhd-202.zip)                                                                                                                                                   |
-| 0.6513 | [Yusuf Bugra Erol, Fahad Kamran](/static/published-projects/challenge-2016/1.0.0/sources/fhdkmrn-205.zip)                                                                                                                                |
-| 0.6377 | [Mark Gao](/static/published-projects/challenge-2016/1.0.0/sources/markgao11-205.zip)                                                                                                                                                    |
-| 0.5555 | [Simon Hofmann, Andreas Dominik](/static/published-projects/challenge-2016/1.0.0/sources/andreas.dominik-207.tar.gz)                                                                                                                     |
-| 0.5353 | [Shaaban Mahran Abbady, Jian Chen, Jennifer Lavarnge, Cheng-Yuan Ke](/static/published-projects/challenge-2016/1.0.0/sources/smr5476-205.zip)                                                                                            |
+| 0.8602 | [Christhian Potes, Saman Parvaneh](https://physionet.org/static/published-projects/challenge-2016/1.0.0/sources/cristhian.potes-204.zip)                                                                                                                      |
+| 0.8590 | [Morteza Zabihi, Ali Bahrami Rad](https://physionet.org/static/published-projects/challenge-2016/1.0.0/sources/morteza.zabihi-208.zip)                                                                                                                        |
+| 0.8520 | [Edmund Kay, Anurag Agarwal](https://physionet.org/static/published-projects/challenge-2016/1.0.0/sources/ek360-210.zip)                                                                                                                                      |
+| 0.8454 | [Ignacio Diaz Bobillo](https://physionet.org/static/published-projects/challenge-2016/1.0.0/sources/ignaciod-203.zip)                                                                                                                                         |
+| 0.8448 | [Masun Nabhan Homsi, Natasha Medina, Miguel Hernandez, Natacha Quintero, Gilberto Perpiñan, Andrea Quintana, Philip Warrick](https://physionet.org/static/published-projects/challenge-2016/1.0.0/sources/mnabhan-208.zip)                                    |
+| 0.8415 | [Vykintas Maknickas, Algirdas Maknickas](https://physionet.org/static/published-projects/challenge-2016/1.0.0/sources/vykintas.mak-212.zip)                                                                                                                   |
+| 0.8411 | [Filip Plesinger, Juraj Jurco, Josef Halamek, Pavel Jurak](https://physionet.org/static/published-projects/challenge-2016/1.0.0/sources/fplesinger-208.zip)                                                                                                   |
+| 0.8399 | [Jonathan Rubin, Kumar Sricharan, Anurag Ganguli, Rui Abreu, Saigopal Nelaturi, Ion Matei](https://physionet.org/static/published-projects/challenge-2016/1.0.0/sources/jrubin01-206.zip)                                                                     |
+| 0.8282 | [Chen Jiayu](https://physionet.org/static/published-projects/challenge-2016/1.0.0/sources/jiayuchen-203.zip)                                                                                                                                                  |
+| 0.8263 | [Mostafa Abdollahpur, Shadi Ghiasi, Javad Molakazemi](https://physionet.org/static/published-projects/challenge-2016/1.0.0/sources/shadi1337-219.zip)                                                                                                         |
+| 0.8185 | [Mingjun Zhong, Hong Tang](https://physionet.org/static/published-projects/challenge-2016/1.0.0/sources/tanghong-216.zip)                                                                                                                                     |
+| 0.8150 | [Wen-jie Zhang, Shi-wen Deng, Ji-qing Han](https://physionet.org/static/published-projects/challenge-2016/1.0.0/sources/zwjhit-203.zip)                                                                                                                       |
+| 0.8148 | [Li Hu](https://physionet.org/static/published-projects/challenge-2016/1.0.0/sources/lihuyeti-220.zip)                                                                                                                                                        |
+| 0.8122 | [Matthias Heinzmann, Thomas Kramer, Gian Marti, Michael Tschannen, Thomas Wiatowski](https://physionet.org/static/published-projects/challenge-2016/1.0.0/sources/michaelt-213.zip)                                                                           |
+| 0.8111 | [Junheng Hao, Tanachat Nilanon, Jiayu Yao](https://physionet.org/static/published-projects/challenge-2016/1.0.0/sources/tanachat.nilanon-218.zip)                                                                                                             |
+| 0.8073 | [Bradley M. Whitaker](https://physionet.org/static/published-projects/challenge-2016/1.0.0/sources/b.whitaker-224.zip)                                                                                                                                        |
+| 0.8028 | [Hajas Péter, Mátron Áron Goda](https://physionet.org/static/published-projects/challenge-2016/1.0.0/sources/itepsajah-212.zip)                                                                                                                               |
+| 0.8018 | [Te-Chung Isaac Yang, Haowei Hsieh](https://physionet.org/static/published-projects/challenge-2016/1.0.0/sources/tcyang-201.zip)                                                                                                                              |
+| 0.7998 | [Sasan Yazdani, Silas Schlatter, Jean-Marc Vesin](https://physionet.org/static/published-projects/challenge-2016/1.0.0/sources/sasan.yazdani-202.zip)                                                                                                         |
+| 0.7956 | [Rohan Banerjee, Swagata Biswas, Snehasis Banerjee, Anirban Dutta Choudhury, Tanushyam Chattopadhyay, Arpan Pal, Parijat Deshpande, Kayapanda M Mandana](https://physionet.org/static/published-projects/challenge-2016/1.0.0/sources/rohan.banerjee-203.zip) |
+| 0.7941 | [Nicholas Singh-Miller, Natasha Singh-Miller, Virginia Randall](https://physionet.org/static/published-projects/challenge-2016/1.0.0/sources/nicholas.singhmiller-222.zip)                                                                                    |
+| 0.7869 | [Xulei Yang, Feng Yang, Like Gobeawan, Si Yong Yeo, Shuang Le , Liang Zhong, Yi Su](https://physionet.org/static/published-projects/challenge-2016/1.0.0/sources/yangx-202.zip)                                                                               |
+| 0.7869 | [Heechang Ryu](https://physionet.org/static/published-projects/challenge-2016/1.0.0/sources/rhc93-205.zip)                                                                                                                                                    |
+| 0.7864 | [Anthony Bouril, Darya Aleinikava, Grace M. Mirsky](https://physionet.org/static/published-projects/challenge-2016/1.0.0/sources/cincgrace-210.zip)                                                                                                           |
+| 0.7854 | [Jose Javier Gonzalez, Cheng Perng Phoo, Jenna Wiens](https://physionet.org/static/published-projects/challenge-2016/1.0.0/sources/jjgo-224.zip)                                                                                                              |
+| 0.7847 | [Christoph Hoog Antink, Julian Becker, Steffen Leonhardt, Marian Walter](https://physionet.org/static/published-projects/challenge-2016/1.0.0/sources/hoog.antink-213.zip)                                                                                    |
+| 0.7820 | [Arijit Ukil, Soma Bandyoapdhyay, Chetanya Puri, Rituraj Singh, Arpan Pal, Ayan Mukherjee, Debayan Mukherjee](https://physionet.org/static/published-projects/challenge-2016/1.0.0/sources/chetanya.puri-211.zip)                                             |
+| 0.7799 | [Adriana C. Leal, Diogo B. Nunes, Ricardo Couceiro, João Pedro Ramos, Jorge Henriques, Paulo Carvalho, César Teixeira](https://physionet.org/static/published-projects/challenge-2016/1.0.0/sources/adriana.costa.leal-205.zip)                               |
+| 0.7777 | [Sachin Vernekar, Saurabh Nair, Deepu Vijaya Senan](https://physionet.org/static/published-projects/challenge-2016/1.0.0/sources/sachinvernekar50-206.tar.gz)                                                                                                 |
+| 0.7773 | [I.Grzegorczyk M.Solinski, K.Stepien M.Lepek, J.Rymko A.Perka, J. Rosinski J. Gierałtowski](https://physionet.org/static/published-projects/challenge-2016/1.0.0/sources/sources/igagrze-213.zip)                                                             |
+| 0.7756 | [Christian Thomae](https://physionet.org/static/published-projects/challenge-2016/1.0.0/sources/christian.thomae-216.zip)                                                                                                                                     |
+| 0.7724 | [Pedro Quintana-Morales, Antonio Ravelo-García, Eduardo Hernández-Pérez, Sofía Martín-González, Juan-Luis Navarro-Mesa](https://physionet.org/static/published-projects/challenge-2016/1.0.0/sources/pquintana-202.zip)                                       |
+| 0.7708 | [Tanmay Gokhale](https://physionet.org/static/published-projects/challenge-2016/1.0.0/sources/tanmay.gokhale-202.zip)                                                                                                                                         |
+| 0.7611 | [Philip Langley](https://physionet.org/static/published-projects/challenge-2016/1.0.0/sources/p.langley-204.zip)                                                                                                                                              |
+| 0.7561 | [Jarno Mäkelä, Heikki Väänänen](https://physionet.org/static/published-projects/challenge-2016/1.0.0/sources/jarno.makela-214.zip)                                                                                                                            |
+| 0.7475 | [Rui Rodrigues](https://physionet.org/static/published-projects/challenge-2016/1.0.0/sources/rapr-201.zip)                                                                                                                                                    |
+| 0.7465 | [Tamanna T. K. Munia, Alireza Akhbardeh, Farzad Khosrow-Khavar, Vahid Zakeri, Reza Fazel-Rezai, Kouhyar Tavakolian](https://physionet.org/static/published-projects/challenge-2016/1.0.0/sources/tamannatabassumkha.m-218.zip)                                |
+| 0.7451 | [Teo Soo-Kng, Su Yi, Yang Bo, Feng Ling](https://physionet.org/static/published-projects/challenge-2016/1.0.0/sources/teosk-202.zip)                                                                                                                          |
+| 0.7418 | [Juan L. Domínguez-Olmedo, Jacinto Mata Vázquez](https://physionet.org/static/published-projects/challenge-2016/1.0.0/sources/juan.dominguez-201.zip)                                                                                                         |
+| 0.7388 | [Christopher Schölzel, Andreas Dominik](https://physionet.org/static/published-projects/challenge-2016/1.0.0/sources/christopher.schoelzel-202.zip)                                                                                                           |
+| 0.7317 | [Zhao Yizhang, Yuan Cheng, Wang Lisha](https://physionet.org/static/published-projects/challenge-2016/1.0.0/sources/496101031-214.zip)                                                                                                                        |
+| 0.7151 | [Xinpei Wang, Yuanyang Li](https://physionet.org/static/published-projects/challenge-2016/1.0.0/sources/sikao666-211.zip)                                                                                                                                     |
+| 0.6686 | [Koh Bee Hock](https://physionet.org/static/published-projects/challenge-2016/1.0.0/sources/kohbhd-202.zip)                                                                                                                                                   |
+| 0.6513 | [Yusuf Bugra Erol, Fahad Kamran](https://physionet.org/static/published-projects/challenge-2016/1.0.0/sources/fhdkmrn-205.zip)                                                                                                                                |
+| 0.6377 | [Mark Gao](https://physionet.org/static/published-projects/challenge-2016/1.0.0/sources/markgao11-205.zip)                                                                                                                                                    |
+| 0.5555 | [Simon Hofmann, Andreas Dominik](https://physionet.org/static/published-projects/challenge-2016/1.0.0/sources/andreas.dominik-207.tar.gz)                                                                                                                     |
+| 0.5353 | [Shaaban Mahran Abbady, Jian Chen, Jennifer Lavarnge, Cheng-Yuan Ke](https://physionet.org/static/published-projects/challenge-2016/1.0.0/sources/smr5476-205.zip)                                                                                            |
 
 ### Papers
 
@@ -578,7 +578,7 @@ Challenge.
 
 > [Classification of Normal/Abnormal Heart Sound Recordings: the
 > PhysioNet/Computing in Cardiology Challenge
-> 2016](/content/challenge-2016/1.0.0/papers/challenge2016.pdf)\
+> 2016](papers/challenge2016.pdf)\
 > Gari D. Clifford, Chengyu Liu, Benjamin Moody, David Springer, Ikaro
 > Silva, Qiao Li, Roger G. Mark
 
@@ -596,7 +596,7 @@ Total uncompressed size: 1.1 GB.
 ##### Access the files
 
 -   [Download the ZIP
-    file](/static/published-projects/challenge-2016/classification-of-heart-sound-recordings-the-physionetcomputing-in-cardiology-challenge-2016-1.0.0.zip)
+    file](https://physionet.org/static/published-projects/challenge-2016/classification-of-heart-sound-recordings-the-physionetcomputing-in-cardiology-challenge-2016-1.0.0.zip)
     (1011.4 MB)
 
 -   Access the files using the Google Cloud Storage Browser
@@ -617,26 +617,6 @@ Total uncompressed size: 1.1 GB.
     ``` shell-command
     wget -r -N -c -np https://physionet.org/files/challenge-2016/1.0.0/
     ```
-
-  Name                                                                                                                                                                                            Size       Modified
-  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- ---------- ------------
-  [annotations](annotations/#files-panel)                                                                                                                                                                    
-  [papers](papers/#files-panel)                                                                                                                                                                              
-  [sources](sources/#files-panel)                                                                                                                                                                            
-  [training-a](training-a/#files-panel)                                                                                                                                                                      
-  [training-b](training-b/#files-panel)                                                                                                                                                                      
-  [training-c](training-c/#files-panel)                                                                                                                                                                      
-  [training-d](training-d/#files-panel)                                                                                                                                                                      
-  [training-e](training-e/#files-panel)                                                                                                                                                                      
-  [training-f](training-f/#files-panel)                                                                                                                                                                      
-  [validation](validation/#files-panel)                                                                                                                                                                      
-  [annotations.zip](/content/challenge-2016/1.0.0/annotations.zip) [[(download)]{.visually-hidden}](/files/challenge-2016/1.0.0/annotations.zip?download "Download annotations.zip"){.download}   10.1 MB    2022-07-28
-  [figure1.png](/content/challenge-2016/1.0.0/figure1.png) [[(download)]{.visually-hidden}](/files/challenge-2016/1.0.0/figure1.png?download "Download figure1.png"){.download}                   99.9 KB    2019-04-17
-  [mathworks.png](/content/challenge-2016/1.0.0/mathworks.png) [[(download)]{.visually-hidden}](/files/challenge-2016/1.0.0/mathworks.png?download "Download mathworks.png"){.download}           14.4 KB    2019-04-17
-  [sample2016.zip](/content/challenge-2016/1.0.0/sample2016.zip) [[(download)]{.visually-hidden}](/files/challenge-2016/1.0.0/sample2016.zip?download "Download sample2016.zip"){.download}       50.4 KB    2019-04-17
-  [sample2016b.zip](/content/challenge-2016/1.0.0/sample2016b.zip) [[(download)]{.visually-hidden}](/files/challenge-2016/1.0.0/sample2016b.zip?download "Download sample2016b.zip"){.download}   1.1 MB     2019-04-17
-  [training.zip](/content/challenge-2016/1.0.0/training.zip) [[(download)]{.visually-hidden}](/files/challenge-2016/1.0.0/training.zip?download "Download training.zip"){.download}               181.3 MB   2016-05-18
-  [validation.zip](/content/challenge-2016/1.0.0/validation.zip) [[(download)]{.visually-hidden}](/files/challenge-2016/1.0.0/validation.zip?download "Download validation.zip"){.download}       17.5 MB    2016-03-18
 
 PhysioNet is a repository of freely-available medical research data,
 managed by the MIT Laboratory for Computational Physiology.
@@ -692,5 +672,7 @@ Bioengineering (NIBIB)](https://www.nibib.nih.gov/) under NIH grant number R01EB
 <a name="22-el-segaier"></a>[22] El-Segaier, M.; Pesonen, E.; Lukkarinen, S.; Peters, K.; Sörnmo, L.; Sepponen, R. Detection of cardiac pathology: Time intervals and spectral analysis. Acta Paediatr 2007, 96, 1036-1042.
 
 <a name="23-schmidt"></a>[23] Schmidt, S.E.; Holst-Hansen, C.; Hansen, J.; Toft, E.; Struijk, J.J. Acoustic features for the identification of coronary artery disease. IEEE Trans Biomed Eng 2015, 62, 2611-2619.
+
+---
 
 [Back](../)
