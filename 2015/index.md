@@ -104,7 +104,7 @@ the past.
 ### Quick Start
 
 1.  Download the training set:
-    [training.zip](https://physionet.org/content/challenge-2015/1.0.0/) and the
+    [training.zip](https://physionet.org/content/challenge-2015/1.0.0/training.zip) and the
     sample MATLAB entry: [entry.zip](entry.zip).
 2.  Develop your entry by making the following edits to
     [entry.zip](entry.zip):
