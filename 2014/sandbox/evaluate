@@ -1,0 +1,184 @@
+#! /bin/bash
+
+# file: evaluate		G. Moody	21 December 2013
+#				Last revised:	26 January 2017
+# Evaluate a Challenge entry
+#
+# This is a generic script for evaluating any Challenge entry.  It accepts
+# two command-line arguments:
+#
+#   CN   the name of the Challenge, which must be the name of a directory
+#         containing the scripts prep, quiz, exam, and score
+#   EN   the name of the entry, which must end with either entry.tar.gz or
+#         entry.zip
+#
+# After validating its arguments, this script initializes the VM and invokes
+# the four scripts within CN, which must be revised for each Challenge:
+#
+#   prep   does whatever is needed to prepare the entry to be run
+#   quiz   runs the entry on the training data and compares the results to
+#           the submission to verify that the entry is working as intended
+#   exam   runs the entry on the test data and saves the entry's results
+#   score  evaluates the accuracy of the saved results and reports the score(s)
+#
+# prep, quiz, and exam each generate and run scripts, which include user code,
+# on the VM;  score runs entirely on the host.
+
+# ----------------------------- Validation -----------------------------------
+
+function usage {
+    echo "Usage: $0 -c CHALLENGE -e ENTRY [-o OUTPUT-PREFIX]" >&2
+    exit 1
+}
+
+CN=
+EN=
+OP=eval$(date +%Y%m%d%H%M%S)
+while [ $# != 0 ]; do
+    arg=$1
+    shift
+    case $arg in
+        -c) CN=$1 ; shift ;;
+        -e) EN=$1 ; shift ;;
+        -o) OP=$1 ; shift ;;
+        *) usage ;;
+    esac
+done
+
+# Check the command-line arguments, quit if invalid.
+if [ -z "$CN" ] || [ -z "$EN" ]; then
+    usage
+fi
+
+if [ ! -x $CN/prep ] || [ ! -r $CN/root.img ] || [ ! -r $CN/home.img ]; then
+    echo "$0: $CN is not a valid Challenge name";
+    exit 1
+fi
+export CHALLENGE=`readlink -f $CN`
+LOGPREFIX="(`basename $CN`) `basename $EN`"
+
+# Check entry name, reject if improper.
+case "$EN" in
+  *entry.tar.gz) SE=entry.tar.gz ;;
+  *entry.zip)    SE=entry.zip    ;;
+  *) echo "Improper name ($EN) for entry -- not scored"
+     exit 1 ;;
+esac
+
+if [ ! -r $EN ]; then
+    echo "$0: $EN cannot be read"
+    exit 1
+fi
+
+# Make a temporary directory and a temporary log file, and ensure that they
+# will be deleted on exit.
+
+export CHALLENGE_TMP=`mktemp -d ${TMPDIR:-/tmp}/evaluate.XXXXXXXXXX`
+export CHALLENGE_HOME_IMG=$CHALLENGE_TMP/home.img
+export CHALLENGE_ENTRY=$CHALLENGE_TMP/$SE
+
+function cleanup {
+    # Archive intermediate files (for internal use)
+    if [ -d $CHALLENGE_TMP/results ]; then
+        tar cfz $OP-results.tgz -C $CHALLENGE_TMP results >/dev/null 2>&1
+    fi
+    # Build HTML report to display to the user
+    if [ -d $CHALLENGE_TMP/html ]; then
+        tar cfz $OP-report.tgz -C $CHALLENGE_TMP/html . >/dev/null 2>&1
+    fi
+    # Build text files (for backwards compatibility)
+    if [ -s $CHALLENGE_TMP/scores ]; then
+        mv $CHALLENGE_TMP/scores $OP-scores
+    fi
+    if [ -s $CHALLENGE_TMP/report ]; then
+        mv $CHALLENGE_TMP/report $OP-report
+    else
+        echo "unknown error in evaluation" > $OP-report
+    fi
+    rm -rf $CHALLENGE_TMP
+}
+trap cleanup EXIT
+
+# Open root disk image (and keep it open, so that all stages have the
+# same view of the root filesystem.)
+#exec {rootfs}<$CHALLENGE/root.img
+#export CHALLENGE_ROOT_IMG=/dev/fd/$rootfs
+# Work around a bug in parallel (#816058)
+exec 70<$CHALLENGE/root.img
+export CHALLENGE_ROOT_IMG=/dev/fd/70
+
+# Likewise, open the kernel image and read the kernel command line.
+if [ -s $CHALLENGE/root.img.vmlinuz ]; then
+    #exec {kernel}<$CHALLENGE/root.img.vmlinuz
+    #export CHALLENGE_KERNEL=/dev/fd/$kernel
+    exec 71<$CHALLENGE/root.img.vmlinuz
+    export CHALLENGE_KERNEL=/dev/fd/71
+
+    if [ -s $CHALLENGE/root.img.cmdline ]; then
+        export CHALLENGE_KERNEL_CMDLINE=$(cat $CHALLENGE/root.img.cmdline)
+    fi
+
+    if [ -s $CHALLENGE/root.img.initrd.img ]; then
+        exec 72<$CHALLENGE/root.img.initrd.img
+        export CHALLENGE_INITRD=/dev/fd/72
+    fi
+fi
+
+# Create home disk image
+qemu-img create -f qcow2 -o backing_file=$CHALLENGE/home.img $CHALLENGE_HOME_IMG >/dev/null 2>&1
+if [ $? != 0 ]; then
+    echo "$0: cannot create home image"
+    exit 1
+fi
+
+# Create results directory
+mkdir $CHALLENGE_TMP/results
+
+# Create symlink to entry
+ln -s `readlink -f $EN` $CHALLENGE_ENTRY
+
+# Load challenge-specific configuration
+if [ -f $CHALLENGE/challenge.conf ]; then
+    . $CHALLENGE/challenge.conf
+fi
+
+echo "$LOGPREFIX -- starting evaluation"
+(
+    set -o pipefail
+    cd $CHALLENGE_TMP
+
+    LOGH="stdbuf -oL head -c1M"
+
+    # --------------------- Stage 1: Prepare the entry ------------------------
+
+    # Unpack, validate, and run the user's setup.sh in the VM.
+    echo "$LOGPREFIX: prep"
+    $CHALLENGE/prep 2>&1 | $LOGH > results/prep.log || exit 1
+
+    # --------------------- Stage 2: Run on the training data -----------------
+
+    # Check that results on the training set match those submitted in the entry.
+    echo "$LOGPREFIX: quiz"
+    $CHALLENGE/quiz 2>&1 | $LOGH > results/quiz.log || exit 1
+
+    # --------------------- Stage 3: Run on the test data ---------------------
+
+    # Collect results for the test set.
+    echo "$LOGPREFIX: exam"
+    $CHALLENGE/exam 2>&1 | $LOGH > results/exam.log || exit 1
+
+    # --------------------- Stage 4: Score the results ------------------------
+
+    # Score the results on the test set and report.  Since the reference results
+    # are not stored on the VM, this stage is run on the host.
+
+    echo "$LOGPREFIX: score"
+    $CHALLENGE/score > scores
+)
+
+# Generate HTML report.
+echo "$LOGPREFIX: report"
+( cd $CHALLENGE_TMP; $CHALLENGE/report > report )
+
+echo "$LOGPREFIX -- finished evaluation"
+exit 0

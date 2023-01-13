@@ -1,0 +1,107 @@
+Challenge Live images
+---------------------
+
+Benjamin Moody <benjamin.moody@gmail.com>
+April 2014
+
+
+ This directory contains live CD/DVD/USB images that can be used for
+ testing PhysioNet Challenge entries.  These are bootable disk images
+ containing a Debian GNU/Linux system with all of the same software as
+ is used in the Challenge sandbox environment.
+
+ The live system also includes a basic X11 desktop environment,
+ including a web browser, file manager, and various other tools; note
+ that this software is not present in the Challenge sandbox system.
+
+ (For details about exactly what software is included in the sandbox
+ environment, see http://physionet.org/challenge/sandbox/.)
+
+ In addition, the live system includes the training data for the
+ current (2014) Challenge, installed in /usr/database/set-p/.
+
+ The live system requires an x86_64 CPU (Intel or AMD), as that is the
+ architecture we use for the Challenge sandbox system.
+
+
+Creating a bootable disk
+------------------------
+
+ To create a bootable DVD from a recent GNU/Linux system, run the
+ command 'wodim binary.hybrid.iso', or use your favorite burning tool
+ to write the raw .iso file to a blank recordable DVD.  If you're not
+ using wodim, be sure that you are writing the ISO image as-is (select
+ the "burn ISO image" option or similar), rather than creating a new
+ ISO filesystem with a single file on it.
+
+ Note also that as of version 0.4, the ISO image is too large to fit
+ on a standard CD-R or CD-RW; you will need to use either a DVD or a
+ non-standard "99-minute" recordable CD.  (The latter has not been
+ tested and may require you to specify the '-overburn' option to
+ wodim.)
+
+ To create a bootable USB disk from a GNU/Linux system, first run the
+ command 'ls /dev/disk/by-id/usb-*'.  This will list all USB disks
+ currently attached to the system, as well as any partitions on those
+ disks; for example:
+
+   /dev/disk/by-id/usb-Yoyodyne_UltraFlash_123456789-0:0
+   /dev/disk/by-id/usb-Yoyodyne_UltraFlash_123456789-0:0-part1
+
+ You will need to write to the raw device (in this case,
+ '/dev/disk/by-id/usb-Yoyodyne_UltraFlash_123456789-0:0'), not to the
+ partition ('-part1').  Note that this will delete all other data on
+ the disk, so be certain that this is the disk you're intending to
+ use.  Then, as root, run the following command, substituting the name
+ of your device:
+
+   dd if=binary.hybrid.iso of=/dev/disk/by-id/usb-Yoyodyne_UltraFlash_123456789-0:0
+
+
+Building
+--------
+
+ If you prefer, you can build your own version of the live DVD.  This
+ allows you to customize the environment, install additional software
+ (or omit packages you don't need), or build a version for a different
+ CPU architecture.
+
+ To do this, you will first need a working Debian system.  (Other
+ Debian-derived distributions such as Ubuntu may also work, but we
+ have not tested them.)  Installing Debian is outside the scope of
+ this document.
+
+ Before starting, be sure you have at least 10 GB of free disk space.
+
+  - Install the 'live-build' package through your package manager.
+
+  - Download and unpack 'source.debian-live.tar.bz2'.  This will
+    create a directory called 'source/debian-live' including a
+    subdirectory called 'config'.
+
+  - Edit the files in the 'config' directory as appropriate:
+
+     - To build a live system for a different CPU architecture, edit
+       'config/bootstrap' and change LB_ARCHITECTURES to the
+       corresponding Debian architecture (e.g., "i386" or "powerpc".)
+       Note that we haven't tested and don't support any architectures
+       other than amd64.
+
+     - Edit the files in 'config/package-lists' to add or remove
+       packages from the system.
+
+     - You can also install non-Debian packages; look at the files in
+       'config/hooks' for some examples.
+
+     - If you're not intending to distribute your modified live DVD,
+       you can edit 'config/source' and change LB_SOURCE to "false".
+       This prevents live-build from creating the source package
+       archives, saving some time and network bandwidth.
+
+     - See http://live.debian.net/manual/stable/ for more information.
+
+  - When you're ready, 'cd' to the source/debian-live directory and
+    run (as root) 'lb clean && lb build'.  Expect that this will take
+    at least an hour or two to complete, depending on your system and
+    your Internet connection.
+
