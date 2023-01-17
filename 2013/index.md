@@ -618,12 +618,10 @@ entries.
 **Event 1 (Fetal heart rate estimation, evaluated using hidden test set
 C)**
 
-The score for each record was the mean squared error (in bpm^2^) between
+The score for each record was the mean squared error (in bpm$$^2$$) between
 the fetal heart rate signals estimated from the reference and test
 annotations. The aggregate score was the mean of the scores for each
 record.
-
-
 
 | Participant                                                                                                | Score     |
 | Maurizio Varanini, Gennaro Tartarisco, Lucia Billeci, Alberto Macerata, Giovanni Pioggia and Rita Balocchi | 187.091   |
