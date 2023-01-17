@@ -963,15 +963,11 @@ editions:
     statistics on the number on the number of CPU instructions used by
     your entry is provided via the web interface.
 
-------------------------------------------------------------------------
-
-##### Access 
-
-**Access Policy:**\
+### Access Policy
 Anyone can access the files, as long as they conform to the terms of the
 specified license.
 
-**License (for files):**\
+### License (for files)
 [Open Data Commons Attribution License
 v1.0](/content/challenge-2014/view-license/1.0.0/)
 
