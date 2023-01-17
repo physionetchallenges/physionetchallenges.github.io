@@ -748,7 +748,7 @@ Several papers were presented at [*Computers in Cardiology
 their authors under the terms of the Creative Commons Attribution
 License 3.0 ([CCAL](http://creativecommons.org/licenses/by/3.0/)).
 See [this
-page](https://physionet.org/files/challenge-2013/1.0.0/papers/index.html) for
+page](papers) for
 a list of the papers. We wish to thank all of the authors for their
 contributions.
 
