@@ -6,6 +6,8 @@ layout: default
 
 ### Ikaro Silva, George Moody, Leo Anthony Celi
 
+## Announcements
+
 **Community forum for the 2011 PhysioNet/CinC Challenge** (Aug. 18,
 2012, 2:42 p.m.)
 
