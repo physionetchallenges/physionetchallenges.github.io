@@ -31,11 +31,11 @@ Cardiology 2013 in Zaragoza, Spain.
 (Oct. 24, 2013, 2:36 p.m.)
 
 Top scores have been [posted in the Challenge
-Overview](/content/challenge-2013/1.0.0/). Participants’ [CinC 2013
+Overview](#challenge-results). Participants’ [CinC 2013
 papers about the
-Challenge](/files/challenge-2013/1.0.0/papers/index.html) and the
+Challenge](papers) and the
 top [open-source
-entries](/static/published-projects/challenge-2013/1.0.0/sources/) have
+entries](https://physionet.org/static/published-projects/challenge-2013/1.0.0/sources/) have
 also been posted.
 
 **PhysioNet/CinC Challenge 2013: Phase 2 underway** (Aug. 2, 2013, 2:30
