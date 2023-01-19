@@ -83,7 +83,3 @@ The scores for the teams are available [here](../results), including scores for 
 | [445](https://www.cinc.org/archives/2020/pdf/CinC2020-445.pdf) | Sharif AI Team | Classification of 12-lead ECG Signals with Adversarial Multi-Source Domain Generalization | Hosein Hasani, Adeleh Bitarafan and Mahdieh Soleymani |
 | [456](https://www.cinc.org/archives/2020/pdf/CinC2020-456.pdf) | UIDT-UNAM | Cardiac Arrhythmias Identification by Parallel CNNs and ECG Time-Frequency Representation | Jonathan Roberto Torres Castillo, K De Los Rios and Miguel Ángel Padilla Castañeda |
 | [462](https://www.cinc.org/archives/2020/pdf/CinC2020-462.pdf) | BitScattered | Arrhythmia classification of 12-lead Electrocardiograms by Hybrid Scattering-LSTM networks | Philip Warrick, Masun Nabhan Homsi, Vincent Lostanlen, Michael Eikenberg and Joakim Andén |
-
-Supported by the [National Institute of Biomedical Imaging and Bioengineering (NIBIB)](https://www.nibib.nih.gov/) under NIH grant R01EB030362.
-
-[Back](../)

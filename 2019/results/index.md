@@ -158,10 +158,3 @@ The ranks of the teams in hakathon are available in the table below.
 |x   |ARUL                         |Induparkavi Murugesan, Lingeshwaran Balasubramanian, Malathi Murugesan|
 
 (x) Failed to submit successful entry.
-
-
----
-
-Supported by the [National Institute of Biomedical Imaging and Bioengineering (NIBIB)](https://www.nibib.nih.gov/) under NIH grant R01EB030362.
-
-[Back](../)

@@ -46,12 +46,3 @@ Cardiology](http://www.cinc.org/) Conference.
 Windows”](0569.pdf)\
     Marcus Vollmer
 
----
-
-Supported by the [National Institute of General Medical Sciences
-(NIGMS)](http://www.nigms.nih.gov/) and the [National Institute of
-Biomedical Imaging and Bioengineering
-(NIBIB)](https://www.nibib.nih.gov/) under NIH grant number
-2R01GM104987-09.
-
-[Back](../)

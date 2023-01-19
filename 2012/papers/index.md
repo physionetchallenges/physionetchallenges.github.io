@@ -96,14 +96,3 @@ Mortality Rate
 Prediction](http://www.cinc.org/archives/2012/pdf/0497.pdf "0497.pdf (in new window)")\
 Jianfeng Xu, Dan Li, Yuanjian Zhang, Admir Djulovic, Yu Li, Youjie Zeng
 
-PhysioNet is a repository of freely-available medical research data,
-managed by the [MIT Laboratory for Computational
-Physiology](http://lcp.mit.edu/).
-
-Supported by the [National Institute of General Medical Sciences
-(NIGMS)](http://www.nigms.nih.gov/) and the [National Institute of
-Biomedical Imaging and Bioengineering
-(NIBIB)](https://www.nibib.nih.gov/) under NIH grant number
-2R01GM104987-09.
-
-[Back](../)

@@ -183,8 +183,3 @@ There are several common reasons for unexpected errors:
 
 Please see the [PhysioNet/CinC Challenge 2022 webpage](https://physionetchallenges.org/2022/) for more details. Please post questions and concerns on the [Challenge discussion forum](https://groups.google.com/forum/#!forum/physionet-challenges).
 
----
-
-Supported by the [National Institute of Biomedical Imaging and Bioengineering (NIBIB)](https://www.nibib.nih.gov/) under NIH grant R01EB030362.
-
-[Back](../)

@@ -120,9 +120,3 @@ If you used Python for your entry, then please test it in Docker. See the submis
 No, only scored entries (submitted entries that receive a score) count against the total number of allowed entries.
 
 __For more general Challenge FAQs, please visit [here](../../faq/).__
-
----
-
-Supported by the [National Institute of Biomedical Imaging and Bioengineering (NIBIB)](https://www.nibib.nih.gov/) under NIH grant R01EB030362.
-
-[Back](../)

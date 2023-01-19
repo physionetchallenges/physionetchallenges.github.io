@@ -76,26 +76,3 @@ Networks without
 Segmentation](zabihi.pdf)\
 Morteza Zabihi, Ali Bahrami Rad, Serkan Kiranyaz, Moncef Gabbouj,
 Aggelos K. Katsaggelos
-
-
----
-
-
-PhysioNet is a repository of freely-available medical research data,
-managed by the [MIT Laboratory for Computational
-Physiology](http://lcp.mit.edu/).
-
-Supported by the [National Institute of General Medical Sciences
-(NIGMS)](http://www.nigms.nih.gov/) and the [National Institute of
-Biomedical Imaging and Bioengineering
-(NIBIB)](https://www.nibib.nih.gov/) under NIH grant number
-2R01GM104987-09.
-
-[Back](../)
-
-
-
-
-
-
-

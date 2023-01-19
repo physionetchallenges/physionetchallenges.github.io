@@ -91,9 +91,3 @@ The scores for the teams and their papers and entry code are available in the ta
 (*) These entries were disqualified because their authors submitted more than ten entries in total, contrary to the Challenge rules.
 
 (x) These entries were disqualified because they included code that was not freely licensed, contrary to the Challenge rules. The code in question has been removed from the archives.
-
----
-
-Supported by the [National Institute of Biomedical Imaging and Bioengineering (NIBIB)](https://www.nibib.nih.gov/) under NIH grant R01EB030362.
-
-[Back](../)

@@ -76,8 +76,3 @@ The conference papers for [Computing in Cardiology 2021](https://www.cinc2021.or
 |[285](https://www.cinc.org/archives/2021/pdf/CinC2021-285.pdf) | Cordi-Ak | Leveraging Period-specific Variations in ECG Topology for Classification Tasks | Paul Samuel Ignacio |
 |[352](https://www.cinc.org/archives/2021/pdf/CinC2021-352.pdf) | NIMA | Multi-label Cardiac Abnormality Classification from Electrocardiogram using Deep Convolutional Neural Networks | Nima L Wickramasinghe and Mohamed Athif |
 
----
-
-Supported by the [National Institute of Biomedical Imaging and Bioengineering (NIBIB)](https://www.nibib.nih.gov/) under NIH grant R01EB030362.
-
-[Back](../)

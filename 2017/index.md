@@ -339,8 +339,3 @@ This year's Challenge is generously sponsored by MathWorks.
 ![MathWorks](logo_mathworks.png){:height="40px"}&nbsp;&nbsp;&nbsp;
 
 
----
-
-Supported by the [National Institute of Biomedical Imaging and Bioengineering (NIBIB)](https://www.nibib.nih.gov/) under NIH grant R01EB030362.
-
-[Back](../)

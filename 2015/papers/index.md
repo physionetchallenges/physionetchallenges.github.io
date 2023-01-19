@@ -105,15 +105,3 @@ ho describe their approaches to the challenge problem.
  Arterial Blood Pressure and/or Photoplethysmogram
  Signals](http://www.cinc.org/archives/2015/pdf/0289.pdf "0289.pdf (in new window)")\
  Wei Zong
-
----
-
-PhysioNet is a repository of freely-available medical research data,
-managed by the MIT Laboratory for Computational Physiology.
-
-Supported by the [National Institute of Biomedical Imaging and
-Bioengineering (NIBIB)](https://www.nibib.nih.gov/) under NIH grant number R01EB030362.
-
-[Back](../)
-
-

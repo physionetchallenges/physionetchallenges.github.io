@@ -667,14 +667,3 @@ Total uncompressed size: 1.1 GB.
 
 <a name="23-schmidt"></a>[23] Schmidt, S.E.; Holst-Hansen, C.; Hansen, J.; Toft, E.; Struijk, J.J. Acoustic features for the identification of coronary artery disease. IEEE Trans Biomed Eng 2015, 62, 2611-2619.
 
----
-
-PhysioNet is a repository of freely-available medical research data,
-managed by the MIT Laboratory for Computational Physiology.
-
-Supported by the [National Institute of Biomedical Imaging and
-Bioengineering (NIBIB)](https://www.nibib.nih.gov/) under NIH grant number R01EB030362.
-
-
-
-[Back](../)

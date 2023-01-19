@@ -999,13 +999,3 @@ Total uncompressed size: 0 B.
     ``` shell-command
     wget -r -N -c -np https://physionet.org/files/challenge-2014/1.0.0/
     ```
----
-
-PhysioNet is a repository of freely-available medical research data,
-managed by the MIT Laboratory for Computational Physiology.
-
-Supported by the [National Institute of Biomedical Imaging and
-Bioengineering (NIBIB)](https://www.nibib.nih.gov/)
-under NIH grant number R01EB030362.
-
-[Back](../)

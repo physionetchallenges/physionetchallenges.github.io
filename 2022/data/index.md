@@ -130,8 +130,3 @@ Note that for those subjects who attended both screening campaigns, the data fro
 
 The acquired audio samples were automatically segmented using the three algorithms proposed in [[15](../#Springer2016a)], [[16](../#Oliveira2019)], and [[17](../#Renna2019)]. These algorithms were only used to detect and identify the fundamental heart sounds (S1 and S2 sounds) and their corresponding boundaries. Two cardiac physiologists inspected the algorithms’ outputs on mutually exclusive data (as each expert screened only one of the two campaigns). Accordingly, each expert analyzed the automated annotations and whenever the annotator disagreed with the suggested automatic annotations, a manual annotation was required. In such cases, the annotator was instructed to annotate at least five complete heart cycles. Segmentation labels were retained for sections of heart sound recordings that were considered of high quality and representative by the cardiac physiologists. The remainder of the signal may include both low and high quality data. In this way, the users of the dataset may choose to use (or not to use) the suggested time windows, where the signal quality was manually inspected, and the automated labels were validated.
 
----
-
-Supported by the [National Institute of Biomedical Imaging and Bioengineering (NIBIB)](https://www.nibib.nih.gov/) under NIH grant R01EB030362.
-
-[Back](../index.html)

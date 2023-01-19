@@ -212,9 +212,3 @@ Please see the [PhysioNet/CinC Challenge 2021 webpage](https://physionetchalleng
 * [Submission Form](https://docs.google.com/forms/d/e/1FAIpQLSeB5sNtVeLwK48Ba_Qh43eFWmt2tTdIh7Q3ICq_J3G46hSE2g/viewform?usp=sf_link)
 * [The PhysioNet/CinC Challenge 2021 webpage](https://physionetchallenges.org/2021/)
 * [Frequently Asked Questions (FAQ)](https://physionetchallenges.org/faq/)
-
----
-
-Supported by the [National Institute of Biomedical Imaging and Bioengineering (NIBIB)](https://www.nibib.nih.gov/) under NIH grant R01EB030362.
-
-[Back](../)

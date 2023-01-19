@@ -26,8 +26,3 @@ To refer to these tables in your publication, please cite the following papers:
 
 [Reyna MA, Sadr N, Perez Alday EA, Gu Annie, Shah AJ, Robichaux C, Rad AB, Elola A, Seyedi S, Ansari S, Ghanbari H, Li Q, Sharma A, Clifford GD. Issues in the automated classification of multilead ECGs using heterogeneous labels and populations. Physiol. Meas. 2022; 43(8): 084001](2021ChallengePaperPMEA.pdf)
 
----
-
-Supported by the [National Institute of Biomedical Imaging and Bioengineering (NIBIB)](https://www.nibib.nih.gov/) under NIH grant R01EB030362.
-
-[Back](../)

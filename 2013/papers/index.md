@@ -126,14 +126,3 @@ Luigi Yuri Di Marco, Alberto Marzo, Alejandro Frangi
 from Noisy, Noninvasive Fetal ECG
 Recordings](http://www.cinc.org/archives/2013/pdf/0333.pdf "0333.pdf")\
 Piotr Podziemski, Jan Gierałtowski
-
----
-
-PhysioNet is a repository of freely-available medical research data,
-managed by the MIT Laboratory for Computational Physiology.
-
-Supported by the [National Institute of Biomedical Imaging and
-Bioengineering (NIBIB)](https://www.nibib.nih.gov/)
-under NIH grant number R01EB030362.
-
-[Back](../)

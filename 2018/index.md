@@ -459,9 +459,3 @@ Challenge](https://www.mathworks.com/academia/student-competitions/physionet.htm
 link. If you have questions or need technical support, please contact
 The MathWorks at <studentcompetitions@mathworks.com>.
 
----
-
-PhysioNet is supported by the
-[National Institute of General Medical Sciences (NIGMS)](https://www.nigms.nih.gov/) and the [National Institute of Biomedical Imaging and Engineering (NIBIB)](https://www.nibib.nih.gov/) under NIH grant number 2R01GM104987-09.
-
-[Back](../)

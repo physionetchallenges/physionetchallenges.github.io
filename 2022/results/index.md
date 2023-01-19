@@ -17,9 +17,3 @@ Teams that satisfied all of the [Challenge rules](../#rules) were eligible for r
 - [Unofficial clinical outcome entries](unofficial_outcome_scores.tsv): scores and rankings for the official murmur entries; entries are sorted alphabetically.
 
 The [Challenge webpage](../) and [Challenge description paper](../papers/) describe the Challenge. Please cite the [Challenge description paper](../papers/) when describing the Challenge. 
-
----
-
-Supported by the [National Institute of Biomedical Imaging and Bioengineering (NIBIB)](https://www.nibib.nih.gov/) under NIH grant R01EB030362.
-
-[Back](../)

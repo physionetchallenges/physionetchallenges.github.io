@@ -178,9 +178,3 @@ There are several common reasons for unexpected errors:
  
 The submission form can be found here:
 [https://forms.gle/PWu87SqN8frh6aKS7](https://forms.gle/PWu87SqN8frh6aKS7)
-
----
-
-Supported by the [National Institute of Biomedical Imaging and Bioengineering (NIBIB)](https://www.nibib.nih.gov/) under NIH grant R01EB030362.
-
-[Back](../index.html)

@@ -33,9 +33,3 @@ Please *read* these instructions and *read* one of the templates. Each year, we 
 ## Conference Papers
 
 The conference papers for [Computing in Cardiology 2022](https://www.cinc2022.org/) will be available on the [CinC](https://www.cinc.org/cinc-papers-on-line/) and [IEEE](https://ieeexplore.ieee.org/xpl/conhome/1000157/all-proceedings) websites.
-
----
-
-Supported by the [National Institute of Biomedical Imaging and Bioengineering (NIBIB)](https://www.nibib.nih.gov/) under NIH grant R01EB030362.
-
-[Back](../)

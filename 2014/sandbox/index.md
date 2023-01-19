@@ -123,14 +123,3 @@ You may install and use the test software environment on a spare
 computer if you wish, or in a VM using whatever VM technology you prefer
 on your favorite host OS. On the Challenge servers, we use qemu-kvm,
 hosted on Fedora GNU/Linux.
-
----
-
-PhysioNet is a repository of freely-available medical research data,
-managed by the MIT Laboratory for Computational Physiology.
-
-Supported by the [National Institute of Biomedical Imaging and
-Bioengineering (NIBIB)](https://www.nibib.nih.gov/)
-under NIH grant number R01EB030362.
-
-[Back](../)
