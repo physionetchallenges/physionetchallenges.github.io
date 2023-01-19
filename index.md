@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: main
 ---
 
 # George B. Moody PhysioNet Challenges
