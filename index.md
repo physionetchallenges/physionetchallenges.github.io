@@ -67,6 +67,3 @@ Please check the below links for information about [current](#current) and [past
 - 2000: [Detecting Sleep Apnea from the ECG](https://physionet.org/content/challenge-2000/)  
  [13 papers](https://archive.physionet.org/challenge/2000/papers/) and [1 contributed software](https://archive.physionet.org/physiotools/apdet/)
 
----
-
-Supported by the [National Institute of Biomedical Imaging and Bioengineering (NIBIB)](https://www.nibib.nih.gov/) under NIH grant R01EB030362.
