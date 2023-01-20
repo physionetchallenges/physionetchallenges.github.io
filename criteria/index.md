@@ -44,9 +44,3 @@ We appreciate when we receive suggestions that we run a particular Challenge, an
     2. Sufficient and responsive staff
     3. Sufficient computational resources for at least 100 teams and 1000 code submissions
     4. Successful completion of a previous data science competition
-
----
-
-Supported by the [National Institute of Biomedical Imaging and Bioengineering (NIBIB)](https://www.nibib.nih.gov/) under NIH grant R01EB030362.
-
-[Back](../)
