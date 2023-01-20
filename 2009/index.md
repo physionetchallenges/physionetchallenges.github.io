@@ -405,7 +405,7 @@ design of the challenge that contributed significantly to its success.
 
 Papers presented at CinC 2009 by challenge participants,
 [scores](final-scores), and
-[sources](#files) for the open-source entries,
+[sources](https://physionet.org/static/published-projects/challenge-2009/1.0.0/sources/) for the open-source entries,
 are now available.
 
 ### Papers
