@@ -1,0 +1,38 @@
+PhysioNet/Computers in Cardiology Challenge 2009 Event 1 Entry Form
+
+        Name:  ____________________________
+
+Organization:  ____________________________
+
+       Email:  ____________________________
+
+ Open source:  [ ] yes     [ ] no
+
+
+Your score will be returned to the email address you enter above;
+please be sure you can read email sent to that address!
+
+For each record in test set A, replace the letter x next to the record
+name with the letter H if your algorithm predicts an acute hypotensive
+episode within an hour after the end of the record, or with the letter
+C otherwise.  You must classify exactly five records as H in order to
+receive a score.
+
+When your entry is complete, send it in plain text format (not HTML,
+not as a word processor attachment) to webmaster@physionet.org with
+the subject line "Challenge 2009 Event 1 entry".
+
+_____________________________________________________________________
+
+Record    Classification
+
+101       x
+102       x
+103       x
+104       x
+105       x
+106       x
+107       x
+108       x
+109       x
+110       x
