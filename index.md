@@ -48,8 +48,8 @@ Please check the below links for information about [current](#current) and [past
  [13 papers](2010#papers) and [5 contributed software](https://archive.physionet.org/challenge/2010/sources/)
 - 2009: [Predicting Acute Hypotensive Episodes](2009)  
  [11 papers](2009#papers) and [4 contributed software](https://physionet.org/static/published-projects/challenge-2009/1.0.0/sources/)
-- 2008: [Detecting and Quantifying T-Wave Alternans](https://physionet.org/content/challenge-2008/)  
- [19 papers](https://archive.physionet.org/challenge/2008/papers/) and [5](https://archive.physionet.org/challenge/2008/sources/) + [1](https://archive.physionet.org/physiotools/TWAnalyser/)  contributed software
+- 2008: [Detecting and Quantifying T-Wave Alternans](2008)  
+ [19 papers](2008#papers) and [5](https://physionet.org/static/published-projects/challenge-2008/1.0.0/sources/) + [1](https://archive.physionet.org/physiotools/TWAnalyser/)  contributed software
 - 2007: [Electrocardiographic Imaging of Myocardial Infarction](https://physionet.org/content/challenge-2007/)  
  [6 papers](https://archive.physionet.org/challenge/2007/papers/)
 - 2006: [QT Interval Measurement](https://physionet.org/content/challenge-2006/)  

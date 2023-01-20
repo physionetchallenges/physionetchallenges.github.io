@@ -1,0 +1,127 @@
+The table below indicates reference ranks and sources for each record in the
+T-Wave Alternans Challenge Database (twadb).
+
+Column 1 is the name of the record within the twadb.
+
+Column 2 is the reference rank derived from the ranks assigned by challenge
+entries.  High ranks correspond to records with larger amounts of TWA.
+(Thus the record judged to contain the most TWA has a rank of 100, etc.)
+
+Column 3 specifies the data collection from which each record originates,
+which is one of:
+      inc    St. Petersburg Institute of Cardiological Technics 12-lead
+      	      Arrhythmia Database
+      lts    Long-Term ST Database
+      nsr    MIT-BIH Normal Sinus Rhythm Database
+      ptb    PTB Diagnostic ECG Database (patients)
+      ptbc   PTB Diagnostic ECG Database (healthy subjects)
+      sdd    Sudden Cardiac Death Holter Database
+      syn    synthesized ECGs with TWA
+      sync   synthesized ECGs without TWA
+
+Column 4 is the name of the original record from which the twadb record was
+extracted.
+
+twadb	ref.	source	source
+record	rank	type	record name
+
+twa00	1	sdd	sddb/30
+twa02	2	sdd	sddb/52
+twa04	3	lts	ltstdb/s30801
+twa05	4	sdd	sddb/52
+twa07	5	lts	ltstdb/s30771
+twa08	6	sdd	sddb/31
+twa10	7	nsr	nsrdb/19090
+twa11	8	ptb	ptbdb/patient049/s0178lre
+twa12	9	inc	incartdb/I24
+twa16	10	inc	incartdb/I67
+twa14	11	lts	ltstdb/s30761
+twa20	12	ptb	ptbdb/patient093/s0371lre
+twa23	13	nsr	nsrdb/19830
+twa18	14	ptb	ptbdb/patient043/s0141lre
+twa24	15	inc	incartdb/I12
+twa26	16	inc	incartdb/I40
+twa22	17	sdd	sddb/34
+twa32	18	lts	ltstdb/s30761
+twa27	19	inc	incartdb/I40
+twa38	20	ptb	ptbdb/patient080/s0315lre
+twa19	21	ptb	ptbdb/patient049/s0186lre
+twa39	22	ptbc	ptbdb/patient243/s0472_re
+twa40	23	ptb	ptbdb/patient038/s0125lre
+twa31	24	ptb	ptbdb/patient043/s0278lre
+twa41	25	ptb	ptbdb/patient038/s0128lre
+twa45	26	sdd	sddb/31
+twa28	27	syn	stwdb/c101
+twa42	28	ptb	ptbdb/patient049/s0314lre
+twa30	29	syn	stwdb/d101
+twa36	30	ptb	ptbdb/patient093/s0396lre
+twa43	31	lts	ltstdb/s30721
+twa44	32	inc	incartdb/I25
+twa46	33	ptbc	ptbdb/patient245/s0480_re
+twa35	34	syn	stwdb/e101
+twa37	35	lts	ltstdb/s30742
+twa47	36	ptb	ptbdb/patient004/s0020bre
+twa48	37	ptb	ptbdb/patient049/s0173lre
+twa49	38	ptb	ptbdb/patient043/s0144lre
+twa53	39	ptb	ptbdb/patient058/s0216lre
+twa54	40	ptb	ptbdb/patient291/s0554_re
+twa56	41	inc	incartdb/I24
+twa25	42	syn	stwdb/e102
+twa55	43	ptbc	ptbdb/patient247/s0479_re
+twa61	44	nsr	nsrdb/16420
+twa60	45	ptbc	ptbdb/patient255/s0491_re
+twa57	46	lts	ltstdb/s30771
+twa59	47	sdd	sddb/45
+twa58	48	inc	incartdb/I12
+twa52	49	sync	stwdb/f001
+twa62	50	nsr	nsrdb/16539
+twa03	51	ptb	ptbdb/patient093/s0367lre
+twa63	52	sdd	sddb/30
+twa65	53	ptb	ptbdb/patient004/s0020are
+twa71	54	nsr	nsrdb/19088
+twa74	55	inc	incartdb/I67
+twa66	56	ptb	ptbdb/patient093/s0378lre
+twa77	57	lts	ltstdb/s30721
+twa85	58	lts	ltstdb/s30741
+twa68	59	sdd	sddb/34
+twa78	60	syn	stwdb/b101
+twa75	61	ptb	ptbdb/patient056/s0196lre
+twa80	62	lts	ltstdb/s30742
+twa90	63	ptbc	ptbdb/patient239/s0467_re
+twa83	64	ptb	ptbdb/patient093/s0375lre
+twa76	65	syn	stwdb/a101
+twa84	66	inc	incartdb/I25
+twa86	67	ptb	ptbdb/patient273/s0511_re
+twa92	68	lts	ltstdb/s30741
+twa64	69	syn	stwdb/a102
+twa87	70	ptb	ptbdb/patient038/s0162lre
+twa89	71	lts	ltstdb/s30801
+twa69	72	syn	stwdb/c102
+twa94	73	ptb	ptbdb/patient080/s0261lre
+twa67	74	syn	stwdb/d103
+twa70	75	syn	stwdb/d104
+twa93	76	nsr	nsrdb/16773
+twa17	77	syn	stwdb/b107
+twa88	78	syn	stwdb/c103
+twa95	79	sdd	sddb/45
+twa96	80	ptb	ptbdb/patient080/s0265lre
+twa99	81	ptbc	ptbdb/patient242/s0471_re
+twa15	82	syn	stwdb/c108
+twa51	83	syn	stwdb/a104
+twa82	84	syn	stwdb/e104
+twa81	85	sync	stwdb/f000
+twa98	86	syn	stwdb/b103
+twa06	87	syn	stwdb/d109
+twa21	88	syn	stwdb/d105
+twa33	89	syn	stwdb/b105
+twa13	90	syn	stwdb/e112
+twa01	91	syn	stwdb/c111
+twa09	92	syn	stwdb/d110
+twa50	93	syn	stwdb/a108
+twa91	94	syn	stwdb/c112
+twa79	95	syn	stwdb/a110
+twa97	96	syn	stwdb/b109
+twa29	97	syn	stwdb/b111
+twa73	98	syn	stwdb/e107
+twa72	99	syn	stwdb/e109
+twa34	100	syn	stwdb/a112

@@ -1,0 +1,78 @@
+		PhysioNet/CinC Challenge 2008 Final Scores
+
+Name                                                 Kendall tau
+ Organization
+
+Jubair Sieed                                           0.911 *
+ Bangladesh University of Engineering and Technology
+ Dhaka, Bangladesh
+
+Giovanni Bortolan(1) and Ivaylo Christov(2)            0.890
+ (1)ISIB-CNR, Padova, Italy
+ (2)Bulgarian Academy of Sciences, Sofia, Bulgaria
+
+Alexander Khaustov                                     0.881 *
+ Incart, St. Petersburg, Russia
+
+Dingchang Zheng                                        0.827
+ Freeman Hospital, Newcastle, UK
+
+Philip Langley                                         0.779
+ Freeman Hospital, Newcastle, UK
+
+Rui Rodrigues                                          0.765 *
+ Universidade Nova de Lisboa, Portugal
+
+Vito Starc                                             0.702
+ University of Ljubljana, Slovenia
+
+Susan Jin                                              0.693
+ University of Maryland, USA
+
+Laura Burattini                                        0.684
+ Università Politecnica delle Marche, Italy
+
+Luca Mainardi                                          0.641
+ Politecnico di Milano, Italy
+
+Tsu-Wang Shen                                          0.636
+ Tzu Chi University, Taiwan
+
+Violeta Monasterio                                     0.633
+ University of Zaragoza, Spain
+
+Sam Stevens                                            0.615
+ Freeman Hospital, Newcastle, UK
+
+José Luis Rojo Álvarez                                 0.605
+ Universidad Rey Juan Carlos, Madrid, Spain
+
+Renata Simoliuniene                                    0.498 *
+ Kaunas University of Medicine, Lithuania
+
+Romina Cardo and Alvaro Corvalan                       0.493
+ Universidad Nacional de General Sarmiento
+ Buenos Aires, Argentina
+
+Olivier Meste, R Alegre, Omar Tala                     0.486
+ Université de Nice-Sophia Antipolis, France
+
+Saman Parvaneh                                         0.477
+ Islamic Azad University, Tehran, Iran
+
+Grace Nijm                                             0.451
+ Northwestern University, USA
+
+
+These 19 participants were able to distinguish between the synthetic ECGs
+with high and low amounts of TWA, and their entries were used to create
+the final reference ranking for the Challenge data set, available at
+http://physionet.org/challenge/2008/reference-ranks .  Their scores,
+as shown above, are calculated as the Kendall rank correlation coefficient
+between their rankings of the entire data set and the final reference ranking.
+A score above 0.436, achieved by 21 participants, is significant (p > 0.99),
+given the final reference ranking used here.
+
+The recipients of the scores marked with asterisks (*) have contributed the
+sources for their TWA analysis software for use and further study;  they are
+available at http://physionet.org/challenge/2008/sources/ .
