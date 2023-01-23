@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>0369.pdf - QT Interval Measurement: The PhysioNet/Computing in Cardiology Challenge 2006</title>
+    
+    
+<link rel="stylesheet" type="text/css" href="/static/bootstrap/css/bootstrap.css"/>
+<link rel="stylesheet" type="text/css" href="/static/font-awesome/css/all.css"/>
+<link rel="stylesheet" type="text/css" href="/static/custom/css/physionet.css"/>
+    
+<style>
+#doc {
+    display: block;
+    width: 100%;
+    height: calc(100vh - 12.75rem);
+    min-height: 20rem;
+}
+.card-body {
+    padding: 0px;
+}
+</style>
+
+    
+<script src="/static/jquery/jquery.min.js"></script>
+<script src="/static/popper/popper.min.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-87592301-7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-87592301-7');
+</script>
+    
+    <link rel="shortcut icon" type="image/png" href="/static/favicon.ico"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
+  
+  <body class="flexbody">
+    
+<nav class="navbar navbar-expand-md navbar-dark bg-dark d-flex justify-content-between" id="mainNav">
+	<label for="navicon" class="navbar-icon">&#9776;</label>
+	<input type="checkbox" id="navicon" class="navbar-check">
+
+	<a id="nav_home" class="navbar-brand" href="/">
+		PhysioNet
+	</a>
+
+	<div class="collapse navbar-collapse" id="navbarCollapse">
+		
+
+
+
+
+<ul class="navbar-nav mr-auto">
+
+  <li class="nav-item">
+    <a id="nav_index" class="nav-link" href="/content/">
+        Find
+    </a>
+  </li>
+
+  
+    
+      <li class="nav-item">
+        <a id="nav_share" class="nav-link" href="/about/publish/" >
+          Share
+        </a>
+      </li>
+    
+  
+    
+      <li class="nav-item">
+        <a id="nav_about" class="nav-link" href="/about/" >
+          About
+        </a>
+      </li>
+    
+  
+    
+  
+    
+  
+
+  <li class="nav-item">
+    <a id="nav_news" class="nav-link" href="/news/">
+      News
+    </a>
+  </li>
+</ul>
+
+<ul class="navbar-nav ml-auto">
+  
+
+<ul class="navbar-nav ml-auto">
+  
+
+  <li class="nav-item dropdown">
+      
+          
+            <a class="nav-link dropdown-toggle" href="#" id="nav_account_dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Account
+            </a>
+            <div class="dropdown-menu" aria-labelledby="nav_account_dropdown">
+                <a id="nav_login" class="dropdown-item" href="/login/">
+                  Login
+                </a>
+                <a id="nav_register" class="dropdown-item" href="/register/">
+                  Register
+                </a>
+            </div>
+          
+      
+  </li>
+</ul>
+
+	</div>
+
+	<div class="navbar-search">
+		<form class="form-inline" action="/content/">
+	    	<input name="topic" class="search-input" type="text" placeholder="Search">
+		    <span class="input-group-btn">
+		      <button id="search-button" type="submit" class="btn-search my-2 my-sm-0" title="Search PhysioNet"><span class="fa fa-search"><span class="visually-hidden">Search PhysioNet</span></span></button>
+		    </span>
+	 	</form>
+	</div>
+</nav>
+
+
+    <main>
+<div class="container-fluid">
+  
+    <h1>QT Interval Measurement: The PhysioNet/Computing in Cardiology Challenge 2006 1.0.0</h1>
+  
+  <div class="card">
+    <div class="card-header">
+      File:
+      <span class="dir-breadcrumbs"><a href="../#files-panel"
+                 class="dir-breadcrumb-up">&lt;base&gt;</a><span class="dir-breadcrumb-sep">/</span><a href="./#files-panel"
+                 class="dir-breadcrumb-up">papers</a><span class="dir-breadcrumb-sep">/</span><span class="dir-breadcrumb-self">0369.pdf</span></span>
+      (173,456 bytes)
+      <ul class="float-right mb-0 list-inline">
+        
+        <li class="list-inline-item">
+          <a class="btn btn-sm btn-secondary" href="/files/challenge-2006/1.0.0/papers/0369.pdf?download"
+             title="Download this file">Download</a>
+        </li>
+      </ul>
+    </div>
+    <div class="card-body">
+      
+<iframe id="doc" src="/files/challenge-2006/1.0.0/papers/0369.pdf"></iframe>
+
+    </div>
+    
+  </div>
+</div>
+</main>
+
+    <!-- This footer template is from the bootstrap 'blog' example -->
+
+<link rel="stylesheet" type="text/css" href="/static/custom/css/footer.css"/>
+
+<footer class="blog-footer">
+  <div class="container">
+    <div class="row row-centered">
+      <div class="col-xs-10 center col-centered">
+        <p>PhysioNet is a repository of freely-available medical research data, managed by the MIT Laboratory for Computational Physiology.</p>
+        <p>Supported by the National Institute of Biomedical Imaging and Bioengineering (NIBIB) under NIH grant number R01EB030362.</p>
+        
+          <p>For more accessibility options, see the <a href='https://accessibility.mit.edu/'>MIT Accessibility Page</a>.</p>
+        
+        <p><a href="#">Back to top</a></p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    
+<script src="/static/bootstrap/js/bootstrap.min.js"></script>
+<script src="/static/bootstrap/js/ie10-viewport-bug-workaround.js"></script>
+
+    
+    
+  </body>
+  
+</html>

@@ -1,0 +1,29 @@
+Case 1:
+extent: 31%
+segments: 1 2 3 8 9 13 14 15
+centroid: 8
+
+Case 2:
+extent: 30%
+segments: 3 4 9 10
+centroid: 3 or 4 or 9 or 10 *
+
+Case 3:
+extent: 52%
+segments: 3 4 5 9 10 11 12 15 16
+centroid: 10 or 11 **
+
+Case 4:
+extent: 14%
+segments: 1 9 10 11 15 17
+centroid: 15
+
+* For case 2, the centroid appears to be at the intersection
+of segments 3, 4, 9, and 10.  An entry reporting any one of these
+four segments as the centroid would be scored as correct (CED = 0
+for case 2).
+
+** For case 3, the centroid appears to be on the common border
+of segments 10 and 11.  An entry reporting either of these
+two segments as the centroid would be scored as correct (CED = 0
+for case 3).
