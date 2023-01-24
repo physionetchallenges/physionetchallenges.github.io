@@ -67,7 +67,7 @@ recordings will be available shortly.
 
 When using this resource, please cite the following publications:
 
-- The PhysioNet Challenge description paper: [Ikaro S., Joachim B., Reza S., Tingting Z., Julien O., Gari D. C., & George B. M. (2013). Noninvasive Fetal ECG: the PhysioNet/Computing in Cardiology Challenge 2013. Computers in Cardiology 40, pp. 149–152.](http://www.cinc.org/archives/2013/pdf/0149.pdf)
+- The PhysioNet Challenge description paper: [Silva, I., Behar, J., Sameni, R., Zhu, T., Oster, J., Clifford, G., and Moody, G. (2013). Noninvasive Fetal ECG: the PhysioNet/Computing in Cardiology Challenge 2013. Computers in Cardiology 40, pp. 149–152.](http://www.cinc.org/archives/2013/pdf/0149.pdf)
 - The PhysioNet resource: [Goldberger, A., Amaral, L., Glass, L., Hausdorff, J., Ivanov, P. C., Mark, R., … & Stanley, H. E. (2000). PhysioBank, PhysioToolkit, and PhysioNet: Components of a new research resource for complex physiologic signals. Circulation [Online]. 101 (23), pp. e215-e220](https://www.ahajournals.org/doi/full/10.1161/01.CIR.101.23.e215)
 
 ### Introduction

@@ -68,7 +68,7 @@ acquiring a diagnostically useful ECG recording.
 
 When using this resource, please cite the following publications:
 
-- The PhysioNet Challenge description paper: [Ikaro S., George M., Leo A. C. (2011). Improving the Quality of ECGs Collected using Mobile Phones: The PhysioNet/Computing in Cardiology Challenge 2011. Computers in Cardiology 38, pp. 273-276.](https://www.cinc.org/archives/2011/pdf/0273.pdf)
+- The PhysioNet Challenge description paper: [Silva, I., Moody, G., Celi, L. (2011). Improving the Quality of ECGs Collected using Mobile Phones: The PhysioNet/Computing in Cardiology Challenge 2011. Computers in Cardiology 38, pp. 273-276.](https://www.cinc.org/archives/2011/pdf/0273.pdf)
 - The PhysioNet resource: [Goldberger, A., Amaral, L., Glass, L., Hausdorff, J., Ivanov, P. C., Mark, R., … & Stanley, H. E. (2000). PhysioBank, PhysioToolkit, and PhysioNet: Components of a new research resource for complex physiologic signals. Circulation [Online]. 101 (23), pp. e215-e220](https://www.ahajournals.org/doi/full/10.1161/01.CIR.101.23.e215)
 
 ### Introduction

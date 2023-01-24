@@ -78,7 +78,7 @@ with presentations by participants at a dedicated scientific session of
 
 When using this resource, please cite the following publications:
 
-- The PhysioNet Challenge description paper: [George M., Li-wei L. (2009). Predicting Acute Hypotensive Episodes: The 10th Annual PhysioNet/Computers in Cardiology Challenge. Computers in Cardiology 36, pp. 541-544.](https://cinc.org/archives/2009/pdf/0541.pdf)
+- The PhysioNet Challenge description paper: [Moody, G., Lehman, L. (2009). Predicting Acute Hypotensive Episodes: The 10th Annual PhysioNet/Computers in Cardiology Challenge. Computers in Cardiology 36, pp. 541-544.](https://cinc.org/archives/2009/pdf/0541.pdf)
 - The PhysioNet resource: [Goldberger, A., Amaral, L., Glass, L., Hausdorff, J., Ivanov, P. C., Mark, R., … & Stanley, H. E. (2000). PhysioBank, PhysioToolkit, and PhysioNet: Components of a new research resource for complex physiologic signals. Circulation [Online]. 101 (23), pp. e215-e220](https://www.ahajournals.org/doi/full/10.1161/01.CIR.101.23.e215)
 
 ### Introduction

@@ -38,7 +38,7 @@ quantification of T-wave alternans.
 
 When using this resource, please cite the following publications:
 
-- The PhysioNet Challenge description paper: [George M. (2008). The PhysioNet / Computers in Cardiology Challenge 2008: T-Wave Alternans. Computers in Cardiology 35, pp. 505-508.](https://www.cinc.org/Proceedings/2008/pdf/0505.pdf)
+- The PhysioNet Challenge description paper: [Moody, G. (2008). The PhysioNet / Computers in Cardiology Challenge 2008: T-Wave Alternans. Computers in Cardiology 35, pp. 505-508.](https://www.cinc.org/Proceedings/2008/pdf/0505.pdf)
 - The Long Term ST Database: [Jager, F., Taddei, A., Moody, G. B., Emdin, M., Antolič, G., Dorn, R., ... & Mark, R. G. (2003). Long-term ST database: a reference for the development and evaluation of automated ischaemia detectors and for the study of the dynamics of myocardial ischaemia. *Medical and Biological Engineering and Computing*, 41(2), 172-182.](https://physionet.org/physiobank/database/ltstdb/lt03/lt03.pdf)
 - The PhysioNet resource: [Goldberger, A., Amaral, L., Glass, L., Hausdorff, J., Ivanov, P. C., Mark, R., … & Stanley, H. E. (2000). PhysioBank, PhysioToolkit, and PhysioNet: Components of a new research resource for complex physiologic signals. Circulation [Online]. 101 (23), pp. e215-e220](https://www.ahajournals.org/doi/full/10.1161/01.CIR.101.23.e215)
 
@@ -142,7 +142,7 @@ example, because of changes in conduction patterns, ectopy, or noise).
 
 Participants were asked send a list of the records they wished to
 nominate for inclusion in the official challenge data set by email to
-[webmaster\@physionet.org](mailto:webmaster@physionet.org?subject=Challenge%202008%20data%20nomination)
+[webmaster@physionet.org](mailto:webmaster@physionet.org?subject=Challenge%202008%20data%20nomination)
 with the subject “Challenge 2008 data nomination”, no later than noon
 GMT on Thursday, 17 April 2008. Those who wished to nominate records
 other than those in the databases listed above were asked to state
@@ -173,7 +173,7 @@ files) and, for convenience, it is also available as a tarball.
     form includes the email address where you wish to have your scores
     sent.**
 4.  Send the filled-in entry by email to
-    [webmaster\@physionet.org](mailto:webmaster@physionet.org?subject=Challenge-2008-entry),
+    [webmaster@physionet.org](mailto:webmaster@physionet.org?subject=Challenge-2008-entry),
     with the subject line “Challenge 2008 entry”. **Entries will be
     accepted until noon GMT on 1 September 2008.**
 
@@ -304,7 +304,7 @@ all).
 
 You may choose any of your (up to five) entries as the basis for
 ranking, by sending an email specifying your choice to
-[webmaster\@physionet.org](mailto:webmaster@physionet.org?subject=Challenge-2008-entry),
+[webmaster@physionet.org](mailto:webmaster@physionet.org?subject=Challenge-2008-entry),
 on or before noon GMT on 1 September. Please remember that it may take
 up to 24 hours after submitting an entry to receive scores, so try to
 submit your last entry at least a day before the deadline if you think

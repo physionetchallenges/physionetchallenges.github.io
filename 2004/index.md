@@ -51,7 +51,7 @@ fibrillation. The challenge [dataset](https://doi.org/10.13026/C2CC7Z)
 is available now; further details about the challenge will be posted
 shortly.
 
-## Citation
+## Citations
 
 - The PhysioNet Challenge description paper: [Moody G. (2004). Moody GB. Spontaneous Termination of Atrial Fibrillation: A Challenge from PhysioNet and Computers in Cardiology 2004. Computers in Cardiology 31, pp. 101-104](https://physionet.org/content/aftdb/1.0.0/).
 - The PhysioNet resource: [Goldberger, A., Amaral, L., Glass, L., Hausdorff, J., Ivanov, P. C., Mark, R., … & Stanley, H. E. (2000). PhysioBank, PhysioToolkit, and PhysioNet: Components of a new research resource for complex physiologic signals. Circulation [Online]. 101 (23), pp. e215-e220](https://www.ahajournals.org/doi/full/10.1161/01.CIR.101.23.e215)

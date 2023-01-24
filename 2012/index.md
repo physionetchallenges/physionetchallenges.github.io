@@ -51,7 +51,7 @@ using a rich set of physiologic and clinical variables collected from
 
 When using this resource, please cite the following publications:
 
-- The PhysioNet Challenge description paper: [Ikaro S., George M., Roger M., Leo A. C. (2012). Predicting Mortality of ICU Patients: The PhysioNet/Computing in Cardiology Challenge 2012. Computers in Cardiology 39, pp. 245-248.](https://www.cinc.org/archives/2012/pdf/0245.pdf)
+- The PhysioNet Challenge description paper: [Silva, I., Moody, G., Scott, D., Celi, L. (2012). Predicting Mortality of ICU Patients: The PhysioNet/Computing in Cardiology Challenge 2012. Computers in Cardiology 39, pp. 245-248.](https://www.cinc.org/archives/2012/pdf/0245.pdf)
 - The PhysioNet resource: [Goldberger, A., Amaral, L., Glass, L., Hausdorff, J., Ivanov, P. C., Mark, R., … & Stanley, H. E. (2000). PhysioBank, PhysioToolkit, and PhysioNet: Components of a new research resource for complex physiologic signals. Circulation [Online]. 101 (23), pp. e215-e220](https://www.ahajournals.org/doi/full/10.1161/01.CIR.101.23.e215)
 
 ### Introduction

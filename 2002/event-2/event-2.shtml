@@ -1,0 +1,487 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset=utf-8>
+
+    
+
+<title>PhysioNet/CinC Challenge 2002 Event 2: Classification</title>
+<link rel="stylesheet" href="/pn/print.css" type="text/css" media="print">
+<link rel="stylesheet" href="/pn/css/physionet.css" media="all">
+
+<style>
+#toc, #doi { margin-right: 1em; }
+
+  
+  
+ 
+ 
+#toc, #doi { background: #f5fcf3; border: solid 2px #694 }
+.sf-menu > li > a { background:  #daf3ce; }
+
+h1, h2, h3 { color: #694;
+             background: #daf3ce; }
+a[href^='http://archive.physionet.org']
+ { background: none; padding-right: 0; }
+</style>
+<script src="/pn/js/jquery.min.js"></script>
+<script src="/pn/js/hoverIntent.js"></script>
+<script src="/pn/js/superfish.min.js"></script>
+<script src="/pn/js/accessible-superfish.js"></script>
+<script src="/pn/js/physionet.js"></script>
+<script src="/pn/js/jquery.tableofcontents.min.js"></script>
+<script>
+  $(document).ready(function(){
+    $('ul.sf-menu').superfish({ autoArrows: false });
+
+    if ($('h2').length) {
+      $('#tocwrapper').append('<ul id="toc"></ul>');
+      $('#toc').tableOfContents(null, { startLevel: 2 });
+
+    }
+
+  });
+</script>
+
+<link rel="canonical" href="https://archive.physionet.org/challenge/2002/event-2.shtml">
+</head>
+
+<body>
+
+  <header class="banner">
+    <a class="hide" href="#content">Skip to content</a>
+    <div style="width: 100%; float: left; background-color: #694; min-width: 700px; padding: 0;">
+      <div class="topmenu" style="float: left; padding: 0.5em 2em 0.5em 0.5em;">
+	<!--	  <ul class="sf-menu sf-shadow sf-arrows"  >-->
+	<ul class="sf-menu">
+<li class="sfHover"><a style="text-align:center" href="https://archive.physionet.org/" class="sf-with-ul"><span style="font-family: Georgia, Times, serif; font-variant: small-caps; padding-right: 4em; margin-right: 2em;"><b>PhysioNet</b></span><span class="arrow-down" role="presentation"></span></a>
+<!--<ul class="pntop">-->
+<ul>
+<li><a href="/news.shtml" class="sf-with-ul">What's New?<span class="arrow-right" role="presentation"></span></a>
+<ul>
+<li><a href="/news.shtml">News from PhysioNet</a></li>
+<li><a href="/in-the-news.shtml">PhysioNet in the News</a></li>
+<li><a href="/training.shtml">Training opportunities</a></li>
+</ul></li>
+<li><a href="/site-map.shtml" class="sf-with-ul">
+<span style="font-family: Georgia, Times, serif; font-variant: small-caps;"><b>PhysioNet Library</b><span class="arrow-right" role="presentation"></span></span></a>
+<ul>
+<li><a href="/about.shtml">About PhysioNet</a></li>
+<li><a href="/challenge/" class="sf-with-ul">Challenges<span class="arrow-right" role="presentation"></span></a>
+<ul>
+<li><a href="/challenge/2018/">2018</a></li>
+<li><a href="/challenge/2017/">2017</a></li>
+<li><a href="/challenge/2016/">2016</a></li>
+<li><a href="/challenge/2015/">2015</a></li>
+<li><a href="/challenge/2014/">2014</a></li>
+<li><a href="/challenge/">Previous challenges</a></li>
+</ul></li>
+<li><a href="/contributors/">Contributors</a></li>
+<li><a href="/pn-citations.shtml" class="sf-with-ul">Publications<span class="arrow-right" role="presentation"></span></a>
+<ul>
+<li><a href="/publications/resource-pubs.shtml">from the PhysioNet team</a></li>
+<li><a href="/pn-citations.shtml">citing PhysioNet</a></li>
+<li><a href="/publications/#papers-with-data-and-software">with data and software</a></li>
+<li><a href="/publications/#papers-with-data">with data</a></li>
+<li><a href="/publications/#papers-with-software">with software</a></li>
+</ul></li>
+<li><a href="/tutorials/" class="sf-with-ul">Tutorials<span class="arrow-right" role="presentation"></span></a>
+<ul>
+<li><a href="/tutorials/">Concise tutorials</a></li>
+<li><a href="/tutorials/#workshops">Workshops</a></li>
+<li><a href="/tutorials/#reference">Reference guides</a></li>
+<li><a href="/tutorials/#other">External Resources</a></li>
+</ul></li>
+<li><a href="/other-links.shtml">External Resources</a></li>
+</ul></li>
+<li class="pb"><a href="/physiobank/database/" class="sf-with-ul"> <span style="font-family: Georgia, Times, serif; font-variant: small-caps;"><b>PhysioBank</b><span class="arrow-right" role="presentation"></span></span></a>
+<ul>
+<li><a href="/physiobank/about.shtml">About PhysioBank</a></li>
+<li><a href="/physiobank/database/" class="sf-with-ul">Databases<span class="arrow-right" role="presentation"></span></a>
+<ul>
+<li><a href="/physiobank/database/#clinical">Clinical Databases</a></li>
+<li><a href="/physiobank/database/#waveform" class="sf-with-ul">Waveform Databases<span class="arrow-right" role="presentation"></span></a>
+  <ul>
+    <li><a href="/physiobank/database/#multi">Multi-parameter</a></li>
+    <li><a href="/physiobank/database/#ecg">ECG</a></li>
+    <li><a href="/physiobank/database/#rr">RR intervals</a></li>
+    <li><a href="/physiobank/database/#gait">Gait and balance</a></li>
+    <li><a href="/physiobank/database/#neuro">Neuro- and myoelectric</a></li>
+    <li><a href="/physiobank/database/#image">Images</a></li>
+    <li><a href="/physiobank/database/#synthetic">Synthetic</a></li>
+  </ul>
+</li>
+</ul></li>
+<li><a href="/lightwave/">LightWAVE</a></li>
+<li><a href="/cgi-bin/ATM">PhysioBank ATM</a></li>
+<li><a href="/cgi-bin/pbsearch">PhysioBank Search</a></li>
+<li><a href="/physiobank/other.shtml">External Resources</a></li>
+</ul></li>
+<li class="pt"><a href="/physiotools/" class="sf-with-ul"> <span style="font-family: Georgia, Times, serif; font-variant: small-caps;"><b>PhysioToolkit</b><span class="arrow-right" role="presentation"></span></span></a>
+<ul>
+<li><a href="/physiotools/about.shtml">About PhysioToolkit</a></li>
+<li><a href="/physiotools/software-index.shtml" class="sf-with-ul">Software Index<span class="arrow-right" role="presentation"></span></a>
+<ul>
+<li><a href="/physiotools/software-index.shtml#pbdv" class="sf-with-ul">Data visualization<span class="arrow-right" role="presentation"></span></a>
+<ul>
+<li><a href="/physiotools/software-index.shtml#pbdv">PhysioBank</a></li>
+<li><a href="/physiotools/software-index.shtml#gpdv">General</a></li>
+</ul></li>
+<li><a href="/physiotools/software-index.shtml#pbdm">Data mining</a>
+</li><li><a href="/physiotools/software-index.shtml#fc" class="sf-with-ul">Data import/export<span class="arrow-right" role="presentation"></span></a>
+<ul>
+<li><a href="/physiotools/software-index.shtml#fc">Format conversion</a></li>
+<li><a href="/physiotools/software-index.shtml#cpcr">Record creation</a></li>
+</ul></li>
+<li><a href="/physiotools/software-index.shtml#deid">Deidentification</a></li>
+<li><a href="/physiotools/software-index.shtml#psp" class="sf-with-ul">Signal processing<span class="arrow-right" role="presentation"></span></a>
+<ul>
+<li><a href="/physiotools/software-index.shtml#psp">Physiologic</a></li>
+<li><a href="/physiotools/software-index.shtml#gsp">General</a></li>
+</ul></li>
+<li><a href="/physiotools/software-index.shtml#fdats" class="sf-with-ul">Time series analysis<span class="arrow-right" role="presentation"></span></a>
+<ul>
+<li><a href="/physiotools/software-index.shtml#fdats">Frequency-domain</a></li>
+<li><a href="/physiotools/software-index.shtml#nats">Nonlinear</a></li>
+<li><a href="/physiotools/software-index.shtml#hrv">Heart rate variability</a></li>
+</ul></li>
+<li><a href="/physiotools/software-index.shtml#pms">Models and simulation</a></li>
+<li><a href="/physiotools/software-index.shtml#lib" class="sf-with-ul">Software development<span class="arrow-right" role="presentation"></span></a>
+<ul>
+<li><a href="/physiotools/software-index.shtml#lib">Libraries and tools</a></li>
+<li><a href="/physiotools/software-index.shtml#eea">Device Evaluation</a></li>
+</ul></li>
+<li><a href="/physiotools/software-index.shtml#misc">Miscellaneous</a></li>
+</ul></li>
+<li><a href="/physiotools/matlab/" class="sf-with-ul">MATLAB software<span class="arrow-right" role="presentation"></span></a>
+<ul>
+<li><a href="/physiotools/matlab/wfdb-app-matlab/">WFDB Toolbox for ML</a></li>
+<li><a href="/physiotools/matlab/">Other</a></li>
+</ul></li>
+<li><a href="/physiotools/wfdb.shtml" class="sf-with-ul">WFDB software<span class="arrow-right" role="presentation"></span></a>
+<ul>
+<li><a href="/physiotools/wfdb-freebsd-quick-start.shtml">FreeBSD</a></li>
+<li><a href="/physiotools/wfdb-linux-quick-start.shtml">GNU/Linux</a></li>
+<li><a href="/physiotools/wfdb-darwin-quick-start.shtml">Mac OS X</a></li>
+<li><a href="/physiotools/wfdb-windows-quick-start.shtml">MS-Windows</a></li>
+<li><a href="/physiotools/wfdb-solaris-quick-start.shtml">Solaris</a></li>
+</ul></li>
+<li><a href="/physiotools/manuals.shtml" class="sf-with-ul">Manuals<span class="arrow-right" role="presentation"></span></a>
+<ul>
+<li><a href="/physiotools/wpg/">WFDB Programming</a></li>
+<li><a href="/physiotools/wag/">WFDB Applications</a></li>
+<li><a href="/physiotools/wug/">WAVE</a></li>
+<li><a href="/physiotools/rcvsim/doc/manual/">RCVSIM</a></li>
+<li><a href="/physiotools/plt/plt/html/">plt</a></li>
+<li><a target="other" class="plain" href="http://www.lulu.com/spotlight/physionet/">Bookstore</a></li>
+</ul></li>
+<li><a href="/physiotools/other.shtml">External Resources</a></li>
+</ul></li>
+<li class="pw"><a href="/users/" class="sf-with-ul"> <span style="font-family: Georgia, Times, serif; font-variant: small-caps;"><b>PhysioNetWorks</b><span class="arrow-right" role="presentation"></span></span></a>
+<ul>
+<li><a href="/users/">About PhysioNetWorks</a></li>
+<li><a href="/users/home/"><em>User Home Page*</em></a></li>
+<li><a href="/users/login.shtml">Login / Create an Account</a></li>
+<li><a href="/works/"><em>Works in Progress*</em></a></li>
+<li><a href="/users/help/data-sharing/">Data Sharing</a></li>
+<li><a href="/users/help/pnw-howto.shtml">PhysioNetWorks Project Guide</a></li>
+<li><a href="/users/help/">PhysioNetWorks Help</a></li>
+<li class="menu-note">* login required&nbsp;</li>
+</ul></li>
+<li><a href="/faq.shtml" class="sf-with-ul">Help<span class="arrow-right" role="presentation"></span></a>
+<ul>
+<li><a href="/faq.shtml" class="sf-with-ul">FAQ<span class="arrow-right" role="presentation"></span></a>
+<ul>
+<li><a href="/faq.shtml#topquestions">Top questions</a></li>
+<li><a href="/faq.shtml#general">General</a></li>
+<li><a href="/faq.shtml#sign-in">Sign-in and passwords</a></li>
+<li><a href="/faq.shtml#where-is">Where is ...?</a></li>
+<li><a href="/faq.shtml#downloading">Downloading</a></li>
+<li><a href="/faq.shtml#physiobank">PhysioBank</a></li>
+<li><a href="/faq.shtml#signals">Signals</a></li>
+<li><a href="/faq.shtml#annotations">Annotations</a></li>
+<li><a href="/faq.shtml#software">Software</a></li>
+<li><a href="/faq.shtml#help">Help!</a></li>
+</ul></li>
+<li><a href="/site-map.shtml">Site map</a></li>
+<li><a href="/tutorials/" class="sf-with-ul">Tutorials<span class="arrow-right" role="presentation"></span></a>
+<ul>
+<li><a href="/tutorials/">Concise tutorials</a></li>
+<li><a href="/tutorials/#workshops">Workshops</a></li>
+<li><a href="/tutorials/#reference">Reference guides</a></li>
+<li><a href="/tutorials/#other">External Resources</a></li>
+</ul></li>
+<li><a href="/physiotools/manuals.shtml" class="sf-with-ul">Manuals<span class="arrow-right" role="presentation"></span></a>
+<ul>
+<li><a href="/physiotools/wpg/">WFDB Programming</a></li>
+<li><a href="/physiotools/wag/">WFDB Applications</a></li>
+<li><a href="/physiotools/wug/">WAVE</a></li>
+<li><a href="/physiotools/rcvsim/doc/manual/">RCVSIM</a></li>
+<li><a href="/physiotools/plt/plt/html/">plt</a></li>
+<li><a target="other" class="plain" href="http://www.lulu.com/spotlight/physionet/">Bookstore</a></li>
+</ul></li>
+<li><a href="/mirrors/" class="sf-with-ul">Mirrors<span class="arrow-right" role="presentation"></span></a>
+<ul>
+<li><a href="http://physionet.mit.edu/challenge/2002/event-2.shtml">Cambridge, MA</a></li>
+<li><a href="https://physionet.nlm.nih.gov/challenge/2002/event-2.shtml">Bethesda, MD</a></li>
+<li><a href="http://physionet.incor.usp.br/challenge/2002/event-2.shtml">Sao Paulo, Brazil</a></li>
+<li><a href="http://physionet.ph.biu.ac.il/challenge/2002/event-2.shtml">Ramat-Gan, Israel</a></li>
+<li><a href="http://physionet.cps.unizar.es/challenge/2002/event-2.shtml">Zaragoza, Spain</a></li>
+<li><a href="http://physionet.fri.uni-lj.si/challenge/2002/event-2.shtml">Ljubljana, Slovenia</a></li>
+<li><a href="http://physionet.comp.nus.edu.sg/challenge/2002/event-2.shtml">NUS, Singapore</a></li>
+<li><a href="/mirrors/mirror-howto.shtml">Setting up a mirror</a></li>
+</ul></li>
+<li><a href="/citations.shtml">How to Cite</a></li>
+<li><a href="/guidelines.shtml">Contributing</a></li>
+<li><a href="/copying.shtml">Copying</a></li>
+<li><a href="/privacy.shtml">Privacy</a></li>
+</ul></li>
+</ul>
+
+</li></ul>
+
+	<!--	  </ul>-->
+      </div>
+      
+      <script src="/pn/breadcrumbs.js"></script>
+      
+      <div style="float: right; padding: 0.6em; margin: 0;" id="searchForm">
+	<script>
+document.write("<form action=\"/search-results.shtml\"> " +
+	       "<input type=\"text\" name=\"q\" size=\"25\" /> " +
+	       "<input type=\"submit\" name=\"sa\" value=\"Search\" /> " +
+	       "</form>");
+</script>
+<noscript>
+<form action='https://www.google.com/search'><!-- id='searchForm'>-->
+  <div>
+    <input name='q' type='hidden' value='site:physionet.org' />
+    <input name='q' size='25' type='text' />
+    <input name='sa' type='submit' value='Search' />
+  </div>
+</form>
+</noscript>
+
+      </div>
+    </div>
+
+
+    <div class="pbanner"><!-- pbanner is set to display: none -->
+      from <b>PhysioNet</b>, the research resource for complex physiologic signals
+    </div>
+    <div  style="width: 100%; min-width: 700px; margin: 0; background-color: transparent; padding: 0;">
+      <!-- provides space above h1 header, so it isn't hidden by banner -->
+      <div id="top"><!-- need nested div to link to top lands in right place --></div>      
+    </div>
+
+  </header>
+
+    <main>
+    
+        <h1 style="margin-top: 1.75em; padding-top: .4em;">PhysioNet/CinC Challenge 2002 Event 2: Classification</h1>
+    
+
+    
+        <nav id="tocwrapper" style="padding: 1.5em 0 0 0; float: right;"> <!-- id to position toc added by KP, 6 July 2015 -->
+        </nav>
+    
+
+    
+    <a id="content" ></a>
+    <article id="page"><!-- added by KP, 12 June 2015 -->
+
+    <div style="margin: 4em 1em 0em"><strong>The new PhysioNet website is available at: <a href='https://physionet.org'>https://physionet.org</a>. We welcome your <a href="https://forms.gle/WQh3jaZj53yygQJ78" target="_blank">feedback</a>.</strong></div>
+
+
+
+
+
+<h2>Introduction</h2>
+
+<p>
+This page contains information about how to participate in event 2.  For
+background on this challenge, see the <a href="index.shtml">challenge
+overview</a>.  The complete set of rules for event 2 can be found <a
+href="index.shtml#rules-2">here</a>.
+
+<p>
+As in previous challenges, there are two events, and the top-scoring
+participant in each event will receive an award.  Event 1 required
+participants to write a program that can generate a realistic 24-hour time
+series of inter-beat (RR) intervals.  The outputs of these programs form
+a part of the challenge dataset used for event 2, in which participants
+attempt to sort the data into real and synthetic classes.
+
+<h2>About the challenge dataset</h2>
+
+<p>
+The PhysioNet/CinC Challenge 2002 dataset consists of 50 time series of
+interbeat (RR) intervals, designated <tt>rr01</tt>, <tt>rr02</tt>, ...,
+<tt>rr50</tt>.  Each series contains between 20 and 24 hours of data (between
+70,000 and 130,000 intervals).  Approximately half of the series (those
+belonging to group A) contain data derived from ambulatory ECG recordings of
+subjects between the ages of 20 and 50 who have no known cardiac abnormality
+(although, as for most healthy adults, they may have rare isolated ectopic
+beats, which have not been filtered out of these time series).  The other half
+(those belonging to group B) contain synthetic data, which have been generated
+using the models submitted by participants in event 1 of the challenge, and by
+one or more models provided by the challenge organizers.  Each model has been
+used to generate two time series.
+
+<p>
+The object of event 2 is to determine which of the series belong to group A
+(the real data), and which to group B (the synthetic data).
+
+<p>
+Special thanks to Diane Perry, Isaac Henry, and Joe Mietus for their assistance
+in assembling the group A data.
+
+<h2>Downloading the challenge dataset</h2>
+
+<p>
+The challenge dataset is available in two formats:
+<ul>
+<li> Text files for each of the 50 time series.  Each line contains one RR
+     interval (the units are seconds).  These files may be downloaded from
+     the <a href="dataset/"><tt>dataset</tt></a> directory on this page.
+
+<li> All 50 of these files, collected into a <tt>gzip</tt>-compressed
+     <tt>tar</tt> archive (<a
+     href="dataset.tar.gz"><tt>dataset.tar.gz</tt></a>, 4480860 bytes).  The
+     <tt>md5sum</tt> of this file is 05ea2f9df552e1f95d96ee1b5f542e32.  If you
+     don't know how to read a <tt>gzip</tt>-compressed <tt>tar</tt> archive,
+     see <a href="/faq.shtml#tar-gz">this note</a>.
+</ul>
+
+<h2>Preparing your entry</h2>
+
+<p>
+After downloading the challenge dataset, study it.  If you are not familiar
+with the characteristics of real interbeat interval time series, it may be
+helpful to look at the <a href="/physiobank/database/nsrdb">MIT-BIH Normal
+Sinus Rhythm Database</a>, which is a source of real data with all of the
+characteristics of the time series in group A.  The interbeat intervals from
+the 18 records of this database, which may be useful as reference material, are
+contained in <a href="nsrdb-rr.tar.gz"><tt>nsrdb-rr.tar.gz</tt></a> (1633730
+bytes, in the same format as <a
+href="dataset.tar.gz"><tt>dataset.tar.gz</tt></a>).
+
+<p>
+Classify each series in the challenge dataset as A (real), B (synthetic), or C
+(unknown).  You will receive 2 points for each correct classification, and your
+score will be reduced by 1 point for each incorrect classification.  Your score
+will be neither increased nor reduced for any series that you classify as C
+(unknown).  Possible scores thus range from -50 to 100.
+
+<p>
+Your entry needs to be prepared in a special text format.  Download this
+<a href="entry.txt">template</a>, and replace the `?' characters
+with your classifications (`A', `B', or `C') for each of the 50 series in
+the challenge dataset.
+
+<h2>Submitting your entry for scoring</h2>
+
+<p>
+Please double-check your entry before submitting it to be sure it is in
+<strong>plain text</strong> format, exactly like the template file.
+<em>HTML-formatted entries will confuse the automated scorer and will not be
+scored.</em>
+
+<p>
+To submit your entry successfully, you will need:
+
+<ul> 
+<li> A web browser that supports HTTP uploads, such as Netscape 2.0 or
+ later, or MS Internet Explorer 4.0 or later.
+
+<li> A valid e-mail address that is known to us.  Please
+ <a href="/register.shtml">sign in</a> before submitting your entry.
+ (If you signed in on a previous visit, you do not need to sign in again.)
+ All entries are logged by date, time, and the e-mail address of the
+ entrant.
+
+ <p>
+ <b>Important:</b>  Your score will be sent by e-mail to the address you
+ specify.  Please be sure that your e-mail address is entered correctly,
+ or you won't be able to view your score.
+
+<li> A password.  If you don't yet have a password, or if you have forgotten
+ your password, go to the <a
+ href="http://www.physionet.org/cgi-bin/cinc-2002-score">entry form</a>, fill
+ in only your e-mail address, click on the "Get password" button, and a
+ password will be sent to your e-mail address immediately.
+</ul>
+
+<p>
+After filling in your e-mail address and password on the 
+<a href="http://www.physionet.org/cgi-bin/cinc-2002-score">entry form</a>.
+enter the name of the file that contains your correctly-formatted entry
+(you may use the <b>Browse</b> button to find it), and click on
+<b>Upload entry</b>.
+
+<h2>Notes</h2>
+
+<p>
+Please be careful not to submit more than one copy of the same classifications,
+since each submission will be counted against your quota of submissions.  If
+this happens inadvertently, please <a href="mailto:webmaster@physionet.org
+subject=duplicate entry">send a note</a> quoting the date and time of the
+duplicate submission; your submission counter will be adjusted manually if the
+error can be confirmed.
+
+<p>
+If you are tempted to try submitting many entries in order to learn about the
+correct classifications, why not play <a
+href="http://www.lizardpoint.com/fun/mastermind/mastmind.html"
+target="other">Mastermind</a> instead?  We will reject obvious attempts to
+circumvent the spirit of the challenge in this way.  Delivery of your score may
+be delayed if you submit more than one entry per day.
+
+<p>
+UNIX versions of Netscape, and possibly other browsers, will allow the
+user to specify a directory name in the <b>File to upload</b> field of the
+entry form, but the browser will not transmit anything in this case and will
+hang until the user interrupts it by clicking on <b>Stop</b>.  This behavior
+is a bug in the browser and cannot be detected or avoided by the PhysioNet web
+server.  Other browsers will detect and disallow attempts to upload
+directories.
+
+<hr>
+<!-- footer.shtml for PhysioNet pages -->
+
+
+
+</div>
+<div class="footer">
+<table width="100%" style="margin: 0;">
+<tr>
+<td style="text-align: center; vertical-align: middle; padding: 0;
+	   background: #694;">
+<a href="http://physionet.org/cgi-bin/feedback" style="text-decoration:none">
+<font color="white"><b>Send feedback about this page to PhysioNet</b></font></a>
+</td>
+</tr>
+</table>
+<table width="100%" style="margin: 0;">
+<tr>
+<td style="display: inline-block; padding: 0; vertical-align: top; font-size: 80%; margin: 2em; max-width: 40%">
+Your comments and suggestions are welcome. Please send them to <a href="mailto:webmaster@physionet.org?subject=http://archive.physionet.org/challenge/2002/event-2.shtml">
+<tt>webmaster@physionet.org</tt></a>. 
+<br><br>
+For general enquiries about PhysioNet and its contents and usage, please see our <a href="/faq.shtml">FAQ</a>.
+<br><br>
+Updated 
+
+Thursday,  5 January 2012 at 21:02 EST
+</td>
+<td style="display: inline-block; margin: 0 1em 0 auto; max-width: 45%;">
+<br>PhysioNet is supported by the <a href="http://www.nigms.nih.gov/">National Institute of General Medical Sciences (NIGMS)</a> and the <a href="https://www.nibib.nih.gov/">National Institute of Biomedical Imaging and Bioengineering (NIBIB)</a> under NIH grant number 2R01GM104987-09.
+</td>
+</tr>
+</table>
+</div>
+</body></html>
+
+</body>
+</html>

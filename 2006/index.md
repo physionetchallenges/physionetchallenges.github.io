@@ -53,7 +53,7 @@ new drugs. Visit the [Challenge
 
 When using this resource, please cite the following publications:
 
-- The PhysioNet Challenge description paper: [George M., Hans K., Uwe S., (2006). The PhysioNet/Computers in Cardiology Challenge 2006: QT Interval Measurement. Computers in Cardiology 33, pp. 313--316.](https://www.cinc.org/Proceedings/2008/pdf/0505.pdf).
+- The PhysioNet Challenge description paper: [George M., Koch, H., Steinhoff, U. (2006). The PhysioNet/Computers in Cardiology Challenge 2006: QT Interval Measurement. Computers in Cardiology 33, pp. 313--316.](http://cinc.mit.edu/Proceedings/2006/pdf/0313.pdf).
 - The PhysioNet resource: [Goldberger, A., Amaral, L., Glass, L., Hausdorff, J., Ivanov, P. C., Mark, R., … & Stanley, H. E. (2000). PhysioBank, PhysioToolkit, and PhysioNet: Components of a new research resource for complex physiologic signals. Circulation [Online]. 101 (23), pp. e215-e220](https://www.ahajournals.org/doi/full/10.1161/01.CIR.101.23.e215)
 
 ### Introduction

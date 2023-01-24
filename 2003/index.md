@@ -26,7 +26,7 @@ participate in this challenge, making use of the recently completed
 [Long-Term ST Database](https://doi.org/10.13026/C2G01T) to study this
 provocative question.
 
-## Citation
+## Citations
 
 When using this resource, please cite
 the following publications:
