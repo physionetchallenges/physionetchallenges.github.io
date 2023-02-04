@@ -202,15 +202,15 @@ The top scores in event 1 are:
 
 
 | Score          | Entrant                                                                                                                                                        | Date         | Entries |
-| 41/50<br />82% | [G Schreier, P Kastner, and W Marko](/files/challenge-2001/1.0.0/s42-6.htm)<br />Austrian Research Centers Seibersdorf, Graz, Austria                          | 17 September | 8       |
-| 40/50<br />80% | [W Zong and RG Mark](/files/challenge-2001/1.0.0/s42-4.htm)<br />Harvard-MIT Division of Health Sciences and Technology, Cambridge, MA, USA (unofficial entry) | 12 September | 7       |
+| 41/50<br />82% | [G Schreier, P Kastner, and W Marko](submissions/s42-6)<br />Austrian Research Centers Seibersdorf, Graz, Austria                          | 17 September | 8       |
+| 40/50<br />80% | [W Zong and RG Mark](submissions/s42-4)<br />Harvard-MIT Division of Health Sciences and Technology, Cambridge, MA, USA (unofficial entry) | 12 September | 7       |
 | 37/50<br />74% | R Sweeney and colleagues<br />Guidant Corp., St. Paul, MN, USA                                                                                                 | 8 May        | 3       |
-| 36/50<br />72% | [C Maier, M Bauch, and H Dickhaus](/files/challenge-2001/1.0.0/s42-5.htm)<br />University of Applied Sciences, Heilbronn, Germany                              | 19 September | 2       |
-| 35/50<br />70% | [C Marchesi and M Paoletti](/files/challenge-2001/1.0.0/s42-7.htm)<br />Università di Firenze, Firenze, Italy                                                  | 27 April     | 1       |
-| 34/50<br />68% | [KS Lynn and HD Chiang](/files/challenge-2001/1.0.0/p73-3.htm)<br />Cornell University, Ithaca, NY, USA                                                        | 28 April     | 6       |
-| 33/50<br />66% | [CC Yang](/files/challenge-2001/1.0.0/p73-2.htm)<br />National Yang-Ming University, Taipei, Taiwan                                                            | 21 April     | 4       |
+| 36/50<br />72% | [C Maier, M Bauch, and H Dickhaus](submissions/s42-5)<br />University of Applied Sciences, Heilbronn, Germany                              | 19 September | 2       |
+| 35/50<br />70% | [C Marchesi and M Paoletti](submissions/s42-7)<br />Università di Firenze, Firenze, Italy                                                  | 27 April     | 1       |
+| 34/50<br />68% | [KS Lynn and HD Chiang](submissions/p73-3)<br />Cornell University, Ithaca, NY, USA                                                        | 28 April     | 6       |
+| 33/50<br />66% | [CC Yang](submissions/p73-2)<br />National Yang-Ming University, Taipei, Taiwan                                                            | 21 April     | 4       |
 | 33/50<br />66% | JA Kors<br />Erasmus University, Rotterdam, The Netherlands                                                                                                    | 10 July      | 2       |
-| 32/50<br />64% | [P de Chazal and C Heneghan](/files/challenge-2001/1.0.0/s42-2.htm)<br />University of New South Wales, Sydney, Australia                                      | 13 September | 1       |
+| 32/50<br />64% | [P de Chazal and C Heneghan](submissions/s42-2)<br />University of New South Wales, Sydney, Australia                                      | 13 September | 1       |
 | 32/50<br />64% | R Loesch                                                                                                                                                       | 14 September | 6       |
 
 Each entrant’s best score is shown, along with the date when they
@@ -248,16 +248,16 @@ range between 0 and 28.
 
 The top scores in event 2 are:
 
- 
+
 | Score          | Entrant                                                                                                                                                                  | Date         | Entries |
-| 22/28<br />79% | [W Zong and RG Mark](/files/challenge-2001/1.0.0/s42-4.htm)<br />Harvard-MIT Division of Health Sciences and Technology, Cambridge, MA, USA (unofficial entry)           | 1 May        | 1       |
-| 20/28<br />71% | [G Schreier, P Kastner, and W Marko](/files/challenge-2001/1.0.0/s42-6.htm)<br />Austrian Research Centers Seibersdorf, Graz, Austria                                    | 19 August    | 2       |
-| 19/28<br />68% | [P de Chazal and C Heneghan](/files/challenge-2001/1.0.0/s42-2.htm)<br />University of New South Wales, Sydney, Australia                                                | 28 April     | 1       |
-| 19/28<br />68% | [C Maier, M Bauch, and H Dickhaus](/files/challenge-2001/1.0.0/s42-5.htm)<br />University of Applied Sciences, Heilbronn, Germany                                        | 11 September | 3       |
-| 18/28<br />64% | [KS Lynn and HD Chiang](/files/challenge-2001/1.0.0/p73-3.htm)<br />Cornell University, Ithaca, NY, USA                                                                  | 29 April     | 2       |
-| 17/28<br />61% | [P Langley, D di Bernardo, J Allen, E Bowers, F Smith, S Vecchietti, and A Murray](/files/challenge-2001/1.0.0/s42-3.htm)<br />Freeman Hospital, Newcastle upon Tyne, UK | 30 April     | 1       |
-| 17/28<br />61% | [D Gamberger and T Smuc](/files/challenge-2001/1.0.0/p73-4.htm)<br />Rudjer Boskovic Institute, Zagreb, Croatia                                                          | 23 August    | 2       |
-| 16/28<br />57% | [CC Yang](/files/challenge-2001/1.0.0/p73-2.htm)<br />National Yang-Ming University, Taipei, Taiwan                                                                      | 23 April     | 1       |
+| 22/28<br />79% | [W Zong and RG Mark](submissions/s42-4)<br />Harvard-MIT Division of Health Sciences and Technology, Cambridge, MA, USA (unofficial entry)           | 1 May        | 1       |
+| 20/28<br />71% | [G Schreier, P Kastner, and W Marko](submissions/s42-6)<br />Austrian Research Centers Seibersdorf, Graz, Austria                                    | 19 August    | 2       |
+| 19/28<br />68% | [P de Chazal and C Heneghan](submissions/s42-2)<br />University of New South Wales, Sydney, Australia                                                | 28 April     | 1       |
+| 19/28<br />68% | [C Maier, M Bauch, and H Dickhaus](submissions/s42-5)<br />University of Applied Sciences, Heilbronn, Germany                                        | 11 September | 3       |
+| 18/28<br />64% | [KS Lynn and HD Chiang](submissions/p73-3)<br />Cornell University, Ithaca, NY, USA                                                                  | 29 April     | 2       |
+| 17/28<br />61% | [P Langley, D di Bernardo, J Allen, E Bowers, F Smith, S Vecchietti, and A Murray](submissions/s42-3)<br />Freeman Hospital, Newcastle upon Tyne, UK | 30 April     | 1       |
+| 17/28<br />61% | [D Gamberger and T Smuc](submissions/p73-4)<br />Rudjer Boskovic Institute, Zagreb, Croatia                                                          | 23 August    | 2       |
+| 16/28<br />57% | [CC Yang](submissions/p73-2)<br />National Yang-Ming University, Taipei, Taiwan                                                                      | 23 April     | 1       |
 | 16/28<br />57% | R Sweeney and colleagues<br />Guidant Corp., St. Paul, MN, USA                                                                                                           | 8 May        | 1       |
 | 15/28<br />54% | L Almarro<br />UPV, Valencia, Spain                                                                                                                                      | 30 April     | 1       |
 

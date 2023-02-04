@@ -194,7 +194,7 @@ following:
 1.  Submit a [valid entry for event 1](#valid-1) no later than noon
     GMT on Monday, 22 April 2002.
 2.  Submit a [valid entry for event
-    2](https://physionet.org/challenge/2002/event-2.shtml) no later than
+    2](#event-2) no later than
     noon GMT on Tuesday, 30 April 2002.
 3.  Submit an abstract describing his or her generator to [Computers in
     Cardiology](http://www.cinc.org/), no later than Friday, 3 May 2002.

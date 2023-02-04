@@ -192,7 +192,7 @@ For example, to work with record s30701 of the learning set, download
 -   [s30701.stf](https://physionet.org/content/ltstdb/1.0.0/s30701.stf)
 -   [s30701.klt.zip](https://physionet.org/content/ltstdb/1.0.0/s30701.klt.zip) (decompress
     this using unzip, pkzip, winzip or a similar utility)
--   [s30701.epi](https://physionet.org/content/ltstdb/1.0.0/epi-files/s30701.epi)
+-   s30701.epi (dead link)
 
 The last of these files, s30701.epi, is derived from s30701.stb; it
 contains:
