@@ -292,7 +292,7 @@ Entries must be submitted as a zip file containing:
 
 To upload your entry, create a [PhysioNetWorks](https://archive.physionet.org/users/login.shtml)
 account (if you don’t have one), and go to
-[challenge.physionet.org](https://challenge.physionet.org/). Entries
+[moody-challenge.physionet.org](/). Entries
 must be uploaded prior to the [deadline](#rules-and-deadlines) in order to be
 eligible.
 
