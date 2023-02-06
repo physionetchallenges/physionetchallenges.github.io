@@ -756,11 +756,11 @@ and closely related work, which is described in these papers:
 
 13. Zhang Q, Illanes Manriquez A, Medigue C, Papelier Y, and Sorine M.
     [An algorithm for robust and efficient location of T-wave ends in
-    electrocardiogram](https://physionet.org/challenge/2006/s94-2.htm).
+    electrocardiogram](https://archive.physionet.org/challenge/2006/s94-2.htm).
 
 14. Lindauer JM and Gregg RE. [Evaluation of Philips diagnostic ECG
     interval
-    measurements](https://physionet.org/challenge/2006/p77-2.htm).
+    measurements](https://archive.physionet.org/challenge/2006/p77-2.htm).
 
 Your suggestions for additions to this list are welcome and will be
 gratefully acknowledged if used.
