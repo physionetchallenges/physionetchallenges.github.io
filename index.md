@@ -4,31 +4,34 @@ layout: main
 
 # George B. Moody PhysioNet Challenges
 
-For the past 23 years, [PhysioNet](https://physionet.org) and [Computing in Cardiology](http://www.cinc.org/) have co-hosted a series of annual challenges, now called the [George B. Moody PhysioNet Challenges](/about/), to tackle clinically interesting questions that are either unsolved or not well-solved.
+For the past 24 years, [PhysioNet](https://physionet.org) and [Computing in Cardiology](http://www.cinc.org/) have co-hosted a series of annual challenges, now called the [George B. Moody PhysioNet Challenges](/about/), to tackle clinically interesting questions that are either unsolved or not well-solved.
 
-The [George B. Moody PhysioNet Challenge 2022](/2022/) invites participants to identify murmurs and clinical outcomes using heart sound recordings collected from multiple auscultation locations.
+The [George B. Moody PhysioNet Challenge 2023](/2023/) invites participants to predict outcomes for comatose patients in the hours following resuscitation from cardiac arrest.
 
-We ask participants to design and implement working, open-source algorithms that, based only on the provided recordings and routine demographic data, can determine whether any murmurs are audible from a patient's recordings, and whether confirmatory diagnostic testing revealed abnormal cardiac function. We have designed a scoring function that reflects the burden of algorithmic pre-screening, expert screening, treatment, and delayed and missed diagnoses. The teams with the best scores for these tasks win the Challenge.
+We ask participants to design and implement working, open-source algorithms that, based only on the provided electroencephalogram (EEG) recordings and routine patient data, can predict good and poor outcomes for patients. The team with the best score for this task on the hidden test set wins the Challenge.
 
 Please check the below links for information about [current](#current) and [past](#past) Challenges, including [important details](/faq/) about scoring and test data for previous Challenges.
 
 ## <a name="news"></a> Recent News
 
+- __February 10, 2023:__ We launched the [Predicting Neurological Recovery from Coma After Cardiac Arrest](/2023/).
 - __July 8, 2022:__ We published an article, [Rethinking Algorithm Performance Metrics for Artificial Intelligence in Diagnostic Medicine](https://jamanetwork.com/journals/jama/fullarticle/2794258), in [JAMA](https://jamanetwork.com/). This article explores the clinical utility of performance metrics for AI from the perspective of the Challenges.
-- __February 1, 2022:__ We launched the [PhysioNet Challenge 2022: Heart Murmur Detection from Phonocardiogram Recordings](/2022/).
 - ... see previous news articles [here](/news/).
 
 ## <a name="current"></a> Current Challenge
-- __2022__: __[Heart Murmur Detection from Phonocardiogram Recordings](/2022/)__
+
+- __2023: [Predicting Neurological Recovery from Coma After Cardiac Arrest](/2023/)__
 
 ## <a name="past"></a> Past Challenges
-- 2021: [Will Two Do? Varying Dimensions in Electrocardiography](/2021/)  
+
+- 2022: [Heart Murmur Detection from Phonocardiogram Recordings](2022)  
+- 2021: [Will Two Do? Varying Dimensions in Electrocardiography](2021)  
  [60+ papers](https://physionet.org/files/challenge-2021/1.0.3/papers/index.html) and [58 contributed software](https://physionet.org/files/challenge-2021/1.0.3/sources)
-- 2020: [Classification of 12-lead ECGs](/2020/)  
+- 2020: [Classification of 12-lead ECGs](/2020/)
  [62+ papers](https://physionet.org/files/challenge-2020/1.0.2/papers/index.html) and [70 contributed software](https://physionet.org/files/challenge-2020/1.0.2/sources)
-- 2019: [Early Prediction of Sepsis from Clinical Data](2019/)  
+- 2019: [Early Prediction of Sepsis from Clinical Data](2019)  
  [55+ papers and 91 contributed software](2019/results)
-- 2018: [You Snooze, You Win](/2018/) 
+- 2018: [You Snooze, You Win](2018)  
  [23 papers](/2018/papers/) and [19 contributed software](https://physionet.org/static/published-projects/challenge-2018/1.0.0/sources/)
 - 2017: [AF Classification from a Short Single Lead ECG Recording](2017)  
   [57 papers and 64 contributed software](2017/results#challenge-results)
@@ -66,4 +69,3 @@ Please check the below links for information about [current](#current) and [past
  [9 papers](2001#papers)
 - 2000: [Detecting Sleep Apnea from the ECG](2000/)  
  [13 papers](2000#papers) and [1 contributed software](https://archive.physionet.org/physiotools/apdet/)
-
