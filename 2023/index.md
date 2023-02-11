@@ -12,7 +12,7 @@ Matthew A. Reyna<sup>[*](#co-first)</sup>, Edilberto Amorim<sup>[*](#co-first)</
 
 ## <a name="announcements"></a> Announcements
 
-<a name="2022.02.01"></a>__February 10, 2022:__ The NIH-funded George B. Moody PhysioNet Challenge 2022 is now open! Please read this website for details and share questions and comments on [Challenge forum](https://groups.google.com/g/physionet-challenges/). This year's Challenge is generously co-sponsored by [MathWorks](https://www.mathworks.com/) and the [Gordon and Betty Moore Foundation](https://www.moore.org/).
+<a name="2022.02.01"></a>__February 10, 2022:__ The NIH-funded George B. Moody PhysioNet Challenge 2022 is [now open](https://groups.google.com/g/physionet-challenges/c/TitPvey9iw4)! Please read this website for details and share questions and comments on [Challenge forum](https://groups.google.com/g/physionet-challenges/). This year's Challenge is generously co-sponsored by [MathWorks](https://www.mathworks.com/) and the [Gordon and Betty Moore Foundation](https://www.moore.org/).
 
 ## <a name="introduction"></a> Introduction
 
