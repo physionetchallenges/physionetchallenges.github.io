@@ -38,11 +38,11 @@ The data for this challenge originates from seven academic hospitals in the U.S.
 2. Medisch Spectrum Twente, Enschede, The Netherlands (Barry J. Ruijter, Marleen C. Tjepkema-Cloostermans, Michel J. A. M. van Putten).
 3. Erasme Hospital, Brussels, Belgium (Nicolas Gaspard).
 4. Massachusetts General Hospital, Boston, Massachusetts, USA (Edilberto Amorim, Wei-Long Zheng, Mohammad Ghassemi, and M. Brandon Westover).
-5. Brigham and Women’s Hospital, Boston, Massachusetts, USA (Jong Woo Lee).
+5. Brigham and Women's Hospital, Boston, Massachusetts, USA (Jong Woo Lee).
 6. Beth Israel Deaconess Medical Center, Boston, Massachusetts, USA (Susan T. Herman).
 7. Yale New Haven Hospital, New Haven, Connecticut, USA (Adithya Sivaraju).
 
-This database consists of data from 1,020 adult patients with out-of-hospital or in-hospital cardiac arrest who had return of heart function ("return of spontaneous circulation", ROSC) but remained comatose (defined as inability to follow verbal commands). All patients were admitted to an ICU and had their brain activity monitored with 19-channel continuous EEG. Monitoring is typically started within hours of cardiac arrest and continues for several hours to days depending on the patients’ condition, so recording start time and duration varied from patient to patient. The Challenge includes EEG data obtained up to 72 hours from ROSC.
+This database consists of data from 1,020 adult patients with out-of-hospital or in-hospital cardiac arrest who had return of heart function ("return of spontaneous circulation", ROSC) but remained comatose (defined as inability to follow verbal commands). All patients were admitted to an ICU and had their brain activity monitored with 19-channel continuous EEG. Monitoring is typically started within hours of cardiac arrest and continues for several hours to days depending on the patients' condition, so recording start time and duration varied from patient to patient. The Challenge includes EEG data obtained up to 72 hours from ROSC.
 
 ## EEG data
 
@@ -91,7 +91,9 @@ Patient files are in WFDB format, with the EEG signal data stored in MATLAB [MAT
 
 ## Accessing Patient Files
 
-The full training set (17.35 GB) can be downloaded [here](https://drive.google.com/file/d/1MgIsfknRpRgR2jpVfzcR1Qwj0i6PC0-A/view?usp=sharing). A small subset of the training set (612 MB) can be downloaded [here](https://drive.google.com/file/d/1YGa1tFC0TzqBj8Uw32B47EwZ2KeiGUr2/view?usp=sharing).
+The full training set (17.35 GB) can be downloaded [here](https://drive.google.com/file/d/1pJGUdlk4uEPCBb-bs1WFS2CTY4Sjtkg1/view?usp=sharing). A small subset of the training set (612 MB) can be downloaded [here](https://drive.google.com/file/d/1PplKzJMQJ9WZYqJq1SvJGcEaXZRfwIkX/view?usp=sharing).
+
+We will provide another option to download the data soon. If you want a command-line option for downloading the data, then please try [gdown](https://github.com/wkentaro/gdown), which allows you to download the files by running `gdown --fuzzy <link>`, or another wget/curl-like tool.
 
 By downloading the data, you agree not to repost the data or to publish or otherwise share any work that uses the data, in full or in part, before the end of the Challenge except to the Computing in Cardiology conference.
 
@@ -120,7 +122,7 @@ Please see the [submission instructions](submissions) for detailed information a
 
 ## <a name="scoring"></a> Scoring
 
-For this year’s Challenge, the scoring metric is the true positive rate (TPR) for predicting a poor outcome (CPC of 3, 4, or 5) given a false positive rate (FPR) of less than or equal to 0.05 at 72 hours after return of spontaneous circulation.
+For this year's Challenge, the scoring metric is the true positive rate (TPR) for predicting a poor outcome (CPC of 3, 4, or 5) given a false positive rate (FPR) of less than or equal to 0.05 at 72 hours after return of spontaneous circulation.
 
 <a name="confusion-matrix"></a>
 <table>
@@ -186,7 +188,7 @@ __Please__ submit your entries early to ensure that you have the most chances fo
 
 ### Timing and priority of entries
 
-Although we score on a first-come-first-serve basis, please note that if you submit more than one entry in a 24-hour period, your second entry may be deprioritized compared to other teams’ first entries. If you submit more than one entry in the final 24 hours before the Challenge deadline, then we may be unable to provide feedback or a score for more than one of your entries. It is unlikely that we will be able to debug any code in the final days of the Challenge.
+Although we score on a first-come-first-serve basis, please note that if you submit more than one entry in a 24-hour period, your second entry may be deprioritized compared to other teams' first entries. If you submit more than one entry in the final 24 hours before the Challenge deadline, then we may be unable to provide feedback or a score for more than one of your entries. It is unlikely that we will be able to debug any code in the final days of the Challenge.
 
 For these reasons, we strongly suggest that you start submitting entries at least 5 days before the unofficial deadline and 10 days before the official deadline. We have found that the earlier teams enter the Challenge, the better they do because they have time to digest feedback and performance. We therefore suggest entering your submissions many weeks before the deadline to give yourself the best chance for success.
 
@@ -223,7 +225,7 @@ To be eligible for the open-source award, you must do all the following:
 6. One of your team members must attend [CinC 2023](http://www.cinc2023.org/) to present your work either orally or as a poster (depending on your abstract acceptance). If you have a poster, then you must stand by it to defend your work. No-shows (oral or poster) will be disqualified. One of your team members must also attend the closing ceremony to collect your prize. No substitutes will be allowed. If the conference permits remote attendance, then you will be prize eligible if you attend remotely (and fulfill the other required criteria).
 7. [Submit a full 4-page paper](http://www.cinc.org/information-for-computing-in-cardiology-authors/) on your work to CinC by the above final paper deadline. Please note that we expect the abstract to change significantly both in terms of results and methods. You may also update your title with the caveat that it must not be substantially similar to the title of the competition or contain the words "physionet," "challenge," or "competition."
 
-You must not submit an analysis of this year’s Challenge data to other conferences or journals until after CinC 2023 so that we can discuss the Challenge in a single forum. If we discover evidence that you have submitted elsewhere before the end of CinC 2023, then you will be disqualified and de-ranked on the website, banned from future Challenges, and the journal/conference will be contacted to request your article be withdrawn for contravention of the terms of use.
+You must not submit an analysis of this year's Challenge data to other conferences or journals until after CinC 2023 so that we can discuss the Challenge in a single forum. If we discover evidence that you have submitted elsewhere before the end of CinC 2023, then you will be disqualified and de-ranked on the website, banned from future Challenges, and the journal/conference will be contacted to request your article be withdrawn for contravention of the terms of use.
 
 There are many reasons for this policy: 1) we do not release results on the test data before the end of CinC, and only reporting results on the training data increases the likelihood of overfitting and is not comparable to the official results on the test data, and 2) attempting to publish on the Challenge data before the Challengers present their results is unprofessional and comes across as a territorial grab. This requirement stands even if your abstract is rejected, but you may continue to enter the competition and receive scores. (However, unless you are accepted into the conference at a later date as a "wild card" entry, you will not be eligible to win a prize.) Of course, any publicly available data that was available before the Challenge is exempted from this condition, but any of the novelty of the Challenge (the Challenge design, the Challenge data that you downloaded from this page because it was processed for the Challenge, the scoring function, etc.) is not exempted.
 
@@ -241,7 +243,7 @@ To improve your chances of having your abstract accepted, we offer the following
 - Stick to the word limit and deadline on the [conference website](http://www.cinc.org/cinc-conference-program-abstracts/). Include time for errors, internet outages, etc.
 - Select "PhysioNet/CinC Challenge" as the submission topic so it can be identified easily by the abstract review committee. However, do not include the words "PhysioNet" or "PhysioNet/CinC" or "Challenge" in the title because this creates confusion with the hundreds of other articles and the main descriptor of the Challenge.
 - Your title, abstract and author list (collaborators) can be modified in September when you submit the final paper.
-- While your work is bound to change, the quality of your abstract is a good indicator of the final quality of your work. We suggest you spell check, write in full sentences, and be specific about your approaches. Include your method’s cross validated training performance (using the Challenge metrics) and your score provided by the Challenge submission system. If you omit or inflate this latter score, then your abstract will be rejected.
+- While your work is bound to change, the quality of your abstract is a good indicator of the final quality of your work. We suggest you spell check, write in full sentences, and be specific about your approaches. Include your method's cross validated training performance (using the Challenge metrics) and your score provided by the Challenge submission system. If you omit or inflate this latter score, then your abstract will be rejected.
 - Do not be embarrassed by any low scores. We do not expect high scores at this stage. We are focused on the thoughtfulness of the approach and quality of the abstract.
 - If you are unable to receive a score during the unofficial phase, then you can still submit, but the work should be very high quality and you should include the cross validation results of your algorithm on training set.
 
@@ -251,7 +253,7 @@ Again, we cannot guarantee that your code will be run in time for the [CinC](htt
 
 Please make sure that __all of your team members are authors on your abstract__. If you need to add or subtract authors, do this at least a week before the abstract deadline. Asking us to alter your team membership near or after the deadline is going to lead to confusion that could affect your score during review. It is better to be more inclusive on the abstract in terms of authorship, though, and if we find authors have moved between abstracts/teams without permission, then this is likely to lead to disqualification. As noted above, you may change the authors/team members later in the Challenge.
 
-Please make sure that you include __your team name__, your __official score__ as it appears on the leaderboard, and __cross validation results__ in your abstract __using the scoring metrics for this year’s Challenge__ (especially if you are unable to receive a score or are scoring poorly). The novelty of your approach and the rigor of your research is much more important during the unofficial phase. Please make sure you describe your technique and any novelty very specifically. General statements such as "a 1D CNN was used" are uninformative and will score poorly in review.
+Please make sure that you include __your team name__, your __official score__ as it appears on the leaderboard, and __cross validation results__ in your abstract __using the scoring metrics for this year's Challenge__ (especially if you are unable to receive a score or are scoring poorly). The novelty of your approach and the rigor of your research is much more important during the unofficial phase. Please make sure you describe your technique and any novelty very specifically. General statements such as "a 1D CNN was used" are uninformative and will score poorly in review.
 
 The Challenge Organizers have no ability to help with any problems with the abstract submission system. We do not operate it. Please do not email us with issues related to the abstract submission system.
 
@@ -259,7 +261,7 @@ The Challenge Organizers have no ability to help with any problems with the abst
 
 We encourage the use of open-source licenses for your entries.
 
-Entries with non open-source licenses will be scored but not ranked in the official competition. All scores will be made public. At the end of the competition, all entries will be posted publicly, and therefore automatically mirrored on several sites around the world. We have no control over these sites, so we cannot remove your code even on request. Code which the organizers deem to be functional will be made publicly available after the end of the Challenge. You can request to withdraw from the Challenge, so that your entry’s performance is no longer listed in the official leaderboard, up until a week before the end of the official phase. However, the Organizers reserve the right to publish any submitted open-source code after the official phase is over. The Organizers also retain the right to use a copy of submitted code for non-commercial use. This allows us to re-score if definitions change and validate any claims made by competitors.
+Entries with non open-source licenses will be scored but not ranked in the official competition. All scores will be made public. At the end of the competition, all entries will be posted publicly, and therefore automatically mirrored on several sites around the world. We have no control over these sites, so we cannot remove your code even on request. Code which the organizers deem to be functional will be made publicly available after the end of the Challenge. You can request to withdraw from the Challenge, so that your entry's performance is no longer listed in the official leaderboard, up until a week before the end of the official phase. However, the Organizers reserve the right to publish any submitted open-source code after the official phase is over. The Organizers also retain the right to use a copy of submitted code for non-commercial use. This allows us to re-score if definitions change and validate any claims made by competitors.
 
 If no license is specified in your submission, then the license given in the example code will be added to your entry, i.e., we will assume that you have released your code under the [BSD 3-Clause license](https://opensource.org/licenses/BSD-3-Clause).
 
@@ -271,19 +273,19 @@ To maintain the scientific impact of the Challenges, it is important that all Ch
 2. You can join an existing team before the abstract deadline as long as you have not belonged to another team or communicated with another team about the current Challenge. You may update your author list by completing [this form](https://docs.google.com/forms/d/e/1FAIpQLSdADXQw3OW9Kvhc4xay_ua3Q9_A8O1d-JbAoW_aS-a9RjWutw/viewform?usp=sf_link) again (check the "Update team members" box on the form), but changes to your authors must not contravene [the rules](#collaboration) of the Challenge.
 3. You may use public code from another team if they posted it before the competition.
 4. You may not make your Challenge code publicly available during the Challenge or use any code from another Challenger that was shared, intentionally or not, during the course of the Challenge.
-5. You may not publicly post information describing your methods (blog, vlog, code, preprint, presentation, talk, etc.) or give a talk outside your own research group at any point during the Challenge that reveals the methods you have employed or will employ in the Challenge. Obviously, you can talk about and publish the same methods on other data as long as you don’t indicate that you used or planned to use it for the Challenge.
+5. You may not publicly post information describing your methods (blog, vlog, code, preprint, presentation, talk, etc.) or give a talk outside your own research group at any point during the Challenge that reveals the methods you have employed or will employ in the Challenge. Obviously, you can talk about and publish the same methods on other data as long as you don't indicate that you used or planned to use it for the Challenge.
 6. You must use the same team name and email address for your team throughout the course of the Challenge. The email address should be the same as the one used to register for the Challenge, and to submit your abstract to CinC. Note that the submitter of the conference article/code does not need to present at the conference or be in any particular location in the author order on the abstract/poster/paper, but they must be a contributing member of the team. If your team uses multiple team names and/or email addresses to enter the Challenge, please contact the Organizers immediately to avoid disqualification of all team members concerned. Ambiguity will result in disqualification.
 7. If you participate in the Challenge as part of a class project, then please treat your class as a single team — please use the same team name as other groups in your class, limit the number of submissions from your class to the number allowed for each team, and feel free to present your work within your class. If your class needs more submissions than the Challenge submission limits allow, then please perform cross-validation on the training data to evaluate your work.
 
-If we discover evidence of the contravention of these rules, then you will be ineligible for a prize and your entry publicly marked as possibly associated with another entry. Although we will contact the team(s) in question, time and resources are limited and the Organizers must use their best judgement on the matter in a short period of time. The Organizers’ decision on rule violations will be final.
+If we discover evidence of the contravention of these rules, then you will be ineligible for a prize and your entry publicly marked as possibly associated with another entry. Although we will contact the team(s) in question, time and resources are limited and the Organizers must use their best judgement on the matter in a short period of time. The Organizers' decision on rule violations will be final.
 
 ## Conference Attendance
 
-[CinC 2023](https://cinc2023.org/) will take place from 1-4 October 2023 in Atlanta, Georgia, USA. You must attend the whole conference to be eligible for prizes. If you send someone in your place who is not a team member or co-author, then you will be disqualified and your abstract will be removed from the proceedings. In particular, it is vital that the presenter (oral or poster) can defend your work and have in-depth knowledge of all decisions made during the development of your algorithm. Due to this year’s challenges, both in person and remote attendance are allowed. If you require a visa to attend the conference, we strongly suggest that you apply as soon as possible. Please contact the local [conference](https://cinc2023.org/travel/#visa-information) organizing committee (not the Challenge Organizers) for any visa sponsorship letters and answer any questions concerning the conference.
+[CinC 2023](https://cinc2023.org/) will take place from 1-4 October 2023 in Atlanta, Georgia, USA. You must attend the whole conference to be eligible for prizes. If you send someone in your place who is not a team member or co-author, then you will be disqualified and your abstract will be removed from the proceedings. In particular, it is vital that the presenter (oral or poster) can defend your work and have in-depth knowledge of all decisions made during the development of your algorithm. Due to this year's challenges, both in person and remote attendance are allowed. If you require a visa to attend the conference, we strongly suggest that you apply as soon as possible. Please contact the local [conference](https://cinc2023.org/travel/#visa-information) organizing committee (not the Challenge Organizers) for any visa sponsorship letters and answer any questions concerning the conference.
 
 ## <a name="sponsors"></a> Sponsors
 
-This year’s Challenge is generously co-sponsored by [MathWorks](https://www.mathworks.com/) and the [Gordon and Betty Moore Foundation](https://www.moore.org/).
+This year's Challenge is generously co-sponsored by [MathWorks](https://www.mathworks.com/) and the [Gordon and Betty Moore Foundation](https://www.moore.org/).
 
 ### Obtaining Complimentary MATLAB Licenses
 
@@ -301,7 +303,7 @@ Supported by the [National Institute of Biomedical Imaging and Bioengineering](h
 
 3. <a name="ref-rundgren-continuous"></a> Rundgren M, Westhall E, Cronberg T, et al. Continuous amplitude-integrated electroencephalogram predicts outcome in hypothermia-treated cardiac arrest patients. Crit. Care Med. 2010;38(9):1838--1844.
 
-4. <a name="ref-hirsch-terminology"></a> Hirsch LJ, Fong MW, Leitinger M, et al. American Clinical Neurophysiology Society’s standardized critical care EEG terminology: 2021 version. Journal of clinical neurophysiology: official publication of the American Electroencephalographic Society. 2021 Jan 1;38(1):1.
+4. <a name="ref-hirsch-terminology"></a> Hirsch LJ, Fong MW, Leitinger M, et al. American Clinical Neurophysiology Society's standardized critical care EEG terminology: 2021 version. Journal of clinical neurophysiology: official publication of the American Electroencephalographic Society. 2021 Jan 1;38(1):1.
 
 5. <a name="ref-amorim-continuous"></a> Amorim E, Rittenberger JC, Zheng JJ, et al. Continuous EEG monitoring enhances multimodal outcome prediction in hypoxic-ischemic brain injury. Resuscitation 2016;109:121--126.
 
