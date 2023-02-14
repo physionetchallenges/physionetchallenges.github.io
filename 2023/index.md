@@ -12,7 +12,7 @@ Matthew A. Reyna<sup>[*](#co-first)</sup>, Edilberto Amorim<sup>[*](#co-first)</
 
 ## <a name="announcements"></a> Announcements
 
-<a name="2022.02.01"></a>__February 10, 2023:__ The NIH-funded George B. Moody PhysioNet Challenge 2022 is [now open](https://groups.google.com/g/physionet-challenges/c/TitPvey9iw4)! Please read this website for details and share questions and comments on [Challenge forum](https://groups.google.com/g/physionet-challenges/). This year's Challenge is generously co-sponsored by [MathWorks](https://www.mathworks.com/) and the [Gordon and Betty Moore Foundation](https://www.moore.org/).
+<a name="2022.02.01"></a>__February 10, 2023:__ The NIH-funded George B. Moody PhysioNet Challenge 2023 is [now open](https://groups.google.com/g/physionet-challenges/c/TitPvey9iw4)! Please read this website for details and share questions and comments on [Challenge forum](https://groups.google.com/g/physionet-challenges/). This year's Challenge is generously co-sponsored by [MathWorks](https://www.mathworks.com/) and the [Gordon and Betty Moore Foundation](https://www.moore.org/).
 
 ## <a name="introduction"></a> Introduction
 
@@ -91,7 +91,7 @@ Patient files are in WFDB format, with the EEG signal data stored in MATLAB [MAT
 
 ## Accessing Patient Files
 
-The full training set (17.35 GB) can be downloaded [here](https://drive.google.com/file/d/17JmF9cPd6GDurm1S5Ekte4Uhd24g-F9i/view?usp=sharing). A small subset of the training set (612 MB) can be downloaded [here](https://drive.google.com/file/d/1PX80Z9ei0LzkNa4lNlA2Muv8sXb_j3LA/view?usp=sharing).
+The full training set (17.35 GB) can be downloaded [here](https://drive.google.com/file/d/1MgIsfknRpRgR2jpVfzcR1Qwj0i6PC0-A/view?usp=share_link). A small subset of the training set (612 MB) can be downloaded [here](https://drive.google.com/file/d/1YGa1tFC0TzqBj8Uw32B47EwZ2KeiGUr2/view?usp=share_link).
 
 We will provide another option to download the data soon. If you want a command-line option for downloading the data, then please try [gdown](https://github.com/wkentaro/gdown), which allows you to download the files by running `gdown --fuzzy <link>`, or another wget/curl-like tool.
 
