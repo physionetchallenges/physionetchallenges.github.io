@@ -91,9 +91,9 @@ Patient files are in WFDB format, with the EEG signal data stored in MATLAB [MAT
 
 ## Accessing Patient Files
 
-The full training set (17.35 GB) can be downloaded [here](https://drive.google.com/file/d/1MgIsfknRpRgR2jpVfzcR1Qwj0i6PC0-A/view?usp=share_link). A small subset of the training set (612 MB) can be downloaded [here](https://drive.google.com/file/d/1YGa1tFC0TzqBj8Uw32B47EwZ2KeiGUr2/view?usp=share_link).
+The full training set (17.35 GB) can be downloaded [here](https://drive.google.com/file/d/1pJGUdlk4uEPCBb-bs1WFS2CTY4Sjtkg1/view?usp=sharing). A small subset of the training set (612 MB) can be downloaded [here](https://drive.google.com/file/d/1PplKzJMQJ9WZYqJq1SvJGcEaXZRfwIkX/view?usp=sharing).
 
-We will provide another option to download the data soon. If you want a command-line option for downloading the data, then please try [gdown](https://github.com/wkentaro/gdown), which allows you to download the files by running `gdown --fuzzy <link>`, or another wget/curl-like tool.
+We will provide another option to download the data soon. If you want a command-line option for downloading the data, then please try [gdown](https://github.com/wkentaro/gdown), which allows you to download the files by running `gdown --fuzzy <link>`, or another wget/curl-like tool. If you encounter an error like `FileNotFoundError: [...] \PaxHeader\PaxHeader.txt`, then you are most likely using Windows to uncompress that `tar.gz` files, and Windows is creating a directory that is not part of the training set. Please delete the `PaxHeader` directory.
 
 By downloading the data, you agree not to repost the data or to publish or otherwise share any work that uses the data, in full or in part, before the end of the Challenge except to the Computing in Cardiology conference.
 
