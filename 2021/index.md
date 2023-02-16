@@ -104,7 +104,7 @@ The Challenge data include annotated twelve-lead ECG recordings from six sources
 
 - The seventh source is UMich Database from the University of Michigan. This source contains 19,642 ECGs (all retained as test data). Each recording is 10 seconds long with a sampling frequency of either 250 Hz or 500 Hz.
 
-Like other real-world datasets, different databases may have different proportions of cardiac abnormalities, but all of the labels in the validation or test data are represented in the training data. Moreover, while this is a curated dataset, some of the data and labels are likely to have errors, and an important part of the Challenge is to work out these issues. In particular, some of the databases have human-overread machine labels with single or multiple human readers, so the quality of the labels varies between databases. You can find more information about the label mappings of the Challenge training data in this [table](https://docs.google.com/spreadsheets/d/1Q4m9axOlE1rEb7Fi2t4fPbvpw8JPvikLBO_j-lQcuuE/edit?usp=sharing). 
+Like other real-world datasets, different databases may have different proportions of cardiac abnormalities, but all of the labels in the validation or test data are represented in the training data. Moreover, while this is a curated dataset, some of the data and labels are likely to have errors, and an important part of the Challenge is to work out these issues. In particular, some of the databases have human-overread machine labels with single or multiple human readers, so the quality of the labels varies between databases. You can find more information about the label mappings of the Challenge training data in this [table](https://docs.google.com/spreadsheets/d/1Q4m9axOlE1rEb7Fi2t4fPbvpw8JPvikLBO_j-lQcuuE/edit?usp=sharing).
 
 The six-lead, four-lead, three-lead, and two-lead validation data are reduced-lead versions of the twelve-lead validation data: the same recordings with the same header data but only with signal data for the relevant leads.
 
@@ -141,37 +141,18 @@ From the first line of the file, we see that the recording number is A0001, and 
 
 ### Data Access
 
-The training data from the 2021 Challenge can be downloaded from these links. You can use the [MD5 hash](https://en.wikipedia.org/wiki/Md5sum) to verify the integrity of the `tar.gz` file:
+The training data can be downloaded from [this page](https://physionet.org/content/challenge-2021/#files):
 
-1. CPSC 2018 Training Set (CPSC 2018), 6,877 recordings: [link](https://storage.cloud.google.com/physionetchallenge2021-public-datasets/WFDB_CPSC2018.tar.gz); MD5 hash: `5d4b520e3b6558a33dc9dbe49d08f8f1`; [(headers only)](https://storage.cloud.google.com/physionetchallenge2021-public-datasets/CPSC2018-Headers.tar.gz)
-2. China 12-Lead ECG Challenge Database (CPSC2018-Extra), 3,453 recordings: [link](https://storage.cloud.google.com/physionetchallenge2021-public-datasets/WFDB_CPSC2018_2.tar.gz); MD5 hash: `5b1498abacaa1b5a762691c006e737ad`; [(headers only)](https://storage.cloud.google.com/physionetchallenge2021-public-datasets/CPSC2018-2-Headers.tar.gz)
-3. St Petersburg INCART 12-lead Arrhythmia Database, 74 recordings: [link](https://storage.cloud.google.com/physionetchallenge2021-public-datasets/WFDB_StPetersburg.tar.gz); MD5 hash: `525dde6bd26bff0dcb35189e78ae7d6d`; [(headers only)](https://storage.cloud.google.com/physionetchallenge2021-public-datasets/StPetersburg-Headers.tar.gz)
-4. PTB Diagnostic ECG Database, 516 recordings: [link](https://storage.cloud.google.com/physionetchallenge2021-public-datasets/WFDB_PTB.tar.gz); MD5 hash: `3df4662a8a9189a6a5924424b0fcde0e`; [(headers only)](https://storage.cloud.google.com/physionetchallenge2021-public-datasets/PTB-Headers.tar.gz)
-5. PTB-XL Electrocardiography Database, 21,837 recordings: [link](https://storage.cloud.google.com/physionetchallenge2021-public-datasets/WFDB_PTBXL.tar.gz); MD5 hash: `55e8a5c25eadfeff4fcd38f5bbf3cb13`; [(headers only)](https://storage.cloud.google.com/physionetchallenge2021-public-datasets/PTB-XL-Headers.tar.gz)
-6. Georgia 12-Lead ECG Challenge Database, 10,344 recordings: [link](https://storage.cloud.google.com/physionetchallenge2021-public-datasets/WFDB_Ga.tar.gz); MD5 hash: `5bd159555cc4c798c1f4d133d79335ce`; [(headers only)](https://storage.cloud.google.com/physionetchallenge2021-public-datasets/Ga-Headers.tar.gz)
-7. Chapman University, Shaoxing People's Hospital (Chapman-Shaoxing) 12-lead ECG Database, 10,247 recordings:  [link](https://storage.cloud.google.com/physionetchallenge2021-public-datasets/WFDB_ChapmanShaoxing.tar.gz); MD5 hash: `a3e10171eba1e7520a38919594d834e5`; [(headers only)](https://storage.cloud.google.com/physionetchallenge2021-public-datasets/ChapmanShaoxing-Headers.tar.gz) 
-8. Ningbo First Hospital (Ningbo) 12-lead ECG Database, 34,905 recordings: [link](https://storage.cloud.google.com/physionetchallenge2021-public-datasets/WFDB_Ningbo.tar.gz); MD5 hash: `84171145922078146875394acb89b765`; [(headers only)](https://storage.cloud.google.com/physionetchallenge2021-public-datasets/Ningbo-Headers.tar.gz)
+1. CPSC 2018 Training Set (CPSC 2018), 6,877 recordings
+2. China 12-Lead ECG Challenge Database (CPSC2018-Extra), 3,453 recordings
+3. St Petersburg INCART 12-lead Arrhythmia Database, 74 recordings
+4. PTB Diagnostic ECG Database, 516 recordings
+5. PTB-XL Electrocardiography Database, 21,837 recordings
+6. Georgia 12-Lead ECG Challenge Database, 10,344 recordings
+7. Chapman University, Shaoxing People's Hospital (Chapman-Shaoxing) 12-lead ECG Database, 10,247 recordings
+8. Ningbo First Hospital (Ningbo) 12-lead ECG Database, 34,905 recordings
 
-If you are unable to use these links to access the data, or if you want to use a command-line tool to access the data through Google Colab, then you can use these commands:
-```
-wget -O WFDB_CPSC2018.tar.gz \
-https://pipelineapi.org:9555/api/download/physionettraining/WFDB_CPSC2018.tar.gz/
-wget -O WFDB_CPSC2018_2.tar.gz \
-https://pipelineapi.org:9555/api/download/physionettraining/WFDB_CPSC2018_2.tar.gz/
-wget -O WFDB_StPetersburg.tar.gz \
-https://pipelineapi.org:9555/api/download/physionettraining//WFDB_StPetersburg.tar.gz/
-wget -O WFDB_PTB.tar.gz \
-https://pipelineapi.org:9555/api/download/physionettraining/WFDB_PTB.tar.gz/
-wget -O WFDB_PTBXL.tar.gz \
-https://pipelineapi.org:9555/api/download/physionettraining/WFDB_PTBXL.tar.gz/
-wget -O WFDB_Ga.tar.gz \
-https://pipelineapi.org:9555/api/download/physionettraining/WFDB_Ga.tar.gz/
-wget -O WFDB_ChapmanShaoxing.tar.gz \
-https://pipelineapi.org:9555/api/download/physionettraining/WFDB_ChapmanShaoxing.tar.gz/
-wget -O WFDB_Ningbo.tar.gz \
-https://pipelineapi.org:9555/api/download/physionettraining/WFDB_Ningbo.tar.gz/
-
-```
+Please move the files to a single folder to use the Challenge algorithms with the data.
 
 ## <a name="registration"></a> Registering for the Challenge and Conditions of Participation
 

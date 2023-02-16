@@ -102,39 +102,26 @@ A0001.mat 16+24 1000/mV 16 0 -16 -3112 0 V6
 
 From the first line, we see that the recording number is A0001, and the recording file is `A0001.mat`. The recording has 12 leads, each recorded at 500 Hz sample frequency, and contains 7500 samples. From the next 12 lines, we see that each signal was written at 16 bits with an offset of 24 bits, the amplitude resolution is 1000 with units in mV, the resolution of the analog-to-digital converter (ADC) used to digitize the signal is 16 bits, and the baseline value corresponding to 0 physical units is 0. The first value of the signal, the checksum, and the lead name are included for each signal. From the final 6 lines, we see that the patient is a 74-year-old male with a diagnosis (Dx) of 426783006. The medical prescription (Rx), history (Hx), and symptom or surgery (Sx) are unknown.
 
-Each ECG recording has one or more labels from different type of abnormalities in [SNOMED-CT codes](http://bioportal.bioontology.org/ontologies/SNOMEDCT). The full list of diagnoses for the challenge has been posted [here](https://github.com/physionetchallenges/physionetchallenges.github.io/blob/master/2020/Dx_map.csv) as a 3 column CSV file: Long-form description,  corresponding SNOMED-CT code, abbreviation. Although these descriptions apply to all training data there may be fewer classes in the test data, and in different proportions.  However, every class in the test data will be represented in the training data. 
+Each ECG recording has one or more labels from different type of abnormalities in [SNOMED-CT codes](http://bioportal.bioontology.org/ontologies/SNOMEDCT). The full list of diagnoses for the challenge has been posted [here](https://github.com/physionetchallenges/physionetchallenges.github.io/blob/master/2020/Dx_map.csv) as a 3 column CSV file: Long-form description,  corresponding SNOMED-CT code, abbreviation. Although these descriptions apply to all training data there may be fewer classes in the test data, and in different proportions.  However, every class in the test data will be represented in the training data.
 
-The training data can be downloaded from these links. You can use the [MD5 hash](https://en.wikipedia.org/wiki/Md5sum) to verify the integrity of the `tar.gz` file:
+The training data can be downloaded from [this page](https://physionet.org/content/challenge-2020/#files):
 
-1. CPSC2018 training set, 6,877 recordings: [link](https://storage.cloud.google.com/physionet-challenge-2020-12-lead-ecg-public/PhysioNetChallenge2020_Training_CPSC.tar.gz); MD5-hash: `7b6b1f1ab1b4c59169c639d379575a87`
-2. China 12-Lead ECG Challenge Database (unused CPSC2018 data), 3,453 recordings: [link](https://storage.cloud.google.com/physionet-challenge-2020-12-lead-ecg-public/PhysioNetChallenge2020_Training_2.tar.gz); MD5-hash: `36b409ee2b46aa6f1d2bef99b8451925`
-3. St Petersburg INCART 12-lead Arrhythmia Database, 74 recordings: [link](https://storage.cloud.google.com/physionet-challenge-2020-12-lead-ecg-public/PhysioNetChallenge2020_Training_StPetersburg.tar.gz); MD5-hash: `abcdf9fd1b2f2ca8b1ff158f3b9789b0`
-4. PTB Diagnostic ECG Database, 516 recordings: [link](https://storage.cloud.google.com/physionet-challenge-2020-12-lead-ecg-public/PhysioNetChallenge2020_Training_PTB.tar.gz); MD5-hash: `349316b6985cd21940210e36af9415ec`
-5. PTB-XL electrocardiography Database, 21,837 recordings:[link](https://storage.googleapis.com/physionet-challenge-2020-12-lead-ecg-public/PhysioNetChallenge2020_Training_PTB-XL.tar.gz); MD5-hash: `7ae20a89ae21fd68626ddb3c6b44fdd4`
-6. Georgia 12-Lead ECG Challenge Database, 10,344 recordings: [link](https://storage.cloud.google.com/physionet-challenge-2020-12-lead-ecg-public/PhysioNetChallenge2020_Training_E.tar.gz); MD5-hash: `e4a011c77c4f066f2c53007efcb5aa43`
+1. CPSC2018 training set, 6,877 recordings
+2. China 12-Lead ECG Challenge Database (unused CPSC2018 data), 3,453 recordings
+3. St Petersburg INCART 12-lead Arrhythmia Database, 74 recordings
+4. PTB Diagnostic ECG Database, 516 recordings
+5. PTB-XL electrocardiography Database, 21,837 recordings
+6. Georgia 12-Lead ECG Challenge Database, 10,344 recordings
 
-If you are unable to use these links to access the data, or if you want to use a command-line tool to access the data through Google Colab, then you can download the training data with these commands:
-```
-wget -O PhysioNetChallenge2020_Training_CPSC.tar.gz \
-https://cloudypipeline.com:9555/api/download/physionet2020training/PhysioNetChallenge2020_Training_CPSC.tar.gz/
-wget -O PhysioNetChallenge2020_Training_2.tar.gz \
-https://cloudypipeline.com:9555/api/download/physionet2020training/PhysioNetChallenge2020_Training_2.tar.gz/
-wget -O PhysioNetChallenge2020_Training_StPetersburg.tar.gz \
-https://cloudypipeline.com:9555/api/download/physionet2020training/PhysioNetChallenge2020_Training_StPetersburg.tar.gz/
-wget -O PhysioNetChallenge2020_Training_PTB.tar.gz \
-https://cloudypipeline.com:9555/api/download/physionet2020training/PhysioNetChallenge2020_Training_PTB.tar.gz/
-wget -O PhysioNetChallenge2020_Training_PTB-XL.tar.gz \
-https://cloudypipeline.com:9555/api/download/physionet2020training/PhysioNetChallenge2020_PTB-XL.tar.gz/
-wget -O PhysioNetChallenge2020_Training_E.tar.gz \
-https://cloudypipeline.com:9555/api/download/physionet2020training/PhysioNetChallenge2020_Training_E.tar.gz/
-```
+Please move the files to a single folder to use the Challenge algorithms with the data.
+
 The test set comprises data from the same sources as some of the training sets as well as one entire new set recorded from a geographically distinct institution from the training. Therefore, while there may be a small number of ECGs from patients that are in both training and test data, there is at least one test database in which the likelihood of any patients in the training database being represented in the test data is vanishingly small (but not zero).
 
 We are not planning to release the test data at any point, including after the end of the Challenge. Requests for the test data will not receive a response. We do not release test data to prevent overfitting on the test data and claims or publications of inflated performances. We will entertain requests to run code on the test data after the Challenge on a limited basis based on publication necessity and capacity. (The Challenge is largely staged by volunteers.)
 
-Please note that there are bound to be some errors or debatable labels in each database. Although we have updated some of the data and labels from the unofficial period of the Challenge, many errors will persist. Part of the Challenge is to work out how to deal with these issues. Some databases have human overread machine labels, and some have single or multiple human labels, so the quality will vary, as well as the demographics and diagnoses. There will also be no more updates to the training data from this point onwards. 
+Please note that there are bound to be some errors or debatable labels in each database. Although we have updated some of the data and labels from the unofficial period of the Challenge, many errors will persist. Part of the Challenge is to work out how to deal with these issues. Some databases have human overread machine labels, and some have single or multiple human labels, so the quality will vary, as well as the demographics and diagnoses. There will also be no more updates to the training data from this point onwards.
 
-## <a name="registration"></a> Registering for the Challenge and Conditions of Participation 
+## <a name="registration"></a> Registering for the Challenge and Conditions of Participation
 
 To participate in the Challenge, you must register [here](https://docs.google.com/forms/d/e/1FAIpQLSdZUTrpoVuotZxUTUbo23k2u-wdiOvkiZWgzorblUsQOCSnew/viewform?usp=sf_link), providing the full names, affiliations and official email addresses of your entire team. The details of all authors must be exactly the same as the details you use to submit your abstract to Computing in Cardiology. You may add (but not subtract) authors later by emailing challenge [at] physionet.org.
 
