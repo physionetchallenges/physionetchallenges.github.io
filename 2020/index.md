@@ -4,6 +4,8 @@ layout: 2020
 
 # Classification of 12-lead ECGs: the PhysioNet/Computing in Cardiology Challenge 2020
 
+| [Papers and code](results) | [Official scores](results/physionet_2020_official_scores.csv) |
+
 ## <a name="announcements"></a> Announcements
 
 __January 26, 2022:__ Both the 2020 Challenge and the [2021 Challenge](../2021/), which extended the 2020 Challenge, are now complete. The CinC articles for both Challenges are available on the CinC website [here](https://cinc.org/archives/2020/) and [here](https://cinc.org/archives/2021/). The final scores can be found [here](results). Please cite [Perez Alday EA, Gu A, J Shah A, Robichaux C, Ian Wong AK, Liu C, Liu F, Bahrami Rad A, Elola A, Seyedi S, Li Q, Sharma A, Clifford GD<sup>*</sup> Reyna MA<sup>*</sup>. Classification of 12-lead ECGs: The PhysioNet/Computing in Cardiology Challenge 2020. Physiol. Meas. 2021 Jan 1;41(12):124003. doi: 10.1088/1361-6579/abc960](papers/2020ChallengePaper.pdf) to refer to the 2020 Challenge. Please also cite the standard [PhysioNet citation](https://archive.physionet.org/citations.shtml). You can find followup articles to the 2020 Challenge in the [2021 Challenge](../2021) and in the [Journal of Physiological Measurement Focus Issue on Classification of Multilead ECGs](https://iopscience.iop.org/journal/0967-3334/page/Classification_Multilead_ECGs). 
