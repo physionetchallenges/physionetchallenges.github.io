@@ -46,13 +46,11 @@ This database consists of data from 1,020 adult patients with out-of-hospital or
 
 ## EEG data
 
-All EEG data was pre-processed with bandpass filtering (0.5-20Hz) and resampled to 100 Hz. Each file contains an array with EEG signals from 18 bipolar channel pairs. Patients may have EEG started several hours after the arrest or need to have brain monitoring interrupted transiently while in the ICU, so gaps in the data may be present. The EEG recordings continue for several hours to days, so the EEG signals are prone to quality deterioration from non-physiological artifacts. Only the cleanest 5 minutes of EEG data per hour are provided.
+All EEG data was resampled to 100 Hz. Each file contains an array with EEG signals from 18 bipolar channel pairs. Patients may have EEG started several hours after the arrest or need to have brain monitoring interrupted transiently while in the ICU, so gaps in the data may be present. The EEG recordings continue for several hours to days, so the EEG signals are prone to quality deterioration from non-physiological artifacts. Only the cleanest 5 minutes of EEG data per hour are provided.
 
 EEG signal data is provided in WFDB format, with the signal data stored in MATLAB [MAT v4 format](https://www.mathworks.com/help/pdf_doc/matlab/matfile_format.pdf), e.g., `ICARE_0284_06.mat` contains five minutes of signal data from the sixth hour after cardiac arrest from patient 0284 of the I-CARE patient cohort. Each MAT file contains five minutes of EEG signal data, and the accompanying WFDB header file describes the contents of the MAT file.
 
-In addition to EEG data, one additional file includes artifact scores for each hour, e.g. `ICARE_0284.tsv`. This table contains the timestamp for the start of each EEG signal file in relation to the time of cardiac arrest (under the column "Time"). It also includes a measure of quality of the EEG signal for that 5-minute epoch (column "Quality"). This score is based on how many 10-second epochs within a 5-minute EEG window are contaminated by artifacts. Each 10-second epoch was scored for the presence of the following artifacts: 1) flat signal, 2) extreme high or low values, 3) muscle artifact, 4) non-physiological spectra, and 5) implausibly fast rising or decreasing signal amplitude.
-
-Scores range from zero to one: a score of one indicates that all 5 minutes are free of artifacts, and a score of zero indicates that all 5 minutes are contaminated by artifacts.
+In addition to EEG data, one additional file includes artifact scores for each hour, e.g. `ICARE_0284.tsv`. This table contains the timestamp for the start of each EEG signal file in relation to the time of cardiac arrest (under the column "Time"). It also includes a measure of quality of the EEG signal for that 5-minute epoch (column "Quality"). This score is based on how many 10-second epochs within a 5-minute EEG window are contaminated by artifacts. Each 10-second epoch was scored for the presence of the following artifacts: 1) flat signal, 2) extreme high or low values, 3) muscle artifact, 4) non-physiological spectra, and 5) implausibly fast rising or decreasing signal amplitude. Quality/artifact scores range from zero to one: a score of one indicates that all 5 minutes are free of artifacts, and a score of zero indicates that all 5 minutes are contaminated by artifacts.
 
 ## Clinical Data and Patient Outcomes
 
@@ -93,7 +91,7 @@ Patient files are in WFDB format, with the EEG signal data stored in MATLAB [MAT
 
 The full training set (17.35 GB) can be downloaded [here](https://drive.google.com/file/d/1pJGUdlk4uEPCBb-bs1WFS2CTY4Sjtkg1/view?usp=sharing). A small subset of the training set (612 MB) can be downloaded [here](https://drive.google.com/file/d/1PplKzJMQJ9WZYqJq1SvJGcEaXZRfwIkX/view?usp=sharing).
 
-We will provide another option to download the data soon. If you want a command-line option for downloading the data, then please try [gdown](https://github.com/wkentaro/gdown), which allows you to download the files by running `gdown --fuzzy <link>`, or another wget/curl-like tool. If you encounter an error like `FileNotFoundError: [...] \PaxHeader\PaxHeader.txt`, then you are most likely using Windows to uncompress that `tar.gz` files, and Windows is creating a directory that is not part of the training set. Please delete the `PaxHeader` directory.
+We will provide another option to download the data soon. If you want a command-line option for downloading the data, then please try [gdown](https://github.com/wkentaro/gdown), which allows you to download the files by running `gdown --fuzzy <link>`, or another wget/curl-like tool.
 
 By downloading the data, you agree not to repost the data or to publish or otherwise share any work that uses the data, in full or in part, before the end of the Challenge except to the Computing in Cardiology conference.
 
@@ -103,7 +101,7 @@ To participate in the Challenge, [register your team](https://docs.google.com/fo
 
 ## <a name="algorithms"></a> Algorithms
 
-For each subject, your algorithm must provide an outcome label (good vs. poor outcome), the predicted  probability of a poor outcome, and the predicted CPC score (decimal number between 1 and 5). This should be done for each time point separately (12 hours, 24 hours, 48 hours, and 72 hours from the time of ROSC). These predictions must be causal. For example, for predictions at 12 hours will not have access to data beyond 12 hours. This restriction reflects the reality of clinical practice.
+For each subject, your algorithm must provide an outcome label (good vs. poor outcome), the predicted  probability of a poor outcome, and the predicted CPC score (decimal number between 1 and 5). This should be done for each time point separately (12 hours, 24 hours, 48 hours, and 72 hours from the time of ROSC). These predictions must be causal. For example, for predictions at 12 hours, we will only provide your algorithm with access to the first 12 hours of the data: see the [`truncate_recordings` script](https://github.com/physionetchallenges/python-example-2023/blob/master/truncate_recordings.py) to test your code with truncated recordings. This restriction reflects the reality of clinical practice.
 
 Your algorithm must output a text file for each patient with outcome and CPC predictions for the patient. For example, the following text indicates that your model predicts that patient `ICARE_0284` will have a good outcome, with a 19.5% probability of a poor outcome, and a CPC score of 1.553.
 
