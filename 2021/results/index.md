@@ -4,6 +4,11 @@ layout: 2021
 
 # PhysioNet/CinC Challenge 2021 Results
 
+The official submissions to this challenge
+are ranked below,
+together with the corresponding papers and sources.
+The table is sorted by rank in terms of the _all-lead_ score,
+which is computed as the mean of the 12-lead, 3-lead, and 2-lead scores.
 
 |Team Name|Rank (All-lead) |Rank (2-lead)|Rank (3-lead)|Rank (4-lead)|Rank (6-lead)|Rank (12-lead)|Paper|Author(s)|Source|
 |ISIBrno-AIMT|1|1|1|1|1|1|[Classification of ECG using Ensemble of Residual CNNs with Attention Mechanism](https://www.cinc.org/archives/2021/pdf/CinC2021-014.pdf)|Petr Nejedly, Adam Ivora, Ivo Viscor, Zuzana Koscova, Radovan Smisek, Pavel Jurak and Filip Plesinger|[Link (11MiB)](https://physionet.org/static/published-projects/challenge-2021/1.0.3/sources/ISIBrnoAIMT.zip)|
@@ -46,7 +51,7 @@ layout: 2021
 |CardiOUS|38|39|38|39|39|39|[Multi-label ECG classification using Convolutional Neural Networks in a Classifier Chain](https://www.cinc.org/archives/2021/pdf/CinC2021-075.pdf)|Bjørn-Jostein Singstad, Eraraya Muten and Pål Brekke|[Link (74KiB)](https://physionet.org/static/published-projects/challenge-2021/1.0.3/sources/CardiOUS.zip)|
 |WEAIT|38|38|39|37|38|38|[N-BEATS for Heart Disfunction Classification](https://www.cinc.org/archives/2021/pdf/CinC2021-054.pdf)|Bartosz Puszkarski, Krzysztof Hryniów, and Grzegorz Sarwas|[Link (22KiB)](https://physionet.org/static/published-projects/challenge-2021/1.0.3/sources/WEAIT.zip)|
 
-## Unranked submissions
+## Unofficial entries
 
 |AI_Healthcare|[Deep Discriminative Domain Generalization with Adversarial Feature Learning for Classifying ECG Signals](https://www.cinc.org/archives/2021/pdf/CinC2021-095.pdf)|Zuogang Shang, Zhibin Zhao, Hui Fang, Samuel Relton, Darcy Murphy, Zoe Hancox, Ruqiang Yan and David Wong|[Link (138MiB)](https://physionet.org/static/published-projects/challenge-2021/1.0.3/sources/AIHealthcare.zip)|
 |AIHealth|||[Link (2.4MiB)](https://physionet.org/static/published-projects/challenge-2021/1.0.3/sources/AIHealth.zip)|
@@ -71,7 +76,7 @@ layout: 2021
 |UIDT_UNAM|[Cardiac Anomalies Detection Through 2D-CNN and ECG Spectrograms](https://www.cinc.org/archives/2021/pdf/CinC2021-067.pdf)|Jonathan Roberto Torres Castillo and Miguel Padilla Castañeda|[Link (20KiB)](https://physionet.org/static/published-projects/challenge-2021/1.0.3/sources/UIDTUNAM.zip)|
 |[Unknown name]|||[Link (261MiB)](https://physionet.org/static/published-projects/challenge-2021/1.0.3/sources/AizipECGteam.zip)|
 
-## Tables
+## Scores
 
 - __Official entries__: only Challenge metric scores ([12-lead](2021_Challenge_Test_Results_Leaderboard_For_Official_Entries-12-lead.csv), [6-lead](2021_Challenge_Test_Results_Leaderboard_For_Official_Entries-6-lead.csv), [4-lead](2021_Challenge_Test_Results_Leaderboard_For_Official_Entries-4-lead.csv), [3-lead](2021_Challenge_Test_Results_Leaderboard_For_Official_Entries-3-lead.csv), [2-lead](2021_Challenge_Test_Results_Leaderboard_For_Official_Entries-2-lead.csv), and [all-lead](2021_Challenge_Test_Results_Leaderboard_For_Official_Entries-All-lead.csv)) and all scores ([12-lead](Final_2021_Challenge_All_Scores_Official_Entries-12-lead.csv), [6-lead](Final_2021_Challenge_All_Scores_Official_Entries-6-lead.csv), [4-lead](Final_2021_Challenge_All_Scores_Official_Entries-4-lead.csv), [3-lead](Final_2021_Challenge_All_Scores_Official_Entries-3-lead.csv), and [2-lead](Final_2021_Challenge_All_Scores_Official_Entries-2-lead.csv))
 - __Unofficial entries__: only Challenge metric scores ([12-lead](2021_Challenge_Test_Results_Leaderboard_For_Unofficial_Entries-12-lead.csv), [6-lead](2021_Challenge_Test_Results_Leaderboard_For_Unofficial_Entries-6-lead.csv), [4-lead](2021_Challenge_Test_Results_Leaderboard_For_Unofficial_Entries-4-lead.csv), [3-lead](2021_Challenge_Test_Results_Leaderboard_For_Unofficial_Entries-3-lead.csv), [2-lead](2021_Challenge_Test_Results_Leaderboard_For_Unofficial_Entries-2-lead.csv), and [all-lead](2021_Challenge_Test_Results_Leaderboard_For_Unofficial_Entries-All-lead.csv)) and all scores ([12-lead](Final_2021_Challenge_All_Scores_Unofficial_Entries-12-lead.csv), [6-lead](/Final_2021_Challenge_All_Scores_Unofficial_Entries-6-lead.csv), [4-lead](Final_2021_Challenge_All_Scores_Unofficial_Entries-4-lead.csv), [3-lead](Final_2021_Challenge_All_Scores_Unofficial_Entries-3-lead.csv), and [2-lead](Final_2021_Challenge_All_Scores_Unofficial_Entries-2-lead.csv))
