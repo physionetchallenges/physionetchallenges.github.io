@@ -6,6 +6,8 @@ layout: 2021
 
 # Will Two Do? Varying Dimensions in Electrocardiography: The PhysioNet/Computing in Cardiology Challenge 2021
 
+| [Papers, code, and official scores](results) |
+
 ## <a name="announcements"></a> Announcements
 
 __January 26, 2022:__ Both the [2020 Challenge](../2020/) and the 2021 Challenge, which extended the 2020 Challenge, are now complete. 
