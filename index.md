@@ -26,7 +26,7 @@ Please check the below links for information about [current](#current) and [past
 
 - 2022: [Heart Murmur Detection from Phonocardiogram Recordings](2022)  
 - 2021: [Will Two Do? Varying Dimensions in Electrocardiography](2021)  
- [60+ papers](https://physionet.org/files/challenge-2021/1.0.3/papers/index.html) and [58 contributed software](https://physionet.org/files/challenge-2021/1.0.3/sources)
+ [60+ papers and 58 contributed software](2021/results)
 - 2020: [Classification of 12-lead ECGs](2020)  
   [62+ papers and 70 contributed software](2020/results)
 - 2019: [Early Prediction of Sepsis from Clinical Data](2019)  
