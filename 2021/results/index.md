@@ -5,7 +5,7 @@ layout: 2021
 # PhysioNet/CinC Challenge 2021 Results
 
 
-|Team Name|Rank|Rank (2-lead)|Rank (3-lead)|Rank (4-lead)|Rank (6-lead)|Rank (12-lead)|Paper|Author(s)|Source|
+|Team Name|Rank (All-lead) |Rank (2-lead)|Rank (3-lead)|Rank (4-lead)|Rank (6-lead)|Rank (12-lead)|Paper|Author(s)|Source|
 |ISIBrno-AIMT|1|1|1|1|1|1|[Classification of ECG using Ensemble of Residual CNNs with Attention Mechanism](https://www.cinc.org/archives/2021/pdf/CinC2021-014.pdf)|Petr Nejedly, Adam Ivora, Ivo Viscor, Zuzana Koscova, Radovan Smisek, Pavel Jurak and Filip Plesinger|[Link (11MiB)](https://physionet.org/static/published-projects/challenge-2021/1.0.3/sources/ISIBrnoAIMT.zip)|
 |DSAIL_SNU|2|2|2|1|1|2|[Towards High Generalization Performance on Electrocardiogram Classification](https://www.cinc.org/archives/2021/pdf/CinC2021-080.pdf)|Hyeongrok Han, Seongjae Park, Seonwoo Min, Hyun-Soo Choi, Eunji Kim, Hyunki Kim, Sangha Park, Jin-Kook Kim, Junsang Park, Junho An, Kwnanglo Lee, Wonsun Jeong, Sangil Chon, Kwonwoo Ha, Myungkyu Han and Sungroh Yoon|[Link (27MiB)](https://physionet.org/static/published-projects/challenge-2021/1.0.3/sources/DSAILSNU.zip)|
 |NIMA|3|3|3|3|5|2|[Multi-label Cardiac Abnormality Classification from Electrocardiogram using Deep Convolutional Neural Networks](https://www.cinc.org/archives/2021/pdf/CinC2021-352.pdf)|Nima L Wickramasinghe and Mohamed Athif|[Link (13KiB)](https://physionet.org/static/published-projects/challenge-2021/1.0.3/sources/NIMA.zip)|
