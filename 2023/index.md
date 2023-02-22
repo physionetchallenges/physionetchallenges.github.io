@@ -89,9 +89,7 @@ Patient files are in WFDB format, with the EEG signal data stored in MATLAB [MAT
 
 ## Accessing Patient Files
 
-The full training set (17.35 GB) can be downloaded [here](https://drive.google.com/file/d/1iOcV2e9SosyqTOKR05ee5OiojGbHlRuH/view?usp=sharing). A small subset of the training set (612 MB) can be downloaded [here](https://drive.google.com/file/d/1bb4DnBPKSmQpdww9rmrwciwPmoqQnRAn/view?usp=sharing).
-
-We will provide another option to download the data soon. If you want a command-line option for downloading the data, then please try [gdown](https://github.com/wkentaro/gdown), which allows you to download the files by running `gdown --fuzzy <link>`, or another wget/curl-like tool.
+The full training set (17.35 GB) can be downloaded [here](https://physionet.org/content/i-care/1.0/#files).
 
 By downloading the data, you agree not to repost the data or to publish or otherwise share any work that uses the data, in full or in part, before the end of the Challenge except to the Computing in Cardiology conference.
 
