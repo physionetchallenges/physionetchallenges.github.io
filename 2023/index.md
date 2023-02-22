@@ -89,7 +89,11 @@ Patient files are in WFDB format, with the EEG signal data stored in MATLAB [MAT
 
 ## Accessing Patient Files
 
-The full training set (17.35 GB) can be downloaded [here](https://physionet.org/content/i-care/1.0/#files).
+The full training set (17.35 GB) can be downloaded from [PhysioNet.org](https://physionet.org/content/i-care/1.0/#files). You can download the full data [here](https://physionet.org/static/published-projects/i-care/i-care-international-cardiac-arrest-research-consortium-database-1.0.zip) or by running this command:
+
+```
+wget -r -N -c -np https://physionet.org/files/i-care/1.0/
+```
 
 By downloading the data, you agree not to repost the data or to publish or otherwise share any work that uses the data, in full or in part, before the end of the Challenge except to the Computing in Cardiology conference.
 
