@@ -2,7 +2,7 @@
 layout: 2023
 ---
 
-# Leaderboard for the 2022 Challenge
+# Leaderboard for the 2023 Challenge
 
 This leaderboard contains the [Challenge scores](../#scoring) on the [validation data](../#data) for the [unofficial phase](../#rules) entries to the [2023 Challenge](../).
 
