@@ -4,8 +4,6 @@ layout: 2023
 
 # <a name="submission-instructions-and-form"></a> Submission instructions for the 2023 Challenge
 
-__We will open the scoring system for the 2023 Challenge in the coming weeks.__
-
 ### Table of contents
 
 - [Introduction](#introduction)
