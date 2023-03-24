@@ -12,7 +12,9 @@ Matthew A. Reyna<sup>[*](#co-first)</sup>, Edilberto Amorim<sup>[*](#co-first)</
 
 ## <a name="announcements"></a> Announcements
 
-<a name="2022.02.01"></a>__March 1, 2023:__ The PhysioNet Challenges are a [winner](https://groups.google.com/g/physionet-challenges/c/QFodMHOHXak) the [NIH/FASB DataWorks! Prize](https://www.faseb.org/data-management-and-sharing/dataworks-prize). 
+<a name="2022.03.24"></a>__March 24, 2023:__ The PhysioNet Challenges are [now accepting](https://groups.google.com/g/physionet-challenges/) unofficial phase submissions. Please read the [submissions instructions](submissions), double check your code, and [submit your code](https://docs.google.com/forms/d/e/1FAIpQLSedoXArGWNlo_VEUsR4tPque62j8rmHKkG5cLG18Uj-IWivgQ/viewform?usp=sf_link) when ready.
+
+<a name="2022.02.01"></a>__March 1, 2023:__ The PhysioNet Challenges are a [winner](https://groups.google.com/g/physionet-challenges/c/QFodMHOHXak) the [NIH/FASB DataWorks! Prize](https://www.faseb.org/data-management-and-sharing/dataworks-prize).
 
 <a name="2022.02.01"></a>__February 10, 2023:__ The NIH-funded George B. Moody PhysioNet Challenge 2023 is [now open](https://groups.google.com/g/physionet-challenges/c/TitPvey9iw4)! Please read this website for details and share questions and comments on [Challenge forum](https://groups.google.com/g/physionet-challenges/). This year's Challenge is generously co-sponsored by [MathWorks](https://www.mathworks.com/) and the [Gordon and Betty Moore Foundation](https://www.moore.org/).
 
@@ -52,7 +54,7 @@ All EEG data was resampled to 100 Hz. Each file contains an array with EEG signa
 
 EEG signal data is provided in WFDB format, with the signal data stored in MATLAB [MAT v4 format](https://www.mathworks.com/help/pdf_doc/matlab/matfile_format.pdf), e.g., `ICARE_0284_06.mat` contains five minutes of signal data from the sixth hour after cardiac arrest from patient 0284 of the I-CARE patient cohort. Each MAT file contains five minutes of EEG signal data, and the accompanying WFDB header file describes the contents of the MAT file.
 
-In addition to EEG data, one additional file includes artifact scores for each hour, e.g. `ICARE_0284.tsv`. This table contains the timestamp for the start of each EEG signal file in relation to the time of cardiac arrest (under the column "Time"). It also includes a measure of quality of the EEG signal for that 5-minute epoch (column "Quality"). This score is based on how many 10-second epochs within a 5-minute EEG window are contaminated by artifacts. Each 10-second epoch was scored for the presence of the following artifacts: 1) flat signal, 2) extreme high or low values, 3) muscle artifact, 4) non-physiological spectra, and 5) implausibly fast rising or decreasing signal amplitude. Quality/artifact scores range from zero to one: a score of one indicates that all 5 minutes are free of artifacts, and a score of zero indicates that all 5 minutes are contaminated by artifacts.
+In addition to EEG data, one additional file includes artifact scores for each hour, e.g. `ICARE_0284.tsv`. This table contains the timestamp for the start of each EEG signal file in relation to the time of cardiac arrest (under the column "Time"). It also includes a measure of quality of the EEG signal for that 5-minute epoch (column "Quality"). This score is based on how many 10-second epochs within a 5-minute EEG window are contaminated by artifacts. Each 10-second epoch was scored for the presence of the following artifacts: (1) flat signal, (2) extreme high or low values, (3) muscle artifact, (4) non-physiological spectra, and (5) implausibly fast rising or decreasing signal amplitude. Quality/artifact scores range from zero to one: a score of one indicates that all 5 minutes are free of artifacts, and a score of zero indicates that all 5 minutes are contaminated by artifacts.
 
 ## Clinical Data and Patient Outcomes
 
@@ -120,7 +122,7 @@ We implemented example algorithms in [MATLAB](https://github.com/physionetchalle
 
 Please use the above [example code](#algorithms) as templates for your submissions.
 
-Please see the [submission instructions](submissions) for detailed information about how to submit a successful Challenge entry. We will open scoring in February. We will provide feedback on your entry as soon as possible, so please wait at least **72 hours** before contacting us about the status of your entry.
+Please see the [submission instructions](submissions) for detailed information about how to submit a successful Challenge entry, double check your code (we cannot debug your code for you), and [submit](https://docs.google.com/forms/d/e/1FAIpQLSedoXArGWNlo_VEUsR4tPque62j8rmHKkG5cLG18Uj-IWivgQ/viewform?usp=sf_link) when ready.  We will provide feedback on your entry as soon as possible, so please wait at least **72 hours** before contacting us about the status of your entry.
 
 ## <a name="scoring"></a> Scoring
 
@@ -198,10 +200,10 @@ For these reasons, we strongly suggest that you start submitting entries at leas
 
 |                             | Start              | End                | Submissions                        |
 |-----------------------------|--------------------|--------------------|------------------------------------|
-| Unofficial phase            | 10 February 2023   | 8 April 2023       | 1-5 scored entries ([\*](#1ast))   |
-| Hiatus                      | 9 April 2023       | 30 April 2023      | N/A                                |
+| Unofficial phase            | 10 February 2023   | 24 April 2023      | 1-5 scored entries ([\*](#1ast))   |
+| Hiatus                      | 25 April 2023      | 21 May 2023        | N/A                                |
 | Abstract deadline           | 1 May 2023         | 1 May 2023         | 1 abstract                         |
-| Official phase              | 15 May 2023        | 30 August 2023     | 1-10 scored entries ([\*](#1ast))  |
+| Official phase              | 22 May 2023        | 30 August 2023     | 1-10 scored entries ([\*](#1ast))  |
 | Abstract decisions released | Late June 2023     | Late June 2023     | N/A                                |
 | Wild card entry date        | 31 July 2023       | 31 July 2023       | N/A                                |
 | Hiatus                      | 1 September 2023   | 30 September 2023  | N/A                                |

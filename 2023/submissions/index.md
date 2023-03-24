@@ -25,8 +25,9 @@ Similarly to [last year's Challenge](../../2022/), teams must submit both the co
 2. Add your code to your repository. Like the example code, your code must be in the root directory of the main or master branch.
 3. Do not include extra files that are not required to create and run your classification code, such as the training data.
 4. Follow the instructions for the programming language of your submission.
-5. Submit your entry soon.
-6. We will put the scores for successful entries on the leaderboard.  The leaderboard will publicly show your team name, run time, and score.
+5. Share your repository with the `physionetchallengeshelper` user.
+6. Submit your entry using [this form](https://docs.google.com/forms/d/e/1FAIpQLSedoXArGWNlo_VEUsR4tPque62j8rmHKkG5cLG18Uj-IWivgQ/viewform?usp=sf_link).
+7. We will put the scores for successful entries on the validation set on the leaderboard.  The leaderboard will publicly show your team name and scores.
 
 ### <a name="matlab"></a>MATLAB-specific instructions
 
@@ -118,7 +119,7 @@ If you have trouble running your code, then please try the follow steps to run t
 
 __What computational resources will my entry have?__
 
-Check back soon.
+We are using the [`g4ad.4xlarge` instance](https://aws.amazon.com/ec2/instance-types/g4/) on AWS to run your code. It has 16 vCPUs, 64 GB RAM, 300 GB of local storage, and an optional AMD Radeon Pro V520 GPU.
 
 For training your model on the training data, we impose a 48 hour time limit for submissions that request a GPU and a 72 hour time limit for submissions that do not request a GPU. For running your trained model on the validation or test data, we impose a 24 hour time limit whether or not a submission requests a GPU.
 
