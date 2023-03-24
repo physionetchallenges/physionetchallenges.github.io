@@ -12,7 +12,7 @@ Matthew A. Reyna<sup>[*](#co-first)</sup>, Edilberto Amorim<sup>[*](#co-first)</
 
 ## <a name="announcements"></a> Announcements
 
-<a name="2022.03.24"></a>__March 24, 2023:__ The PhysioNet Challenges are [now accepting](https://groups.google.com/g/physionet-challenges/) unofficial phase submissions. Please read the [submissions instructions](submissions), double check your code, and [submit your code](https://docs.google.com/forms/d/e/1FAIpQLSedoXArGWNlo_VEUsR4tPque62j8rmHKkG5cLG18Uj-IWivgQ/viewform?usp=sf_link) when ready.
+<a name="2022.03.24"></a>__March 24, 2023:__ The PhysioNet Challenges are [now accepting](https://groups.google.com/g/physionet-challenges/c/vagQtJbVOIw) unofficial phase submissions. Please read the [submissions instructions](submissions), double check your code, and [submit your code](https://docs.google.com/forms/d/e/1FAIpQLSedoXArGWNlo_VEUsR4tPque62j8rmHKkG5cLG18Uj-IWivgQ/viewform?usp=sf_link) when ready.
 
 <a name="2022.02.01"></a>__March 1, 2023:__ The PhysioNet Challenges are a [winner](https://groups.google.com/g/physionet-challenges/c/QFodMHOHXak) the [NIH/FASB DataWorks! Prize](https://www.faseb.org/data-management-and-sharing/dataworks-prize).
 
