@@ -14,7 +14,7 @@ Please check the below links for information about [current](#current) and [past
 
 ## <a name="news"></a> Recent News
 
--__March 24, 2023:__ The PhysioNet Challenges are [now accepting](https://groups.google.com/g/physionet-challenges/c/vagQtJbVOIw) unofficial phase submissions. Please read the [submissions instructions](submissions), double check your code, and [submit your code](https://docs.google.com/forms/d/e/1FAIpQLSedoXArGWNlo_VEUsR4tPque62j8rmHKkG5cLG18Uj-IWivgQ/viewform?usp=sf_link) when ready.
+- __March 24, 2023:__ The PhysioNet Challenges are [now accepting](https://groups.google.com/g/physionet-challenges/c/vagQtJbVOIw) unofficial phase submissions. Please read the [submissions instructions](submissions), double check your code, and [submit your code](https://docs.google.com/forms/d/e/1FAIpQLSedoXArGWNlo_VEUsR4tPque62j8rmHKkG5cLG18Uj-IWivgQ/viewform?usp=sf_link) when ready.
 - __March 1, 2023:__ The PhysioNet Challenges are a [winner](https://groups.google.com/g/physionet-challenges/c/QFodMHOHXak) the [NIH/FASB DataWorks! Prize](https://www.faseb.org/data-management-and-sharing/dataworks-prize).
 - __February 10, 2023:__ We launched the [Predicting Neurological Recovery from Coma After Cardiac Arrest](/2023/).
 - __July 8, 2022:__ We published an article, [Rethinking Algorithm Performance Metrics for Artificial Intelligence in Diagnostic Medicine](https://jamanetwork.com/journals/jama/fullarticle/2794258), in [JAMA](https://jamanetwork.com/). This article explores the clinical utility of performance metrics for AI from the perspective of the Challenges.
