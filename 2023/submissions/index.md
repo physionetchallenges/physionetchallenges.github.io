@@ -17,7 +17,7 @@ __We will open the scoring system for the 2023 Challenge in the coming weeks.__
 
 ### <a name="introduction"></a>Introduction
 
-Similarly to [last year's Challenge](../../2022/), teams must submit both the code for training their models and for running their trained models. To help, we have implemented example entries in both MATLAB and Python, and we encourage teams to use these examples as templates for their code.
+Similarly to [last year's Challenge](../../2022/), teams must submit both the code for training their models and for running their trained models. To help, we have implemented example entries in both MATLAB and Python. We encourage teams to use these examples as templates for their code.
 
 ### <a name="preparation"></a>Preparation and submission instructions
 
