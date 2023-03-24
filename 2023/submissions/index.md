@@ -23,7 +23,7 @@ Similarly to [last year's Challenge](../../2022/), teams must submit both the co
 
 1. Create a private GitHub or GitLab repository for your code. We recommend cloning our example code and replacing it with your code.
 2. Add your code to your repository. Like the example code, your code must be in the root directory of the main or master branch.
-3. Do not include extra files that are not required to create and run your classification code, such as the training data.
+3. Do not include extra files that are not required to create and run your prediction code, such as the training data.
 4. Follow the instructions for the programming language of your submission.
 5. Share your repository with the `physionetchallengeshelper` user.
 6. Submit your entry using [this form](https://docs.google.com/forms/d/e/1FAIpQLSedoXArGWNlo_VEUsR4tPque62j8rmHKkG5cLG18Uj-IWivgQ/viewform?usp=sf_link).
@@ -31,19 +31,19 @@ Similarly to [last year's Challenge](../../2022/), teams must submit both the co
 
 ### <a name="matlab"></a>MATLAB-specific instructions
 
-1. You can use our MATLAB example classifier code ([link](https://github.com/physionetchallenges/matlab-classifier-2023.git)) as a template. Consider cloning or downloading this repository, replacing our code with your code, and adding the updated files to your repository.
+1. You can use our MATLAB example code ([link](https://github.com/physionetchallenges/matlab-example-2023.git)) as a template. Consider cloning or downloading this repository, replacing our code with your code, and adding the updated files to your repository.
 2. `AUTHORS.txt`, `LICENSE.txt`, `README.md`: Update as appropriate. Please include your authors. Unfortunately, our submission system will be unable to read your README file to change how we run your code.
 3. `train_model.m`: Do not change this script. It calls your `team_training_code.m` script. We will not use the `train_model.m` script from your repository, so any change made to this code will not be included.
 4. `team_training_code.m`: Update this script to create and save your model.
 5. `run_model.m`: Do not change this script. It loads your model by calling `load_model` and runs your model by calling your `team_testing_code` function for each patient ID. We will not use the `run_model.m` script from your repository, so any change made to this code will not be included.
-6. `team_testing_code.m`: Update this script to load and run your model weights and any parameters from files in your submission. It takes the data and your model as input and returns binary and probabilistic classifier outputs for each class as output.
+6. `team_testing_code.m`: Update this script to load and run your model weights and any parameters from files in your submission.
 7. Confirm that your code compiles and runs in MATLAB R2022b or R2023a (when available).
 8. Push or upload your code to the root/base directory of the master branch of your repository.
 9. We will download your code, compile it using the MATLAB compiler (`mcc -m train_model.m -a .` and `mcc -m run_model.m -a .`), and run it on our machines or Google Cloud.
 
 ### <a name="python"></a>Python-specific instructions
 
-1. You can use our Python example classifier code ([link](https://github.com/physionetchallenges/python-classifier-2023.git)) as a template. Consider cloning or downloading this repository, replacing our code with your code, and adding the updated files to your repository.
+1. You can use our Python example code ([link](https://github.com/physionetchallenges/python-example-2023.git)) as a template. Consider cloning or downloading this repository, replacing our code with your code, and adding the updated files to your repository.
 2. `Dockerfile`: Update to specify the version of Python that you are using on your machine. Add any additional packages that you need. Do not change the name or location of this file. The structure of this file is important, especially the 3 lines that are marked as "DO NOT EDIT".
 3. `requirements.txt`: Add Python packages to be installed with `pip`. Specify the versions of these packages that you are using on your machine. Remove unnecessary packages, such as Matplotlib, that your code does not need.
 4. `AUTHORS.txt`, `LICENSE.txt`, `README.md`: Update as appropriate. Please include your authors. Unfortunately, our submission system will be unable to read your README file to change how we run your code.
@@ -82,22 +82,22 @@ If you have trouble running your code, then please try the follow steps to run t
 
 3. Download or clone this repository in your terminal.
 
-        user@computer:~/example$ git clone https://github.com/physionetchallenges/python-classifier-2023.git
+        user@computer:~/example$ git clone https://github.com/physionetchallenges/python-example-2023.git
 
 4. Build a Docker image and run the example code in your terminal.
 
         user@computer:~/example$ ls
-        model  python-classifier-2023  test_data  test_outputs  training_data
+        model  python-example-2023  test_data  test_outputs  training_data
 
-        user@computer:~/example$ cd python-classifier-2023/
+        user@computer:~/example$ cd python-example-2023/
 
-        user@computer:~/example/python-classifier-2023$ docker build -t image .
+        user@computer:~/example/python-example-2023$ docker build -t image .
 
         Sending build context to Docker daemon  [...]kB
         [...]
         Successfully tagged image:latest
 
-        user@computer:~/example/python-classifier-2023$ docker run -it -v ~/example/model:/physionet/model -v ~/example/test_data:/physionet/test_data -v ~/example/test_outputs:/physionet/test_outputs -v ~/example/training_data:/physionet/training_data image bash
+        user@computer:~/example/python-example-2023$ docker run -it -v ~/example/model:/physionet/model -v ~/example/test_data:/physionet/test_data -v ~/example/test_outputs:/physionet/test_outputs -v ~/example/training_data:/physionet/training_data image bash
 
         root@[...]:/physionet# ls
             Dockerfile             README.md         test_outputs
