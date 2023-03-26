@@ -115,6 +115,18 @@ If you have trouble running your code, then please try the follow steps to run t
 
 ### <a name="faq"></a>FAQ
 
+__How are the validation and test sets different from the training set?__
+
+We do not include labels with the validation and test sets, so your code should not try to load them.
+
+The training set has up to 72 hours of recording data, but we will run your trained model on the validation and test sets with only 12, 24, 48, and 72 hours of recording data, so you code should be able to run on them.
+
+You can use these scripts from the [Python example code](https://github.com/physionetchallenges/python-example-2023) to generate data without labels and only 12, 24, 48, or 72 hours of data from the publicly available training set:
+
+- `remove_data.py`: Remove the binary signal data, i.e., the EEG recordings. Usage: run `python remove_data.py -i input_folder -o output_folder` to copy the labels and metadata from `input_folder` to `output_folder`.
+- `remove_labels.py`: Remove the labels. Usage: run `python remove_labels.py -i input_folder -o output_folder` to copy the data and metadata from `input_folder` to `output_folder`.
+- `truncate_data.py`: Truncate the EEG recordings. Usage: run `python truncate_data.py -i input_folder -o output_folder -k 12` to truncate the EEG recordings to 12 hours. We will run your trained models on data with 12, 24, 48, and 72 hours of data.
+
 __What computational resources will my entry have?__
 
 We are using a [`g4ad.4xlarge` instance](https://aws.amazon.com/ec2/instance-types/g4/) on AWS to run your code. It has 16 vCPUs, 64 GB RAM, 300 GB of local storage, and an optional AMD Radeon Pro V520 GPU.
