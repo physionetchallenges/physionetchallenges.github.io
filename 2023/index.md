@@ -191,14 +191,18 @@ Let $$\theta_h$$ be the largest decision threshold for hospital $$h$$ such that
 $$\text{FPR}_{\theta_h} = \frac{\text{FP}_{\theta_h}}{\text{FP}_{\theta_h} + \text{TN}_{\theta_h}}.$$
 
 Let
-$$\text{TP} = \sum_{h} \text{TP}_{\theta_h}, \quad
-\text{FP} = \sum_{h} \text{FP}_{\theta_h},$$
-$$\text{FN} = \sum_{h} \text{FN}_{\theta_h}, \quad
-\text{TN} = \sum_{h} \text{TN}_{\theta_h}.$$
+
+$$\text{TP} = \sum_{h} \text{TP}_{\theta_h},$$
+
+$$\text{FP} = \sum_{h} \text{FP}_{\theta_h},$$
+
+$$\text{FN} = \sum_{h} \text{FN}_{\theta_h},$$
+
+$$\text{TN} = \sum_{h} \text{TN}_{\theta_h}.$$
 
 The Challenge score is
 
-$$\text{TPR} = \frac{TP}{FP + FN},$$
+$$\text{TPR} = \frac{\text{TP}}{\text{FP} + \text{FN}},$$
 
 which is the true positive rate (TPR) at a false positive rate (FPR) of 0.05 at each hospital.
 
