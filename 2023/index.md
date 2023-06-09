@@ -12,9 +12,11 @@ Matthew A. Reyna<sup>[*](#co-first)</sup>, Edilberto Amorim<sup>[*](#co-first)</
 
 ## <a name="announcements"></a> Announcements
 
+<a name="2022.06.06"></a>__June 6, 2023:__ The official phase of the George B. Moody PhysioNet Challenge 2022 has begun! We have greatly expanded the data, which now includes continuous EEG and ECG recordings. Please see our announcement on the [Challenge forum](https://groups.google.com/g/physionet-challenges/) for more details and [submit](https://docs.google.com/forms/d/e/1FAIpQLSfBY14ldx1ngucgEUZCvVPMqsRH4tya2M51oejieA1dJGPC9w/viewform?usp=sf_link) your code when ready.
+
 <a name="2022.03.24"></a>__April 12, 2023:__ We have launched a [PLOS Digital Health Collection](https://journals.plos.org/digitalhealth/) on [Cost-effective point-of-care monitoring in low-resource settings](https://physionetchallenges.org/focus-issue/). We encourage the [2022 Challenge](../2022/) participants and other researchers to submit their work to the collection. Please see the announcement [page](https://physionetchallenges.org/focus-issue/) for more information.
 
-<a name="2022.03.24"></a>__March 24, 2023:__ We are [now accepting](https://groups.google.com/g/physionet-challenges/c/vagQtJbVOIw) unofficial phase submissions for the 2023 Challenge. Please read the [submissions instructions](submissions), double check your code, and [submit your code](https://docs.google.com/forms/d/e/1FAIpQLSedoXArGWNlo_VEUsR4tPque62j8rmHKkG5cLG18Uj-IWivgQ/viewform?usp=sf_link) when ready.
+<a name="2022.03.24"></a>__March 24, 2023:__ We are [now accepting](https://groups.google.com/g/physionet-challenges/c/vagQtJbVOIw) unofficial phase submissions for the 2023 Challenge. Please read the [submissions instructions](submissions), double check your code, and submit your code when ready.
 
 <a name="2022.02.01"></a>__March 1, 2023:__ The PhysioNet Challenges are a [winner](https://groups.google.com/g/physionet-challenges/c/QFodMHOHXak) the [NIH/FASB DataWorks! Prize](https://www.faseb.org/data-management-and-sharing/dataworks-prize).
 
@@ -32,9 +34,9 @@ The George B. Moody PhysioNet Challenge 2023 provides an opportunity to advance 
 
 ## <a name="objective"></a> Objective
 
-The goal of the 2023 Challenge is to use longitudinal EEG recordings to predict good and poor patient outcomes after cardiac arrest.
+The goal of the 2023 Challenge is to use longitudinal EEG and ECG recordings to predict good and poor patient outcomes after cardiac arrest.
 
-We ask participants to develop and deploy an open-source algorithm that can use basic clinical information and continuous EEG recordings to predict the level of neurological recovery for cardiac arrest patients who present to the hospital in a coma. The winner of the Challenge will be the team whose algorithm achieves the highest prediction performance in the hidden test set.
+We ask participants to develop and deploy an open-source algorithm that can use basic clinical information and EEG and ECG recordings to predict the level of neurological recovery for cardiac arrest patients who present to the hospital in a coma. The winner of the Challenge will be the team whose algorithm achieves the highest prediction performance in the hidden test set.
 
 ## <a name="data"></a> Data
 
@@ -50,17 +52,22 @@ The data for this challenge originates from seven academic hospitals in the U.S.
 
 This database consists of data from 1,020 adult patients with out-of-hospital or in-hospital cardiac arrest who had return of heart function ("return of spontaneous circulation", ROSC) but remained comatose (defined as inability to follow verbal commands). All patients were admitted to an ICU and had their brain activity monitored with 19-channel continuous EEG. Monitoring is typically started within hours of cardiac arrest and continues for several hours to days depending on the patients' condition, so recording start time and duration varied from patient to patient. The Challenge includes EEG data obtained up to 72 hours from ROSC.
 
-## EEG data
+## Signal data
 
-All EEG data was resampled to 100 Hz. Each file contains an array with EEG signals from 18 bipolar channel pairs. Patients may have EEG started several hours after the arrest or need to have brain monitoring interrupted transiently while in the ICU, so gaps in the data may be present. The EEG recordings continue for several hours to days, so the EEG signals are prone to quality deterioration from non-physiological artifacts. Only the cleanest 5 minutes of EEG data per hour are provided.
+Each file contains an array of signal data from EEG, ECG, and/or other clinical time-series data. Different channels are available for different patients from different hospitals. The recordings typically begin several hours after the arrest and/or have brief interruptions while in the ICU, so gaps in the data may be present. The recordings continue for several hours to days, so the signals are also prone to quality deterioration from non-physiological artifacts.
 
-EEG signal data is provided in WFDB format, with the signal data stored in MATLAB [MAT v4 format](https://www.mathworks.com/help/pdf_doc/matlab/matfile_format.pdf), e.g., `ICARE_0284_06.mat` contains five minutes of signal data from the sixth hour after cardiac arrest from patient 0284 of the I-CARE patient cohort. Each MAT file contains five minutes of EEG signal data, and the accompanying WFDB header file describes the contents of the MAT file.
+The signal data is provided in WFDB format, with the signal data stored in MATLAB [MAT v4 format](https://www.mathworks.com/help/pdf_doc/matlab/matfile_format.pdf). For example, the binary signal file `0284_001_004_EEG.mat` contains EEG signal data, starting at 4 hours, 7 minutes, and 23 seconds after cardiac arrest and ending at 4 hours, 59 minutes, and 59 seconds after cardiac arrest, for patient 0284 of the I-CARE patient cohort. The plain text header file `0284_001_004_EEG.hea` describes the contents of the signal file as well as the start time, stop time, and utility frequency (i.e., powerline frequency or mains frequency) for the data.
 
-In addition to EEG data, one additional file includes artifact scores for each hour, e.g. `ICARE_0284.tsv`. This table contains the timestamp for the start of each EEG signal file in relation to the time of cardiac arrest (under the column "Time"). It also includes a measure of quality of the EEG signal for that 5-minute epoch (column "Quality"). This score is based on how many 10-second epochs within a 5-minute EEG window are contaminated by artifacts. Each 10-second epoch was scored for the presence of the following artifacts: (1) flat signal, (2) extreme high or low values, (3) muscle artifact, (4) non-physiological spectra, and (5) implausibly fast rising or decreasing signal amplitude. Quality/artifact scores range from zero to one: a score of one indicates that all 5 minutes are free of artifacts, and a score of zero indicates that all 5 minutes are contaminated by artifacts.
+Different channels are available for different patients, including those from the same hospital. Even when available, the channels may sometimes be disconnected or noisy. The channels are organized into an EEG group, an ECG group, a reference (REF) group, and an other (OTHER) group:
+
+- EEG: Fp1, Fp2, F7, F8, F3, F4, T3, T4, C3, C4, T5, T6, P3, P4, O1, O2, Fz, Cz, Pz, Fpz, Oz, F9
+- ECG: ECG, ECG1, ECG2, ECGL, ECGR
+- REF: RAT1, RAT2, REF, C2, A1, A2, BIP1, BIP2, BIP3, BIP4, Cb2, M1, M2, In1-Ref2, In1-Ref3
+- OTHER: SpO2, EMG1, EMG2, EMG3, LAT1, LAT2, LOC, ROC, LEG1, LEG2
 
 ## Clinical Data and Patient Outcomes
 
-Patient information includes information recorded at the time of admission (age, sex), location of arrest (out or in-hospital), type of cardiac rhythm recorded at the time of resuscitation (shockable rhythms include ventricular fibrillation or ventricular tachycardia and non-shockable rhythms include asystole and pulseless electrical activity), and the time between cardiac arrest and ROSC. To protect patient [privacy](https://www.hhs.gov/hipaa/for-professionals/privacy/special-topics/de-identification/index.html), all ages above 89 were aggregated into a single category and encoded as "90". Patient temperature after cardiac arrest is controlled using a closed-loop feedback device (TTM) in most patients unless there are contraindications such as severe and difficult to control hypotension or delay in hospital admission. The temperature level can be set at 36C, 33C, or at no set temperature.
+Patient information includes information recorded at the time of admission (age, sex), a hospital identifier, the location of arrest (out or in-hospital), the type of cardiac rhythm recorded at the time of resuscitation (shockable rhythms include ventricular fibrillation or ventricular tachycardia and non-shockable rhythms include asystole and pulseless electrical activity), and the time between cardiac arrest and ROSC. To protect patient [privacy](https://www.hhs.gov/hipaa/for-professionals/privacy/special-topics/de-identification/index.html), all ages above 89 were aggregated into a single category and encoded as "90". Patient temperature after cardiac arrest is controlled using a closed-loop feedback device (TTM) in most patients unless there are contraindications such as severe and difficult to control hypotension or delay in hospital admission. The temperature level can be set at 36C, 33C, or at no set temperature.
 
 Clinical outcome was determined prospectively in two centers by phone interview (at 6 months from ROSC), and at the remaining hospitals retrospectively through chart review (at 3-6 months from ROSC). Neurological function was determined using the *Cerebral Performance Category (CPC)* scale. CPC is an ordinal scale ranging from 1 to 5:
 
@@ -80,25 +87,42 @@ In the five hospitals without prospective follow up, patients who achieved a CPC
 
 The following clinical data is contained in each `.txt` file:
 
-| **Age (in years)**                                       | number                                                                        |
-| **Sex**                                                  | Male, Female                                                                  |
-| **ROSC (return of spontaneous circulation, in minutes)** | time from cardiac arrest to return of spontaneous circulation                 |
-| **OHCA (out-of-hospital cardiac arrest)**                | True = out of hospital cardiac arrest<br />False = in-hospital cardiac arrest |
-| **VFib (ventricular fibrillation)**                      | True = shockable rhythm<br />False = non-shockable rhythm                     |
-| **TTM (targeted temperature management; in Celsius)**    | 33, 36, or NaN for no TTM                                                     |
-| **Outcome**                                              | Good (CPC score of 1-2), Poor (CPC score of 3-5)                              |
-| **CPC**                                                  | CPC score (ordinal scale 1-5)                                                 |
+| **Variable** | **Description** |
+|-|-|
+| **Age (in years)** | number |
+| **Sex**  | Male, Female |
+| **Hospital**  | A, B, C, D, E, F |
+| **ROSC (return of spontaneous circulation, in minutes)** | time from cardiac arrest to return of spontaneous circulation |
+| **OHCA (out-of-hospital cardiac arrest)**  | True = out of hospital cardiac arrest<br />False = in-hospital cardiac arrest |
+| **Shockable Rhythm** | True = shockable rhythm<br />False = non-shockable rhythm |
+| **TTM (targeted temperature management; in Celsius)** | 33, 36, or NaN for no TTM |
+| **Outcome** | Good (CPC score of 1-2), Poor (CPC score of 3-5) |
+| **CPC** | CPC score (ordinal scale 1-5) |
+|-|-|
 
 ## Loading Patient Files
 
-Patient files are in WFDB format, with the EEG signal data stored in MATLAB [MAT v4 format](https://www.mathworks.com/help/pdf_doc/matlab/matfile_format.pdf) files. These files can be opened in either MATLAB or Python. We provide example code for loading and processing the data.
+Patient files are in WFDB format, with the EEG and ECG signal data stored in MATLAB [MAT v4 format](https://www.mathworks.com/help/pdf_doc/matlab/matfile_format.pdf) files. These files can be opened in either MATLAB or Python. We provide example code for loading and processing the data.
 
 ## Accessing Patient Files
 
-The full training set (17.35 GB) can be downloaded from [PhysioNet.org](https://physionet.org/content/i-care/1.0/#files). You can download the full data [here](https://physionet.org/static/published-projects/i-care/i-care-international-cardiac-arrest-research-consortium-database-1.0.zip) or by running this command:
+**The data have not been posted yet. Please check back soon!**
+
+The full training set can be downloaded from [PhysioNet.org](https://physionet.org/content/i-care/2.0/#files). You can download the full data [here](https://physionet.org/static/published-projects/i-care/i-care-international-cardiac-arrest-research-consortium-database-1.0.zip) or by running this command:
 
 ```
-wget -r -N -c -np https://physionet.org/files/i-care/1.0/
+wget -r -N -c -np https://physionet.org/files/i-care/2.0/
+```
+
+Due to the large size of the training data, you may wish to only download or use part of it. For example, the following command only downloads the patient metadata and EEG data from the first 72 hours after ROSC:
+
+```
+for ((i=0; i<=72; i++))
+do
+    j=$(printf "%02d" $i)
+    wget -r -N -c -np -A "*.txt" "https://physionet.org/files/i-care/2.0/"
+    wget -r -N -c -np -A "*_${j}_EEG.*" "https://physionet.org/files/i-care/2.0/"
+done
 ```
 
 By downloading the data, you agree not to repost the data or to publish or otherwise share any work that uses the data, in full or in part, before the end of the Challenge except to the Computing in Cardiology conference.
@@ -111,9 +135,9 @@ To participate in the Challenge, [register your team](https://docs.google.com/fo
 
 For each subject, your algorithm must provide an outcome label (good vs. poor outcome), the predicted  probability of a poor outcome, and the predicted CPC score (decimal number between 1 and 5). This should be done for each time point separately (12 hours, 24 hours, 48 hours, and 72 hours from the time of ROSC). These predictions must be causal. For example, for predictions at 12 hours, we will only provide your algorithm with access to the first 12 hours of the data: see the [`truncate_recordings` script](https://github.com/physionetchallenges/python-example-2023/blob/master/truncate_recordings.py) to test your code with truncated recordings. This restriction reflects the reality of clinical practice.
 
-Your algorithm must output a text file for each patient with outcome and CPC predictions for the patient. For example, the following text indicates that your model predicts that patient `ICARE_0284` will have a good outcome, with a 19.5% probability of a poor outcome, and a CPC score of 1.553.
+Your algorithm must output a text file for each patient with outcome and CPC predictions for the patient. For example, the following text indicates that your model predicts that patient `0284` will have a good outcome, with a 19.5% probability of a poor outcome, and a CPC score of 1.553.
 
-    Patient: ICARE_0284
+    Patient: 0284
     Outcome: Good
     Outcome probability: 0.195
     CPC: 1.553
@@ -124,11 +148,13 @@ We implemented example algorithms in [MATLAB](https://github.com/physionetchalle
 
 Please use the above [example code](#algorithms) as templates for your submissions.
 
-Please see the [submission instructions](submissions) for detailed information about how to submit a successful Challenge entry, double check your code (we cannot debug your code for you), and [submit](https://docs.google.com/forms/d/e/1FAIpQLSedoXArGWNlo_VEUsR4tPque62j8rmHKkG5cLG18Uj-IWivgQ/viewform?usp=sf_link) when ready.  We will provide feedback on your entry as soon as possible, so please wait at least **72 hours** before contacting us about the status of your entry.
+Please see the [submission instructions](submissions) for detailed information about how to submit a successful Challenge entry, double check your code (we cannot debug your code for you), and [submit](https://docs.google.com/forms/d/e/1FAIpQLSfBY14ldx1ngucgEUZCvVPMqsRH4tya2M51oejieA1dJGPC9w/viewform?usp=sf_link) when ready.  We will provide feedback on your entry as soon as possible, so please wait at least **72 hours** before contacting us about the status of your entry.
 
 ## <a name="scoring"></a> Scoring
 
 For this year's Challenge, the scoring metric is the true positive rate (TPR) for predicting a poor outcome (CPC of 3, 4, or 5) given a false positive rate (FPR) of less than or equal to 0.05 at 72 hours after return of spontaneous circulation.
+
+The below confusion matrix gives the numbers of patients with poor or good outcomes that receive poor or good predictions from a model.
 
 <a name="confusion-matrix"></a>
 <table>
@@ -160,17 +186,21 @@ For this year's Challenge, the scoring metric is the true positive rate (TPR) fo
     </tbody>
 </table>
 
+Let $$\theta_h$$ be the largest decision threshold for hospital $$h$$ such that
+
+$$\text{FPR}_{\theta_h} = \frac{\text{FP}_{\theta_h}}{\text{FP}_{\theta_h} + \text{TN}_{\theta_h}}.$$
+
 Let
+$$\text{TP} = \sum_{h} \text{TP}_{\theta_h}, \quad
+\text{FP} = \sum_{h} \text{FP}_{\theta_h},$$
+$$\text{FN} = \sum_{h} \text{FN}_{\theta_h}, \quad
+\text{TN} = \sum_{h} \text{TN}_{\theta_h}.$$
 
-$$\text{TPR}_\theta = \frac{\text{TP}_\theta}{\text{TP}_\theta + \text{FN}_\theta}$$
+The Challenge score is
 
-be the TPR at the decision threshold $$\theta$$ and
+$$\text{TPR} = \frac{TP}{FP + FN},$$
 
-$$\text{FPR}_\theta = \frac{\text{FP}_\theta}{\text{FP}_\theta + \text{TN}_\theta}.$$
-
-be the FPR at the decision threshold $$\theta$$. The Challenge score is
-
-$$\max_{\theta :\: \text{FPR}_\theta \leq 0.05} \text{TPR}_{\theta}.$$
+which is the true positive rate (TPR) at a false positive rate (FPR) of 0.05 at each hospital.
 
 The team with the highest value of the Challenge score wins the Challenge.
 
@@ -203,9 +233,9 @@ For these reasons, we strongly suggest that you start submitting entries at leas
 |                             | Start              | End                | Submissions                        |
 |-----------------------------|--------------------|--------------------|------------------------------------|
 | Unofficial phase            | 10 February 2023   | 24 April 2023      | 1-5 scored entries ([\*](#1ast))   |
-| Hiatus                      | 25 April 2023      | 31 May 2023        | N/A                                |
+| Hiatus                      | 25 April 2023      | 5 June 2023        | N/A                                |
 | Abstract deadline           | 1 May 2023         | 1 May 2023         | 1 abstract                         |
-| Official phase              | 1 June 2023        | 30 August 2023     | 1-10 scored entries ([\*](#1ast))  |
+| Official phase              | 6 June 2023        | 30 August 2023     | 1-10 scored entries ([\*](#1ast))  |
 | Abstract decisions released | Late June 2023     | Late June 2023     | N/A                                |
 | Wild card entry date        | 31 July 2023       | 31 July 2023       | N/A                                |
 | Hiatus                      | 1 September 2023   | 30 September 2023  | N/A                                |
