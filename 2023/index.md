@@ -12,7 +12,7 @@ Matthew A. Reyna<sup>[*](#co-first)</sup>, Edilberto Amorim<sup>[*](#co-first)</
 
 ## <a name="announcements"></a> Announcements
 
-<a name="2023.06.06"></a>__June 6, 2023:__ The official phase of the George B. Moody PhysioNet Challenge 2023 has begun! We have greatly expanded the data, which now includes continuous EEG and ECG recordings. Please see our announcement on the [Challenge forum](https://groups.google.com/g/physionet-challenges/) for more details and [submit](https://docs.google.com/forms/d/e/1FAIpQLSfBY14ldx1ngucgEUZCvVPMqsRH4tya2M51oejieA1dJGPC9w/viewform?usp=sf_link) your code when ready.
+<a name="2023.06.06"></a>__June 6, 2023:__ The official phase of the George B. Moody PhysioNet Challenge 2023 has begun! We have greatly expanded the data, which now includes continuous EEG and ECG recordings. Please see our [announcement](https://groups.google.com/g/physionet-challenges/c/VhvujQn4us4) on the [Challenge forum](https://groups.google.com/g/physionet-challenges/) for more details and [submit](https://docs.google.com/forms/d/e/1FAIpQLSfBY14ldx1ngucgEUZCvVPMqsRH4tya2M51oejieA1dJGPC9w/viewform?usp=sf_link) your code when ready.
 
 <a name="2023.03.24"></a>__April 12, 2023:__ We have launched a [PLOS Digital Health Collection](https://journals.plos.org/digitalhealth/) on [Cost-effective point-of-care monitoring in low-resource settings](https://physionetchallenges.org/focus-issue/). We encourage the [2022 Challenge](../2022/) participants and other researchers to submit their work to the collection. Please see the announcement [page](https://physionetchallenges.org/focus-issue/) for more information.
 
@@ -98,7 +98,6 @@ The following clinical data is contained in each `.txt` file:
 | **TTM (targeted temperature management; in Celsius)** | 33, 36, or NaN for no TTM |
 | **Outcome** | Good (CPC score of 1-2), Poor (CPC score of 3-5) |
 | **CPC** | CPC score (ordinal scale 1-5) |
-|-|-|
 
 ## Loading Patient Files
 
@@ -106,22 +105,24 @@ Patient files are in WFDB format, with the EEG and ECG signal data stored in MAT
 
 ## Accessing Patient Files
 
-**The data have not been posted yet. Please check back soon!**
+The full training set can be downloaded from [PhysioNet.org](https://physionet.org/content/i-care/2.0/#files). You can download the full data on the above page or by running this command:
 
-The full training set can be downloaded from [PhysioNet.org](https://physionet.org/content/i-care/2.0/#files). You can download the full data [here](https://physionet.org/static/published-projects/i-care/i-care-international-cardiac-arrest-research-consortium-database-1.0.zip) or by running this command:
-
-```
+```sh
 wget -r -N -c -np https://physionet.org/files/i-care/2.0/
 ```
 
-Due to the large size of the training data, you may wish to only download or use part of it. For example, the following command only downloads the patient metadata and EEG data from the first 72 hours after ROSC:
+Due to the large size of the training data, you may wish to only download or use part of it. For example, the following command only downloads the patient metadata and the EEG data from the first 72 hours after ROSC:
 
-```
+```sh
 for ((i=0; i<=72; i++))
 do
     j=$(printf "%02d" $i)
-    wget -r -N -c -np -A "*.txt" "https://physionet.org/files/i-care/2.0/"
-    wget -r -N -c -np -A "*_${j}_EEG.*" "https://physionet.org/files/i-care/2.0/"
+    wget -r -N -c -np -A "*.txt" -q "https://physionet.org/files/i-care/2.0/"
+done
+
+for ((i=0; i<=72; i++))
+    j=$(printf "%02d" $i)
+    wget -r -N -c -np -A "*_${j}_EEG.*" -q "https://physionet.org/files/i-care/2.0/"
 done
 ```
 
@@ -137,10 +138,12 @@ For each subject, your algorithm must provide an outcome label (good vs. poor ou
 
 Your algorithm must output a text file for each patient with outcome and CPC predictions for the patient. For example, the following text indicates that your model predicts that patient `0284` will have a good outcome, with a 19.5% probability of a poor outcome, and a CPC score of 1.553.
 
-    Patient: 0284
-    Outcome: Good
-    Outcome probability: 0.195
-    CPC: 1.553
+```
+Patient: 0284
+Outcome: Good
+Outcome probability: 0.195
+CPC: 1.553
+```
 
 We implemented example algorithms in [MATLAB](https://github.com/physionetchallenges/matlab-example-2023) and [Python](https://github.com/physionetchallenges/python-example-2023). Other implementation languages will be considered upon request. The code repositories contain details of the examples. These examples were not designed to perform well but to provide minimal working examples of how to work with the data for the Challenge task.
 
