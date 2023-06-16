@@ -99,11 +99,11 @@ The following clinical data is contained in each `.txt` file:
 | **Outcome** | Good (CPC score of 1-2), Poor (CPC score of 3-5) |
 | **CPC** | CPC score (ordinal scale 1-5) |
 
-## Loading Patient Files
+## Loading the Data
 
 Patient files are in WFDB format, with the EEG and ECG signal data stored in MATLAB [MAT v4 format](https://www.mathworks.com/help/pdf_doc/matlab/matfile_format.pdf) files. These files can be opened in either MATLAB or Python. We provide example code for loading and processing the data.
 
-## Accessing Patient Files
+## <a name="accessing-data">Accessing the Data
 
 The full training set can be downloaded from [PhysioNet.org](https://physionet.org/content/i-care/2.0/#files). You can download the full data on the above page or by running this command:
 
