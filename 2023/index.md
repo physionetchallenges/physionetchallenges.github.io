@@ -12,7 +12,7 @@ Matthew A. Reyna<sup>[*](#co-first)</sup>, Edilberto Amorim<sup>[*](#co-first)</
 
 ## <a name="announcements"></a> Announcements
 
-<a name="2023.06.06"></a>__June 6, 2023:__ The official phase of the George B. Moody PhysioNet Challenge 2023 has begun! We have greatly expanded the data, which now includes continuous EEG and ECG recordings. Please see our [announcement](https://groups.google.com/g/physionet-challenges/c/VhvujQn4us4) on the [Challenge forum](https://groups.google.com/g/physionet-challenges/) for more details and [submit](https://docs.google.com/forms/d/e/1FAIpQLSfBY14ldx1ngucgEUZCvVPMqsRH4tya2M51oejieA1dJGPC9w/viewform?usp=sf_link) your code when ready.
+<a name="2023.06.09"></a>__June 9, 2023:__ The official phase of the George B. Moody PhysioNet Challenge 2023 has begun! We have greatly expanded the data, which now includes continuous EEG and ECG recordings. Please see our [announcement](https://groups.google.com/g/physionet-challenges/c/VhvujQn4us4) on the [Challenge forum](https://groups.google.com/g/physionet-challenges/) for more details and [submit](https://docs.google.com/forms/d/e/1FAIpQLSfBY14ldx1ngucgEUZCvVPMqsRH4tya2M51oejieA1dJGPC9w/viewform?usp=sf_link) your code when ready.
 
 <a name="2023.03.24"></a>__April 12, 2023:__ We have launched a [PLOS Digital Health Collection](https://journals.plos.org/digitalhealth/) on [Cost-effective point-of-care monitoring in low-resource settings](https://physionetchallenges.org/focus-issue/). We encourage the [2022 Challenge](../2022/) participants and other researchers to submit their work to the collection. Please see the announcement [page](https://physionetchallenges.org/focus-issue/) for more information.
 
@@ -242,7 +242,7 @@ For these reasons, we strongly suggest that you start submitting entries at leas
 | Unofficial phase            | 10 February 2023   | 24 April 2023      | 1-5 scored entries ([\*](#1ast))   |
 | Hiatus                      | 25 April 2023      | 5 June 2023        | N/A                                |
 | Abstract deadline           | 1 May 2023         | 1 May 2023         | 1 abstract                         |
-| Official phase              | 6 June 2023        | 30 August 2023     | 1-10 scored entries ([\*](#1ast))  |
+| Official phase              | 9 June 2023        | 30 August 2023     | 1-10 scored entries ([\*](#1ast))  |
 | Abstract decisions released | Late June 2023     | Late June 2023     | N/A                                |
 | Wild card entry date        | 31 July 2023       | 31 July 2023       | N/A                                |
 | Hiatus                      | 1 September 2023   | 30 September 2023  | N/A                                |
