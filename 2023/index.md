@@ -114,10 +114,7 @@ wget -r -N -c -np https://physionet.org/files/i-care/2.0/
 Due to the large size of the training data, you may wish to only download or use part of it. For example, the following command only downloads the patient metadata and the EEG data from the first 72 hours after ROSC:
 
 ```sh
-for ((i=0; i<=72; i++))
-do
-    wget -r -N -c -np -A "*.txt" -q "https://physionet.org/files/i-care/2.0/"
-done
+wget -r -N -c -np -A "*.txt" -q "https://physionet.org/files/i-care/2.0/"
 
 for ((i=0; i<=72; i++))
     j=$(printf "%03d" $j)
