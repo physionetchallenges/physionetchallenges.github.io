@@ -108,7 +108,7 @@ Patient files are in WFDB format, with the EEG and ECG signal data stored in MAT
 The full training set can be downloaded from [PhysioNet.org](https://physionet.org/content/i-care/2.0/#files). You can download the full data on the above page or by running this command:
 
 ```sh
-wget -r -N -c -np https://physionet.org/files/i-care/2.0/
+wget -r -N -c -np "https://physionet.org/files/i-care/2.0/"
 ```
 
 Due to the large size of the training data, you may wish to only download or use part of it. For example, the following command only downloads the patient metadata and the EEG data from the first 72 hours after ROSC:
