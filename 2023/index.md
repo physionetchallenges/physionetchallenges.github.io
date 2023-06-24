@@ -116,7 +116,7 @@ Due to the large size of the training data, you may wish to only download or use
 ```sh
 wget -r -N -c -np -A "*.txt" -q "https://physionet.org/files/i-care/2.0/"
 
-for ((i=0; i<=72; i++))
+for ((i=0; i<=72; i++)) do
     j=$(printf "%03d" $j)
     wget -r -N -c -np -A "*_${j}_EEG.*" -q "https://physionet.org/files/i-care/2.0/"
 done
