@@ -6,7 +6,7 @@ layout: 2023
 
 # Predicting Neurological Recovery from Coma After Cardiac Arrest: The George B. Moody PhysioNet Challenge 2023
 
-Matthew A. Reyna<sup>[*](#co-first)</sup>, Edilberto Amorim<sup>[*](#co-first)</sup>, Reza Sameni, James Weigle, Andoni Elola, Ali Bahrami Rad, Salman Seyedi, Hyeok Kwon, Wei-Long Zheng, Mohammad M. Ghassemi, Michel J. van Putten, Jeanette Hoffmeijer, Nicolas Gaspard, Adithya Sivaraju, Susan Herman, Jong Woo Lee, M. Brandon Westover<sup>[**](#co-senior)</sup>, Gari D. Clifford<sup>[**](#co-senior)</sup>
+Matthew A. Reyna<sup>[*](#co-first)</sup>, Edilberto Amorim<sup>[*](#co-first)</sup>, Reza Sameni, James Weigle, Andoni Elola, Ali Bahrami Rad, Salman Seyedi, Hyeokhyen Kwon, Wei-Long Zheng, Mohammad M. Ghassemi, Michel J. van Putten, Jeanette Hoffmeijer, Nicolas Gaspard, Adithya Sivaraju, Susan Herman, Jong Woo Lee, M. Brandon Westover<sup>[**](#co-senior)</sup>, Gari D. Clifford<sup>[**](#co-senior)</sup>
 
 <div style="text-align: right"><a name="co-first"></a><a name="co-senior"></a><sup>* co-first authors, ** co-senior authors</sup></div>
 
