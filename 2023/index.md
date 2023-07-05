@@ -105,7 +105,7 @@ The following clinical data is contained in each `.txt` file:
 
 Patient files are in WFDB format, with the EEG and ECG signal data stored in MATLAB [MAT v4 format](https://www.mathworks.com/help/pdf_doc/matlab/matfile_format.pdf) files. These files can be opened in either MATLAB or Python. We provide example code for loading and processing the data.
 
-## <a name="accessing-data">Accessing the Data
+## <a name="accessing-data"></a> Accessing the Data
 
 The full training set can be downloaded from [PhysioNet.org](https://physionet.org/content/i-care/2.0/#files). You can download the full data on the above page or by running this command:
 
@@ -238,7 +238,7 @@ For these reasons, we strongly suggest that you start submitting entries at leas
 |                             | Start              | End                | Submissions                        |
 |-----------------------------|--------------------|--------------------|------------------------------------|
 | Unofficial phase            | 10 February 2023   | 24 April 2023      | 1-5 scored entries ([\*](#1ast))   |
-| Hiatus                      | 25 April 2023      | 5 June 2023        | N/A                                |
+| Hiatus                      | 25 April 2023      | 8 June 2023        | N/A                                |
 | Abstract deadline           | 1 May 2023         | 1 May 2023         | 1 abstract                         |
 | Official phase              | 9 June 2023        | 30 August 2023     | 1-10 scored entries ([\*](#1ast))  |
 | Abstract decisions released | Late June 2023     | Late June 2023     | N/A                                |
