@@ -240,7 +240,7 @@ For these reasons, we strongly suggest that you start submitting entries at leas
 | Unofficial phase            | 10 February 2023   | 24 April 2023      | 1-5 scored entries ([\*](#1ast))   |
 | Hiatus                      | 25 April 2023      | 8 June 2023        | N/A                                |
 | Abstract deadline           | 1 May 2023         | 1 May 2023         | 1 abstract                         |
-| Official phase              | 9 June 2023        | 30 August 2023     | 1-10 scored entries ([\*](#1ast))  |
+| Official phase              | 9 June 2023        | 31 August 2023     | 1-10 scored entries ([\*](#1ast))  |
 | Abstract decisions released | Late June 2023     | Late June 2023     | N/A                                |
 | Wild card entry date        | 31 July 2023       | 31 July 2023       | N/A                                |
 | Hiatus                      | 1 September 2023   | 30 September 2023  | N/A                                |
