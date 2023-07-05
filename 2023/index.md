@@ -189,7 +189,7 @@ The below confusion matrix gives the numbers of patients with poor or good outco
 
 Let $$\theta_h$$ be the largest decision threshold for hospital $$h$$ such that
 
-$$\text{FPR}_{\theta_h} = \frac{\text{FP}_{\theta_h}}{\text{FP}_{\theta_h} + \text{TN}_{\theta_h}}.$$
+$$\text{FPR}_{\theta_h} = \frac{\text{FP}_{\theta_h}}{\text{FP}_{\theta_h} + \text{TN}_{\theta_h}} < 0.05.$$
 
 Let
 
