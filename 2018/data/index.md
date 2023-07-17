@@ -1,5 +1,5 @@
 ---
-layout: 2018
+layout: after_2015
 ---
 
 # PhysioNet/CinC Challenge 2018: Training/Test Sets

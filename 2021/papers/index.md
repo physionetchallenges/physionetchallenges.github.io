@@ -1,5 +1,5 @@
 ---
-layout: 2021
+layout: after_2015
 ---
 
 # Will Two Do? Varying Dimensions in Electrocardiography: The PhysioNet/Computing in Cardiology Challenge 2021

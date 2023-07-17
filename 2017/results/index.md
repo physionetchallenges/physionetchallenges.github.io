@@ -1,5 +1,5 @@
 ---
-layout: 2017
+layout: after_2015
 ---
 
 # AF Classification from a Short Single Lead ECG Recording: The PhysioNet/Computing in Cardiology Challenge 2017

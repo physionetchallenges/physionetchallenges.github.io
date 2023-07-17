@@ -1,5 +1,5 @@
 ---
-layout: 2019
+layout: after_2015
 ---
 
 [comment]: <> (<img style="float: right;" src="../assets/img/physionet-cinc.gif" width="258" height="105" align="right">)

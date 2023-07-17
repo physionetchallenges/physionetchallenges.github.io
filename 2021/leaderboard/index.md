@@ -1,5 +1,5 @@
 ---
-layout: 2021
+layout: after_2015
 ---
 
 # PhysioNet/CinC Challenge 2021 Leaderboard

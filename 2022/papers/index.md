@@ -1,5 +1,5 @@
 ---
-layout: 2022
+layout: after_2015
 ---
 
 # Heart Murmur Detection from Phonocardiogram Recordings: The George B. Moody PhysioNet Challenge 2022

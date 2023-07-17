@@ -1,5 +1,5 @@
 ---
-layout: 2019
+layout: after_2015
 ---
 
 # Early Prediction of Sepsis from Clinical Data: The PhysioNet/Computing in Cardiology Challenge 2019

@@ -1,5 +1,5 @@
 ---
-layout: 2016
+layout: after_2015
 ---
 
 # Challenge Papers: Classification of Normal/Abnormal Heart Sound Recordings

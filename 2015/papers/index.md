@@ -1,5 +1,5 @@
 ---
-layout: 2015
+layout: after_2015
 ---
 
 # Challenge Papers: Reducing False Arrhythmia Alarms in the ICU 

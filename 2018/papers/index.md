@@ -1,5 +1,5 @@
 ---
-layout: 2018
+layout: after_2015
 ---
 
 # Publications from You Snooze, You Win: the PhysioNet/Computing in Cardiology Challenge 2018 

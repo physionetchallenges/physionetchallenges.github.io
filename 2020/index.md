@@ -1,5 +1,5 @@
 ---
-layout: 2020
+layout: after_2015
 ---
 
 # Classification of 12-lead ECGs: the PhysioNet/Computing in Cardiology Challenge 2020

@@ -1,5 +1,5 @@
 ---
-layout: 2015
+layout: after_2015
 ---
 
 # Reducing False Arrhythmia Alarms in the ICU: The PhysioNet/Computing in Cardiology Challenge 2015 

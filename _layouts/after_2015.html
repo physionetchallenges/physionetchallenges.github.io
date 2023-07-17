@@ -19,8 +19,8 @@
         <div id="titleblock">
         <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
 
-        {% if site.logo %}
-          <img src="{{site.logo | relative_url}}" alt="Logo" />
+        {% if site.logo_after_2015 %}
+          <img src="{{site.logo_after_2015 | relative_url}}" alt="Logo" />
         {% endif %}
         </div>
 

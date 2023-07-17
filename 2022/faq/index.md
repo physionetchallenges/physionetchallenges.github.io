@@ -1,5 +1,5 @@
 ---
-layout: 2022
+layout: after_2015
 ---
 
 # Frequently Asked Questions (FAQ) for the 2022 Challenge

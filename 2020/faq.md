@@ -1,5 +1,5 @@
 ---
-layout: 2020
+layout: after_2015
 ---
 
 # Frequently Asked Questions (FAQ)

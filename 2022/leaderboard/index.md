@@ -1,5 +1,5 @@
 ---
-layout: 2022
+layout: after_2015
 ---
 
 # Leaderboard for the 2022 Challenge

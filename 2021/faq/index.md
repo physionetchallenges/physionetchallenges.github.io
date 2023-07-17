@@ -1,5 +1,5 @@
 ---
-layout: 2021
+layout: after_2015
 ---
 
 # Frequently Asked Questions (FAQ) for the 2021 Challenge

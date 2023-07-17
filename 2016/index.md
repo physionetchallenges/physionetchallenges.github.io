@@ -1,5 +1,5 @@
 ---
-layout: 2016
+layout: after_2015
 ---
 
 # Classification of Heart Sound Recordings: The PhysioNet/Computing in Cardiology Challenge 2016 

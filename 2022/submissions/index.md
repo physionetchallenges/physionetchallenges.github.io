@@ -1,5 +1,5 @@
 ---
-layout: 2022
+layout: after_2015
 ---
 
 # <a name="submission-instructions-and-form"></a> Submission instructions for the 2022 Challenge

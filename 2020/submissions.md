@@ -1,5 +1,5 @@
 ---
-layout: 2020
+layout: after_2015
 ---
 
 # <a name="submission-instructions-and-form"></a>Submission Instructions and Form

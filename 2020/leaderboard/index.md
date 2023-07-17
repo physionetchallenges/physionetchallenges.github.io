@@ -1,5 +1,5 @@
 ---
-layout: 2020
+layout: after_2015
 ---
 
 # PhysioNet/CinC Challenge 2020 Leaderboard
