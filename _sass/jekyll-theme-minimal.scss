@@ -231,6 +231,11 @@ footer {
 
 @media print, screen and (max-width: 960px) {
 
+  section p,h1,h2,h3,h4,li {
+    margin-left:10px;
+    margin-right:10px;
+  }
+
 
   div.wrapper {
     width:auto;
