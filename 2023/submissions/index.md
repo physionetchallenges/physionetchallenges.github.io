@@ -24,7 +24,7 @@ Similarly to [last year's Challenge](../../2022/), teams must submit both the co
 3. Do not include extra files that are not required to create and run your prediction code, such as the training data.
 4. Follow the instructions for the programming language of your submission.
 5. Share your repository with the `physionetchallengeshelper` user.
-6. Submit your entry using [this form](https://docs.google.com/forms/d/e/1FAIpQLSedoXArGWNlo_VEUsR4tPque62j8rmHKkG5cLG18Uj-IWivgQ/viewform?usp=sf_link).
+6. Submit your entry using [this form](https://docs.google.com/forms/d/e/1FAIpQLSfBY14ldx1ngucgEUZCvVPMqsRH4tya2M51oejieA1dJGPC9w/viewform?usp=sf_link).
 7. We will put the scores for successful entries on the validation set on the leaderboard.  The leaderboard will publicly show your team name and scores.
 
 ### <a name="matlab"></a>MATLAB-specific instructions
@@ -125,7 +125,7 @@ You can use these scripts from the [Python example code](https://github.com/phys
 
 - `remove_data.py`: Remove the binary signal data, i.e., the EEG recordings. Usage: run `python remove_data.py -i input_folder -o output_folder` to copy the labels and metadata from `input_folder` to `output_folder`.
 - `remove_labels.py`: Remove the labels. Usage: run `python remove_labels.py -i input_folder -o output_folder` to copy the data and metadata from `input_folder` to `output_folder`.
-- `truncate_data.py`: Truncate the EEG recordings. Usage: run `python truncate_data.py -i input_folder -o output_folder -k 12` to truncate the EEG recordings to 12 hours. We will run your trained models on data with 12, 24, 48, and 72 hours of data.
+- `truncate_data.py`: Truncate the recordings. Usage: run `python truncate_data.py -i input_folder -o output_folder -t 12` to truncate the recordings to 12 hours. We will run your trained models on data with 12, 24, 48, and 72 hours of data.
 
 __What computational resources will my entry have?__
 
