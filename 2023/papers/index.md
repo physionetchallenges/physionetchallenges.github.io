@@ -1,5 +1,5 @@
 ---
-layout: 2023
+layout: after_2015
 ---
 
 # Predicting Neurological Recovery from Coma After Cardiac Arrest: The George B. Moody PhysioNet Challenge 2023

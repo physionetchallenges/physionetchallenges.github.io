@@ -1,5 +1,5 @@
 ---
-layout: 2023
+layout: after_2015
 ---
 
 # Results for the 2023 Challenge

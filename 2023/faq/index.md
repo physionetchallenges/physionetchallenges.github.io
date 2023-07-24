@@ -1,5 +1,5 @@
 ---
-layout: 2023
+layout: after_2015
 ---
 
 # Frequently Asked Questions (FAQ) for the 2023 Challenge
