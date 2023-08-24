@@ -12,6 +12,10 @@ Matthew A. Reyna<sup>[*](#co-first)</sup>, Edilberto Amorim<sup>[*](#co-first)</
 
 ## <a name="announcements"></a> Announcements
 
+<a name="2023.08.24"></a>__August 24, 2023:__ Thanks to our sponsors, a pre-conference hackathon will take place on Sunday, October 1 in Atlanta. Registration is required. Rules and more information can be found [here](#hackathon).
+
+<a name="2023.08.24"></a>__August 24, 2023:__ Two “wild card” teams were approved for inclusion in the Challenge. We are looking forward to meeting them in Atlanta!
+
 <a name="2023.06.09"></a>__June 9, 2023:__ The official phase of the George B. Moody PhysioNet Challenge 2023 has begun! We have greatly expanded the data, which now includes continuous EEG and ECG recordings. Please see our [announcement](https://groups.google.com/g/physionet-challenges/c/VhvujQn4us4) on the [Challenge forum](https://groups.google.com/g/physionet-challenges/) for more details and [submit](https://docs.google.com/forms/d/e/1FAIpQLSfBY14ldx1ngucgEUZCvVPMqsRH4tya2M51oejieA1dJGPC9w/viewform?usp=sf_link) your code when ready.
 
 <a name="2023.03.24"></a>__April 12, 2023:__ We have launched a [PLOS Digital Health Collection](https://journals.plos.org/digitalhealth/) on [Cost-effective point-of-care monitoring in low-resource settings](https://physionetchallenges.org/focus-issue/). We encourage the [2022 Challenge](../2022/) participants and other researchers to submit their work to the collection. Please see the announcement [page](https://physionetchallenges.org/focus-issue/) for more information.
@@ -325,6 +329,32 @@ Similarly, no individual who is affliated with the same research group, departme
 ## Conference Attendance
 
 [CinC 2023](https://cinc2023.org/) will take place from 1-4 October 2023 in Atlanta, Georgia, USA. You must attend the whole conference to be eligible for prizes. If you send someone in your place who is not a team member or co-author, then you will be disqualified and your abstract will be removed from the proceedings. In particular, it is vital that the presenter (oral or poster) can defend your work and have in-depth knowledge of all decisions made during the development of your algorithm. Due to this year's challenges, both in person and remote attendance are allowed. If you require a visa to attend the conference, we strongly suggest that you apply as soon as possible. Please contact the local [conference](https://cinc2023.org/travel/#visa-information) organizing committee (not the Challenge Organizers) for any visa sponsorship letters and answer any questions concerning the conference.
+
+## <a name="hackathon"></a> Pre-Conference Challenge Hackathon
+
+This year, we are reintroducing a final opportunity to win a prize in the Challenge. On the Sunday morning before Computing in Cardiology starts (the 1st of October), there will be an all-day hackathon (with on-site support from 9am--1pm local time) on Emory's campus, adjacent to the Sunday Symposium. It will have the same objective as the current Challenge. This event is, once again, generously sponsored by the Gordon and Betty Moore Foundation and MathWorks.
+
+Most of the same rules apply, but you may form a new team for this event or even merge with an existing team. (In fact, we encourage this -- mix and match ideas!) You do not need to have previously competed in the Challenge, but you must register for the event at least 4 days in advance, listing all of your hackathon team members (known at the time -- you may add or remove some later, but we will be monitoring to check for adherence to the rules).
+
+**Please complete [this form](https://docs.google.com/forms/d/e/1FAIpQLScpm5F_7vww1TZBij7u8k7KZsTl1Ld8vaCDrouTb1hDSlDy5w/viewform) for the PhysioNet/CinC 2023 Hackathon.**
+
+Note: At least one member of each hackathon team must be physically present and must register for the conference as well as the hackathon. If the details about your team members are missing from the above form, you will not be allowed to participate.
+
+Space is limited and will be allocated on a first-come, first-served basis. If there is room, you may be able to register with less than 4 days to the event, or even on the same day as the event, but you will encounter delays at the entrance to the event, where security will check you against the registration list we sent 4 days earlier.
+
+Please note, the event is not at the same as any other conference event, but it is in the same building as the Sunday Symposium, occurring on the morning before the Symposium.
+
+*   Location of Hackathon: Rooms A169 and A170, Anatomy Building, Emory School of Medicine, 100 Woodruff Cir, Atlanta, GA 30322: [https://tinyurl.com/emorySOManatomy](https://tinyurl.com/emorySOManatomy)
+*   Date and time: Sunday, 1 October 2023 from 9:00 AM to 1:00 PM local time.
+*   Refreshments and technical support will be available.
+
+The deadline for submitting code will be later on Sunday (exact time to be announced). Please make sure the rest of your team (who are not present) are aware of the time zone difference with their local times. You may collaborate with them remotely all day to prepare and submit your code. Due to space restrictions, a maximum on-site team size of 4 is allowed. There is no limit on the team size for remote members.
+
+You may ask: why a hackathon?
+
+1. Well this is no ordinary hackathon. You will have had up to 7 months to prepare for it, so we expect it to generate some novel ideas.
+2. You may collaborate with other teams from the Challenge or other teams that turn up (but you may submit only one entry per collaboration), thus potentially generating new and better hybrid approaches.
+3. On-site support for MATLAB and/or domain experts in clinical informatics will be present.
 
 ## <a name="sponsors"></a> Sponsors
 
