@@ -342,7 +342,7 @@ Note: At least one member of each hackathon team must be physically present and 
 
 Space is limited and will be allocated on a first-come, first-served basis. If there is room, you may be able to register with less than 4 days to the event, or even on the same day as the event, but you will encounter delays at the entrance to the event, where security will check you against the registration list we sent 4 days earlier.
 
-Please note, the event is not at the same as any other conference event, but it is in the same building as the Sunday Symposium, occurring on the morning before the Symposium.
+The Hackathon is not the same as the Sunday Symposium, but it is in the same building as the symposium and occurring on the morning of the symposium. You may attend both, of course.
 
 *   Location of Hackathon: Rooms A169 and A170, Anatomy Building, Emory School of Medicine, 100 Woodruff Cir, Atlanta, GA 30322: [https://tinyurl.com/emorySOManatomy](https://tinyurl.com/emorySOManatomy)
 *   Date and time: Sunday, 1 October 2023 from 9:00 AM to 1:00 PM local time.
