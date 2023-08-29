@@ -16,7 +16,8 @@ The above paper is a draft. We will update it after CinC to include information 
 
 __For this year's Challenge, please cite the I-CARE Database publication:__
 
-Amorim E, Zheng WL, Ghassemi MM, Aghaeeaval M, Kahndare P, Karukonda V, Lee JW, Herman ST, Adithya S, Gaspard N, Hofmeijer J, van Putten MJAM, Sameni R, Reyna MA, Clifford GD, Westover MB. Preprint, 2023.
+[Amorim E, Zheng WL, Ghassemi MM, Aghaeeaval M, Kandhare P, Karukonda V, Lee JW, Herman ST, Adithya S, Gaspard N, Hofmeijer J, van Putten MJAM, Sameni R, Reyna MA, Clifford GD, Westover MB. The International Cardiac Arrest Research (I-CARE) Consortium Ele troencephalography Database. medRxiv 2023; URL https://www.medrxiv.org/content/early/2023/08/28/2023.08.28.23294672.](https://www.medrxiv.org/content/early/2023/08/28/2023.08.28.23294672)
+
 
 The above paper is in preparation. We will update it soon.
 
@@ -28,10 +29,10 @@ __Additionally, please include the standard citation for PhysioNet:__
 
 Please follow the [preparation and submission instructions](https://www.cinc.org/instructions-for-preparing-and-submitting-full-papers/) for your CinC papers.
 
-We have prepared templates to help you prepare your CinC papers. Please use the LaTeX template ([Overleaf](https://www.overleaf.com/read/prhsrbnhnbgs
-) or [download](cinc_template.zip)) or the [Word template](cinc_template.docx). These [templates](cinc_template.pdf) include important instructions, advice, and references.
+We have prepared templates to help you prepare your CinC paper. Please use the LaTeX template ([Overleaf](https://www.overleaf.com/read/prhsrbnhnbgs
+) or [download](cinc_template.zip)) or the [Word template](cinc_template.docx). These [templates](cinc_template.pdf) include important instructions, advice, and references. Please use this [checklist](cinc_paper_checklist.pdf) to check your paper.
 
-Please *read* the following and one of the templates. Each year, we need to provide feedback for many teams that miss some of the paper requirements, and each year, some papers are unfortunately rejected because the teams were unable to address important issues that the conference required.
+Please *read* and follow one of the templates. Each year, we need to provide feedback for many teams that miss some of the paper requirements, and each year, some papers are unfortunately rejected because the teams were unable to address important issues that the conference required.
 
 ## Conference Papers
 
