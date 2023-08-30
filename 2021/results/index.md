@@ -96,7 +96,8 @@ In these tables, you can find the following information:
 
 To refer to these tables in your publication, please cite the following papers:
 
-[Reyna MA, Sadr N, Perez Alday EA, Gu A, Shah AJ, Robichaux C, Rad AB, Elola A, Seyedi S, Ansari S, Ghanbari H, Li Q, Sharma A, Clifford GD. Will Two Do? Varying Dimensions in Electrocardiography: The PhysioNet/Computing in Cardiology Challenge 2021. Computing in Cardiology 2021; 48: 1-4](2021ChallengePaperCinC.pdf)
+[Reyna MA, Sadr N, Perez Alday EA, Gu A, Shah AJ, Robichaux C, Rad AB, Elola A, Seyedi S, Ansari S, Ghanbari H, Li Q, Sharma A, Clifford GD. Will Two Do? Varying Dimensions in Electrocardiography: The PhysioNet/Computing in Cardiology Challenge 2021. Computing in Cardiology 2021; 48: 1-4](https://www.cinc.org/archives/2021/pdf/CinC2021-134.pdf)
 
-[Reyna MA, Sadr N, Perez Alday EA, Gu Annie, Shah AJ, Robichaux C, Rad AB, Elola A, Seyedi S, Ansari S, Ghanbari H, Li Q, Sharma A, Clifford GD. Issues in the automated classification of multilead ECGs using heterogeneous labels and populations. Physiol. Meas. 2022; 43(8): 084001](2021ChallengePaperPMEA.pdf)
+[Reyna MA, Sadr N, Perez Alday EA, Gu Annie, Shah AJ, Robichaux C, Rad AB, Elola A, Seyedi S, Ansari S, Ghanbari H, Li Q, Sharma A, Clifford GD. Issues in the automated classification of multilead ECGs using heterogeneous labels and populations. Physiol. Meas. 2022; 43(8): 084001](https://moody-challenge.physionet.org/2021/papers/2021ChallengePaperPMEA.pdf)
 
+[Perez Alday EA, Rad AB, Reyna MA, Sadr N, Gu A, Li Q, Dumitru M, Xue J, Albert D, Sameni R, Clifford GD. Age, sex and race bias in automated arrhythmia detectors. Journal of Electrocardiology 2022 July 22; 74: pp. 5-9. DOI: 10.1016/j.jelectrocard.2022.07.007](https://www.sciencedirect.com/science/article/pii/S0022073622000942)
