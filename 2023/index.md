@@ -244,20 +244,22 @@ For these reasons, we strongly suggest that you start submitting entries at leas
 | Unofficial phase            | 10 February 2023   | 24 April 2023      | 1-5 scored entries ([\*](#1ast))   |
 | Hiatus                      | 25 April 2023      | 8 June 2023        | N/A                                |
 | Abstract deadline           | 1 May 2023         | 1 May 2023         | 1 abstract                         |
-| Official phase              | 9 June 2023        | 31 August 2023     | 1-10 scored entries ([\*](#1ast))  |
+| Official phase              | 9 June 2023        | 3 September 2023 ([\*\*](#1ast))  | 1-10 scored entries ([\*](#1ast))  |
 | Abstract decisions released | Late June 2023     | Late June 2023     | N/A                                |
 | Wild card entry date        | 31 July 2023       | 31 July 2023       | N/A                                |
-| Hiatus                      | 1 September 2023   | 30 September 2023  | N/A                                |
-| Preprint deadline           | 15 September 2023  | 15 September 2023  | One 4-page paper ([\*\*](#2ast))   |
-| Conference                  | 1 October 2023     | 4 October 2023     | 1 presentation ([\*\*\*](#3ast))   |
+| Hiatus                      | 4 September 2023   | 30 September 2023  | N/A                                |
+| Preprint deadline           | 15 September 2023  | 15 September 2023  | One 4-page paper ([\*\*\*](#2ast))   |
+| Conference                  | 1 October 2023     | 4 October 2023     | 1 presentation ([\*\*\*\*](#3ast))   |
 | Final scores released       | Early October 2023 | Early October 2023 | N/A                                |
-| Final paper deadline        | 15 October 2023    | 15 October 2023    | One 4-page paper ([\*\*\*](#3ast)) |
+| Final paper deadline        | 15 October 2023    | 15 October 2023    | One 4-page paper ([\*\*\*\*](#3ast)) |
 
 <a name="1ast"></a>(\* Entries that fail to score do not count against limits.)
 
-<a name="2ast"></a>(\*\* Must include preliminary scores.)
+<a name="4ast"></a>(\*\* In your time zone.)
 
-<a name="3ast"></a>(\*\*\* Must include final scores, your ranking in the Challenge, and any updates to your work as a result of feedback after presenting at CinC. This final paper deadline is earlier than the deadline given by CinC so that we can check these details.)
+<a name="2ast"></a>(\*\*\* Must include preliminary scores.)
+
+<a name="3ast"></a>(\*\*\*\* Must include final scores, your ranking in the Challenge, and any updates to your work as a result of feedback after presenting at CinC. This final paper deadline is earlier than the deadline given by CinC so that we can check these details.)
 
 To be eligible for the open-source award, you must do all the following:
 
