@@ -248,7 +248,7 @@ For these reasons, we strongly suggest that you start submitting entries at leas
 | Abstract decisions released | Late June 2023     | Late June 2023     | N/A                                |
 | Wild card entry date        | 31 July 2023       | 31 July 2023       | N/A                                |
 | Hiatus                      | 4 September 2023   | 30 September 2023  | N/A                                |
-| Preprint deadline           | 15 September 2023  | 15 September 2023  | One 4-page paper ([\*\*\*](#2ast))   |
+| Preprint deadline           | 20 September 2023  | 20 September 2023  | One 4-page paper ([\*\*\*](#2ast))   |
 | Conference                  | 1 October 2023     | 4 October 2023     | 1 presentation ([\*\*\*\*](#3ast))   |
 | Final scores released       | Early October 2023 | Early October 2023 | N/A                                |
 | Final paper deadline        | 15 October 2023    | 15 October 2023    | One 4-page paper ([\*\*\*\*](#3ast)) |
