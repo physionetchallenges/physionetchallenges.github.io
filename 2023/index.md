@@ -328,6 +328,41 @@ If we discover evidence of the contravention of these rules, then you will be in
 
 Similarly, no individual who is affliated with the same research group, department, or similar organization unit (academic or industry) as one or more of the Organizers of that year's Challenge researchers may officially participate in the Challenge for that year, even if they do not collaborate with Organizers. If you are uncertain if your shared affiliation disallows you from officially participating, then please contact the Challenge Organizers for clarification. This rule is to prevent concerns about independence or favoritism.
 
+## Checking Your Code to Avoid Disqualification
+
+Please note, as we do every year, we will perform some simple tests on your
+code to ensure it is more usable and reusable. We suggest you also try these
+similar approaches, including:
+
+1. Change the data and/or labels in the training set. Does your code work with
+   missing, unknown, non-physiological values in the data? Does your code work
+   if you change the prevalence rates of the classes or remove one of the
+   classes? (It will probably have a slightly different performance, but that
+   is to be expected.)
+2. Change the size of the training set. You can extract a subset of the
+   training set or duplicate the training set. Does your code work with a
+   training set that is 15% or 150% of the size of the original training set?
+   (Again, your performance will differ, but the code should still execute.)
+3. Run your training code on the modified training set. If your training code
+   fails, then your code is too sensitive to the changes in the training set,
+   and you should update your code until it works as expected.
+4. Score the resulting model on part of the unmodified training set---ideally,
+   data that you did not use to train your model. If your code fails, or if the
+   model trained on the modified training set receives the same scores or
+   almost the same scores as the model trained on the unmodified training set,
+   then your training code didn’t learn from the training set, and you should
+   update your code until it works as expected.
+
+Again, this is a simplified process, and we may change how we stress test your
+code in future tests (such as randomizing the labels), so please think about
+how you can ensure that your code isn’t dependent on a single set of data and
+labels or a single test for robustness. Of course, you should also try similar
+steps to check the rest of your code as well.
+
+All of this work is in service of protecting your scientific contributions over
+the course of the Challenge, and we appreciate, as always, your feedback and
+help.
+
 ## Conference Attendance
 
 [CinC 2023](https://cinc2023.org/) will take place from 1-4 October 2023 in Atlanta, Georgia, USA. You must attend the whole conference to be eligible for prizes. If you send someone in your place who is not a team member or co-author, then you will be disqualified and your abstract will be removed from the proceedings. In particular, it is vital that the presenter (oral or poster) can defend your work and have in-depth knowledge of all decisions made during the development of your algorithm. Due to this year's challenges, both in person and remote attendance are allowed. If you require a visa to attend the conference, we strongly suggest that you apply as soon as possible. Please contact the local [conference](https://cinc2023.org/travel/#visa-information) organizing committee (not the Challenge Organizers) for any visa sponsorship letters and answer any questions concerning the conference.
@@ -361,6 +396,7 @@ You may ask: why a hackathon?
 ## <a name="sponsors"></a> Sponsors
 
 This year's Challenge is generously co-sponsored by [MathWorks](https://www.mathworks.com/) and the [Gordon and Betty Moore Foundation](https://www.moore.org/).
+
 
 ### Obtaining Complimentary MATLAB Licenses
 
