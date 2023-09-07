@@ -239,19 +239,20 @@ For these reasons, we strongly suggest that you start submitting entries at leas
 
 ### <a name="key-dates-deadlines"></a> Key dates/deadlines
 
-|                             | Start              | End                | Submissions                        |
-|-----------------------------|--------------------|--------------------|------------------------------------|
-| Unofficial phase            | 10 February 2023   | 24 April 2023      | 1-5 scored entries ([\*](#1ast))   |
-| Hiatus                      | 25 April 2023      | 8 June 2023        | N/A                                |
-| Abstract deadline           | 1 May 2023         | 1 May 2023         | 1 abstract                         |
-| Official phase              | 9 June 2023        | 3 September 2023 ([\*\*](#1ast))  | 1-10 scored entries ([\*](#1ast))  |
-| Abstract decisions released | Late June 2023     | Late June 2023     | N/A                                |
-| Wild card entry date        | 31 July 2023       | 31 July 2023       | N/A                                |
-| Hiatus                      | 4 September 2023   | 30 September 2023  | N/A                                |
-| Preprint deadline           | 20 September 2023  | 20 September 2023  | One 4-page paper ([\*\*\*](#2ast))   |
-| Conference                  | 1 October 2023     | 4 October 2023     | 1 presentation ([\*\*\*\*](#3ast))   |
-| Final scores released       | Early October 2023 | Early October 2023 | N/A                                |
-| Final paper deadline        | 15 October 2023    | 15 October 2023    | One 4-page paper ([\*\*\*\*](#3ast)) |
+|                                            | Start              | End                               | Submissions                          |
+|--------------------------------------------|--------------------|-----------------------------------|--------------------------------------|
+| Unofficial phase                           | 10 February 2023   | 24 April 2023                     | 1-5 scored entries ([\*](#1ast))     |
+| Hiatus                                     | 25 April 2023      | 8 June 2023                       | N/A                                  |
+| Abstract deadline                          | 1 May 2023         | 1 May 2023                        | 1 abstract                           |
+| Official phase                             | 9 June 2023        | 3 September 2023 ([\*\*](#1ast))  | 1-10 scored entries ([\*](#1ast))    |
+| Abstract decisions released                | Late June 2023     | Late June 2023                    | N/A                                  |
+| Wild card entry date                       | 31 July 2023       | 31 July 2023                      | N/A                                  |
+| Hiatus                                     | 4 September 2023   | 30 September 2023                 | N/A                                  |
+| Deadline to choose algorithm for test data | 13 September 2023  | 13 September 2023                 | N/A                                  |
+| Preprint deadline                          | 20 September 2023  | 20 September 2023                 | One 4-page paper ([\*\*\*](#2ast))   |
+| Conference                                 | 1 October 2023     | 4 October 2023                    | 1 presentation ([\*\*\*\*](#3ast))   |
+| Final scores released                      | Early October 2023 | Early October 2023                | N/A                                  |
+| Final paper deadline                       | 15 October 2023    | 15 October 2023                   | One 4-page paper ([\*\*\*\*](#3ast)) |
 
 <a name="1ast"></a>(\* Entries that fail to score do not count against limits.)
 
