@@ -12,10 +12,9 @@ During the [unofficial and official phases](../#rules) of the Challenge, we trai
 
 Teams that satisfied all of the [Challenge rules](../#rules) were eligible for rankings and prizes as official Challenge entries. Teams that did not satisfy one or more of the rules were not eligible for rankings or prizes as unofficial Challenge entries.
 
-The [officially eligible team](team_summary_table.tsv) with the [highest Challenge score at 72 hours after return of spontaneous circulation (ROSC)](official_scores_72.tsv) won the 2023 Challenge.
+The officially eligible team with the highest Challenge score at 72 hours after return of spontaneous circulation (ROSC) won the 2023 Challenge.
 
-- __[Team summary table](team_summary_table.tsv)__: summary of the teams that participated in the 2023 Challenge. This table includes ranking and prize eligibility information.
-- __[Scores and rankings](official_scores_72.tsv)__ for official entries at 72 hours after ROSC; these scores determined the Challenge winners.
+- [Team summary table](team_summary_table.tsv): summary of the teams that participated in the 2023 Challenge. This table includes ranking and prize eligibility information.
 
 - Official scores and rankings (sorted by rank):
    - [12 hours](official_scores_12.tsv) after ROSC
@@ -29,4 +28,4 @@ The [officially eligible team](team_summary_table.tsv) with the [highest Challen
    - [48 hours](unofficial_scores_48.tsv) after ROSC
    - [72 hours](unofficial_scores_72.tsv) after ROSC
 
-The [Challenge webpage](../) and [Challenge description paper](../papers/) describe the Challenge. Please cite the [Challenge description paper](../papers/) when describing the Challenge. 
+The [Challenge webpage](../) and [Challenge description paper](../papers/) describe the Challenge. Please cite the [Challenge data paper and the Challenge description paper](../papers/) when describing the Challenge. 
