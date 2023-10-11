@@ -14,8 +14,8 @@ Teams that satisfied all of the [Challenge rules](../#rules) were eligible for r
 
 The [officially eligible team](team_summary_table.tsv) with the [highest Challenge score at 72 hours after return of spontaneous circulation (ROSC)](official_scores_72.csv) won the 2023 Challenge.
 
-- [Team summary table](team_summary_table.tsv): summary of the teams that participated in the 2023 Challenge, including ranking and prize eligibility information
-- [Scores and rankings](official_scores_72.csv) for official entries at 72 hours after ROSC; these scores determined the Challenge winners.
+- __[Team summary table](team_summary_table.tsv)__: summary of the teams that participated in the 2023 Challenge. This table includes ranking and prize eligibility information.
+- __[Scores and rankings](official_scores_72.csv)__ for official entries at 72 hours after ROSC; these scores determined the Challenge winners.
 
 - Official scores and rankings (sorted by rank):
    - [12 hours](official_scores_12.csv) after ROSC
