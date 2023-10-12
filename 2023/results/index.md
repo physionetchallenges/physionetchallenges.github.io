@@ -10,7 +10,7 @@ During the course of the Challenge, teams submitted entries with their approache
 
 During the [unofficial and official phases](../#rules) of the Challenge, we trained each entry on the training set, and we [scored](../#scoring) each entry on the validation set. After the official phase, each team selected one entry for evaluation on the test set, and we evaluated these entries on the test set.
 
-Teams that satisfied all of the [Challenge rules](../#rules) were eligible for rankings and prizes as official Challenge entries. Teams that did not satisfy one or more of the rules were not eligible for rankings or prizes as unofficial Challenge entries.
+Teams that satisfied all of the [Challenge rules](../#rules) were eligible for rankings and prizes as official Challenge entries. Teams that did not satisfy one or more of the rules were not eligible for rankings or prizes as unofficial Challenge entries. (Both the official and unofficial entries are from the official phase of the Challenge.)
 
 The officially eligible team with the highest Challenge score at 72 hours after return of spontaneous circulation (ROSC) won the 2023 Challenge.
 

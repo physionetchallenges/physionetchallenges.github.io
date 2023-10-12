@@ -12,9 +12,11 @@ Matthew A. Reyna<sup>[*](#co-first)</sup>, Edilberto Amorim<sup>[*](#co-first)</
 
 ## <a name="announcements"></a> Announcements
 
+<a name="2023.10.10"></a>__October 10, 2023:__ The winners of the 2021 Challenge were announced on 4 October 2023 at [CinC 2023](https://cinc2023.org) in Atlanta, GA, USA. Congratulations, teams! See the [results](results) and [papers](papers) as well as the [full announcement](https://groups.google.com/g/physionet-challenges/c/9FRZp9wbnKo) for the final steps in this year's Challenge.
+
 <a name="2023.08.24"></a>__August 24, 2023:__ Thanks to our sponsors, a pre-conference hackathon will take place on Sunday, October 1 in Atlanta. Registration is required. Rules and more information can be found [here](#hackathon).
 
-<a name="2023.08.24"></a>__August 24, 2023:__ Two “wild card” teams were approved for inclusion in the Challenge. We are looking forward to meeting them in Atlanta!
+<a name="2023.08.24"></a>__August 24, 2023:__ Two "wild card" teams were approved for inclusion in the Challenge. We are looking forward to meeting them in Atlanta!
 
 <a name="2023.06.09"></a>__June 9, 2023:__ The official phase of the George B. Moody PhysioNet Challenge 2023 has begun! We have greatly expanded the data, which now includes continuous EEG and ECG recordings. Please see our [announcement](https://groups.google.com/g/physionet-challenges/c/VhvujQn4us4) on the [Challenge forum](https://groups.google.com/g/physionet-challenges/) for more details and [submit](https://docs.google.com/forms/d/e/1FAIpQLSfBY14ldx1ngucgEUZCvVPMqsRH4tya2M51oejieA1dJGPC9w/viewform?usp=sf_link) your code when ready.
 

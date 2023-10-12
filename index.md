@@ -12,8 +12,9 @@ We ask participants to design and implement working, open-source algorithms that
 
 Please check the below links for information about [current](#current) and [past](#past) Challenges, including [important details](/faq/) about scoring and test data for previous Challenges.
 
-## <a name="news"></a> Recent News
+## <a name="news"></a> Select News
 
+- __October 10, 2023:__ The winners of the 2021 Challenge were announced on 4 October 2023 at [CinC 2023](https://cinc2023.org) in Atlanta, GA, USA. Congratulations, teams! See the [results](results) and [papers](papers) as well as the [full announcement](https://groups.google.com/g/physionet-challenges/c/9FRZp9wbnKo) for the final steps in this year's Challenge.
 - __June 6, 2023:__ The official phase of the [George B. Moody PhysioNet Challenge 2023: Predicting Neurological Recovery from Coma After Cardiac Arrest](/2023/) has begun! We have greatly expanded the data, which now includes continuous EEG and ECG recordings. Please see our announcement on the [Challenge forum](https://groups.google.com/g/physionet-challenges/) for more details and [submit](https://docs.google.com/forms/d/e/1FAIpQLSfBY14ldx1ngucgEUZCvVPMqsRH4tya2M51oejieA1dJGPC9w/viewform?usp=sf_link) your code when ready.
 - __April 12, 2023:__ We have launched a [PLOS Digital Health Collection](https://journals.plos.org/digitalhealth/) on [Cost-effective point-of-care monitoring in low-resource settings](https://physionetchallenges.org/focus-issue/). We encourage the [2022 Challenge](/2022/) participants and other researchers to submit their work to the collection. Please see the announcement [page](https://physionetchallenges.org/focus-issue/) for more information.
 - __March 24, 2023:__ We are [now accepting](https://groups.google.com/g/physionet-challenges/c/vagQtJbVOIw) unofficial phase submissions to the [2023 Challenge](/2023/). Please read the [submissions instructions](submissions), double check your code, and [submit your code](https://docs.google.com/forms/d/e/1FAIpQLSedoXArGWNlo_VEUsR4tPque62j8rmHKkG5cLG18Uj-IWivgQ/viewform?usp=sf_link) when ready.
@@ -28,7 +29,8 @@ Please check the below links for information about [current](#current) and [past
 
 ## <a name="past"></a> Past Challenges
 
-- 2022: [Heart Murmur Detection from Phonocardiogram Recordings](2022)  
+- 2022: [Heart Murmur Detection from Phonocardiogram Recordings](2022) 
+ [44+ papers and 77 contributed software](2022/results) 
 - 2021: [Will Two Do? Varying Dimensions in Electrocardiography](2021)  
  [60+ papers and 58 contributed software](2021/results)
 - 2020: [Classification of 12-lead ECGs](2020)  

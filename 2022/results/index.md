@@ -4,7 +4,7 @@ layout: after_2015
 
 # Results for the 2022 Challenge
 
-This page contains the scores for the 2022 PhysioNet Challenge.
+This page contains the scores, [algorithms](https://physionet.org/files/challenge-2022/1.0.0/sources), and [papers](https://physionet.org/files/challenge-2022/1.0.0/papers/index.html) for the 2022 PhysioNet Challenge.
 
 We trained and scored each entry on the [Challenge data](../#data). We trained each entry on the training set and scored each entry on the training, validation, and test sets. The training set was public, and the validation and test sets were hidden.
 
@@ -16,4 +16,4 @@ Teams that satisfied all of the [Challenge rules](../#rules) were eligible for r
 - [Unofficial murmur entries](unofficial_murmur_scores.tsv): scores for the unofficial murmur entries; entries are sorted alphabetically.
 - [Unofficial clinical outcome entries](unofficial_outcome_scores.tsv): scores and rankings for the official murmur entries; entries are sorted alphabetically.
 
-The [Challenge webpage](../) and [Challenge description paper](../papers/) describe the Challenge. Please cite the [Challenge description paper](../papers/) when describing the Challenge. 
+The [Challenge webpage](../) and [Challenge description paper](../papers/) describe the Challenge. Please cite the [Challenge description paper](../papers/) when describing the Challenge. Please use and cite the Challenge [algorithms](https://physionet.org/files/challenge-2022/1.0.0/sources) and [papers](https://physionet.org/files/challenge-2022/1.0.0/papers/index.html) as well.
