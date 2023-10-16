@@ -12,7 +12,7 @@ Matthew A. Reyna<sup>[*](#co-first)</sup>, Edilberto Amorim<sup>[*](#co-first)</
 
 ## <a name="announcements"></a> Announcements
 
-<a name="2023.10.10"></a>__October 10, 2023:__ The winners of the 2021 Challenge were announced on 4 October 2023 at [CinC 2023](https://cinc2023.org) in Atlanta, GA, USA. Congratulations, teams! See the [results](results) and [papers](papers) as well as the [full announcement](https://groups.google.com/g/physionet-challenges/c/9FRZp9wbnKo) for the final steps in this year's Challenge.
+<a name="2023.10.10"></a>__October 10, 2023:__ The winners of the 2023 Challenge were announced on 4 October 2023 at [CinC 2023](https://cinc2023.org) in Atlanta, GA, USA. Congratulations, teams! See the [results](results) and [papers](papers) as well as the [full announcement](https://groups.google.com/g/physionet-challenges/c/9FRZp9wbnKo) for the final steps in this year's Challenge.
 
 <a name="2023.08.24"></a>__August 24, 2023:__ Thanks to our sponsors, a pre-conference hackathon will take place on Sunday, October 1 in Atlanta. Registration is required. Rules and more information can be found [here](#hackathon).
 
