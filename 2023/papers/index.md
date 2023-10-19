@@ -16,7 +16,7 @@ The above paper is a draft. We will update it after CinC to include information 
 
 __For this year's Challenge, please cite the I-CARE Database publication:__
 
-[Amorim E, Zheng WL, Ghassemi MM, Aghaeeaval M, Kandhare P, Karukonda V, Lee JW, Herman ST, Adithya S, Gaspard N, Hofmeijer J, van Putten MJAM, Sameni R, Reyna MA, Clifford GD, Westover MB. The International Cardiac Arrest Research (I-CARE) Consortium Ele troencephalography Database. Critical Care Medicine 2023 (in press); doi:10.1097/CCM.0000000000006074.](https://www.medrxiv.org/content/early/2023/08/28/2023.08.28.23294672)
+[Amorim E, Zheng WL, Ghassemi MM, Aghaeeaval M, Kandhare P, Karukonda V, Lee JW, Herman ST, Adithya S, Gaspard N, Hofmeijer J, van Putten MJAM, Sameni R, Reyna MA, Clifford GD, Westover MB. The International Cardiac Arrest Research (I-CARE) Consortium Electroencephalography Database. Critical Care Medicine 2023 (in press); doi:10.1097/CCM.0000000000006074.](https://www.medrxiv.org/content/early/2023/08/28/2023.08.28.23294672)
 
 __Additionally, please include the standard citation for PhysioNet:__
 
