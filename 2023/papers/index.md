@@ -16,11 +16,11 @@ The above paper is a draft. We will update it after CinC to include information 
 
 __For this year's Challenge, please cite the I-CARE Database publication:__
 
-[Amorim E, Zheng WL, Ghassemi MM, Aghaeeaval M, Kandhare P, Karukonda V, Lee JW, Herman ST, Adithya S, Gaspard N, Hofmeijer J, van Putten MJAM, Sameni R, Reyna MA, Clifford GD, Westover MB. The International Cardiac Arrest Research (I-CARE) Consortium Electroencephalography Database. Critical Care Medicine 2023 (in press); doi:10.1097/CCM.0000000000006074.](https://www.medrxiv.org/content/early/2023/08/28/2023.08.28.23294672)
+[Amorim E, Zheng WL, Ghassemi MM, Aghaeeaval M, Kandhare P, Karukonda V, Lee JW, Herman ST, Adithya S, Gaspard N, Hofmeijer J, van Putten MJAM, Sameni R, Reyna MA, Clifford GD, Westover MB. The International Cardiac Arrest Research (I-CARE) Consortium Electroencephalography Database. Critical Care Medicine; Oct. 2023; doi:10.1097/CCM.0000000000006074.](https://journals.lww.com/ccmjournal/abstract/9900/the_international_cardiac_arrest_research.213.aspx)
 
 __Additionally, please include the standard citation for PhysioNet:__
 
-[Goldberger AL, Amaral LA, Glass L, Hausdorff JM, Ivanov PC, Mark RG, Mietus JE, Moody GB, Peng CK, Stanley HE. PhysioBank, PhysioToolkit, and PhysioNet: Components of a new research resource for complex physiologic signals. Circulation; 101(23): e215-e220.](https://www.ahajournals.org/doi/full/10.1161/01.CIR.101.23.e215)
+[Goldberger AL, Amaral LA, Glass L, Hausdorff JM, Ivanov PC, Mark RG, Mietus JE, Moody GB, Peng CK, Stanley HE. PhysioBank, PhysioToolkit, and PhysioNet: Components of a new research resource for complex physiologic signals. Circulation; June 2023; 101(23): e215-e220.](https://www.ahajournals.org/doi/full/10.1161/01.CIR.101.23.e215)
 
 ## Preparing Your Paper
 
