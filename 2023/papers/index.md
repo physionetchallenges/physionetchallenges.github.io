@@ -10,9 +10,7 @@ We ask teams to cite the description and data papers for the Challenge to ensure
 
 __For this year's Challenge, please cite the Challenge description paper:__
 
-[Reyna MA<sup>\*</sup>, Amorim E<sup>\*</sup>, Sameni S, Weigle J, Elola A, Bahrami Rad A, Seyedi S, Kwon H, Zheng, WL and Ghassemi M, van Putten MJAM, Hofmeijer J, Gaspard N, Sivaraju A, Herman S, Lee JW, Westover MB<sup>\*\*</sup>, Clifford GD<sup>\*\*</sup>. Predicting Neurological Recovery from Coma After Cardiac Arrest: The George B. Moody PhysioNet Challenge 2023. Computing in Cardiology 2023; 50: 1-4.](cinc_preprint.pdf)
-
-The above paper is a draft. We will update it after CinC to include information about the conclusion of the Challenge.
+[Reyna MA<sup>\*</sup>, Amorim E<sup>\*</sup>, Sameni S, Weigle J, Elola A, Bahrami Rad A, Seyedi S, Kwon H, Zheng WL, Ghassemi M, van Putten MJAM, Hofmeijer J, Gaspard N, Sivaraju A, Herman ST, Lee JW, Westover MB<sup>\*\*</sup>, Clifford GD<sup>\*\*</sup>. Predicting Neurological Recovery from Coma After Cardiac Arrest: The George B. Moody PhysioNet Challenge 2023. Computing in Cardiology 2023; 50: 1-4.](cinc_description_paper.pdf)
 
 __For this year's Challenge, please cite the I-CARE Database publication:__
 
