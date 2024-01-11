@@ -4,31 +4,26 @@ layout: main
 
 # George B. Moody PhysioNet Challenges
 
-For the past 24 years, [PhysioNet](https://physionet.org) and [Computing in Cardiology](http://www.cinc.org/) have co-hosted a series of annual challenges, now called the [George B. Moody PhysioNet Challenges](/about/), to tackle clinically interesting questions that are either unsolved or not well-solved.
+For the past 25 years, [PhysioNet](https://physionet.org) and [Computing in Cardiology](http://www.cinc.org/) have co-hosted a series of annual challenges, now called the [George B. Moody PhysioNet Challenges](/about/), to tackle clinically interesting but unsolved questions
 
-The [George B. Moody PhysioNet Challenge 2023](/2023/) invites participants to predict outcomes for comatose patients in the hours following resuscitation from cardiac arrest.
+The [George B. Moody PhysioNet Challenge 2024](/2024/) invites teams to develop algorithms for digitizing and classifying electrocardiograms (ECGs) captured from images or paper printouts. Despite the recent advances in digital ECG devices, paper or physical ECGs remain common, especially in the Global South. These paper ECGs document the history and diversity of cardiovascular diseases (CVDs), and algorithms that can digitize and classify these images have the potential to improve our understanding and treatment of CVDs, especially for underrepresented and underserved populations.
 
-We ask participants to design and implement working, open-source algorithms that, based only on the provided electroencephalogram (EEG) recordings and routine patient data, can predict good and poor outcomes for patients. The team with the best score for this task on the hidden test set wins the Challenge.
+We ask participants to design and implement working, open-source algorithms that, based only on the provided ECG images, reconstruct the waveforms and/or classify or diagnose the images. The teams with the best scores for these tasks on the hidden test set win the Challenge.
 
 Please check the below links for information about [current](#current) and [past](#past) Challenges, including [important details](/faq/) about scoring and test data for previous Challenges.
 
 ## <a name="news"></a> Select News
 
-- __October 10, 2023:__ The winners of the 2021 Challenge were announced on 4 October 2023 at [CinC 2023](https://cinc2023.org) in Atlanta, GA, USA. Congratulations, teams! See the [results](results) and [papers](papers) as well as the [full announcement](https://groups.google.com/g/physionet-challenges/c/9FRZp9wbnKo) for the final steps in this year's Challenge.
-- __June 6, 2023:__ The official phase of the [George B. Moody PhysioNet Challenge 2023: Predicting Neurological Recovery from Coma After Cardiac Arrest](/2023/) has begun! We have greatly expanded the data, which now includes continuous EEG and ECG recordings. Please see our announcement on the [Challenge forum](https://groups.google.com/g/physionet-challenges/) for more details and [submit](https://docs.google.com/forms/d/e/1FAIpQLSfBY14ldx1ngucgEUZCvVPMqsRH4tya2M51oejieA1dJGPC9w/viewform?usp=sf_link) your code when ready.
-- __April 12, 2023:__ We have launched a [PLOS Digital Health Collection](https://journals.plos.org/digitalhealth/) on [Cost-effective point-of-care monitoring in low-resource settings](https://physionetchallenges.org/focus-issue/). We encourage the [2022 Challenge](/2022/) participants and other researchers to submit their work to the collection. Please see the announcement [page](https://physionetchallenges.org/focus-issue/) for more information.
-- __March 24, 2023:__ We are [now accepting](https://groups.google.com/g/physionet-challenges/c/vagQtJbVOIw) unofficial phase submissions to the [2023 Challenge](/2023/). Please read the [submissions instructions](submissions), double check your code, and [submit your code](https://docs.google.com/forms/d/e/1FAIpQLSedoXArGWNlo_VEUsR4tPque62j8rmHKkG5cLG18Uj-IWivgQ/viewform?usp=sf_link) when ready.
-- __March 1, 2023:__ The PhysioNet Challenges are a [winner](https://groups.google.com/g/physionet-challenges/c/QFodMHOHXak) the [NIH/FASB DataWorks! Prize](https://www.faseb.org/data-management-and-sharing/dataworks-prize).
-- __February 10, 2023:__ We launched the [George B. Moody PhysioNet Challenge 2023: Predicting Neurological Recovery from Coma After Cardiac Arrest](/2023/)!
-- __July 8, 2022:__ We published an article, [Rethinking Algorithm Performance Metrics for Artificial Intelligence in Diagnostic Medicine](https://jamanetwork.com/journals/jama/fullarticle/2794258), in [JAMA](https://jamanetwork.com/). This article explores the clinical utility of performance metrics for AI from the perspective of the Challenges.
+- __October 10, 2023:__ The winners of the 2023 Challenge were announced on 4 October 2023 at [CinC 2023](https://cinc2023.org) in Atlanta, GA, USA. Congratulations, teams! See the [results](results) and [papers](papers) as well as the [full announcement](https://groups.google.com/g/physionet-challenges/c/9FRZp9wbnKo) for the final steps in this year's Challenge.
 - ... see previous news articles [here](/news/).
 
 ## <a name="current"></a> Current Challenge
 
-- __2023: [Predicting Neurological Recovery from Coma After Cardiac Arrest](/2023/)__
+- __2024: [Digitization and Classification of ECG Images: The George B. Moody PhysioNet Challenge 2024](/2024/)__
 
 ## <a name="past"></a> Past Challenges
 
+- 2023: [Predicting Neurological Recovery from Coma After Cardiac Arrest](/2023/)
 - 2022: [Heart Murmur Detection from Phonocardiogram Recordings](2022) 
  [44+ papers and 77 contributed software](2022/results) 
 - 2021: [Will Two Do? Varying Dimensions in Electrocardiography](2021)  
