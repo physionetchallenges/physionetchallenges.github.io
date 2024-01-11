@@ -23,9 +23,9 @@ Please check the below links for information about [current](#current) and [past
 
 ## <a name="past"></a> Past Challenges
 
-- 2023: [Predicting Neurological Recovery from Coma After Cardiac Arrest](/2023/)
+- 2023: [Predicting Neurological Recovery from Coma After Cardiac Arrest](/2023/)  
  [Paper and contributed software collection ongoing](2023/results) 
-- 2022: [Heart Murmur Detection from Phonocardiogram Recordings](2022) 
+- 2022: [Heart Murmur Detection from Phonocardiogram Recordings](2022)  
  [44+ papers and 77 contributed software](2022/results) 
 - 2021: [Will Two Do? Varying Dimensions in Electrocardiography](2021)  
  [60+ papers and 58 contributed software](2021/results)
