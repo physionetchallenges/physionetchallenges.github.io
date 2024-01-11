@@ -4,18 +4,18 @@ layout: main
 
 # George B. Moody PhysioNet Challenges
 
-For the past 25 years, [PhysioNet](https://physionet.org) and [Computing in Cardiology](http://www.cinc.org/) have co-hosted a series of annual challenges, now called the [George B. Moody PhysioNet Challenges](/about/), to tackle clinically interesting but unsolved questions.
+For the past 25 years, [PhysioNet](https://physionet.org) and [Computing in Cardiology](http://www.cinc.org/) have co-hosted a series of annual challenges, now called the [George B. Moody PhysioNet Challenges](about), to tackle clinically interesting but unsolved questions.
 
-The [George B. Moody PhysioNet Challenge 2024](/2024/) invites teams to develop algorithms for digitizing and classifying electrocardiograms (ECGs) captured from images or paper printouts. Despite recent advances in digital ECG devices, paper or physical ECGs remain common, especially in the Global South. These paper ECGs document the history and diversity of cardiovascular diseases (CVDs), and algorithms that can digitize and classify these images have the potential to improve our understanding and treatment of CVDs, especially for underrepresented and underserved populations.
+The [George B. Moody PhysioNet Challenge 2024](2024) invites teams to develop algorithms for digitizing and classifying electrocardiograms (ECGs) captured from images or paper printouts. Despite recent advances in digital ECG devices, paper or physical ECGs remain common, especially in the Global South. These paper ECGs document the history and diversity of cardiovascular diseases (CVDs), and algorithms that can digitize and classify these images have the potential to improve our understanding and treatment of CVDs, especially for underrepresented and underserved populations.
 
 We ask participants to design and implement working, open-source algorithms that, based only on the provided ECG images, reconstruct the waveforms and/or classify or diagnose the images. The teams with the best scores for these tasks on the hidden test set win the Challenge.
 
-Please check the below links for information about [current](#current) and [past](#past) Challenges, including [important details](/faq/) about scoring and test data for previous Challenges.
+Please check the below links for information about [current](#current) and [past](#past) Challenges, including [important details](faq) about scoring and test data for previous Challenges.
 
 ## <a name="news"></a> Select News
 
-- __October 10, 2023:__ The winners of the 2023 Challenge were announced on 4 October 2023 at [CinC 2023](https://cinc2023.org) in Atlanta, GA, USA. Congratulations, teams! See the [results](/2023/results/) and [papers](2024/papers/) as well as the [full announcement](https://groups.google.com/g/physionet-challenges/c/9FRZp9wbnKo) for the final steps in this year's Challenge.
-- ... see previous news articles [here](/news/).
+- __October 10, 2023:__ The winners of the 2023 Challenge were announced on 4 October 2023 at [CinC 2023](https://cinc2023.org) in Atlanta, GA, USA. Congratulations, teams! See the [results](2023/results) and [papers](2023/papers) as well as the [full announcement](https://groups.google.com/g/physionet-challenges/c/9FRZp9wbnKo) for the final steps in this year's Challenge.
+- ... see previous news articles [here](news).
 
 ## <a name="current"></a> Current Challenge
 
@@ -23,7 +23,7 @@ Please check the below links for information about [current](#current) and [past
 
 ## <a name="past"></a> Past Challenges
 
-- 2023: [Predicting Neurological Recovery from Coma After Cardiac Arrest](/2023/)  
+- 2023: [Predicting Neurological Recovery from Coma After Cardiac Arrest](2023)  
  [Paper and contributed software collection ongoing](2023/results) 
 - 2022: [Heart Murmur Detection from Phonocardiogram Recordings](2022)  
  [44+ papers and 77 contributed software](2022/results) 
