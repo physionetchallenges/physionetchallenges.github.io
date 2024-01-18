@@ -18,7 +18,7 @@ The George B. Moody PhysioNet Challenges are annual competitions that invite par
 
 ## <a name="introduction"></a> Introduction
 
-The electrocardiogram (ECG) is an essential pre-screening tool for cardiovascular diseases (CVDs). Non-invasive and painless, the ECG measures the electrical activity of the heart. for over a century. In 1895, Willem Einthoven invented the first practical ECG device, culminating with the 1924 Nobel Prize in Physiology or Medicine. In 1927, General Electric introduced portable ECG devices, and by 1948, ECG devices could print ECG waveforms on paper. More recently, researchers have developed algorithmic approaches to interpreting ECG waveforms, and many companies have introduced digital ECG devices that record digital representations of the ECG waveforms. These and other developments have served to improve the accessibility of ECG-based diagnosis.  
+The electrocardiogram (ECG) is an essential pre-screening tool for cardiovascular diseases (CVDs). Non-invasive and painless, the ECG measures the electrical activity of the heart. In 1895, Willem Einthoven invented the first practical ECG device, culminating with the 1924 Nobel Prize in Physiology or Medicine. In 1927, General Electric introduced portable ECG devices, and by 1948, ECG devices could print ECG waveforms on paper. More recently, researchers have developed algorithmic approaches to interpreting ECG waveforms, and many companies have introduced digital ECG devices that record digital representations of the ECG waveforms. These and other developments have served to improve the accessibility of ECG-based diagnosis.  
 
 However, while digital ECG-based approaches have the potential to improve access to ECG-based diagnoses and cardiac care, physical (paper) ECG representations have been a mainstay of cardiac care for nearly a century, and they remain common in much of the world, particularly in the Global South. While an increasing proportion of the estimated 100 to 300 million ECGs that are recorded each year are now in digital format, there are likely billions of paper ECGs around the world, particularly in the Global South<sup>[1](#ref-tison),[2](#ref-handzel),[3](#ref-ecg-image-kit-paper)</sup>. This legacy contains the variability and evolution of CVDs across demographics, geography, and time. Moreover, walled-garden proprietary systems artificially inflate access barriers to processing data.  Therefore, the digitization of ECGs and access to low-cost analysis of the data is critical for capturing the diversity of representation of ECG data, and therefore the global accessibility of cardiac care.
 
@@ -69,7 +69,7 @@ For example, the PTB-XL includes the WFDB header file `00001_lr.hea` and the WFD
 00001_lr.dat 16 1000.0(0)/mV 16 0 -79 832 0 V6
 ```
 
-The provided scripts expand the WFDB header file `00001_lr.hea` and create a synthetic ECG image file `00001_lr-0.png` for the record `00001_lr`:
+The provided scripts expand the WFDB header file `00001_lr.hea` and create a synthetic ECG image file `00001_lr-0.png` for the record `00001_lr`. The classes in the `Dx` field are the superclasses for the PTB-XL dataset, and the images are synthetic ECG images:
 
 ```
 00001_lr 12 100 1000 09:17:34 09/11/1984
@@ -93,10 +93,10 @@ The provided scripts expand the WFDB header file `00001_lr.hea` and create a syn
 #Image: 00001_lr-0.png
 ```
 
-In the training set, these files will be available to your code. In the validation and test sets, the WFDB header file would be abbreviated to remove most information about the waveform, demographics, and classes, and the WFDB signal file would be removed to remove the waveform, but the image file would remain be available:
+In the training set, these files will be available to your code. In the validation and test sets, the WFDB header file would be abbreviated to remove most information about the waveform, demographics, and classes, and the WFDB signal file would be removed to remove the waveform, but the image file would still be available:
 
 ```
-00001_lr 12 100 1000 09:17:34 09/11/1984
+00001_lr 12 100 1000
 00001_lr.dat 16 1000.0(0)/mV 16 0    I
 00001_lr.dat 16 1000.0(0)/mV 16 0    II
 00001_lr.dat 16 1000.0(0)/mV 16 0    III
@@ -109,9 +109,10 @@ In the training set, these files will be available to your code. In the validati
 00001_lr.dat 16 1000.0(0)/mV 16 0    V4
 00001_lr.dat 16 1000.0(0)/mV 16 0    V5
 00001_lr.dat 16 1000.0(0)/mV 16 0    V6
+#Image: 00001_lr-0.png
 ```
 
-The goal is to reconstruct the WFDB header and signal files by reconstructing the ECG waveform from the ECG image and/or classifying the ECG image.
+The goal is to reconstruct the WFDB header and signal files by extracting the ECG waveform from the ECG image and/or classifying the ECG image.
 
 ## Data Processing
 
