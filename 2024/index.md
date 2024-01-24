@@ -52,7 +52,7 @@ The WFDB header file describes the ECG recording, including the sampling frequen
 | **WFDB signal file**  | Present | Absent | Absent |
 | **Image file**  | Present | Present | Present |
 
-For example, the PTB-XL includes the WFDB header file `00001_lr.hea` and the WFDB signal file `00001_hr.dat` for the record `00001_lr`:
+For example, the [PTB-XL](https://www.nature.com/articles/s41597-020-0495-6) [dataset](https://physionet.org/content/ptb-xl/) includes the WFDB header file `00001_lr.hea` and the WFDB signal file `00001_hr.dat` for the record `00001_lr`:
 ```
 00001_lr 12 100 1000
 00001_lr.dat 16 1000.0(0)/mV 16 0 -119 1508 0 I
@@ -69,7 +69,7 @@ For example, the PTB-XL includes the WFDB header file `00001_lr.hea` and the WFD
 00001_lr.dat 16 1000.0(0)/mV 16 0 -79 832 0 V6
 ```
 
-The provided scripts expand the WFDB header file `00001_lr.hea` and create a synthetic ECG image file `00001_lr-0.png` for the record `00001_lr`. The classes in the `Dx` field are the superclasses for the PTB-XL dataset, and the images are synthetic ECG images:
+The provided scripts expand the WFDB header file `00001_lr.hea` to include the provided demographic informatation and diagnostic superclasses and to create a synthetic ECG image file [`00001_lr-0.png`](00001_lr-0.png) for the record `00001_lr`. The classes in the `Dx` field are the superclasses for the PTB-XL dataset, and the images are synthetic ECG images:
 
 ```
 00001_lr 12 100 1000 09:17:34 09/11/1984
@@ -92,6 +92,8 @@ The provided scripts expand the WFDB header file `00001_lr.hea` and create a syn
 #Dx: NORM
 #Image: 00001_lr-0.png
 ```
+
+![The image `00001_lr-0.png` for the record `00001_lr`.](00001_lr-0.png)
 
 In the training set, these files will be available to your code. In the validation and test sets, the WFDB header file would be abbreviated to remove most information about the waveform, demographics, and classes, and the WFDB signal file would be removed to remove the waveform, but the image file would still be available:
 
@@ -116,7 +118,7 @@ The goal is to reconstruct the WFDB header and signal files by extracting the EC
 
 ## Data Processing
 
-Patient information includes available demographic and class information. To protect patient [privacy](https://www.hhs.gov/hipaa/for-professionals/privacy/special-topics/de-identification/index.html), potential identifiers on ECG images were redacted, and all ages above 89 were aggregated into a single category and encoded as "90" for data shared as part of the Challenge. 
+Patient information includes available demographic and class information. To protect patient [privacy](https://www.hhs.gov/hipaa/for-professionals/privacy/special-topics/de-identification/index.html), potential identifiers on ECG images were redacted, and all ages above 89 years were aggregated into a single category and encoded as "90" for data shared as part of the Challenge. 
 
 ## Loading the Data
 
@@ -299,3 +301,6 @@ This year's Challenge is generously sponsored by [MathWorks](https://www.mathwor
 {: style="text-align:center"}
 ![MathWorks](logo_mathworks.png){:height="40px"}&nbsp;&nbsp;&nbsp;
 ![Moore Foundation](https://d0.awsstatic.com/logos/powered-by-aws.png){:height="40px"}
+
+
+[def]: 00001_lr-0.png
