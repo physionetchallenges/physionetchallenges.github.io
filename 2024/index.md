@@ -34,9 +34,12 @@ We ask participants to design and implement open-source algorithms that can reco
 
 The Challenge data are from various sources, including public and private databases of ECG waveforms, ECG images, and/or ECG-based diagnoses or classes.
 
-For the initial training set, we use the waveforms and classes from the [PTB-XL](https://www.nature.com/articles/s41597-020-0495-6) [dataset](https://physionet.org/content/ptb-xl/) with the [provided synthetic ECG image generator](https://github.com/alphanumericslab/ecg-image-kit/tree/main/codes/ecg-image-generator) to create the initial training set for the Challenge.
+For example, the below image is an example of an ECG image. This image was generated from an ECG waveform. Photographs or scans of paper ECGs may also include distrortions, creases and shadows, blurred or faded ink, and other artifacts that obscure the ECG waveforms:
+![Example of an ECG image.](00001_lr-0.png)
 
-For the initial validation set, we use waveforms and classes from private databases with the [provided synthetic ECG image generator](https://github.com/alphanumericslab/ecg-image-kit/tree/main/codes/ecg-image-generator) to create the initial validation set. The held-out validation and test sets will contain the same (or a subset of) classes as the public training set.
+For the initial training set, we use the waveforms and classes from the [PTB-XL](https://www.nature.com/articles/s41597-020-0495-6) [dataset](https://physionet.org/content/ptb-xl/) with the [provided synthetic ECG image generator](https://github.com/alphanumericslab/ecg-image-kit/tree/main/codes/ecg-image-generator) to create the initial training set for the Challenge. The teams can use this software to augment the training set with various artifacts.
+
+For the initial validation set, we use waveforms and classes from a separate database to create the initial validation set. The held-out validation and test sets will contain the same (or a subset of) classes as the public training set.
 
 The training, validation, and test sets will grow throughout the unofficial phase of the Challenge to include physical and synthetic ECG images.
 
