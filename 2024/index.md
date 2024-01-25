@@ -32,17 +32,15 @@ We ask participants to design and implement open-source algorithms that can reco
 
 ## <a name="data"></a> Data
 
-The Challenge data are from various sources, including public and private databases of ECG waveforms, ECG images, and/or ECG-based diagnoses or classes.
+The Challenge data are from various sources, including public and private databases of ECG waveforms, ECG images, and/or ECG-based diagnoses or classes. The below images are examples of ECG image.
 
-For example, the below image are also examples of ECG images.
-
-The below synthetic image was generated from an ECG waveform. This image does not include distortions, creases, shadows, blurred or faded ink, or other artifacts that obscure the ECG waveforms in paper ECGs:
+The below image is a synthetic image that was generated from an ECG waveform. This image does not include distortions, creases, shadows, blurred or faded ink, or other artifacts that obscure the ECG waveforms in paper ECGs:
 ![Example of an ECG image.](00001_lr-0.png)
 
-The below synthetic image was generated from the same ECG waveform, but it includes various distortions that resemble the artifacts in paper ECGs:
+The below image is also a synthetic image that was generated from the same ECG waveform, but it includes various distortions that resemble the artifacts in paper ECGs:
 ![Example of an ECG image.](00001_lr-0_artifacts.jpg)
 
-The below real image was generated from a photograph or scan of a paper ECG and includes various artifacts as well as redacted information:
+The below image is a real image was generated from a photograph or a scan of a paper ECG and includes various artifacts as well as redacted information:
 ![Example of an ECG image.](https://github.com/alphanumericslab/ecg-image-kit/blob/1ab758b0d1d4e2497bd9ba40a158aa2029265b4f/sample-data/ecg-images/ecg00051.png?raw=True)
 
 Your code must be able to handle a diversity of ECG images. The above examples are only a few examples of the diverse synthetic and real ECG images that we will use for the Challenge.
