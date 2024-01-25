@@ -14,7 +14,7 @@ The George B. Moody PhysioNet Challenges are annual competitions that invite par
 
 <a name="2024.1.10"></a>__January 11, 2024:__ The NIH-funded George B Moody PhysioNet Challenge 2024 will open soon! Please stay tuned for more information.
 
-<!-- <a name="2024.XX.XX"></a>__XX XX, 2024:__ The NIH-funded George B. Moody PhysioNet Challenge 2024 is [now open]()! Please read this website for details and share questions and comments on [Challenge forum](https://groups.google.com/g/physionet-challenges/). This year's Challenge is generously sponsored by [MathWorks](https://www.mathworks.com/) and [AWS](https://aws.amazon.com/). -->
+<a name="2024.XX.XX"></a>__January 25, 2024:__ The NIH-funded George B. Moody PhysioNet Challenge 2024 is [now open](https://groups.google.com/g/physionet-challenges/)! Please read this website for details and share questions and comments on [Challenge forum](https://groups.google.com/g/physionet-challenges/). This year's Challenge is generously sponsored by [MathWorks](https://www.mathworks.com/) and [AWS](https://aws.amazon.com/).
 
 ## <a name="introduction"></a> Introduction
 
@@ -34,10 +34,20 @@ We ask participants to design and implement open-source algorithms that can reco
 
 The Challenge data are from various sources, including public and private databases of ECG waveforms, ECG images, and/or ECG-based diagnoses or classes.
 
-For example, the below image is an example of an ECG image. This image was generated from an ECG waveform. Photographs or scans of paper ECGs may also include distrortions, creases and shadows, blurred or faded ink, and other artifacts that obscure the ECG waveforms:
+For example, the below image are also examples of ECG images.
+
+The below synthetic image was generated from an ECG waveform. This image does not include distortions, creases, shadows, blurred or faded ink, or other artifacts that obscure the ECG waveforms in paper ECGs:
 ![Example of an ECG image.](00001_lr-0.png)
 
-For the initial training set, we use the waveforms and classes from the [PTB-XL](https://www.nature.com/articles/s41597-020-0495-6) [dataset](https://physionet.org/content/ptb-xl/) with the [provided synthetic ECG image generator](https://github.com/alphanumericslab/ecg-image-kit/tree/main/codes/ecg-image-generator) to create the initial training set for the Challenge. The teams can use this software to augment the training set with various artifacts.
+The below synthetic image was generated from the same ECG waveform, but it includes various distortions that resemble the artifacts in paper ECGs:
+![Example of an ECG image.](00001_lr-0_artifacts.jpg)
+
+The below real image was generated from a photograph or scan of a paper ECG and includes various artifacts as well as redacted information:
+![Example of an ECG image.](https://github.com/alphanumericslab/ecg-image-kit/blob/1ab758b0d1d4e2497bd9ba40a158aa2029265b4f/sample-data/ecg-images/ecg00051.png?raw=True)
+
+Your code must be able to handle a diversity of ECG images. The above examples are only a few examples of the diverse synthetic and real ECG images that we will use for the Challenge.
+
+For the initial training set, we use the waveforms and classes from the [PTB-XL](https://www.nature.com/articles/s41597-020-0495-6) [dataset](https://physionet.org/content/ptb-xl/) with the [provided synthetic ECG image generator](https://github.com/alphanumericslab/ecg-image-kit/tree/main/codes/ecg-image-generator) to create the initial training set for the Challenge. The teams can use this software to augment the training set with various artifacts. Note that the teams need to create a much wider variety of the training set than the default parameters provide, e.g., adding white space at the top, moving the ECGs around, adding noise and other artifacts, changing font sizes and types, etc., to better capture the realism and diversity of ECG images.
 
 For the initial validation set, we use waveforms and classes from a separate database to create the initial validation set. The held-out validation and test sets will contain the same (or a subset of) classes as the public training set.
 
@@ -45,7 +55,7 @@ The training, validation, and test sets will grow throughout the unofficial phas
 
 ## Data Formatting
 
-Each ECG recording will include a [WFDB header file](https://physionet.org/physiotools/wag/header-5.htm), a [WFDB signal file](https://physionet.org/physiotools/wag/signal-5.htm), and/or an ECG image file.
+Each ECG recording will include a [WFDB header file](https://physionet.org/physiotools/wag/header-5.htm), a [WFDB signal file](https://physionet.org/physiotools/wag/signal-5.htm), and/or one or more ECG image files.
 
 The WFDB header file describes the ECG recording, including the sampling frequency, signal length, signal resolution, and signal names of the channels in the ECG waveform; initial and checksum values for the channels; and classes and available demographic information. The public training set provides all of this information when available. The private validation and test sets contain the sampling frequency, signal resolution, and signal names; they do not provide the initial and checksum values or the classes or (sometimes) demographic information. Your algorithm should be robust to added and missing information (such as age, date, automated diagnosis, etc.) to reflect the real world. Our test data is designed to be complex enough to reflect this type of missingness.
 
@@ -149,7 +159,7 @@ Please see the [submission instructions](submissions) for detailed information a
 
 ## <a name="scoring"></a> Scoring
 
-For the unofficial phase of the Challenge, the evaluation metric for the waveform reconstruction task is the signal-noise ratio (SNR) of the reconstructed signal, and the evaluation metric for the classification task is the macro *F*-measure. Higher values of both evaluation metrics are better. The team with the highest SNR wins the waveform reconstruction task, and the team with the highest macro *F$*-measure wins the classification tasks.
+For the unofficial phase of the Challenge, the evaluation metric for the waveform reconstruction task is the signal-noise ratio (SNR) of the reconstructed signal, and the evaluation metric for the classification task is the macro *F*-measure. Higher values of both evaluation metrics are better. The team with the highest SNR wins the waveform reconstruction task, and the team with the highest macro *F*-measure wins the classification tasks.
 
 These metrics are [implemented](https://github.com/physionetchallenges/evaluation-2024) in the `evaluate_model` script. We invite feedback about these metrics.
 
@@ -171,7 +181,7 @@ For these reasons, we strongly suggest that you start submitting entries at leas
 
 |                                            | Start              | End                               | Submissions                          |
 |--------------------------------------------|--------------------|-----------------------------------|--------------------------------------|
-| Unofficial phase                           | 11 Jan 2024   | 8 April 2024                     | 1-5 scored entries ([\*](#1ast))     |
+| Unofficial phase                           | 25 January 2024   | 8 April 2024                     | 1-5 scored entries ([\*](#1ast))     |
 | Hiatus                                     | 9 April 2024      | 29 April 2024                       | N/A                                  |
 | Abstract deadline                          | 15 April 2024         | 15 April 2024                        | 1 abstract                           |
 | Official phase                             | 30 April 2024        | 19 August 2024 ([\*\*](#1ast))  | 1-10 scored entries ([\*](#1ast))    |
@@ -179,7 +189,7 @@ For these reasons, we strongly suggest that you start submitting entries at leas
 | Wild card entry date                       | 31 July 2024       | 31 July 2024                      | N/A                                  |
 | Hiatus                                     | 20 August 2024   | 7 September 2024                 | N/A                                  |
 | Deadline to choose algorithm for test data | 26 August 2024  | 26 August 2024                 | N/A                                  |
-| Preprint deadline                          | ? ? 2024  | ? ? 2024                 | One 4-page paper ([\*\*\*](#2ast))   |
+| Preprint deadline                          | August 2024  | August 2024                 | One 4-page paper ([\*\*\*](#2ast))   |
 | Conference                                 | 8 September 2024     | 11 September 2024                    | 1 presentation ([\*\*\*\*](#3ast))   |
 | Final scores released                      | Mid-September 2024 | Mid-September 2024                | N/A                                  |
 | Final paper deadline                       | ? ? 2024    | ? ? 2024                   | One 4-page paper ([\*\*\*\*](#3ast)) |
@@ -304,6 +314,3 @@ This year's Challenge is generously sponsored by [MathWorks](https://www.mathwor
 {: style="text-align:center"}
 ![MathWorks](logo_mathworks.png){:height="40px"}&nbsp;&nbsp;&nbsp;
 ![Moore Foundation](https://d0.awsstatic.com/logos/powered-by-aws.png){:height="40px"}
-
-
-[def]: 00001_lr-0.png
