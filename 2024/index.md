@@ -40,10 +40,10 @@ The below image is a synthetic image that was generated from an ECG waveform. Th
 The below image is also a synthetic image that was generated from the same ECG waveform, but it includes various distortions that resemble the artifacts in paper ECGs:
 ![Example of an ECG image.](00001_lr-0_artifacts.jpg)
 
-The below image is a real image was generated from a photograph or a scan of a paper ECG and includes various artifacts as well as redacted information:
+The below image is a real image that was generated from a photograph or a scan of a paper ECG and includes various artifacts as well as redacted information:
 ![Example of an ECG image.](https://github.com/alphanumericslab/ecg-image-kit/blob/1ab758b0d1d4e2497bd9ba40a158aa2029265b4f/sample-data/ecg-images/ecg00051.png?raw=True)
 
-Your code must be able to handle a diversity of ECG images. The above examples are only a few examples of the diverse synthetic and real ECG images that we will use for the Challenge.
+Your code should learn from, and must be able to recover waveforms and/or classify, a diversity of ECG images. The above images are only a few examples of the diverse synthetic and real ECG images that we will use for the Challenge.
 
 For the initial training set, we use the waveforms and classes from the [PTB-XL](https://www.nature.com/articles/s41597-020-0495-6) [dataset](https://physionet.org/content/ptb-xl/) with the [provided synthetic ECG image generator](https://github.com/alphanumericslab/ecg-image-kit/tree/main/codes/ecg-image-generator) to create the initial training set for the Challenge. The teams can use this software to augment the training set with various artifacts. Note that the teams need to create a much wider variety of the training set than the default parameters provide, e.g., adding white space at the top, moving the ECGs around, adding noise and other artifacts, changing font sizes and types, etc., to better capture the realism and diversity of ECG images.
 
