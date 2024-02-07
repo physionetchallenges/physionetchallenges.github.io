@@ -4,7 +4,7 @@ layout: default
 
 # Frequently Asked Questions (FAQ) - General
 
-This page provides general FAQs for the Challenges. Please see the [current Challenge FAQs](../2021/faq/) for more specific information about the current Challenge.
+This page provides general FAQs for the Challenges. Please see the [current Challenge FAQs](../2024/faq/) for more specific information about the current Challenge.
 
 [Challenge History](#history)
 

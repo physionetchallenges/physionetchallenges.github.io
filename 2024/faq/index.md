@@ -17,10 +17,12 @@ This page provides specific FAQs for the 2024 Challenge. Please read the [genera
 [Data](#data)
 
 - [Are the training data representative of the validation and test data?](#hold-out)
+- [Why are the training, validation, and test data drawn from slightly different populations?](#more-hold-out)
 - [Do I need to upload your training data? What about the code for evaluating my algorithm?](#upload-data)
 
 [Scoring](#scoring)
 
+- [What did you choose the Challenge metric? I think it is flawed or could be improved.](#metric)
 - [Are the scores currently on the leaderboard the final scores for the Challenge?](#leaderboard)
 - [How do I choose which my submission for evaluation on the test data?](#choose-model)
 
@@ -67,11 +69,19 @@ Yes, most certainly. We encourage you to do this. You do not need to include you
 
 Yes, to a degree, but the validation and test sets do not have all of the information included in the training data, specifically the labels!
 
+<a name="more-hold-out"></a>__Why are the training, validation, and test data drawn from slightly different populations?__
+
+This is deliberate - it reflects the real world. Your algorithms will be used on humans in the future, and they will look different to humans now. One major challenge is to create an algorithm that generalizes to new data. We check this by evaluating the algorithms on held-out data with somewhat different populations. You can also do this by sourcing more of your own data, or building in physiological and clinical knowledge.  
+
 <a name="upload-data"></a>__Do I need to upload your training data? What about the code for evaluating my algorithm?__
 
 No, we have the training, validation, and test data as well as the evaluation code.
 
 ## <a name="scoring"></a> Scoring
+
+<a name="metric"></a>__What did you choose the Challenge metric? I think it is flawed or could be improved.__
+
+The Challenge organizers are always looking for feedback from the teams/public, particularly during the first phase of the Challenge from January to April. After that period, we update the Challenge rules to address the public commentary. The metrics are never perfect, but we do try to create meaningful metrics that are relevant to healthcare, which is why we rarely use the usual information retrieval metrics. We often attempt to build in the clinical response, the medical resources available, and the relative (health and financial) costs of false vs. true positives and negatives. In general, the top 5-10 teams are often comparable. We believe the discussion that we generate around the problem, the heterogeneity of approaches, and the optimization of domain-aware metrics is more important than any single winner.
 
 <a name="leaderboard"></a>__Are the scores currently on the leaderboard the final scores for the Challenge?__
 
