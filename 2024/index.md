@@ -14,13 +14,13 @@ The George B. Moody PhysioNet Challenges are annual competitions that invite par
 
 - <a name="2024.01.25"></a>__January 25, 2024:__ The NIH-funded George B. Moody PhysioNet Challenge 2024 is [now open](https://groups.google.com/g/physionet-challenges/c/PBaLtvnwuRA)! Please read this website for details and share questions and comments on [Challenge forum](https://groups.google.com/g/physionet-challenges/). This year's Challenge is generously sponsored by [MathWorks](https://www.mathworks.com/) and [AWS](https://aws.amazon.com/).
 
-- <a name="2024.01.11"></a>__January 11, 2024:__ The NIH-funded George B Moody PhysioNet Challenge 2024 will open soon! Please stay tuned for more information.
+- <a name="2024.01.11"></a>__January 11, 2024:__ The NIH-funded George B. Moody PhysioNet Challenge 2024 will open soon! Please stay tuned for more information.
 
 ## <a name="introduction"></a> Introduction
 
 The electrocardiogram (ECG) is an essential pre-screening tool for cardiovascular diseases (CVDs). Non-invasive and painless, the ECG measures the electrical activity of the heart. In 1895, Willem Einthoven invented the first practical ECG device, culminating with the 1924 Nobel Prize in Physiology or Medicine. In 1927, General Electric introduced portable ECG devices, and by 1948, ECG devices could print ECG waveforms on paper. More recently, researchers have developed algorithmic approaches to interpreting ECG waveforms, and many companies have introduced digital ECG devices that record digital representations of the ECG waveforms. These and other developments have served to improve the accessibility of ECG-based diagnosis.  
 
-However, while digital ECG-based approaches have the potential to improve access to ECG-based diagnoses and cardiac care, physical (paper) ECG representations have been a mainstay of cardiac care for nearly a century, and they remain common in much of the world, particularly in the Global South. While an increasing proportion of the estimated 100 to 300 million ECGs that are recorded each year are now in digital format, there are likely billions of paper ECGs around the world, particularly in the Global South<sup>[1](#ref-tison),[2](#ref-handzel),[3](#ref-ecg-image-kit-paper)</sup>. This legacy contains the variability and evolution of CVDs across demographics, geography, and time. Moreover, walled-garden proprietary systems artificially inflate access barriers to processing data.  Therefore, the digitization of ECGs and access to low-cost analysis of the data is critical for capturing the diversity of representation of ECG data, and therefore the global accessibility of cardiac care.
+However, while digital ECG-based approaches have the potential to improve access to ECG-based diagnoses and cardiac care, physical (paper) ECG representations have been a mainstay of cardiac care for nearly a century, and they remain common in much of the world, particularly in the Global South. While an increasing proportion of the estimated 100 to 300 million ECGs that are recorded each year are now in digital format, there are likely billions of paper ECGs around the world, particularly in the Global South<sup>[1](#ref-tison),[2](#ref-handzel),[3](#ref-ecg-image-kit-paper)</sup>. This legacy contains the variability and evolution of CVDs across demographics, geography, and time. Moreover, walled-garden proprietary systems artificially inflate access barriers to processing data. Therefore, the digitization of ECGs and access to low-cost analysis of the data is critical for capturing the diversity of representation of ECG data, and therefore the global accessibility of cardiac care.
 
 The George B. Moody PhysioNet Challenge 2024 provides an opportunity to advance the field of ECG diagnosis by inviting teams to digitize and classify ECGs captured from images or paper printouts.
 
@@ -45,11 +45,13 @@ The below image is a real image that was generated from a photograph or a scan o
 
 Your code should learn from, and must be able to recover waveforms and/or classify, a diversity of ECG images. The above images are only a few examples of the diverse synthetic and real ECG images that we will use for the Challenge.
 
-For the initial training set, we use the waveforms and classes from the [PTB-XL](https://www.nature.com/articles/s41597-020-0495-6) [dataset](https://physionet.org/content/ptb-xl/) with the [provided synthetic ECG image generator](https://github.com/alphanumericslab/ecg-image-kit/tree/main/codes/ecg-image-generator) to create the initial training set for the Challenge. The teams can use this software to augment the training set with various artifacts. Note that the teams need to create a much wider variety of the training set than the default parameters provide, e.g., adding white space at the top, moving the ECGs around, adding noise and other artifacts, changing font sizes and types, etc., to better capture the realism and diversity of ECG images.
+For the initial training set, we are using the waveforms and classes from the [PTB-XL](https://www.nature.com/articles/s41597-020-0495-6) [dataset](https://physionet.org/content/ptb-xl/) with the [provided synthetic ECG image generator](https://github.com/alphanumericslab/ecg-image-kit/tree/main/codes/ecg-image-generator). The teams can use this software to augment the training set with various artifacts. Note that the teams need to create a much wider variety of the training set than the default parameters provide, e.g., adding white space at the top, moving the ECGs around, adding noise and other artifacts, changing font sizes and types, etc., to better capture the realism and diversity of ECG images.
 
-For the initial validation set, we use waveforms and classes from a separate database to create the initial validation set. The held-out validation and test sets will contain the same (or a subset of) classes as the public training set.
+For the initial validation set, we are using waveforms and classes from a separate database. The held-out validation set will contain the same (or a subset of the) classes as the public training set.
 
-The training, validation, and test sets will grow throughout the unofficial phase of the Challenge to include physical and synthetic ECG images.
+For the test set, we will use waveforms and classes from a separate database. The held-out test set will contain the same (or a subset of the) classes as the public training set.
+
+The training, validation, and test sets will grow throughout the unofficial phase of the Challenge to include physical and synthetic ECG images. The training set is public, but the validation and test sets are hidden. We will evaluate your models on the validation set during the unofficial and official phases of the Challenge, and we will score at most one model from each team on the test set after the official phase of the Challenge.
 
 ## Data Formatting
 
@@ -133,7 +135,7 @@ Patient information includes available demographic and class information. To pro
 
 ## Loading the Data
 
-Patient files are in [WFDB](https://wfdb.io/) format. These files can be opened in either MATLAB or Python. We provide example code for loading and processing the data.
+Patient files are in [WFDB](https://wfdb.io/) format. These files can be opened in either MATLAB or Python. We provide [example code](#algorithms) for loading and processing the data.
 
 ## <a name="accessing-data"></a> Accessing the Data
 
