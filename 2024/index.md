@@ -26,9 +26,13 @@ The George B. Moody PhysioNet Challenge 2024 provides an opportunity to advance 
 
 ## <a name="objective"></a> Objective
 
-The goal of the 2024 Challenge is to digitize and classify physical ECGs.
+For the 2024 Challenge, we ask participants to design and implement open-source algorithms that can reconstruct ECG waveforms and/or classify CVDs from physical ECGs. The Challenge is split into two separate events:
 
-We ask participants to design and implement open-source algorithms that can reconstruct ECG waveforms and/or classify CVDs from physical ECGs. The winners of the Challenge will be the teams whose algorithms achieve the best performance on the hidden test set.
+1. Turn images of 12-lead ECGs (scanned from paper) into waveforms (time series data) representing the same ECGs;
+
+2. Classify the ECGs (either from the image, or from the converted time series data).
+
+There are two separate prizes, and you may enter either part of the Challenge, or both. If you choose to complete both parts, then you may use the output from the first part of the Challenge in the second part, or not. The winners of each of the two parts of the Challenge will be the teams whose algorithms achieve the best performance on the hidden test set.
 
 ## <a name="data"></a> Data
 
