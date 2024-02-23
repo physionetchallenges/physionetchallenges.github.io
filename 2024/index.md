@@ -30,7 +30,7 @@ For the 2024 Challenge, we ask participants to design and implement open-source 
 
 1. Turn images of 12-lead ECGs (scanned from paper) into waveforms (time series data) representing the same ECGs;
 
-2. Classify the ECGs (either from the image, or from the converted time series data).
+2. Classify the ECGs (either from the image, or from the converted time series data) as normal or abnormal.
 
 There are two separate prizes, and you may enter either part of the Challenge, or both. If you choose to complete both parts, then you may use the output from the first part of the Challenge in the second part, or not. The winners of each of the two parts of the Challenge will be the teams whose algorithms achieve the best performance on the hidden test set.
 
@@ -49,11 +49,11 @@ The below image is a real image that was generated from a photograph or a scan o
 
 Your code should learn from, and must be able to recover waveforms and/or classify, a diversity of ECG images. The above images are only a few examples of the diverse synthetic and real ECG images that we will use for the Challenge.
 
-For the initial training set, we are using the waveforms and classes from the [PTB-XL](https://www.nature.com/articles/s41597-020-0495-6) [dataset](https://physionet.org/content/ptb-xl/) with the [provided synthetic ECG image generator](https://github.com/alphanumericslab/ecg-image-kit/tree/main/codes/ecg-image-generator). The teams can use this software to augment the training set with various artifacts. Note that the teams need to create a much wider variety of the training set than the default parameters provide, e.g., adding white space at the top, moving the ECGs around, adding noise and other artifacts, changing font sizes and types, etc., to better capture the realism and diversity of ECG images.
+For the initial training set, we are using the waveforms and classes from the [PTB-XL](https://www.nature.com/articles/s41597-020-0495-6) [dataset](https://physionet.org/content/ptb-xl/) with the [provided synthetic ECG image generator](https://github.com/alphanumericslab/ecg-image-kit/tree/main/codes/ecg-image-generator). For now, we are using normal and abnormal classes as defined by the PTB-XL datasetThe teams can use this software to augment the training set with various artifacts. Note that the teams need to create a much wider variety of the training set than the default parameters provide, e.g., adding white space at the top, moving the ECGs around, adding noise and other artifacts, changing font sizes and types, etc., to better capture the realism and diversity of ECG images.
 
-For the initial validation set, we are using waveforms and classes from a separate database. The held-out validation set will contain the same (or a subset of the) classes as the public training set.
+For the initial validation set, we are using waveforms and classes (normal and abnormal) from a separate database. The held-out validation set will contain the same (or a subset of the) classes as the public training set.
 
-For the test set, we will use waveforms and classes from a separate database. The held-out test set will contain the same (or a subset of the) classes as the public training set.
+For the test set, we will use waveforms and classes (normal and abnormal) from a separate database. The held-out test set will contain the same (or a subset of the) classes as the public training set.
 
 The training, validation, and test sets will grow throughout the unofficial phase of the Challenge to include physical and synthetic ECG images. The training set is public, but the validation and test sets are hidden. We will evaluate your models on the validation set during the unofficial and official phases of the Challenge, and we will score at most one model from each team on the test set after the official phase of the Challenge.
 
@@ -63,7 +63,7 @@ Each ECG recording will include a [WFDB header file](https://physionet.org/physi
 
 The WFDB header file describes the ECG recording, including the sampling frequency, signal length, signal resolution, and signal names of the channels in the ECG waveform; initial and checksum values for the channels; and classes and available demographic information. The public training set provides all of this information when available. The private validation and test sets contain the sampling frequency, signal resolution, and signal names; they do not provide the initial and checksum values or the classes or (sometimes) demographic information. Your algorithm should be robust to added and missing information (such as age, date, automated diagnosis, etc.) to reflect the real world. Our test data is designed to be complex enough to reflect this type of missingness.
 
-| | **Training** | **Validation** | **Test set** |
+| | **Training set** | **Validation set** | **Test set** |
 |-|-|-|-|
 | **WFDB header file** | Present (full) | Present (partial) | Present (partial) |
 | **WFDB signal file**  | Present | Absent | Absent |
@@ -86,7 +86,7 @@ For example, the [PTB-XL](https://www.nature.com/articles/s41597-020-0495-6) [da
 00001_lr.dat 16 1000.0(0)/mV 16 0 -79 832 0 V6
 ```
 
-The provided scripts expand the WFDB header file `00001_lr.hea` to include the provided demographic informatation and diagnostic superclasses and to create a synthetic ECG image file [`00001_lr-0.png`](00001_lr-0.png) for the record `00001_lr`. The classes in the `Dx` field are the superclasses for the PTB-XL dataset, and the images are synthetic ECG images:
+The provided scripts expand the WFDB header file `00001_lr.hea` to include the provided demographic and diagnostic information to create a synthetic ECG image file [`00001_lr-0.png`](00001_lr-0.png) for the record `00001_lr`. The classes in the `Dx` field indicate whether the recording was labeled as normal or abnormal, and the images are synthetic ECG images:
 
 ```
 00001_lr 12 100 1000 09:17:34 09/11/1984
@@ -106,7 +106,7 @@ The provided scripts expand the WFDB header file `00001_lr.hea` to include the p
 #Sex: Female
 #Height: Unknown
 #Weight: 63
-#Dx: NORM
+#Dx: Normal
 #Image: 00001_lr-0.png
 ```
 
@@ -163,7 +163,7 @@ Please see the [submission instructions](submissions) for detailed information a
 
 ## <a name="scoring"></a> Scoring
 
-For the unofficial phase of the Challenge, the evaluation metric for the waveform reconstruction task is the signal-noise ratio (SNR) of the reconstructed signal, and the evaluation metric for the classification task is the macro *F*-measure. Higher values of both evaluation metrics are better. The team with the highest SNR wins the waveform reconstruction task, and the team with the highest macro *F*-measure wins the classification tasks.
+For the unofficial phase of the Challenge, the evaluation metric for the waveform reconstruction task is the signal-noise ratio (SNR) of the reconstructed signal, and the evaluation metric for the classification task is the *F*-measure. Higher values of both evaluation metrics are better. The team with the highest SNR wins the waveform reconstruction task, and the team with the highest *F*-measure wins the classification tasks.
 
 These metrics are [implemented](https://github.com/physionetchallenges/evaluation-2024) in the `evaluate_model` script. We invite feedback about these metrics.
 
