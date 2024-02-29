@@ -24,7 +24,7 @@ Similarly to [last year's Challenge](../../2023/), teams must submit both the co
 3. Do not include extra files that are not required to create and run your prediction code, such as the training data.
 4. Follow the instructions for the programming language of your submission.
 5. Share your repository with the `physionetchallengeshelper` user.
-6. Submit your entry using this form (not yet available).
+6. Submit your entry using this [form](https://docs.google.com/forms/d/e/1FAIpQLScFZNXv5rc-KlBxZMBB5IX8jRWHR-hADuheOtRWs5x1XzZo4w/viewform?usp=sf_link).
 7. We will put the scores for successful entries on the validation set on the leaderboard.  The leaderboard will publicly show your team name and scores.
 
 ### <a name="matlab"></a>MATLAB-specific instructions
@@ -37,7 +37,7 @@ Similarly to [last year's Challenge](../../2023/), teams must submit both the co
 6. `team_testing_code.m`: Update this script to load and run your model weights and any parameters from files in your submission.
 7. Confirm that your code compiles and runs in MATLAB R2023b or R2024a (when available).
 8. Push or upload your code to the root/base directory of the master branch of your repository.
-9. We will download your code, compile it using the MATLAB compiler (`mcc -m train_model.m -a .` and `mcc -m run_model.m -a .`), and run it on our machines or Google Cloud.
+9. We will download your code, compile it using the MATLAB compiler (`mcc -m train_model.m -a .` and `mcc -m run_model.m -a .`), and run it on our machines or the cloud.
 
 ### <a name="python"></a>Python-specific instructions
 
@@ -51,7 +51,7 @@ Similarly to [last year's Challenge](../../2023/), teams must submit both the co
 8. `run_model.py`: Do not change this script. It calls your functions from the `team_code.py` script to load and run your trained models to run on the test data. We will not use the `run_model.py` script from your repository, so any change made to this code will not be included.
 9. You can develop your code without Docker, but confirm that you can build a Docker image from your Dockerfile and run your code in Docker.
 10. Push or upload your code to the root/base directory of the master branch of your repository.
-11. We will download your code, build a Docker image from your Dockerfile, and run it on on our machines or Google Cloud.
+11. We will download your code, build a Docker image from your Dockerfile, and run it on on our machines or the cloud.
 
 ### <a name="docker"></a> Docker-specific FAQs
 

@@ -12,6 +12,8 @@ The George B. Moody PhysioNet Challenges are annual competitions that invite par
 
 ## <a name="announcements"></a> Announcements
 
+- <a name="2024.02.29"></a>__February 29, 2024:__ We are [now accepting](https://groups.google.com/g/physionet-challenges/) unofficial phase submissions for the 2023 Challenge. Please read the [submissions instructions](submissions), double check your code, and [submit](https://docs.google.com/forms/d/e/1FAIpQLScFZNXv5rc-KlBxZMBB5IX8jRWHR-hADuheOtRWs5x1XzZo4w/viewform?usp=sf_link) your code when ready.
+
 - <a name="2024.01.25"></a>__January 25, 2024:__ The NIH-funded George B. Moody PhysioNet Challenge 2024 is [now open](https://groups.google.com/g/physionet-challenges/c/PBaLtvnwuRA)! Please read this website for details and share questions and comments on [Challenge forum](https://groups.google.com/g/physionet-challenges/). This year's Challenge is generously sponsored by [MathWorks](https://www.mathworks.com/) and [AWS](https://aws.amazon.com/).
 
 - <a name="2024.01.11"></a>__January 11, 2024:__ The NIH-funded George B. Moody PhysioNet Challenge 2024 will open soon! Please stay tuned for more information.
@@ -154,6 +156,8 @@ To participate in the Challenge, [register your team](https://forms.gle/baopm4U2
 For each ECG recording, your algorithm must reconstruct the ECG waveform from the image of the ECG waveform and/or provide the class or classes for the image. Teams can choose to complete either task or both tasks.
 
 We implemented example algorithms in [MATLAB](https://github.com/physionetchallenges/matlab-example-2024) and [Python](https://github.com/physionetchallenges/python-example-2024). Other implementation languages will be considered upon request. The code repositories contain details for the examples and other helpful scripts and functions. These examples were not designed to perform well but to provide minimal working examples of how to work with the data for the Challenge task.
+
+Given the computational complexity of generating and training on large numbers of synthetic ECG images, we are asking you to submit your complete code base, including your training code, along with a pre-trained model. We will run your training code on a small subset of the training set to check it for errors, but we will score your pre-trained model on the validation set. At the end of the Challenge, we will re-run your training code on the full training set and score the resulting model on the test set.
 
 ## Submitting your Algorithm
 
