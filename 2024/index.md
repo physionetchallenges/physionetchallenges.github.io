@@ -51,7 +51,14 @@ The below image is a real image that was generated from a photograph or a scan o
 
 Your code should learn from, and must be able to recover waveforms and/or classify, a diversity of ECG images. The above images are only a few examples of the diverse synthetic and real ECG images that we will use for the Challenge.
 
-For the initial training set, we are using the waveforms and classes from the [PTB-XL](https://www.nature.com/articles/s41597-020-0495-6) [dataset](https://physionet.org/content/ptb-xl/) with the [provided synthetic ECG image generator](https://github.com/alphanumericslab/ecg-image-kit/tree/main/codes/ecg-image-generator). For now, we are using normal and abnormal classes as defined by the PTB-XL datasetThe teams can use this software to augment the training set with various artifacts. Note that the teams need to create a much wider variety of the training set than the default parameters provide, e.g., adding white space at the top, moving the ECGs around, adding noise and other artifacts, changing font sizes and types, etc., to better capture the realism and diversity of ECG images.
+For the initial training set, we are using the waveforms and classes from the [PTB-XL](https://www.nature.com/articles/s41597-020-0495-6) [dataset](https://physionet.org/content/ptb-xl/), which has 21,799 12-lead ECG recordings. For now, we are using normal and abnormal classes as defined by the PTB-XL dataset. The teams may augment these data these additional datasets, including (but not restricted to) the following sources:
+
+- [The PhysioNet Challenge 2021 Datasets](https://physionet.org/content/challenge-2021/) (88,253 12-lead ECG recording from seven sources)
+- [The CODE-15% dataset](https://zenodo.org/records/4916206) (345,779 12-lead ECG recordings from one source)
+
+If you use additional data, then please cite them appropriately to clarify your method and provide attribution to the data contributors.
+
+The [ECG-Image-Kit synthetic ECG image generator](https://github.com/alphanumericslab/ecg-image-kit/tree/main/codes/ecg-image-generator) augments the training set with various artifacts. Note that the teams need to create a much wider variety of the training set than the default parameters provide, e.g., adding white space at the top, moving the ECGs around, adding noise and other artifacts, changing font sizes and types, etc., to better capture the realism and diversity of ECG images.
 
 For the initial validation set, we are using waveforms and classes (normal and abnormal) from a separate database. The held-out validation set will contain the same (or a subset of the) classes as the public training set.
 
@@ -165,6 +172,8 @@ Please use the above [example code](#algorithms) as templates for your submissio
 
 Please see the [submission instructions](submissions) for detailed information about how to submit a successful Challenge entry, double check your code (we cannot debug your code for you), and submit your algorithm after we begin accepting code submissions.  We will provide feedback on your entry as soon as possible, so please wait at least **72 hours** before contacting us about the status of your entry.
 
+Please note that you remain the [owners](#ip) of any code that you submit, and we encourage you to use an [open-source license](#open).
+
 ## <a name="scoring"></a> Scoring
 
 For the unofficial phase of the Challenge, the evaluation metric for the waveform reconstruction task is the signal-noise ratio (SNR) of the reconstructed signal, and the evaluation metric for the classification task is the *F*-measure. Higher values of both evaluation metrics are better. The team with the highest SNR wins the waveform reconstruction task, and the team with the highest *F*-measure wins the classification tasks.
@@ -252,9 +261,9 @@ Please make sure that you include __your team name__, your __official score__ as
 
 The Challenge Organizers have no ability to help with any problems with the abstract submission system. We do not operate it. Please do not email us with issues related to the abstract submission system.
 
-### <a name="open"></a> Open-Source Licenses
+### <a name="ip"></a><a name="open"></a> Intellectual Property and Open-Source Licenses
 
-We encourage the use of open-source licenses for your entries.
+Please note that you remain the owners of their code and retain the intellectual property (IP) of their code. We encourage the use of open-source licenses for your entries.
 
 Entries with non open-source licenses will be scored but not ranked in the official competition. All scores will be made public. At the end of the competition, all entries will be posted publicly, and therefore automatically mirrored on several sites around the world. We have no control over these sites, so we cannot remove your code even on request. Code which the organizers deem to be functional will be made publicly available after the end of the Challenge. You can request to withdraw from the Challenge, so that your entry's performance is no longer listed in the official leaderboard, up until a week before the end of the official phase. However, the Organizers reserve the right to publish any submitted open-source code after the official phase is over. The Organizers also retain the right to use a copy of submitted code for non-commercial use. This allows us to re-score if definitions change and validate any claims made by competitors.
 
