@@ -51,12 +51,13 @@ The below image is a real image that was generated from a photograph or a scan o
 
 Your code should learn from, and must be able to recover waveforms and/or classify, a diversity of ECG images. The above images are only a few examples of the diverse synthetic and real ECG images that we will use for the Challenge.
 
-For the initial training set, we are using the waveforms and classes from the [PTB-XL](https://www.nature.com/articles/s41597-020-0495-6) [dataset](https://physionet.org/content/ptb-xl/), which has 21,799 12-lead ECG recordings. For now, we are using normal and abnormal classes as defined by the PTB-XL dataset. The teams may augment these data these additional datasets, including (but not restricted to) the following sources:
+For the initial training set, we are using the waveforms and classes from the [PTB-XL](https://www.nature.com/articles/s41597-020-0495-6) [dataset](https://physionet.org/content/ptb-xl/) [5](#ref-ptb-xl), which has 21,799 12-lead ECG recordings. For now, we are using normal and abnormal classes as defined by the PTB-XL dataset. The teams may augment these data these additional datasets, including (but not restricted to) the following sources:
 
-- [The PhysioNet Challenge 2021 Datasets](https://physionet.org/content/challenge-2021/) (88,253 12-lead ECG recording from seven sources)
-- [The CODE-15% dataset](https://zenodo.org/records/4916206) (345,779 12-lead ECG recordings from one source)
+- [PTB-XL Dataset](https://physionet.org/content/ptb-xl/) [5](#ref-ptb-xl): 21,799 12-lead ECG recordings
+- [The PhysioNet Challenge 2021 Datasets](https://physionet.org/content/challenge-2021/) [6](#ref-pnc2021): 88,253 12-lead ECG recordings
+- [The CODE-15% dataset](https://zenodo.org/records/4916206) [7](#ref-code15): 345,779 12-lead ECG recordings
 
-If you use additional data, then please cite them appropriately to clarify your method and provide attribution to the data contributors.
+If you use these or other data, then please cite them appropriately to clarify your method and provide attribution to the data contributors.
 
 The [ECG-Image-Kit synthetic ECG image generator](https://github.com/alphanumericslab/ecg-image-kit/tree/main/codes/ecg-image-generator) augments the training set with various artifacts. Note that the teams need to create a much wider variety of the training set than the default parameters provide, e.g., adding white space at the top, moving the ECGs around, adding noise and other artifacts, changing font sizes and types, etc., to better capture the realism and diversity of ECG images.
 
@@ -316,13 +317,20 @@ Supported by the [National Institute of Biomedical Imaging and Bioengineering](h
 
 ## References
 
-1. <a name="ref-tison"></a>  Geoffrey H. Tison, Jeffrey Zhang, Francesca N. Delling and Rahul C. Deo. Automated and Interpretable Patient ECG Profiles for Disease Detection, Tracking, and Discovery Circulation: Cardiovascular Quality and Outcomes. 2019;12:e005289, Originally published 5 Sep 2019 https://doi.org/10.1161/CIRCOUTCOMES.118.005289 
+1. <a name="ref-tison"></a>  Geoffrey H. Tison, Jeffrey Zhang, Francesca N. Delling and Rahul C. Deo. Automated and Interpretable Patient ECG Profiles for Disease Detection, Tracking, and Discovery Circulation: Cardiovascular Quality and Outcomes. 2019;12:e005289, Originally published 5 Sep 2019. Online at: https://doi.org/10.1161/CIRCOUTCOMES.118.005289 
 
-2. <a name="ref-handzel"></a> Sarah Handzel, Retrospective Analysis of ECG Data Supports Cardiologists' Clinical Judgment, GE HealthCare Feb 09, 2023. Online at: https://www.gehealthcare.com/insights/article/retrospective-analysis-of-ecg-data-supports-cardiologists'-clinical-judgment 
+2. <a name="ref-handzel"></a> Sarah Handzel, Retrospective Analysis of ECG Data Supports Cardiologists' Clinical Judgment, GE HealthCare. 9 Feb 2023. Online at: https://www.gehealthcare.com/insights/article/retrospective-analysis-of-ecg-data-supports-cardiologists'-clinical-judgment 
 
 3. <a name="ref-ecg-image-kit-paper"></a> Kshama Kodthalu Shivashankara, Afagh Mehri Shervedani, Matthew A. Reyna, Gari D. Clifford, Reza Sameni (2023). A Synthetic Electrocardiogram (ECG) Image Generation Toolbox to Facilitate Deep Learning-Based Scanned ECG Digitization. arXiv. Online at: https://doi.org/10.48550/ARXIV.2307.01946
 
 4. <a name="ref-ecg-image-kit"></a> ECG-Image-Kit: A Toolkit for Synthesis, Analysis, and Digitization of Electrocardiogram Images, January 2024, Online at: https://github.com/alphanumericslab/ecg-image-kit
+
+5. <a name="ref-ptb-xl"></a> Patrick Wagner, Nils Strodthoff, Ralf-Dieter Bousseljot, Dieter Kreiseler, Fatima I. Lunze, Wojciech Samek and Tobias Schaeffter. PTB-XL: A Large Publicly Available ECG Dataset. Sci Data 7, 154 (2020). Online at: https://doi.org/10.1038/s41597-020-0495-6
+
+6. <a name="ref-pnc-2021"></a> Matthew A. Reyna, Nadi Sadr, Erick A.P. Alday, Annie Gu, Amit J. Shah, Chad Robichaux, Ali Bahrami Rad, Andoni Elola, Salman Seyedi, Sardar Ansari, Hamad Ghanbari, Qiao Li, Ashish Sharma, Gari D. Clifford. Issues in the automated classification of multilead ECGs using heterogeneous labels and populations. Physiol. Meas. 43, 8 (2021), 084001. Online at: https://doi.org/10.1088/1361-6579/ac79fd
+
+7. <a name="ref-code15"></a> Antônio H. Ribeiro, Gabriela Paixao, Emilly Lima, Manoel Horta Ribeiro, Marcelo Pinto Filho, Paulo Gomes,  
+Derick Oliveira Wagner Meira Jr, Thömas Schon, Antonio Luiz Ribeiro. CODE-15%: a large scale annotated dataset of 12-lead ECGs. Zenodo (2021). Online at https://doi.org/10.5281/zenodo.4916206
 
 ---
 
