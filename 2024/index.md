@@ -264,7 +264,7 @@ The Challenge Organizers have no ability to help with any problems with the abst
 
 ### <a name="ip"></a><a name="open"></a> Intellectual Property and Open-Source Licenses
 
-Please note that you remain the owners of their code and retain the intellectual property (IP) of their code. We encourage the use of open-source licenses for your entries.
+Please note that each team remains the owners of their code and retain the intellectual property (IP) of their code. We encourage the use of open-source licenses for your entries.
 
 Entries with non open-source licenses will be scored but not ranked in the official competition. All scores will be made public. At the end of the competition, all entries will be posted publicly, and therefore automatically mirrored on several sites around the world. We have no control over these sites, so we cannot remove your code even on request. Code which the organizers deem to be functional will be made publicly available after the end of the Challenge. You can request to withdraw from the Challenge, so that your entry's performance is no longer listed in the official leaderboard, up until a week before the end of the official phase. However, the Organizers reserve the right to publish any submitted open-source code after the official phase is over. The Organizers also retain the right to use a copy of submitted code for non-commercial use. This allows us to re-score if definitions change and validate any claims made by competitors.
 
