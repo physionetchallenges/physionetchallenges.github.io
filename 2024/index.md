@@ -41,10 +41,10 @@ There are two separate prizes, and you may enter either part of the Challenge, o
 The Challenge data are from various sources, including public and private databases of ECG waveforms, ECG images, and/or ECG-based diagnoses or classes. The below images are examples of ECG image.
 
 The below image is a synthetic image that was generated from an ECG waveform. This image does not include distortions, creases, shadows, blurred or faded ink, or other artifacts that obscure the ECG waveforms in paper ECGs:
-![Example of an ECG image.](00001_lr-0.png)
+![Example of an ECG image.](https://github.com/alphanumericslab/ecg-image-kit/blob/f50c8d1e916fbaf973bd677c1a297d67d1c3173d/codes/ecg-image-generator/SampleData/PTB_XL_op/00001_lr-0.png?raw=True)
 
-The below image is also a synthetic image that was generated from the same ECG waveform, but it includes various distortions that resemble the artifacts in paper ECGs:
-![Example of an ECG image.](00001_lr-0_artifacts.jpg)
+The below image is also a synthetic image that was generated from another ECG waveform, but it includes various distortions that resemble the artifacts in paper ECGs:
+![Example of an ECG image.](https://github.com/alphanumericslab/ecg-image-kit/blob/f50c8d1e916fbaf973bd677c1a297d67d1c3173d/codes/ecg-image-generator/SampleData/DistortionData/Wrinkles_Creases/00009_lr-0.png?raw=True)
 
 The below image is a real image that was generated from a photograph or a scan of a paper ECG and includes various artifacts as well as redacted information:
 ![Example of an ECG image.](https://github.com/alphanumericslab/ecg-image-kit/blob/1ab758b0d1d4e2497bd9ba40a158aa2029265b4f/sample-data/ecg-images/ecg00051.png?raw=True)
@@ -96,7 +96,7 @@ For example, the [PTB-XL](https://www.nature.com/articles/s41597-020-0495-6) [da
 00001_lr.dat 16 1000.0(0)/mV 16 0 -79 832 0 V6
 ```
 
-The provided scripts expand the WFDB header file `00001_lr.hea` to include the provided demographic and diagnostic information to create a synthetic ECG image file [`00001_lr-0.png`](00001_lr-0.png) for the record `00001_lr`. The classes in the `Dx` field indicate whether the recording was labeled as normal or abnormal, and the images are synthetic ECG images:
+The provided scripts expand the WFDB header file `00001_lr.hea` to include the provided demographic and diagnostic information to create a synthetic ECG image file [`00001_lr-0.png`](https://github.com/alphanumericslab/ecg-image-kit/blob/f50c8d1e916fbaf973bd677c1a297d67d1c3173d/codes/ecg-image-generator/SampleData/PTB_XL_op/00001_lr-0.png?raw=True) for the record `00001_lr`. The classes in the `Dx` field indicate whether the recording was labeled as normal or abnormal, and the images are synthetic ECG images:
 
 ```
 00001_lr 12 100 1000 09:17:34 09/11/1984
@@ -120,7 +120,7 @@ The provided scripts expand the WFDB header file `00001_lr.hea` to include the p
 #Image: 00001_lr-0.png
 ```
 
-![The image `00001_lr-0.png` for the record `00001_lr`.](00001_lr-0.png)
+![The image `00001_lr-0.png` for the record `00001_lr`.](https://github.com/alphanumericslab/ecg-image-kit/blob/f50c8d1e916fbaf973bd677c1a297d67d1c3173d/codes/ecg-image-generator/SampleData/PTB_XL_op/00001_lr-0.png?raw=True)
 
 In the training set, these files will be available to your code. In the validation and test sets, the WFDB header file would be abbreviated to remove most information about the waveform, demographics, and classes, and the WFDB signal file would be removed to remove the waveform, but the image file would still be available:
 
