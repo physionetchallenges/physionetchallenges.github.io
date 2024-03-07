@@ -51,11 +51,11 @@ The below image is a real image that was generated from a photograph or a scan o
 
 Your code should learn from, and must be able to recover waveforms and/or classify, a diversity of ECG images. The above images are only a few examples of the diverse synthetic and real ECG images that we will use for the Challenge.
 
-For the initial training set, we are using the waveforms and classes from the [PTB-XL](https://www.nature.com/articles/s41597-020-0495-6) [dataset](https://physionet.org/content/ptb-xl/) [5](#ref-ptb-xl), which has 21,799 12-lead ECG recordings. For now, we are using normal and abnormal classes as defined by the PTB-XL dataset. The teams may augment these data these additional datasets, including (but not restricted to) the following sources:
+For the initial training set, we are using the waveforms and classes from the [PTB-XL](https://www.nature.com/articles/s41597-020-0495-6) [dataset](https://physionet.org/content/ptb-xl/)<sup>[5](#ref-ptb-xl)</sup>, which has 21,799 12-lead ECG recordings. For now, we are using normal and abnormal classes as defined by the PTB-XL dataset. The teams may augment these data these additional datasets, including (but not restricted to) the following sources:
 
-- [PTB-XL Dataset](https://physionet.org/content/ptb-xl/) [5](#ref-ptb-xl): 21,799 12-lead ECG recordings
-- [The PhysioNet Challenge 2021 Datasets](https://physionet.org/content/challenge-2021/) [6](#ref-pnc2021): 88,253 12-lead ECG recordings
-- [The CODE-15% dataset](https://zenodo.org/records/4916206) [7](#ref-code15): 345,779 12-lead ECG recordings
+- [PTB-XL Dataset](https://physionet.org/content/ptb-xl/)<sup>[5](#ref-ptb-xl)</sup>: 21,799 12-lead ECG recordings
+- [The PhysioNet Challenge 2021 Datasets](https://physionet.org/content/challenge-2021/)<sup>[6](#ref-pnc2021)</sup>: 88,253 12-lead ECG recordings
+- [The CODE-15% dataset](https://zenodo.org/records/4916206)<sup>[7](#ref-code15)</sup>: 345,779 12-lead ECG recordings
 
 If you use these or other data, then please cite them appropriately to clarify your method and provide attribution to the data contributors.
 
