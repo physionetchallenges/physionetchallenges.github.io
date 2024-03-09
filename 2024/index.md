@@ -299,9 +299,13 @@ Again, this is a simplified process, and we may change how we stress test your c
 
 All of this work is in service of protecting your scientific contributions over the course of the Challenge, and we appreciate, as always, your feedback and help.
 
-## Conference Attendance
+## <a name="conference"></a>Conference Attendance
 
 [CinC 2024](https://cinc2024.org/) will take place from 8-11 September 2024 in Karlsruhe, Germany. You must attend the whole conference to be eligible for prizes. If you send someone in your place who is not a team member or co-author, then you will be disqualified and your abstract will be removed from the proceedings. In particular, it is vital that the presenter (oral or poster) can defend your work and have in-depth knowledge of all decisions made during the development of your algorithm. Due to this year's challenges, both in-person and remote attendance are allowed, but only in-person attendees are eligible for prize money. If you require a visa to attend the conference, we strongly suggest that you apply as soon as possible. Please contact the local [conference](https://cinc2024.org/) organizing committee (not the Challenge Organizers) for any visa sponsorship letters and answer any questions concerning the conference.
+
+To increase engagement from African researchers, the [IEEE Signal Processing Society's Challenges and Data Collections Committee](https://signalprocessingsociety.org/publications-resources/data-challenges/digitization-and-classification-ecg-images-george-b-moody) is supporting this year's Challenge with additional cash prizes for participating teams from Africa. In addition, the organizers will be hosting a workshop on the topic at the annual [Data Science Africa](https://www.datascienceafrica.org/dsa2024nyeri/blog/summer-school) meeting in June, in Kenya. Please note that you do not need to attend the DSA meeting in June to enter the Challenge, and you do not need to travel to the final prize ceremony to be eligible for an award (if your team is based in Africa).
+
+Please join us in shaping the future of cardiovascular health!
 
 ## <a name="sponsors"></a> Sponsors
 
@@ -334,7 +338,7 @@ Derick Oliveira Wagner Meira Jr, Thömas Schon, Antonio Luiz Ribeiro. CODE-15%: 
 
 ---
 
-This year's Challenge is generously sponsored by [MathWorks](https://www.mathworks.com/) and [AWS](https://aws.amazon.com/).
+This year's Challenge is generously sponsored by [MathWorks](https://www.mathworks.com/), [AWS](https://aws.amazon.com/), and [IEEE](https://signalprocessingsociety.org/publications-resources/data-challenges/digitization-and-classification-ecg-images-george-b-moody).
 
 {: style="text-align:center"}
 ![MathWorks](logo_mathworks.png){:height="40px"}&nbsp;&nbsp;&nbsp;
