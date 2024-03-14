@@ -323,27 +323,26 @@ Supported by the [National Institute of Biomedical Imaging and Bioengineering](h
 
 ## References
 
-1. <a name="ref-tison"></a>  Geoffrey H. Tison, Jeffrey Zhang, Francesca N. Delling and Rahul C. Deo. Automated and Interpretable Patient ECG Profiles for Disease Detection, Tracking, and Discovery Circulation: Cardiovascular Quality and Outcomes. 2019;12:e005289, Originally published 5 Sep 2019. Online at: https://doi.org/10.1161/CIRCOUTCOMES.118.005289 
+1. <a name="ref-tison"></a>  Geoffrey H. Tison, Jeffrey Zhang, Francesca N. Delling and Rahul C. Deo. Automated and Interpretable Patient ECG Profiles for Disease Detection, Tracking, and Discovery Circulation: Cardiovascular Quality and Outcomes. 2019;12:e005289, Originally published 5 Sep 2019. Online at: [https://doi.org/10.1161/CIRCOUTCOMES.118.005289](https://doi.org/10.1161/CIRCOUTCOMES.118.005289)
 
-2. <a name="ref-handzel"></a> Sarah Handzel, Retrospective Analysis of ECG Data Supports Cardiologists' Clinical Judgment, GE HealthCare. 9 Feb 2023. Online at: https://www.gehealthcare.com/insights/article/retrospective-analysis-of-ecg-data-supports-cardiologists'-clinical-judgment 
+2. <a name="ref-handzel"></a> Sarah Handzel, Retrospective Analysis of ECG Data Supports Cardiologists' Clinical Judgment, GE HealthCare. 9 Feb 2023. Online at: [https://www.gehealthcare.com/insights/article/retrospective-analysis-of-ecg-data-supports-cardiologists'-clinical-judgment](https://www.gehealthcare.com/insights/article/retrospective-analysis-of-ecg-data-supports-cardiologists'-clinical-judgment)
 
-3. <a name="ref-ecg-image-kit-paper"></a> Kshama Kodthalu Shivashankara, Afagh Mehri Shervedani, Matthew A. Reyna, Gari D. Clifford, Reza Sameni (2023). A Synthetic Electrocardiogram (ECG) Image Generation Toolbox to Facilitate Deep Learning-Based Scanned ECG Digitization. arXiv. Online at: https://doi.org/10.48550/ARXIV.2307.01946
+3. <a name="ref-ecg-image-kit-paper"></a> Kshama Kodthalu Shivashankara, Afagh Mehri Shervedani, Matthew A. Reyna, Gari D. Clifford, Reza Sameni (2023). A Synthetic Electrocardiogram (ECG) Image Generation Toolbox to Facilitate Deep Learning-Based Scanned ECG Digitization. arXiv. Online at: [https://doi.org/10.48550/ARXIV.2307.01946](https://doi.org/10.48550/ARXIV.2307.01946)
 
-4. <a name="ref-ecg-image-kit"></a> ECG-Image-Kit: A Toolkit for Synthesis, Analysis, and Digitization of Electrocardiogram Images, January 2024, Online at: https://github.com/alphanumericslab/ecg-image-kit
+4. <a name="ref-ecg-image-kit"></a> ECG-Image-Kit: A Toolkit for Synthesis, Analysis, and Digitization of Electrocardiogram Images, January 2024, Online at: [https://github.com/alphanumericslab/ecg-image-kit](https://github.com/alphanumericslab/ecg-image-kit)
 
-5. <a name="ref-ptb-xl"></a> Patrick Wagner, Nils Strodthoff, Ralf-Dieter Bousseljot, Dieter Kreiseler, Fatima I. Lunze, Wojciech Samek and Tobias Schaeffter. PTB-XL: A Large Publicly Available ECG Dataset. Sci Data 7, 154 (2020). Online at: https://doi.org/10.1038/s41597-020-0495-6
+5. <a name="ref-ptb-xl"></a> Patrick Wagner, Nils Strodthoff, Ralf-Dieter Bousseljot, Dieter Kreiseler, Fatima I. Lunze, Wojciech Samek and Tobias Schaeffter. PTB-XL: A Large Publicly Available ECG Dataset. Sci Data 7, 154 (2020). Online at: [https://doi.org/10.1038/s41597-020-0495-6](https://doi.org/10.1038/s41597-020-0495-6)
 
-6. <a name="ref-pnc-2021"></a> Matthew A. Reyna, Nadi Sadr, Erick A.P. Alday, Annie Gu, Amit J. Shah, Chad Robichaux, Ali Bahrami Rad, Andoni Elola, Salman Seyedi, Sardar Ansari, Hamad Ghanbari, Qiao Li, Ashish Sharma, Gari D. Clifford. Issues in the automated classification of multilead ECGs using heterogeneous labels and populations. Physiol. Meas. 43, 8 (2021), 084001. Online at: https://doi.org/10.1088/1361-6579/ac79fd
+6. <a name="ref-pnc-2021"></a> Matthew A. Reyna, Nadi Sadr, Erick A.P. Alday, Annie Gu, Amit J. Shah, Chad Robichaux, Ali Bahrami Rad, Andoni Elola, Salman Seyedi, Sardar Ansari, Hamad Ghanbari, Qiao Li, Ashish Sharma, Gari D. Clifford. Issues in the automated classification of multilead ECGs using heterogeneous labels and populations. Physiol. Meas. 43, 8 (2021), 084001. Online at: [https://doi.org/10.1088/1361-6579/ac79fd](https://doi.org/10.1088/1361-6579/ac79fd)
 
 7. <a name="ref-code15"></a> Antônio H. Ribeiro, Gabriela Paixao, Emilly Lima, Manoel Horta Ribeiro, Marcelo Pinto Filho, Paulo Gomes,  
-Derick Oliveira Wagner Meira Jr, Thömas Schon, Antonio Luiz Ribeiro. CODE-15%: a large scale annotated dataset of 12-lead ECGs. Zenodo (2021). Online at https://doi.org/10.5281/zenodo.4916206
+Derick Oliveira Wagner Meira Jr, Thömas Schon, Antonio Luiz Ribeiro. CODE-15%: a large scale annotated dataset of 12-lead ECGs. Zenodo (2021). Online at: [https://doi.org/10.5281/zenodo.4916206](https://doi.org/10.5281/zenodo.4916206)
 
 ---
 
 This year's Challenge is generously sponsored by [MathWorks](https://www.mathworks.com/), [AWS](https://aws.amazon.com/), and the [IEEE SPS](https://signalprocessingsociety.org/publications-resources/data-challenges/digitization-and-classification-ecg-images-george-b-moody).
 
 {: style="text-align:center"}
-![MathWorks](logo_mathworks.png){:height="40px"}&nbsp;&nbsp;&nbsp;
-![Moore Foundation](https://d0.awsstatic.com/logos/powered-by-aws.png){:height="40px"}
-&nbsp;&nbsp;&nbsp;
+![MathWorks](logo_mathworks.png){:height="35px"}&nbsp;&nbsp;&nbsp;
+![Moore Foundation](https://d0.awsstatic.com/logos/powered-by-aws.png){:height="40px"}&nbsp;&nbsp;&nbsp;
 ![IEEE SPS](https://signalprocessingsociety.org/sites/default/files/uploads/images/logos/New_SPS_Logos/Color/RGB/SPS_Logo_Color_RGB.png){:height="50px"}
