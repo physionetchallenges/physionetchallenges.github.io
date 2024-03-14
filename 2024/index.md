@@ -340,10 +340,10 @@ Derick Oliveira Wagner Meira Jr, Thömas Schon, Antonio Luiz Ribeiro. CODE-15%: 
 
 ---
 
-This year's Challenge is generously sponsored by [MathWorks](https://www.mathworks.com/), [AWS](https://aws.amazon.com/), and [IEEE SPS](https://signalprocessingsociety.org/publications-resources/data-challenges/digitization-and-classification-ecg-images-george-b-moody).
+This year's Challenge is generously sponsored by [MathWorks](https://www.mathworks.com/), [AWS](https://aws.amazon.com/), and the [IEEE SPS](https://signalprocessingsociety.org/publications-resources/data-challenges/digitization-and-classification-ecg-images-george-b-moody).
 
 {: style="text-align:center"}
 ![MathWorks](logo_mathworks.png){:height="40px"}&nbsp;&nbsp;&nbsp;
 ![Moore Foundation](https://d0.awsstatic.com/logos/powered-by-aws.png){:height="40px"}
 &nbsp;&nbsp;&nbsp;
-![IEEE SPS](https://signalprocessingsociety.org/sites/default/files/uploads/images/logos/New_SPS_Logos/Color/RGB/SPS_Logo_Color_RGB.png){:height="40px"}
+![IEEE SPS](https://signalprocessingsociety.org/sites/default/files/uploads/images/logos/New_SPS_Logos/Color/RGB/SPS_Logo_Color_RGB.png){:height="50px"}
