@@ -201,8 +201,8 @@ For these reasons, we strongly suggest that you start submitting entries at leas
 
 |                                            | Start              | End                               | Submissions                          |
 |--------------------------------------------|--------------------|-----------------------------------|--------------------------------------|
-| Unofficial phase                           | 25 January 2024   | 8 April 2024                     | 1-5 scored entries ([\*](#1ast))     |
-| Hiatus                                     | 9 April 2024      | 29 April 2024                       | N/A                                  |
+| Unofficial phase                           | 25 January 2024   | 10 April 2024                     | 1-5 scored entries ([\*](#1ast))     |
+| Hiatus                                     | 11 April 2024      | 29 April 2024                       | N/A                                  |
 | Abstract deadline                          | 15 April 2024         | 15 April 2024                        | 1 abstract                           |
 | Official phase                             | 30 April 2024        | 19 August 2024 ([\*\*](#1ast))  | 1-10 scored entries ([\*](#1ast))    |
 | Abstract decisions released                | Mid-June 2024     | Mid-June 2024                    | N/A                                  |
