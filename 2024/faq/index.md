@@ -28,13 +28,19 @@ This page provides specific FAQs for the 2024 Challenge. Please read the [genera
 
 [Computation](#computation)
 
-- [What computational resource do you provide for our code?](#resources)
+- [What computational resources do you provide for our code?](#resources)
+- [Will our entry have network access? What if we need to download something?](#network-access)
+- [Can I save something to the container's filesystem during training and access it during inference?](#persistent-filesystem)
+- [If my submission times out, can you restore the state of the container and continue from there?](#timeout-behavior)
+- [Is there write access to the data folder?](#write-to-data-folder)
+- [What are the requirements for the Docker container?](#docker-requirements)
 
 [Submissions](#submissions)
 
 - [Should I submit your example code to test the submission system?](#test-submission)
 - [Should I submit an empty repository to test the submission system?](#empty)
 - [I left out a file, missed the deadline, or something else. Can I email you my code?](#email-code) 
+- [Can I change the folder name for the pretrained model?](#model-folder-name)
 - [Do you run the code that was in my repository at the time of submission?](#repository)
 - [Why is my entry unsuccessful on your submission system? It works on my computer.](#unsuccessful-entry)
 - [My entry had some kind of error. Did I lose one of my total entries?](#error-lose-entry)
@@ -99,6 +105,37 @@ We are using a [`g4dn.4xlarge` instance](https://aws.amazon.com/ec2/instance-typ
 
 For training your model on the training data, we impose a 48 hour time limit for submissions that request a GPU and a 72 hour time limit for submissions that do not request a GPU. For running your trained model on the validation or test data, we impose a 24 hour time limit whether or not a submission requests a GPU.
 
+<a name="network-access"></a>__Will our entry have network access? What if we need to download something?__
+
+No, the execution environment has no network access. However, there is network access
+while we are building your Docker image. If you need to download something,
+you can put a download command in the Dockerfile.
+
+<a name="persistent-filesystem"></a>__Can I save something to the container's filesystem during training and access it during inference?__
+
+No, the filesystem is not persistent between stages. You can write to the container's filesystem
+temporarily, but those changes will be lost when we finish running the container.
+If you want to save something during training, it can go in the model folder that gets
+passed as an argument to the `train_model` script.
+
+<a name="timeout-behavior"></a>__If my submission times out, can you restore the state of the container and continue from there?__
+
+No, if we restart it we will have to run your code from the beginning.
+
+<a name="write-to-data-folder"></a>__Is there write access to the data folder?__
+
+No, data is always read-only. If you want to make changes to the data,
+you will have to make a copy and edit the copy.
+
+<a name="docker-requirements"></a>__What are the requirements for the Docker container?__
+
+Please make sure the Docker container meets these requirements:
+
+- The container should only have one user (root).
+- The main working directory (`WORKDIR`) should be `/challenge`.
+- All downloads (not including libraries and packages, but including
+  cached models) should go under the `/challenge` folder.
+
 ## <a name="submissions"></a> Submissions
 
 <a name="test-submission"></a>__Should I submit your example code to test the submission system?__
@@ -113,14 +150,18 @@ No, please only submit an entry after you have finished and tested your code.
 
 No, please use the submission form to submit your entry through a repository.
 
+<a name="model-folder-name"></a>__Can I change the folder name for the pretrained model?__
+
+No, please leave it as `model`. Our system will always look there for a model.
+
 <a name="repository"></a>__Do you run the code that was in my repository at the time of submission?__
 
-No, not yet. If you change your code after submitting, then we may or may not run the updated version of your code. If you want to update your code but do not want us to run the updates (yet), then please make changes in a subdirectory or in another branch of your repository.
+Yes, we pull the latest version of the code that was in the repository before the time of submission.
 
 <a name="unsuccessful-entry"></a>__Why is my entry unsuccessful on your submission system? It works on my computer.__
 
 If you used Python for your entry, then please test it in Docker. See the submissions page for details.
- 
+
 <a name="error-lose-entry"></a>__My entry had some kind of error. Did I lose one of my total entries?__
 
 No, only scored entries (submitted entries that receive a score) count against the total number of allowed entries.
