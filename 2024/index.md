@@ -12,7 +12,7 @@ The George B. Moody PhysioNet Challenges are annual competitions that invite par
 
 ## <a name="announcements"></a> Announcements
 
-- <a name="2024.03.14"></a>__March 15, 2024:__ We are delighted to announce that the [George B. Moody PhysioNet Challenges](#conference-attendance) are partnering with [Data Science Africa](https://www.datascienceafrica.org/) (DSA) and the [IEEE Signal Processing Society's Challenges and Data Collections Committee](https://signalprocessingsociety.org/publications-resources/challenges-and-data-collections) (CDCC). The [IEEE CDCC is supporting this year's Challenge](https://signalprocessingsociety.org/publications-resources/data-challenges/digitization-and-classification-ecg-images-george-b-moody) with additional cash prizes for participating teams from Africa, and the Challenge organizers will be running a [workshop at this year's annual DSA meeting in Kenya](https://www.datascienceafrica.org/dsa2024nyeri/blog/summer-school) at this year's annual DSA meeting in Kenya from June 2-5, 2024. Please note that we are also accepting (and scoring) entries, and there are two deadlines coming up: April 8, 2024 to submit a [preliminary entry to the Challenge](submissions) and April 15, 2024 to submit a (placeholder) [abstract to CinC](https://cinc.org/inf_authors/).
+- <a name="2024.03.14"></a>__March 15, 2024:__ We are delighted to announce that the [George B. Moody PhysioNet Challenges](#conference-attendance) are partnering with [Data Science Africa](https://www.datascienceafrica.org/) (DSA) and the [IEEE Signal Processing Society's Challenges and Data Collections Committee](https://signalprocessingsociety.org/publications-resources/challenges-and-data-collections) (CDCC). The [IEEE CDCC is supporting this year's Challenge](https://signalprocessingsociety.org/publications-resources/data-challenges/digitization-and-classification-ecg-images-george-b-moody) with additional cash prizes for participating teams from Africa, and the Challenge organizers will be running a [workshop at this year's annual DSA meeting in Kenya](https://www.datascienceafrica.org/dsa2024nyeri/blog/summer-school) at this year's annual DSA meeting in Kenya from June 2-5, 2024. Please note that we are also accepting (and scoring) entries, and there are two deadlines coming up: ~~April 8, 2024~~ April 10, 2024 to submit a [preliminary entry to the Challenge](submissions) and April 15, 2024 to submit a (placeholder) [abstract to CinC](https://cinc.org/inf_authors/).
 
 - <a name="2024.02.29"></a>__February 29, 2024:__ We are [now accepting](https://groups.google.com/g/physionet-challenges/c/hhTSHmAVjAY) unofficial phase submissions for the 2024 Challenge. Please read the [submissions instructions](submissions), double check your code, and [submit](https://docs.google.com/forms/d/e/1FAIpQLScFZNXv5rc-KlBxZMBB5IX8jRWHR-hADuheOtRWs5x1XzZo4w/viewform?usp=sf_link) your code when ready.
 
@@ -30,9 +30,9 @@ The George B. Moody PhysioNet Challenge 2024 provides an opportunity to advance 
 
 ## <a name="objective"></a> Objective
 
-For the 2024 Challenge, we ask participants to design and implement open-source algorithms that can reconstruct ECG waveforms and/or classify CVDs from physical ECGs. The Challenge is split into two separate events:
+For the 2024 Challenge, we ask participants to design and implement open-source algorithms that can digitize the ECG and/or classify physical ECGs. The Challenge is split into two separate events:
 
-1. Turn images of 12-lead ECGs (scanned from paper) into waveforms (time series data) representing the same ECGs;
+1. Digitize the ECGs, i.e., turn images of ECGs (scanned from paper) into waveforms (time-series data) representing the same ECGs;
 
 2. Classify the ECGs (either from the image, or from the converted time series data) as normal or abnormal.
 
@@ -143,7 +143,7 @@ In the training set, these files will be available to your code. In the validati
 #Image: 00001_lr-0.png
 ```
 
-The goal is to reconstruct the WFDB header and signal files by extracting the ECG waveform from the ECG image and/or classifying the ECG image.
+The goal is to digitize the ECG image, i.e., to extract the ECG waveform from the ECG image and reconstruct the WFDB header and signal files, and/or to classify the ECG image.
 
 ## Data Processing
 
@@ -163,7 +163,7 @@ To participate in the Challenge, [register your team](https://forms.gle/baopm4U2
 
 ## <a name="algorithms"></a> Algorithms
 
-For each ECG recording, your algorithm must reconstruct the ECG waveform from the image of the ECG waveform and/or provide the class or classes for the image. Teams can choose to complete either task or both tasks.
+For each ECG recording, your algorithm must digitize ECG image, i.e., reconstruct the ECG waveform from the ECG image, and/or to classify the ECG image. Teams can choose to complete either task or both tasks.
 
 We implemented example algorithms in [MATLAB](https://github.com/physionetchallenges/matlab-example-2024) and [Python](https://github.com/physionetchallenges/python-example-2024). Other implementation languages will be considered upon request. The code repositories contain details for the examples and other helpful scripts and functions. These examples were not designed to perform well but to provide minimal working examples of how to work with the data for the Challenge task.
 
@@ -179,7 +179,7 @@ Please note that you remain the [owners](#ip) of any code that you submit, and w
 
 ## <a name="scoring"></a> Scoring
 
-For the unofficial phase of the Challenge, the evaluation metric for the waveform reconstruction task is the signal-noise ratio (SNR) of the reconstructed signal, and the evaluation metric for the classification task is the *F*-measure. Higher values of both evaluation metrics are better. The team with the highest SNR wins the waveform reconstruction task, and the team with the highest *F*-measure wins the classification tasks.
+For the unofficial phase of the Challenge, the evaluation metric for the digitization task is the signal-noise ratio (SNR) of the reconstructed signal, and the evaluation metric for the classification task is the *F*-measure. Higher values of both evaluation metrics are better. The team with the highest SNR wins the digitization task, and the team with the highest *F*-measure wins the classification tasks.
 
 These metrics are [implemented](https://github.com/physionetchallenges/evaluation-2024) in the `evaluate_model` script. We invite feedback about these metrics.
 
@@ -204,7 +204,7 @@ For these reasons, we strongly suggest that you start submitting entries at leas
 | Unofficial phase                           | 25 January 2024   | 10 April 2024                     | 1-5 scored entries ([\*](#1ast))     |
 | Hiatus                                     | 11 April 2024      | 29 April 2024                       | N/A                                  |
 | Abstract deadline                          | 15 April 2024         | 15 April 2024                        | 1 abstract                           |
-| Official phase                             | 30 April 2024        | 19 August 2024 ([\*\*](#1ast))  | 1-10 scored entries ([\*](#1ast))    |
+| Official phase                             | 10 May 2024        | 19 August 2024 ([\*\*](#1ast))  | 1-10 scored entries ([\*](#1ast))    |
 | Abstract decisions released                | Mid-June 2024     | Mid-June 2024                    | N/A                                  |
 | Wild card entry date                       | 31 July 2024       | 31 July 2024                      | N/A                                  |
 | Hiatus                                     | 20 August 2024   | 7 September 2024                 | N/A                                  |
