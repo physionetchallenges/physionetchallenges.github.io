@@ -44,7 +44,6 @@ This page provides specific FAQs for the 2024 Challenge. Please read the [genera
 - [Do you run the code that was in my repository at the time of submission?](#repository)
 - [Why is my entry unsuccessful on your submission system? It works on my computer.](#unsuccessful-entry)
 - [My entry had some kind of error. Did I lose one of my total entries?](#error-lose-entry)
-- [I did not submit a successful entry during the unofficial phase. Can I submit entries during the official phase?](#missed-unofficial)
 
 ## <a name="rules"></a> Rules
 
@@ -166,9 +165,5 @@ If you used Python for your entry, then please test it in Docker. See the submis
 <a name="error-lose-entry"></a>__My entry had some kind of error. Did I lose one of my total entries?__
 
 No, only scored entries (submitted entries that receive a score) count against the total number of allowed entries.
-
-<a name="missed-unofficial"></a>__I did not submit a successful entry during the unofficial phase. Can I submit entries during the official phase?__
-
-We require teams to have a successful unofficial phase entry for eligibility for rankings and prizes at the end of the Challenge. We impose this requirement because our observations and your feedback during the unofficial phase help us to improve the Challenge for the official phase. However, we also know that some teams miss the unofficial phase for various reasons, and we still want them to be able to participate in the Challenge. Therefore, we reserve a small number of [wild card](../#wild-card) entries for teams that did not submit a successful entry during the unofficial phase and/or did not have an accepted abstract to CinC. We encourage teams these teams to participate in the official phase, and we will invite a small number of teams with [wild card](../#wild-card) entries to be eligible for rankings and prizes.
 
 __For more general Challenge FAQs, please visit [here](../../faq/).__

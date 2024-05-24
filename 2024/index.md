@@ -12,9 +12,11 @@ The George B. Moody PhysioNet Challenges are annual competitions that invite par
 
 ## <a name="announcements"></a> Announcements
 
+- <a name="2024.05.24"></a>__May 24, 2024:__ The official phase of the [George B. Moody PhysioNet Challenge 2024](/2024/) has begun! We have made many updates to make the Challenge more accessible and more realistic. Please see our announcement on the [Challenge forum](https://groups.google.com/g/physionet-challenges/) for more details and [submit](submissions) your entries in the coming days.
+
 - <a name="2024.03.14"></a>__March 15, 2024:__ We are delighted to announce that the [George B. Moody PhysioNet Challenges](#conference-attendance) are partnering with [Data Science Africa](https://www.datascienceafrica.org/) (DSA) and the [IEEE Signal Processing Society's Challenges and Data Collections Committee](https://signalprocessingsociety.org/publications-resources/challenges-and-data-collections) (CDCC). The [IEEE CDCC is supporting this year's Challenge](https://signalprocessingsociety.org/publications-resources/data-challenges/digitization-and-classification-ecg-images-george-b-moody) with additional cash prizes for participating teams from Africa, and the Challenge organizers will be running a [workshop at this year's annual DSA meeting in Kenya](https://www.datascienceafrica.org/dsa2024nyeri/blog/summer-school) at this year's annual DSA meeting in Kenya from June 2-5, 2024. Please note that we are also accepting (and scoring) entries, and there are two deadlines coming up: ~~April 8, 2024~~ April 10, 2024 to submit a [preliminary entry to the Challenge](submissions) and April 15, 2024 to submit a (placeholder) [abstract to CinC](https://cinc.org/inf_authors/).
 
-- <a name="2024.02.29"></a>__February 29, 2024:__ We are [now accepting](https://groups.google.com/g/physionet-challenges/c/hhTSHmAVjAY) unofficial phase submissions for the 2024 Challenge. Please read the [submissions instructions](submissions), double check your code, and [submit](https://docs.google.com/forms/d/e/1FAIpQLScFZNXv5rc-KlBxZMBB5IX8jRWHR-hADuheOtRWs5x1XzZo4w/viewform?usp=sf_link) your code when ready.
+- <a name="2024.02.29"></a>__February 29, 2024:__ We are [now accepting](https://groups.google.com/g/physionet-challenges/c/hhTSHmAVjAY) unofficial phase submissions for the 2024 Challenge. Please read the [submissions instructions](submissions), double check your code, and submit your code when ready.
 
 - <a name="2024.01.25"></a>__January 25, 2024:__ The NIH-funded George B. Moody PhysioNet Challenge 2024 is [now open](https://groups.google.com/g/physionet-challenges/c/PBaLtvnwuRA)! Please read this website for details and share questions and comments on [Challenge forum](https://groups.google.com/g/physionet-challenges/). This year's Challenge is generously sponsored by [MathWorks](https://www.mathworks.com/) and [AWS](https://aws.amazon.com/).
 
@@ -22,54 +24,39 @@ The George B. Moody PhysioNet Challenges are annual competitions that invite par
 
 ## <a name="introduction"></a> Introduction
 
-The electrocardiogram (ECG) is an essential pre-screening tool for cardiovascular diseases (CVDs). Non-invasive and painless, the ECG measures the electrical activity of the heart. In 1895, Willem Einthoven invented the first practical ECG device, culminating with the 1924 Nobel Prize in Physiology or Medicine. In 1927, General Electric introduced portable ECG devices, and by 1948, ECG devices could print ECG waveforms on paper. More recently, researchers have developed algorithmic approaches to interpreting ECG waveforms, and many companies have introduced digital ECG devices that record digital representations of the ECG waveforms. These and other developments have served to improve the accessibility of ECG-based diagnosis.  
+The electrocardiogram (ECG) is an essential pre-screening tool for cardiovascular diseases (CVDs). Non-invasive and painless, the ECG measures the electrical activity of the heart. In 1895, Willem Einthoven invented the first practical ECG device, culminating with the 1924 Nobel Prize in Physiology or Medicine. In 1927, General Electric introduced portable ECG devices, and by 1948, ECG devices could print ECG waveforms on paper. More recently, researchers have developed algorithmic approaches to interpreting ECG waveforms, and many companies have introduced digital ECG devices that record digital representations of the ECG waveforms. These and other developments have served to improve the accessibility of ECG-based diagnosis of CVDs.  
 
-However, while digital ECG-based approaches have the potential to improve access to ECG-based diagnoses and cardiac care, physical (paper) ECG representations have been a mainstay of cardiac care for nearly a century, and they remain common in much of the world, particularly in the Global South. While an increasing proportion of the estimated 100 to 300 million ECGs that are recorded each year are now in digital format, there are likely billions of paper ECGs around the world, particularly in the Global South<sup>[1](#ref-tison),[2](#ref-handzel),[3](#ref-ecg-image-kit-paper)</sup>. This legacy contains the variability and evolution of CVDs across demographics, geography, and time. Moreover, walled-garden proprietary systems artificially inflate access barriers to processing data. Therefore, the digitization of ECGs and access to low-cost analysis of the data is critical for capturing the diversity of representation of ECG data, and therefore the global accessibility of cardiac care.
+However, while digital ECG-based approaches have the potential to improve access to ECG-based diagnoses and cardiac care, physical or paper ECG representations have been a mainstay of cardiac care for nearly a century, and they remain common in much of the world, particularly in the Global South. While an increasing proportion of the estimated 100 to 300 million ECGs that are recorded each year are now in digital formats, there are likely billions of paper ECGs around the world, particularly in the Global South<sup>[1](#ref-tison),[2](#ref-handzel),[3](#ref-ecg-image-kit-paper)</sup>. This legacy contains the variability and evolution of CVDs across demographics, geography, and time. Moreover, walled-garden proprietary systems artificially inflate access barriers to processing data. Therefore, the digitization of ECGs and access to low-cost analyses of ECGs is critical for capturing the diversity of representations of ECG data, and therefore the global accessibility of cardiac care.
 
-The George B. Moody PhysioNet Challenge 2024 provides an opportunity to advance the field of ECG diagnosis by inviting teams to digitize and classify ECGs captured from images or paper printouts.
+The George B. Moody PhysioNet Challenge 2024 provides an opportunity to advance the field of ECG-based diagnosis by inviting teams to digitize and classify ECGs captured from images or paper printouts.
 
 ## <a name="objective"></a> Objective
 
-For the 2024 Challenge, we ask participants to design and implement open-source algorithms that can digitize the ECG and/or classify physical ECGs. The Challenge is split into two separate events:
+For the 2024 Challenge, we ask participants to design and implement open-source algorithms that can digitize the ECG and/or classify physical ECGs. The Challenge has two separate tasks:
 
 1. Digitize the ECGs, i.e., turn images of ECGs (scanned from paper) into waveforms (time-series data) representing the same ECGs;
+2. Classify the ECGs (either from the image, or from the converted time-series data that you extract from the image).
 
-2. Classify the ECGs (either from the image, or from the converted time series data) as normal or abnormal.
-
-There are two separate prizes, and you may enter either part of the Challenge, or both. If you choose to complete both parts, then you may use the output from the first part of the Challenge in the second part, or not. The winners of each of the two parts of the Challenge will be the teams whose algorithms achieve the best performance on the hidden test set.
+There are two separate prizes, and you may enter either part or both parts of the Challenge. The winners of each of the two parts of the Challenge will be the teams whose algorithms achieve the best performance on the hidden test set.
 
 ## <a name="data"></a> Data
 
 The Challenge data are from various sources, including public and private databases of ECG waveforms, ECG images, and/or ECG-based diagnoses or classes. The below images are examples of ECG image.
 
 The below image is a synthetic image that was generated from an ECG waveform. This image does not include distortions, creases, shadows, blurred or faded ink, or other artifacts that obscure the ECG waveforms in paper ECGs:
-![Example of an ECG image.](https://github.com/alphanumericslab/ecg-image-kit/blob/f50c8d1e916fbaf973bd677c1a297d67d1c3173d/codes/ecg-image-generator/SampleData/PTB_XL_op/00001_lr-0.png?raw=True)
+![Example of an ECG image.](https://github.com/alphanumericslab/ecg-image-kit/blob/f50c8d1e916fbaf973bd677c1a297d67d1c3173d/codes/ecg-image-generator/SampleData/PTB_XL_op/00001_hr-0.png?raw=True)
 
 The below image is also a synthetic image that was generated from another ECG waveform, but it includes various distortions that resemble the artifacts in paper ECGs:
-![Example of an ECG image.](https://github.com/alphanumericslab/ecg-image-kit/blob/f50c8d1e916fbaf973bd677c1a297d67d1c3173d/codes/ecg-image-generator/SampleData/DistortionData/Wrinkles_Creases/00009_lr-0.png?raw=True)
+![Example of an ECG image.](https://github.com/alphanumericslab/ecg-image-kit/blob/f50c8d1e916fbaf973bd677c1a297d67d1c3173d/codes/ecg-image-generator/SampleData/DistortionData/Wrinkles_Creases/00009_hr-0.png?raw=True)
 
 The below image is a real image that was generated from a photograph or a scan of a paper ECG and includes various artifacts as well as redacted information:
 ![Example of an ECG image.](https://github.com/alphanumericslab/ecg-image-kit/blob/1ab758b0d1d4e2497bd9ba40a158aa2029265b4f/sample-data/ecg-images/ecg00051.png?raw=True)
 
-Your code should learn from, and must be able to recover waveforms and/or classify, a diversity of ECG images. The above images are only a few examples of the diverse synthetic and real ECG images that we will use for the Challenge.
+Your code should learn from, and must be able to digitize and/or classify, a diversity of ECG images. The above images are only a few examples of the diverse synthetic and real ECG images that we may use for the Challenge.
 
-For the initial training set, we are using the waveforms and classes from the [PTB-XL](https://www.nature.com/articles/s41597-020-0495-6) [dataset](https://physionet.org/content/ptb-xl/)<sup>[5](#ref-ptb-xl)</sup>, which has 21,799 12-lead ECG recordings. For now, we are using normal and abnormal classes as defined by the PTB-XL dataset. The teams may augment these data these additional datasets, including (but not restricted to) the following sources:
+The goal is to digitize the ECG image, i.e., to extract the ECG waveform from the ECG image and reconstruct the WFDB header and signal files, and/or to classify the ECG image.
 
-- [PTB-XL Dataset](https://physionet.org/content/ptb-xl/)<sup>[5](#ref-ptb-xl)</sup>: 21,799 12-lead ECG recordings
-- [The PhysioNet Challenge 2021 Datasets](https://physionet.org/content/challenge-2021/)<sup>[6](#ref-pnc2021)</sup>: 88,253 12-lead ECG recordings
-- [The CODE-15% dataset](https://zenodo.org/records/4916206)<sup>[7](#ref-code15)</sup>: 345,779 12-lead ECG recordings
-
-If you use these or other data, then please cite them appropriately to clarify your method and provide attribution to the data contributors.
-
-The [ECG-Image-Kit synthetic ECG image generator](https://github.com/alphanumericslab/ecg-image-kit/tree/main/codes/ecg-image-generator) augments the training set with various artifacts. Note that the teams need to create a much wider variety of the training set than the default parameters provide, e.g., adding white space at the top, moving the ECGs around, adding noise and other artifacts, changing font sizes and types, etc., to better capture the realism and diversity of ECG images.
-
-For the initial validation set, we are using waveforms and classes (normal and abnormal) from a separate database. The held-out validation set will contain the same (or a subset of the) classes as the public training set.
-
-For the test set, we will use waveforms and classes (normal and abnormal) from a separate database. The held-out test set will contain the same (or a subset of the) classes as the public training set.
-
-The training, validation, and test sets will grow throughout the unofficial phase of the Challenge to include physical and synthetic ECG images. The training set is public, but the validation and test sets are hidden. We will evaluate your models on the validation set during the unofficial and official phases of the Challenge, and we will score at most one model from each team on the test set after the official phase of the Challenge.
-
-## Data Formatting
+### <a name="data-formats"></a> Data Formats
 
 Each ECG recording will include a [WFDB header file](https://physionet.org/physiotools/wag/header-5.htm), a [WFDB signal file](https://physionet.org/physiotools/wag/signal-5.htm), and/or one or more ECG image files.
 
@@ -81,81 +68,157 @@ The WFDB header file describes the ECG recording, including the sampling frequen
 | **WFDB signal file**  | Present | Absent | Absent |
 | **Image file**  | Present | Present | Present |
 
-For example, the [PTB-XL](https://www.nature.com/articles/s41597-020-0495-6) [dataset](https://physionet.org/content/ptb-xl/) includes the WFDB header file `00001_lr.hea` and the WFDB signal file `00001_hr.dat` for the record `00001_lr`:
+For example, the [PTB-XL](https://www.nature.com/articles/s41597-020-0495-6) [dataset](https://physionet.org/content/ptb-xl/) includes the WFDB header file `00001_hr.hea` and the WFDB signal file `00001_hr.dat` for the record `00001_hr`:
 ```
-00001_lr 12 100 1000
-00001_lr.dat 16 1000.0(0)/mV 16 0 -119 1508 0 I
-00001_lr.dat 16 1000.0(0)/mV 16 0 -55 723 0 II
-00001_lr.dat 16 1000.0(0)/mV 16 0 64 64758 0 III
-00001_lr.dat 16 1000.0(0)/mV 16 0 86 64423 0 AVR
-00001_lr.dat 16 1000.0(0)/mV 16 0 -91 1211 0 AVL
-00001_lr.dat 16 1000.0(0)/mV 16 0 4 7 0 AVF
-00001_lr.dat 16 1000.0(0)/mV 16 0 -69 63827 0 V1
-00001_lr.dat 16 1000.0(0)/mV 16 0 -31 6999 0 V2
-00001_lr.dat 16 1000.0(0)/mV 16 0 0 63759 0 V3
-00001_lr.dat 16 1000.0(0)/mV 16 0 -26 61447 0 V4
-00001_lr.dat 16 1000.0(0)/mV 16 0 -39 64979 0 V5
-00001_lr.dat 16 1000.0(0)/mV 16 0 -79 832 0 V6
-```
-
-The provided scripts expand the WFDB header file `00001_lr.hea` to include the provided demographic and diagnostic information to create a synthetic ECG image file [`00001_lr-0.png`](https://github.com/alphanumericslab/ecg-image-kit/blob/f50c8d1e916fbaf973bd677c1a297d67d1c3173d/codes/ecg-image-generator/SampleData/PTB_XL_op/00001_lr-0.png?raw=True) for the record `00001_lr`. The classes in the `Dx` field indicate whether the recording was labeled as normal or abnormal, and the images are synthetic ECG images:
-
-```
-00001_lr 12 100 1000 09:17:34 09/11/1984
-00001_lr.dat 16 1000.0(0)/mV 16 0 -119 1508 0 I
-00001_lr.dat 16 1000.0(0)/mV 16 0 -55 723 0 II
-00001_lr.dat 16 1000.0(0)/mV 16 0 64 64758 0 III
-00001_lr.dat 16 1000.0(0)/mV 16 0 86 64423 0 AVR
-00001_lr.dat 16 1000.0(0)/mV 16 0 -91 1211 0 AVL
-00001_lr.dat 16 1000.0(0)/mV 16 0 4 7 0 AVF
-00001_lr.dat 16 1000.0(0)/mV 16 0 -69 63827 0 V1
-00001_lr.dat 16 1000.0(0)/mV 16 0 -31 6999 0 V2
-00001_lr.dat 16 1000.0(0)/mV 16 0 0 63759 0 V3
-00001_lr.dat 16 1000.0(0)/mV 16 0 -26 61447 0 V4
-00001_lr.dat 16 1000.0(0)/mV 16 0 -39 64979 0 V5
-00001_lr.dat 16 1000.0(0)/mV 16 0 -79 832 0 V6
-#Age: 56
-#Sex: Female
-#Height: Unknown
-#Weight: 63
-#Dx: Normal
-#Image: 00001_lr-0.png
+00001_hr 12 100 1000
+00001_hr.dat 16 1000.0(0)/mV 16 0 -119 1508 0 I
+00001_hr.dat 16 1000.0(0)/mV 16 0 -55 723 0 II
+00001_hr.dat 16 1000.0(0)/mV 16 0 64 64758 0 III
+00001_hr.dat 16 1000.0(0)/mV 16 0 86 64423 0 AVR
+00001_hr.dat 16 1000.0(0)/mV 16 0 -91 1211 0 AVL
+00001_hr.dat 16 1000.0(0)/mV 16 0 4 7 0 AVF
+00001_hr.dat 16 1000.0(0)/mV 16 0 -69 63827 0 V1
+00001_hr.dat 16 1000.0(0)/mV 16 0 -31 6999 0 V2
+00001_hr.dat 16 1000.0(0)/mV 16 0 0 63759 0 V3
+00001_hr.dat 16 1000.0(0)/mV 16 0 -26 61447 0 V4
+00001_hr.dat 16 1000.0(0)/mV 16 0 -39 64979 0 V5
+00001_hr.dat 16 1000.0(0)/mV 16 0 -79 832 0 V6
 ```
 
-![The image `00001_lr-0.png` for the record `00001_lr`.](https://github.com/alphanumericslab/ecg-image-kit/blob/f50c8d1e916fbaf973bd677c1a297d67d1c3173d/codes/ecg-image-generator/SampleData/PTB_XL_op/00001_lr-0.png?raw=True)
-
-In the training set, these files will be available to your code. In the validation and test sets, the WFDB header file would be abbreviated to remove most information about the waveform, demographics, and classes, and the WFDB signal file would be removed to remove the waveform, but the image file would still be available:
+The provided scripts expand the WFDB header file `00001_hr.hea` to include the provided demographic and diagnostic information to create a synthetic ECG image file [`00001_hr-0.png`](https://github.com/alphanumericslab/ecg-image-kit/blob/f50c8d1e916fbaf973bd677c1a297d67d1c3173d/codes/ecg-image-generator/SampleData/PTB_XL_op/00001_hr-0.png?raw=True) for the record `00001_hr`. The labels in the `Labels:` field indicate whether the recording was labeled as normal or abnormal, and the images are synthetic ECG images:
 
 ```
-00001_lr 12 100 1000
-00001_lr.dat 16 1000.0(0)/mV 16 0    I
-00001_lr.dat 16 1000.0(0)/mV 16 0    II
-00001_lr.dat 16 1000.0(0)/mV 16 0    III
-00001_lr.dat 16 1000.0(0)/mV 16 0    AVR
-00001_lr.dat 16 1000.0(0)/mV 16 0    AVL
-00001_lr.dat 16 1000.0(0)/mV 16 0    AVF
-00001_lr.dat 16 1000.0(0)/mV 16 0    V1
-00001_lr.dat 16 1000.0(0)/mV 16 0    V2
-00001_lr.dat 16 1000.0(0)/mV 16 0    V3
-00001_lr.dat 16 1000.0(0)/mV 16 0    V4
-00001_lr.dat 16 1000.0(0)/mV 16 0    V5
-00001_lr.dat 16 1000.0(0)/mV 16 0    V6
-#Image: 00001_lr-0.png
+00001_hr 12 100 1000 09:17:34 09/11/1984
+00001_hr.dat 16 1000.0(0)/mV 16 0 -119 1508 0 I
+00001_hr.dat 16 1000.0(0)/mV 16 0 -55 723 0 II
+00001_hr.dat 16 1000.0(0)/mV 16 0 64 64758 0 III
+00001_hr.dat 16 1000.0(0)/mV 16 0 86 64423 0 AVR
+00001_hr.dat 16 1000.0(0)/mV 16 0 -91 1211 0 AVL
+00001_hr.dat 16 1000.0(0)/mV 16 0 4 7 0 AVF
+00001_hr.dat 16 1000.0(0)/mV 16 0 -69 63827 0 V1
+00001_hr.dat 16 1000.0(0)/mV 16 0 -31 6999 0 V2
+00001_hr.dat 16 1000.0(0)/mV 16 0 0 63759 0 V3
+00001_hr.dat 16 1000.0(0)/mV 16 0 -26 61447 0 V4
+00001_hr.dat 16 1000.0(0)/mV 16 0 -39 64979 0 V5
+00001_hr.dat 16 1000.0(0)/mV 16 0 -79 832 0 V6
+# Age: 56
+# Sex: Female
+# Height: Unknown
+# Weight: 63
+# Labels: Normal
+# Image: 00001_hr-0.png
+# Image annotations: 00001_hr-0.json
 ```
 
-The goal is to digitize the ECG image, i.e., to extract the ECG waveform from the ECG image and reconstruct the WFDB header and signal files, and/or to classify the ECG image.
+![The image `00001_hr-0.png` for the record `00001_hr`.](https://github.com/alphanumericslab/ecg-image-kit/blob/f50c8d1e916fbaf973bd677c1a297d67d1c3173d/codes/ecg-image-generator/SampleData/PTB_XL_op/00001_hr-0.png?raw=True)
 
-## Data Processing
+In the training set, these files will be available to your code. In the validation and test sets, the WFDB header file would be abbreviated to remove most information about the waveform, demographics, and labels, and the WFDB signal file would be removed to remove the waveform, but the image file would still be available:
 
-Patient information includes available demographic and class information. To protect patient [privacy](https://www.hhs.gov/hipaa/for-professionals/privacy/special-topics/de-identification/index.html), potential identifiers on ECG images were redacted, and all ages above 89 years were aggregated into a single category and encoded as "90" for data shared as part of the Challenge. 
+```
+00001_hr 12 100 1000
+00001_hr.dat 16 1000.0(0)/mV 16 0    I
+00001_hr.dat 16 1000.0(0)/mV 16 0    II
+00001_hr.dat 16 1000.0(0)/mV 16 0    III
+00001_hr.dat 16 1000.0(0)/mV 16 0    AVR
+00001_hr.dat 16 1000.0(0)/mV 16 0    AVL
+00001_hr.dat 16 1000.0(0)/mV 16 0    AVF
+00001_hr.dat 16 1000.0(0)/mV 16 0    V1
+00001_hr.dat 16 1000.0(0)/mV 16 0    V2
+00001_hr.dat 16 1000.0(0)/mV 16 0    V3
+00001_hr.dat 16 1000.0(0)/mV 16 0    V4
+00001_hr.dat 16 1000.0(0)/mV 16 0    V5
+00001_hr.dat 16 1000.0(0)/mV 16 0    V6
+# Image: 00001_hr-0.png
+```
 
-## Loading the Data
+### <a name="data-labels"></a> Data Labels
+
+The labels for the ECG images belong to the following classes:
+
+1. Normal ECG: NORM
+2. Acute myocardial infarction: Acute MI
+3. Old myocardial infarction: Old MI
+4. ST/T changes: STTC
+5. Conduction disturbances: CD
+6. Hypertrophy: HYP
+7. Premature atrial complex: PAC
+8. Premature ventricular complex: PVC
+9. Atrial fibrillation or atrial flutter: AFIB/AFL
+10. Tachycardia: TACHY
+11. Bradycardia: BRADY
+
+The labels are derived from the labels provided with each database and minimally homogenized so that you can training a method on one dataset and perform inference on another dataset without changing your code. For the [training set](#data-splits), the labels are given by the labels in the PTB-XL database<sup>[5](#ref-ptb-xl)</sup>, except for the myocardial infraction (MI) class, which we split into acute and old MI classes using the 12SL labels from the PTB-XL+ database <sup>[[6](#ref-ptb-xl-plus)</sup>; the exact details are given in the [script](https://github.com/physionetchallenges/python-example-2024/blob/main/prepare_ptbxl_data.py) for preparing the PTB-XL data for the Challenge. In general, the labels were overread by at least one human expert, but practices vary between and within each database.
+
+### <a name="data-processing"></a> Data Processing
+
+Patient information includes available demographic and label information. To protect patient [privacy](https://www.hhs.gov/hipaa/for-professionals/privacy/special-topics/de-identification/index.html), potential identifiers in the ECG images were redacted, and all ages above 89 years were aggregated into a single category and encoded as "90" for data shared as part of the Challenge. 
+
+The [synthetic ECG image generator](https://github.com/alphanumericslab/ecg-image-kit/tree/main/codes/ecg-image-generator) from [ECG-Image-Kit](https://github.com/alphanumericslab/ecg-image-kit) allows teams to augment the training set by creating synthetic ECG images from ECG time-series data with various artifacts. Teams can generate these images by including this or other code within their entries and running it as part of their training step. Note that the teams real ECG images have various artifacts due to printing, handling, storage, and scanning, and the synthetic ECG image generator introduces artifacts, such as shifting and rotating the ECG paper, adding creases and other artifacts, changing font sizes and font types, etc., to better capture the realism and diversity of real-world  ECG images.
+
+### <a name="data-splits"></a> Data Splits: Training, Validation, and Test Sets
+
+For the training set, we are using the waveforms and labels from the [PTB-XL](https://www.nature.com/articles/s41597-020-0495-6) [dataset](https://physionet.org/content/ptb-xl/)<sup>[5](#ref-ptb-xl), [6](#ref-ptb-xl-plus)</sup>, which has 21,799 12-lead ECG recordings. The teams may augment these data these additional datasets, including (but not restricted to) the following sources:
+
+- [PTB-XL Dataset](https://physionet.org/content/ptb-xl/)<sup>[5](#ref-ptb-xl)</sup>: 21,799 12-lead ECG recordings
+- [The PhysioNet Challenge 2021 Datasets](https://physionet.org/content/challenge-2021/)<sup>[7](#ref-pnc2021)</sup>: 88,253 12-lead ECG recordings
+- [The CODE-15% dataset](https://zenodo.org/records/4916206)<sup>[8](#ref-code15)</sup>: 345,779 12-lead ECG recordings
+
+If you use these or other data as part of your method, then please cite them appropriately to clarify your method and attribute the data contributors.
+
+For the validation and test sets, we are using waveforms, images, and labels from additional databases. The held-out validation and test sets will have actual scans or photographs of paper ECGs, and they will contain the same or a subset of the classes as the public training set.
+
+The training set is public, but the validation and test sets are hidden. We will evaluate your models on the validation set during the unofficial and official phases of the Challenge, and we will evaluate at most one model from each team on the test set after the official phase of the Challenge.
+
+### <a name="data-loading"></a><a name="loading-data"></a> Loading the Data
 
 Patient files are in [WFDB](https://wfdb.io/) format. These files can be opened in either MATLAB or Python. We provide [example code](#algorithms) for loading and processing the data.
 
-## <a name="accessing-data"></a> Accessing the Data
+### <a name="data-access"></a><a name="accessing-data"></a> Accessing the Data
 
-The initial training set can be downloaded from [PhysioNet.org](https://physionet.org/content/ptb-xl/#files). You can download the data by clicking on the link or running the `wget` command on the page.
+The training set can be downloaded from [PhysioNet.org](https://physionet.org/content/ptb-xl/#files) and [PhysioNet.org](https://physionet.org/content/ptb-xl-plus/#files). You can download the data by clicking on the link or running the `wget` command on the page. You can prepare the data for the Challenge by following the following steps:
+
+1. Download (and unzip) the [PTB-XL dataset](https://physionet.org/content/ptb-xl/) and [PTB-XL+ dataset](https://physionet.org/content/ptb-xl-plus/). These instructions use `ptb-xl` as the folder name that contains the data for these commands (the full folder name for the PTB-XL dataset is currently `ptb-xl-a-large-publicly-available-electrocardiography-dataset-1.0.3`, and the full folder name for the PTB-XL dataset is currently `ptb-xl-a-comprehensive-electrocardiographic-feature-dataset-1.0.1`), but you can replace it with the absolute or relative path on your machine.
+
+2. Add information from various spreadsheets from the PTB-XL dataset to the WFDB header files:
+
+        python prepare_ptbxl_data.py \
+            -i  ptb-xl/records500/00000 \
+            -pd ptb-xl/ptbxl_database.csv \
+            -pm ptb-xl/scp_statements.csv \
+            -sd ptb-xl/12sl_statements.csv \
+            -sm ptb-xl/12slv23ToSNOMED.csv \
+            -o  ptb-xl/records500/00000
+
+3. [Generate synthetic ECG images](https://github.com/alphanumericslab/ecg-image-kit/tree/main/codes/ecg-image-generator) on the dataset:
+
+        python gen_ecg_images_from_data_batch.py \
+            -i ptb-xl/records500/00000 \
+            -o ptb-xl/records500/00000 \
+            --print_header \
+            --store_config 2
+
+4. Add the file locations and other information for the synthetic ECG images to the WFDB header files. (The expected image filenames for record `12345` are of the form `12345-0.png`, `12345-1.png`, etc., which should be in the same folder.) You can use the `ptb-xl/records500/00000` folder for the `train_model` step:
+
+        python prepare_image_data.py \
+            -i ptb-xl/records500/00000 \
+            -o ptb-xl/records500/00000
+
+5. Remove the waveforms, certain information about the waveforms, and the demographics and classes to create a version of the data for inference. You can use the `ptb-xl/records500_hidden/00000` folder for the `run_model` step, but it would be better to repeat the above steps on a new subset of the data that you will not use to train your model:
+
+        python gen_ecg_images_from_data_batch.py \
+            -i ptb-xl/records500/00000 \
+            -o ptb-xl/records500_hidden/00000 \
+            --print_header \
+            --mask_unplotted_samples
+
+        python prepare_image_data.py \
+            -i ptb-xl/records500_hidden/00000 \
+            -o ptb-xl/records500_hidden/00000
+
+        python remove_hidden_data.py \
+            -i ptb-xl/records500_hidden/00000 \
+            -o ptb-xl/records500_hidden/00000 \
+            --include_images
 
 ## Registering for the Challenge and Conditions of Participation
 
@@ -173,13 +236,13 @@ Given the computational complexity of generating and training on large numbers o
 
 Please use the above [example code](#algorithms) as templates for your submissions.
 
-Please see the [submission instructions](submissions) for detailed information about how to submit a successful Challenge entry, double check your code (we cannot debug your code for you), and submit your algorithm after we begin accepting code submissions.  We will provide feedback on your entry as soon as possible, so please wait at least **72 hours** before contacting us about the status of your entry.
+Please see the [submission instructions](submissions) for detailed information about how to submit a successful Challenge entry, double check your code (we cannot debug your code for you), and [submit](https://forms.gle/af4jwLMzjJPTqos8A) your algorithm after we begin accepting code submissions. We will provide feedback on your entry as soon as possible, so please wait at least **72 hours** before contacting us about the status of your entry.
 
 Please note that you remain the [owners](#ip) of any code that you submit, and we encourage you to use an [open-source license](#open).
 
 ## <a name="scoring"></a> Scoring
 
-For the unofficial phase of the Challenge, the evaluation metric for the digitization task is the signal-noise ratio (SNR) of the reconstructed signal, and the evaluation metric for the classification task is the *F*-measure. Higher values of both evaluation metrics are better. The team with the highest SNR wins the digitization task, and the team with the highest *F*-measure wins the classification tasks.
+The evaluation metric for the digitization task is the signal-noise ratio (SNR) of the reconstructed signal, and the evaluation metric for the classification task is the macro *F*-measure. Higher values of both evaluation metrics are better. The team with the highest SNR wins the digitization task, and the team with the highest macro *F*-measure wins the classification tasks.
 
 These metrics are [implemented](https://github.com/physionetchallenges/evaluation-2024) in the `evaluate_model` script. We invite feedback about these metrics.
 
@@ -202,9 +265,9 @@ For these reasons, we strongly suggest that you start submitting entries at leas
 |                                            | Start              | End                               | Submissions                          |
 |--------------------------------------------|--------------------|-----------------------------------|--------------------------------------|
 | Unofficial phase                           | 25 January 2024   | 10 April 2024                     | 1-5 scored entries ([\*](#1ast))     |
-| Hiatus                                     | 11 April 2024      | 29 April 2024                       | N/A                                  |
+| Hiatus                                     | 11 April 2024      | 23 May 2024                       | N/A                                  |
 | Abstract deadline                          | 15 April 2024         | 15 April 2024                        | 1 abstract                           |
-| Official phase                             | 10 May 2024        | 19 August 2024 ([\*\*](#1ast))  | 1-10 scored entries ([\*](#1ast))    |
+| Official phase                             | 24 May 2024        | 19 August 2024 ([\*\*](#1ast))  | 1-10 scored entries ([\*](#1ast))    |
 | Abstract decisions released                | Mid-June 2024     | Mid-June 2024                    | N/A                                  |
 | Wild card entry date                       | 31 July 2024       | 31 July 2024                      | N/A                                  |
 | Hiatus                                     | 20 August 2024   | 7 September 2024                 | N/A                                  |
@@ -311,7 +374,7 @@ Please join us in shaping the future of cardiovascular health!
 
 ## <a name="sponsors"></a> Sponsors
 
-This year's Challenge is generously sponsored by [MathWorks](https://www.mathworks.com/) and [AWS](https://aws.amazon.com/).
+This year's Challenge is generously sponsored by [MathWorks](https://www.mathworks.com/), [AWS](https://aws.amazon.com/), and the [IEEE SPS](https://signalprocessingsociety.org/publications-resources/data-challenges/digitization-and-classification-ecg-images-george-b-moody).
 
 ### Obtaining Complimentary MATLAB Licenses
 
@@ -333,9 +396,11 @@ Supported by the [National Institute of Biomedical Imaging and Bioengineering](h
 
 5. <a name="ref-ptb-xl"></a> Patrick Wagner, Nils Strodthoff, Ralf-Dieter Bousseljot, Dieter Kreiseler, Fatima I. Lunze, Wojciech Samek and Tobias Schaeffter. PTB-XL: A Large Publicly Available ECG Dataset. Sci Data 7, 154 (2020). Online at: [https://doi.org/10.1038/s41597-020-0495-6](https://doi.org/10.1038/s41597-020-0495-6)
 
-6. <a name="ref-pnc-2021"></a> Matthew A. Reyna, Nadi Sadr, Erick A.P. Alday, Annie Gu, Amit J. Shah, Chad Robichaux, Ali Bahrami Rad, Andoni Elola, Salman Seyedi, Sardar Ansari, Hamad Ghanbari, Qiao Li, Ashish Sharma, Gari D. Clifford. Issues in the automated classification of multilead ECGs using heterogeneous labels and populations. Physiol. Meas. 43, 8 (2021), 084001. Online at: [https://doi.org/10.1088/1361-6579/ac79fd](https://doi.org/10.1088/1361-6579/ac79fd)
+6. <a name="ref-ptb-xl-plus"></a> Nils Strodthoff, Temesgen Mehari, Claudia Nagel, Philip J. Aston, Ashish Sundar, Claus Graff, Jørgen K. Kanters, Wilhelm Haverkamp, Olaf Dössel, Axel Loewe, Markus Bär & Tobias Schaeffter. PTB-XL+, a comprehensive electrocardiographic feature dataset. Sci Data 10, 279 (2023). Online at: [https://doi.org/10.1038/s41597-023-02153-8](https://doi.org/10.1038/s41597-023-02153-8)
 
-7. <a name="ref-code15"></a> Antônio H. Ribeiro, Gabriela Paixao, Emilly Lima, Manoel Horta Ribeiro, Marcelo Pinto Filho, Paulo Gomes,  
+7. <a name="ref-pnc-2021"></a> Matthew A. Reyna, Nadi Sadr, Erick A.P. Alday, Annie Gu, Amit J. Shah, Chad Robichaux, Ali Bahrami Rad, Andoni Elola, Salman Seyedi, Sardar Ansari, Hamad Ghanbari, Qiao Li, Ashish Sharma, Gari D. Clifford. Issues in the automated classification of multilead ECGs using heterogeneous labels and populations. Physiol. Meas. 43, 8 (2021), 084001. Online at: [https://doi.org/10.1088/1361-6579/ac79fd](https://doi.org/10.1088/1361-6579/ac79fd)
+
+8. <a name="ref-code15"></a> Antônio H. Ribeiro, Gabriela Paixao, Emilly Lima, Manoel Horta Ribeiro, Marcelo Pinto Filho, Paulo Gomes,  
 Derick Oliveira Wagner Meira Jr, Thömas Schon, Antonio Luiz Ribeiro. CODE-15%: a large scale annotated dataset of 12-lead ECGs. Zenodo (2021). Online at: [https://doi.org/10.5281/zenodo.4916206](https://doi.org/10.5281/zenodo.4916206)
 
 ---

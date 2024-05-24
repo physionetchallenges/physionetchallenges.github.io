@@ -24,12 +24,12 @@ Similarly to [last year's Challenge](../../2023/), teams must submit both the co
 3. Do not include extra files that are not required to create and run your prediction code, such as the training data.
 4. Follow the instructions for the programming language of your submission.
 5. Share your repository with the `physionetchallengeshelper` user.
-6. Submit your entry using this [form](https://docs.google.com/forms/d/e/1FAIpQLScFZNXv5rc-KlBxZMBB5IX8jRWHR-hADuheOtRWs5x1XzZo4w/viewform?usp=sf_link).
+6. Submit your entry using this [form](https://forms.gle/af4jwLMzjJPTqos8A).
 7. We will put the scores for successful entries on the validation set on the leaderboard.  The leaderboard will publicly show your team name and scores.
 
 ### <a name="matlab"></a>MATLAB-specific instructions
 
-1. You can use our MATLAB example code ([link](https://github.com/physionetchallenges/matlab-example-2024.git)) as a template. Consider cloning or downloading this repository, replacing our code with your code, and adding the updated files to your repository.
+1. You can use our [MATLAB example code](https://github.com/physionetchallenges/matlab-example-2024.git) as a template. Please clone or download this repository, replace our code with your code, and push or upload the files to your repository.
 2. `AUTHORS.txt`, `LICENSE.txt`, `README.md`: Update as appropriate. Please include your authors. Unfortunately, our submission system will be unable to read your README file to change how we run your code.
 3. `train_model.m`: Do not change this script. It calls your `team_training_code.m` script. We will not use the `train_model.m` script from your repository, so any change made to this code will not be included.
 4. `team_training_code.m`: Update this script to create and save your model.
@@ -41,7 +41,7 @@ Similarly to [last year's Challenge](../../2023/), teams must submit both the co
 
 ### <a name="python"></a>Python-specific instructions
 
-1. You can use our Python example code ([link](https://github.com/physionetchallenges/python-example-2024.git)) as a template. Consider cloning or downloading this repository, replacing our code with your code, and adding the updated files to your repository.
+1. You can use our [Python example code](https://github.com/physionetchallenges/python-example-2024.git) as a template. Please clone or download this repository, replace our code with your code, and push or upload the files to your repository.
 2. `Dockerfile`: Update to specify the version of Python that you are using on your machine. Add any additional packages that you need. Do not change the name or location of this file. The structure of this file is important, especially the 3 lines that are marked as "DO NOT EDIT".
 3. `requirements.txt`: Add Python packages to be installed with `pip`. Specify the versions of these packages that you are using on your machine. Remove unnecessary packages that your code does not need.
 4. `AUTHORS.txt`, `LICENSE.txt`, `README.md`: Update as appropriate. Please include your authors. Unfortunately, our submission system will be unable to read your README file to change how we run your code.
@@ -117,7 +117,7 @@ If you have trouble running your code, then please try the follow steps to run t
 
 __What computational resources will my entry have?__
 
-We are using a [`g4dn.4xlarge` instance](https://aws.amazon.com/ec2/instance-types/g4/) on AWS to run your code. It has 16 vCPUs, 64 GB RAM (60 GB available to your code), 300 GB of local storage (in addition to the data), and an optional [NVIDIA T4 GPU](https://www.nvidia.com/en-us/data-center/tesla-t4/).
+We are using a [`g4dn.4xlarge` instance](https://aws.amazon.com/ec2/instance-types/g4/) on AWS or a comparable environment to run your code. It has 16 vCPUs, 64 GB RAM (60 GB available to your code), 300 GB of local storage (in addition to the data), and an optional [NVIDIA T4 GPU](https://www.nvidia.com/en-us/data-center/tesla-t4/).
 
 For training your model on the training data, we impose a 48 hour time limit for submissions that request a GPU and a 72 hour time limit for submissions that do not request a GPU. For running your trained model on the validation or test data, we impose a 24 hour time limit whether or not a submission requests a GPU.
 
