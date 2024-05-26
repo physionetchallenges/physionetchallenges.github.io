@@ -44,10 +44,10 @@ There are two separate prizes, and you may enter either part or both parts of th
 The Challenge data are from various sources, including public and private databases of ECG waveforms, ECG images, and/or ECG-based diagnoses or classes. The below images are examples of ECG image.
 
 The below image is a synthetic image that was generated from an ECG waveform. This image does not include distortions, creases, shadows, blurred or faded ink, or other artifacts that obscure the ECG waveforms in paper ECGs:
-![Example of an ECG image.](https://github.com/alphanumericslab/ecg-image-kit/blob/f50c8d1e916fbaf973bd677c1a297d67d1c3173d/codes/ecg-image-generator/SampleData/PTB_XL_op/00001_hr-0.png?raw=True)
+![Example of an ECG image.](https://github.com/alphanumericslab/ecg-image-kit/blob/a52b8c0bd2f0bf347f9ec4a84b5edb07c08963dd/codes/ecg-image-generator/SampleData/PTB_XL_op/00011_hr-0.png?raw=True)
 
 The below image is also a synthetic image that was generated from another ECG waveform, but it includes various distortions that resemble the artifacts in paper ECGs:
-![Example of an ECG image.](https://github.com/alphanumericslab/ecg-image-kit/blob/f50c8d1e916fbaf973bd677c1a297d67d1c3173d/codes/ecg-image-generator/SampleData/DistortionData/Wrinkles_Creases/00009_hr-0.png?raw=True)
+![Example of an ECG image.](https://github.com/alphanumericslab/ecg-image-kit/blob/a52b8c0bd2f0bf347f9ec4a84b5edb07c08963dd/codes/ecg-image-generator/SampleData/DistortionData/Wrinkles_Creases/00002_hr-0.png?raw=True)
 
 The below image is a real image that was generated from a photograph or a scan of a paper ECG and includes various artifacts as well as redacted information:
 ![Example of an ECG image.](https://github.com/alphanumericslab/ecg-image-kit/blob/1ab758b0d1d4e2497bd9ba40a158aa2029265b4f/sample-data/ecg-images/ecg00051.png?raw=True)
