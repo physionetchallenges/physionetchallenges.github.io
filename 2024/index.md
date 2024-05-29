@@ -85,7 +85,7 @@ For example, the [PTB-XL](https://www.nature.com/articles/s41597-020-0495-6) [da
 00001_hr.dat 16 1000.0(0)/mV 16 0 -79 832 0 V6
 ```
 
-The provided scripts expand the WFDB header file `00001_hr.hea` to include the provided demographic and diagnostic information to create a synthetic ECG image file [`00001_hr-0.png`](https://github.com/alphanumericslab/ecg-image-kit/blob/f50c8d1e916fbaf973bd677c1a297d67d1c3173d/codes/ecg-image-generator/SampleData/PTB_XL_op/00001_hr-0.png?raw=True) for the record `00001_hr`. The labels in the `Labels:` field indicate whether the recording was labeled as normal or abnormal, and the images are synthetic ECG images:
+The provided scripts expand the WFDB header file `00001_hr.hea` to include the provided demographic and diagnostic information to create a synthetic ECG image file [`00001_hr-0.png`](https://github.com/alphanumericslab/ecg-image-kit/blob/f50c8d1e916fbaf973bd677c1a297d67d1c3173d/codes/ecg-image-generator/SampleData/PTB_XL_op/00001_hr-0.png?raw=True) for the record `00001_hr`. The labels in the `Labels:` field provide the label or labels for the data , and the images are synthetic ECG images:
 
 ```
 00001_hr 12 100 1000 09:17:34 09/11/1984
@@ -105,12 +105,12 @@ The provided scripts expand the WFDB header file `00001_hr.hea` to include the p
 # Sex: Female
 # Height: Unknown
 # Weight: 63
-# Labels: Normal
+# Labels: NORM
 # Image: 00001_hr-0.png
 # Image annotations: 00001_hr-0.json
 ```
 
-![The image `00001_hr-0.png` for the record `00001_hr`.](https://github.com/alphanumericslab/ecg-image-kit/blob/f50c8d1e916fbaf973bd677c1a297d67d1c3173d/codes/ecg-image-generator/SampleData/PTB_XL_op/00001_hr-0.png?raw=True)
+![An image for a record.](https://github.com/alphanumericslab/ecg-image-kit/blob/a52b8c0bd2f0bf347f9ec4a84b5edb07c08963dd/codes/ecg-image-generator/SampleData/PTB_XL_op/00011_hr-0.png?raw=True)
 
 In the training set, these files will be available to your code. In the validation and test sets, the WFDB header file would be abbreviated to remove most information about the waveform, demographics, and labels, and the WFDB signal file would be removed to remove the waveform, but the image file would still be available:
 
