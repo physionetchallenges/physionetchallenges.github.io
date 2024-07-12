@@ -398,7 +398,7 @@ Supported by the [National Institute of Biomedical Imaging and Bioengineering](h
 
 3. <a name="ref-ecg-image-kit-paper"></a> Kshama Kodthalu Shivashankara, Deepanshi, Afagh Mehri Shervedani, Matthew A. Reyna, Gari D. Clifford, Reza Sameni (2024). ECG-Image-Kit: a synthetic image generation toolbox to facilitate deep learning-based electrocardiogram digitization. Physiological Measurement. IOP Publishing. Vol 45, 055019, doi: [10.1088/1361-6579/ad4954](https://doi.org/10.1088/1361-6579/ad4954)
 
-4. <a name="ref-ecg-image-kit"></a> ECG-Image-Kit: A Toolkit for Synthesis, Analysis, and Digitization of Electrocardiogram Images, January 2024, Online at: [https://github.com/alphanumericslab/ecg-image-kit](https://github.com/alphanumericslab/ecg-image-kit)
+4. <a name="ref-ecg-image-kit"></a> ECG-Image-Kit: A Toolkit for Synthesis, Analysis, and Digitization of Electrocardiogram Images, January 2024, Online at: [https://github.com/alphanumericslab/ecg-image-kit](https://github.com/alphanumericslab/ecg-image-kit). doi: [10.5281/zenodo.12731152](https://zenodo.org/records/12731152)
 
 5. <a name="ref-ptb-xl"></a> Patrick Wagner, Nils Strodthoff, Ralf-Dieter Bousseljot, Dieter Kreiseler, Fatima I. Lunze, Wojciech Samek and Tobias Schaeffter. PTB-XL: A Large Publicly Available ECG Dataset. Sci Data 7, 154 (2020). Online at: [https://doi.org/10.1038/s41597-020-0495-6](https://doi.org/10.1038/s41597-020-0495-6)
 
