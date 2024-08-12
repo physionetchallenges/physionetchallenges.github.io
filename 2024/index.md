@@ -275,7 +275,7 @@ For these reasons, we strongly suggest that you start submitting entries at leas
 | Abstract deadline                          | 15 April 2024         | 15 April 2024                        | 1 abstract                           |
 | Official phase                             | 24 May 2024        | 19 August 2024 ([\*\*](#1ast))  | 1-10 scored entries ([\*](#1ast))    |
 | Abstract decisions released                | Mid-June 2024     | Mid-June 2024                    | N/A                                  |
-| Wild card entry date                       | 31 July 2024       | 31 July 2024                      | N/A                                  |
+| Wild card entry date                       | 6 August 2024       | 6 August 2024                      | N/A                                  |
 | Hiatus                                     | 20 August 2024   | 7 September 2024                 | N/A                                  |
 | Deadline to choose algorithm for test data | 26 August 2024  | 26 August 2024                 | N/A                                  |
 | Preprint deadline                          | August 2024  | August 2024                 | One 4-page paper ([\*\*\*](#2ast))   |
