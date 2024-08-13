@@ -270,18 +270,18 @@ For these reasons, we strongly suggest that you start submitting entries at leas
 
 |                                            | Start              | End                               | Submissions                          |
 |--------------------------------------------|--------------------|-----------------------------------|--------------------------------------|
-| Unofficial phase                           | 25 January 2024   | 10 April 2024                     | 1-5 scored entries ([\*](#1ast))     |
+| Unofficial phase                           | 25 January 2024    | 10 April 2024                     | 1-5 scored entries ([\*](#1ast))     |
 | Hiatus                                     | 11 April 2024      | 23 May 2024                       | N/A                                  |
-| Abstract deadline                          | 15 April 2024         | 15 April 2024                        | 1 abstract                           |
-| Official phase                             | 24 May 2024        | 19 August 2024 ([\*\*](#1ast))  | 1-10 scored entries ([\*](#1ast))    |
-| Abstract decisions released                | Mid-June 2024     | Mid-June 2024                    | N/A                                  |
-| Wild card entry date                       | 6 August 2024       | 6 August 2024                      | N/A                                  |
-| Hiatus                                     | 20 August 2024   | 7 September 2024                 | N/A                                  |
-| Deadline to choose algorithm for test data | 26 August 2024  | 26 August 2024                 | N/A                                  |
-| Preprint deadline                          | August 2024  | August 2024                 | One 4-page paper ([\*\*\*](#2ast))   |
-| Conference                                 | 8 September 2024     | 11 September 2024                    | 1 presentation ([\*\*\*\*](#3ast))   |
+| Abstract deadline                          | 15 April 2024      | 15 April 2024                     | 1 abstract                           |
+| Official phase                             | 24 May 2024        | 19 August 2024 ([\*\*](#1ast))    | 1-10 scored entries ([\*](#1ast))    |
+| Abstract decisions released                | Mid-June 2024      | Mid-June 2024                     | N/A                                  |
+| Wild card entry date                       | 6 August 2024      | 6 August 2024                     | N/A                                  |
+| Hiatus                                     | 20 August 2024     | 7 September 2024                  | N/A                                  |
+| Deadline to choose algorithm for test data | 26 August 2024     | 26 August 2024                    | N/A                                  |
+| Preprint deadline                          | 27 August 2024     | 27 August 2024                    | One 4-page paper ([\*\*\*](#2ast))   |
+| Conference                                 | 8 September 2024   | 11 September 2024                 | 1 presentation ([\*\*\*\*](#3ast))   |
 | Final scores released                      | Mid-September 2024 | Mid-September 2024                | N/A                                  |
-| Final paper deadline                       | ? ? 2024    | ? ? 2024                   | One 4-page paper ([\*\*\*\*](#3ast)) |
+| Final paper deadline                       | 1 October 2024     | 1 October 2024                    | One 4-page paper ([\*\*\*\*](#3ast)) |
 
 <a name="1ast"></a>(\* Entries that fail to score do not count against limits.)
 
