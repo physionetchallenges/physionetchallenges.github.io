@@ -113,7 +113,6 @@ The provided scripts expand the WFDB header file `00001_hr.hea` to include the p
 # Weight: 63
 # Labels: NORM
 # Image: 00001_hr-0.png
-# Image annotations: 00001_hr-0.json
 ```
 
 ![An image for a record.](https://github.com/alphanumericslab/ecg-image-kit/blob/a52b8c0bd2f0bf347f9ec4a84b5edb07c08963dd/codes/ecg-image-generator/SampleData/PTB_XL_op/00011_hr-0.png?raw=True)

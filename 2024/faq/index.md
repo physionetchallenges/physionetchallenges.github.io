@@ -95,7 +95,7 @@ No, the leaderboard contains scores on the validation data during the unofficial
 
 <a name="choose-model"></a>__How do I choose which my submission for evaluation on the test data?__
 
-You will be able to choose which model you would like to have scored on the test set. We will ask for teams to choose their preferred model shortly before the end of the official phase of the Challenge. If you do not choose a model, or if there is any ambiguity about your choice, then we will use the model with the highest score on the validation data.
+You will be able to choose which model you would like to have scored on the test set. We will ask for teams to choose their preferred model shortly after the end of the official phase of the Challenge. If you do not choose a model, or if there is any ambiguity about your choice, then we will use the model with the highest score on the validation data.
 
 ## <a name="computation"></a> Computation
 
