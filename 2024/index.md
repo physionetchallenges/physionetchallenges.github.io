@@ -377,6 +377,14 @@ To increase engagement from African researchers, the [IEEE Signal Processing Soc
 
 Please join us in shaping the future of cardiovascular health!
 
+## <a name="hackathon"></a> Hackathon
+
+A [hackathon](https://cinc2024.org/program/sunday-morning-workshops) closely related to the Challenge will be held in the building of the [Sunday Symposium](https://cinc2024.org/program/sunday-symposium) (see [here](https://cinc2024.org/travel/venues) for directions) on Sunday, September 8 from 11:00am to 6:00pm. A hands-on session to help you get started will occur from 11:00am to 11:30am. Swag (including a USB stick with the Challenge training data and example code) will be available to early attendees.
+
+Attendees need to bring their laptops with WiFi capabilities. Attendees do not need to have entered the hackathon before, and may join existing or new teams. Feel free to look up the most interesting teams in the preprints and email them!
+
+To attend, please sign up [here](https://forms.gle/9NgLhexcVvQHRng3A). Space is limited.
+
 ## <a name="sponsors"></a> Sponsors
 
 This year's Challenge is generously sponsored by [MathWorks](https://www.mathworks.com/), [AWS](https://aws.amazon.com/), and the [IEEE SPS](https://signalprocessingsociety.org/publications-resources/data-challenges/digitization-and-classification-ecg-images-george-b-moody).
