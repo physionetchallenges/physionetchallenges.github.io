@@ -272,23 +272,21 @@ For these reasons, we strongly suggest that you start submitting entries at leas
 | Unofficial phase                           | 25 January 2024    | 10 April 2024                     | 1-5 scored entries ([\*](#1ast))     |
 | Hiatus                                     | 11 April 2024      | 23 May 2024                       | N/A                                  |
 | Abstract deadline                          | 15 April 2024      | 15 April 2024                     | 1 abstract                           |
-| Official phase                             | 24 May 2024        | 21 August 2024 ([\*\*](#1ast))    | 1-10 scored entries ([\*](#1ast))    |
+| Official phase                             | 24 May 2024        | 21 August 2024                    | 1-10 scored entries ([\*](#1ast))    |
 | Abstract decisions released                | Mid-June 2024      | Mid-June 2024                     | N/A                                  |
 | Wild card entry date                       | 6 August 2024      | 6 August 2024                     | N/A                                  |
 | Hiatus                                     | 20 August 2024     | 7 September 2024                  | N/A                                  |
 | Deadline to choose algorithm for test data | 27 August 2024     | 27 August 2024                    | N/A                                  |
-| Preprint deadline                          | 28 August 2024     | 28 August 2024                    | One 4-page paper ([\*\*\*](#2ast))   |
-| Conference                                 | 8 September 2024   | 11 September 2024                 | 1 presentation ([\*\*\*\*](#3ast))   |
+| Preprint deadline                          | 28 August 2024     | 28 August 2024                    | One 4-page paper ([\*\*](#2ast))     |
+| Conference                                 | 8 September 2024   | 11 September 2024                 | 1 presentation ([\*\*](#2ast))       |
 | Final scores released                      | Mid-September 2024 | Mid-September 2024                | N/A                                  |
-| Final paper deadline                       | 1 October 2024     | 1 October 2024                    | One 4-page paper ([\*\*\*\*](#3ast)) |
+| Final paper deadline                       | 1 October 2024     | 1 October 2024                    | One 4-page paper ([\*\*\*](#3ast))   |
 
 <a name="1ast"></a>(\* Entries that fail to score do not count against limits.)
 
-<a name="4ast"></a>(\*\* In your time zone.)
+<a name="2ast"></a>(\*\* Must include preliminary scores.)
 
-<a name="2ast"></a>(\*\*\* Must include preliminary scores.)
-
-<a name="3ast"></a>(\*\*\*\* Must include final scores, your ranking in the Challenge, and any updates to your work as a result of feedback after presenting at CinC. This final paper deadline is earlier than the deadline given by CinC so that we can check these details.)
+<a name="3ast"></a>(\*\*\* Must include final scores, your ranking in the Challenge, and any updates to your work as a result of feedback after presenting at CinC. This final paper deadline is earlier than the deadline given by CinC so that we can check these details.)
 
 To be eligible for the open-source award, you must do all the following:
 
