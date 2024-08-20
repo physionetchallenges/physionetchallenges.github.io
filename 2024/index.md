@@ -12,6 +12,8 @@ The George B. Moody PhysioNet Challenges are annual competitions that invite par
 
 ## <a name="announcements"></a> Announcements
 
+- <a name="2024.08.19"></a>__August 19, 2024:__ We have extended the official phase deadline to 23:59 GMT on August 21, 2024. Please see the [deadlines](#key-dates-deadlines) for the updated deadlines.
+
 - <a name="2024.07.09"></a>__July 9, 2024:__ The PhysioNet Challenges spent several days last month at [Data Science Africa 2024](https://www.datascienceafrica.org/dsa2024nyeri/). The [DSAIL](https://dekut-dsail.github.io/) at [DeKUT](https://www.dkut.ac.ke/) helped us to run a hackathon over 4 days with more than 50 attendees, including some that we will win a prize from the [IEEE SPS](https://signalprocessingsociety.org/publications-resources/data-challenges/digitization-and-classification-ecg-images-george-b-moody) at [CinC 2024](https://cinc2024.org). Please see [this announcement](https://groups.google.com/g/physionet-challenges/c/_-V_t1srd-o) for more information about our trip to DSA.
 
 - <a name="2024.06.14"></a>__June 14, 2024:__ Abstract decisions for CinC 2024 have been announced, and the official scoring system is open with a new validation data set that includes images of real paper ECGs. Please [submit](submissions) entries early and often; although you have 10 entries in the scoring system, we may limit each team to one request or deprioritize additional entries from a team in the final week because of the large numbers of entries that we receive in the final days of the Challenge, and because teams that enter earlier tend to perform better!
@@ -275,7 +277,7 @@ For these reasons, we strongly suggest that you start submitting entries at leas
 | Official phase                             | 24 May 2024        | 21 August 2024                    | 1-10 scored entries ([\*](#1ast))    |
 | Abstract decisions released                | Mid-June 2024      | Mid-June 2024                     | N/A                                  |
 | Wild card entry date                       | 6 August 2024      | 6 August 2024                     | N/A                                  |
-| Hiatus                                     | 20 August 2024     | 7 September 2024                  | N/A                                  |
+| Hiatus                                     | 22 August 2024     | 7 September 2024                  | N/A                                  |
 | Deadline to choose algorithm for test data | 27 August 2024     | 27 August 2024                    | N/A                                  |
 | Preprint deadline                          | 28 August 2024     | 28 August 2024                    | One 4-page paper ([\*\*](#2ast))     |
 | Conference                                 | 8 September 2024   | 11 September 2024                 | 1 presentation ([\*\*](#2ast))       |
