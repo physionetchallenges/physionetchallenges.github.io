@@ -14,7 +14,7 @@ Please check the below links for information about [current](#current) and [past
 
 ## <a name="news"></a> Select News
 
-- <a name="2024.09.20"></a>__September 20, 2024:__ We have released the [results](2024/results) of the 2024 Challenge. Congratulations to the winners! Please see the [announcement](https://groups.google.com/g/physionet-challenges/) for more details.
+- <a name="2024.09.20"></a>__September 20, 2024:__ We have released the [results](2024/results) of the 2024 Challenge. Congratulations to the winners! Please see the [announcement](https://groups.google.com/g/physionet-challenges/c/bEjPLIMagRk) for more details.
 
 - <a name="2024.08.19"></a>__August 19, 2024:__ We have extended the official phase deadline to 23:59 GMT on August 21, 2024. Please see the [deadlines](#key-dates-deadlines) for the updated deadlines.
 
