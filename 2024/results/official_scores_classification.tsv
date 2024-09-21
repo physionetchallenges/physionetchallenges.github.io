@@ -1,0 +1,13 @@
+Rank	Team name	Leaderboard: F-measure	Color scans of clean papers: F-measure	Black-and-white scans of clean papers: F-measure	Mobile phone photos of clean papers: F-measure	Mobile phone photos of stained papers: F-measure	Mobile phone photos of deteriorated papers: F-measure	Color scans of deteriorated papers: F-measure	Black-and-white scans of deteriorated papers: F-measure	Screenshots of computer monitor: F-measure
+1	AIMED	0.817	0.833	0.796	0.644	0.636	0.711	0.830	0.775	0.636
+2	Inventec AIC	0.742	0.779	0.628	0.697	0.694	0.739	0.777	0.582	0.726
+3	BAPORLab	0.730	0.716	0.696	0.609	0.634	0.644	0.720	0.664	0.604
+4	CeZIS	0.645	0.691	0.586	0.648	0.659	0.700	0.700	0.576	0.691
+5	ECG_UVA	0.516	0.580	0.481	0.070	0.068	0.076	0.595	0.468	0.086
+6	DSAIL	0.429	0.502	0.118	0.072	0.080	0.078	0.463	0.093	0.104
+7	USST_Med	0.393	0.056	0.056	0.056	0.056	0.056	0.056	0.056	0.056
+8	Revenger	0.330	0.332	0.327	0.306	0.316	0.306	0.331	0.319	0.288
+9	PulsePlex	0.317	0.222	0.222	0.222	0.222	0.222	0.222	0.222	0.222
+10	DSAIL_Nyeri	0.227	0.290	0.104	0.055	0.058	0.053	0.271	0.077	0.058
+11	Leicester Fox	0.068	0.044	0.078	0.068	0.058	0.067	0.056	0.074	0.060
+12	Ahus AI Lab	0.056	0.056	0.056	0.056	0.056	0.056	0.056	0.056	0.056

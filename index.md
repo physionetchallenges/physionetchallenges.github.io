@@ -14,6 +14,10 @@ Please check the below links for information about [current](#current) and [past
 
 ## <a name="news"></a> Select News
 
+- <a name="2024.09.20"></a>__September 20, 2024:__ We have released the [results](2024/results) of the 2024 Challenge. Congratulations to the winners! Please see the [announcement](https://groups.google.com/g/physionet-challenges/) for more details.
+
+- <a name="2024.08.19"></a>__August 19, 2024:__ We have extended the official phase deadline to 23:59 GMT on August 21, 2024. Please see the [deadlines](#key-dates-deadlines) for the updated deadlines.
+
 - <a name="2024.07.09"></a>__July 9, 2024:__ The PhysioNet Challenges spent several days last month at [Data Science Africa 2024](https://www.datascienceafrica.org/dsa2024nyeri/). The [DSAIL](https://dekut-dsail.github.io/) at [DeKUT](https://www.dkut.ac.ke/) helped us to run a hackathon over 4 days with more than 50 attendees, including some that we will win a prize from the [IEEE SPS](https://signalprocessingsociety.org/publications-resources/data-challenges/digitization-and-classification-ecg-images-george-b-moody) at [CinC 2024](https://cinc2024.org). Please see [this announcement](https://groups.google.com/g/physionet-challenges/c/_-V_t1srd-o) for more information about our trip to DSA.
 
 - <a name="2024.06.14"></a>__June 14, 2024:__ Abstract decisions for CinC 2024 have been announced, and the official scoring system is open with a new validation data set that includes images of real paper ECGs. Please [submit](2024/submissions) entries early and often; although you have 10 entries in the scoring system, we may limit each team to one request or deprioritize additional entries from a team in the final week because of the large numbers of entries that we receive in the final days of the Challenge, and because teams that enter earlier tend to perform better!
