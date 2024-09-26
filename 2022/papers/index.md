@@ -8,14 +8,12 @@ layout: after_2015
 
 __For this year's Challenge, please cite the Challenge description paper:__
 
-[Reyna, M. A., Kiarashi, Y., Elola, A., Oliveira, J., Renna, F., Gu, A., Perez-Alday, E. A., Sadr, N., Sharma, A., Mattos, S., Coimbra, M. T., Sameni, R., Rad, A. B., Clifford, G. D. (2022).  Heart murmur detection from phonocardiogram recordings: The George B. Moody PhysioNet Challenge 2022. medRxiv, doi: 10.1101/2022.08.11.22278688](https://doi.org/10.1101/2022.08.11.22278688)
 
-The above paper is a draft. We will update it after CinC to include information about the conclusion of the Challenge.
+[Reyna MA, Kiarashi Y, Elola A, Oliveira J, Renna F, Gu A, Perez Alday EA, Sadr N, Sharma A, Kpodonu J, Mattos S, Coimbra MT, Sameni R, Rad AB, Clifford GD. "Heart murmur detection from phonocardiogram recordings: The George B. Moody PhysioNet Challenge 2022." PLOS Digital Health. 2023 Sep 11;2(9): e0000324. doi: 10.1371/journal.pdig.0000324. PMID: 37695769.](https://journals.plos.org/digitalhealth/article?id=10.1371/journal.pdig.0000324)
 
 __For this year's Challenge, please cite the CirCor DigiScope Dataset publication:__
 
 [Oliveira, J., Renna, F., Costa, P. D., Nogueira, M., Oliveira, C., Ferreira, C., ... & Coimbra, M. T. (2022). The CirCor DigiScope Dataset: From Murmur Detection to Murmur Classification. IEEE Journal of Biomedical and Health Informatics, doi: 10.1109/JBHI.2021.3137048.](https://ieeexplore.ieee.org/document/9658215)
-
 
 __Additionally, please include the standard citation for PhysioNet:__
 
