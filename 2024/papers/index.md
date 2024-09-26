@@ -45,3 +45,51 @@ Please *read* and follow the templates. Each year, we need to provide feedback f
 ## Conference Papers
 
 The conference papers for [Computing in Cardiology 2024](https://www.cinc2024.org/) will be available on the [CinC](https://www.cinc.org/cinc-papers-on-line/) website.
+
+## 
+
+## BibTeX Citations
+
+You can cite the above papers with the following BibTeX references:
+
+    @article{2024Challenge,
+    author = {Reyna, Matthew A. and Deepanshi and Weigle, James and Koscova, Zuzana and Elola, Andoni and Seyedi, Salman and Campbell, Kiersten and Clifford, Gari D. and Sameni, Reza},
+    title = {{D}igitization and {C}lassification of {ECG} {I}mages: {T}he {G}eorge {B}.\ {M}oody {P}hysio{N}et {C}hallenge 2024},
+    journal={Computing in Cardiology},
+    volume={51},
+    pages={1--4},
+    year={2024},
+    publisher={IEEE}
+    }
+
+    @misc{ECG-Image-Database,
+    title={{ECG}-{I}mage-{D}atabase: A Dataset of {ECG} Images with Real-World Imaging and Scanning Artifacts; A Foundation for Computerized {ECG} Image Digitization and Analysis}, 
+    author={Matthew A. Reyna and Deepanshi and James Weigle and Zuzana Koscova and Kiersten Campbell and Kshama Kodthalu Shivashankara and Soheil Saghafi and Sepideh Nikookar and Mohsen Motie-Shirazi and Yashar Kiarashi and Salman Seyedi and Gari D. Clifford and Reza Sameni},
+    year={2024},
+    eprint={2409.16612},
+    archivePrefix={arXiv},
+    primaryClass={q-bio.QM},
+    url={https://arxiv.org/abs/2409.16612}, 
+    }
+
+    @article{ECGImageKit2024-PMEA,
+    author = {Kshama Kodthalu Shivashankara and Deepanshi and Afagh Mehri Shervedani and Matthew A. Reyna and Gari D. Clifford and Reza Sameni},
+    title = {{ECG}-{I}mage-{K}it: a synthetic image generation toolbox to facilitate deep learning-based electrocardiogram digitization},
+    journal = {Physiological Measurement},
+    publisher = {IOP Publishing},
+    year = {2024},
+    volume = {45},
+    pages = {055019},
+    doi = {10.1088/1361-6579/ad4954}
+    }
+
+    @article{Goldberger2000,
+    title={{P}hysio{B}ank, {P}hysio{T}oolkit, and {P}hysio{N}et: Components of a New Research Resource for Complex Physiologic Signals},
+    author={Goldberger, Ary L and Amaral, Luis AN and Glass, Leon and Hausdorff, Jeffrey M and Ivanov, Plamen Ch and Mark, Roger G and Mietus, Joseph E and Moody, George B and Peng, Chung-Kang and Stanley, H Eugene},
+    journal={Circulation},
+    volume={101},
+    number={23},
+    pages={e215--e220},
+    year={2000},
+    publisher={American Heart Association}
+    }
