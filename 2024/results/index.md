@@ -15,6 +15,7 @@ Teams that satisfied all of the [Challenge rules](../#rules) were eligible for r
 - [Team summary table](team_summary_table.tsv): summary of the teams that participated in the 2024 Challenge. This table includes ranking and prize eligibility information.
 - Scores and rankings (sorted by rank) for __official entries, i.e., eligible for rankings__: [digitization](official_scores_digitization.tsv) and [classification](official_scores_classification.tsv) scores
 - Scores (sorted alphabetically by team name) for __unofficial entries, i.e., not eligible for rankings__: [digitization](unofficial_scores_digitization.tsv) and [classification](unofficial_scores_classification.tsv) scores
+- Scores (sorted by rank) for __hackathon entries__: [digitization](hackathon_scores_digitization.tsv) and [classification](hackathon_scores_classification.tsv) scores
 
 The score tables include signal-to-noise ratios (SNR) scores for the digitization task and macro _F_-measure scores for the classification tasks. All scores are on the hidden data. The leaderboard scores are scores reported during the official phase on color and black-and-white scans of paper ECGs from the PTB-XL data. The other scores are scores for models retrained on the full test set and evaluated on variants of the paper ECGs from the PTB-XL data, including scans and photographs of clean, stained, and deteriorated ECG papers and photographs of computer monitors showing ECGs.
 

@@ -1,13 +1,17 @@
 Rank	Team name	Leaderboard: SNR	Color scans of clean papers: SNR	Black-and-white scans of clean papers: SNR	Mobile phone photos of clean papers: SNR	Mobile phone photos of stained papers: SNR	Mobile phone photos of deteriorated papers: SNR	Color scans of deteriorated papers: SNR	Black-and-white scans of deteriorated papers: SNR	Screenshots of computer monitor: SNR
 1	SignalSavants	12.151	4.930	3.479	-1.071	-0.723	-1.304	0.506	0.514	-1.759
 2	BAPORLab	5.493	6.220	4.735	-0.261	-1.116	0.807	0.905	0.358	0.123
-3	Ahus AI Lab	3.047	3.318	2.777	0.138	-0.345	0.792	0.670	-0.320	-0.512
-4	USST_Med	2.202	-0.058	-0.058	-0.375	-0.375	-0.375	-0.375	-0.375	-0.375
-5	Inventec AIC	0.397	4.101	-2.569	-4.574	-5.106	-3.782	-2.157	-2.802	-2.450
-6	TimeBeater	-0.056	-0.058	-0.056	-0.375	-0.375	-0.375	-0.375	-0.375	-0.375
-7	VinUniTeam	-0.066	-0.069	-0.062	-0.027	-0.027	-0.029	-0.030	-0.026	-0.047
-8	PulsePlex	-0.081	-0.082	-0.080	-0.303	-0.301	-0.302	-0.303	-0.303	-0.303
-9	Revenger	-0.733	-0.148	-1.267	-9.019	-8.545	-6.398	-1.636	-3.559	-6.532
-10	PapyrusECG	-5.192	1.211	-11.781	-11.960	-12.635	-8.888	-1.549	-10.926	-11.648
-11	Leicester Fox	-12.032	-12.032	-12.032	-12.813	-12.813	-12.813	-12.813	-12.813	-12.813
-12	DeRC_ECG	-31.302	-31.302	-31.302	-31.122	-31.122	-31.122	-31.122	-31.122	-31.122
+3	wavie_ABI	5.469								
+4	Ahus AI Lab	3.047	3.318	2.777	0.138	-0.345	0.792	0.670	-0.320	-0.512
+5	USST_Med	2.202	-0.058	-0.058	-0.375	-0.375	-0.375	-0.375	-0.375	-0.375
+6	mins-eth	0.893								
+7	Inventec AIC	0.397	4.101	-2.569	-4.574	-5.106	-3.782	-2.157	-2.802	-2.450
+8	TimeBeater	-0.056	-0.058	-0.056	-0.375	-0.375	-0.375	-0.375	-0.375	-0.375
+9	VinUniTeam	-0.066	-0.069	-0.062	-0.027	-0.027	-0.029	-0.030	-0.026	-0.047
+10	RoadRuNNers	-0.071								
+11	PulsePlex	-0.081	-0.082	-0.080	-0.303	-0.301	-0.302	-0.303	-0.303	-0.303
+12	ISIBrno-AIMT	-0.675								
+13	Revenger	-0.733	-0.148	-1.267	-9.019	-8.545	-6.398	-1.636	-3.559	-6.532
+14	PKU_NIHDS	-1.103								
+15	PapyrusECG	-5.192	1.211	-11.781	-11.960	-12.635	-8.888	-1.549	-10.926	-11.648
+16	Leicester Fox	-12.032	-12.032	-12.032	-12.813	-12.813	-12.813	-12.813	-12.813	-12.813

@@ -1,7 +1,2 @@
 Team name	Leaderboard: F-measure	Color scans of clean papers: F-measure	Black-and-white scans of clean papers: F-measure	Mobile phone photos of clean papers: F-measure	Mobile phone photos of stained papers: F-measure	Mobile phone photos of deteriorated papers: F-measure	Color scans of deteriorated papers: F-measure	Black-and-white scans of deteriorated papers: F-measure	Screenshots of computer monitor: F-measure
-GIRAFFE	0.652	0.587	0.136	0.092	0.072	0.087	0.578	0.103	0.171
-DERC_ECG	0.359	0.358	0.359	0.269	0.282	0.291	0.342	0.340	0.213
-LifeSupport	0.170	0.194	0.139	0.120	0.105	0.104	0.181	0.141	0.105
-proton	0.069								
-HeartSmartAI_Mak	0.051	0.053	0.010	0.061	0.015	0.033	0.023	0.011	0.028
-@Bujumbura2024	0.029	0.035	NaN	0.043	0.023	0.052	0.035	NaN	NaN
+The Easy Geese	0.082	0.007	0.112	0.232	0.262	0.341	0.501	0.101	0.362
