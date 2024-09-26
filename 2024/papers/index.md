@@ -16,13 +16,13 @@ __For this year's Challenge, please cite the Challenge description paper:__
 
 [Reyna MA, Deepanshi, Weigle J, Koscova Z, Elola A, Seyedi S, Campbell K, Clifford GD, Sameni R. Digitization and Classification of ECG Images: The George B. Moody PhysioNet Challenge 2024; 51: 1-4.](cinc_preprint.pdf)
 
-The above paper is a draft. We will update it after CinC to include information about the conclusion of the Challenge.
+The above paper is a draft. We will update it soon to include information about the conclusion of the Challenge.
 
 __For this year's Challenge data, please cite the Challenge data paper:__
 
 [Reyna MA, Deepanshi, Weigle J, Koscova Z, Campbell K, Shivashankara KK, et al. ECG-Image-Database: A dataset of ECG images with real-world imaging and scanning artifacts; a foundation for computerized ECG image digitization and analysis, 2024. URL https://arxiv.org/abs/2409.16612.](https://arxiv.org/abs/2409.16612)
 
-The above paper is a draft. We will update it after CinC as well.
+The above paper is a draft. We will update it soon to include more information about the data.
 
 __For the ECG digitization code, please cite the ECG-Image-Kit publications:__
 
