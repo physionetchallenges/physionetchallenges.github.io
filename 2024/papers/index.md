@@ -2,10 +2,6 @@
 layout: after_2015
 ---
 
----
-layout: after_2015
----
-
 # Digitization and Classification of ECG Images: The George B. Moody PhysioNet Challenge 2024
 
 ## Citations
