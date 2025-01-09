@@ -87,7 +87,7 @@ No. The only part of the Dockerfile we care about are the three lines marked as 
 
 __What's the base image in Docker?__
 
-Think of Docker as a series of images, or snapshots of a virtual machine, that are layered on top of each other. For example, your image may built on top of a very lightweight Ubuntu operating system with Python 3.8.6 from the official Docker Hub (think of it as a GitHub for Docker). You can then install your NumPy, SciPy, and other libraries on it. If you need the latest version of TensorFlow, then search for it on [hub.docker.com](https://hub.docker.com/) and edit your file so that the first line of your Dockerfile now reads as: `FROM tensorflow`. For a specific version, say 1.11, lookup the [tags](https://hub.docker.com/r/tensorflow/tensorflow/tags) and change it accordingly to a specific version, such as`FROM tensorflow:1.11.0`. We recommend using specific versions for reproducibility.
+Think of Docker as a series of images, or snapshots of a virtual machine, that are layered on top of each other. For example, your image may built on top of a very lightweight Ubuntu operating system with Python 3.8.6 from the official Docker Hub (think of it as a GitHub for Docker). You can then install your NumPy, SciPy, and other libraries on it. If you need the latest version of TensorFlow, then search for it on [hub.docker.com](https://hub.docker.com/) and edit your file so that the first line of your Dockerfile now reads as: `FROM tensorflow`. For a specific version, say 1.11, lookup the [tags](https://hub.docker.com/r/tensorflow/tensorflow/tags) and change it accordingly to a specific version, such as `FROM tensorflow:1.11.0`. We recommend using specific versions for reproducibility.
 
 __sklearn or scikit-learn?__
 
