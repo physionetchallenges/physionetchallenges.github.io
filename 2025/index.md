@@ -34,7 +34,7 @@ The Challenge data include standard 12-lead ECG records from several sources fro
 
 We are gradually introducing data for the 2025 Challenge, beginning with the [CODE-15% Database](https://zenodo.org/records/4916206)<sup>[5](#ref-ribeiro)</sup>. 
 
-The [CODE-15% Database](https://zenodo.org/records/4916206)<sup>[5](#ref-ribeiro)</sup> contains over 300,000 12-lead ECG records collected in Brazil between 2010 and 2016. Most recordings have a duration of either 7.3 s or 10.2 s and a sampling frequency of 400 Hz. The [binary Chagas labels](data/code15_chagas_labels.csv) are self-reported and therefore may or may not have been validated. The database may or may not include answers to a questionnaire. These data are publicly available and included in the Challenge training set.
+The [CODE-15% Database](https://zenodo.org/records/4916206)<sup>[5](#ref-ribeiro)</sup> contains over 300,000 12-lead ECG records collected in Brazil between 2010 and 2016. Most recordings have a duration of either 7.3 s or 10.2 s and a sampling frequency of 400 Hz. The [binary Chagas labels](data/code15_chagas_labels.zip) are self-reported and therefore may or may not have been validated. The database may or may not include answers to a questionnaire. These data are publicly available and included in the Challenge training set.
 
 Like all data, these data have different data collection, processing, and documentation procedures, but they are realistic examples of real-world data.
 
