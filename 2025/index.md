@@ -12,7 +12,9 @@ The George B. Moody PhysioNet Challenges are annual competitions that invite par
 
 ## <a name="announcements"></a> Announcements
 
-- <a name="2025.01.09"></a>__January 9, 2025:__ The NIH-funded George B. Moody PhysioNet Challenge 2025 is [now open](https://groups.google.com/g/physionet-challenges/)! Please read this website for details and share questions and comments on [Challenge forum](https://groups.google.com/g/physionet-challenges/). This year's Challenge is generously sponsored by [MathWorks](https://www.mathworks.com/).
+- <a name="2025.02.07"></a>__February 7, 2025:__ We have included two new datasets, and we are now accepting submissions for the unofficial phase of the Challenge. Please read the [submission instructions](submissions), double check your code, [register](https://forms.gle/dJQzeWsXNVgM2URY9), and [submit an entry](https://forms.gle/126MiJuEpZwe8tBn8) when ready.
+
+- <a name="2025.01.09"></a>__January 9, 2025:__ The NIH-funded George B. Moody PhysioNet Challenge 2025 is [now open](https://groups.google.com/g/physionet-challenges/c/BlGlSKUcPZ8)! Please read this website for details and share questions and comments on [Challenge forum](https://groups.google.com/g/physionet-challenges/). This year's Challenge is generously sponsored by [MathWorks](https://www.mathworks.com/).
 
 ## <a name="introduction"></a> Introduction
 
@@ -32,15 +34,17 @@ The Challenge data include standard 12-lead ECG records from several sources fro
 
 ### <a name="data-sources"></a> Data Sources
 
-We are gradually introducing data for the 2025 Challenge, beginning with the [CODE-15% Database](https://zenodo.org/records/4916206)<sup>[6](#ref-ribeiro)</sup>. 
+We are using the [CODE-15% dataset](https://zenodo.org/records/4916206)<sup>[6](#ref-ribeiro)</sup>, the [SaMi-Trop dataset](https://zenodo.org/records/4905618)<sup>[7](#ref-cardoso)</sup>, and the [PTB-XL dataset](https://physionet.org/content/ptb-xl/)<sup>[8](#ref-wagner)</sup>, which combine a large dataset with weak labels and two small datasets with strong labels.
 
-The [CODE-15% Database](https://zenodo.org/records/4916206)<sup>[6](#ref-ribeiro)</sup> contains over 300,000 12-lead ECG records collected in Brazil between 2010 and 2016. Most recordings have a duration of either 7.3 s or 10.2 s and a sampling frequency of 400 Hz. The [binary Chagas labels](data/code15_chagas_labels.zip) are self-reported and therefore may or may not have been validated. The database may or may not include answers to a questionnaire. These data are publicly available and included in the Challenge training set.
+The [CODE-15% dataset](https://zenodo.org/records/4916206)<sup>[6](#ref-ribeiro)</sup> contains over 300,000 12-lead ECG records collected in Brazil between 2010 and 2016. Most recordings have a duration of either 7.3 s or 10.2 s and a sampling frequency of 400 Hz. The [binary Chagas labels](data/code15_chagas_labels.zip) are self-reported and therefore may or may not have been validated. These data are publicly available and included in the Challenge training set.
 
-Like all data, these data have different data collection, processing, and documentation procedures, but they are realistic examples of real-world data.
+The [SaMi-Trop dataset](https://zenodo.org/records/4905618)<sup>[7](#ref-cardoso)</sup> contains 1,631 12-lead ECG records collected from Chagas patients in Brazil between 2011 and 2012. Most recordings have a duration of either 7.3 s or 10.2 s and a sampling frequency of 400 Hz. The [binary Chagas labels](data/samitrop_chagas_labels.zip) are validated by serological tests, and all are positive. These data are publicly available, and half are included in the Challenge training set.
 
-If you use these or other data as part of your method, then please cite them appropriately to clarify your method and attribute the data contributors.
+The [PTB-XL dataset](https://physionet.org/content/ptb-xl/)<sup>[8](#ref-wagner)</sup> contains 21,799 12-lead ECG records collected from presumably non-Chagas patients in Europe between 1989 and 1996. The recordings have a duration of 10 s and a sampling frequency of 500 Hz (or optionally 100 Hz). Based on geography, all or almost all of the patients are likely to be Chagas negative. They are included in the Challenge training set.
 
-The data will be split into training, validation, and test sets. The training data are publicly shared, and the validation and test data will be privately sequestered to allow for the principled assessment of the submitted algorithms. The validation and test data include sources that are not represented in the training set.
+Like all data, these data have different data collection, processing, and documentation procedures, but they are realistic examples of real-world data. If you use these or other data as part of your method, then please cite them appropriately to clarify your method and attribute the data contributors.
+
+The data will be have training, validation, and test sets. The training data are publicly shared, and the validation and test data and labels will be privately sequestered to allow for the principled assessment of the submitted algorithms. The validation and test data include sources that are not represented in the training set. The prevalence rate of Chagas disease in each of the training, validation, and test sets approximately matches the prevalence rate of the countries in which Chagas disease is endemic.
 
 ### <a name="data-formats"></a> Data Formats
 
@@ -76,7 +80,7 @@ You can access the data by following the instructions in this [repository](https
 
 ## <a name="registration"></a>Registering for the Challenge and Conditions of Participation
 
-To participate in the Challenge, [register your team](https://forms.gle/dJQzeWsXNVgM2URY9) by providing the full names, affiliations, and official email addresses of your entire team before you submit your algorithm. The details of all authors must be exactly the same as the details in your abstract submission to [Computing in Cardiology](http://www.cinc2025.org/). You may update your author list by completing [this form](https://forms.gle/dJQzeWsXNVgM2URY9) again (read the form for details), but changes to your authors must not contravene [the rules](#rules) of the Challenge.
+To participate in the Challenge, [register your team](https://forms.gle/dJQzeWsXNVgM2URY9) by providing the full names, affiliations, and official email addresses of your entire team before you [submit](https://forms.gle/126MiJuEpZwe8tBn8) your algorithm. The details of all authors must be exactly the same as the details in your abstract submission to [Computing in Cardiology](http://www.cinc2025.org/). You may update your author list by completing [this form](https://forms.gle/dJQzeWsXNVgM2URY9) again (read the form for details), but changes to your authors must not contravene [the rules](#rules) of the Challenge.
 
 ## <a name="algorithms"></a> Algorithms
 
@@ -86,7 +90,7 @@ We implemented example algorithms in [MATLAB](https://github.com/physionetchalle
 
 Teams submit their code, including working training code, in a GitHub or Gitlab repository by submitting a Google Form. During the Challenge, we will train each entry on the training set and evaluate it on the validation set. After the Challenge, we will train entries on the training set and evaluate them on the test set. We try to provide feedback about the entry (a score on the validation set for successful entries and an error message for unsuccessful entries) within 72 hours of submission.
 
-Please see the [submission instructions](submissions) for detailed information about how to submit a successful Challenge entry, double check your code (we cannot debug your code for you), and submit your algorithm after we begin accepting code submissions. We will provide feedback on your entry as soon as possible, so please wait at least **72 hours** before contacting us about the status of your entry.
+Please see the [submission instructions](submissions) for detailed information about how to submit a successful Challenge entry, double check your code (we cannot debug your code for you), and [submit](https://forms.gle/126MiJuEpZwe8tBn8) your algorithm when ready. We will provide feedback on your entry as soon as possible, so please wait at least **72 hours** before contacting us about the status of your entry.
 
 Please note that you remain the [owners](#ip) of any code that you submit, and we encourage you to use an [open-source license](#open).
 
@@ -102,7 +106,7 @@ There are two phases for the Challenge: an unofficial phase and an official phas
 
 Entrants may have an overall total of up to 15 scored entries over both the unofficial and official phases of the competition (see the below table). We will evaluate these entries on the validation set during the unofficial and official phases, and we will evaluate at most on successful official phase entry from each team on the test set after the official phase. All deadlines occur at 11:59pm GMT on the dates mentioned below, and all dates are during 2025 unless indicated otherwise. If you do not know the difference between GMT and your local time, then find it out before the deadline!
 
-__Please__ submit your entries early to ensure that you have the most chances for success. If you wait until the last few days to submit your entries, then you may not receive feedback before the submission deadline, and you may be unable to resubmit your entries if there are unexpected errors or issues with your submissions. Every year, several teams wait until the last few days to submit their first entry and are unable to debug their work before the deadline.
+__Please__ [submit](https://forms.gle/126MiJuEpZwe8tBn8) your entries early to ensure that you have the most chances for success. If you wait until the last few days to submit your entries, then you may not receive feedback before the submission deadline, and you may be unable to resubmit your entries if there are unexpected errors or issues with your submissions. Every year, several teams wait until the last few days to submit their first entry and are unable to debug their work before the deadline.
 
 ### Timing and priority of entries
 
@@ -136,7 +140,7 @@ For these reasons, we strongly suggest that you start submitting entries at leas
 To be eligible for the open-source award, you must do all the following:
 
 1. Register for the Challenge [here](https://forms.gle/dJQzeWsXNVgM2URY9).
-2. Submit at least one open-source entry that can be scored during the unofficial phase.
+2. [Submit](https://forms.gle/126MiJuEpZwe8tBn8) at least one open-source entry that can be scored during the unofficial phase.
 3. [Submit an abstract to CinC](https://cinc.org/inf_authors/) by the abstract submission deadline. Include your team name and score from the unofficial phase in your abstract. Please select "PhysioNet/CinC Challenge" as the topic of your abstract so that it can be identified easily by the abstract review committee. __Please__ read ["Advice on Writing an Abstract"](#abstracts) for important information on writing a successful abstract.
 4. Submit at least one open-source entry that can be scored during the official phase.
 5. [Submit a full 4-page paper](https://cinc.org/inf_authors/) on your work to CinC by the above preprint deadline.
@@ -241,6 +245,10 @@ Supported by the [National Institute of Biomedical Imaging and Bioengineering](h
 5. <a name="ref-jidling"></a> Jidling C, Gedon D, Schön TB, Oliveira CDL, Cardoso CS, Ferreira AM, Giatti L, Barreto SM, Sabino EC, Ribeiro ALP, Ribeiro AH. Screening for Chagas disease from the electrocardiogram using a deep neural network. PLoS Negl Trop Dis. 2023 Jul 3;17(7):e0011118. doi: [10.1371/journal.pntd.0011118](https://10.1371/journal.pntd.0011118). PMID: [37399207](https://pubmed.ncbi.nlm.nih.gov/37399207/); PMCID: PMC10361500.
 
 6. <a name="ref-riberio"></a> Ribeiro AH, Ribeiro MH, Paixão GMM, Oliveira DM, Gomes PR, Canazart JA, Ferreira MPS, Andersson CR, Macfarlane PW, Meira W Jr, Schön TB, Ribeiro ALP. Automatic diagnosis of the 12-lead ECG using a deep neural network. Nat Commun. 2020 Apr 9;11(1):1760. doi: 10.1038/s41467-020-15432-4. Erratum in: Nat Commun. 2020 May 1;11(1):2227. doi: [https://doi.org/10.1038/s41467-020-16172-1](10.1038/s41467-020-16172-1). PMID: [32273514](https://pubmed.ncbi.nlm.nih.gov/32273514/); PMCID: PMC7145824.
+
+7. <a name="ref-cardoso"></a> Cardoso CS, Sabino EC, Oliveira CD, de Oliveira LC, Ferreira AM, Cunha-Neto E, Bierrenbach AL, Ferreira JE, Haikal DS, Reingold AL, Ribeiro AL. Longitudinal study of patients with chronic Chagas cardiomyopathy in Brazil (SaMi-Trop project): a cohort profile. BMJ Open. 2016 May 4;6(5):e011181. doi: [10.1136/bmjopen-2016-011181](https://doi.org/10.1136/bmjopen-2016-011181). PMID: [27147390](https://pubmed.ncbi.nlm.nih.gov/27147390/); PMCID: PMC4861110.
+
+8. <a name="ref-wagner"></a> Wagner P, Strodthoff N, Bousseljot RD, Kreiseler D, Lunze FI, Samek W, Schaeffter T. PTB-XL, a large publicly available electrocardiography dataset. Sci Data. 2020 May 25;7(1):154. doi: [10.1038/s41597-020-0495-6](https://doi.org/10.1038/s41597-020-0495-6). PMID: [32451379](https://pubmed.ncbi.nlm.nih.gov/32451379/); PMCID: PMC7248071.
 
 ---
 

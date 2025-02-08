@@ -12,7 +12,7 @@ Please check the below links for information about [current](#current) and [past
 
 ## <a name="news"></a> Select News
 
-- <a name="2025.01.09"></a>__January 9, 2025:__ The NIH-funded [George B. Moody PhysioNet Challenge 2025](2025) is now open! Please read this website for details and share questions and comments on [Challenge forum](https://groups.google.com/g/physionet-challenges/). This year's Challenge is generously sponsored by [MathWorks](https://www.mathworks.com/).
+- <a name="2025.02.07"></a>__February 7, 2025:__ We have included two new datasets, and we are now accepting submissions for the unofficial phase of the Challenge. Please read the [submission instructions](2025/submissions), double check your code, [register](https://forms.gle/dJQzeWsXNVgM2URY9), and [submit an entry](https://forms.gle/126MiJuEpZwe8tBn8) when ready.
 
 - <a name="2024.09.20"></a>__September 20, 2024:__ We have released (__and updated__) the [results](2024/results) of the 2024 Challenge. Congratulations to the winners! Please see the [announcement](https://groups.google.com/g/physionet-challenges/c/bEjPLIMagRk) for more details.
 
