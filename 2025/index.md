@@ -12,7 +12,7 @@ The George B. Moody PhysioNet Challenges are annual competitions that invite par
 
 ## <a name="announcements"></a> Announcements
 
-- <a name="2025.02.07"></a>__February 7, 2025:__ We have included two new datasets, and we are now accepting submissions for the unofficial phase of the Challenge. Please read the [submission instructions](submissions), double check your code, [register](https://forms.gle/dJQzeWsXNVgM2URY9), and [submit an entry](https://forms.gle/126MiJuEpZwe8tBn8) when ready.
+- <a name="2025.02.07"></a>__February 7, 2025:__ We have [added](https://groups.google.com/g/physionet-challenges/c/xrGttD6UmjM) two new datasets, and we are now accepting submissions for the unofficial phase of the Challenge. Please read the [submission instructions](submissions), double check your code, [register](https://forms.gle/dJQzeWsXNVgM2URY9), and [submit an entry](https://forms.gle/126MiJuEpZwe8tBn8) when ready.
 
 - <a name="2025.01.09"></a>__January 9, 2025:__ The NIH-funded George B. Moody PhysioNet Challenge 2025 is [now open](https://groups.google.com/g/physionet-challenges/c/BlGlSKUcPZ8)! Please read this website for details and share questions and comments on [Challenge forum](https://groups.google.com/g/physionet-challenges/). This year's Challenge is generously sponsored by [MathWorks](https://www.mathworks.com/).
 
