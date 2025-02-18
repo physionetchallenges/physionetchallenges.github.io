@@ -67,11 +67,10 @@ The [WFDB header file](https://physionet.org/physiotools/wag/header-5.htm) inclu
 113.dat 16 1000(0)/mV 16 0 3826 22578 0 V4
 113.dat 16 1000(0)/mV 16 0 3948 -12925 0 V5
 113.dat 16 1000(0)/mV 16 0 4367 -14130 0 V6
-# Exam ID: 113
-# Patient ID: 16860
 # Age: 68
 # Sex: Female
 # Chagas label: False
+# Source: CODE-15%
 ```
 
 ### <a name="data-access"></a> Data Access
