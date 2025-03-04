@@ -83,7 +83,7 @@ Go to [https://docs.docker.com/install/](https://docs.docker.com/install/) and i
 
 __Do I have to use your Dockerfile?__
 
-No. The only part of the Dockerfile we care about are the three lines marked as "DO NOT EDIT". These three lines help ensure that, during the build process of the container, your code is copied into a folder called `physionet` so that our processing pipeline can find your code and run it. Please do not change those three lines. You are free to change your base image, and at times you should (see the next question).
+No. The only part of the Dockerfile we care about are the three lines marked as "DO NOT EDIT". These three lines help ensure that, during the build process of the container, your code is copied into a folder called `challenge` so that our processing pipeline can find your code and run it. Please do not change those three lines. You are free to change your base image, and at times you should (see the next question).
 
 __What's the base image in Docker?__
 
