@@ -34,7 +34,7 @@ The Challenge data include standard 12-lead ECG records from several sources fro
 
 ### <a name="data-sources"></a> Data Sources
 
-We are using the [CODE-15% dataset](https://zenodo.org/records/4916206)<sup>[6](#ref-ribeiro)</sup>, the [SaMi-Trop dataset](https://zenodo.org/records/4905618)<sup>[7](#ref-cardoso)</sup>, and the [PTB-XL dataset](https://physionet.org/content/ptb-xl/)<sup>[8](#ref-wagner)</sup>, which combine a large dataset with weak labels and two small datasets with strong labels.
+We are currently using the [CODE-15% dataset](https://zenodo.org/records/4916206)<sup>[6](#ref-ribeiro)</sup>, the [SaMi-Trop dataset](https://zenodo.org/records/4905618)<sup>[7](#ref-cardoso)</sup>, and the [PTB-XL dataset](https://physionet.org/content/ptb-xl/)<sup>[8](#ref-wagner)</sup>, which combine a large dataset with weak labels and two small datasets with strong labels, for the Challenge training sets.
 
 The [CODE-15% dataset](https://zenodo.org/records/4916206)<sup>[6](#ref-ribeiro)</sup> contains over 300,000 12-lead ECG records collected in Brazil between 2010 and 2016. Most recordings have a duration of either 7.3 s or 10.2 s and a sampling frequency of 400 Hz. The [binary Chagas labels](data/code15_chagas_labels.zip) are self-reported and therefore may or may not have been validated. These data are publicly available and included in the Challenge training set.
 
@@ -44,7 +44,7 @@ The [PTB-XL dataset](https://physionet.org/content/ptb-xl/)<sup>[8](#ref-wagner)
 
 Like all data, these data have different data collection, processing, and documentation procedures, but they are realistic examples of real-world data. If you use these or other data as part of your method, then please cite them appropriately to clarify your method and attribute the data contributors.
 
-The data will be have training, validation, and test sets. The training data are publicly shared, and the validation and test data and labels will be privately sequestered to allow for the principled assessment of the submitted algorithms. The validation and test data include sources that are not represented in the training set. The prevalence rate of Chagas disease in each of the training, validation, and test sets approximately matches the prevalence rate of the countries in which Chagas disease is endemic.
+We will have will have training, validation, and test sets. The training data are publicly shared, and the validation and test data and labels will be privately sequestered to allow for the principled assessment of the submitted algorithms. The validation and test data include sources that are not represented in the training set. The prevalence rate of Chagas disease in each of the training, validation, and test sets approximately matches the prevalence rate of the countries in which Chagas disease is endemic.
 
 ### <a name="data-formats"></a> Data Formats
 
