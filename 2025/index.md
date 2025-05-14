@@ -118,9 +118,9 @@ For these reasons, we strongly suggest that you start submitting entries at leas
 |                                            | Start              | End                               | Submissions                          |
 |--------------------------------------------|--------------------|-----------------------------------|--------------------------------------|
 | Unofficial phase                           | 09 January 2025    | 09 April 2025                     | 1-5 scored entries ([\*](#1ast))     |
-| Hiatus                                     | 10 April 2025      | 09 May 2025                       | N/A                                  |
+| Hiatus                                     | 10 April 2025      | May 2025                          | N/A                                  |
 | Abstract deadline                          | 15 April 2025      | 15 April 2025                     | 1 abstract                           |
-| Official phase                             | 10 May 2025        | 20 August 2025                    | 1-10 scored entries ([\*](#1ast))    |
+| Official phase                             | May 2025           | 20 August 2025                    | 1-10 scored entries ([\*](#1ast))    |
 | Abstract decisions released                | Mid-June 2025      | Mid-June 2025                     | N/A                                  |
 | Wild card entry date                       | 31 July 2025       | 31 July 2025                      | N/A                                  |
 | Hiatus                                     | 21 August 2025     | 13 September 2025                 | N/A                                  |
