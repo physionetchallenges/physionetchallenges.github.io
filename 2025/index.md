@@ -12,7 +12,7 @@ The George B. Moody PhysioNet Challenges are annual competitions that invite par
 
 ## <a name="announcements"></a> Announcements
 
-- <a name="2025.05.29"></a>__May 29, 2025:__ We have [launched](https://groups.google.com/g/physionet-challenges/) the official phase of the Challenge are now accepting submissions for the unofficial phase of the Challenge. Please read the [submission instructions](submissions), double check your code, and [submit an entry](https://forms.gle/taMDUtYjKpV96ykJ8) when ready.
+- <a name="2025.05.29"></a>__May 29, 2025:__ We have [launched](https://groups.google.com/g/physionet-challenges/c/HXr78PTVv0Y) the official phase of the Challenge are now accepting submissions for the unofficial phase of the Challenge. Please read the [submission instructions](submissions), double check your code, and [submit an entry](https://forms.gle/taMDUtYjKpV96ykJ8) when ready.
 
 - <a name="2025.02.07"></a>__February 7, 2025:__ We have [added](https://groups.google.com/g/physionet-challenges/c/xrGttD6UmjM) two new datasets, and we are now accepting submissions for the unofficial phase of the Challenge. Please read the [submission instructions](submissions), double check your code, [register](https://forms.gle/dJQzeWsXNVgM2URY9), and submit an entry when ready.
 
@@ -42,7 +42,7 @@ The [CODE-15% dataset](https://zenodo.org/records/4916206)<sup>[6](#ref-ribeiro)
 
 The [SaMi-Trop dataset](https://zenodo.org/records/4905618)<sup>[7](#ref-cardoso)</sup> contains 1,631 12-lead ECG records collected from Chagas patients in Brazil between 2011 and 2012. Most recordings have a duration of either 7.3 s or 10.2 s and a sampling frequency of 400 Hz. The Chagas labels are validated by serological tests, and all are positive. These data are publicly available and part of the Challenge training set. [This data processing script](https://github.com/physionetchallenges/python-example-2025/blob/main/prepare_samitrop_data.py) prepares this dataset for the Challenge.
 
-The [PTB-XL dataset](https://physionet.org/content/ptb-xl/)<sup>[8](#ref-wagner)</sup> contains 21,799 12-lead ECG records collected from presumably non-Chagas patients in Europe between 1989 and 1996. The recordings have a duration of 10 s and a sampling frequency of 500 Hz. The Chagas labels are all assumed to be negative based on georgraphy. This dataset is publicly available and part of the Challenge training set. [This data processing script](https://github.com/physionetchallenges/python-example-2025/blob/main/prepare_ptbxl_data.py) prepares this dataset for the Challenge.
+The [PTB-XL dataset](https://physionet.org/content/ptb-xl/)<sup>[8](#ref-wagner)</sup> contains 21,799 12-lead ECG records collected from presumably non-Chagas patients in Europe between 1989 and 1996. The recordings have a duration of 10 s and a sampling frequency of 500 Hz. The Chagas labels are all assumed to be negative based on geography. This dataset is publicly available and part of the Challenge training set. [This data processing script](https://github.com/physionetchallenges/python-example-2025/blob/main/prepare_ptbxl_data.py) prepares this dataset for the Challenge.
 
 Like all data, these datasets have different data collection, processing, and documentation procedures, but they are realistic examples of real-world data. If you use these or other data as part of your method, then please cite them appropriately to clarify your method and attribute the data contributors.
 
