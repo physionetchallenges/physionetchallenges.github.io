@@ -12,7 +12,9 @@ The George B. Moody PhysioNet Challenges are annual competitions that invite par
 
 ## <a name="announcements"></a> Announcements
 
-- <a name="2025.02.07"></a>__February 7, 2025:__ We have [added](https://groups.google.com/g/physionet-challenges/c/xrGttD6UmjM) two new datasets, and we are now accepting submissions for the unofficial phase of the Challenge. Please read the [submission instructions](submissions), double check your code, [register](https://forms.gle/dJQzeWsXNVgM2URY9), and [submit an entry](https://forms.gle/126MiJuEpZwe8tBn8) when ready.
+- <a name="2025.05.29"></a>__May 29, 2025:__ We have [launched](https://groups.google.com/g/physionet-challenges/) the official phase of the Challenge are now accepting submissions for the unofficial phase of the Challenge. Please read the [submission instructions](submissions), double check your code, and [submit an entry](https://forms.gle/taMDUtYjKpV96ykJ8) when ready.
+
+- <a name="2025.02.07"></a>__February 7, 2025:__ We have [added](https://groups.google.com/g/physionet-challenges/c/xrGttD6UmjM) two new datasets, and we are now accepting submissions for the unofficial phase of the Challenge. Please read the [submission instructions](submissions), double check your code, [register](https://forms.gle/dJQzeWsXNVgM2URY9), and submit an entry when ready.
 
 - <a name="2025.01.09"></a>__January 9, 2025:__ The NIH-funded George B. Moody PhysioNet Challenge 2025 is [now open](https://groups.google.com/g/physionet-challenges/c/BlGlSKUcPZ8)! Please read this website for details and share questions and comments on [Challenge forum](https://groups.google.com/g/physionet-challenges/). This year's Challenge is generously sponsored by [MathWorks](https://www.mathworks.com/).
 
@@ -30,21 +32,21 @@ For the 2025 Challenge, we ask participants to develop and implement open-source
 
 ## <a name="data"></a> Data
 
-The Challenge data include standard 12-lead ECG records from several sources from Central and South America and binary labels for Chagas disease.
+The Challenge data include standard 12-lead ECG records from several sources from Central and South America, basic demographic informaton, and binary labels for Chagas disease.
 
 ### <a name="data-sources"></a> Data Sources
 
-We are currently using the [CODE-15% dataset](https://zenodo.org/records/4916206)<sup>[6](#ref-ribeiro)</sup>, the [SaMi-Trop dataset](https://zenodo.org/records/4905618)<sup>[7](#ref-cardoso)</sup>, and the [PTB-XL dataset](https://physionet.org/content/ptb-xl/)<sup>[8](#ref-wagner)</sup>, which combine a large dataset with weak labels and two small datasets with strong labels, for the Challenge training sets.
+The data include the [CODE-15% dataset](https://zenodo.org/records/4916206)<sup>[6](#ref-ribeiro)</sup>, the [SaMi-Trop dataset](https://zenodo.org/records/4905618)<sup>[7](#ref-cardoso)</sup>, the [PTB-XL dataset](https://physionet.org/content/ptb-xl/)<sup>[8](#ref-wagner)</sup>, and multiple private datasets from Chagas-endemic areas.
 
-The [CODE-15% dataset](https://zenodo.org/records/4916206)<sup>[6](#ref-ribeiro)</sup> contains over 300,000 12-lead ECG records collected in Brazil between 2010 and 2016. Most recordings have a duration of either 7.3 s or 10.2 s and a sampling frequency of 400 Hz. The [binary Chagas labels](data/code15_chagas_labels.zip) are self-reported and therefore may or may not have been validated. These data are publicly available and included in the Challenge training set.
+The [CODE-15% dataset](https://zenodo.org/records/4916206)<sup>[6](#ref-ribeiro)</sup> contains over 300,000 12-lead ECG records collected in Brazil between 2010 and 2016. The recordings have a duration of either 7.3 s or 10.2 s and a sampling frequency of 400 Hz. The [binary Chagas labels](data/code15_chagas_labels.zip) are self-reported and therefore may or may not have been validated; some are positive and most are negative, reflecting the prevalence of Chagas disease in the region. These data are publicly available and part of the Challenge training set. [This data processing script](https://github.com/physionetchallenges/python-example-2025/blob/main/prepare_code15_data.py) prepares this dataset for the Challenge.
 
-The [SaMi-Trop dataset](https://zenodo.org/records/4905618)<sup>[7](#ref-cardoso)</sup> contains 1,631 12-lead ECG records collected from Chagas patients in Brazil between 2011 and 2012. Most recordings have a duration of either 7.3 s or 10.2 s and a sampling frequency of 400 Hz. The [binary Chagas labels](data/samitrop_chagas_labels.zip) are validated by serological tests, and all are positive. These data are publicly available, and half are included in the Challenge training set.
+The [SaMi-Trop dataset](https://zenodo.org/records/4905618)<sup>[7](#ref-cardoso)</sup> contains 1,631 12-lead ECG records collected from Chagas patients in Brazil between 2011 and 2012. Most recordings have a duration of either 7.3 s or 10.2 s and a sampling frequency of 400 Hz. The Chagas labels are validated by serological tests, and all are positive. These data are publicly available and part of the Challenge training set. [This data processing script](https://github.com/physionetchallenges/python-example-2025/blob/main/prepare_samitrop_data.py) prepares this dataset for the Challenge.
 
-The [PTB-XL dataset](https://physionet.org/content/ptb-xl/)<sup>[8](#ref-wagner)</sup> contains 21,799 12-lead ECG records collected from presumably non-Chagas patients in Europe between 1989 and 1996. The recordings have a duration of 10 s and a sampling frequency of 500 Hz (or optionally 100 Hz). Based on geography, all or almost all of the patients are likely to be Chagas negative. They are included in the Challenge training set.
+The [PTB-XL dataset](https://physionet.org/content/ptb-xl/)<sup>[8](#ref-wagner)</sup> contains 21,799 12-lead ECG records collected from presumably non-Chagas patients in Europe between 1989 and 1996. The recordings have a duration of 10 s and a sampling frequency of 500 Hz. The Chagas labels are all assumed to be negative based on georgraphy. This dataset is publicly available and part of the Challenge training set. [This data processing script](https://github.com/physionetchallenges/python-example-2025/blob/main/prepare_ptbxl_data.py) prepares this dataset for the Challenge.
 
-Like all data, these data have different data collection, processing, and documentation procedures, but they are realistic examples of real-world data. If you use these or other data as part of your method, then please cite them appropriately to clarify your method and attribute the data contributors.
+Like all data, these datasets have different data collection, processing, and documentation procedures, but they are realistic examples of real-world data. If you use these or other data as part of your method, then please cite them appropriately to clarify your method and attribute the data contributors.
 
-We will have will have training, validation, and test sets. The training data are publicly shared, and the validation and test data and labels will be privately sequestered to allow for the principled assessment of the submitted algorithms. The validation and test data include sources that are not represented in the training set. The prevalence rate of Chagas disease in each of the training, validation, and test sets approximately matches the prevalence rate of the countries in which Chagas disease is endemic.
+We split the Challenge data into training, validation, and test sets. The training data are publicly shared, and the validation and test data and labels are privately sequestered to allow for the principled assessment of the submitted algorithms. The training data comprise one large dataset, [CODE-15% dataset](https://zenodo.org/records/4916206)<sup>[6](#ref-ribeiro)</sup> , with "weak" labels, and two smaller datasets, [SaMi-Trop dataset](https://zenodo.org/records/4905618)<sup>[7](#ref-cardoso)</sup>, and [PTB-XL dataset](https://physionet.org/content/ptb-xl/)<sup>[8](#ref-wagner)</sup>, with "strong" labels. The validation and test data comprise multiple datasets with strong labels; these datasets are distinct from the training set. The prevalence rate of Chagas disease in each of the training, validation, and test sets approximately matches the prevalence rate of the countries in which Chagas disease is endemic.
 
 ### <a name="data-formats"></a> Data Formats
 
@@ -52,7 +54,9 @@ The data were minimally processed from the machines to de-identify the data as n
 
 The data are stored in WFDB files. We provide [example code](#algorithms) for preparing, loading, and processing the data in both MATLAB and Python. Each ECG recording includes a signal file in a [WFDB-compatible binary format](https://physionet.org/physiotools/wag/signal-5.htm) for the ECG signal data and a plain text file in [WFDB header format](https://physionet.org/physiotools/wag/header-5.htm) for metadata about the recording as well as patient attributes, including the Chagas labels.
 
-The [WFDB header file](https://physionet.org/physiotools/wag/header-5.htm) includes the sampling frequency, signal length, signal resolution, and signal names of the channels in the ECG waveform; initial and checksum values for the channels; any available demographic information; and the Chagas labels. For example, the [CODE-15% Database](https://zenodo.org/records/4916206) includes a record `113`. This record has 12 channels, a sampling frequency of 400Hz, and 4096 samples per channel:
+ The Chagas labels for the [CODE-15% dataset](https://zenodo.org/records/4916206)<sup>[6](#ref-ribeiro)</sup> are available [here](data/code15_chagas_labels.zip). The Chagas labels for the [SaMi-Trop dataset](https://zenodo.org/records/4905618)<sup>[7](#ref-cardoso)</sup> and the [PTB-XL dataset](https://physionet.org/content/ptb-xl/)<sup>[8](#ref-wagner)</sup> are provided with the data processing code, i.e., the SaMi-Trop dataset labels are positive, and the PTB-XL dataset labels are  negative.
+
+The [WFDB header file](https://physionet.org/physiotools/wag/header-5.htm) includes the sampling frequency, signal length, signal resolution, and signal names of the channels in the ECG waveform; initial and checksum values for the channels; any available demographic information; and the Chagas labels. For example, the [CODE-15% dataset](https://zenodo.org/records/4916206)<sup>[6](#ref-ribeiro)</sup>  includes a record `113`. This record has 12 channels, a sampling frequency of 400Hz, and 4096 samples per channel:
 ```
 113 12 400 4096
 113.dat 16 1000(0)/mV 16 0 7767 28904 0 I
@@ -75,11 +79,11 @@ The [WFDB header file](https://physionet.org/physiotools/wag/header-5.htm) inclu
 
 ### <a name="data-access"></a> Data Access
 
-You can access the data by following the instructions in this [repository](https://github.com/physionetchallenges/python-example-2025).
+You can access the data by following the instructions in this [repository](https://github.com/physionetchallenges/python-example-2025). You can download the Chagas labels for the [CODE-15% dataset](https://zenodo.org/records/4916206)<sup>[6](#ref-ribeiro)</sup> [here](data/code15_chagas_labels.zip).
 
 ## <a name="registration"></a>Registering for the Challenge and Conditions of Participation
 
-To participate in the Challenge, [register your team](https://forms.gle/dJQzeWsXNVgM2URY9) by providing the full names, affiliations, and official email addresses of your entire team before you [submit](https://forms.gle/126MiJuEpZwe8tBn8) your algorithm. The details of all authors must be exactly the same as the details in your abstract submission to [Computing in Cardiology](http://www.cinc2025.org/). You may update your author list by completing [this form](https://forms.gle/dJQzeWsXNVgM2URY9) again (read the form for details), but changes to your authors must not contravene [the rules](#rules) of the Challenge.
+To participate in the Challenge, [register your team](https://forms.gle/dJQzeWsXNVgM2URY9) by providing the full names, affiliations, and official email addresses of your entire team before you [submit](https://forms.gle/taMDUtYjKpV96ykJ8) your algorithm. The details of all authors must be exactly the same as the details in your abstract submission to [Computing in Cardiology](http://www.cinc2025.org/). You may update your author list by completing [this form](https://forms.gle/dJQzeWsXNVgM2URY9) again (read the form for details), but changes to your authors must not contravene [the rules](#rules) of the Challenge.
 
 ## <a name="algorithms"></a> Algorithms
 
@@ -87,17 +91,21 @@ Each team must develop and implement an algorithm that, given a 12-lead ECG reco
 
 We implemented example algorithms in [MATLAB](https://github.com/physionetchallenges/matlab-example-2025) and [Python](https://github.com/physionetchallenges/python-example-2025). Other implementation languages will be considered upon request. The code repositories contain details for the examples and other helpful scripts and functions. These examples were not designed to perform well but to provide minimal working examples of how to work with the data for the Challenge task. We will also provide a version of [this code](https://github.com/carji475/ecg-chagas), which uses a deep neural network to detect Chagas disease.
 
-Teams submit their code, including working training code, in a GitHub or Gitlab repository by submitting a Google Form. During the Challenge, we will train each entry on the training set and evaluate it on the validation set. After the Challenge, we will train entries on the training set and evaluate them on the test set. We try to provide feedback about the entry (a score on the validation set for successful entries and an error message for unsuccessful entries) within 72 hours of submission.
+Teams submit their code, including working training code, in a GitHub or Gitlab repository by submitting a [form](https://forms.gle/taMDUtYjKpV96ykJ8) with information about their team and code. During the Challenge, we will train each entry on the training set and evaluate it on the validation set. After the Challenge, we will train entries on the training set and evaluate them on the test set. We try to provide feedback about the entry (a score on the validation set for successful entries and an error message for unsuccessful entries) within 72 hours of submission.
 
-Please see the [submission instructions](submissions) for detailed information about how to submit a successful Challenge entry, double check your code (we cannot debug your code for you), and [submit](https://forms.gle/126MiJuEpZwe8tBn8) your algorithm when ready. We will provide feedback on your entry as soon as possible, so please wait at least **72 hours** before contacting us about the status of your entry.
+Please see the [submission instructions](submissions) for detailed information about how to submit a successful Challenge entry, double check your code (we cannot debug your code for you), and [submit](https://forms.gle/taMDUtYjKpV96ykJ8) your algorithm when ready. We will provide feedback on your entry as soon as possible, so please wait at least **72 hours** before contacting us about the status of your entry.
 
 Please note that you remain the [owners](#ip) of any code that you submit, and we encourage you to use an [open-source license](#open).
 
 ## <a name="scoring"></a> Scoring
 
-Each region has a limited capacity for serological testing to validate potential cases of Chagas disease. We will evaluate each algorithm by prioritizing patients according to the algorithm's probability of a positive Chagas case and reporting the true positive rate (TPR) for Chagas cases in the patients with the 5% highest probabilities. The team with the highest TPR on the hidden test set wins the Challenge.
+The serological testing capacity for Chagas disease is limited, so we want to evaluate the ability of an algorithm to use ECGs to prioritize patients for testing. Accordingly, we define the Challenge score for an algorithm as the fraction of Chagas patients in a patient cohort that the algorithm prioritizes in the top 5% of the cohort, which is roughly the serological testing capacity The team with the highest Challenge score on the hidden test set wins the Challenge.
 
-This metric and other traditional metrics, including AUC, are [implemented](https://github.com/physionetchallenges/evaluation-2025) in the `evaluate_model` script. We invite feedback about these metrics.
+Mathematically, let $X$ be a dataset of $n$ ECG records, and let $p_x$ be algorithm's estimated probability of a positive case of Chagas disease for an ECG record $x \in X$. Let $x_{1} = \text{argmax}_{x \in X} p_x$ be the record with the highest probability, $x_2$ the record with the second-highest probability, etc. We define $X_\alpha = \{x_k \in X: k \leq \alpha n\} \subseteq X$ as the collection of records with the $k = \lfloor \alpha n\rfloor$ highest probabilities. The Challenge score is the true positive rate for $X_\alpha$, i.e., the fraction of Chagas-positive cases in $X_a$ out of the total number of Chagas-positive cases in $X$, for $\alpha = 0.05$.
+
+If there are records $x, y \in X$ with tied probabilities $p_x = p_y$ such that $x \in X_\alpha$ and $y \not\in X_\alpha$, then the Challenge score will randomly break ties between the tied records so that $\alpha n -1 \leq |X_\alpha| \leq \alpha n$ and return the expected (mean) score over all permutations of the tied records.
+
+This metric and other traditional metrics are [implemented](https://github.com/physionetchallenges/evaluation-2025) in the `evaluate_model` script.
 
 ## <a name="rules"></a> Overview of rules
 
@@ -105,7 +113,7 @@ There are two phases for the Challenge: an unofficial phase and an official phas
 
 Entrants may have an overall total of up to 15 scored entries over both the unofficial and official phases of the competition (see the below table). We will evaluate these entries on the validation set during the unofficial and official phases, and we will evaluate at most on successful official phase entry from each team on the test set after the official phase. All deadlines occur at 11:59pm GMT on the dates mentioned below, and all dates are during 2025 unless indicated otherwise. If you do not know the difference between GMT and your local time, then find it out before the deadline!
 
-__Please__ [submit](https://forms.gle/126MiJuEpZwe8tBn8) your entries early to ensure that you have the most chances for success. If you wait until the last few days to submit your entries, then you may not receive feedback before the submission deadline, and you may be unable to resubmit your entries if there are unexpected errors or issues with your submissions. Every year, several teams wait until the last few days to submit their first entry and are unable to debug their work before the deadline.
+__Please__ [submit](https://forms.gle/taMDUtYjKpV96ykJ8) your entries early to ensure that you have the most chances for success. If you wait until the last few days to submit your entries, then you may not receive feedback before the submission deadline, and you may be unable to resubmit your entries if there are unexpected errors or issues with your submissions. Every year, several teams wait until the last few days to submit their first entry and are unable to debug their work before the deadline.
 
 ### Timing and priority of entries
 
@@ -118,9 +126,9 @@ For these reasons, we strongly suggest that you start submitting entries at leas
 |                                            | Start              | End                               | Submissions                          |
 |--------------------------------------------|--------------------|-----------------------------------|--------------------------------------|
 | Unofficial phase                           | 09 January 2025    | 09 April 2025                     | 1-5 scored entries ([\*](#1ast))     |
-| Hiatus                                     | 10 April 2025      | May 2025                          | N/A                                  |
+| Hiatus                                     | 10 April 2025      | 28 May 2025                       | N/A                                  |
 | Abstract deadline                          | 15 April 2025      | 15 April 2025                     | 1 abstract                           |
-| Official phase                             | May 2025           | 20 August 2025                    | 1-10 scored entries ([\*](#1ast))    |
+| Official phase                             | 29 May 2025           | 20 August 2025                 | 1-10 scored entries ([\*](#1ast))    |
 | Abstract decisions released                | Mid-June 2025      | Mid-June 2025                     | N/A                                  |
 | Wild card entry date                       | 31 July 2025       | 31 July 2025                      | N/A                                  |
 | Hiatus                                     | 21 August 2025     | 13 September 2025                 | N/A                                  |
@@ -128,7 +136,7 @@ For these reasons, we strongly suggest that you start submitting entries at leas
 | Preprint deadline                          | 27 August 2025     | 27 August 2025                    | One 4-page paper ([\*\*](#2ast))     |
 | Conference                                 | 14 September 2025  | 17 September 2025                 | 1 presentation ([\*\*](#2ast))       |
 | Final scores released                      | Mid-September 2025 | Mid-September 2025                | N/A                                  |
-| Final paper deadline                       | 1 October 2025     | 1 October 2025                    | One 4-page paper ([\*\*\*](#3ast))   |
+| Final paper deadline                       | 01 October 2025    | 01 October 2025                   | One 4-page paper ([\*\*\*](#3ast))   |
 
 <a name="1ast"></a>(\* Entries that fail to score do not count against limits.)
 
@@ -139,9 +147,9 @@ For these reasons, we strongly suggest that you start submitting entries at leas
 To be eligible for the open-source award, you must do all the following:
 
 1. Register for the Challenge [here](https://forms.gle/dJQzeWsXNVgM2URY9).
-2. [Submit](https://forms.gle/126MiJuEpZwe8tBn8) at least one open-source entry that can be scored during the unofficial phase.
+2. Submit at least one open-source entry that can be scored during the unofficial phase.
 3. [Submit an abstract to CinC](https://cinc.org/inf_authors/) by the abstract submission deadline. Include your team name and score from the unofficial phase in your abstract. Please select "PhysioNet/CinC Challenge" as the topic of your abstract so that it can be identified easily by the abstract review committee. __Please__ read ["Advice on Writing an Abstract"](#abstracts) for important information on writing a successful abstract.
-4. Submit at least one open-source entry that can be scored during the official phase.
+4. [Submit at least one open-source entry](https://forms.gle/taMDUtYjKpV96ykJ8) that can be scored during the official phase.
 5. [Submit a full 4-page paper](https://cinc.org/inf_authors/) on your work to CinC by the above preprint deadline.
 6. One of your team members must attend [CinC 2025](http://www.cinc2025.org/) to present your work either orally or as a poster (depending on your abstract acceptance). If you have a poster, then you must stand by it to defend your work. No-shows (oral or poster) will be disqualified. One of your team members must also attend the closing ceremony to collect your prize. No substitutes will be allowed. If the conference permits remote attendance, then you will be eligible for ranking if you attend remotely (and fulfill the other required criteria), but teams must attend in person for prize eligibility.
 7. [Submit a full 4-page paper](https://cinc.org/inf_authors/) on your work to CinC by the above final paper deadline. Please note that we expect the abstract to change significantly both in terms of results and methods. You may also update your title with the caveat that it must not be substantially similar to the title of the competition or contain the words "physionet," "challenge," or "competition."
@@ -217,7 +225,7 @@ All of this work is in service of protecting your scientific contributions over 
 
 ## <a name="conference"></a>Conference Attendance
 
-[CinC 2025](https://cinc2025.org/) will take place from 14-17 September 2025 in São Paulo, Brazil. You must attend the whole conference to be eligible for prizes. If you send someone in your place who is not a team member or co-author, then you will be disqualified and your abstract will be removed from the proceedings. In particular, it is vital that the presenter (oral or poster) can defend your work and have in-depth knowledge of all decisions made during the development of your algorithm. Due to this year's challenges, both in-person and remote attendance are allowed, but only in-person attendees are eligible for prize money. If you require a visa to attend the conference, we strongly suggest that you apply as soon as possible. Please contact the local [conference](https://cinc2025.org/) organizing committee (not the Challenge Organizers) for any visa sponsorship letters and answer any questions concerning the conference.
+[CinC 2025](https://cinc2025.org/) will take place over 14-17 September 2025 in São Paulo, Brazil. You must attend the whole conference to be eligible for prizes. If you send someone in your place who is not a team member or co-author, then you will be disqualified and your abstract will be removed from the proceedings. In particular, it is vital that the presenter (oral or poster) can defend your work and have in-depth knowledge of all decisions made during the development of your algorithm. Only in-person attendees are eligible for prize money. If you require a visa to attend the conference, we strongly suggest that you apply as soon as possible. Please contact the local [conference](https://cinc2025.org/) organizing committee (not the Challenge Organizers) for any visa sponsorship letters and answer any questions concerning the conference.
 
 ## <a name="sponsors"></a> Sponsors
 

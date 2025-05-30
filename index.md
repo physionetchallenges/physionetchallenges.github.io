@@ -6,13 +6,15 @@ layout: main
 
 For the past 26 years, [PhysioNet](https://physionet.org) and [Computing in Cardiology](http://www.cinc.org/) have co-hosted a series of annual challenges, now called the [George B. Moody PhysioNet Challenges](about), to tackle clinically interesting but unsolved questions.
 
-The [George B. Moody PhysioNet Challenge 2025](2025) invites teams to develop algorithms for detecting Chagas disease from electrocardiograms (ECGs). Chagas disease is a parasitic disease in Central and South America that affects an estimated 6.5 million people and causes nearly 10,000 deaths annually. Timely treatment may prevent or slow damage to the cardiovascular system, but serological testing capacity is limited, so detection through ECGs can help to identify Chagas patients for testing and treatment. We ask participants to design and implement working, open-source algorithms that, based only on the provided ECGs, prioritize patients for testing. The teams with the best scores for these tasks on the hidden test set win the Challenge.
+The [George B. Moody PhysioNet Challenge 2025](2025) invites teams to develop algorithms for detecting Chagas disease from electrocardiograms (ECGs). Chagas disease is a parasitic disease in Central and South America that affects an estimated 6.5 million people and causes nearly 10,000 deaths annually. Timely treatment may prevent or slow damage to the cardiovascular system, but serological testing capacity is limited, so detection through ECGs can help to identify Chagas patients for testing and treatment. We ask participants to design and implement working, open-source algorithms that, based only on the provided ECGs, prioritize patients for serological testing. The teams with the best scores for these tasks on the hidden test set win the Challenge.
 
 Please check the below links for information about [current](#current) and [past](#past) Challenges, including [important details](faq) about scoring and test data for previous Challenges.
 
 ## <a name="news"></a> Select News
 
-- <a name="2025.02.07"></a>__February 7, 2025:__ We have [added](https://groups.google.com/g/physionet-challenges/c/xrGttD6UmjM) two new datasets, and we are now accepting submissions for the unofficial phase of the Challenge. Please read the [submission instructions](2025/submissions), double check your code, [register](https://forms.gle/dJQzeWsXNVgM2URY9), and [submit an entry](https://forms.gle/126MiJuEpZwe8tBn8) when ready.
+- <a name="2025.05.29"></a>__May 29, 2025:__ We have [launched](https://groups.google.com/g/physionet-challenges/) the official phase of the Challenge are now accepting submissions for the unofficial phase of the Challenge. Please read the [submission instructions](2025/submissions), double check your code, and [submit an entry](https://forms.gle/taMDUtYjKpV96ykJ8) when ready.
+
+- <a name="2025.02.07"></a>__February 7, 2025:__ We have [added](https://groups.google.com/g/physionet-challenges/c/xrGttD6UmjM) two new datasets, and we are now accepting submissions for the unofficial phase of the Challenge. Please read the [submission instructions](2025/submissions), double check your code, [register](https://forms.gle/dJQzeWsXNVgM2URY9), and submit an entry when ready.
 
 - <a name="2024.09.20"></a>__September 20, 2024:__ We have released (__and updated__) the [results](2024/results) of the 2024 Challenge. Congratulations to the winners! Please see the [announcement](https://groups.google.com/g/physionet-challenges/c/bEjPLIMagRk) for more details.
 
