@@ -136,8 +136,8 @@ For these reasons, we strongly suggest that you start submitting entries at leas
 | Abstract decisions released                | Mid-June 2025      | Mid-June 2025                     | N/A                                  |
 | Wild card entry date                       | 31 July 2025       | 31 July 2025                      | N/A                                  |
 | Hiatus                                     | 21 August 2025     | 13 September 2025                 | N/A                                  |
-| Deadline to choose algorithm for test data | 27 August 2025     | 27 August 2025                    | N/A                                  |
-| Preprint deadline                          | 27 August 2025     | 27 August 2025                    | One 4-page paper ([\*\*](#2ast))     |
+| Deadline to choose algorithm for test data | 28 August 2025     | 28 August 2025                    | N/A                                  |
+| Preprint deadline                          | 29 August 2025     | 29 August 2025                    | One 4-page paper ([\*\*](#2ast))     |
 | Conference                                 | 14 September 2025  | 17 September 2025                 | 1 presentation ([\*\*](#2ast))       |
 | Final scores released                      | Mid-September 2025 | Mid-September 2025                | N/A                                  |
 | Final paper deadline                       | 01 October 2025    | 01 October 2025                   | One 4-page paper ([\*\*\*](#3ast))   |
