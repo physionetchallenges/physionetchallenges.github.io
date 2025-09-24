@@ -12,6 +12,8 @@ Please check the below links for information about [current](#current) and [past
 
 ## <a name="news"></a> Select News
 
+- <a name="2025.06.30"></a>__September 24, 2025:__ We have released the [results](2025/results) of the 2025 Challenge. Congratulations to the winners! Please see the announcement for more details.
+
 - <a name="2025.06.30"></a>__June 30, 2025:__ We presented the Challenge at the Dx4LMICs conference. Check this [notebook](https://colab.research.google.com/drive/1NaaXUY3MlRiLNqUXScB0fZm-u3KytDn1) from the workshop for an exploration of the data.
 
 - <a name="2025.06.23"></a>__June 23, 2025:__ Computing in Cardiology has announced [abstract decisions](https://groups.google.com/g/physionet-challenges/c/VrxEHgBVzRA) for CinC 2025. Please check your email and the preliminary [program](https://cinc.org/prelim_program_2025/) and congratulations to the accepted teams. Not accepted, or late to this year's Challenge? You may be able to compete for a [wild card](2025/#wild-card) entry.

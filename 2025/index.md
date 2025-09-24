@@ -12,6 +12,8 @@ The George B. Moody PhysioNet Challenges are annual competitions that invite par
 
 ## <a name="announcements"></a> Announcements
 
+- <a name="2025.06.30"></a>__September 24, 2025:__ We have released the [results](results) of the 2025 Challenge. Congratulations to the winners! Please see the announcement for more details.
+
 - <a name="2025.06.30"></a>__June 30, 2025:__ We presented the Challenge at the Dx4LMICs conference. Check this [notebook](https://colab.research.google.com/drive/1NaaXUY3MlRiLNqUXScB0fZm-u3KytDn1) from the workshop for an exploration of the data.
 
 - <a name="2025.06.23"></a>__June 23, 2025:__ Computing in Cardiology has announced [abstract decisions](https://groups.google.com/g/physionet-challenges/c/VrxEHgBVzRA) for CinC 2025. Please check your email and the preliminary [program](https://cinc.org/prelim_program_2025/) and congratulations to the accepted teams. Not accepted, or late to this year's Challenge? You may be able to compete for a [wild card](#wild-card) entry.
@@ -140,7 +142,7 @@ For these reasons, we strongly suggest that you start submitting entries at leas
 | Preprint deadline                          | 29 August 2025     | 29 August 2025                    | One 4-page paper ([\*\*](#2ast))     |
 | Conference                                 | 14 September 2025  | 17 September 2025                 | 1 presentation ([\*\*](#2ast))       |
 | Final scores released                      | Mid-September 2025 | Mid-September 2025                | N/A                                  |
-| Final paper deadline                       | 01 October 2025    | 01 October 2025                   | One 4-page paper ([\*\*\*](#3ast))   |
+| Final paper deadline                       | 02 October 2025    | 02 October 2025                   | One 4-page paper ([\*\*\*](#3ast))   |
 
 <a name="1ast"></a>(\* Entries that fail to score do not count against limits.)
 
