@@ -12,7 +12,7 @@ Please check the below links for information about [current](#current) and [past
 
 ## <a name="news"></a> Select News
 
-- <a name="2025.06.30"></a>__September 24, 2025:__ We have released the [results](2025/results) of the 2025 Challenge. Congratulations to the winners! Please see the announcement for more details.
+- <a name="2025.06.30"></a>__September 24, 2025:__ We have released the [results](2025/results) of the 2025 Challenge. Congratulations to the winners! Please see [this announcement](https://groups.google.com/g/physionet-challenges/c/mvYWe244SnM) for more details.
 
 - <a name="2025.06.30"></a>__June 30, 2025:__ We presented the Challenge at the Dx4LMICs conference. Check this [notebook](https://colab.research.google.com/drive/1NaaXUY3MlRiLNqUXScB0fZm-u3KytDn1) from the workshop for an exploration of the data.
 
