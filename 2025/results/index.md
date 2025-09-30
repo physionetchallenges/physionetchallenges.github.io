@@ -4,7 +4,10 @@ layout: after_2015
 
 # Results for the 2025 Challenge
 
-This [table](challenge_2025_results.tsv) contains the Challenge scoring metric and other traditional scoring metrics for the 2025 Challenge entries on the hidden validation and test sets. This [table](challenge_2025_results.tsv) contains the Challenge scoring metric and other traditional scoring metrics for the 2025 Hackathon entries on the hidden validation and test sets.
+This page contains the Challenge scoring metric and other traditional scoring metrics for the 2025 Challenge entries and the 2025 Hackathon entries on the hidden validation and test sets:
+
+- [2025 Challenge results](challenge_2025_results.tsv) 
+- [2025 Hackathon results](hackathon_2025_results.tsv) 
 
 During the course of the Challenge, teams submitted entries with their approaches, and we trained and evaluated each entry on the [Challenge data](../#data). The training data were public, and the validation and test sets were hidden. In particular, during the [unofficial and official phases](../#rules) of the Challenge, we trained each entry on the training set, and we [scored](../#scoring) each entry the validation set. After the official phase, each team selected one entry for evaluation on the test set, and we evaluated these entries on the test set.
 
