@@ -10,7 +10,7 @@ We ask teams to cite the description and data papers for the Challenge to ensure
 
 __For this year's Challenge, please cite the Challenge description paper:__
 
-Reyna MA, Koscova Z, Pavlus J, Weigle J, Saghafi S, Gomes P, Elola A, Hassannia, MS, Campbell, K, Bahrami Rad A, Riberio AH, Ribeiro ALP, Sameni R, Clifford GD. Detection of Chagas Disease from the ECG: The George B. Moody PhysioNet Challenge 2025; 52: 1-4.
+Reyna MA, Koscova Z, Pavlus J, Weigle J, Saghafi S, Gomes P, Elola A, Hassannia, MS, Campbell, K, Bahrami Rad A, Ribeiro AH, Ribeiro ALP, Sameni R, Clifford GD. Detection of Chagas Disease from the ECG: The George B. Moody PhysioNet Challenge 2025; 52: 1-4.
 
 The above paper is a draft. We will update it after CinC to include information about the conclusion of the Challenge.
 
