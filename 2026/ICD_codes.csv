@@ -1,0 +1,116 @@
+Code,Description,CodeType,Diagnosis
+33183,"Mild cognitive impairment, so stated",icd9,MCI
+G3184,Mild cognitive impairment of uncertain or unknown etiology,icd10,MCI
+3310,Alzheimer's disease,icd9,Alzheimer's disease
+G300,Alzheimer's disease with early onset,icd10,Alzheimer's disease
+G301,Alzheimer's disease with late onset,icd10,Alzheimer's disease
+G308,Other Alzheimer's disease,icd10,Alzheimer's disease
+G309,"Alzheimer's disease, unspecified",icd10,Alzheimer's disease
+2900,"Senile dementia, uncomplicated",icd9,Dementia
+29010,"Presenile dementia, uncomplicated",icd9,Dementia
+29011,Presenile dementia with delirium,icd9,Dementia
+29012,Presenile dementia with delusional features,icd9,Dementia
+29013,Presenile dementia with depressive features,icd9,Dementia
+29020,Senile dementia with delusional features,icd9,Dementia
+29021,Senile dementia with depressive features,icd9,Dementia
+2903,Senile dementia with delirium,icd9,Dementia
+29040,"Vascular dementia, uncomplicated",icd9,Dementia
+29041,"Vascular dementia, with delirium",icd9,Dementia
+29042,"Vascular dementia, with delusions",icd9,Dementia
+29043,"Vascular dementia, with depressed mood",icd9,Dementia
+2912,Alcohol-induced persisting dementia,icd9,Dementia
+29282,Drug-induced persisting dementia,icd9,Dementia
+29410,Dementia in conditions classified elsewhere without behavioral disturbance,icd9,Dementia
+29411,Dementia in conditions classified elsewhere with behavioral disturbance,icd9,Dementia
+29420,"Dementia, unspecified, without behavioral disturbance",icd9,Dementia
+29421,"Dementia, unspecified, with behavioral disturbance",icd9,Dementia
+33111,Pick's disease,icd9,Dementia
+33119,Other frontotemporal dementia,icd9,Dementia
+33182,Dementia with lewy bodies,icd9,Dementia
+F0150,"Vascular dementia, unspecified severity, without behavioral disturbance, psychotic disturbance, mood disturbance, and anxiety",icd10,Dementia
+F01511,"Vascular dementia, unspecified severity, with agitation",icd10,Dementia
+F01518,"Vascular dementia, unspecified severity, with other behavioral disturbance",icd10,Dementia
+F0152,"Vascular dementia, unspecified severity, with psychotic disturbance",icd10,Dementia
+F0153,"Vascular dementia, unspecified severity, with mood disturbance",icd10,Dementia
+F0154,"Vascular dementia, unspecified severity, with anxiety",icd10,Dementia
+F01A0,"Vascular dementia, mild, without behavioral disturbance, psychotic disturbance, mood disturbance, and anxiety",icd10,Dementia
+F01A11,"Vascular dementia, mild, with agitation",icd10,Dementia
+F01A18,"Vascular dementia, mild, with other behavioral disturbance",icd10,Dementia
+F01A2,"Vascular dementia, mild, with psychotic disturbance",icd10,Dementia
+F01A3,"Vascular dementia, mild, with mood disturbance",icd10,Dementia
+F01A4,"Vascular dementia, mild, with anxiety",icd10,Dementia
+F01B0,"Vascular dementia, moderate, without behavioral disturbance, psychotic disturbance, mood disturbance, and anxiety",icd10,Dementia
+F01B11,"Vascular dementia, moderate, with agitation",icd10,Dementia
+F01B18,"Vascular dementia, moderate, with other behavioral disturbance",icd10,Dementia
+F01B2,"Vascular dementia, moderate, with psychotic disturbance",icd10,Dementia
+F01B3,"Vascular dementia, moderate, with mood disturbance",icd10,Dementia
+F01B4,"Vascular dementia, moderate, with anxiety",icd10,Dementia
+F01C0,"Vascular dementia, severe, without behavioral disturbance, psychotic disturbance, mood disturbance, and anxiety",icd10,Dementia
+F01C11,"Vascular dementia, severe, with agitation",icd10,Dementia
+F01C18,"Vascular dementia, severe, with other behavioral disturbance",icd10,Dementia
+F01C2,"Vascular dementia, severe, with psychotic disturbance",icd10,Dementia
+F01C3,"Vascular dementia, severe, with mood disturbance",icd10,Dementia
+F01C4,"Vascular dementia, severe, with anxiety",icd10,Dementia
+F0280,"Dementia in other diseases classified elsewhere, unspecified severity, without behavioral disturbance, psychotic disturbance, mood disturbance, and anxiety",icd10,Dementia
+F02811,"Dementia in other diseases classified elsewhere, unspecified severity, with agitation",icd10,Dementia
+F02818,"Dementia in other diseases classified elsewhere, unspecified severity, with other behavioral disturbance",icd10,Dementia
+F0282,"Dementia in other diseases classified elsewhere, unspecified severity, with psychotic disturbance",icd10,Dementia
+F0283,"Dementia in other diseases classified elsewhere, unspecified severity, with mood disturbance",icd10,Dementia
+F0284,"Dementia in other diseases classified elsewhere, unspecified severity, with anxiety",icd10,Dementia
+F02A0,"Dementia in other diseases classified elsewhere, mild, without behavioral disturbance, psychotic disturbance, mood disturbance, and anxiety",icd10,Dementia
+F02A11,"Dementia in other diseases classified elsewhere, mild, with agitation",icd10,Dementia
+F02A18,"Dementia in other diseases classified elsewhere, mild, with other behavioral disturbance",icd10,Dementia
+F02A2,"Dementia in other diseases classified elsewhere, mild, with psychotic disturbance",icd10,Dementia
+F02A3,"Dementia in other diseases classified elsewhere, mild, with mood disturbance",icd10,Dementia
+F02A4,"Dementia in other diseases classified elsewhere, mild, with anxiety",icd10,Dementia
+F02B0,"Dementia in other diseases classified elsewhere, moderate, without behavioral disturbance, psychotic disturbance, mood disturbance, and anxiety",icd10,Dementia
+F02B11,"Dementia in other diseases classified elsewhere, moderate, with agitation",icd10,Dementia
+F02B18,"Dementia in other diseases classified elsewhere, moderate, with other behavioral disturbance",icd10,Dementia
+F02B2,"Dementia in other diseases classified elsewhere, moderate, with psychotic disturbance",icd10,Dementia
+F02B3,"Dementia in other diseases classified elsewhere, moderate, with mood disturbance",icd10,Dementia
+F02B4,"Dementia in other diseases classified elsewhere, moderate, with anxiety",icd10,Dementia
+F02C0,"Dementia in other diseases classified elsewhere, severe, without behavioral disturbance, psychotic disturbance, mood disturbance, and anxiety",icd10,Dementia
+F02C11,"Dementia in other diseases classified elsewhere, severe, with agitation",icd10,Dementia
+F02C18,"Dementia in other diseases classified elsewhere, severe, with other behavioral disturbance",icd10,Dementia
+F02C2,"Dementia in other diseases classified elsewhere, severe, with psychotic disturbance",icd10,Dementia
+F02C3,"Dementia in other diseases classified elsewhere, severe, with mood disturbance",icd10,Dementia
+F02C4,"Dementia in other diseases classified elsewhere, severe, with anxiety",icd10,Dementia
+F0390,"Unspecified dementia, unspecified severity, without behavioral disturbance, psychotic disturbance, mood disturbance, and anxiety",icd10,Dementia
+F03911,"Unspecified dementia, unspecified severity, with agitation",icd10,Dementia
+F03918,"Unspecified dementia, unspecified severity, with other behavioral disturbance",icd10,Dementia
+F0392,"Unspecified dementia, unspecified severity, with psychotic disturbance",icd10,Dementia
+F0393,"Unspecified dementia, unspecified severity, with mood disturbance",icd10,Dementia
+F0394,"Unspecified dementia, unspecified severity, with anxiety",icd10,Dementia
+F03A0,"Unspecified dementia, mild, without behavioral disturbance, psychotic disturbance, mood disturbance, and anxiety",icd10,Dementia
+F03A11,"Unspecified dementia, mild, with agitation",icd10,Dementia
+F03A18,"Unspecified dementia, mild, with other behavioral disturbance",icd10,Dementia
+F03A2,"Unspecified dementia, mild, with psychotic disturbance",icd10,Dementia
+F03A3,"Unspecified dementia, mild, with mood disturbance",icd10,Dementia
+F03A4,"Unspecified dementia, mild, with anxiety",icd10,Dementia
+F03B0,"Unspecified dementia, moderate, without behavioral disturbance, psychotic disturbance, mood disturbance, and anxiety",icd10,Dementia
+F03B11,"Unspecified dementia, moderate, with agitation",icd10,Dementia
+F03B18,"Unspecified dementia, moderate, with other behavioral disturbance",icd10,Dementia
+F03B2,"Unspecified dementia, moderate, with psychotic disturbance",icd10,Dementia
+F03B3,"Unspecified dementia, moderate, with mood disturbance",icd10,Dementia
+F03B4,"Unspecified dementia, moderate, with anxiety",icd10,Dementia
+F03C0,"Unspecified dementia, severe, without behavioral disturbance, psychotic disturbance, mood disturbance, and anxiety",icd10,Dementia
+F03C11,"Unspecified dementia, severe, with agitation",icd10,Dementia
+F03C18,"Unspecified dementia, severe, with other behavioral disturbance",icd10,Dementia
+F03C2,"Unspecified dementia, severe, with psychotic disturbance",icd10,Dementia
+F03C3,"Unspecified dementia, severe, with mood disturbance",icd10,Dementia
+F03C4,"Unspecified dementia, severe, with anxiety",icd10,Dementia
+F1027,Alcohol dependence with alcohol-induced persisting dementia,icd10,Dementia
+F1097,"Alcohol use, unspecified with alcohol-induced persisting dementia",icd10,Dementia
+F1327,"Sedative, hypnotic or anxiolytic dependence with sedative, hypnotic or anxiolytic-induced persisting dementia",icd10,Dementia
+F1397,"Sedative, hypnotic or anxiolytic use, unspecified with sedative, hypnotic or anxiolytic-induced persisting dementia",icd10,Dementia
+F1817,Inhalant abuse with inhalant-induced dementia,icd10,Dementia
+F1827,Inhalant dependence with inhalant-induced dementia,icd10,Dementia
+F1897,"Inhalant use, unspecified with inhalant-induced persisting dementia",icd10,Dementia
+F1917,Other psychoactive substance abuse with psychoactive substance-induced persisting dementia,icd10,Dementia
+F1927,Other psychoactive substance dependence with psychoactive substance-induced persisting dementia,icd10,Dementia
+F1997,"Other psychoactive substance use, unspecified with psychoactive substance-induced persisting dementia",icd10,Dementia
+G3101,Pick's disease,icd10,Dementia
+G3109,Other frontotemporal neurocognitive disorder,icd10,Dementia
+G3183,Neurocognitive disorder with Lewy bodies,icd10,Dementia
+G3185,Corticobasal degeneration,icd10,Dementia
+G3187,primary progressive aphasia,icd10,Dementia

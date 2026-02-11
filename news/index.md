@@ -4,6 +4,15 @@ layout: default
 
 # Past News
 
+
+- <a name="2025.06.30"></a>__June 30, 2025:__ We presented the Challenge at the Dx4LMICs conference. Check this [notebook](https://colab.research.google.com/drive/1NaaXUY3MlRiLNqUXScB0fZm-u3KytDn1) from the workshop for an exploration of the data.
+
+- <a name="2025.06.23"></a>__June 23, 2025:__ Computing in Cardiology has announced [abstract decisions](https://groups.google.com/g/physionet-challenges/c/VrxEHgBVzRA) for CinC 2025. Please check your email and the preliminary [program](https://cinc.org/prelim_program_2025/) and congratulations to the accepted teams. Not accepted, or late to this year's Challenge? You may be able to compete for a [wild card](2025/#wild-card) entry.
+
+- <a name="2025.05.29"></a>__May 29, 2025:__ We have [launched](https://groups.google.com/g/physionet-challenges/c/HXr78PTVv0Y) the official phase of the Challenge. Please read the [submission instructions](2025/submissions), double check your code, and [submit an entry](https://forms.gle/taMDUtYjKpV96ykJ8) when ready.
+
+- <a name="2025.02.07"></a>__February 7, 2025:__ We have [added](https://groups.google.com/g/physionet-challenges/c/xrGttD6UmjM) two new datasets, and we are now accepting submissions for the unofficial phase of the Challenge. Please read the [submission instructions](2025/submissions), double check your code, [register](https://forms.gle/dJQzeWsXNVgM2URY9), and submit an entry when ready.
+
 - <a name="2024.09.20"></a>__September 20, 2024:__ We have released (__and updated__) the [results](../2024/results) of the 2024 Challenge. Congratulations to the winners! Please see the [announcement](https://groups.google.com/g/physionet-challenges/c/bEjPLIMagRk) for more details.
 
 - <a name="2024.08.19"></a>__August 19, 2024:__ We have extended the official phase deadline to 23:59 GMT on August 21, 2024. Please see the [deadlines](../2024/#key-dates-deadlines) for the updated deadlines.

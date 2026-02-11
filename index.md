@@ -4,34 +4,25 @@ layout: main
 
 # George B. Moody PhysioNet Challenges
 
-For the past 26 years, [PhysioNet](https://physionet.org) and [Computing in Cardiology](http://www.cinc.org/) have co-hosted a series of annual challenges, now called the [George B. Moody PhysioNet Challenges](about), to tackle clinically interesting but unsolved questions.
+For the past 27 years, [PhysioNet](https://physionet.org) and [Computing in Cardiology](http://www.cinc.org/) have co-hosted a series of annual challenges, now called the [George B. Moody PhysioNet Challenges](about), to tackle clinically interesting but unsolved questions.
 
-The [George B. Moody PhysioNet Challenge 2025](2025) invites teams to develop algorithms for detecting Chagas disease from electrocardiograms (ECGs). Chagas disease is a parasitic disease in Central and South America that affects an estimated 6.5 million people and causes nearly 10,000 deaths annually. Timely treatment may prevent or slow damage to the cardiovascular system, but serological testing capacity is limited, so detection through ECGs can help to identify Chagas patients for testing and treatment. We ask participants to design and implement working, open-source algorithms that, based only on the provided ECGs, prioritize patients for serological testing. The teams with the best scores for these tasks on the hidden test set win the Challenge.
+The [George B. Moody PhysioNet Challenge 2026](2026) invites teams to develop and implement open-source algorithms for using PSGs to predict future diagnoses of cognitive impairment. Chagas disease is a parasitic disease in Central and South America that affects an estimated 6.5 million people and causes nearly 10,000 deaths annually. Timely treatment may prevent or slow damage to the cardiovascular system, but serological testing capacity is limited, so detection through ECGs can help to identify Chagas patients for testing and treatment. We ask participants to design and implement working, open-source algorithms that, based only on the provided ECGs, prioritize patients for serological testing. The teams with the best scores for these tasks on the hidden test set win the Challenge.
 
 Please check the below links for information about [current](#current) and [past](#past) Challenges, including [important details](faq) about scoring and test data for previous Challenges.
 
 ## <a name="news"></a> Select News
 
-- <a name="2025.06.30"></a>__September 24, 2025:__ We have released the [results](2025/results) of the 2025 Challenge. Congratulations to the winners! Please see [this announcement](https://groups.google.com/g/physionet-challenges/c/mvYWe244SnM) for more details.
-
-- <a name="2025.06.30"></a>__June 30, 2025:__ We presented the Challenge at the Dx4LMICs conference. Check this [notebook](https://colab.research.google.com/drive/1NaaXUY3MlRiLNqUXScB0fZm-u3KytDn1) from the workshop for an exploration of the data.
-
-- <a name="2025.06.23"></a>__June 23, 2025:__ Computing in Cardiology has announced [abstract decisions](https://groups.google.com/g/physionet-challenges/c/VrxEHgBVzRA) for CinC 2025. Please check your email and the preliminary [program](https://cinc.org/prelim_program_2025/) and congratulations to the accepted teams. Not accepted, or late to this year's Challenge? You may be able to compete for a [wild card](2025/#wild-card) entry.
-
-- <a name="2025.05.29"></a>__May 29, 2025:__ We have [launched](https://groups.google.com/g/physionet-challenges/c/HXr78PTVv0Y) the official phase of the Challenge. Please read the [submission instructions](2025/submissions), double check your code, and [submit an entry](https://forms.gle/taMDUtYjKpV96ykJ8) when ready.
-
-- <a name="2025.02.07"></a>__February 7, 2025:__ We have [added](https://groups.google.com/g/physionet-challenges/c/xrGttD6UmjM) two new datasets, and we are now accepting submissions for the unofficial phase of the Challenge. Please read the [submission instructions](2025/submissions), double check your code, [register](https://forms.gle/dJQzeWsXNVgM2URY9), and submit an entry when ready.
-
-- <a name="2024.09.20"></a>__September 20, 2024:__ We have released (__and updated__) the [results](2024/results) of the 2024 Challenge. Congratulations to the winners! Please see the [announcement](https://groups.google.com/g/physionet-challenges/c/bEjPLIMagRk) for more details.
+- <a name="2026.02.10"></a>__February 10, 2026:__ The NIH-funded George B. Moody PhysioNet Challenge 2026 is [now open](https://groups.google.com/g/physionet-challenges/)! Please read this website for details and share questions and comments on [Challenge forum](https://groups.google.com/g/physionet-challenges/).
 
 - ... see previous news articles [here](news).
 
 ## <a name="current"></a> Current Challenge
 
-- __2025: [Detection of Chagas Disease from the ECG: The George B. Moody PhysioNet Challenge 2025](2025)__
+- __2026: [Screening for Cognitive Impairment During Sleep Studies: The George B. Moody PhysioNet Challenge 2026](2026)__
 
 ## <a name="past"></a> Past Challenges
 
+- 2025: [Detection of Chagas Disease from the ECG: The George B. Moody PhysioNet Challenge 2025](2025)  
 - 2024: [Digitization and Classification of ECG Images: The George B. Moody PhysioNet Challenge 2024](2024)  
  [Paper and contributed software collection ongoing](2024/results)
 - 2023: [Predicting Neurological Recovery from Coma After Cardiac Arrest](2023)  
