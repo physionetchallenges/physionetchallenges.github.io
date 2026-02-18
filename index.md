@@ -12,6 +12,7 @@ Please check the below links for information about [current](#current) and [past
 
 ## <a name="news"></a> Select News
 
+- <a name="2026.02.18"></a>__February 18, 2026:__ We are not accepting submissions to the unofficial phase of the Challenge. Please read the [submission instructions](2026/submissions), double check your code, and [submit](https://forms.gle/2fqLf5UU1oDNzNES9) it for evaluation on the validation set when ready.
 - <a name="2026.02.10"></a>__February 10, 2026:__ The NIH-funded George B. Moody PhysioNet Challenge 2026 is [now open](https://groups.google.com/g/physionet-challenges/c/bP-KMy4I1Bo)! Please read this website for details and share questions and comments on [Challenge forum](https://groups.google.com/g/physionet-challenges/).
 
 - ... see previous news articles [here](news).

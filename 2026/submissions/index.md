@@ -24,7 +24,7 @@ Similarly to [last year's Challenge](../../2025/), teams must submit the full co
 3. Do not include extra files that are not required to create and run your prediction code, such as the training data.
 4. Follow the instructions for the programming language of your submission.
 5. Share your repository with the `physionetchallengeshelper` user.
-6. Submit your entry using a form; check the left panel.
+6. Submit your entry using this [form](https://forms.gle/2fqLf5UU1oDNzNES9).
 7. We will put the scores for successful entries on the validation set on the leaderboard.  The leaderboard will publicly show your team name and scores.
 
 ### <a name="python"></a>Python-specific instructions

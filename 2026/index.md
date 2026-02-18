@@ -12,6 +12,7 @@ Sleep is a fundamental physiological process that is deeply intertwined with hum
 
 ## <a name="announcements"></a> Announcements
 
+- <a name="2026.02.18"></a>__February 18, 2026:__ We are not accepting submissions to the unofficial phase of the Challenge. Please read the [submission instructions](submissions), double check your code, and [submit](https://forms.gle/2fqLf5UU1oDNzNES9) it for evaluation on the validation set when ready.
 - <a name="2026.02.10"></a>__February 10, 2026:__ The NIH-funded George B. Moody PhysioNet Challenge 2026 is [now open](https://groups.google.com/g/physionet-challenges/c/bP-KMy4I1Bo)! Please read this website for details and share questions and comments on [Challenge forum](https://groups.google.com/g/physionet-challenges/).
 
 ## <a name="introduction"></a> Introduction
@@ -261,7 +262,7 @@ To be eligible for the open-source award, you must do all the following:
 1. Register for the Challenge [here](https://forms.gle/hQPUQ8w4hb1MmGHa7).
 2. Submit at least one open-source entry that can be scored during the unofficial phase.
 3. [Submit an abstract to CinC](https://cinc.org/inf_authors/) by the abstract submission deadline. Include your team name and score from the unofficial phase in your abstract. Please select "PhysioNet/CinC Challenge" as the topic of your abstract so that it can be identified easily by the abstract review committee. __Please__ read ["Advice on Writing an Abstract"](#abstracts) for important information on writing a successful abstract.
-4. Submit at least one open-source entry that can be scored during the official phase.
+4. [Submit](https://forms.gle/2fqLf5UU1oDNzNES9) at least one open-source entry that can be scored during the official phase.
 5. [Submit a full 4-page paper](https://cinc.org/inf_authors/) on your work to CinC by the above preprint deadline.
 6. One of your team members must attend [CinC 2026](http://www.cinc2026.org/) to present your work either orally or as a poster (depending on your abstract acceptance). If you have a poster, then you must stand by it to defend your work. No-shows (oral or poster) will be disqualified. One of your team members must also attend the closing ceremony to collect your prize. No substitutes will be allowed. If the conference permits remote attendance, then you will be eligible for ranking if you attend remotely (and fulfill the other required criteria), but teams must attend in person for prize eligibility.
 7. [Submit a full 4-page paper](https://cinc.org/inf_authors/) on your work to CinC by the above final paper deadline. Please note that we expect the abstract to change significantly both in terms of results and methods. You may also update your title with the caveat that it must not be substantially similar to the title of the competition or contain the words "physionet," "challenge," or "competition."
