@@ -135,7 +135,7 @@ Please note that diagnosis information is extracted based on ICD-9 and ICD-10 co
 
 We partitioned the Challenge data into training, validation, and test sets:
 
-- __Training set:__ The training set is publicly available. It includes 780 recordings (totaling 5,913 hours, with an average of 7.58 hours per recording) from three sources (S0001, I0002, I0006) with PSG data, algorithmic annotations, human annotations, metadata, and diagnoses. To reduce file sizes, this dataset is artificially balanced to include approximately equal numbers of participants with and without cognitive impairment diagnoses.
+- __Training set:__ The training set is publicly available. It includes 622 recordings (totaling 4,696 hours, with an average of 7.55 hours per recording) from three sources (S0001, I0002, I0006) with PSG data, algorithmic annotations, human annotations, metadata, and diagnoses. To reduce file sizes, this dataset is artificially balanced to include approximately equal numbers of participants with and without cognitive impairment diagnoses.
 - __Validation set:__ The validation set is hidden so that we can evaluate teams on it during the Challenge. It includes recordings from one source with PSG data, algorithmic annotations, and metadata; human annotations and diagnoses are not included in the validation set. The data source is different from the data sources for the training and test sets. Unlike the training set, this dataset was not artificially balanced, and it has a prevalence rate of 5%-15% for cognitive impairment.
 - __Test set:__ The test set is hidden so that we can evaluate teams on it once after the Challenge. It includes recordings from one source with PSG data, algorithmic annotations, and metadata; human annotations and diagnoses are not included in the test set. The data source is different from the data sources for the training and validation sets.  Unlike the training set, this dataset was not artificially balanced, and it has a prevalence rate of 5%-15% for cognitive impairment.
 - __Supplementary Set:__ We have included 10 examples from each of the sources of the validation and test sets to illustrate signal properties, channel naming conventions, and file structures. These recordings are not parts of the validation or test sets. These recordings do not include any other information.
@@ -154,11 +154,11 @@ The folders are organized as follows:
 ```
 training_set/
 ├── physiological_data/
-│   ├── S0001/ (572 records) | I0002/ (54 records) | I0006/ (154 records)
+│   ├── S0001/ (484 records) | I0002/ (36 records) | I0006/ (102 records)
 ├── algorithmic_annotations/
-│   ├── S0001/ (566 records) | I0002/ (54 records) | I0006/ (146 records)
+│   ├── S0001/ (480 records) | I0002/ (36 records) | I0006/ (100 records)
 ├── human_annotations/
-│   ├── S0001/ (572 records) | I0002/ (54 records) | I0006/ (154 records)
+│   ├── S0001/ (482 records) | I0002/ (36 records) | I0006/ (102 records)
 └── demographics.csv
 
 validation_set/
