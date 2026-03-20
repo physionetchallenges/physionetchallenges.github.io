@@ -15,7 +15,7 @@ This page provides general FAQs for the Challenges. Please see the [current Chal
 - [Are we allowed to use external public or private data? Can we use transfer learning with pre-trained networks?](#external-data)
 
 [Scoring](#score)
-
+- [How do I include large files in my submission?](#large-files)
 - [I missed the Challenge, but I still want to run my code on the test data. If you aren't providing test data or labels, then can you run my code for me?](#run-code)
 - [Can you score my algorithm for one of the previous Challenges?](#previous-scoring)
 
@@ -45,6 +45,14 @@ Moreover, we try to source diverse datasets for the Challenges, and we often use
 Yes, most certainly. We encourage you to do this. You do not need to include your data in the code stack for training the algorithm, but you do need to include the pre-trained model in the code and provide code to retrain (continue training) on the training data we provide. The pre-trained network must have a compatible license to the rest of your code. You must also thoroughly document the content of the database you used to pre-train your network. If you are able to provide access to the data, or it is already public, please include links in both your README, and the article documenting your entry. If you would like to contribute data to the Challenge for others to use (or as test data), please contact us directly. We'd be delighted to add you to the team/authorship of the resulting articles if the data adds value.
 
 ## <a name="score"></a> Scoring
+
+<a name="large-files"></a> __How do I include large files in my submission?__
+
+You do not need to include [external data](#external-data) in your submission, but you may want to perform [transfer learning](#transfer-learning) with a pre-trained model on other datasets. To include large files in your submission, you may want to:
+
+1. Include large files in your git repo using `git lfs`. The submission system will automatically pull them once it's checked out the repository. Most teams do this for large files.
+2. Use another git host with a larger file limit.
+3. Host the large files on another service (e.g. Google Drive), then include a download script in the Dockerfile. Make sure that you download these files somewhere under `/challenge` inside the container; if you download to `/root` or `/tmp`, those paths won't be available when we run your code. Also, make sure that you download these files with a command in your Dockerfile: your code won't have internet access during training and inference, so you can't download anything during those steps.
 
 <a name="run-code"></a> __I missed the Challenge, but I still want to run my code on the test data. If you aren't providing test data or labels, then can you run my code for me?__
 
