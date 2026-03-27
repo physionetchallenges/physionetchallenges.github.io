@@ -59,7 +59,7 @@ Measure airflow through the nose and mouth to assess the volume of air moving in
 |:--:|
 |__Figure 1.__ A typical PSG recording scenario. Not all of the displayed modalities are present in all recordings, and the devices can vary from recording to recording.|
 
-To control file sizes, only the signal channels listed in this [table](https://github.com/physionetchallenges/python-example-2025/blob/main/channel_table.csv) were retained; all others were discarded.
+To control file sizes, only the signal channels listed in this [table](https://github.com/physionetchallenges/python-example-2026/blob/main/channel_table.csv) were retained; all others were discarded.
 
 ### <a name="algorithmic-annotations"></a> Algorithmic Annotations
 
