@@ -12,7 +12,7 @@ Sleep is a fundamental physiological process that is deeply intertwined with hum
 
 ## <a name="announcements"></a> Announcements
 
-- <a name="2026.02.18"></a>__February 18, 2026:__ We are now accepting submissions to the unofficial phase of the Challenge. Please read the [submission instructions](submissions), double check your code, and [submit](https://forms.gle/2fqLf5UU1oDNzNES9) it for evaluation on the validation set when ready.
+- <a name="2026.02.18"></a>__February 18, 2026:__ We are now accepting submissions to the unofficial phase of the PhysioNet Challenge 2026. Please read the [submission instructions](submissions), double check your code, and [submit](https://forms.gle/2fqLf5UU1oDNzNES9) it for evaluation on the validation set when ready.
 - <a name="2026.02.10"></a>__February 10, 2026:__ The NIH-funded George B. Moody PhysioNet Challenge 2026 is [now open](https://groups.google.com/g/physionet-challenges/c/bP-KMy4I1Bo)! Please read this website for details and share questions and comments on [Challenge forum](https://groups.google.com/g/physionet-challenges/).
 
 ## <a name="introduction"></a> Introduction
@@ -59,7 +59,7 @@ Measure airflow through the nose and mouth to assess the volume of air moving in
 |:--:|
 |__Figure 1.__ A typical PSG recording scenario. Not all of the displayed modalities are present in all recordings, and the devices can vary from recording to recording.|
 
-To control file sizes, only the signal channels listed in this [table](https://github.com/physionetchallenges/python-example-2025/blob/main/channel_table.csv) were retained; all others were discarded.
+To control file sizes, only the signal channels listed in this [table](https://github.com/physionetchallenges/python-example-2026/blob/main/channel_table.csv) were retained; all others were discarded.
 
 ### <a name="algorithmic-annotations"></a> Algorithmic Annotations
 
