@@ -205,7 +205,7 @@ Please note that you remain the [owners](#ip) of any code that you submit, and w
 
 ## <a name="scoring"></a> Scoring
 
-Each team must develop and implement an algorithm that, given a PSG and basic demographic data, predicts the time to a cognitive impairment diagnosis, or if the patient will not be diagnosed with cognitive impairment.
+Each team must develop and implement an algorithm that, given a patient's PSG and basic demographic data, predicts whether or not the patient will receive a cognitive impairment diagnosis within 3 to 7 years after the PSG.
 
 To that end, we define three groups of patients:
 
