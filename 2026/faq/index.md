@@ -101,9 +101,19 @@ You will be able to choose which model you would like to have scored on the test
 
 <a name="resources"></a>__What computational resources do you provide for our code?__
 
-We are using a [`g4dn.4xlarge` instance](https://aws.amazon.com/ec2/instance-types/g4/) on AWS or a comparable environment to run your code. It has 16 vCPUs, 64 GB RAM (60 GB available to your code), 300 GB of local storage (in addition to the data), and an optional [NVIDIA T4 GPU](https://www.nvidia.com/en-us/data-center/tesla-t4/).
+We run your code in a Linux environment with 16 vCPUs, 64GiB of RAM (16 GiB
+available to your code), and (on request) a GPU, which will be either:
 
-For training your model on the training set, we impose a 72 hour time limit on the training set. For running your trained model on the validation set , we impose a 24 hour time limit. For running your trained model on the test set, we impose a similar limit as the validation set, but with more time for more records, e.g., 48 hours if the test set is twice the size of the validation set.
+-    NVidia Ampere A30, or
+-    NVidia RTX 6000 Ada Generation,
+
+both of which support CUDA 13.1.
+
+For training on the training set, we impose a 96-hour time limit, or 72 hours
+with a GPU. For inference on the validation set, we impose a 48-hour time
+limit. For running your trained model on the test set, we impose a similar
+limit as the validation set, but with more time for more records, e.g., 96
+hours if the test set is twice the size of the validation set.
 
 <a name="network-access"></a>__Will our entry have network access? What if we need to download something?__
 
