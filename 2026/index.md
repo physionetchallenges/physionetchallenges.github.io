@@ -127,7 +127,7 @@ We provide patient demographic and diagnostic data for the training sets. The `d
 - `Time_to_Event`: Time (in days) from the PSG to the first recorded cognitive impairment diagnosis; empty if no diagnosis occurred. This variable will only be available in the training set.
 - `Cognitive_Impairment`: Binary indicator of cognitive-impairment outcome. `TRUE` indicates that the patient developed and was diagnosed with cognitive impairment (mild cognitive impairment, Alzheimer's disease, or dementia), defined as having at least two qualifying ICD-9/ICD-10 codes with both at least 3 years and one no more than 7 years after the sleep study with at least one week between the diagnoses, see [Scoring](#scoring) for details. `FALSE` indicates that the patient had no cognitive impairment diagnoses and had at least 7 years of follow-up data (6 years for site I0002). This variable will only be available in the training set.
 - `Last_Known_Visit_Date`: Date of the patient's most recent clinical follow-up. This variable will only be available in the training set.
-Time_to_Last_Visit: Follow-up duration (in days) from the PSG to the last known visit for the patient. This variable will only be available in the training set.
+- `Time_to_Last_Visit`: Follow-up duration (in days) from the PSG to the last known visit for the patient. This variable will only be available in the training set.
 
 Please note that diagnosis information is extracted based on ICD-9 and ICD-10 codes. This [table](ICD_codes.csv) summarizes the ICD codes used to define mild cognitive impairment, Alzheimer's disease, and dementia.
 
