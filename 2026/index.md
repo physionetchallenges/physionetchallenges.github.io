@@ -239,9 +239,9 @@ For these reasons, we strongly suggest that you start submitting entries at leas
 |                                            | Start               | End                               | Submissions                          |
 |--------------------------------------------|---------------------|-----------------------------------|--------------------------------------|
 | Unofficial phase                           | 10 February 2026    | 09 April 2026                     | 1-5 scored entries ([\*](#1ast))     |
-| Hiatus                                     | 10 April 2026       | 10 May 2026                       | N/A                                  |
+| Hiatus                                     | 10 April 2026       | Late May 2026                     | N/A                                  |
 | Abstract deadline                          | 15 April 2026       | 15 April 2026                     | 1 abstract                           |
-| Official phase                             | 11 May 2026         | Late August 2026                  | 1-10 scored entries ([\*](#1ast))    |
+| Official phase                             | Late May 2026       | Late August 2026                  | 1-10 scored entries ([\*](#1ast))    |
 | Abstract decisions released                | Mid-June 2026       | Mid-June 2026                     | N/A                                  |
 | Wild card entry date                       | 31 July 2026        | 31 July 2026                      | N/A                                  |
 | Hiatus                                     | Late August 2026    | Late September 2026               | N/A                                  |
