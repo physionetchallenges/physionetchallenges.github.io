@@ -24,7 +24,7 @@ Similarly to [last year's Challenge](../../2025/), teams must submit the full co
 3. Do not include extra files that are not required to create and run your prediction code, such as the training data.
 4. Follow the instructions for the programming language of your submission.
 5. Share your repository with the `physionetchallengeshelper` user.
-6. Submit your entry using this [form](https://forms.gle/2fqLf5UU1oDNzNES9).
+6. Submit your entry using this [form](https://forms.gle/8wivWQqmwTf7nTYo8).
 7. We will put the scores for successful entries on the validation set on the leaderboard.  The leaderboard will publicly show your team name and scores.
 
 ### <a name="python"></a>Python-specific instructions
@@ -45,7 +45,7 @@ Similarly to [last year's Challenge](../../2025/), teams must submit the full co
 
 __Why containers?__
 
-Containers allow you to define the environment that you think is best suited for your algorithm. You can choose a specific version of a Linux distribution, install dependancies, and choose specific versions of your favorite libraries and frameworks. Here are [two](https://towardsdatascience.com/how-docker-can-help-you-become-a-more-effective-data-scientist-7fc048ef91d5) [links](https://link.medium.com/G87RxYuQIV) with data science-centric introductions to Docker.
+Containers allow you to define the environment that you think is best suited for your algorithm. You can choose a specific version of a Linux distribution, install dependencies, and choose specific versions of your favorite libraries and frameworks. Here are [two](https://towardsdatascience.com/how-docker-can-help-you-become-a-more-effective-data-scientist-7fc048ef91d5) [links](https://link.medium.com/G87RxYuQIV) with data science-centric introductions to Docker.
 
 __Quickly, how can I test my submission locally?__
 
@@ -58,12 +58,6 @@ To guarantee that we can run your code, please [install](https://docs.docker.com
 If you have trouble running your code, then please try the following steps in the [Python example code](https://github.com/physionetchallenges/python-example-2025.git).
 
 ### <a name="faq"></a>FAQ
-
-__What computational resources will my entry have?__
-
-We are using a [`g4dn.4xlarge` instance](https://aws.amazon.com/ec2/instance-types/g4/) on AWS or a comparable environment to run your code. It has 16 vCPUs, 64 GB RAM (60 GB available to your code), 100 GB of local storage (in addition to the data), and an optional [NVIDIA T4 GPU](https://www.nvidia.com/en-us/data-center/tesla-t4/).
-
-For training your model on the training set, we impose a 72 hour time limit on the training set. For running your trained model on the validation set, we impose a 24 hour time limit. For running your trained model on the test set, we impose a similar limit as the validation set, but with more time for more records, e.g., 48 hours if the test set is twice the size of the validation set.
 
 __How do I install Docker?__
 

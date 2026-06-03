@@ -12,7 +12,8 @@ Sleep is a fundamental physiological process that is deeply intertwined with hum
 
 ## <a name="announcements"></a> Announcements
 
-- <a name="2026.02.18"></a>__February 18, 2026:__ We are now accepting submissions to the unofficial phase of the PhysioNet Challenge 2026. Please read the [submission instructions](submissions), double check your code, and [submit](https://forms.gle/2fqLf5UU1oDNzNES9) it for evaluation on the validation set when ready.
+- <a name="2026.06.03"></a>__June 3, 2026:__ We have [launched](https://groups.google.com/g/physionet-challenges) the official phase of the Challenge. Please read the [submission instructions](submissions), double check your code, and [submit](https://forms.gle/8wivWQqmwTf7nTYo8) it for evaluation on the validation set when ready.
+- <a name="2026.02.18"></a>__February 18, 2026:__ We are now accepting submissions to the unofficial phase of the Challenge. Please read the [submission instructions](submissions), double check your code, and submit it for evaluation on the validation set when ready.
 - <a name="2026.02.10"></a>__February 10, 2026:__ The NIH-funded George B. Moody PhysioNet Challenge 2026 is [now open](https://groups.google.com/g/physionet-challenges/c/bP-KMy4I1Bo)! Please read this website for details and share questions and comments on [Challenge forum](https://groups.google.com/g/physionet-challenges/).
 
 ## <a name="introduction"></a> Introduction
@@ -92,8 +93,8 @@ The CAISR framework<sup>[4](#ref-nasiri)</sup> provides a granular, multi-modal 
 
 - __Sleep Staging:__ CAISR uses a graph neural network (GNN) to classify 30-second epochs into Wake, N1, N2, N3, and REM stages by capturing the complex relationships between physiological channels (EEG, EOG, and EMG). Following AASM guidelines<sup>[5](#ref-grigg-damberger)</sup>, the dataset provides the predicted sleep stage (`stage_caisr`) for each epoch along with the softmax probabilities (`caisr_prob_n3`, `caisr_prob_n2`, `caisr_prob_n1`, `caisr_prob_r`, `caisr_prob_w`), which indicate the model's confidence. Sleep stages are encoded as: 1 = N3, 2 = N2, 3 = N1, 4 = REM, and 5 = Wake, 9 = Unavailable. 
 - __Arousal Detection:__ Brief cortical activations that disrupt sleep are identified using ArousalNet, a specialized model based on the U-Net architecture. This model detects transient changes in signal frequency and amplitude that indicate micro-awakenings. CAISR arousal annotations are provided at 0.5-second resolution. For each 0.5-second interval, the dataset includes the predicted class (`arousal_caisr`) and the softmax probabilities (`caisr_prob_no-arousal`, `caisr_prob_arousal`), reflecting the model's confidence with 0 indicating no arousal and 1 indicating arousal.
-- __Respiratory Event Identification:__ The framework detects and classifies respiratory events, including obstructive, central, and mixed apneas, as well as hypopneas, using deterministic rule-based algorithms that strictly follow AASM scoring criteria<sup>[5](#ref-grigg-damberger)</sup>. This ensures clinical consistency across different sites and recording equipment. CAISR respiration annotations are provided at 1-second resolution, with the predicted class (`resp_caisr`) for each interval. Prediction probabilities are not available since the model is rule-based. Classes are mapped as follows: 0 = No Event, 1 = OA (Obstructive Apnea), 2 = CA (Central Apnea), 3 = MA (Mixed Apnea), 4 = HY (Hypopnea), 5 = RERA.
-- __Limb Movement Analysis:__ CAISR performs automated detection of isolated and periodic limb movements using left and right EMG signals. The system applies rule-based logic following AASM scoring criteria<sup>[5](#ref-grigg-damberger)</sup> to distinguish incidental movements from rhythmic patterns that may disrupt sleep. Limb movement annotations are provided at 1-second resolution, with the predicted class (`limb_caisr`) for each interval. Prediction probabilities are not available since the model is rule-based Classes are mapped as follows: 0 = No Event, 1 = Isolated Limb Movement, 2 = Periodic Limb Movement.
+- __Respiratory Event Identification:__ The framework detects and classifies respiratory events, including obstructive, central, and mixed apneas, as well as hypopneas, using deterministic rule-based algorithms that strictly follow AASM scoring criteria<sup>[5](#ref-grigg-damberger)</sup>. This ensures clinical consistency across different sites and recording equipment. CAISR respiration annotations are provided at 1-second resolution, with the predicted class (`resp_caisr`) for each interval. Prediction probabilities are not available since the model is rule-based. The Classes are mapped as follows: `0` = No Event, `1` = OA (Obstructive Apnea), `2` = CA (Central Apnea), `3` = MA (Mixed Apnea), `4` = HY (Hypopnea), `5` = RERA.
+- __Limb Movement Analysis:__ CAISR performs automated detection of isolated and periodic limb movements using left and right EMG signals. The system applies rule-based logic following AASM scoring criteria<sup>[5](#ref-grigg-damberger)</sup> to distinguish incidental movements from rhythmic patterns that may disrupt sleep. Limb movement annotations are provided at 1-second resolution, with the predicted class (`limb_caisr`) for each interval. Prediction probabilities are not available since the model is rule-based. The classes are mapped as follows: `0` = No Event, `1` = Isolated Limb Movement, `2` = Periodic Limb Movement.
 
 Note: If PSG lacks the necessary input channels for CAISR, the corresponding automated annotations will be omitted from that file.
 
@@ -101,14 +102,14 @@ Note: If PSG lacks the necessary input channels for CAISR, the corresponding aut
 
 The training datasets also include sleep stages and clinical events annotated by trained sleep technicians following AASM guidelines<sup>[5](#ref-grigg-damberger)</sup>. Each PSG was fully reviewed from start to finish by a single human rater, although different recordings may have been annotated by different raters.
 
-- __Sleep Stages:__ Sleep stages were scored by a human rater every 30 seconds, following AASM guidelines<sup>[5](#ref-grigg-damberger)</sup> into Wake, N1, N2, N3, and REM. Sleep stages (`stage`) are encoded as: 1 = N3, 2 = N2, 3 = N1, 4 = REM, 5 = Wake, 9 = Unavailable. 
-- __Arousal Events:__ Human raters marked the start and end times of arousals (`arousal`), rather than using fixed intervals. Classes are mapped as follows: 0 = No event, 1 = Arousal.
-- __Respiratory Events:__ Human raters marked start and stop times for each respiratory event (`resp`). Original event types include: 0 = No Event, 1 = Obstructive Apnea, 2 = Central Apnea, 3 = Mixed Apnea, 4 = Obstructive Hypopnea, 5 = Central Hypopnea, 6 = Mixed Hypopnea, 7 = RERA, 8 = Apnea (unspecified), 9 = Hypopnea (unspecified).\
+- __Sleep Stages:__ Sleep stages were scored by a human rater every 30 seconds, following AASM guidelines<sup>[5](#ref-grigg-damberger)</sup> into Wake, N1, N2, N3, and REM. Sleep stages (`stage`) are encoded as: `1` = N3, `2` = N2, `3` = N1, `4` = REM, `5` = Wake, `9` = Unavailable. 
+- __Arousal Events:__ Human raters marked the start and end times of arousals (`arousal`), rather than using fixed intervals. Classes are mapped as follows: `0` = No event, `1` = Arousal.
+- __Respiratory Events:__ Human raters marked start and stop times for each respiratory event (`resp`). Original event types include: `0` = No Event, `1` = Obstructive Apnea, `2` = Central Apnea, `3` = Mixed Apnea, `4` = Obstructive Hypopnea, `5` = Central Hypopnea, `6` = Mixed Hypopnea, `7` = RERA, `8` = Apnea (unspecified), `9` = Hypopnea (unspecified).\
 \
-To simplify analysis and enable comparison with CAISR outputs, participants can merge the original respiratory event classes as follows: 0 = No Event; 1 = Obstructive Apnea (OA), combining the original Obstructive Apnea (class 1) and unspecified Apnea (class 8); 2 = Central Apnea (CA); 3 = Mixed Apnea (MA); 4 = Hypopnea (HY), including all types of Hypopneas, Obstructive Hypopneas, Central Hypopneas, Mixed Hypopneas, and unspecified Hypopneas (classes 4, 5, 6, 9); and 5 = RERA. This grouping combines similar events into physiologically meaningful categories, reduces complexity, and facilitates downstream analysis and comparison with CAISR.
+To simplify analysis and enable comparison with CAISR outputs, participants can merge the original respiratory event classes as follows: `0` = No Event; `1` = Obstructive Apnea (OA), combining the original Obstructive Apnea (class `1`) and unspecified Apnea (class `8`); `2` = Central Apnea (CA); `3` = Mixed Apnea (MA); `4` = Hypopnea (HY), including all types of Hypopneas, Obstructive Hypopneas, Central Hypopneas, Mixed Hypopneas, and Unspecified Hypopneas (classes `4`, `5`, `6`, `9`); and `5` = RERA. This grouping combines similar events into physiologically meaningful categories, reduces complexity, and facilitates downstream analysis and comparison with CAISR.
 
-- __Limb Movement Events:__ Human raters marked the start and stop times for limb movements (`limb`). Original labels include: 0 = No Event, 1 = Limb Movement, 2 = Periodic Limb Movement (PLM), 3 = Left Leg, 4 = Right Leg, 5 = Left Leg Flex, 6 = Right Leg Flex, 7 = Both Legs, 8 = Left Leg with Arousal, 9 = Right Leg with Arousal, 10 = Generic Movement, 11 = Left Foot Pointing/Flexing, and 12 = Right Foot Pointing/Flexing. 
-Similar to respiratory events, to simplify analysis and enable comparison with CAISR outputs, participants can merge these classes into three categories: 0 = No Event, 1 = Isolated Limb Movement, 2 = Periodic Limb Movement (PLM), where all other movement types (classes 1, 3–12), including leg movements, foot movements, flexes, generic movements, and movements with arousal, are grouped together.
+- __Limb Movement Events:__ Human raters marked the start and stop times for limb movements (`limb`). Original labels include: `0` = No Event, `1` = Limb Movement, `2` = Periodic Limb Movement (PLM), `3` = Left Leg, `4` = Right Leg, `5` = Left Leg Flex, `6` = Right Leg Flex, `7` = Both Legs, `8` = Left Leg with Arousal, `9` = Right Leg with Arousal, `10` = Generic Movement, `11` = Left Foot Pointing/Flexing, and `12` = Right Foot Pointing/Flexing. 
+Similar to respiratory events, to simplify analysis and enable comparison with CAISR outputs, participants can merge these classes into three categories: `0` = No Event, `1` = Isolated Limb Movement, `2` = Periodic Limb Movement (PLM), where all other movement types (classes `1`, `3`–`12`), including leg movements, foot movements, flexes, generic movements, and movements with arousal, are grouped together.
 
 ### <a name="metadata"></a> Metadata
 
@@ -125,7 +126,7 @@ We provide patient demographic and diagnostic data for the training sets. The `d
 - `Ethnicity`: Patient-reported ethnicity or ethnic background. Categories include Hispanic, Not Hispanic, Unavailable.
 - `BMI`: Body mass index (BMI) extracted from available clinical measurements around the time of the sleep study.
 - `Time_to_Event`: Time (in days) from the PSG to the first recorded cognitive impairment diagnosis; empty if no diagnosis occurred. This variable will only be available in the training set.
-- `Cognitive_Impairment`: Binary indicator of cognitive-impairment outcome. `TRUE` indicates that the patient developed and was diagnosed with cognitive impairment (mild cognitive impairment, Alzheimer's disease, or dementia), defined as having at least two qualifying ICD-9/ICD-10 codes with both at least 3 years and one no more than 7 years after the sleep study with at least one week between the diagnoses, see [Scoring](#scoring) for details. `FALSE` indicates that the patient had no cognitive impairment diagnoses and had at least 7 years of follow-up data (6 years for site I0002). This variable will only be available in the training set.
+- `Cognitive_Impairment`: Binary indicator of cognitive-impairment outcome. `TRUE` indicates that the patient developed and was diagnosed with cognitive impairment (mild cognitive impairment, Alzheimer's disease, or dementia), defined as having at least two qualifying ICD-9 or ICD-10 codes with both at least 1 years and one no more than 6 years after the sleep study with at least one week between the diagnoses, see [Scoring](#scoring) for details. `FALSE` indicates that the patient had no cognitive impairment diagnoses and had at least 6 years of follow-up data (6 years for site I0002). This variable will only be available in the training set.
 - `Last_Known_Visit_Date`: Date of the patient's most recent clinical follow-up. This variable will only be available in the training set.
 - `Time_to_Last_Visit`: Follow-up duration (in days) from the PSG to the last known visit for the patient. This variable will only be available in the training set.
 
@@ -135,9 +136,9 @@ Please note that diagnosis information is extracted based on ICD-9 and ICD-10 co
 
 We partitioned the Challenge data into training, validation, and test sets:
 
-- __Training set:__ The training set is publicly available. It includes 622 recordings (totaling 4,696 hours, with an average of 7.55 hours per recording) from three sources (S0001, I0002, I0006) with PSG data, algorithmic annotations, human annotations, metadata, and diagnoses. To reduce file sizes, this dataset is artificially balanced to include approximately equal numbers of participants with and without cognitive impairment diagnoses.
-- __Validation set:__ The validation set is hidden so that we can evaluate teams on it during the Challenge. It includes recordings from one source with PSG data, algorithmic annotations, and metadata; human annotations and diagnoses are not included in the validation set. The data source is different from the data sources for the training and test sets. Unlike the training set, this dataset was not artificially balanced, and it has a prevalence rate of 5%-15% for cognitive impairment.
-- __Test set:__ The test set is hidden so that we can evaluate teams on it once after the Challenge. It includes recordings from one source with PSG data, algorithmic annotations, and metadata; human annotations and diagnoses are not included in the test set. The data source is different from the data sources for the training and validation sets.  Unlike the training set, this dataset was not artificially balanced, and it has a prevalence rate of 5%-15% for cognitive impairment.
+- __Training set:__ The training set is publicly available. It includes __TBD__ recordings (totaling __TBD__ hours, with an average of __TBD__ hours per recording) from three sources (S0001, I0002, I0006) with PSG data, algorithmic annotations, human annotations, metadata, and diagnoses. To reduce file sizes, this dataset is artificially balanced to include approximately equal numbers of participants with and without cognitive impairment diagnoses.
+- __Validation set:__ The validation set is hidden so that we can evaluate teams on it during the Challenge. It includes recordings from one source with PSG data, algorithmic annotations, and metadata; human annotations and diagnoses are not included in the validation set. The data source is different from the data sources for the training and test sets. Unlike the training set, this dataset was not artificially balanced, and it has a prevalence rate of __TBD; approximate range__ for cognitive impairment.
+- __Test set:__ The test set is hidden so that we can evaluate teams on it once after the Challenge. It includes recordings from one source with PSG data, algorithmic annotations, and metadata; human annotations and diagnoses are not included in the test set. The data source is different from the data sources for the training and validation sets.  Unlike the training set, this dataset was not artificially balanced, and it has a prevalence rate of __TBD; approximate range__ for cognitive impairment.
 - __Supplementary Set:__ We have included 10 examples from each of the sources of the validation and test sets to illustrate signal properties, channel naming conventions, and file structures. These recordings are not parts of the validation or test sets. These recordings do not include any other information.
 
 ### <a name="structure"></a> Directory Structure and Data Types
@@ -148,18 +149,30 @@ Each data partition follows a consistent sub-folder structure:
 - `algorithmic_annotations/`: Automated sleep/event annotations generated by the CAISR pipeline.
 - `human_annotations/`: Gold-standard clinical annotations from sleep experts (only available in `training set`).
 - `demographics.csv`: A centralized mapping file containing clinical labels (e.g., `Cognitive_Impairment`) and demographics.
+- `ICD_Codes_CI.csv`: A collection of cognitive impairment-related ICD codes and dates
 
 The folders are organized as follows:
 
-```
-training_set/
+training_set_small/ (small version of the training set; 214.2 GiB)
 ├── physiological_data/
-│   ├── S0001/ (484 records) | I0002/ (36 records) | I0006/ (102 records)
+│   ├── S0001/ (857 records) | I0002/ (54 records) | I0006/ (192 records)
 ├── algorithmic_annotations/
-│   ├── S0001/ (480 records) | I0002/ (36 records) | I0006/ (100 records)
+│   ├── S0001/ (847 records) | I0002/ (53 records) | I0006/ (190 records)
 ├── human_annotations/
-│   ├── S0001/ (482 records) | I0002/ (36 records) | I0006/ (102 records)
-└── demographics.csv
+│   ├── S0001/ (851 records) | I0002/ (54 records) | I0006/ (192 records)
+├── demographics.csv
+└── ICD_codes_CI.csv
+
+```
+training_set_large/ (large version of the training set; 1.2 TiB)
+├── physiological_data/
+│   ├── S0001/ (5139 records) | I0002/ (319 records) | I0006/ (1142 records)
+├── algorithmic_annotations/
+│   ├── S0001/ (5075 records) | I0002/ (317 records) | I0006/ (1138 records)
+├── human_annotations/
+│   ├── S0001/ (5120 records) | I0002/ (319 records) | I0006/ (1142 records)
+├── demographics.csv
+└── ICD_codes_CI.csv
 
 validation_set/
 ├── physiological_data/
@@ -185,7 +198,7 @@ To link metadata to signal files, use the `BidsFolder`and `SessionID`. For examp
 
 ### <a name="data-access"></a> Data Access
 
-The original data are stored on the [Brain Data Science Platform](https://bdsp.io/content/hsp/). The challenge dataset represents a curated subset of the original data and is publicly available on [Kaggle](https://www.kaggle.com/datasets/physionet/physionetchallenge2026data/).
+The Challenge training set is publicly available on [Kaggle](https://www.kaggle.com/datasets/physionet/physionetchallenge2026data/). The Challenge training set is a curated subset of the [Human Sleep Project dataset](https://bdsp.io/content/hsp/) on the [Brain Data Science Platform](https://bdsp.io/). 
 
 ## <a name="registration"></a>Registering for the Challenge and Conditions of Participation
 
@@ -195,30 +208,65 @@ To participate in the Challenge, [register your team](https://forms.gle/hQPUQ8w4
 
 Each team must develop and implement an algorithm that, given a PSG and basic demographic data, predicts whether the patient will be diagnosed with cognitive impairment diagnosis in the future.
 
-We implemented an example algorithm in [Python](https://github.com/physionetchallenges/python-example-2026). Other implementation languages will be considered upon request. The code repository contains details for the examples and other helpful scripts and functions. These examples were not designed to perform well but to provide minimal working examples of how to work with the Challenge data for the Challenge task.
+We implemented an example algorithm in [Python](https://github.com/physionetchallenges/python-example-2026). Other implementation languages will be considered upon request. The code repository contains details for the examples and other helpful scripts and functions. These examples were not designed to perform well but to provide minimal working examples of how to use the Challenge data for the Challenge task.
 
-Teams submit their code, including working training code, in a GitHub or GitLab repository by submitting a form. During the Challenge, we will train each entry on the training set and evaluate it on the validation set. After the Challenge, we will train entries on the training set and evaluate them on the test set. We try to provide feedback about the entry (a score on the validation set for successful entries and an error message for unsuccessful entries) within 72 hours of submission.
+Teams submit their code, including working training code, in a GitHub or GitLab repository by submitting a form. During the Challenge, we will train each entry on the training set and evaluate it on the validation set. After the Challenge, we will train one entry from each team on the training set and evaluate it on the test set. We try to provide feedback about the entry (a score on the validation set for successful entries and an error message for unsuccessful entries) within 72 hours of submission.
 
-Please see the [submission instructions](submissions) for detailed information about how to submit a successful Challenge entry, double check your code (we cannot debug your code for you), and submit your algorithm when ready. We will provide feedback on your entry as soon as possible, so please wait at least **72 hours** before contacting us about the status of your entry.
+Please see the [submission instructions](submissions) for detailed information about how to submit a successful Challenge entry, double check your code (we cannot debug your code for you), and [submit](https://forms.gle/8wivWQqmwTf7nTYo8) your algorithm when ready. We will provide feedback on your entry as soon as possible, so please wait at least **72 hours** before contacting us about the status of your entry.
 
 Please note that you remain the [owners](#ip) of any code that you submit, and we encourage you to use an [open-source license](#open).
 
 ## <a name="scoring"></a> Scoring
 
-Each team must develop and implement an algorithm that, given a patient's PSG and basic demographic data, predicts whether or not the patient will receive a cognitive impairment diagnosis within 3 to 7 years after the PSG.
+Each team must develop and implement an algorithm that, given a patient's PSG and basic demographic data, predicts whether or not the patient will receive a cognitive impairment diagnosis within 1 to 5 years after the PSG.
 
-To that end, we define three groups of patients:
+To that end, we define three groups of patients using the cognitive impairment (CI)-related diagnoses in this [table](ICD_codes.csv):
 
-1. Patients with future cognitive impairment diagnoses, i.e., two or more diagnoses from this [table](ICD_codes.csv) with one diagnosis at least 3 years and no more than 7 years after the sleep study with at least one week between the diagnoses.
-2. Patients without cognitive impairment diagnoses and at least 7 years of data, i.e., no diagnoses from this [table](ICD_codes.csv) at any time, unless the dataset had fewer years of data after diagnosis. 
-3. All other patients, including
-    - patients with two or more diagnoses from this [table](ICD_codes.csv) with a diagnosis less than 3 years after the sleep study;
-    - patients with one or more diagnoses from this [table](ICD_codes.csv) but not for at least 3 years.
-    - patients with less than 7 years of data, e.g., patients who died or left the healthcare system but would have or may have had a cognitive impairment diagnosis, unless the dataset had fewer years of data after diagnosis.
+- __Positive:__ Patients with future cognitive impairment diagnoses, i.e., two or more CI-related diagnoses with a first diagnosis at least 1 year and no more than 6 years after the sleep study with at least one week between the diagnoses.
+- __Negative:__ Patients without cognitive impairment diagnoses, i.e., no CI-related diagnosis at any time and at least 6 years of encounters after the sleep study
+- __Other__, including
+    - patients with two or more CI-related diagnoses with a first diagnosis less than 1 years after the sleep study;
+    - patients with two or more CI-related diagnoses with a first diagnosis more than 6 years after the sleep study;
+    - patients with only one CI-related diagnoses;
+    - patients with no CI-related diagnoses and less than 6 years of encounters after the sleep study.
 
-We compute the area under the receiver-operating characteristic curve (AUROC) between patients in Group 1 and Group 2.
+We evaluate models on their performance on the positive and negative patients using the following evaluation metrics.
 
-This metric and other traditional metrics are [implemented](https://github.com/physionetchallenges/python-example-2026) in the `evaluate_model` script.
+Let $\mathcal{C} = \{c_1, \dots, c_n\}$ be a cohort of positive and negative patients. Let $x_k = 1$ if patient $c_k$ is __positive__ by the above definition and $x_k = 0$ if patient $c_k$ is __negative__ by the above definition. Let $f : \mathcal{C} \rightarrow \mathbb{R}$ such that $f(x_k) = a_k$ is the age of patient $c_k$.
+
+For a given model, let $y_k \in \{0, 1\}$ be the model's binary prediction for patient $c_k$ and $z_k \in \mathbb{R}$ be the model's real-valued prediction for patient $c_k$.
+
+__Prevalence-based reward metric:__
+Let
+$$
+p_a = \text{Pr}(x = 1 \:|\: x \in \mathcal{C} \text{ with } |f(x) - a| \leq \delta)
+$$
+be the empirical probability that a random patient $x$ of approximately age $a$ is a positive patient.
+For a given model, we define the reward $r_k$ for patient $c_k \in \mathcal{C}$ as
+$$
+r_k = \begin{cases}
+\frac{1}{p_a} - 1, &\: x_k = 1,\: y_k = 1,\: \text{i.e., a true positive},\\
+-1, &\: x_k = 0,\: y_k = 1,\: \text{i.e., a false positive},\\
+-1, &\: x_k = 1,\: y_k = 0,\: \text{i.e., a false negative},\\
+\frac{1}{1-p_a} - 1, &\: x_k = 0,\: y_k = 0,\: \text{i.e., a true negative},\\
+\end{cases}
+$$
+and the total reward for the patient cohort as
+$$
+r_\mathcal{C} = \sum_{c_k \in \mathcal{C}} r_k.
+$$
+
+__Age-conditioned area under the receiver-operating characteristic curve (AUROC):__
+For a given model, we define an age-conditioned AUROC
+$$
+s_\mathcal{C} =
+\text{Pr}(z_i \geq z_j \:|\: x_i, x_j \in \mathcal{C} \text{ with } x_i = 1, \: x_j = 0 \text{ such that } |a_i - a_j| \leq \delta)
+$$
+as the probability that a given model model prioritizes a random positive patient over a random negative patient of approximately the same age.
+
+To reduce dataset artifacts and account for data sparsity, we compare patients of approximately the same age, i.e., within $\delta = 2$ years, for both metrics.
+
+These metrics and other traditional metrics, including area under the receiver-operating characteristic curve, area under the precision-recall curve, accuracy, and _F_-measure, are [implemented](https://github.com/physionetchallenges/python-example-2026) in the [`evaluate_model`](https://github.com/physionetchallenges/python-example-2026/blob/main/evaluate_model.py) script.
 
 ## <a name="rules"></a> Overview of rules
 
@@ -262,7 +310,7 @@ To be eligible for the open-source award, you must do all the following:
 1. Register for the Challenge [here](https://forms.gle/hQPUQ8w4hb1MmGHa7).
 2. Submit at least one open-source entry that can be scored during the unofficial phase.
 3. [Submit an abstract to CinC](https://cinc.org/inf_authors/) by the abstract submission deadline. Include your team name and score from the unofficial phase in your abstract. Please select "PhysioNet/CinC Challenge" as the topic of your abstract so that it can be identified easily by the abstract review committee. __Please__ read ["Advice on Writing an Abstract"](#abstracts) for important information on writing a successful abstract.
-4. [Submit](https://forms.gle/2fqLf5UU1oDNzNES9) at least one open-source entry that can be scored during the official phase.
+4. [Submit](https://forms.gle/8wivWQqmwTf7nTYo8) at least one open-source entry that can be scored during the official phase.
 5. [Submit a full 4-page paper](https://cinc.org/inf_authors/) on your work to CinC by the above preprint deadline.
 6. One of your team members must attend [CinC 2026](http://www.cinc2026.org/) to present your work either orally or as a poster (depending on your abstract acceptance). If you have a poster, then you must stand by it to defend your work. No-shows (oral or poster) will be disqualified. One of your team members must also attend the closing ceremony to collect your prize. No substitutes will be allowed. If the conference permits remote attendance, then you will be eligible for ranking if you attend remotely (and fulfill the other required criteria), but teams must attend in person for prize eligibility.
 7. [Submit a full 4-page paper](https://cinc.org/inf_authors/) on your work to CinC by the above final paper deadline. Please note that we expect the abstract to change significantly both in terms of results and methods. You may also update your title with the caveat that it must not be substantially similar to the title of the competition or contain the words "physionet," "challenge," or "competition."
@@ -286,8 +334,8 @@ To improve your chances of having your abstract accepted, we offer the following
 - Select "PhysioNet/CinC Challenge" as the submission topic so it can be identified easily by the abstract review committee. However, do not include the words "PhysioNet" or "PhysioNet/CinC" or "Challenge" in the title because this creates confusion with the hundreds of other articles and the main descriptor of the Challenge.
 - Your title, abstract and author list (collaborators) can be modified in September when you submit the final paper.
 - While your work is bound to change, the quality of your abstract is a good indicator of the final quality of your work. We suggest you spell check, write in full sentences, and be specific about your approaches. Include your method's cross validated training performance (using the Challenge metrics) and your score provided by the Challenge submission system. If you omit or inflate this latter score, then your abstract will be rejected.
-- Do not be embarrassed by any low scores. We do not expect high scores at this stage. We are focused on the thoughtfulness of the approach and quality of the abstract.
-- If you are unable to receive a score during the unofficial phase, then you can still submit, but the work should be of very high quality and you should include the cross validation results of your algorithm on the training set.
+- Do not be embarrassed by any low scores. We do not expect high scores at this stage. We are focused on the thoughtfulness of the approach and quality of the abstract. The unofficial phase is only the beginning of the Challenge, so no one has lost (or won) the Challenge at this stage.
+- If you are unable to receive a score during the unofficial phase, then you can still submit an abstract, but the work should be of very high quality and you should include the cross validation results of your algorithm on the training set. More than anything else, a scored entry indicates engagement in the Challenge and helps us to improve it.
 
 You will be notified if your abstract has been accepted by email from CinC in June. You may not enter more than one abstract describing your work in the Challenge. We know you may have multiple ideas, and the actual abstract will evolve over the course of the Challenge. More information, particularly on discounts and scholarships, can be found [here](https://cinc.org/inf_authors/). We are sorry, but the Challenge Organizers do not have extra funds to enable discounts or funding to attend the conference.
 
