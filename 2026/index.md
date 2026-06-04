@@ -136,9 +136,9 @@ Please note that diagnosis information is extracted based on ICD-9 and ICD-10 co
 
 We partitioned the Challenge data into training, validation, and test sets:
 
-- __Training set:__ The training set is publicly available. It includes __TBD__ recordings (totaling __TBD__ hours, with an average of __TBD__ hours per recording) from three sources (S0001, I0002, I0006) with PSG data, algorithmic annotations, human annotations, metadata, and diagnoses. To reduce file sizes, this dataset is artificially balanced to include approximately equal numbers of participants with and without cognitive impairment diagnoses.
-- __Validation set:__ The validation set is hidden so that we can evaluate teams on it during the Challenge. It includes recordings from one source with PSG data, algorithmic annotations, and metadata; human annotations and diagnoses are not included in the validation set. The data source is different from the data sources for the training and test sets. Unlike the training set, this dataset was not artificially balanced, and it has a prevalence rate of __TBD; approximate range__ for cognitive impairment.
-- __Test set:__ The test set is hidden so that we can evaluate teams on it once after the Challenge. It includes recordings from one source with PSG data, algorithmic annotations, and metadata; human annotations and diagnoses are not included in the test set. The data source is different from the data sources for the training and validation sets.  Unlike the training set, this dataset was not artificially balanced, and it has a prevalence rate of __TBD; approximate range__ for cognitive impairment.
+- __Training set:__ The training set is publicly available, including large and small versions of the training set from three sources (S0001, I0002, I0006) with PSG data, algorithmic annotations, human annotations, metadata, and diagnoses. The small version of the training set is prevalence-matched to the large version of the training set.
+- __Validation set:__ The validation set is hidden so that we can evaluate teams on it during the Challenge. It includes recordings from one source with PSG data, algorithmic annotations, and metadata; human annotations and diagnoses are not included in the validation set. The data source is different from the data sources for the training and test sets. Unlike the training set, this dataset was not artificially balanced, and it has a prevalence rate of 5-15% for cognitive impairment.
+- __Test set:__ The test set is hidden so that we can evaluate teams on it once after the Challenge. It includes recordings from one source with PSG data, algorithmic annotations, and metadata; human annotations and diagnoses are not included in the test set. The data source is different from the data sources for the training and validation sets.  Unlike the training set, this dataset was not artificially balanced, and it has a prevalence rate of 5-15% for cognitive impairment.
 - __Supplementary Set:__ We have included 10 examples from each of the sources of the validation and test sets to illustrate signal properties, channel naming conventions, and file structures. These recordings are not parts of the validation or test sets. These recordings do not include any other information.
 
 ### <a name="structure"></a> Directory Structure and Data Types
@@ -153,7 +153,8 @@ Each data partition follows a consistent sub-folder structure:
 
 The folders are organized as follows:
 
-training_set_small/ (small version of the training set; 214.2 GiB)
+```
+training_set_small/ (214 GiB version of the training set)
 ├── physiological_data/
 │   ├── S0001/ (857 records) | I0002/ (54 records) | I0006/ (192 records)
 ├── algorithmic_annotations/
@@ -163,8 +164,7 @@ training_set_small/ (small version of the training set; 214.2 GiB)
 ├── demographics.csv
 └── ICD_codes_CI.csv
 
-```
-training_set_large/ (large version of the training set; 1.2 TiB)
+training_set_large/ (1.2 TiB version of the training set)
 ├── physiological_data/
 │   ├── S0001/ (5139 records) | I0002/ (319 records) | I0006/ (1142 records)
 ├── algorithmic_annotations/
