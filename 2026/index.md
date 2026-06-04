@@ -251,10 +251,11 @@ r_k = \begin{cases}
 \frac{1}{1-p_a} - 1, &\: x_k = 0,\: y_k = 0,\: \text{i.e., a true negative},\\
 \end{cases}
 $$
-and the total reward for the patient cohort as
+and the average reward for the patient cohort as
 $$
-r_\mathcal{C} = \sum_{c_k \in \mathcal{C}} r_k.
+r_\mathcal{C} = \frac{1}{|\mathcal{C}|}\sum_{c_k \in \mathcal{C}} r_k.
 $$
+We use the training set to compute the prevalence of positive patients at each age.
 
 __Age-conditioned area under the receiver-operating characteristic curve (AUROC):__
 For a given model, we define an age-conditioned AUROC
