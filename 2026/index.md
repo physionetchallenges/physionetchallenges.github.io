@@ -255,7 +255,7 @@ $$
 
 and the average reward for the patient cohort as
 
-\[
+\\[
 r_\mathcal{C} = \frac{1}{|\mathcal{C}|}\sum_{c_k \in \mathcal{C}} r_k.
 \\]
 
