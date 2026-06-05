@@ -243,26 +243,32 @@ p_a = \text{Pr}(x = 1 \:|\: x \in \mathcal{C} \text{ with } |f(x) - a| \leq \del
 \\]
 be the empirical probability that a random patient \\(x\\) of approximately age $a$ is a positive patient.
 For a given model, we define the reward \\(r_k\\) for patient \\(c_k \in \mathcal{C}\\) as
-\\[
+
+$$
 r_k = \begin{cases}
 \frac{1}{p_a} - 1, &\: x_k = 1,\: y_k = 1,\: \text{i.e., a true positive},\\
 -1, &\: x_k = 0,\: y_k = 1,\: \text{i.e., a false positive},\\
 -1, &\: x_k = 1,\: y_k = 0,\: \text{i.e., a false negative},\\
 \frac{1}{1-p_a} - 1, &\: x_k = 0,\: y_k = 0,\: \text{i.e., a true negative},\\
 \end{cases}
-\\]
+$$
+
 and the average reward for the patient cohort as
-\\[
+
+\[
 r_\mathcal{C} = \frac{1}{|\mathcal{C}|}\sum_{c_k \in \mathcal{C}} r_k.
 \\]
+
 We use the training set to compute the prevalence of positive patients at each age.
 
 __Age-conditioned area under the receiver-operating characteristic curve (AUROC):__
 For a given model, we define an age-conditioned AUROC
+
 \\[
 s_\mathcal{C} =
 \text{Pr}(z_i \geq z_j \:|\: x_i, x_j \in \mathcal{C} \text{ with } x_i = 1, \: x_j = 0 \text{ such that } |a_i - a_j| \leq \delta)
 \\]
+
 as the probability that a given model model prioritizes a random positive patient over a random negative patient of approximately the same age.
 
 To reduce dataset artifacts and account for data sparsity, we compare patients of approximately the same age, i.e., within \\(\delta = 2\\) years, for both metrics.
