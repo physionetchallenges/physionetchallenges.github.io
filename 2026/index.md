@@ -232,9 +232,9 @@ To that end, we define three groups of patients using the cognitive impairment (
 
 We evaluate models on their performance on the positive and negative patients using the following evaluation metrics.
 
-Let $`\mathcal{C} = \{c_1, \dots, c_n\}`$ be a cohort of positive and negative patients. Let $`x_k = 1`$ if patient $`c_k`$ is __positive__ by the above definition and $`x_k = 0`$ if patient $`c_k`$ is __negative__ by the above definition. Let $`f : \mathcal{C} \rightarrow \mathbb{R}`$ such that $`f(x_k) = a_k`$ is the age of patient $`c_k`$.
+Let \\(\mathcal{C} = \{c_1, \dots, c_n\}\\) be a cohort of positive and negative patients. Let \\(x_k = 1\\) if patient \\(c_k\\) is __positive__ by the above definition and \\(x_k = 0\\) if patient \\(c_k\\) is __negative__ by the above definition. Let \\(f : \mathcal{C} \rightarrow \mathbb{R}\\) such that \\(f(x_k) = a_k\\) is the age of patient \\(c_k\\).
 
-For a given model, let $`y_k \in \{0, 1\}`$ be the model's binary prediction for patient $`c_k`$ and $`z_k \in \mathbb{R}`$ be the model's real-valued prediction for patient $`c_k`$.
+For a given model, let \\(y_k \in \{0, 1\}\\) be the model's binary prediction for patient \\(c_k\\) and \\(z_k \in \mathbb{R}\\) be the model's real-valued prediction for patient \\(c_k\\).
 
 __Prevalence-based reward metric:__
 Let
