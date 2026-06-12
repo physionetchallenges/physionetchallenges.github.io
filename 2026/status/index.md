@@ -9,6 +9,4 @@ This table is manually populated, so there may be delays. Once your entry
 finishes (successfully or unsuccessfully), you can expect an email
 within a day.
 
-<iframe width="150%" height="1000" src="
-https://docs.google.com/spreadsheets/d/e/2PACX-1vSQuhp3_9KAv4GhxGZZgojyPrPi0wxjXF_OpsNQzN5mz9JatXatUAqcaEXu18xAhI2Vqymt973hERpY/pubhtml?gid=95367893&single=true" title="Status"></iframe>
-
+<iframe width="150%" height="1000" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRsD-YADwgBA_rYxSyBs0UFhQEZy4GGouErjen0A4Zl_AZBc7RMWq6jKIsRKJVBTXa-HwsYvVdfHkPP/pubhtml"></iframe>
