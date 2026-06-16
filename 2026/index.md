@@ -249,7 +249,7 @@ Let
 \\[
 p_a = \text{Pr}(x = 1 \:|\: x \in \mathcal{C} \text{ with } |f(x) - a| \leq \delta)
 \\]
-be the empirical probability that a random patient \\(x\\) of approximately age $a$ is a positive patient.
+be the empirical probability that a random patient \\(x\\) of approximately age \\(a\\) is a positive patient.
 For a given model, we define the reward \\(r_k\\) for patient \\(c_k \in \mathcal{C}\\) as
 
 $$
