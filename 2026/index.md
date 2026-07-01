@@ -202,7 +202,7 @@ We are sharing small and large versions of the Challenge training set:
 - [Small version of the Challenge training set](https://www.kaggle.com/datasets/physionet/physionetchallenge2026data/)
 - [Large version of the Challenge training set](https://www.kaggle.com/datasets/physionet/physionetchallenge2026datalargeversion/)
 
-The small version of the training set is prevalence matched to the large version of the training set. Teams can download either or both versions of the training set, and they can ask us to train each entry on either version of the training set.
+The small version of the training set is prevalence matched to the large version of the training set. Teams can download either or both versions of the training set, and they can ask us to train each entry on either version of the training set. We will compare entries directly regardless of whether we trained them on the large version or the small version of the training set.
 
 The validation and test sets are hidden during the Challenge.
 
