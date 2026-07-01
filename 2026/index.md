@@ -226,7 +226,7 @@ Please note that you remain the [owners](#ip) of any code that you submit, and w
 
 ## <a name="scoring"></a> Scoring
 
-Each team must develop and implement an algorithm that, given a patient's PSG and basic demographic data, predicts whether or not the patient will receive a cognitive impairment diagnosis within 1 to 5 years after the PSG.
+Each team must develop and implement an algorithm that, given a patient's PSG and basic demographic data, predicts whether or not the patient will receive a cognitive impairment diagnosis within 1 to 6 years after the PSG.
 
 To that end, we define three groups of patients using the cognitive impairment (CI)-related diagnoses in this [table](ICD_codes.csv):
 
@@ -302,16 +302,16 @@ For these reasons, we strongly suggest that you start submitting entries at leas
 |                                            | Start               | End                               | Submissions                          |
 |--------------------------------------------|---------------------|-----------------------------------|--------------------------------------|
 | Unofficial phase                           | 10 February 2026    | 09 April 2026                     | 1-5 scored entries ([\*](#1ast))     |
-| Hiatus                                     | 10 April 2026       | Late May 2026                     | N/A                                  |
+| Hiatus                                     | 10 April 2026       | 2 June 2026                       | N/A                                  |
 | Abstract deadline                          | 15 April 2026       | 15 April 2026                     | 1 abstract                           |
-| Official phase                             | Late May 2026       | Late August 2026                  | 1-10 scored entries ([\*](#1ast))    |
-| Abstract decisions released                | Mid-June 2026       | Mid-June 2026                     | N/A                                  |
+| Official phase                             | 3 June 2026         | Late August 2026                  | 1-10 scored entries ([\*](#1ast))    |
+| Abstract decisions released                | 7 June 2026         | 3 June 2026                       | N/A                                  |
 | Wild card entry date                       | 31 July 2026        | 31 July 2026                      | N/A                                  |
 | Hiatus                                     | Late August 2026    | Late September 2026               | N/A                                  |
 | Deadline to choose algorithm for test data | Late August 2026    | Late August 2026                  | N/A                                  |
 | Preprint deadline                          | Late August 2026    | Late August 2026                  | One 4-page paper ([\*\*](#2ast))     |
 | Conference                                 | 20 September 2026   | 23 September 2026                 | 1 presentation ([\*\*](#2ast))       |
-| Final scores released                      | Late September 2026 | Late September 2026                | N/A                                  |
+| Final scores released                      | Late September 2026 | Late September 2026               | N/A                                  |
 | Final paper deadline                       | Early October 2026  | Early October 2026                | One 4-page paper ([\*\*\*](#3ast))   |
 
 <a name="1ast"></a>(\* Entries that fail to score do not count against limits.)
