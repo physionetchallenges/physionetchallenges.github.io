@@ -22,7 +22,7 @@ Sleep is a vital physiological process that offers a unique window into brain, c
 
 ## <a name="objective"></a> Objective
 
-For the 2026 Challenge, we ask participants to develop and implement open-source algorithms for using PSGs to predict future diagnoses of cognitive impairment. The winners of the Challenge will be the team with the highest score on the hidden test set.
+For the 2026 Challenge, we ask participants to develop and implement open-source algorithms for using PSGs to predict future diagnoses of cognitive impairment. The winners of the Challenge will be the team with the highest [score](#scoring) on the hidden [test set](#splits).
 
 ## <a name="data"></a> Data
 
@@ -201,6 +201,7 @@ To link metadata to signal files, use the `BidsFolder`and `SessionID`. For examp
 We are sharing small and large versions of the Challenge training set:
 - [Small version of the Challenge training set](https://www.kaggle.com/datasets/physionet/physionetchallenge2026data/)
 - [Large version of the Challenge training set](https://www.kaggle.com/datasets/physionet/physionetchallenge2026datalargeversion/)
+- [Supplementary data](https://www.kaggle.com/datasets/physionet/physionet2026datasupplementary)
 
 The small version of the training set is prevalence matched to the large version of the training set. Teams can download either or both versions of the training set, and they can ask us to train each entry on either version of the training set. We will compare entries directly regardless of whether we trained them on the large version or the small version of the training set.
 
@@ -226,7 +227,7 @@ Please note that you remain the [owners](#ip) of any code that you submit, and w
 
 ## <a name="scoring"></a> Scoring
 
-Each team must develop and implement an algorithm that, given a patient's PSG and basic demographic data, predicts whether or not the patient will receive a cognitive impairment diagnosis within 1 to 6 years after the PSG.
+Each team must develop and implement an algorithm that, given a patient's PSG and basic demographic data, predicts whether or not the patient will receive a cognitive impairment diagnosis within 1 to 6 years after the PSG. The team with the highest age-conditioned area under the receiver-operating characteristic curve (AUROC) on the hidden [test set](#splits) wins the Challenge.
 
 To that end, we define three groups of patients using the cognitive impairment (CI)-related diagnoses in this [table](ICD_codes.csv):
 
@@ -244,7 +245,21 @@ Let \\(\mathcal{C} = \{c_1, \dots, c_n\}\\) be a cohort of positive and negative
 
 For a given model, let \\(y_k \in \{0, 1\}\\) be the model's binary prediction for patient \\(c_k\\) and \\(z_k \in \mathbb{R}\\) be the model's real-valued prediction for patient \\(c_k\\).
 
+__Age-conditioned area under the receiver-operating characteristic curve (AUROC):__
+This is the Challenge evaluation metric that determines the Challenge winners.
+
+For a given model, we define an age-conditioned AUROC
+
+\\[
+s_\mathcal{C} =
+\text{Pr}(z_i \geq z_j \:|\: x_i, x_j \in \mathcal{C} \text{ with } x_i = 1, \: x_j = 0 \text{ such that } |a_i - a_j| \leq \delta)
+\\]
+
+as the probability that a given model model prioritizes a random positive patient over a random negative patient of approximately the same age.
+
 __Prevalence-based reward metric:__
+This is an additional Challenge evaluation metric that does not determine the winners, but considers ages when scoring the models.
+
 Let
 \\[
 p_a = \text{Pr}(x = 1 \:|\: x \in \mathcal{C} \text{ with } |f(x) - a| \leq \delta)
@@ -268,16 +283,6 @@ r_\mathcal{C} = \frac{1}{|\mathcal{C}|}\sum_{c_k \in \mathcal{C}} r_k.
 \\]
 
 We use the training set to compute the prevalence of positive patients at each age.
-
-__Age-conditioned area under the receiver-operating characteristic curve (AUROC):__
-For a given model, we define an age-conditioned AUROC
-
-\\[
-s_\mathcal{C} =
-\text{Pr}(z_i \geq z_j \:|\: x_i, x_j \in \mathcal{C} \text{ with } x_i = 1, \: x_j = 0 \text{ such that } |a_i - a_j| \leq \delta)
-\\]
-
-as the probability that a given model model prioritizes a random positive patient over a random negative patient of approximately the same age.
 
 To reduce dataset artifacts and account for data sparsity, we compare patients of approximately the same age, i.e., within \\(\delta = 2\\) years, for both metrics.
 
