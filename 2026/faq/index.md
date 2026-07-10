@@ -101,7 +101,7 @@ You will be able to choose which model you would like to have scored on the test
 
 <a name="resources"></a>__What computational resources do you provide for our code?__
 
-We run your code in a Linux environment with 16 vCPUs, 64GiB of RAM (16 GiB
+We run your code in a Linux environment with 16 vCPUs, 64GiB of RAM (60 GiB
 available to your code), and (on request) a GPU, which will be either:
 
 -    NVidia Ampere A30, or
