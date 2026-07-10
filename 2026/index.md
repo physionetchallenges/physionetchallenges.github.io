@@ -217,7 +217,7 @@ To participate in the Challenge, [register your team](https://forms.gle/hQPUQ8w4
 
 Each team must develop and implement an algorithm that, given a PSG and basic demographic data, predicts whether the patient will be diagnosed with cognitive impairment diagnosis in the future.
 
-We implemented an example algorithm in [Python](https://github.com/physionetchallenges/python-example-2026). Other implementation languages will be considered upon request. The code repository contains details for the examples and other helpful scripts and functions. These examples were not designed to perform well but to provide minimal working examples of how to use the Challenge data for the Challenge task.
+We implemented example algorithms in [Python](https://github.com/physionetchallenges/python-example-2026) and [MATLAB](https://github.com/physionetchallenges/matlab-example-2026). Other implementation languages will be considered upon request. The code repository contains details for the examples and other helpful scripts and functions. These examples were not designed to perform well but to provide minimal working examples of how to use the Challenge data for the Challenge task.
 
 Teams submit their code, including working training code, in a GitHub or GitLab repository by submitting a form. During the Challenge, we will train each entry on the [training set](#data-access) and evaluate it on the validation set. After the Challenge, we will train one entry from each team on the training set and evaluate it on the test set. We try to provide feedback about the entry (a score on the validation set for successful entries and an error message for unsuccessful entries) within 72 hours of submission.
 
