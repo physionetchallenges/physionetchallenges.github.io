@@ -8,16 +8,15 @@ layout: after_2015
 
 __For this year's Challenge, please cite the Challenge description paper:__
 
-
 [Reyna MA, Kiarashi Y, Elola A, Oliveira J, Renna F, Gu A, Perez Alday EA, Sadr N, Sharma A, Kpodonu J, Mattos S, Coimbra MT, Sameni R, Rad AB, Clifford GD. "Heart murmur detection from phonocardiogram recordings: The George B. Moody PhysioNet Challenge 2022." PLOS Digital Health. 2023 Sep 11;2(9): e0000324. doi: 10.1371/journal.pdig.0000324. PMID: 37695769.](https://journals.plos.org/digitalhealth/article?id=10.1371/journal.pdig.0000324)
 
 __For this year's Challenge, please cite the CirCor DigiScope Dataset publication:__
 
-[Oliveira, J., Renna, F., Costa, P. D., Nogueira, M., Oliveira, C., Ferreira, C., ... & Coimbra, M. T. (2022). The CirCor DigiScope Dataset: From Murmur Detection to Murmur Classification. IEEE Journal of Biomedical and Health Informatics, doi: 10.1109/JBHI.2021.3137048.](https://ieeexplore.ieee.org/document/9658215)
+[Oliveira J, Renna F, Costa PD, Nogueira M, Oliveira C, Ferreira C, Jorge A, Mattos S, Hatem T, Tavares T, Elola A, Rad AB, Sameni R, Clifford GD, Coimbra MT. The CirCor DigiScope dataset: from murmur detection to murmur classification. IEEE J Biomed Health Inform. 2022 Jun;26(6):2524-2535. doi:10.1109/JBHI.2021.3137048. PMID: 34932490.](https://ieeexplore.ieee.org/document/9658215)
 
 __Additionally, please include the standard citation for PhysioNet:__
 
-[Goldberger, A., Amaral, L., Glass, L., Hausdorff, J., Ivanov, P. C., Mark, R., ... & Stanley, H. E. (2000). PhysioBank, PhysioToolkit, and PhysioNet: Components of a new research resource for complex physiologic signals. Circulation [Online]. 101 (23), pp. e215-e220.](https://www.ahajournals.org/doi/full/10.1161/01.CIR.101.23.e215)
+[Goldberger AL, Amaral LA, Glass L, Hausdorff JM, Ivanov PC, Mark RG, Mietus JE, Moody GB, Peng CK, Stanley HE. PhysioBank, PhysioToolkit, and PhysioNet: components of a new research resource for complex physiologic signals. Circulation. 2000 Jun 13;101(23):E215-E220. doi:10.1161/01.CIR.101.23.e215. PMID: 10851218.](https://www.ahajournals.org/doi/full/10.1161/01.CIR.101.23.e215)
 
 ## Templates
 
