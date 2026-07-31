@@ -311,10 +311,10 @@ For these reasons, we strongly suggest that you start submitting entries at leas
 | Abstract deadline                          | 15 April 2026       | 15 April 2026                     | 1 abstract                           |
 | Official phase                             | 3 June 2026         | Late August 2026                  | 1-10 scored entries ([\*](#1ast))    |
 | Abstract decisions released                | 7 June 2026         | 3 June 2026                       | N/A                                  |
-| Wild card entry date                       | 31 July 2026        | 31 July 2026                      | N/A                                  |
-| Hiatus                                     | Late August 2026    | Late September 2026               | N/A                                  |
-| Deadline to choose algorithm for test data | Late August 2026    | Late August 2026                  | N/A                                  |
-| Preprint deadline                          | Late August 2026    | Late August 2026                  | One 4-page paper ([\*\*](#2ast))     |
+| Wild card entry date                       | 7 August 2026        | 7 August 2026                      | N/A                                  |
+| Hiatus                                     | 21 August 2026    | 20 September 2026               | N/A                                  |
+| Deadline to choose algorithm for test data | 27 August 2026    | 27 August 2026                  | N/A                                  |
+| Preprint deadline (earlier than CinC)                       | 27 August 2026    | 27 August 2026                  | One 4-page paper ([\*\*](#2ast))     |
 | Conference                                 | 20 September 2026   | 23 September 2026                 | 1 presentation ([\*\*](#2ast))       |
 | Final scores released                      | Late September 2026 | Late September 2026               | N/A                                  |
 | Final paper deadline                       | Early October 2026  | Early October 2026                | One 4-page paper ([\*\*\*](#3ast))   |
