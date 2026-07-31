@@ -107,7 +107,7 @@ available to your code), and (on request) a GPU, which will be either:
 -    NVidia Ampere A30, or
 -    NVidia RTX 6000 Ada Generation,
 
-both of which support CUDA 13.1.
+both of which support CUDA 13.3.
 
 For training on the training set, we impose a 96-hour time limit, or 72 hours
 with a GPU. For inference on the validation set, we impose a 48-hour time
