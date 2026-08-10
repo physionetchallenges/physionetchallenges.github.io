@@ -30,6 +30,7 @@ This page provides specific FAQs for the 2026 Challenge. Please read the [genera
 
 - [What computational resources do you provide for our code?](#resources)
 - [Will our entry have network access? What if we need to download something?](#network-access)
+- [Can I preprocess the training data or otherwise save files to disk during training or inference?](#save-files)
 - [Can I save something to the container's filesystem during training and access it during inference?](#persistent-filesystem)
 - [If my submission times out, can you restore the state of the container and continue from there?](#timeout-behavior)
 - [Is there write access to the data folder?](#write-to-data-folder)
@@ -120,6 +121,10 @@ hours if the test set is twice the size of the validation set.
 No, the execution environment has no network access. However, there is network access
 while we are building your Docker image. If you need to download something,
 you can put a download command in the Dockerfile.
+
+<a name="save-files"></a>__Can I preprocess the training data or otherwise save files to disk during training or inference?__
+
+Yes, your training and inference code should save files to the `/tmp` folder. You can expect to have on the order of 1 TB of available storage space, including your code and excluding the data, but free space may vary. Any files written to `/tmp` will not be preserved or accessible after training or inference completes.
 
 <a name="persistent-filesystem"></a>__Can I save something to the container's filesystem during training and access it during inference?__
 
