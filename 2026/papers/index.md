@@ -20,11 +20,32 @@ In Computing in Cardiology 2026, volume 53. 2026; 1–3.](https://cinc.org/preli
  title = {{Screening for Cognitive Impairment During Sleep Studies: The George B. Moody PhysioNet Challenge 2026}},
  booktitle={Computing in Cardiology 2026},
  volume={53},
- pages={1--3},
+ pages={1--4},
  year={2026}
 }{% endraw %}{% endhighlight %}
 
-__For this year's Challenge data, please cite the [Challenge data paper](../#data) using the citation in the templates below.__
+__For this year's Challenge data, please cite the [Challenge data paper](../#data):__
+
+{% highlight liquid %}{% raw %}@article{HumanSleepProject,
+author = {Li, Qichen and Wen, Shenghan and Sun, Haoqi and
+Ganglberger, Wolfgang and Tripathi, Ayush and Turley, Niels and
+Waters, Samuel and Gupta, Arnav and Gupta, Aditya and Ghanta,
+Manohar and Nearing, Bruce and Wu, Han and Stone, Katie L and
+Robichaux, Chad and Zhang, Zhiyong and Li, Qiao and Ganjoo, Gauri
+and Silvers, Christine Tsien and Gunapati, Bharath and Maski,
+Kiran and Nasiri, Samaneh and Hwang, Dennis and Trotti, Lynn
+Marie and Katwa, Umakanth and Clifford, Gari D and Mignot,
+Emmanuel and Thomas, Robert J and Westover, Michael Brandon},
+title = {The {Human Sleep Project}: A Multi-Center Clinical
+Polysomnography Dataset Across the Human Lifespan},
+journal = {Sleep},
+pages = {zsag215},
+year = {2026},
+month = {08},
+issn = {0161-8105},
+doi = {10.1093/sleep/zsag215},
+url = {https:��doi.org/10.1093/sleep/zsag215},
+}{% endraw %}{% endhighlight %}
 
 __Additionally, please include the standard citation for PhysioNet:__
 
