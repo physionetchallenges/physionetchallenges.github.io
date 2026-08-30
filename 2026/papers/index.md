@@ -44,7 +44,7 @@ year = {2026},
 month = {08},
 issn = {0161-8105},
 doi = {10.1093/sleep/zsag215},
-url = {https:��doi.org/10.1093/sleep/zsag215},
+url = {https://doi.org/10.1093/sleep/zsag215},
 }{% endraw %}{% endhighlight %}
 
 __Additionally, please include the standard citation for PhysioNet:__
