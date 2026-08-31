@@ -55,7 +55,7 @@ __Additionally, please include the standard citation for PhysioNet:__
 
 Please follow the [preparation and submission instructions](https://www.cinc.org/instructions-for-preparing-and-submitting-full-papers/) for your CinC papers.
 
-We have prepared templates to help you prepare your CinC paper. Please use the LaTeX template ([Overleaf](https://www.overleaf.com/read/jnnbdgrvcgdb#17231d) or the [Word template](2026_cinc_template.docx). These templates include important instructions, advice, and references. Please use this [checklist](cinc_proceedings_paper_checklist_for_the_physionet_challenge_2026.pdf) to check your paper.
+We have prepared templates to help you prepare your CinC paper. Please use the LaTeX template on [Overleaf](https://www.overleaf.com/read/jnnbdgrvcgdb#17231d) or the [Word template](2026_cinc_template.docx). These templates include important instructions, advice, and references. Please use this [checklist](cinc_proceedings_paper_checklist_for_the_physionet_challenge_2026.pdf) to check your paper.
 
 Please *read* and follow the templates. Each year, we need to provide feedback for many teams that miss some of the paper requirements, and each year, some papers are unfortunately rejected because the teams were unable to address important issues that the conference required.
 
