@@ -16,7 +16,7 @@ Studies: The George B. Moody PhysioNet Challenge 2026.
 In Computing in Cardiology 2026, volume 53. 2026; 1–3.](https://cinc.org/prelim_program_2026/)
 
 {% highlight liquid %}{% raw %}@inproceedings{2026Challenge,
- author = {Reyna, Matthew A. and Weigle, Audrey and Li, Qichen and Koscova, Zuzana and Sun, Haoqi Sun and Wen, Shenghan and Katwa, Umakanth and Thomas, Robert and Hwang, Dennis and Trotti, Lynn Marie and Mignot, Emmanuel and Sameni, Reza and Nasiri, Samaneh and Westover, M. Brandon and Clifford, Gari D.},
+ author = {Reyna, Matthew A. and Weigle, Audrey and Li, Qichen and Koscova, Zuzana and Sun, Haoqi and Wen, Shenghan and Katwa, Umakanth and Thomas, Robert and Hwang, Dennis and Trotti, Lynn Marie and Mignot, Emmanuel and Sameni, Reza and Nasiri, Samaneh and Westover, M. Brandon and Clifford, Gari D.},
  title = {{Screening for Cognitive Impairment During Sleep Studies: The George B. Moody PhysioNet Challenge 2026}},
  booktitle={Computing in Cardiology 2026},
  volume={53},
