@@ -9,5 +9,8 @@ on our submission system, to support extended articles for the 2026 Challenge.
 This table, which is manually populated, shows the status of these additional
 submissions.
 
-<iframe width="100%" height="1000" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSVTInWRdjlLIBfJTeYPd-aW5rUBe8U9sxVwAQRKweBzY6PNlBQshGrEz-hlPIECjRHaSLOQrPpa-Rt/pubhtml?gid=230667768&amp;single=true" title="2026 Challenge extended submissions"></iframe>
+For more information, please see [the post about supporting extended articles
+in the Challenge forum](https://groups.google.com/g/physionet-challenges/c/HocuKLV5AQ8/m/vqG0jscnAwAJ).
+
+<iframe width="100%" height="300" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSVTInWRdjlLIBfJTeYPd-aW5rUBe8U9sxVwAQRKweBzY6PNlBQshGrEz-hlPIECjRHaSLOQrPpa-Rt/pubhtml?gid=230667768&amp;single=true" title="2026 Challenge extended submissions"></iframe>
 
